@@ -26,7 +26,7 @@ struct JazzDiscoveryMobileApp: App {
         let urls = args.indices.dropLast().filter { args[$0] == "--open" }.compactMap { URL(string: args[$0 + 1]) }
         for (i, url) in urls.enumerated() {
             if i > 0 { try? await Task.sleep(for: .seconds(3)) }
-            router.handle(url, library: library, player: player)
+            router.handle(url, library: library, player: player, fromLaunchArguments: true)
         }
     }
 }

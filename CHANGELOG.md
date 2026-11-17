@@ -6,6 +6,15 @@ section for the tagged version at the top of the GitHub release notes (or **Unre
 
 ## Unreleased
 
+- **Privacy**: the app no longer keeps or sends cookies when it looks things up, and YouTube's player (now its
+  "privacy-enhanced" one) forgets everything when you close a video, so YouTube can't tie one search or video to the
+  next.
+- The video player stays on the video: links in it open in your browser or the YouTube app.
+- iPhone: a `jazzdiscovery://decade/…` link with a made-up decade no longer crashes the app, and links can't start
+  music by themselves.
+- iPhone: your Last.fm connection stays on this iPhone (it isn't copied into backups or onto a new phone), and Settings
+  says so if the keychain couldn't save it.
+
 ## 1.0.0
 
 - **Jazz Discovery for iPhone**: every section of the Mac app, designed for the phone. Five tabs (Timeline, Eras,

@@ -135,39 +135,25 @@ struct VideoPlayerSheet: View {
 struct YouTubePlayer: UIViewRepresentable {
     let videoID: String
 
+    func makeCoordinator() -> YouTubeEmbedNavigation { YouTubeEmbedNavigation() }
+
     func makeUIView(context: Context) -> WKWebView {
-        let config = WKWebViewConfiguration()
+        let config = YouTubeEmbed.configuration()
         config.allowsInlineMediaPlayback = true
-        config.mediaTypesRequiringUserActionForPlayback = []
         config.allowsPictureInPictureMediaPlayback = true
         let web = WKWebView(frame: .zero, configuration: config)
+        web.navigationDelegate = context.coordinator
         web.isOpaque = false
         web.backgroundColor = .black
         web.scrollView.isScrollEnabled = false
-        load(web)
+        YouTubeEmbed.load(videoID, in: web)
         return web
     }
 
     func updateUIView(_ web: WKWebView, context: Context) {}
 
-    static func dismantleUIView(_ web: WKWebView, coordinator: ()) {
+    static func dismantleUIView(_ web: WKWebView, coordinator: YouTubeEmbedNavigation) {
         web.loadHTMLString("", baseURL: nil)
-    }
-
-    private func load(_ web: WKWebView) {
-        // The embed must be served from an https origin so YouTube receives a referrer.
-        let origin = "https://jazzdiscovery.app"
-        let html = """
-        <!doctype html><html><head><meta name="viewport" content="width=device-width,initial-scale=1">
-        <meta name="referrer" content="strict-origin-when-cross-origin">
-        <style>html,body{margin:0;height:100%;background:#000;overflow:hidden}iframe{border:0;width:100%;height:100%}</style>
-        </head><body>
-        <iframe src="https://www.youtube.com/embed/\(videoID)?autoplay=1&playsinline=1&rel=0&modestbranding=1&origin=\(origin)"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>
-        </body></html>
-        """
-        web.loadHTMLString(html, baseURL: URL(string: origin))
     }
 }
 

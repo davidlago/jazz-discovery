@@ -6,6 +6,11 @@ enum HTTP {
         config.urlCache = URLCache(memoryCapacity: 64 << 20, diskCapacity: 512 << 20)
         config.requestCachePolicy = .returnCacheDataElseLoad
         config.timeoutIntervalForRequest = 20
+        // No cookies, kept or sent: every request is a plain lookup, and the services (YouTube's search page sets
+        // visitor cookies that last months) can't tie one to the next.
+        config.httpCookieStorage = nil
+        config.httpShouldSetCookies = false
+        config.httpCookieAcceptPolicy = .never
         return URLSession(configuration: config)
     }()
 

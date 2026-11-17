@@ -55,8 +55,11 @@ final class PhoneRouter {
     }
 
     /// `jazzdiscovery://era/bebop`, `artist/<id>`, `album/<id>`, `decade/1950`, `decades`, `connections[/<id>]`,
-    /// `tab/<timeline|eras|artists|crate|search>`, `now-playing`, `settings`, `play/album/<id>`.
-    func handle(_ url: URL, library: JazzLibrary, player: PlayerController) {
+    /// `tab/<timeline|eras|artists|crate|search>`, `now-playing`, `settings`.
+    ///
+    /// Links come from anywhere (a web page, another app), so they only show pages that exist. `play/album/<id>`,
+    /// which starts music, is for the app's own `--open` launch argument (`fromLaunchArguments`) alone.
+    func handle(_ url: URL, library: JazzLibrary, player: PlayerController, fromLaunchArguments: Bool = false) {
         guard url.scheme == "jazzdiscovery", let host = url.host() else { return }
         let parts = url.pathComponents.filter { $0 != "/" }
         let arg = parts.first
@@ -64,9 +67,9 @@ final class PhoneRouter {
         case "era": if let id = arg, library.era(id) != nil { erasMode = .styles; show(.eras, [.era(id)]) }
         case "artist": if let id = arg, library.artist(id) != nil { show(.artists, [.artist(id)]) }
         case "album": if let id = arg, library.album(id) != nil { show(.crate, [.album(id)]) }
-        case "decade": if let d = arg.flatMap(Int.init) { erasMode = .decades; show(.eras, [.decade(d)]) }
+        case "decade": if let d = arg.flatMap(Int.init), library.decades.contains(d) { erasMode = .decades; show(.eras, [.decade(d)]) }
         case "decades": erasMode = .decades; show(.eras)
-        case "connections": show(.artists, [.connections(focus: arg)])
+        case "connections": show(.artists, [.connections(focus: arg.flatMap { library.artist($0)?.id })])
         case "tab":
             if let t = arg.flatMap(PhoneTab.init(rawValue:)) {
                 if let q = URLComponents(url: url, resolvingAgainstBaseURL: false)?.queryItems?.first(where: { $0.name == "q" })?.value {
@@ -77,7 +80,7 @@ final class PhoneRouter {
         case "now-playing": showSettings = false; showNowPlaying = player.current != nil
         case "settings": showNowPlaying = false; showSettings = true
         case "play":
-            if parts.first == "album", parts.count > 1, let album = library.album(parts[1]) {
+            if fromLaunchArguments, parts.first == "album", parts.count > 1, let album = library.album(parts[1]) {
                 Task {
                     guard let c = await ITunes.shared.album(for: album) else { return }
                     player.playAlbum(c, tracks: [])
