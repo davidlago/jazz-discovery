@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""Checks JazzDiscovery/Resources/jazz.json and catalog.json: every reference resolves, ids are unique, connections
+"""Checks Shared/Resources/jazz.json and catalog.json: every reference resolves, ids are unique, connections
 are symmetric and every album has an Apple Music match. Usage: python3 -I scripts/validate-data.py"""
 import json, os, sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-RES = os.path.join(ROOT, "JazzDiscovery", "Resources")
+RES = os.path.join(ROOT, "Shared", "Resources")
 data = json.load(open(os.path.join(RES, "jazz.json")))
 catalog = json.load(open(os.path.join(RES, "catalog.json")))
 errors = []

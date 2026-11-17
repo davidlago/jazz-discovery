@@ -1,10 +1,14 @@
 # Jazz Discovery
 
-A native macOS app (SwiftUI, macOS 15+) for exploring jazz: its history, eras, decades, artists and essential records, with Apple Music for listening and YouTube for watching.
+Native apps for Mac (macOS 15+) and iPhone (iOS 26.1+), in SwiftUI, for exploring jazz: its history, eras, decades, artists and essential records, with Apple Music for listening, YouTube for watching and Last.fm for scrobbling.
 
 ## Install
 
 Download the latest `JazzDiscovery-*-macOS.zip` from [Releases](https://github.com/davidlago/jazz-discovery/releases), unzip it and move **Jazz Discovery.app** to Applications. It runs on Apple Silicon and Intel Macs with macOS 15 or later, and it's signed and notarized by Apple.
+
+The iPhone app has every section of the Mac app, laid out for the phone: five tabs (Timeline, Eras, Artists, Crate,
+Search), a player above the tab bar with lock screen controls and AirPlay, and a Connections map you pinch and pan.
+How it gets to the App Store: [docs/app-store.md](docs/app-store.md).
 
 ## What's inside
 
@@ -19,7 +23,7 @@ Download the latest `JazzDiscovery-*-macOS.zip` from [Releases](https://github.c
 
 ## Sources
 
-- **Content**: `JazzDiscovery/Resources/jazz.json` is a curated dataset with original summaries (eras, artists, albums, milestones).
+- **Content**: `Shared/Resources/jazz.json` is a curated dataset with original summaries (eras, artists, albums, milestones).
 - **Wikipedia REST API**: artist and era summaries and photos (CC BY-SA / Wikimedia Commons), cached on disk.
 - **iTunes Search API**: Apple Music catalog IDs, artwork and 30-second previews. Album lookups are precomputed into `Resources/catalog.json` by `scripts/build-catalog.py`. Live lookups are cached and throttled.
 - **YouTube**: videos are found from YouTube's public search page (no API key) and play in the embedded YouTube player.
@@ -28,7 +32,7 @@ Download the latest `JazzDiscovery-*-macOS.zip` from [Releases](https://github.c
 
 The app plays music in one of two ways:
 
-1. **Full tracks in the app** through MusicKit (`ApplicationMusicPlayer`) once you connect Apple Music (sidebar → *Apple Music*, or Settings).
+1. **Full tracks in the app** through MusicKit (`ApplicationMusicPlayer`) once you connect Apple Music (sidebar → *Apple Music*, or Settings; on iPhone, the gear at the top of any tab).
 2. **Fallback**: 30-second previews in the app, plus *Open in Music* buttons that jump to the album or track in Music.app, where your subscription plays it in full.
 
 Full-track playback needs the **MusicKit App Service** turned on for the app's bundle ID. Apple only allows this from the developer portal. It's a one-time step:
@@ -73,7 +77,20 @@ xcodebuild -project JazzDiscovery.xcodeproj -scheme JazzDiscovery -configuration
 open "build/DerivedData/Build/Products/Release/Jazz Discovery.app"
 ```
 
-Signing uses team `2M74C6J5ZY` with automatic signing (set in the project). The project uses a synchronized folder, so new files in `JazzDiscovery/` are picked up automatically.
+Signing uses team `2M74C6J5ZY` with automatic signing (set in the project). The project uses synchronized folders, so new files are picked up automatically: `Shared/` goes into both apps, `JazzDiscovery/` only into the Mac app and `iOS/JazzDiscoveryMobile/` only into the iPhone app.
+
+The iPhone app is the `JazzDiscoveryMobile` scheme:
+
+```bash
+xcodebuild -project JazzDiscovery.xcodeproj -scheme JazzDiscoveryMobile -destination 'platform=iOS Simulator,name=iPhone 18 Pro' build
+```
+
+Its signing settings are in `iOS/Signing.xcconfig` (overrides, such as another team or the app's own Last.fm API key,
+go in `iOS/Local.xcconfig`, which isn't committed). `scripts/install-iphone.sh` builds it and installs it on a
+connected development iPhone, signed with your development profile (no Apple ID in Xcode needed). Release tags upload it to TestFlight from CI (`scripts/testflight.sh`) and
+`scripts/app-store-screenshots.sh` takes the App Store screenshots; see [docs/app-store.md](docs/app-store.md). Links
+like `jazzdiscovery://artist/miles-davis`, `era/bebop`, `album/kind-of-blue`, `decade/1950`, `connections`,
+`now-playing` and `settings` open those screens (`xcrun simctl openurl booted …`).
 
 After you edit `jazz.json`, refresh the album catalog. The script only looks up albums it hasn't resolved yet:
 
@@ -121,14 +138,18 @@ To sign and notarize locally, run `SIGN_IDENTITY="Developer ID Application: …"
 ## Layout
 
 ```
-JazzDiscovery/
-  JazzDiscoveryApp.swift      app, menus, Settings scene
-  Model/                      data types, JazzLibrary (lookups/search), Router, Theme
-  Services/                   Wikipedia, ITunes, YouTube, Player (MusicKit + previews), HTTP/DiskCache
-  Views/                      Home/Timeline, Eras, Decades, Artists, Albums (Crate), Connections, players
+Shared/                       used by both apps
+  Model/                      data types, JazzLibrary (lookups/search), Theme
+  Services/                   Wikipedia, ITunes, YouTube, Player (MusicKit + previews), LastFM, HTTP/DiskCache, Platform
+  Design/                     remote images, duotone portraits, album covers, FlowLayout, the Connections graph layout
   Resources/jazz.json         curated content
   Resources/catalog.json      precomputed Apple Music album matches
-scripts/                      build-app.sh, notarize.sh, validate-data.py, build-catalog.py, make-icon.swift,
-                              import-certificate.sh / set-signing-secret.sh (CI signing)
-.github/workflows/ci.yml      build on every push; sign, notarize and release on vX.Y.Z tags
+JazzDiscovery/                the Mac app: JazzDiscoveryApp (menus, Settings), Views/, Diagnostics/ (--self-test, --snapshots)
+iOS/JazzDiscoveryMobile/      the iPhone app: tabs, pages, player, Connections map, Settings
+iOS/Signing.xcconfig          the iPhone app's team, bundle ID and optional Last.fm API account; Version.xcconfig
+scripts/                      build-app.sh, notarize.sh, validate-data.py, build-catalog.py, make-icon.swift (--ios),
+                              import-certificate.sh / set-signing-secret.sh (CI signing), testflight.sh,
+                              provisioning-profiles.swift, select-xcode.sh, app-store-screenshots.sh
+docs/                         app-store.md (iPhone release guide and listing), privacy.md, app-store/ (screenshots)
+.github/workflows/ci.yml      build both apps on every push; on vX.Y.Z tags, release the Mac app and upload the iPhone app
 ```

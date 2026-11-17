@@ -1,4 +1,3 @@
-import AppKit
 import CryptoKit
 import Foundation
 import Observation
@@ -55,9 +54,12 @@ struct LastFMAPI {
         return json
     }
 
-    func authorizeURL(token: String) -> URL {
+    /// The page where the user allows access. With a callback, Last.fm sends the browser back to it once they have,
+    /// which closes the iPhone's sign-in sheet by itself.
+    func authorizeURL(token: String, callback: URL? = nil) -> URL {
         var c = URLComponents(string: "https://www.last.fm/api/auth/")!
         c.queryItems = [URLQueryItem(name: "api_key", value: key), URLQueryItem(name: "token", value: token)]
+        if let callback { c.queryItems?.append(URLQueryItem(name: "cb", value: callback.absoluteString)) }
         return c.url!
     }
 
@@ -93,6 +95,22 @@ final class Scrobbler {
         case connected(user: String)
         case needsReauthorization(user: String)
     }
+
+    /// Presents Last.fm's authorization page. The Mac opens it in the browser; the iPhone app shows it in a sign-in
+    /// sheet (and gets the URL Last.fm redirects to back, or nil once the user closes it).
+    typealias AuthorizationPresenter = @MainActor (URL) async -> URL?
+
+    /// The app's own API account, when the build has one (LASTFM_API_KEY and LASTFM_SHARED_SECRET build settings, in
+    /// the Info.plist as LastFMAPIKey and LastFMSharedSecret). The user's own account, if they enter one, wins.
+    static let builtInAPI: LastFMAPI? = {
+        let info = Bundle.main.infoDictionary
+        let k = (info?["LastFMAPIKey"] as? String ?? "").trimmingCharacters(in: .whitespaces)
+        let s = (info?["LastFMSharedSecret"] as? String ?? "").trimmingCharacters(in: .whitespaces)
+        return k.isEmpty || s.isEmpty || k.hasPrefix("$(") ? nil : LastFMAPI(key: k, secret: s)
+    }()
+
+    /// Where Last.fm sends the browser back to after the user allows access (the iPhone app's URL scheme).
+    static let callbackURL = URL(string: "jazzdiscovery://lastfm-auth")!
 
     /// The user's Last.fm API account. Both are kept in the keychain.
     var apiKey: String {
@@ -140,6 +158,8 @@ final class Scrobbler {
     @ObservationIgnored private var playedSeconds: Double = 0
     @ObservationIgnored private var authTask: Task<Void, Never>?
     @ObservationIgnored private var authURL: URL?
+    @ObservationIgnored private var presenter: AuthorizationPresenter = Scrobbler.openInBrowser
+    @ObservationIgnored private var presenting: Task<Void, Never>?
     private var queue: [ScrobbleTrack] = [] { didSet { pendingCount = queue.count } }
 
     private enum Keys {
@@ -174,10 +194,16 @@ final class Scrobbler {
         flush()
     }
 
-    var api: LastFMAPI? {
+    var api: LastFMAPI? { ownAPI ?? Self.builtInAPI }
+
+    /// The API account the user entered, if any.
+    var ownAPI: LastFMAPI? {
         let k = apiKey.trimmingCharacters(in: .whitespaces), s = sharedSecret.trimmingCharacters(in: .whitespaces)
         return k.isEmpty || s.isEmpty ? nil : LastFMAPI(key: k, secret: s)
     }
+
+    /// Whether scrobbling works without the user creating an API account.
+    var usesBuiltInAPI: Bool { ownAPI == nil && Self.builtInAPI != nil }
 
     var profileURL: URL? {
         guard let u = userName?.addingPercentEncoding(withAllowedCharacters: .urlPathAllowed) else { return nil }
@@ -202,23 +228,31 @@ final class Scrobbler {
 
     // MARK: Connecting
 
-    /// Desktop auth: get a token, let the user approve it on last.fm in their browser, then trade it for a session.
-    func connect() {
+    /// Desktop auth: get a token, let the user approve it on last.fm, then trade it for a session. The token is polled
+    /// for, so it works whether or not the page comes back to the app.
+    func connect(presentingWith presenter: AuthorizationPresenter? = nil) {
         guard let api else { updateStatus(); return }
+        if let presenter { self.presenter = presenter }
         authTask?.cancel()
         lastError = nil
         status = .authorizing
         authTask = Task {
-            defer { if !Task.isCancelled { authTask = nil; authURL = nil; updateStatus() } }
+            defer {
+                if !Task.isCancelled {
+                    // Closes the iPhone's sign-in sheet too, once access was allowed (or the attempt failed).
+                    presenting?.cancel(); presenting = nil
+                    authTask = nil; authURL = nil; updateStatus()
+                }
+            }
             do {
                 let json = try await api.call("auth.getToken")
                 guard let token = json["token"] as? String else { throw LastFMError.badResponse }
-                let url = api.authorizeURL(token: token)
+                let url = api.authorizeURL(token: token, callback: Self.usesCallback ? Self.callbackURL : nil)
                 authURL = url
-                NSWorkspace.shared.open(url)
+                present(url)
                 // Tokens last an hour; give the user a few minutes to approve.
-                for _ in 0..<100 {
-                    try await Task.sleep(for: .seconds(3))
+                for _ in 0..<(300 / Self.pollSeconds) {
+                    try await Task.sleep(for: .seconds(Self.pollSeconds))
                     let reply: [String: Any]
                     do {
                         reply = try await api.call("auth.getSession", ["token": token])
@@ -237,6 +271,8 @@ final class Scrobbler {
                     UserDefaults.standard.set(session["name"] as? String ?? "Last.fm", forKey: Keys.user)
                     sessionKey = key
                     authTask = nil
+                    presenting?.cancel()
+                    presenting = nil
                     flush()
                     return
                 }
@@ -248,19 +284,42 @@ final class Scrobbler {
     }
 
     func reopenAuthorizationPage() {
-        if let authURL { NSWorkspace.shared.open(authURL) }
+        if let authURL { present(authURL) }
     }
 
     func cancelAuthorization() {
         authTask?.cancel()
         authTask = nil
         authURL = nil
+        presenting?.cancel()
+        presenting = nil
         updateStatus()
     }
+
+    private func present(_ url: URL) {
+        let presenter = self.presenter
+        presenting?.cancel()
+        presenting = Task { _ = await presenter(url) }
+    }
+
+    @MainActor private static func openInBrowser(_ url: URL) async -> URL? {
+        Platform.open(url)
+        return nil
+    }
+
+    #if os(iOS)
+    private static let usesCallback = true
+    private static let pollSeconds = 2
+    #else
+    private static let usesCallback = false
+    private static let pollSeconds = 3
+    #endif
 
     func disconnect() {
         authTask?.cancel()
         authTask = nil
+        presenting?.cancel()
+        presenting = nil
         authURL = nil
         sessionKey = nil
         Keychain.set(nil, for: Keys.session)

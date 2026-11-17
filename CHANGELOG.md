@@ -6,6 +6,12 @@ section for the tagged version at the top of the GitHub release notes (or **Unre
 
 ## Unreleased
 
+- **Jazz Discovery for iPhone**: every section of the Mac app, designed for the phone. Five tabs (Timeline, Eras,
+  Artists, Crate and Search), full-bleed era, artist and album pages, a player above the tab bar with a full-screen
+  Now Playing, lock screen controls and AirPlay, a Connections map you pinch, pan and tap, and Apple Music and Last.fm
+  in Settings.
+- Scrobbling counts how far a song actually got, so songs still scrobble when the app was held up in the background
+  (or the Mac slept) while they played.
 - **Last.fm scrobbling**: add your own Last.fm API key in Settings → Last.fm and connect your account. Full tracks
   you play with Apple Music are scrobbled once half the track (or 4 minutes) has played, and your profile can show
   what's playing now. Scrobbles made offline are kept and sent later. Previews aren't scrobbled.
