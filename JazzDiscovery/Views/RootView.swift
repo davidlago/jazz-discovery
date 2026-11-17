@@ -206,6 +206,12 @@ struct AppleMusicSettings: View {
                 Text("Without Apple Music access, the app plays 30-second previews and opens the full track or album in the Music app.")
                     .font(.caption).foregroundStyle(.secondary)
             }
+            Section("Sound Quality") {
+                Toggle("Switch the output to 44.1 kHz while playing", isOn: $player.matchOutputRate)
+                if let output = player.output { LabeledContent("Output") { Text(output.summary).foregroundStyle(.secondary) } }
+                Text("Apple Music gives apps on the Mac its AAC stream: 256 kbps at 44.1 kHz, even for songs in Lossless or Hi-Res Lossless (those play only in the Music app, where *Open in Music* takes you). With this on, a USB DAC or other output runs at 44.1 kHz while Jazz Discovery plays, instead of the Mac resampling to the device's rate, and goes back to its own rate when you stop or quit. Like Audio MIDI Setup, the change applies to every app using the device. AirPlay and Bluetooth keep their own rate.")
+                    .font(.caption).foregroundStyle(.secondary).fixedSize(horizontal: false, vertical: true)
+            }
             Section("Sources") {
                 Text("Text and images: Wikipedia & Wikimedia Commons (CC BY-SA). Catalog, artwork and previews: Apple Music / iTunes. Video: YouTube.")
                     .font(.caption).foregroundStyle(.secondary)

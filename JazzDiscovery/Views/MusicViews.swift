@@ -211,6 +211,10 @@ struct NowPlayingBar: View {
                         }
                     }
                     .font(.system(size: 12)).foregroundStyle(Theme.muted).lineLimit(1)
+                    if let line = soundLine {
+                        Text(line).font(.system(size: 10)).foregroundStyle(Theme.faint).lineLimit(1)
+                            .help(soundHelp)
+                    }
                 }
                 .frame(width: 260, alignment: .leading)
 
@@ -231,9 +235,14 @@ struct NowPlayingBar: View {
                         .frame(maxWidth: 180)
                 }
                 Button { player.openInMusic(np.appleMusicURL) } label: {
-                    Label("Open in Music", systemImage: "arrow.up.forward.app")
+                    if let better = player.betterAvailable {
+                        Label("\(better.label) in Music", systemImage: "arrow.up.forward.app")
+                    } else {
+                        Label("Open in Music", systemImage: "arrow.up.forward.app")
+                    }
                 }
                 .buttonStyle(.plain).foregroundStyle(Theme.muted).font(.system(size: 12))
+                .help(player.betterAvailable.map { "This song is in \($0.label) on Apple Music. The Music app plays it that way; apps on the Mac get the AAC stream." } ?? "")
                 Button(action: player.stop) { Image(systemName: "xmark") }
                     .buttonStyle(.plain).foregroundStyle(Theme.faint)
             }
@@ -242,6 +251,24 @@ struct NowPlayingBar: View {
             .overlay(alignment: .top) { Rectangle().fill(Theme.panelHi).frame(height: 1) }
             .transition(.move(edge: .bottom).combined(with: .opacity))
         }
+    }
+}
+
+private extension NowPlayingBar {
+    /// "AAC 256 kbps · Scarlett 2i2 4th Gen · 44.1 kHz".
+    var soundLine: String? {
+        let parts = [player.quality?.label, player.output?.summary].compactMap { $0 }
+        return parts.isEmpty ? nil : parts.joined(separator: " · ")
+    }
+
+    var soundHelp: String {
+        var s = player.quality == .preview
+            ? "Previews are AAC at 44.1 kHz."
+            : "Apple Music gives apps on the Mac its AAC stream (256 kbps, 44.1 kHz). Lossless and Hi-Res Lossless play only in the Music app."
+        if player.matchOutputRate, player.output?.isAirPlay == false, player.output?.isBluetooth == false {
+            s += " The output runs at 44.1 kHz while Jazz Discovery plays, so the Mac doesn't resample it (Settings ▸ Apple Music)."
+        }
+        return s
     }
 }
 

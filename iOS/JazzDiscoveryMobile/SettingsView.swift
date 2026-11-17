@@ -137,7 +137,7 @@ struct AppleMusicSection: View {
         } header: {
             Text("Listening")
         } footer: {
-            Text("With an Apple Music subscription, songs and albums play in full. Without one, you hear 30-second previews, and every song and album opens in the Music app.")
+            Text("With an Apple Music subscription, songs and albums play in full. Without one, you hear 30-second previews, and every song and album opens in the Music app.\n\nFull tracks play in the quality set in Settings ▸ Apps ▸ Music ▸ Audio Quality. Turn on Lossless, and Hi-Res Lossless if you listen through a USB DAC. The player shows the quality that's playing and the output's sample rate.")
         }
     }
 
