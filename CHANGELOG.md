@@ -6,6 +6,8 @@ section for the tagged version at the top of the GitHub release notes (or **Unre
 
 ## Unreleased
 
+## 1.0.0
+
 - **Jazz Discovery for iPhone**: every section of the Mac app, designed for the phone. Five tabs (Timeline, Eras,
   Artists, Crate and Search), full-bleed era, artist and album pages, a player above the tab bar with a full-screen
   Now Playing, lock screen controls and AirPlay, a Connections map you pinch, pan and tap, and Apple Music and Last.fm
