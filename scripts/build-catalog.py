@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 """Resolve every curated album in jazz.json to its Apple Music catalog entry
 (collection ID, artwork, URL) via the public iTunes Search API and write
-JazzDiscovery/Resources/catalog.json. The app falls back to live lookups for
+Shared/Resources/catalog.json. The app falls back to live lookups for
 anything missing. Usage: python3 -I scripts/build-catalog.py"""
 import json, os, re, sys, time, unicodedata, urllib.parse, urllib.request
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-RES = os.path.join(ROOT, "JazzDiscovery", "Resources")
+RES = os.path.join(ROOT, "Shared", "Resources")
 
 def norm(s):
     s = unicodedata.normalize("NFKD", s).encode("ascii", "ignore").decode().lower().replace("&", "and")

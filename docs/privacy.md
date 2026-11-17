@@ -1,0 +1,43 @@
+# Jazz Discovery privacy policy
+
+*Last updated: November 17, 2026*
+
+Jazz Discovery (for iPhone and Mac) doesn't collect any data about you. It has no accounts, no analytics, no ads and no
+tracking, and the developer has no server that receives anything from the app.
+
+## What the app sends, and to whom
+
+To show its pages, the app asks these public services for information. The requests contain what's being looked up
+(for example an artist's name), never anything about you:
+
+- **Wikipedia and Wikimedia Commons** (Wikimedia Foundation): artist and era summaries and photos.
+- **Apple's iTunes Search API**: album and song matches, artwork and 30-second previews.
+- **YouTube** (Google): video search results, and the videos you choose to play, in YouTube's embedded player.
+
+Like any website, these services see your device's IP address when the app connects to them. Their own privacy policies
+apply.
+
+## Apple Music
+
+If you connect Apple Music, the app uses Apple's MusicKit to play songs from your subscription. The connection is
+between your device and Apple; the app doesn't see or store your Apple Account details.
+
+## Last.fm (optional)
+
+If you connect a Last.fm account, the app sends the songs you play in full with Apple Music (artist, title, album,
+length and when you played them) to Last.fm, to add them to your Last.fm profile. You can turn this off or disconnect
+at any time in Settings ▸ Last.fm. Your Last.fm session (and the API key and secret, if you entered your own) are kept
+in your device's keychain. Last.fm's privacy policy applies to what it receives: https://www.last.fm/legal/privacy
+
+## On your device
+
+The app keeps a cache of what it has looked up, your playback and Last.fm preferences, and songs waiting to be sent to
+Last.fm while you're offline. All of it stays on your device and is removed when you delete the app.
+
+## Children
+
+The app doesn't knowingly collect information from anyone, including children.
+
+## Contact
+
+Questions about privacy: open an issue at https://github.com/davidlago/jazz-discovery/issues

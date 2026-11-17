@@ -1,0 +1,4 @@
+// The iPhone app's version, as shown on the App Store. scripts/testflight.sh sets a new CURRENT_PROJECT_VERSION (the
+// build number) for every upload, so this one only matters for builds from Xcode.
+MARKETING_VERSION = 1.0.0
+CURRENT_PROJECT_VERSION = 1

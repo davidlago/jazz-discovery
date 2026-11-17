@@ -1,0 +1,24 @@
+// Signing and build settings for the iPhone app (the JazzDiscoveryMobile target). Overrides go in Local.xcconfig next
+// to this file, which isn't committed:
+//
+//     DEVELOPMENT_TEAM = ABCDE12345
+//
+// With a free Apple ID (Personal Team), the bundle identifier must also be unique to you; override it there too:
+//
+//     APP_BUNDLE_ID = io.github.yourname.JazzDiscovery
+//
+// The iPhone app shares the Mac app's bundle ID, so the MusicKit App Service enabled on that App ID covers both.
+APP_BUNDLE_ID = io.github.davidlago.JazzDiscovery
+DEVELOPMENT_TEAM = 2M74C6J5ZY
+
+// Optional: the app's own Last.fm API account (https://www.last.fm/api/account/create), so people can connect Last.fm
+// with one tap instead of creating an API account of their own. Put them in Local.xcconfig (or the CI secrets), never
+// here: this file is public. Left empty, Settings asks for the user's own API key and secret, as on the Mac.
+//
+//     LASTFM_API_KEY = 0123456789abcdef0123456789abcdef
+//     LASTFM_SHARED_SECRET = 0123456789abcdef0123456789abcdef
+LASTFM_API_KEY =
+LASTFM_SHARED_SECRET =
+
+#include "Version.xcconfig"
+#include? "Local.xcconfig"

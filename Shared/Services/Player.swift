@@ -2,6 +2,9 @@ import SwiftUI
 import AVFoundation
 import MusicKit
 import Observation
+#if os(iOS)
+import MediaPlayer
+#endif
 
 struct NowPlaying: Equatable {
     var title: String
@@ -50,6 +53,9 @@ final class PlayerController {
     private var lastTick = ContinuousClock.now
     private var scrobbleEntryID: String?
     private var queueAlbumTitle: String?
+    /// MusicKit's playback position at the last tick, to count listening even when ticks were held up (the iPhone
+    /// running in the background, the Mac asleep).
+    private var lastPlaybackTime: Double?
 
     init() {
         avPlayer.volume = 1
@@ -66,6 +72,9 @@ final class PlayerController {
         let status = MusicAuthorization.currentStatus
         if status == .authorized { Task { await self.checkAppleMusic(requesting: false) } }
         else if status == .denied || status == .restricted { appleMusic = .denied }
+        #if os(iOS)
+        setUpSystemControls()
+        #endif
     }
 
     // MARK: Apple Music (MusicKit)
@@ -94,6 +103,7 @@ final class PlayerController {
             }
             appleMusic = .ready
         } catch {
+            print("Apple Music check failed: \(String(reflecting: error))")
             appleMusic = .unavailable(await Self.diagnose(error))
         }
     }
@@ -115,11 +125,23 @@ final class PlayerController {
     }
 
     private static func describe(_ error: Error) -> String {
-        let text = String(describing: error)
-        if text.localizedCaseInsensitiveContains("developerToken") || text.localizedCaseInsensitiveContains("token") {
-            return "MusicKit isn't enabled for this app's bundle ID yet. Enable the MusicKit App Service for io.github.davidlago.JazzDiscovery in your Apple Developer account, then relaunch."
+        if let tokenError = error as? MusicTokenRequestError {
+            switch tokenError {
+            case .developerTokenRequestFailed:
+                return "Apple wouldn't issue this app a MusicKit token. MusicKit must be enabled for io.github.davidlago.JazzDiscovery, and the app signed with a provisioning profile for that App ID."
+            case .userNotSignedIn:
+                return "Sign in to Apple Music on this device (the Music app, or Settings ▸ Apps ▸ Music), then try again."
+            case .privacyAcknowledgementRequired:
+                return "Open the Music app once and accept Apple Music's privacy notice, then try again."
+            case .permissionDenied:
+                return "Apple Music access is turned off for Jazz Discovery (Settings ▸ Apps ▸ Jazz Discovery)."
+            case .userTokenRevoked, .userTokenRequestFailed:
+                return "Apple Music couldn't confirm your account (\(String(describing: tokenError))). Open the Music app, check you're signed in, then try again."
+            default:
+                return "Apple Music token error: \(String(describing: tokenError))."
+            }
         }
-        return error.localizedDescription
+        return "\(error.localizedDescription) (\(String(describing: error)))"
     }
 
     private var shouldUseAppleMusic: Bool { preferFullTracks && appleMusic.isReady }
@@ -159,6 +181,9 @@ final class PlayerController {
         case .preview:
             if isPlaying { avPlayer.pause() } else { avPlayer.play() }
             isPlaying.toggle()
+            #if os(iOS)
+            updateNowPlayingInfo()
+            #endif
         case .appleMusic:
             let p = ApplicationMusicPlayer.shared
             if p.state.playbackStatus == .playing { p.pause(); isPlaying = false }
@@ -190,10 +215,13 @@ final class PlayerController {
         let t = max(0, min(1, fraction)) * duration
         switch mode {
         case .preview: avPlayer.seek(to: CMTime(seconds: t, preferredTimescale: 600))
-        case .appleMusic: ApplicationMusicPlayer.shared.playbackTime = t
+        case .appleMusic: ApplicationMusicPlayer.shared.playbackTime = t; lastPlaybackTime = t
         case .none: break
         }
         elapsed = t
+        #if os(iOS)
+        updateNowPlayingInfo()
+        #endif
     }
 
     func stop() {
@@ -206,6 +234,20 @@ final class PlayerController {
         isPlaying = false
         currentTrackID = nil
         elapsed = 0; duration = 0
+        #if os(iOS)
+        updateNowPlayingInfo()
+        #endif
+    }
+
+    /// What's queued after the current preview (MusicKit keeps its own queue).
+    var upNext: [CatalogTrack] {
+        guard mode == .preview, previewIndex + 1 < previewQueue.count else { return [] }
+        return Array(previewQueue[(previewIndex + 1)...])
+    }
+
+    func playUpNext(_ track: CatalogTrack) {
+        guard mode == .preview, let i = previewQueue.firstIndex(of: track) else { return }
+        startPreview(at: i)
     }
 
     func openInMusic(_ url: URL?) {
@@ -215,7 +257,13 @@ final class PlayerController {
         comps?.scheme = "music"
         let items = comps?.queryItems?.filter { $0.name != "uo" }
         comps?.queryItems = (items?.isEmpty ?? true) ? nil : items
-        NSWorkspace.shared.open(comps?.url ?? url)
+        Platform.open(comps?.url ?? url)
+    }
+
+    /// Searches the Music app, for tracks the catalog lookup couldn't match.
+    func searchInMusic(_ term: String) {
+        let q = term.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? ""
+        if let url = URL(string: "music://music.apple.com/us/search?term=\(q)") { Platform.open(url) }
     }
 
     func isCurrent(_ trackID: Int) -> Bool { currentTrackID == trackID && current != nil }
@@ -236,7 +284,7 @@ final class PlayerController {
             try await player.play()
             switchTo(.appleMusic)
             current = NowPlaying(title: start.title, artist: start.artistName,
-                                 artwork: start.artwork?.url(width: 300, height: 300) ?? tracks[index].artwork(300),
+                                 artwork: start.artwork?.url(width: 600, height: 600) ?? tracks[index].artwork(600),
                                  appleMusicURL: start.url ?? tracks[index].url, isFullTrack: true)
             duration = start.duration ?? 0
             return true
@@ -256,7 +304,7 @@ final class PlayerController {
             try await player.play()
             switchTo(.appleMusic)
             current = NowPlaying(title: item.title, artist: item.artistName,
-                                 artwork: item.artwork?.url(width: 300, height: 300) ?? album.artwork(300),
+                                 artwork: item.artwork?.url(width: 600, height: 600) ?? album.artwork(600),
                                  appleMusicURL: item.url ?? album.url, isFullTrack: true)
             return true
         } catch {
@@ -284,20 +332,31 @@ final class PlayerController {
         previewIndex = i
         let t = previewQueue[i]
         guard let url = t.preview else { return }
+        #if os(iOS)
+        activateAudioSession()
+        #endif
         avPlayer.replaceCurrentItem(with: AVPlayerItem(url: url))
         avPlayer.play()
         isPlaying = true
         elapsed = 0
         duration = 30
         currentTrackID = t.trackId
-        current = NowPlaying(title: t.name, artist: t.artistName, artwork: t.artwork(300),
+        current = NowPlaying(title: t.name, artist: t.artistName, artwork: t.artwork(600),
                              appleMusicURL: t.url, isFullTrack: false)
+        #if os(iOS)
+        updateNowPlayingInfo()
+        #endif
     }
 
     private func previewEnded() {
         guard mode == .preview else { return }
         if previewIndex + 1 < previewQueue.count { startPreview(at: previewIndex + 1) }
-        else { isPlaying = false; elapsed = duration }
+        else {
+            isPlaying = false; elapsed = duration
+            #if os(iOS)
+            updateNowPlayingInfo()
+            #endif
+        }
     }
 
     private func switchTo(_ m: Mode) {
@@ -308,9 +367,9 @@ final class PlayerController {
     }
 
     private func tick() {
-        // Real listening time since the last tick, for scrobbling (capped, in case the Mac slept).
+        // Real listening time since the last tick, for scrobbling.
         let now = ContinuousClock.now, gap = (now - lastTick).components
-        let dt = min(2, Double(gap.seconds) + Double(gap.attoseconds) / 1e18)
+        let realGap = Double(gap.seconds) + Double(gap.attoseconds) / 1e18
         lastTick = now
         switch mode {
         case .preview:
@@ -321,16 +380,22 @@ final class PlayerController {
             let p = ApplicationMusicPlayer.shared
             elapsed = p.playbackTime
             isPlaying = p.state.playbackStatus == .playing
+            var sameEntry = false
             if let entry = p.queue.currentEntry {
                 if entry.title != current?.title {
                     current?.title = entry.title
                     current?.artist = entry.subtitle ?? current?.artist ?? ""
-                    if let art = entry.artwork?.url(width: 300, height: 300) { current?.artwork = art }
+                    if let art = entry.artwork?.url(width: 600, height: 600) { current?.artwork = art }
                 }
                 if case .song(let s)? = entry.item, let d = s.duration { duration = d }
+                sameEntry = entry.id == scrobbleEntryID
                 trackForScrobbling(entry)
             }
-            if isPlaying { scrobbler.played(dt) }
+            // Count how far the song moved on, but never more than the time that passed: a seek isn't listening, and
+            // a long gap between ticks (the app was held up) still counts what played meanwhile.
+            let moved = sameEntry ? elapsed - (lastPlaybackTime ?? elapsed) : 0
+            lastPlaybackTime = elapsed
+            if isPlaying || moved > 0 { scrobbler.played(max(0, min(moved, realGap + 0.5))) }
         case .none: break
         }
     }
@@ -354,6 +419,67 @@ final class PlayerController {
 
     private func endScrobbleTracking() {
         scrobbleEntryID = nil
+        lastPlaybackTime = nil
         scrobbler.trackStopped()
     }
+
+    // MARK: Lock screen and Control Center (iPhone)
+
+    #if os(iOS)
+    /// Previews play through the app's own AVPlayer, so the app publishes them to the lock screen itself. MusicKit's
+    /// player does that for full tracks.
+    private func setUpSystemControls() {
+        let c = MPRemoteCommandCenter.shared()
+        c.playCommand.addTarget { [weak self] _ in
+            guard let self, !self.isPlaying, self.current != nil else { return .commandFailed }
+            self.togglePlayPause(); return .success
+        }
+        c.pauseCommand.addTarget { [weak self] _ in
+            guard let self, self.isPlaying else { return .commandFailed }
+            self.togglePlayPause(); return .success
+        }
+        c.togglePlayPauseCommand.addTarget { [weak self] _ in
+            guard let self, self.current != nil else { return .commandFailed }
+            self.togglePlayPause(); return .success
+        }
+        c.nextTrackCommand.addTarget { [weak self] _ in self?.next(); return .success }
+        c.previousTrackCommand.addTarget { [weak self] _ in self?.previous(); return .success }
+        c.changePlaybackPositionCommand.addTarget { [weak self] event in
+            guard let self, let e = event as? MPChangePlaybackPositionCommandEvent, self.duration > 0 else { return .commandFailed }
+            self.seek(to: e.positionTime / self.duration); return .success
+        }
+    }
+
+    private func activateAudioSession() {
+        let session = AVAudioSession.sharedInstance()
+        try? session.setCategory(.playback, mode: .default)
+        try? session.setActive(true)
+    }
+
+    private func updateNowPlayingInfo() {
+        let center = MPNowPlayingInfoCenter.default()
+        guard mode == .preview, let np = current else {
+            if mode != .appleMusic { center.nowPlayingInfo = nil }
+            return
+        }
+        var info: [String: Any] = [
+            MPMediaItemPropertyTitle: np.title,
+            MPMediaItemPropertyArtist: np.artist,
+            MPMediaItemPropertyPlaybackDuration: duration,
+            MPNowPlayingInfoPropertyElapsedPlaybackTime: elapsed,
+            MPNowPlayingInfoPropertyPlaybackRate: isPlaying ? 1.0 : 0.0,
+        ]
+        if let album = previewQueue.indices.contains(previewIndex) ? previewQueue[previewIndex].albumName : nil {
+            info[MPMediaItemPropertyAlbumTitle] = album
+        }
+        center.nowPlayingInfo = info
+        guard let art = np.artwork else { return }
+        Task {
+            guard let img = await ImageStore.shared.load(art), current?.artwork == art else { return }
+            var withArt = center.nowPlayingInfo ?? info
+            withArt[MPMediaItemPropertyArtwork] = MPMediaItemArtwork(boundsSize: img.size) { _ in img }
+            center.nowPlayingInfo = withArt
+        }
+    }
+    #endif
 }
