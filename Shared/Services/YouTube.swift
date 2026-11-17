@@ -7,6 +7,10 @@ struct YouTubeVideo: Codable, Hashable, Identifiable {
     let length: String?
     var thumbnail: URL { URL(string: "https://i.ytimg.com/vi/\(id)/hqdefault.jpg")! }
     var watchURL: URL { URL(string: "https://www.youtube.com/watch?v=\(id)")! }
+
+    /// YouTube's IDs are 11 URL-safe characters. Anything else is refused: the ID goes into URLs and the player's
+    /// HTML as it is.
+    static func isValidID(_ id: String) -> Bool { id.wholeMatch(of: /[A-Za-z0-9_-]{11}/) != nil }
 }
 
 /// Finds videos by reading YouTube's public search results page (no API key needed).
@@ -16,7 +20,9 @@ actor YouTube {
 
     func search(_ query: String, limit: Int = 8) async -> [YouTubeVideo] {
         let key = "yt-search-v1-\(query)"
-        if let c = await DiskCache.shared.get(key, as: [YouTubeVideo].self) { return Array(c.prefix(limit)) }
+        if let c = await DiskCache.shared.get(key, as: [YouTubeVideo].self) {
+            return Array(c.filter { YouTubeVideo.isValidID($0.id) }.prefix(limit))
+        }
         if let t = inflight[query] { return Array(await t.value.prefix(limit)) }
         let task = Task<[YouTubeVideo], Never> {
             guard let q = query.addingPercentEncoding(withAllowedCharacters: .alphanumerics),
@@ -53,7 +59,7 @@ actor YouTube {
         func walk(_ node: Any) {
             if let d = node as? [String: Any] {
                 if let v = d["videoRenderer"] as? [String: Any], let id = v["videoId"] as? String,
-                   let title = text(v["title"]), seen.insert(id).inserted {
+                   YouTubeVideo.isValidID(id), let title = text(v["title"]), seen.insert(id).inserted {
                     let isLive = (v["badges"] as? [[String: Any]])?.contains { "\($0)".contains("LIVE") } ?? false
                     if !isLive {
                         out.append(YouTubeVideo(id: id, title: title,

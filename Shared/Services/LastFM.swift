@@ -116,16 +116,22 @@ final class Scrobbler {
     var apiKey: String {
         didSet {
             guard apiKey != oldValue else { return }
-            Keychain.set(apiKey, for: Keys.apiKey)
+            let saved = Keychain.set(apiKey, for: Keys.apiKey)
             credentialsChanged(keyChanged: true)
+            if !saved { lastError = Self.notSaved("API key") }
         }
     }
     var sharedSecret: String {
         didSet {
             guard sharedSecret != oldValue else { return }
-            Keychain.set(sharedSecret, for: Keys.secret)
+            let saved = Keychain.set(sharedSecret, for: Keys.secret)
             credentialsChanged(keyChanged: false)
+            if !saved { lastError = Self.notSaved("shared secret") }
         }
+    }
+
+    private static func notSaved(_ what: String) -> String {
+        "The keychain wouldn't keep the \(what), so it will be gone the next time the app opens."
     }
     var scrobblingEnabled: Bool {
         didSet { UserDefaults.standard.set(scrobblingEnabled, forKey: Keys.enabled); if scrobblingEnabled { flush() } }
@@ -180,6 +186,9 @@ final class Scrobbler {
 
     init() {
         let d = UserDefaults.standard
+        #if os(iOS)
+        Keychain.tightenAccess()
+        #endif
         apiKey = Keychain.string(Keys.apiKey) ?? ""
         sharedSecret = Keychain.string(Keys.secret) ?? ""
         scrobblingEnabled = d.object(forKey: Keys.enabled) as? Bool ?? true
@@ -267,7 +276,7 @@ final class Scrobbler {
                     guard let session = reply["session"] as? [String: Any], let key = session["key"] as? String else {
                         throw LastFMError.badResponse
                     }
-                    Keychain.set(key, for: Keys.session)
+                    if !Keychain.set(key, for: Keys.session) { lastError = Self.notSaved("Last.fm connection") }
                     UserDefaults.standard.set(session["name"] as? String ?? "Last.fm", forKey: Keys.user)
                     sessionKey = key
                     authTask = nil
@@ -465,11 +474,28 @@ enum Keychain {
         return String(data: data, encoding: .utf8)
     }
 
-    static func set(_ value: String?, for account: String) {
+    /// Stores the value (nil or empty removes it). False when the keychain refused to keep it.
+    @discardableResult
+    static func set(_ value: String?, for account: String) -> Bool {
         SecItemDelete(query(account) as CFDictionary)
-        guard let value, !value.isEmpty else { return }
+        guard let value, !value.isEmpty else { return true }
         var q = query(account)
         q[kSecValueData as String] = Data(value.utf8)
-        SecItemAdd(q as CFDictionary, nil)
+        #if os(iOS)
+        q[kSecAttrAccessible as String] = accessibility
+        #endif
+        return SecItemAdd(q as CFDictionary, nil) == errSecSuccess
     }
+
+    #if os(iOS)
+    /// Readable once the iPhone has been unlocked since it started (songs scrobble while it's locked), and never
+    /// copied into a backup or onto another device.
+    private static let accessibility = kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly
+
+    /// Moves items saved before that rule (as "when unlocked", which travels with backups) over to it.
+    static func tightenAccess() {
+        let all: [String: Any] = [kSecClass as String: kSecClassGenericPassword, kSecAttrService as String: service]
+        SecItemUpdate(all as CFDictionary, [kSecAttrAccessible as String: accessibility] as CFDictionary)
+    }
+    #endif
 }

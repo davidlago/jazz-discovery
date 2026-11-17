@@ -125,35 +125,21 @@ struct VideoPlayerSheet: View {
 struct YouTubePlayer: NSViewRepresentable {
     let videoID: String
 
+    func makeCoordinator() -> YouTubeEmbedNavigation { YouTubeEmbedNavigation() }
+
     func makeNSView(context: Context) -> WKWebView {
-        let config = WKWebViewConfiguration()
-        config.mediaTypesRequiringUserActionForPlayback = []
+        let config = YouTubeEmbed.configuration()
         config.preferences.isElementFullscreenEnabled = true
         let web = WKWebView(frame: .zero, configuration: config)
+        web.navigationDelegate = context.coordinator
         web.setValue(false, forKey: "drawsBackground")
-        load(web)
+        YouTubeEmbed.load(videoID, in: web)
         return web
     }
 
     func updateNSView(_ web: WKWebView, context: Context) {}
 
-    static func dismantleNSView(_ web: WKWebView, coordinator: ()) {
+    static func dismantleNSView(_ web: WKWebView, coordinator: YouTubeEmbedNavigation) {
         web.loadHTMLString("", baseURL: nil)
-    }
-
-    private func load(_ web: WKWebView) {
-        // The embed must be served from an https origin so YouTube receives a referrer.
-        let origin = "https://jazzdiscovery.app"
-        let html = """
-        <!doctype html><html><head><meta name="viewport" content="width=device-width,initial-scale=1">
-        <meta name="referrer" content="strict-origin-when-cross-origin">
-        <style>html,body{margin:0;height:100%;background:#000;overflow:hidden}iframe{border:0;width:100%;height:100%}</style>
-        </head><body>
-        <iframe src="https://www.youtube.com/embed/\(videoID)?autoplay=1&playsinline=1&rel=0&modestbranding=1&origin=\(origin)"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>
-        </body></html>
-        """
-        web.loadHTMLString(html, baseURL: URL(string: origin))
     }
 }
