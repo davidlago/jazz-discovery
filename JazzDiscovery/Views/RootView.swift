@@ -174,6 +174,17 @@ struct SearchResultsView: View {
 struct SettingsView: View {
     @Environment(PlayerController.self) private var player
     var body: some View {
+        TabView {
+            AppleMusicSettings().tabItem { Label("Apple Music", systemImage: "applelogo") }
+            LastFMSettings(scrobbler: player.scrobbler).tabItem { Label("Last.fm", systemImage: "dot.radiowaves.left.and.right") }
+        }
+        .frame(width: 560)
+    }
+}
+
+struct AppleMusicSettings: View {
+    @Environment(PlayerController.self) private var player
+    var body: some View {
         @Bindable var player = player
         Form {
             Section("Apple Music") {
@@ -201,7 +212,6 @@ struct SettingsView: View {
             }
         }
         .formStyle(.grouped)
-        .frame(width: 520)
         .padding(.vertical, 10)
     }
 
@@ -213,6 +223,108 @@ struct SettingsView: View {
         case .denied: return "Access denied"
         case .noSubscription: return "No active subscription"
         case .unavailable: return "Unavailable"
+        }
+    }
+}
+
+struct LastFMSettings: View {
+    @Bindable var scrobbler: Scrobbler
+
+    var body: some View {
+        Form {
+            Section {
+                Text("Scrobbling sends the songs you play to your Last.fm profile. A song counts once you've listened to half of it or 4 minutes, whichever comes first (songs under 30 seconds don't count). Only full tracks played with Apple Music are scrobbled, not previews.")
+                    .font(.callout).foregroundStyle(.secondary)
+            }
+            Section {
+                TextField(text: $scrobbler.apiKey) { Text("API key").font(.body) }
+                    .font(.system(.body, design: .monospaced))
+                SecureField("Shared secret", text: $scrobbler.sharedSecret)
+                Link("Create a free API account at last.fm (the callback URL can stay empty)",
+                     destination: URL(string: "https://www.last.fm/api/account/create")!)
+                    .font(.caption)
+            } header: {
+                Text("API account")
+            } footer: {
+                Text("Last.fm needs an API key and shared secret for each app. Both are stored in your keychain on this Mac.")
+                    .font(.caption).foregroundStyle(.secondary)
+            }
+            Section("Account") {
+                accountRow
+                if let error = scrobbler.lastError {
+                    Label(error, systemImage: "exclamationmark.triangle").font(.caption).foregroundStyle(.orange)
+                }
+            }
+            Section("Scrobbling") {
+                Toggle("Scrobble songs I play", isOn: $scrobbler.scrobblingEnabled)
+                Toggle("Show what's playing now on my profile", isOn: $scrobbler.sendsNowPlaying)
+                    .disabled(!scrobbler.scrobblingEnabled)
+                LabeledContent("Waiting to send") {
+                    HStack {
+                        Text(scrobbler.pendingCount == 0 ? "Nothing" : "\(scrobbler.pendingCount) scrobble\(scrobbler.pendingCount == 1 ? "" : "s")")
+                            .foregroundStyle(.secondary)
+                        if scrobbler.isSending { ProgressView().controlSize(.small) }
+                        if scrobbler.pendingCount > 0 {
+                            Button("Send Now") { scrobbler.flush() }.disabled(scrobbler.isSending || !scrobbler.isActive)
+                        }
+                    }
+                }
+            }
+            if !scrobbler.recent.isEmpty {
+                Section("Recently scrobbled") {
+                    ForEach(scrobbler.recent) { s in
+                        HStack {
+                            Text(s.title).lineLimit(1)
+                            Text(s.artist).foregroundStyle(.secondary).lineLimit(1)
+                            Spacer()
+                            Text(s.startedAt, style: .relative)
+                                .font(.caption).foregroundStyle(.secondary).monospacedDigit()
+                        }
+                    }
+                }
+            }
+        }
+        .formStyle(.grouped)
+        .frame(height: 560)
+    }
+
+    @ViewBuilder
+    private var accountRow: some View {
+        switch scrobbler.status {
+        case .notConfigured:
+            LabeledContent("Status") { Text("Enter your API key and secret first").foregroundStyle(.secondary) }
+        case .disconnected:
+            LabeledContent("Status") {
+                HStack {
+                    Text("Not connected").foregroundStyle(.secondary)
+                    Button("Connect…") { scrobbler.connect() }
+                }
+            }
+        case .authorizing:
+            LabeledContent("Status") {
+                HStack {
+                    ProgressView().controlSize(.small)
+                    Text("Allow access in your browser…").foregroundStyle(.secondary)
+                    Button("Open Page Again") { scrobbler.reopenAuthorizationPage() }
+                    Button("Cancel") { scrobbler.cancelAuthorization() }
+                }
+            }
+        case .connected(let user):
+            LabeledContent("Status") {
+                HStack {
+                    Label("Connected as \(user)", systemImage: "checkmark.circle.fill").foregroundStyle(.green)
+                    if let url = scrobbler.profileURL { Link("Profile", destination: url) }
+                    Button("Disconnect") { scrobbler.disconnect() }
+                }
+            }
+        case .needsReauthorization(let user):
+            LabeledContent("Status") {
+                HStack {
+                    Label("\(user): connection expired", systemImage: "exclamationmark.circle.fill").foregroundStyle(.orange)
+                    Button("Reconnect…") { scrobbler.connect() }
+                    Button("Disconnect") { scrobbler.disconnect() }
+                }
+            }
         }
     }
 }

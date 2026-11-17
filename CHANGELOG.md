@@ -6,6 +6,12 @@ section for the tagged version at the top of the GitHub release notes (or **Unre
 
 ## Unreleased
 
+- **Last.fm scrobbling**: add your own Last.fm API key in Settings → Last.fm and connect your account. Full tracks
+  you play with Apple Music are scrobbled once half the track (or 4 minutes) has played, and your profile can show
+  what's playing now. Scrobbles made offline are kept and sent later. Previews aren't scrobbled.
+- Settings now has tabs: **Apple Music** and **Last.fm**.
+- **Connections**: hovering a face shows that artist again; before, the card was always Nubya Garcia's.
+
 ## 0.1.0
 
 The first release.

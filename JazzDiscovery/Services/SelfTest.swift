@@ -47,6 +47,19 @@ enum SelfTest {
         let v = await YouTube.shared.search(library.eras[3].documentaryQuery, limit: 3)
         out("YouTube '\(library.eras[3].documentaryQuery)': \(v.map(\.title))")
 
+        // Last.fm: a token request proves the API key and secret are valid.
+        let lastfm = Scrobbler()
+        if let api = lastfm.api {
+            do {
+                _ = try await api.call("auth.getToken")
+                out("Last.fm: API key OK, status: \(lastfm.status), pending scrobbles: \(lastfm.pendingCount)")
+            } catch {
+                out("Last.fm token request FAILED: \(error.localizedDescription)")
+            }
+        } else {
+            out("Last.fm: no API key (add yours in Settings → Last.fm)")
+        }
+
         out("MusicKit authorization: \(MusicAuthorization.currentStatus)")
         if MusicAuthorization.currentStatus == .authorized {
             do {

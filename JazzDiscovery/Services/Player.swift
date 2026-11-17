@@ -32,6 +32,8 @@ final class PlayerController {
     private(set) var currentTrackID: Int?
     private(set) var appleMusic: AppleMusicState = .unknown
     var lastError: String?
+    /// Scrobbles full tracks to Last.fm. Previews aren't scrobbled.
+    let scrobbler = Scrobbler()
 
     var preferFullTracks: Bool = UserDefaults.standard.object(forKey: "preferFullTracks") as? Bool ?? true {
         didSet { UserDefaults.standard.set(preferFullTracks, forKey: "preferFullTracks") }
@@ -45,6 +47,9 @@ final class PlayerController {
     private let avPlayer = AVPlayer()
     private var endObserver: Any?
     private var ticker: Task<Void, Never>?
+    private var lastTick = ContinuousClock.now
+    private var scrobbleEntryID: String?
+    private var queueAlbumTitle: String?
 
     init() {
         avPlayer.volume = 1
@@ -195,6 +200,7 @@ final class PlayerController {
         avPlayer.pause()
         avPlayer.replaceCurrentItem(with: nil)
         if mode == .appleMusic { ApplicationMusicPlayer.shared.stop() }
+        endScrobbleTracking()
         mode = .none
         current = nil
         isPlaying = false
@@ -226,6 +232,7 @@ final class PlayerController {
             guard let start = byID[ids[index]] ?? songs.first else { return false }
             let player = ApplicationMusicPlayer.shared
             player.queue = ApplicationMusicPlayer.Queue(for: songs, startingAt: start)
+            queueAlbumTitle = nil
             try await player.play()
             switchTo(.appleMusic)
             current = NowPlaying(title: start.title, artist: start.artistName,
@@ -245,6 +252,7 @@ final class PlayerController {
             guard let item = try await req.response().items.first else { return false }
             let player = ApplicationMusicPlayer.shared
             player.queue = [item]
+            queueAlbumTitle = item.title
             try await player.play()
             switchTo(.appleMusic)
             current = NowPlaying(title: item.title, artist: item.artistName,
@@ -294,12 +302,16 @@ final class PlayerController {
 
     private func switchTo(_ m: Mode) {
         if m != .preview { avPlayer.pause() }
-        if m != .appleMusic, mode == .appleMusic { ApplicationMusicPlayer.shared.stop() }
+        if m != .appleMusic, mode == .appleMusic { ApplicationMusicPlayer.shared.stop(); endScrobbleTracking() }
         mode = m
         isPlaying = true
     }
 
     private func tick() {
+        // Real listening time since the last tick, for scrobbling (capped, in case the Mac slept).
+        let now = ContinuousClock.now, gap = (now - lastTick).components
+        let dt = min(2, Double(gap.seconds) + Double(gap.attoseconds) / 1e18)
+        lastTick = now
         switch mode {
         case .preview:
             let t = avPlayer.currentTime().seconds
@@ -316,8 +328,32 @@ final class PlayerController {
                     if let art = entry.artwork?.url(width: 300, height: 300) { current?.artwork = art }
                 }
                 if case .song(let s)? = entry.item, let d = s.duration { duration = d }
+                trackForScrobbling(entry)
             }
+            if isPlaying { scrobbler.played(dt) }
         case .none: break
         }
+    }
+
+    // MARK: Last.fm
+
+    private func trackForScrobbling(_ entry: ApplicationMusicPlayer.Queue.Entry) {
+        var song: Song?
+        if case .song(let s)? = entry.item { song = s }
+        if entry.id == scrobbleEntryID {
+            scrobbler.refineCurrent(album: song?.albumTitle ?? queueAlbumTitle, duration: song?.duration)
+            return
+        }
+        scrobbleEntryID = entry.id
+        let artist = song?.artistName ?? entry.subtitle ?? current?.artist ?? ""
+        let title = song?.title ?? entry.title
+        guard !artist.isEmpty, !title.isEmpty else { scrobbler.trackStopped(); return }
+        scrobbler.trackStarted(ScrobbleTrack(artist: artist, title: title, album: song?.albumTitle ?? queueAlbumTitle,
+                                             duration: song?.duration, startedAt: .now))
+    }
+
+    private func endScrobbleTracking() {
+        scrobbleEntryID = nil
+        scrobbler.trackStopped()
     }
 }

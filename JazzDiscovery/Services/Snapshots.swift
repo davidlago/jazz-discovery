@@ -45,6 +45,21 @@ enum Snapshots {
             try? rep.representation(using: .png, properties: [:])?.write(to: URL(fileURLWithPath: "\(dir)/\(name).png"))
             print("saved \(name)"); fflush(stdout)
         }
+        // Settings → Last.fm, in its own window like the real Settings window.
+        let settings = NSHostingView(rootView: LastFMSettings(scrobbler: player.scrobbler).frame(width: 560)
+            .preferredColorScheme(.dark))
+        let sw = NSWindow(contentRect: NSRect(x: -4000, y: -4000, width: 560, height: 560),
+                          styleMask: [.titled], backing: .buffered, defer: false)
+        sw.appearance = NSAppearance(named: .darkAqua)
+        sw.contentView = settings
+        sw.orderBack(nil)
+        try? await Task.sleep(for: .seconds(1))
+        settings.layoutSubtreeIfNeeded()
+        if let rep = settings.bitmapImageRepForCachingDisplay(in: settings.bounds) {
+            settings.cacheDisplay(in: settings.bounds, to: rep)
+            try? rep.representation(using: .png, properties: [:])?.write(to: URL(fileURLWithPath: "\(dir)/11-settings-lastfm.png"))
+            print("saved 11-settings-lastfm"); fflush(stdout)
+        }
         exit(0)
     }
 }

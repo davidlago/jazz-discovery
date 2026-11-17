@@ -97,10 +97,12 @@ struct ConnectionsView: View {
                 if let p = g.positions[a.id] {
                     GraphNode(artist: a, tint: library.color(forEra: a.primaryEra),
                               state: focus == nil ? .normal : (a.id == focus ? .focus : (lit.contains(a.id) ? .lit : .dim)))
-                        .position(p)
+                        // Before .position: a positioned view fills the whole graph, so hover there would always hit
+                        // the last node drawn.
                         .onHover { h in withAnimation(.easeOut(duration: 0.12)) { hovered = h ? a.id : (hovered == a.id ? nil : hovered) } }
                         .onTapGesture(count: 2) { router.go(.artist(a.id)) }
                         .onTapGesture { withAnimation(.spring(response: 0.3)) { selected = (selected == a.id ? nil : a.id) } }
+                        .position(p)
                 }
             }
         }
