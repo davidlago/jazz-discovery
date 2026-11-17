@@ -40,6 +40,25 @@ Full-track playback needs the **MusicKit App Service** turned on for the app's b
 
 If the service isn't enabled yet, the sidebar shows "Not enabled · previews" and everything else keeps working.
 
+## Last.fm scrobbling
+
+Scrobbling uses your own Last.fm API account:
+
+1. [Create a free API account on last.fm](https://www.last.fm/api/account/create). The callback URL can stay empty.
+2. In Jazz Discovery, open Settings (⌘,) → **Last.fm** and paste the API key and shared secret. Both are stored in
+   your keychain.
+3. Click **Connect…**. Your browser opens on last.fm. Allow access there, and the app picks up the connection on its
+   own.
+
+From then on:
+
+- Full tracks played with Apple Music are scrobbled once half the track, or 4 minutes, has played (Last.fm's rule).
+  Songs under 30 seconds and 30-second previews aren't scrobbled.
+- Your profile shows what's playing now. You can turn this off in Settings.
+- A small mark in the player shows when a track has been scrobbled.
+- Scrobbles that can't be sent (offline, Last.fm down) are saved and sent later. **Send Now** in Settings retries
+  right away.
+
 ## Build & run
 
 ```bash
@@ -96,7 +115,7 @@ To sign and notarize locally, run `SIGN_IDENTITY="Developer ID Application: …"
 
 ### Diagnostics
 
-- `"Jazz Discovery.app/Contents/MacOS/Jazz Discovery" --self-test` checks every source from inside the sandboxed app and prints a report: Wikipedia pages and images, album matches, previews, YouTube results, and whether the MusicKit developer token works.
+- `"Jazz Discovery.app/Contents/MacOS/Jazz Discovery" --self-test` checks every source from inside the sandboxed app and prints a report: Wikipedia pages and images, album matches, previews, YouTube results, whether the Last.fm API key from Settings works, and whether the MusicKit developer token works.
 - `--snapshots <dir>` renders each section offscreen and saves PNGs. Use an unsandboxed build for this, because a sandboxed app can only write inside its container.
 
 ## Layout

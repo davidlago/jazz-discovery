@@ -202,6 +202,13 @@ struct NowPlayingBar: View {
                             .padding(.horizontal, 5).padding(.vertical, 2)
                             .background(Capsule().fill(np.isFullTrack ? Color(hex: "#FA2D48") : Theme.panelHi))
                             .foregroundStyle(np.isFullTrack ? .white : Theme.muted)
+                        if np.isFullTrack && player.scrobbler.isActive {
+                            let done = player.scrobbler.currentScrobbled
+                            Image(systemName: done ? "checkmark.circle.fill" : "antenna.radiowaves.left.and.right")
+                                .font(.system(size: 10, weight: .semibold))
+                                .foregroundStyle(done ? Color(hex: "#D51007") : Theme.faint)
+                                .help(done ? "Scrobbled to Last.fm" : "Scrobbles to Last.fm once half the track has played")
+                        }
                     }
                     .font(.system(size: 12)).foregroundStyle(Theme.muted).lineLimit(1)
                 }
