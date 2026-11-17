@@ -4,6 +4,8 @@ import MusicKit
 import Observation
 #if os(iOS)
 import MediaPlayer
+#else
+import AppKit
 #endif
 
 struct NowPlaying: Equatable {
@@ -35,6 +37,18 @@ final class PlayerController {
     private(set) var currentTrackID: Int?
     private(set) var appleMusic: AppleMusicState = .unknown
     var lastError: String?
+    /// What's playing now: Apple Music's variant (on the Mac always AAC, see `StreamQuality`) or a preview.
+    private(set) var quality: StreamQuality?
+    /// The best the current song has on Apple Music: Lossless, Hi-Res Lossless or neither.
+    private(set) var songBest: StreamQuality?
+    /// A better quality than what's playing that the song has on Apple Music (the Audio Quality setting on iPhone, the
+    /// Music app on the Mac). Not offered over Dolby Atmos, which is picked on purpose.
+    var betterAvailable: StreamQuality? {
+        guard let q = quality, let best = songBest, q != .dolbyAtmos, q != .hiResLossless, q != best else { return nil }
+        return best
+    }
+    /// Where the sound goes, and at what rate.
+    private(set) var output: AudioOutputInfo?
     /// Scrobbles full tracks to Last.fm. Previews aren't scrobbled.
     let scrobbler = Scrobbler()
 
@@ -42,6 +56,20 @@ final class PlayerController {
         didSet { UserDefaults.standard.set(preferFullTracks, forKey: "preferFullTracks") }
     }
     var usingAppleMusic: Bool { mode == .appleMusic }
+
+    #if os(macOS)
+    /// Switch the output device to the stream's 44.1 kHz while playing (and back afterwards), like Audio MIDI Setup.
+    var matchOutputRate: Bool = UserDefaults.standard.object(forKey: "matchOutputRate") as? Bool ?? true {
+        didSet {
+            UserDefaults.standard.set(matchOutputRate, forKey: "matchOutputRate")
+            if matchOutputRate { if mode != .none { Task { await matchOutput() } } } else { restoreOutput() }
+        }
+    }
+    @ObservationIgnored private let rateMatcher = OutputRateMatcher()
+    /// The output device the rate was last matched on; another one (a DAC plugged in) gets matched too.
+    @ObservationIgnored private var matchedOutputUID: String?
+    @ObservationIgnored private var terminateObserver: Any?
+    #endif
 
     private enum Mode { case none, preview, appleMusic }
     private var mode: Mode = .none
@@ -56,6 +84,8 @@ final class PlayerController {
     /// MusicKit's playback position at the last tick, to count listening even when ticks were held up (the iPhone
     /// running in the background, the Mac asleep).
     private var lastPlaybackTime: Double?
+    /// The queue entry whose Apple Music variants were last looked up.
+    private var variantsEntryID: String?
 
     init() {
         avPlayer.volume = 1
@@ -74,6 +104,10 @@ final class PlayerController {
         else if status == .denied || status == .restricted { appleMusic = .denied }
         #if os(iOS)
         setUpSystemControls()
+        #else
+        let matcher = rateMatcher
+        terminateObserver = NotificationCenter.default.addObserver(
+            forName: NSApplication.willTerminateNotification, object: nil, queue: .main) { _ in matcher.restoreNow() }
         #endif
     }
 
@@ -230,6 +264,10 @@ final class PlayerController {
         if mode == .appleMusic { ApplicationMusicPlayer.shared.stop() }
         endScrobbleTracking()
         mode = .none
+        quality = nil; songBest = nil; variantsEntryID = nil
+        #if os(macOS)
+        restoreOutput()
+        #endif
         current = nil
         isPlaying = false
         currentTrackID = nil
@@ -281,6 +319,9 @@ final class PlayerController {
             let player = ApplicationMusicPlayer.shared
             player.queue = ApplicationMusicPlayer.Queue(for: songs, startingAt: start)
             queueAlbumTitle = nil
+            #if os(macOS)
+            await matchOutput()
+            #endif
             try await player.play()
             switchTo(.appleMusic)
             current = NowPlaying(title: start.title, artist: start.artistName,
@@ -301,6 +342,9 @@ final class PlayerController {
             let player = ApplicationMusicPlayer.shared
             player.queue = [item]
             queueAlbumTitle = item.title
+            #if os(macOS)
+            await matchOutput()
+            #endif
             try await player.play()
             switchTo(.appleMusic)
             current = NowPlaying(title: item.title, artist: item.artistName,
@@ -338,6 +382,10 @@ final class PlayerController {
         avPlayer.replaceCurrentItem(with: AVPlayerItem(url: url))
         avPlayer.play()
         isPlaying = true
+        quality = .preview; songBest = nil
+        #if os(macOS)
+        Task { await matchOutput() }
+        #endif
         elapsed = 0
         duration = 30
         currentTrackID = t.trackId
@@ -362,6 +410,12 @@ final class PlayerController {
     private func switchTo(_ m: Mode) {
         if m != .preview { avPlayer.pause() }
         if m != .appleMusic, mode == .appleMusic { ApplicationMusicPlayer.shared.stop(); endScrobbleTracking() }
+        if m != mode { quality = nil; songBest = nil; variantsEntryID = nil }
+        #if os(iOS)
+        // MusicKit plays through the system's player, which picks the output rate (a USB DAC's included) for the
+        // song's variant. Let go of the session the previews used, so it doesn't hold the hardware at its rate.
+        if m == .appleMusic { try? AVAudioSession.sharedInstance().setActive(false) }
+        #endif
         mode = m
         isPlaying = true
     }
@@ -390,7 +444,15 @@ final class PlayerController {
                 if case .song(let s)? = entry.item, let d = s.duration { duration = d }
                 sameEntry = entry.id == scrobbleEntryID
                 trackForScrobbling(entry)
+                lookUpVariants(entry)
             }
+            #if os(iOS)
+            // Nil until the stream starts.
+            quality = p.state.audioVariant.map(StreamQuality.init)
+            #else
+            // MusicKit on the Mac reports no variant; Apple gives it the AAC stream.
+            quality = p.state.audioVariant.map(StreamQuality.init) ?? .aac
+            #endif
             // Count how far the song moved on, but never more than the time that passed: a seek isn't listening, and
             // a long gap between ticks (the app was held up) still counts what played meanwhile.
             let moved = sameEntry ? elapsed - (lastPlaybackTime ?? elapsed) : 0
@@ -398,7 +460,51 @@ final class PlayerController {
             if isPlaying || moved > 0 { scrobbler.played(max(0, min(moved, realGap + 0.5))) }
         case .none: break
         }
+        if mode != .none { refreshOutput() }
     }
+
+    // MARK: Audio quality and output
+
+    /// Looks up which variants the entry's song has on Apple Music, once per entry.
+    private func lookUpVariants(_ entry: ApplicationMusicPlayer.Queue.Entry) {
+        guard entry.id != variantsEntryID else { return }
+        variantsEntryID = entry.id
+        songBest = nil
+        guard case .song(let song)? = entry.item else { return }
+        Task {
+            var variants = song.audioVariants
+            if variants == nil { variants = try? await song.with([.audioVariants]).audioVariants }
+            guard variantsEntryID == entry.id else { return }
+            songBest = StreamQuality.best(of: variants ?? [])
+        }
+    }
+
+    private func refreshOutput() {
+        #if os(iOS)
+        let now = AudioOutputInfo.current()
+        #else
+        let now = OutputRateMatcher.current()
+        if isPlaying, OutputRateMatcher.defaultOutputUID() != matchedOutputUID { Task { await matchOutput() } }
+        #endif
+        if now != output { output = now }
+    }
+
+    #if os(macOS)
+    /// Switches the default output to the stream's rate, before playing and when the default output changes. Apple
+    /// Music (as the Mac's MusicKit gets it) and previews are both AAC at 44.1 kHz.
+    private func matchOutput() async {
+        guard matchOutputRate, quality?.isLossless != true,
+              let uid = OutputRateMatcher.defaultOutputUID(), uid != matchedOutputUID else { return }
+        matchedOutputUID = uid
+        await rateMatcher.match(rate: 44_100)
+        refreshOutput()
+    }
+
+    private func restoreOutput() {
+        matchedOutputUID = nil
+        rateMatcher.restore()
+    }
+    #endif
 
     // MARK: Last.fm
 

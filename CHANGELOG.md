@@ -14,6 +14,14 @@ section for the tagged version at the top of the GitHub release notes (or **Unre
   music by themselves.
 - iPhone: your Last.fm connection stays on this iPhone (it isn't copied into backups or onto a new phone), and Settings
   says so if the keychain couldn't save it.
+- **Sound quality**: the player shows the quality that's playing (Hi-Res Lossless, Lossless, Dolby Atmos or AAC) and
+  where it's going ("Scarlett 2i2 · 96 kHz"), and says when a song comes in a better quality on Apple Music.
+- iPhone: full tracks play in the quality set in Settings ▸ Apps ▸ Music ▸ Audio Quality, Hi-Res Lossless included,
+  and the app lets go of the audio session its previews used, so it doesn't hold a USB DAC at that rate.
+- Mac: Apple Music gives apps on the Mac only its AAC stream (256 kbps, 44.1 kHz), so the output (a USB DAC, say)
+  switches to 44.1 kHz while Jazz Discovery plays and goes back to its own rate when you stop or quit, instead of
+  the Mac resampling the music. You can turn this off in Settings ▸ Apple Music. For Lossless and Hi-Res Lossless,
+  the player's *Open in Music* button names the better quality and takes you to the Music app.
 
 ## 1.0.0
 

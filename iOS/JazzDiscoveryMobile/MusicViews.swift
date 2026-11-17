@@ -401,6 +401,36 @@ private struct SourceLine: View {
     @Environment(PlayerController.self) private var player
 
     var body: some View {
+        VStack(alignment: .leading, spacing: 6) {
+            badges
+            if np.isFullTrack, let line = soundLine {
+                Label(line, systemImage: player.quality?.isLossless == true ? "waveform" : "hifispeaker")
+                    .font(.caption).foregroundStyle(Theme.muted).lineLimit(1)
+            }
+            if np.isFullTrack, let hint {
+                Text(hint).font(.caption2).foregroundStyle(Theme.faint).fixedSize(horizontal: false, vertical: true)
+            }
+        }
+        .accessibilityElement(children: .combine)
+    }
+
+    /// "Hi-Res Lossless · Scarlett 2i2 4th Gen · 96 kHz".
+    private var soundLine: String? {
+        let parts = [player.quality?.label, player.output?.summary].compactMap { $0 }
+        return parts.isEmpty ? nil : parts.joined(separator: " · ")
+    }
+
+    private var hint: String? {
+        if let better = player.betterAvailable {
+            return "This song is in \(better.label) on Apple Music. Turn it on in Settings ▸ Apps ▸ Music ▸ Audio Quality."
+        }
+        if player.quality?.isLossless == true, player.output?.isBluetooth == true {
+            return "Bluetooth carries Apple Music as AAC. For lossless, use wired headphones or a USB DAC."
+        }
+        return nil
+    }
+
+    private var badges: some View {
         HStack(spacing: 10) {
             Text(np.isFullTrack ? "APPLE MUSIC" : "PREVIEW")
                 .font(.system(size: 10, weight: .heavy)).tracking(1)
@@ -420,7 +450,6 @@ private struct SourceLine: View {
             }
             Spacer(minLength: 0)
         }
-        .accessibilityElement(children: .combine)
     }
 }
 
