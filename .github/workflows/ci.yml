@@ -1,0 +1,130 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+    tags: ["v*"]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: ${{ !startsWith(github.ref, 'refs/tags/') }}
+
+jobs:
+  build:
+    name: Build
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Select the newest stable Xcode
+        run: |
+          xcode="$(ls -d /Applications/Xcode_*.app | grep -iv beta | sort -V | tail -1)"
+          sudo xcode-select -s "$xcode"
+          xcodebuild -version
+
+      - name: Check the jazz data
+        run: python3 -I scripts/validate-data.py
+
+      - name: Version
+        id: version
+        run: |
+          if [[ "$GITHUB_REF" == refs/tags/v* ]]; then
+            echo "version=${GITHUB_REF_NAME#v}" >> "$GITHUB_OUTPUT"
+          else
+            echo "version=0.0.0-dev+${GITHUB_SHA::7}" >> "$GITHUB_OUTPUT"
+          fi
+
+      # Releases are signed with the Developer ID certificate and notarized; other builds are signed ad hoc.
+      - name: Import the Developer ID certificate
+        if: startsWith(github.ref, 'refs/tags/v')
+        env:
+          CERTIFICATE_P12: ${{ secrets.DEVELOPER_ID_CERTIFICATE_P12 }}
+          CERTIFICATE_PASSWORD: ${{ secrets.DEVELOPER_ID_CERTIFICATE_PASSWORD }}
+        run: |
+          identity="$(scripts/import-certificate.sh "Developer ID Application")"
+          echo "SIGN_IDENTITY=$identity" >> "$GITHUB_ENV"
+
+      - name: Build app (Apple Silicon + Intel)
+        env:
+          VERSION: ${{ steps.version.outputs.version }}
+          BUILD: ${{ github.run_number }}
+        run: scripts/build-app.sh
+
+      - name: Notarize
+        if: startsWith(github.ref, 'refs/tags/v')
+        env:
+          NOTARY_API_KEY: ${{ secrets.NOTARY_API_KEY }}
+          NOTARY_KEY_ID: ${{ secrets.NOTARY_API_KEY_ID }}
+          NOTARY_ISSUER: ${{ secrets.NOTARY_API_ISSUER_ID }}
+        run: |
+          export NOTARY_KEY="$RUNNER_TEMP/notary.p8"
+          printf '%s\n' "$NOTARY_API_KEY" > "$NOTARY_KEY"
+          scripts/notarize.sh
+          rm -f "$NOTARY_KEY"
+
+      - name: Remove the signing keychain
+        if: always() && startsWith(github.ref, 'refs/tags/v')
+        run: security delete-keychain "$RUNNER_TEMP/signing.keychain-db" 2>/dev/null || true
+
+      - name: Package
+        id: package
+        run: |
+          name="JazzDiscovery-${{ steps.version.outputs.version }}-macOS.zip"
+          ditto -c -k --keepParent "build/Jazz Discovery.app" "$name"
+          shasum -a 256 "$name" > "$name.sha256"
+          cat "$name.sha256"
+          echo "name=$name" >> "$GITHUB_OUTPUT"
+
+      - uses: actions/upload-artifact@v7
+        with:
+          name: JazzDiscovery-macOS
+          path: |
+            ${{ steps.package.outputs.name }}
+            ${{ steps.package.outputs.name }}.sha256
+          if-no-files-found: error
+
+  release:
+    name: Publish release
+    needs: build
+    if: startsWith(github.ref, 'refs/tags/v')
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          sparse-checkout: CHANGELOG.md
+          sparse-checkout-cone-mode: false
+
+      - uses: actions/download-artifact@v8
+        with:
+          name: JazzDiscovery-macOS
+
+      - name: Create GitHub release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          # What's new: this version's section of CHANGELOG.md, or Unreleased if it wasn't renamed before tagging.
+          version="${GITHUB_REF_NAME#v}"
+          section() { awk -v heading="## $1" '$0 == heading { on = 1; next } on && /^## / { exit } on { print }' CHANGELOG.md; }
+          changes="$(section "$version")"
+          [ -n "$(printf '%s' "$changes" | tr -d '[:space:]')" ] || changes="$(section Unreleased)"
+          {
+            if [ -n "$(printf '%s' "$changes" | tr -d '[:space:]')" ]; then
+              printf '### What'"'"'s new\n%s\n\n' "$changes"
+            fi
+            cat <<'NOTES'
+          ### Install
+
+          Download `JazzDiscovery-*-macOS.zip` below, unzip it and move **Jazz Discovery.app** to Applications (Apple Silicon and Intel, macOS 15+). It's signed and notarized by Apple.
+
+          Full tracks play through your Apple Music subscription (click **Apple Music** at the bottom of the sidebar to connect); without one you get 30-second previews. See the [README](https://github.com/davidlago/jazz-discovery#readme) for details.
+          NOTES
+          } > notes.md
+          gh release create "$GITHUB_REF_NAME" JazzDiscovery-*-macOS.zip JazzDiscovery-*-macOS.zip.sha256 \
+            --repo "$GITHUB_REPOSITORY" --title "Jazz Discovery ${GITHUB_REF_NAME#v}" --notes-file notes.md --generate-notes

@@ -1,0 +1,5134 @@
+{
+  "eras": [
+    {
+      "id": "roots",
+      "name": "Roots: Ragtime & Blues",
+      "start": 1895,
+      "end": 1917,
+      "color": "#A86A4B",
+      "tagline": "Ragtime, the blues and the brass bands that came first",
+      "summary": "Before anyone called it jazz, America was already humming its ingredients. Ragtime pianists syncopated their right hands against a left hand that marched like a brass band, and Scott Joplin gave the style a composer's poise, publishing rags with the care of a European art-song writer. Across the South, the blues carried a different truth: bent notes, call-and-response and a twelve-bar shape sturdy enough to hold any story.\n\nNew Orleans was where those currents collided. Brass bands played funerals and parades, Creole musicians brought conservatory polish, and cornetists like Buddy Bolden loosened the rhythm until it began to rock. The city's dance halls and street corners became a laboratory for collective improvisation, years before a single jazz note was recorded.\n\nWhat survives of this era reaches us through sheet music, piano rolls and the first blues records cut by the women who had sung this music in tent shows for years. Listen past the crackle and you will hear the DNA of everything that follows: the blue notes, the rhythmic push and pull, and the habit of turning a fixed melody into a personal statement.",
+      "characteristics": [
+        "Syncopated ragtime piano",
+        "Twelve-bar blues form",
+        "Blue notes and bent pitches",
+        "Brass-band marches",
+        "Call and response"
+      ],
+      "places": [
+        "New Orleans",
+        "Sedalia, Missouri",
+        "St. Louis",
+        "The Mississippi Delta"
+      ],
+      "wikipedia": "Ragtime",
+      "keyArtists": [
+        "scott-joplin",
+        "jelly-roll-morton",
+        "bessie-smith",
+        "ma-rainey",
+        "james-p-johnson"
+      ],
+      "keyAlbums": [
+        "essential-bessie-smith",
+        "ma-rainey",
+        "snowy-morning-blues"
+      ],
+      "essentialTracks": [
+        {
+          "title": "Maple Leaf Rag",
+          "artist": "Scott Joplin",
+          "year": 1916
+        },
+        {
+          "title": "Crazy Blues",
+          "artist": "Mamie Smith",
+          "year": 1920
+        },
+        {
+          "title": "Carolina Shout",
+          "artist": "James P. Johnson",
+          "year": 1921
+        },
+        {
+          "title": "Downhearted Blues",
+          "artist": "Bessie Smith",
+          "year": 1923
+        },
+        {
+          "title": "King Porter Stomp",
+          "artist": "Jelly Roll Morton",
+          "year": 1923
+        },
+        {
+          "title": "See See Rider Blues",
+          "artist": "Ma Rainey",
+          "year": 1924
+        }
+      ],
+      "documentaryQuery": "ragtime and blues origins of jazz documentary"
+    },
+    {
+      "id": "new-orleans",
+      "name": "New Orleans & the Jazz Age",
+      "start": 1913,
+      "end": 1932,
+      "color": "#E8833A",
+      "tagline": "Hot jazz, Satchmo and the Roaring Twenties",
+      "summary": "In 1917 a white New Orleans group, the Original Dixieland Jass Band, cut the first jazz record in New York, and the music went national almost overnight. The deeper story belonged to the Black and Creole players who had built the style: King Oliver, Jelly Roll Morton, Sidney Bechet and, above all, a young cornetist named Louis Armstrong. As the Great Migration pulled musicians north, Chicago's South Side became jazz's second home.\n\nThe early bands worked in polyphony, with the cornet leading, the clarinet weaving filigree around it and the trombone growling underneath. Armstrong's Hot Five and Hot Seven records blew that model open. His solos had the architecture of a great speech, and his phrasing taught the whole world what swing could feel like. Bix Beiderbecke offered a cooler, bell-like lyricism, while Harlem stride pianists turned ragtime into a two-fisted athletic display.\n\nThis was the Jazz Age of speakeasies, radio, dance crazes and the first star soloists. By the time the stock market crashed, jazz had grown from a regional folk music into the soundtrack of a modern nation.",
+      "characteristics": [
+        "Collective improvisation",
+        "Two-beat dance rhythm",
+        "Cornet-led front lines",
+        "The rise of the star soloist",
+        "Harlem stride piano"
+      ],
+      "places": [
+        "Storyville, New Orleans",
+        "Chicago's South Side",
+        "Harlem, New York",
+        "Lincoln Gardens, Chicago"
+      ],
+      "wikipedia": "Jazz_Age",
+      "keyArtists": [
+        "louis-armstrong",
+        "king-oliver",
+        "jelly-roll-morton",
+        "sidney-bechet",
+        "bix-beiderbecke",
+        "james-p-johnson"
+      ],
+      "keyAlbums": [
+        "hot-five-hot-seven",
+        "birth-of-the-hot",
+        "bix-singin-the-blues"
+      ],
+      "essentialTracks": [
+        {
+          "title": "Livery Stable Blues",
+          "artist": "Original Dixieland Jass Band",
+          "year": 1917
+        },
+        {
+          "title": "Dipper Mouth Blues",
+          "artist": "King Oliver's Creole Jazz Band",
+          "year": 1923
+        },
+        {
+          "title": "Black Bottom Stomp",
+          "artist": "Jelly Roll Morton's Red Hot Peppers",
+          "year": 1926
+        },
+        {
+          "title": "Potato Head Blues",
+          "artist": "Louis Armstrong",
+          "year": 1927
+        },
+        {
+          "title": "Singin' the Blues",
+          "artist": "Frankie Trumbauer & Bix Beiderbecke",
+          "year": 1927
+        },
+        {
+          "title": "West End Blues",
+          "artist": "Louis Armstrong",
+          "year": 1928
+        }
+      ],
+      "documentaryQuery": "Louis Armstrong New Orleans jazz 1920s documentary"
+    },
+    {
+      "id": "swing",
+      "name": "The Swing Era",
+      "start": 1930,
+      "end": 1946,
+      "color": "#EBC03F",
+      "tagline": "Big bands, ballrooms and America's popular music",
+      "summary": "For roughly a decade and a half, jazz was simply America's pop music. Big bands of fourteen or more players filled ballrooms from the Savoy in Harlem to the Palomar in Los Angeles, and the rhythm smoothed into a buoyant four-to-the-bar pulse built for dancing. Arrangers became as important as soloists, writing call-and-response riffs between brass and reed sections that could lift a room off its feet.\n\nDuke Ellington turned the orchestra into a composer's palette, writing for the specific voices of his players. Count Basie's Kansas City band proved that less could be more, riding a feather-light rhythm section and blues riffs. Benny Goodman was crowned the King of Swing and integrated his small groups when that was a radical act. Out front, tenor giants Coleman Hawkins and Lester Young, and singers like Billie Holiday and Ella Fitzgerald, defined what it meant to interpret a song.\n\nSwing was global, too: in Paris, Django Reinhardt fused Romani guitar with Armstrong's lessons. Wartime travel limits, a long recording ban and changing tastes eventually thinned the big bands, but their language of riffs, ballads and blues remains the common tongue of jazz.",
+      "characteristics": [
+        "Four-to-the-bar swing feel",
+        "Big-band section writing",
+        "Riff-based arrangements",
+        "Star soloists and vocalists",
+        "Music for dancing"
+      ],
+      "places": [
+        "Savoy Ballroom, Harlem",
+        "Cotton Club, New York",
+        "Kansas City",
+        "Carnegie Hall"
+      ],
+      "wikipedia": "Swing_music",
+      "keyArtists": [
+        "duke-ellington",
+        "count-basie",
+        "benny-goodman",
+        "coleman-hawkins",
+        "lester-young",
+        "billie-holiday",
+        "ella-fitzgerald",
+        "django-reinhardt"
+      ],
+      "keyAlbums": [
+        "blanton-webster-band",
+        "basie-complete-decca",
+        "carnegie-hall-1938",
+        "ella-cole-porter",
+        "billie-commodore"
+      ],
+      "essentialTracks": [
+        {
+          "title": "One O'Clock Jump",
+          "artist": "Count Basie",
+          "year": 1937
+        },
+        {
+          "title": "Sing, Sing, Sing",
+          "artist": "Benny Goodman",
+          "year": 1937
+        },
+        {
+          "title": "Minor Swing",
+          "artist": "Django Reinhardt",
+          "year": 1937
+        },
+        {
+          "title": "A-Tisket, A-Tasket",
+          "artist": "Ella Fitzgerald",
+          "year": 1938
+        },
+        {
+          "title": "Strange Fruit",
+          "artist": "Billie Holiday",
+          "year": 1939
+        },
+        {
+          "title": "Body and Soul",
+          "artist": "Coleman Hawkins",
+          "year": 1939
+        },
+        {
+          "title": "Lester Leaps In",
+          "artist": "Count Basie's Kansas City Seven",
+          "year": 1939
+        },
+        {
+          "title": "Take the \"A\" Train",
+          "artist": "Duke Ellington",
+          "year": 1941
+        }
+      ],
+      "documentaryQuery": "swing era big band history documentary"
+    },
+    {
+      "id": "bebop",
+      "name": "Bebop",
+      "start": 1942,
+      "end": 1956,
+      "color": "#E2373F",
+      "tagline": "Speed, wit and the birth of modern jazz",
+      "summary": "Bebop was born after hours. In the early 1940s, young musicians finishing their big-band gigs headed uptown to Minton's Playhouse and Monroe's Uptown House to jam, testing each other with blistering tempos and harmonies casual sitters-in couldn't follow. Charlie Parker and Dizzy Gillespie emerged as the movement's twin engines: Parker with a torrent of melodic invention rooted deep in the blues, Gillespie with dazzling technique and the theoretical mind to explain it.\n\nThe new music was built for listening rather than dancing. Bands shrank to quintets, and melodies became jagged, quick-witted lines often written over the chords of familiar standards. Drummers like Kenny Clarke and Max Roach moved the beat to the ride cymbal and used the bass drum for accents, while pianists reinvented their role: Bud Powell with horn-like right-hand lines, Thelonious Monk with angular, deliberately placed dissonance.\n\n52nd Street's tiny clubs became the scene's showroom, and the bop vocabulary of flatted fifths, double-time runs and altered chords became the grammar every serious jazz musician had to learn. Bebop recast the jazz player as an artist rather than an entertainer, and nearly every style that followed is either an extension of it or a reaction against it.",
+      "characteristics": [
+        "Fast tempos",
+        "Extended and altered harmonies",
+        "Small combos",
+        "Ride-cymbal drumming",
+        "Angular, virtuosic melodies"
+      ],
+      "places": [
+        "52nd Street, New York",
+        "Minton's Playhouse, Harlem",
+        "Birdland, New York",
+        "Monroe's Uptown House"
+      ],
+      "wikipedia": "Bebop",
+      "keyArtists": [
+        "charlie-parker",
+        "dizzy-gillespie",
+        "thelonious-monk",
+        "bud-powell",
+        "max-roach",
+        "sarah-vaughan"
+      ],
+      "keyAlbums": [
+        "savoy-dial-master-takes",
+        "jazz-at-massey-hall",
+        "genius-of-modern-music-1",
+        "amazing-bud-powell-1",
+        "groovin-high"
+      ],
+      "essentialTracks": [
+        {
+          "title": "Groovin' High",
+          "artist": "Dizzy Gillespie",
+          "year": 1945
+        },
+        {
+          "title": "Salt Peanuts",
+          "artist": "Dizzy Gillespie",
+          "year": 1945
+        },
+        {
+          "title": "Ko-Ko",
+          "artist": "Charlie Parker",
+          "year": 1945
+        },
+        {
+          "title": "Ornithology",
+          "artist": "Charlie Parker",
+          "year": 1946
+        },
+        {
+          "title": "'Round Midnight",
+          "artist": "Thelonious Monk",
+          "year": 1947
+        },
+        {
+          "title": "Un Poco Loco",
+          "artist": "Bud Powell",
+          "year": 1951
+        },
+        {
+          "title": "Lullaby of Birdland",
+          "artist": "Sarah Vaughan",
+          "year": 1954
+        }
+      ],
+      "documentaryQuery": "bebop Charlie Parker Dizzy Gillespie documentary"
+    },
+    {
+      "id": "cool",
+      "name": "Cool & West Coast",
+      "start": 1949,
+      "end": 1960,
+      "color": "#8EC5E8",
+      "tagline": "Lower temperatures, lighter tones, West Coast sun",
+      "summary": "If bebop was a sprint, cool jazz was a long exhale. It began with the nonet Miles Davis led in 1949 and 1950, arranged by Gil Evans, Gerry Mulligan, John Lewis and others. Those players explored soft dynamics, unusual colors like French horn and tuba, and the airy, vibrato-light tone Lester Young had pioneered. The results, later collected as Birth of the Cool, sounded closer to chamber music than to a jam session.\n\nThe approach found a natural home in California, where Mulligan's pianoless quartet with Chet Baker became a sensation in 1952. West Coast jazz favored counterpoint, crisp arrangements and a relaxed sense of space, much of it recorded for labels like Pacific Jazz and Contemporary. Back east, the Modern Jazz Quartet blended bop with Bach-like fugues, and Lennie Tristano's circle chased long, linear improvisations.\n\nCool reached the mainstream through Dave Brubeck, whose quartet with alto saxophonist Paul Desmond toured college campuses and, with Time Out, made a hit out of odd time signatures. The style is sometimes dismissed as polite, but its ideas of orchestral color, restraint and structure shaped everything from modal jazz to the ECM aesthetic.",
+      "characteristics": [
+        "Soft, vibrato-light tone",
+        "Relaxed tempos",
+        "Arranged counterpoint",
+        "Unusual instrumentation",
+        "Odd meters and classical influence"
+      ],
+      "places": [
+        "Los Angeles",
+        "The Haig, Los Angeles",
+        "Lighthouse Café, Hermosa Beach",
+        "New York"
+      ],
+      "wikipedia": "Cool_jazz",
+      "keyArtists": [
+        "miles-davis",
+        "gil-evans",
+        "gerry-mulligan",
+        "chet-baker",
+        "dave-brubeck",
+        "paul-desmond",
+        "stan-getz"
+      ],
+      "keyAlbums": [
+        "birth-of-the-cool",
+        "chet-baker-sings",
+        "time-out",
+        "miles-ahead",
+        "out-of-the-cool"
+      ],
+      "essentialTracks": [
+        {
+          "title": "Boplicity",
+          "artist": "Miles Davis",
+          "year": 1949
+        },
+        {
+          "title": "Bernie's Tune",
+          "artist": "Gerry Mulligan",
+          "year": 1952
+        },
+        {
+          "title": "My Funny Valentine",
+          "artist": "Chet Baker",
+          "year": 1954
+        },
+        {
+          "title": "Django",
+          "artist": "The Modern Jazz Quartet",
+          "year": 1956
+        },
+        {
+          "title": "Summertime",
+          "artist": "Miles Davis",
+          "year": 1959
+        },
+        {
+          "title": "Take Five",
+          "artist": "The Dave Brubeck Quartet",
+          "year": 1959
+        }
+      ],
+      "documentaryQuery": "cool jazz West Coast jazz documentary"
+    },
+    {
+      "id": "hard-bop",
+      "name": "Hard Bop",
+      "start": 1953,
+      "end": 1967,
+      "color": "#2D66D6",
+      "tagline": "Bebop gets the blues, gospel and a heavier groove",
+      "summary": "By the mid-1950s, a wave of mostly East Coast musicians wanted to reconnect bebop's sophistication with the church and the juke joint. Hard bop kept the quintet format and the dazzling technique but leaned on the blues, gospel harmony and a heavier, driving rhythm. Horace Silver and Art Blakey, co-founders of the original Jazz Messengers, set the template: catchy, riff-based heads, preaching solos and drums that pushed the band like a locomotive.\n\nBlue Note Records, with Rudy Van Gelder engineering first in Hackensack and later in Englewood Cliffs, became the sound of the movement, while Prestige and Riverside documented a torrent of sessions. Clifford Brown and Max Roach co-led one of the era's great quintets until Brown's death in a 1956 car crash. Sonny Rollins made thematic improvisation an art, Cannonball Adderley brought joyous alto fire, and Charles Mingus wrote turbulent, gospel-drenched compositions that strained against form.\n\nThe Jazz Messengers in particular became a finishing school, cycling through Lee Morgan, Wayne Shorter, Freddie Hubbard and, decades later, Wynton Marsalis. Hard bop is jazz at its most immediately satisfying: tough, soulful and swinging, and its tunes remain the core repertoire of jam sessions everywhere.",
+      "characteristics": [
+        "Blues and gospel roots",
+        "Driving rhythm sections",
+        "Catchy, riff-based themes",
+        "Trumpet-and-tenor quintets",
+        "The Blue Note studio sound"
+      ],
+      "places": [
+        "New York",
+        "Van Gelder Studio, New Jersey",
+        "Detroit",
+        "Philadelphia"
+      ],
+      "wikipedia": "Hard_bop",
+      "keyArtists": [
+        "art-blakey",
+        "horace-silver",
+        "clifford-brown",
+        "sonny-rollins",
+        "cannonball-adderley",
+        "lee-morgan",
+        "dexter-gordon",
+        "charles-mingus"
+      ],
+      "keyAlbums": [
+        "moanin",
+        "saxophone-colossus",
+        "study-in-brown",
+        "somethin-else",
+        "mingus-ah-um",
+        "blue-train"
+      ],
+      "essentialTracks": [
+        {
+          "title": "Joy Spring",
+          "artist": "Clifford Brown & Max Roach",
+          "year": 1955
+        },
+        {
+          "title": "St. Thomas",
+          "artist": "Sonny Rollins",
+          "year": 1957
+        },
+        {
+          "title": "Blue Train",
+          "artist": "John Coltrane",
+          "year": 1958
+        },
+        {
+          "title": "Autumn Leaves",
+          "artist": "Cannonball Adderley",
+          "year": 1958
+        },
+        {
+          "title": "Moanin'",
+          "artist": "Art Blakey & The Jazz Messengers",
+          "year": 1959
+        },
+        {
+          "title": "Better Git It in Your Soul",
+          "artist": "Charles Mingus",
+          "year": 1959
+        },
+        {
+          "title": "Cheese Cake",
+          "artist": "Dexter Gordon",
+          "year": 1962
+        },
+        {
+          "title": "Song for My Father",
+          "artist": "Horace Silver",
+          "year": 1965
+        }
+      ],
+      "documentaryQuery": "hard bop Blue Note Records documentary"
+    },
+    {
+      "id": "latin",
+      "name": "Latin Jazz & Bossa Nova",
+      "start": 1947,
+      "end": 1970,
+      "color": "#F0679E",
+      "tagline": "Clave, congas and the quiet storm of bossa nova",
+      "summary": "Latin rhythms had flavored jazz since Jelly Roll Morton spoke of the 'Spanish tinge,' but the real fusion arrived in 1940s New York. Machito's Afro-Cubans, with musical director Mario Bauzá, paired a Cuban rhythm section with big-band jazz voicings, and in 1947 Dizzy Gillespie hired the Cuban percussionist Chano Pozo, whose congas on 'Manteca' helped give birth to Cubop. Through the 1950s the mambo craze turned the Palladium Ballroom into a temple, ruled by Machito, Tito Puente and Tito Rodríguez.\n\nA gentler revolution came from Brazil. At the end of the 1950s, João Gilberto's hushed voice and syncopated guitar, setting songs by Antônio Carlos Jobim and Vinicius de Moraes, launched bossa nova: samba slowed down, harmonically rich and intimate. American musicians took notice. Stan Getz and Charlie Byrd's Jazz Samba became a hit in 1962, and Getz/Gilberto, with Astrud Gilberto singing 'The Girl from Ipanema,' won the Grammy for Album of the Year.\n\nMeanwhile percussionists like Mongo Santamaría carried Afro-Cuban grooves into soul and boogaloo, and Cuba itself would later produce virtuosos like Chucho Valdés. Latin jazz proved that jazz's rhythmic foundation could be rebuilt in many languages.",
+      "characteristics": [
+        "Clave-based rhythm",
+        "Congas, bongos and timbales",
+        "Mambo big bands",
+        "Bossa nova's hushed vocals and guitar",
+        "Rich, chromatic harmony"
+      ],
+      "places": [
+        "Palladium Ballroom, New York",
+        "Havana",
+        "Rio de Janeiro",
+        "Spanish Harlem"
+      ],
+      "wikipedia": "Latin_jazz",
+      "keyArtists": [
+        "machito",
+        "dizzy-gillespie",
+        "tito-puente",
+        "mongo-santamaria",
+        "joao-gilberto",
+        "antonio-carlos-jobim",
+        "stan-getz",
+        "chucho-valdes"
+      ],
+      "keyAlbums": [
+        "getz-gilberto",
+        "chega-de-saudade",
+        "dance-mania",
+        "kenya",
+        "afro",
+        "wave"
+      ],
+      "essentialTracks": [
+        {
+          "title": "Manteca",
+          "artist": "Dizzy Gillespie",
+          "year": 1947
+        },
+        {
+          "title": "Chega de Saudade",
+          "artist": "João Gilberto",
+          "year": 1958
+        },
+        {
+          "title": "Afro Blue",
+          "artist": "Mongo Santamaría",
+          "year": 1959
+        },
+        {
+          "title": "Desafinado",
+          "artist": "Stan Getz & Charlie Byrd",
+          "year": 1962
+        },
+        {
+          "title": "Oye Como Va",
+          "artist": "Tito Puente",
+          "year": 1963
+        },
+        {
+          "title": "Watermelon Man",
+          "artist": "Mongo Santamaría",
+          "year": 1963
+        },
+        {
+          "title": "The Girl from Ipanema",
+          "artist": "Stan Getz & João Gilberto",
+          "year": 1964
+        },
+        {
+          "title": "Wave",
+          "artist": "Antônio Carlos Jobim",
+          "year": 1967
+        }
+      ],
+      "documentaryQuery": "Latin jazz history documentary Cubop mambo bossa nova"
+    },
+    {
+      "id": "soul-jazz",
+      "name": "Soul Jazz & the Organ Trio",
+      "start": 1957,
+      "end": 1972,
+      "color": "#8DB43C",
+      "tagline": "Hammond grooves, gospel fire and the jukebox",
+      "summary": "Soul jazz took hard bop's gospel streak and turned it into a party. Its signature sound was the Hammond B-3 organ, which Jimmy Smith transformed from a roller-rink novelty into a roaring one-man orchestra, walking bass lines with his left hand and feet. Paired with a guitarist and a drummer, it formed the classic organ trio, and bars in Newark, Philadelphia and Harlem kept organs on their bandstands for a whole circuit of players, from Shirley Scott and Jack McDuff to Big John Patton.\n\nThe music was earthy and danceable: blues shapes, churchy amens, simple riffs and long grooves that built to shouting climaxes. It sold. Lee Morgan's 'The Sidewinder' and Cannonball Adderley's 'Mercy, Mercy, Mercy' crossed onto the pop charts, Ramsey Lewis scored with 'The In Crowd,' and labels like Blue Note, Prestige and Argo fed jukeboxes in Black neighborhoods across the country.\n\nSoul jazz overlapped with R&B, Motown and boogaloo, and it embraced singers who moved between worlds, like Nina Simone. Purists sometimes looked down on it, but hip-hop producers did not: its breakbeats and organ vamps became some of the most sampled sounds in popular music.",
+      "characteristics": [
+        "Hammond B-3 organ",
+        "Gospel and blues feeling",
+        "Danceable backbeat grooves",
+        "Organ, guitar and drums trios",
+        "Radio and jukebox hits"
+      ],
+      "places": [
+        "Newark, New Jersey",
+        "Philadelphia",
+        "Harlem, New York",
+        "Chicago"
+      ],
+      "wikipedia": "Soul_jazz",
+      "keyArtists": [
+        "jimmy-smith",
+        "lee-morgan",
+        "cannonball-adderley",
+        "grant-green",
+        "horace-silver",
+        "nina-simone"
+      ],
+      "keyAlbums": [
+        "the-sidewinder",
+        "back-at-the-chicken-shack",
+        "mercy-mercy-mercy",
+        "idle-moments",
+        "the-sermon"
+      ],
+      "essentialTracks": [
+        {
+          "title": "The Sermon",
+          "artist": "Jimmy Smith",
+          "year": 1959
+        },
+        {
+          "title": "Back at the Chicken Shack",
+          "artist": "Jimmy Smith",
+          "year": 1963
+        },
+        {
+          "title": "The Sidewinder",
+          "artist": "Lee Morgan",
+          "year": 1964
+        },
+        {
+          "title": "The \"In\" Crowd",
+          "artist": "Ramsey Lewis Trio",
+          "year": 1965
+        },
+        {
+          "title": "Mercy, Mercy, Mercy",
+          "artist": "Cannonball Adderley",
+          "year": 1966
+        },
+        {
+          "title": "Alligator Bogaloo",
+          "artist": "Lou Donaldson",
+          "year": 1967
+        },
+        {
+          "title": "Compared to What",
+          "artist": "Les McCann & Eddie Harris",
+          "year": 1969
+        }
+      ],
+      "documentaryQuery": "soul jazz Hammond organ Jimmy Smith documentary"
+    },
+    {
+      "id": "modal",
+      "name": "Modal Jazz",
+      "start": 1958,
+      "end": 1968,
+      "color": "#7A5BD8",
+      "tagline": "Scales instead of chords, space instead of speed",
+      "summary": "By the late 1950s, bebop's rapid chord changes had become a maze, and some musicians wanted out. Influenced by George Russell's theories, Miles Davis began building tunes on a single scale, or mode, held for many bars: first on 'Milestones' in 1958, then across Kind of Blue in 1959 with Bill Evans, John Coltrane and Cannonball Adderley. Instead of racing through harmonies, soloists could stretch out, develop motifs and explore color.\n\nThe approach liberated the rhythm section. Coltrane's classic quartet with McCoy Tyner, Jimmy Garrison and Elvin Jones turned modal vamps into storms, with Tyner's ringing fourths and Jones's polyrhythmic swirl, on 'My Favorite Things' and 'Impressions.' Bill Evans's trio with Scott LaFaro and Paul Motian turned the piano trio into a three-way conversation.\n\nIn the mid-1960s, Miles's second great quintet with Wayne Shorter, Herbie Hancock, Ron Carter and Tony Williams pushed further, stretching form and time until tunes seemed to breathe on their own. Blue Note documented a generation that grew up on these ideas, from Hancock's Maiden Voyage to Shorter's Speak No Evil and Tyner's The Real McCoy. Modal jazz opened a door that led straight to the spiritual, free and fusion movements.",
+      "characteristics": [
+        "Modes instead of chord changes",
+        "Long, open vamps",
+        "Quartal piano voicings",
+        "Polyrhythmic drumming",
+        "Motivic, exploratory solos"
+      ],
+      "places": [
+        "Columbia 30th Street Studio, New York",
+        "Village Vanguard, New York",
+        "Van Gelder Studio, New Jersey",
+        "The Half Note, New York"
+      ],
+      "wikipedia": "Modal_jazz",
+      "keyArtists": [
+        "miles-davis",
+        "john-coltrane",
+        "bill-evans",
+        "mccoy-tyner",
+        "elvin-jones",
+        "wayne-shorter",
+        "herbie-hancock"
+      ],
+      "keyAlbums": [
+        "kind-of-blue",
+        "my-favorite-things",
+        "sunday-at-the-village-vanguard",
+        "maiden-voyage",
+        "speak-no-evil",
+        "the-real-mccoy"
+      ],
+      "essentialTracks": [
+        {
+          "title": "Milestones",
+          "artist": "Miles Davis",
+          "year": 1958
+        },
+        {
+          "title": "So What",
+          "artist": "Miles Davis",
+          "year": 1959
+        },
+        {
+          "title": "My Favorite Things",
+          "artist": "John Coltrane",
+          "year": 1961
+        },
+        {
+          "title": "Impressions",
+          "artist": "John Coltrane",
+          "year": 1963
+        },
+        {
+          "title": "Maiden Voyage",
+          "artist": "Herbie Hancock",
+          "year": 1965
+        },
+        {
+          "title": "Footprints",
+          "artist": "Wayne Shorter",
+          "year": 1966
+        },
+        {
+          "title": "Passion Dance",
+          "artist": "McCoy Tyner",
+          "year": 1967
+        }
+      ],
+      "documentaryQuery": "modal jazz Kind of Blue documentary"
+    },
+    {
+      "id": "free",
+      "name": "Free Jazz & the Avant-Garde",
+      "start": 1959,
+      "end": 1976,
+      "color": "#C04FD4",
+      "tagline": "Breaking the rules of chord, meter and form",
+      "summary": "In November 1959 Ornette Coleman's quartet opened at the Five Spot in New York and split the jazz world in two. Coleman played a white plastic alto and dispensed with a piano, letting melody rather than chord changes steer the improvising. His album titles read like manifestos: The Shape of Jazz to Come, Change of the Century and Free Jazz, a collective improvisation for two quartets that gave the movement its name.\n\nOthers pushed in different directions. Cecil Taylor attacked the piano with the density of a modern classical composer. Albert Ayler played ecstatic, wide-vibrato hymns that sounded like a New Orleans funeral beamed in from another planet. Eric Dolphy found a vocabulary of leaps and cries that bridged inside and out, Sun Ra's Arkestra built an entire cosmology, and Coltrane himself, with Ascension in 1965, embraced the energy of the younger players.\n\nThe music became entwined with the Black Arts Movement, civil rights and self-determination. Musicians formed collectives like Chicago's AACM, released records on small labels such as ESP-Disk and staged concerts in lofts. Abrasive to some and liberating to others, free jazz proved that jazz could question its own rules, and its spirit still runs through improvised music worldwide.",
+      "characteristics": [
+        "Collective improvisation",
+        "No fixed chord changes",
+        "Extended instrumental techniques",
+        "Pulse instead of steady meter",
+        "Political and spiritual urgency"
+      ],
+      "places": [
+        "Five Spot Café, New York",
+        "Lower East Side lofts",
+        "Chicago's South Side (AACM)",
+        "Paris"
+      ],
+      "wikipedia": "Free_jazz",
+      "keyArtists": [
+        "ornette-coleman",
+        "cecil-taylor",
+        "albert-ayler",
+        "eric-dolphy",
+        "don-cherry",
+        "archie-shepp",
+        "sun-ra"
+      ],
+      "keyAlbums": [
+        "the-shape-of-jazz-to-come",
+        "spiritual-unity",
+        "out-to-lunch",
+        "unit-structures",
+        "fire-music",
+        "complete-communion"
+      ],
+      "essentialTracks": [
+        {
+          "title": "Lonely Woman",
+          "artist": "Ornette Coleman",
+          "year": 1959
+        },
+        {
+          "title": "Free Jazz",
+          "artist": "Ornette Coleman",
+          "year": 1961
+        },
+        {
+          "title": "Hat and Beard",
+          "artist": "Eric Dolphy",
+          "year": 1964
+        },
+        {
+          "title": "Ghosts: First Variation",
+          "artist": "Albert Ayler",
+          "year": 1965
+        },
+        {
+          "title": "Hambone",
+          "artist": "Archie Shepp",
+          "year": 1965
+        },
+        {
+          "title": "Steps",
+          "artist": "Cecil Taylor",
+          "year": 1966
+        },
+        {
+          "title": "Complete Communion",
+          "artist": "Don Cherry",
+          "year": 1966
+        }
+      ],
+      "documentaryQuery": "free jazz Ornette Coleman avant-garde documentary"
+    },
+    {
+      "id": "spiritual",
+      "name": "Spiritual Jazz",
+      "start": 1965,
+      "end": 1979,
+      "color": "#34B58C",
+      "tagline": "Devotion, drones and the search for transcendence",
+      "summary": "John Coltrane's A Love Supreme, recorded in December 1964, framed a jazz album as a prayer in four parts, and a generation took the hint. Spiritual jazz grew out of modal vamps and free-jazz intensity, but its goal was transcendence rather than confrontation. Musicians drew on African, Indian and Middle Eastern music, swapping standards for chants, drones, harps, bells and hand percussion.\n\nAfter Coltrane's death in 1967, Alice Coltrane became one of the movement's visionaries, weaving harp and organ into devotional epics like Journey in Satchidananda. Pharoah Sanders, Coltrane's last saxophone partner, made 'The Creator Has a Master Plan' a thirty-minute-plus hymn of joy and fury. Impulse! Records gave this music a major-label home, while independent labels like Strata-East and Black Jazz let artists own their work.\n\nSun Ra's Arkestra preached Afrofuturist myth, Archie Shepp answered the Attica prison uprising with Attica Blues, and McCoy Tyner recorded sprawling, percussive suites for Milestone. Long out of fashion, the style was rediscovered by crate-diggers in the 1990s and 2000s, and it now echoes loudly in the work of Kamasi Washington, Shabaka Hutchings and the London scene.",
+      "characteristics": [
+        "Modal drones and vamps",
+        "Harp, bells and world percussion",
+        "Chant and devotional themes",
+        "Long, suite-like forms",
+        "Afrocentric and cosmic imagery"
+      ],
+      "places": [
+        "New York",
+        "Los Angeles",
+        "Philadelphia",
+        "Dix Hills, Long Island"
+      ],
+      "wikipedia": "Spiritual_jazz",
+      "keyArtists": [
+        "john-coltrane",
+        "alice-coltrane",
+        "pharoah-sanders",
+        "sun-ra",
+        "mccoy-tyner",
+        "archie-shepp",
+        "don-cherry"
+      ],
+      "keyAlbums": [
+        "a-love-supreme",
+        "journey-in-satchidananda",
+        "karma",
+        "space-is-the-place",
+        "sahara"
+      ],
+      "essentialTracks": [
+        {
+          "title": "A Love Supreme, Pt. 1: Acknowledgement",
+          "artist": "John Coltrane",
+          "year": 1965
+        },
+        {
+          "title": "The Creator Has a Master Plan",
+          "artist": "Pharoah Sanders",
+          "year": 1969
+        },
+        {
+          "title": "Ptah, the El Daoud",
+          "artist": "Alice Coltrane",
+          "year": 1970
+        },
+        {
+          "title": "Journey in Satchidananda",
+          "artist": "Alice Coltrane",
+          "year": 1971
+        },
+        {
+          "title": "Attica Blues",
+          "artist": "Archie Shepp",
+          "year": 1972
+        },
+        {
+          "title": "Space Is the Place",
+          "artist": "Sun Ra",
+          "year": 1973
+        },
+        {
+          "title": "Expansions",
+          "artist": "Lonnie Liston Smith",
+          "year": 1975
+        }
+      ],
+      "documentaryQuery": "spiritual jazz Alice Coltrane Pharoah Sanders documentary"
+    },
+    {
+      "id": "fusion",
+      "name": "Fusion & Jazz-Rock",
+      "start": 1969,
+      "end": 1985,
+      "color": "#19D3C5",
+      "tagline": "Electric instruments, rock power and funk grooves",
+      "summary": "By the late 1960s rock and soul were the sound of youth culture, and Miles Davis wanted in. He brought electric piano and guitar into his band, and with In a Silent Way and Bitches Brew, dense, studio-sculpted records shaped with producer Teo Macero, he blew the doors off. Bitches Brew became a gold record and a launch pad: a remarkable number of the musicians on those sessions went on to lead defining fusion bands.\n\nWayne Shorter and Joe Zawinul formed Weather Report, Chick Corea founded Return to Forever, and John McLaughlin's Mahavishnu Orchestra fused jazz improvisation with rock volume and Indian rhythmic complexity, while Tony Williams's Lifetime roared with organ and guitar. Herbie Hancock's Head Hunters married jazz to funk so effectively that it became one of the best-selling jazz albums ever. Synthesizers, wah-wah pedals and Jaco Pastorius's singing fretless bass became new voices.\n\nFusion filled arenas and later softened into smooth jazz, which made it a punching bag for critics. At its best, though, it was some of the most adventurous music of the 1970s, and on ECM, Pat Metheny and others refined electric jazz into something spacious and lyrical. Its fingerprints are all over neo-soul, jam bands and today's genre-blind players.",
+      "characteristics": [
+        "Electric keyboards and guitars",
+        "Rock and funk rhythms",
+        "Synthesizers and effects",
+        "Studio editing and production",
+        "Virtuosic ensemble playing"
+      ],
+      "places": [
+        "New York",
+        "Fillmore East, New York",
+        "Los Angeles",
+        "Montreux Jazz Festival"
+      ],
+      "wikipedia": "Jazz_fusion",
+      "keyArtists": [
+        "miles-davis",
+        "herbie-hancock",
+        "chick-corea",
+        "john-mclaughlin",
+        "joe-zawinul",
+        "wayne-shorter",
+        "jaco-pastorius",
+        "pat-metheny"
+      ],
+      "keyAlbums": [
+        "bitches-brew",
+        "head-hunters",
+        "heavy-weather",
+        "the-inner-mounting-flame",
+        "return-to-forever",
+        "jaco-pastorius-album"
+      ],
+      "essentialTracks": [
+        {
+          "title": "In a Silent Way",
+          "artist": "Miles Davis",
+          "year": 1969
+        },
+        {
+          "title": "Bitches Brew",
+          "artist": "Miles Davis",
+          "year": 1970
+        },
+        {
+          "title": "Red Clay",
+          "artist": "Freddie Hubbard",
+          "year": 1970
+        },
+        {
+          "title": "Meeting of the Spirits",
+          "artist": "Mahavishnu Orchestra",
+          "year": 1971
+        },
+        {
+          "title": "Chameleon",
+          "artist": "Herbie Hancock",
+          "year": 1973
+        },
+        {
+          "title": "Spain",
+          "artist": "Chick Corea & Return to Forever",
+          "year": 1973
+        },
+        {
+          "title": "Portrait of Tracy",
+          "artist": "Jaco Pastorius",
+          "year": 1976
+        },
+        {
+          "title": "Birdland",
+          "artist": "Weather Report",
+          "year": 1977
+        }
+      ],
+      "documentaryQuery": "jazz fusion 1970s documentary Bitches Brew"
+    },
+    {
+      "id": "post-bop",
+      "name": "Neo-Bop & the Young Lions",
+      "start": 1980,
+      "end": 2000,
+      "color": "#B7C2CC",
+      "tagline": "Young lions, acoustic swing and the jazz tradition",
+      "summary": "By the early 1980s, fusion's commercial glow had faded, and a wave of young musicians in sharp suits turned back to acoustic swing. The figurehead was Wynton Marsalis, a New Orleans trumpeter who came up through Art Blakey's Jazz Messengers, signed with Columbia and in 1984 won Grammys in both jazz and classical categories. His early quintet, with brother Branford on saxophone, revived the intensity of Miles's 1960s band, and his advocacy helped build Jazz at Lincoln Center into an institution.\n\nThe Young Lions label covered a generation, including Roy Hargrove, Joshua Redman, Nicholas Payton and Christian McBride, who studied the masters and treated hard bop and post-bop as a living language. Major labels signed jazz artists again, and CD reissue programs made the classic catalog newly available. Not everyone agreed with the neoclassical emphasis, and debates about tradition versus innovation filled the magazines.\n\nOther paths flourished alongside. Keith Jarrett's Standards Trio made the Great American Songbook sound freshly invented, Cassandra Wilson reimagined Delta blues and pop songs in dusky, atmospheric settings, and Brad Mehldau's trio brought Radiohead and Romantic-era harmony into the piano trio. The era rebuilt jazz's institutions and audience, setting the stage for the eclectic renaissance that followed.",
+      "characteristics": [
+        "Acoustic instrumentation",
+        "Hard-bop and post-bop revival",
+        "Virtuosic young bandleaders",
+        "Reimagined standards",
+        "Jazz education and institutions"
+      ],
+      "places": [
+        "New York",
+        "New Orleans",
+        "Jazz at Lincoln Center",
+        "Village Vanguard, New York"
+      ],
+      "wikipedia": "Neo-bop",
+      "keyArtists": [
+        "wynton-marsalis",
+        "keith-jarrett",
+        "roy-hargrove",
+        "joshua-redman",
+        "cassandra-wilson",
+        "brad-mehldau"
+      ],
+      "keyAlbums": [
+        "black-codes",
+        "standards-vol-1",
+        "blue-light-til-dawn",
+        "wish",
+        "art-of-the-trio-vol-1",
+        "habana"
+      ],
+      "essentialTracks": [
+        {
+          "title": "God Bless the Child",
+          "artist": "Keith Jarrett",
+          "year": 1983
+        },
+        {
+          "title": "Black Codes (From the Underground)",
+          "artist": "Wynton Marsalis",
+          "year": 1985
+        },
+        {
+          "title": "Mo' Better Blues",
+          "artist": "Branford Marsalis",
+          "year": 1990
+        },
+        {
+          "title": "Come On in My Kitchen",
+          "artist": "Cassandra Wilson",
+          "year": 1993
+        },
+        {
+          "title": "Mambo for Roy",
+          "artist": "Roy Hargrove",
+          "year": 1997
+        },
+        {
+          "title": "Exit Music (For a Film)",
+          "artist": "Brad Mehldau",
+          "year": 1998
+        }
+      ],
+      "documentaryQuery": "Wynton Marsalis young lions jazz 1980s documentary"
+    },
+    {
+      "id": "contemporary",
+      "name": "The New Jazz Renaissance",
+      "start": 2000,
+      "end": 2026,
+      "color": "#D4F04A",
+      "tagline": "Hip-hop, spiritual fire and a global new wave",
+      "summary": "Twenty-first-century jazz refuses to stay in one room. Musicians raised on J Dilla and Radiohead as much as Coltrane treat genre as a palette, and the line between jazz, hip-hop, R&B and electronic music has never been thinner. Robert Glasper's Black Radio, which won the Grammy for Best R&B Album, pulled jazz harmony into neo-soul. Kamasi Washington's three-hour The Epic, arriving weeks after Kendrick Lamar's jazz-soaked To Pimp a Butterfly, proved that a young audience was hungry for big, spiritual sounds.\n\nLondon became a second capital. A scene nurtured by community programs like Tomorrow's Warriors produced Shabaka Hutchings, Nubya Garcia, Ezra Collective and Moses Boyd, mixing jazz with grime, Afrobeat, dub and Caribbean rhythms. In Chicago, Makaya McCraven turned live improvisation into beat-tape collages. Out of New Orleans, Christian Scott aTunde Adjuah folded West African rhythm and trap drums into his stretch music, and Snarky Puppy built a global following for virtuosic, groove-heavy ensemble playing.\n\nThe tradition is in good hands, too. Cécile McLorin Salvant reimagines century-old songs with theatrical daring, Esperanza Spalding became the first jazz artist to win Best New Artist, and Brad Mehldau and Ambrose Akinmusire keep expanding what an acoustic group can say.",
+      "characteristics": [
+        "Hip-hop and R&B fusion",
+        "Spiritual-jazz revival",
+        "Global, diasporic rhythms",
+        "Producer-style editing and beats",
+        "Genre-fluid collaborations"
+      ],
+      "places": [
+        "Los Angeles",
+        "South London",
+        "Chicago",
+        "New York"
+      ],
+      "wikipedia": "Jazz",
+      "keyArtists": [
+        "kamasi-washington",
+        "robert-glasper",
+        "esperanza-spalding",
+        "shabaka-hutchings",
+        "cecile-mclorin-salvant",
+        "makaya-mccraven",
+        "nubya-garcia",
+        "christian-scott"
+      ],
+      "keyAlbums": [
+        "black-radio",
+        "the-epic",
+        "perceive-its-beauty",
+        "universal-beings",
+        "womanchild",
+        "source"
+      ],
+      "essentialTracks": [
+        {
+          "title": "I Know You Know",
+          "artist": "Esperanza Spalding",
+          "year": 2008
+        },
+        {
+          "title": "Afro Blue",
+          "artist": "Robert Glasper Experiment",
+          "year": 2012
+        },
+        {
+          "title": "WomanChild",
+          "artist": "Cécile McLorin Salvant",
+          "year": 2013
+        },
+        {
+          "title": "Lingus",
+          "artist": "Snarky Puppy",
+          "year": 2014
+        },
+        {
+          "title": "Change of the Guard",
+          "artist": "Kamasi Washington",
+          "year": 2015
+        },
+        {
+          "title": "In the Castle of My Skin",
+          "artist": "Sons of Kemet",
+          "year": 2015
+        },
+        {
+          "title": "Pace",
+          "artist": "Nubya Garcia",
+          "year": 2020
+        }
+      ],
+      "documentaryQuery": "new jazz generation documentary Kamasi Washington London jazz scene"
+    }
+  ],
+  "artists": [
+    {
+      "id": "scott-joplin",
+      "name": "Scott Joplin",
+      "born": 1868,
+      "died": 1917,
+      "instrument": "Composer",
+      "eras": [
+        "roots"
+      ],
+      "primaryEra": "roots",
+      "wikipedia": "Scott_Joplin",
+      "blurb": "The King of Ragtime wrote syncopated piano pieces with the formal grace of a classical composer, and his rags became the first great body of written music in the jazz family tree.",
+      "connections": [
+        "jelly-roll-morton",
+        "james-p-johnson"
+      ],
+      "albums": [],
+      "signatureTracks": [
+        "Maple Leaf Rag",
+        "The Entertainer",
+        "Pineapple Rag"
+      ],
+      "videoQuery": "Scott Joplin Maple Leaf Rag piano roll"
+    },
+    {
+      "id": "jelly-roll-morton",
+      "name": "Jelly Roll Morton",
+      "born": 1890,
+      "died": 1941,
+      "instrument": "Piano",
+      "eras": [
+        "roots",
+        "new-orleans"
+      ],
+      "primaryEra": "new-orleans",
+      "wikipedia": "Jelly_Roll_Morton",
+      "blurb": "A brash New Orleans pianist who claimed to have invented jazz and nearly backed it up: his Red Hot Peppers records are miniature masterpieces of arranged, swinging polyphony.",
+      "connections": [
+        "scott-joplin",
+        "king-oliver",
+        "sidney-bechet"
+      ],
+      "albums": [
+        "birth-of-the-hot"
+      ],
+      "signatureTracks": [
+        "Black Bottom Stomp",
+        "King Porter Stomp",
+        "Dead Man Blues"
+      ],
+      "videoQuery": "Jelly Roll Morton piano Library of Congress recordings"
+    },
+    {
+      "id": "bessie-smith",
+      "name": "Bessie Smith",
+      "born": 1894,
+      "died": 1937,
+      "instrument": "Vocals",
+      "eras": [
+        "roots",
+        "new-orleans"
+      ],
+      "primaryEra": "roots",
+      "wikipedia": "Bessie_Smith",
+      "blurb": "The Empress of the Blues had a voice of enormous power and exquisite control, and her 1920s records set the standard for every jazz and blues singer who followed.",
+      "connections": [
+        "louis-armstrong",
+        "ma-rainey",
+        "james-p-johnson"
+      ],
+      "albums": [
+        "essential-bessie-smith"
+      ],
+      "signatureTracks": [
+        "Downhearted Blues",
+        "St. Louis Blues",
+        "Nobody Knows You When You're Down and Out"
+      ],
+      "videoQuery": "Bessie Smith St. Louis Blues 1929 film"
+    },
+    {
+      "id": "ma-rainey",
+      "name": "Ma Rainey",
+      "born": 1886,
+      "died": 1939,
+      "instrument": "Vocals",
+      "eras": [
+        "roots"
+      ],
+      "primaryEra": "roots",
+      "wikipedia": "Ma_Rainey",
+      "blurb": "The Mother of the Blues carried the music through Southern tent shows long before she recorded, singing with a rough, earthy authority and a fearless sense of humor.",
+      "connections": [
+        "bessie-smith",
+        "louis-armstrong"
+      ],
+      "albums": [
+        "ma-rainey"
+      ],
+      "signatureTracks": [
+        "See See Rider Blues",
+        "Ma Rainey's Black Bottom",
+        "Prove It on Me Blues"
+      ],
+      "videoQuery": "Ma Rainey Mother of the Blues history"
+    },
+    {
+      "id": "james-p-johnson",
+      "name": "James P. Johnson",
+      "born": 1894,
+      "died": 1955,
+      "instrument": "Piano",
+      "eras": [
+        "roots",
+        "new-orleans",
+        "swing"
+      ],
+      "primaryEra": "new-orleans",
+      "wikipedia": "James_P._Johnson",
+      "blurb": "The father of Harlem stride piano turned ragtime into a thundering, swinging virtuoso style, mentored Fats Waller and wrote 'Charleston,' the anthem of the Jazz Age.",
+      "connections": [
+        "scott-joplin",
+        "bessie-smith",
+        "fats-waller",
+        "art-tatum"
+      ],
+      "albums": [
+        "snowy-morning-blues"
+      ],
+      "signatureTracks": [
+        "Carolina Shout",
+        "Snowy Morning Blues",
+        "Charleston"
+      ],
+      "videoQuery": "James P. Johnson stride piano"
+    },
+    {
+      "id": "louis-armstrong",
+      "name": "Louis Armstrong",
+      "born": 1901,
+      "died": 1971,
+      "instrument": "Trumpet",
+      "eras": [
+        "new-orleans",
+        "swing"
+      ],
+      "primaryEra": "new-orleans",
+      "wikipedia": "Louis_Armstrong",
+      "blurb": "Jazz's first great soloist and its most joyous ambassador. Armstrong's 1920s recordings taught the world to swing, and his warm, gravelly voice made him a global star.",
+      "connections": [
+        "bessie-smith",
+        "ma-rainey",
+        "king-oliver",
+        "sidney-bechet",
+        "coleman-hawkins",
+        "ella-fitzgerald",
+        "duke-ellington",
+        "bix-beiderbecke"
+      ],
+      "albums": [
+        "hot-five-hot-seven"
+      ],
+      "signatureTracks": [
+        "West End Blues",
+        "Potato Head Blues",
+        "What a Wonderful World",
+        "Hello, Dolly!"
+      ],
+      "videoQuery": "Louis Armstrong live concert performance"
+    },
+    {
+      "id": "king-oliver",
+      "name": "King Oliver",
+      "born": 1881,
+      "died": 1938,
+      "instrument": "Trumpet",
+      "eras": [
+        "new-orleans"
+      ],
+      "primaryEra": "new-orleans",
+      "wikipedia": "King_Oliver",
+      "blurb": "The New Orleans cornet king whose Creole Jazz Band defined ensemble jazz in early-1920s Chicago, and who brought a young Louis Armstrong north as his protégé.",
+      "connections": [
+        "jelly-roll-morton",
+        "louis-armstrong"
+      ],
+      "albums": [],
+      "signatureTracks": [
+        "Dipper Mouth Blues",
+        "Canal Street Blues",
+        "Snake Rag"
+      ],
+      "videoQuery": "King Oliver Creole Jazz Band 1923"
+    },
+    {
+      "id": "sidney-bechet",
+      "name": "Sidney Bechet",
+      "born": 1897,
+      "died": 1959,
+      "instrument": "Saxophone",
+      "eras": [
+        "new-orleans",
+        "swing"
+      ],
+      "primaryEra": "new-orleans",
+      "wikipedia": "Sidney_Bechet",
+      "blurb": "A soprano saxophone and clarinet titan with a wide, operatic vibrato, Bechet was one of jazz's first great improvisers and later became a national hero in France.",
+      "connections": [
+        "jelly-roll-morton",
+        "louis-armstrong",
+        "duke-ellington"
+      ],
+      "albums": [],
+      "signatureTracks": [
+        "Summertime",
+        "Petite Fleur",
+        "Wild Cat Blues"
+      ],
+      "videoQuery": "Sidney Bechet live soprano saxophone"
+    },
+    {
+      "id": "bix-beiderbecke",
+      "name": "Bix Beiderbecke",
+      "born": 1903,
+      "died": 1931,
+      "instrument": "Trumpet",
+      "eras": [
+        "new-orleans"
+      ],
+      "primaryEra": "new-orleans",
+      "wikipedia": "Bix_Beiderbecke",
+      "blurb": "A self-taught cornetist from Iowa whose clear, bell-like tone and thoughtful phrasing offered a lyrical alternative to hot jazz before his death at 28.",
+      "connections": [
+        "louis-armstrong",
+        "benny-goodman"
+      ],
+      "albums": [
+        "bix-singin-the-blues"
+      ],
+      "signatureTracks": [
+        "Singin' the Blues",
+        "In a Mist",
+        "I'm Coming, Virginia"
+      ],
+      "videoQuery": "Bix Beiderbecke cornet documentary"
+    },
+    {
+      "id": "duke-ellington",
+      "name": "Duke Ellington",
+      "born": 1899,
+      "died": 1974,
+      "instrument": "Bandleader",
+      "eras": [
+        "new-orleans",
+        "swing"
+      ],
+      "primaryEra": "swing",
+      "wikipedia": "Duke_Ellington",
+      "blurb": "America's great jazz composer used his orchestra as his instrument, writing more than a thousand works tailored to the voices of his players over a fifty-year career.",
+      "connections": [
+        "louis-armstrong",
+        "sidney-bechet",
+        "john-coltrane",
+        "count-basie",
+        "ella-fitzgerald",
+        "charles-mingus",
+        "coleman-hawkins",
+        "django-reinhardt"
+      ],
+      "albums": [
+        "blanton-webster-band"
+      ],
+      "signatureTracks": [
+        "Take the \"A\" Train",
+        "Mood Indigo",
+        "It Don't Mean a Thing (If It Ain't Got That Swing)",
+        "In a Sentimental Mood"
+      ],
+      "videoQuery": "Duke Ellington Orchestra live concert"
+    },
+    {
+      "id": "count-basie",
+      "name": "Count Basie",
+      "born": 1904,
+      "died": 1984,
+      "instrument": "Bandleader",
+      "eras": [
+        "swing"
+      ],
+      "primaryEra": "swing",
+      "wikipedia": "Count_Basie",
+      "blurb": "The Kansas City bandleader who made economy swing: a few perfectly placed piano notes, a rhythm section that floated, and brass riffs that hit like a wave.",
+      "connections": [
+        "duke-ellington",
+        "lester-young",
+        "billie-holiday",
+        "ella-fitzgerald",
+        "fats-waller"
+      ],
+      "albums": [
+        "basie-complete-decca"
+      ],
+      "signatureTracks": [
+        "One O'Clock Jump",
+        "Jumpin' at the Woodside",
+        "April in Paris"
+      ],
+      "videoQuery": "Count Basie Orchestra live performance"
+    },
+    {
+      "id": "benny-goodman",
+      "name": "Benny Goodman",
+      "born": 1909,
+      "died": 1986,
+      "instrument": "Clarinet",
+      "eras": [
+        "swing"
+      ],
+      "primaryEra": "swing",
+      "wikipedia": "Benny_Goodman",
+      "blurb": "The King of Swing led the band that ignited the big-band craze and broke the color line with his integrated small groups featuring Teddy Wilson and Lionel Hampton.",
+      "connections": [
+        "bix-beiderbecke",
+        "billie-holiday",
+        "ella-fitzgerald",
+        "lester-young"
+      ],
+      "albums": [
+        "carnegie-hall-1938"
+      ],
+      "signatureTracks": [
+        "Sing, Sing, Sing",
+        "Stompin' at the Savoy",
+        "Don't Be That Way"
+      ],
+      "videoQuery": "Benny Goodman Orchestra Sing Sing Sing live"
+    },
+    {
+      "id": "coleman-hawkins",
+      "name": "Coleman Hawkins",
+      "born": 1904,
+      "died": 1969,
+      "instrument": "Saxophone",
+      "eras": [
+        "new-orleans",
+        "swing",
+        "bebop"
+      ],
+      "primaryEra": "swing",
+      "wikipedia": "Coleman_Hawkins",
+      "blurb": "The man who established the tenor saxophone as a jazz voice, Hawk played with a huge, rhapsodic tone and an ear for harmony that made him a champion of bebop.",
+      "connections": [
+        "louis-armstrong",
+        "duke-ellington",
+        "thelonious-monk",
+        "dizzy-gillespie",
+        "sonny-rollins",
+        "django-reinhardt",
+        "art-tatum",
+        "sun-ra"
+      ],
+      "albums": [
+        "hawkins-body-and-soul"
+      ],
+      "signatureTracks": [
+        "Body and Soul",
+        "Picasso",
+        "The Man I Love"
+      ],
+      "videoQuery": "Coleman Hawkins live tenor saxophone"
+    },
+    {
+      "id": "lester-young",
+      "name": "Lester Young",
+      "born": 1909,
+      "died": 1959,
+      "instrument": "Saxophone",
+      "eras": [
+        "swing",
+        "cool"
+      ],
+      "primaryEra": "swing",
+      "wikipedia": "Lester_Young",
+      "blurb": "Prez floated where Hawkins thundered: a light, vibrato-less tenor sound and gliding phrasing that inspired the cool school and Billie Holiday's finest records.",
+      "connections": [
+        "count-basie",
+        "benny-goodman",
+        "billie-holiday"
+      ],
+      "albums": [],
+      "signatureTracks": [
+        "Lester Leaps In",
+        "Lady Be Good",
+        "These Foolish Things"
+      ],
+      "videoQuery": "Lester Young Jammin' the Blues 1944"
+    },
+    {
+      "id": "billie-holiday",
+      "name": "Billie Holiday",
+      "born": 1915,
+      "died": 1959,
+      "instrument": "Vocals",
+      "eras": [
+        "swing"
+      ],
+      "primaryEra": "swing",
+      "wikipedia": "Billie_Holiday",
+      "blurb": "Lady Day phrased like a horn player and sang behind the beat with devastating emotional truth, turning pop songs into confessions and 'Strange Fruit' into a protest landmark.",
+      "connections": [
+        "count-basie",
+        "benny-goodman",
+        "lester-young",
+        "nina-simone",
+        "cassandra-wilson"
+      ],
+      "albums": [
+        "billie-commodore"
+      ],
+      "signatureTracks": [
+        "Strange Fruit",
+        "God Bless the Child",
+        "Lover Man",
+        "Fine and Mellow"
+      ],
+      "videoQuery": "Billie Holiday Fine and Mellow 1957 Sound of Jazz"
+    },
+    {
+      "id": "ella-fitzgerald",
+      "name": "Ella Fitzgerald",
+      "born": 1917,
+      "died": 1996,
+      "instrument": "Vocals",
+      "eras": [
+        "swing",
+        "bebop"
+      ],
+      "primaryEra": "swing",
+      "wikipedia": "Ella_Fitzgerald",
+      "blurb": "The First Lady of Song combined flawless pitch, pure tone and boundless swing; her scat improvisations rival any horn, and her Songbook albums canonized American song.",
+      "connections": [
+        "louis-armstrong",
+        "duke-ellington",
+        "count-basie",
+        "benny-goodman",
+        "dizzy-gillespie"
+      ],
+      "albums": [
+        "ella-cole-porter"
+      ],
+      "signatureTracks": [
+        "A-Tisket, A-Tasket",
+        "How High the Moon",
+        "Mack the Knife"
+      ],
+      "videoQuery": "Ella Fitzgerald live Mack the Knife Berlin"
+    },
+    {
+      "id": "django-reinhardt",
+      "name": "Django Reinhardt",
+      "born": 1910,
+      "died": 1953,
+      "instrument": "Guitar",
+      "eras": [
+        "swing"
+      ],
+      "primaryEra": "swing",
+      "wikipedia": "Django_Reinhardt",
+      "blurb": "A Belgian-born Romani guitarist who, despite a badly burned fretting hand, invented a dazzling European jazz style with Stéphane Grappelli in the Quintette du Hot Club de France.",
+      "connections": [
+        "duke-ellington",
+        "coleman-hawkins"
+      ],
+      "albums": [
+        "djangology"
+      ],
+      "signatureTracks": [
+        "Minor Swing",
+        "Nuages",
+        "Djangology"
+      ],
+      "videoQuery": "Django Reinhardt rare footage guitar"
+    },
+    {
+      "id": "art-tatum",
+      "name": "Art Tatum",
+      "born": 1909,
+      "died": 1956,
+      "instrument": "Piano",
+      "eras": [
+        "swing"
+      ],
+      "primaryEra": "swing",
+      "wikipedia": "Art_Tatum",
+      "blurb": "A nearly blind piano wizard whose speed, harmonic daring and orchestral imagination left even classical virtuosos stunned; no jazz pianist has ever topped his technique.",
+      "connections": [
+        "james-p-johnson",
+        "coleman-hawkins",
+        "fats-waller"
+      ],
+      "albums": [],
+      "signatureTracks": [
+        "Tiger Rag",
+        "Tea for Two",
+        "Willow Weep for Me"
+      ],
+      "videoQuery": "Art Tatum piano rare footage"
+    },
+    {
+      "id": "fats-waller",
+      "name": "Fats Waller",
+      "born": 1904,
+      "died": 1943,
+      "instrument": "Piano",
+      "eras": [
+        "new-orleans",
+        "swing"
+      ],
+      "primaryEra": "swing",
+      "wikipedia": "Fats_Waller",
+      "blurb": "A stride piano master, prolific songwriter and irrepressible entertainer whose comic asides never hid the brilliance of his playing.",
+      "connections": [
+        "james-p-johnson",
+        "count-basie",
+        "art-tatum"
+      ],
+      "albums": [],
+      "signatureTracks": [
+        "Ain't Misbehavin'",
+        "Honeysuckle Rose",
+        "Jitterbug Waltz"
+      ],
+      "videoQuery": "Fats Waller Ain't Misbehavin' film"
+    },
+    {
+      "id": "charlie-parker",
+      "name": "Charlie Parker",
+      "born": 1920,
+      "died": 1955,
+      "instrument": "Saxophone",
+      "eras": [
+        "bebop"
+      ],
+      "primaryEra": "bebop",
+      "wikipedia": "Charlie_Parker",
+      "blurb": "Bird rewired jazz. His alto lines poured out at impossible speed yet sang with blues feeling, and his harmonic language became the foundation of modern jazz improvisation.",
+      "connections": [
+        "dizzy-gillespie",
+        "max-roach",
+        "bud-powell",
+        "miles-davis",
+        "thelonious-monk",
+        "charles-mingus",
+        "sarah-vaughan",
+        "chet-baker"
+      ],
+      "albums": [
+        "savoy-dial-master-takes",
+        "jazz-at-massey-hall"
+      ],
+      "signatureTracks": [
+        "Ko-Ko",
+        "Now's the Time",
+        "Ornithology",
+        "Parker's Mood"
+      ],
+      "videoQuery": "Charlie Parker Dizzy Gillespie Hot House 1952"
+    },
+    {
+      "id": "dizzy-gillespie",
+      "name": "Dizzy Gillespie",
+      "born": 1917,
+      "died": 1993,
+      "instrument": "Trumpet",
+      "eras": [
+        "bebop",
+        "latin"
+      ],
+      "primaryEra": "bebop",
+      "wikipedia": "Dizzy_Gillespie",
+      "blurb": "Bebop's trumpet virtuoso and chief educator, Dizzy also pioneered Afro-Cuban jazz, all with puffed cheeks, an upturned horn and an unbeatable sense of humor.",
+      "connections": [
+        "coleman-hawkins",
+        "ella-fitzgerald",
+        "charlie-parker",
+        "thelonious-monk",
+        "sarah-vaughan",
+        "machito",
+        "max-roach",
+        "chucho-valdes"
+      ],
+      "albums": [
+        "groovin-high",
+        "afro"
+      ],
+      "signatureTracks": [
+        "Salt Peanuts",
+        "A Night in Tunisia",
+        "Manteca",
+        "Groovin' High"
+      ],
+      "videoQuery": "Dizzy Gillespie big band live"
+    },
+    {
+      "id": "thelonious-monk",
+      "name": "Thelonious Monk",
+      "born": 1917,
+      "died": 1982,
+      "instrument": "Piano",
+      "eras": [
+        "bebop",
+        "hard-bop"
+      ],
+      "primaryEra": "bebop",
+      "wikipedia": "Thelonious_Monk",
+      "blurb": "A composer of singular genius whose crooked melodies, percussive touch and strategic silences made him sound like no one else. His tunes are now jazz's essential repertoire.",
+      "connections": [
+        "coleman-hawkins",
+        "charlie-parker",
+        "dizzy-gillespie",
+        "john-coltrane",
+        "sonny-rollins",
+        "art-blakey",
+        "max-roach",
+        "gerry-mulligan"
+      ],
+      "albums": [
+        "genius-of-modern-music-1"
+      ],
+      "signatureTracks": [
+        "'Round Midnight",
+        "Straight, No Chaser",
+        "Blue Monk",
+        "Ruby, My Dear"
+      ],
+      "videoQuery": "Thelonious Monk Quartet live 1966"
+    },
+    {
+      "id": "bud-powell",
+      "name": "Bud Powell",
+      "born": 1924,
+      "died": 1966,
+      "instrument": "Piano",
+      "eras": [
+        "bebop"
+      ],
+      "primaryEra": "bebop",
+      "wikipedia": "Bud_Powell",
+      "blurb": "He translated Parker's language to the keyboard, with blazing right-hand lines and sparse left-hand chords that defined the modern jazz piano for generations.",
+      "connections": [
+        "charlie-parker",
+        "max-roach",
+        "sonny-rollins",
+        "charles-mingus",
+        "dexter-gordon"
+      ],
+      "albums": [
+        "amazing-bud-powell-1"
+      ],
+      "signatureTracks": [
+        "Un Poco Loco",
+        "Parisian Thoroughfare",
+        "Celia"
+      ],
+      "videoQuery": "Bud Powell trio live Copenhagen"
+    },
+    {
+      "id": "max-roach",
+      "name": "Max Roach",
+      "born": 1924,
+      "died": 2007,
+      "instrument": "Drums",
+      "eras": [
+        "bebop",
+        "hard-bop"
+      ],
+      "primaryEra": "bebop",
+      "wikipedia": "Max_Roach",
+      "blurb": "A founding architect of bebop drumming who turned the kit into a melodic instrument, co-led a landmark quintet with Clifford Brown and made music a vehicle for civil rights.",
+      "connections": [
+        "charlie-parker",
+        "dizzy-gillespie",
+        "thelonious-monk",
+        "bud-powell",
+        "clifford-brown",
+        "sonny-rollins",
+        "charles-mingus",
+        "cecil-taylor"
+      ],
+      "albums": [],
+      "signatureTracks": [
+        "Joy Spring",
+        "The Drum Also Waltzes",
+        "Driva' Man"
+      ],
+      "videoQuery": "Max Roach drum solo live"
+    },
+    {
+      "id": "sarah-vaughan",
+      "name": "Sarah Vaughan",
+      "born": 1924,
+      "died": 1990,
+      "instrument": "Vocals",
+      "eras": [
+        "bebop"
+      ],
+      "primaryEra": "bebop",
+      "wikipedia": "Sarah_Vaughan",
+      "blurb": "Sassy had an operatic range and a bebop musician's ear, bending harmonies and swooping through octaves with breathtaking control.",
+      "connections": [
+        "charlie-parker",
+        "dizzy-gillespie",
+        "clifford-brown"
+      ],
+      "albums": [
+        "sarah-vaughan-1955"
+      ],
+      "signatureTracks": [
+        "Lullaby of Birdland",
+        "Misty",
+        "Send in the Clowns",
+        "Tenderly"
+      ],
+      "videoQuery": "Sarah Vaughan live Misty"
+    },
+    {
+      "id": "miles-davis",
+      "name": "Miles Davis",
+      "born": 1926,
+      "died": 1991,
+      "instrument": "Trumpet",
+      "eras": [
+        "bebop",
+        "cool",
+        "hard-bop",
+        "modal",
+        "fusion"
+      ],
+      "primaryEra": "modal",
+      "wikipedia": "Miles_Davis",
+      "blurb": "Jazz's restless visionary helped launch cool, hard bop, modal jazz and fusion, and his spare, burnished trumpet made every note count.",
+      "connections": [
+        "charlie-parker",
+        "john-coltrane",
+        "bill-evans",
+        "gil-evans",
+        "cannonball-adderley",
+        "wayne-shorter",
+        "herbie-hancock",
+        "john-mclaughlin"
+      ],
+      "albums": [
+        "birth-of-the-cool",
+        "miles-ahead",
+        "kind-of-blue",
+        "miles-smiles",
+        "bitches-brew"
+      ],
+      "signatureTracks": [
+        "So What",
+        "'Round Midnight",
+        "Blue in Green",
+        "Bitches Brew"
+      ],
+      "videoQuery": "Miles Davis Quintet live 1967"
+    },
+    {
+      "id": "chet-baker",
+      "name": "Chet Baker",
+      "born": 1929,
+      "died": 1988,
+      "instrument": "Trumpet",
+      "eras": [
+        "cool"
+      ],
+      "primaryEra": "cool",
+      "wikipedia": "Chet_Baker",
+      "blurb": "The James Dean of jazz played and sang with a fragile, intimate lyricism that defined West Coast cool, a sound both tender and haunted.",
+      "connections": [
+        "charlie-parker",
+        "gerry-mulligan",
+        "stan-getz",
+        "paul-desmond"
+      ],
+      "albums": [
+        "chet-baker-sings"
+      ],
+      "signatureTracks": [
+        "My Funny Valentine",
+        "Let's Get Lost",
+        "Time After Time"
+      ],
+      "videoQuery": "Chet Baker live My Funny Valentine"
+    },
+    {
+      "id": "gerry-mulligan",
+      "name": "Gerry Mulligan",
+      "born": 1927,
+      "died": 1996,
+      "instrument": "Saxophone",
+      "eras": [
+        "cool"
+      ],
+      "primaryEra": "cool",
+      "wikipedia": "Gerry_Mulligan",
+      "blurb": "A baritone saxophonist and arranger whose pianoless quartet with Chet Baker made counterpoint swing and became the calling card of West Coast jazz.",
+      "connections": [
+        "thelonious-monk",
+        "chet-baker",
+        "gil-evans",
+        "dave-brubeck",
+        "stan-getz",
+        "paul-desmond"
+      ],
+      "albums": [],
+      "signatureTracks": [
+        "Bernie's Tune",
+        "Walkin' Shoes",
+        "Line for Lyons"
+      ],
+      "videoQuery": "Gerry Mulligan Quartet live"
+    },
+    {
+      "id": "dave-brubeck",
+      "name": "Dave Brubeck",
+      "born": 1920,
+      "died": 2012,
+      "instrument": "Piano",
+      "eras": [
+        "cool"
+      ],
+      "primaryEra": "cool",
+      "wikipedia": "Dave_Brubeck",
+      "blurb": "A pianist with a classical composer's curiosity who brought odd meters and polytonality to a mass audience; his quartet's Time Out became a household record.",
+      "connections": [
+        "gerry-mulligan",
+        "paul-desmond"
+      ],
+      "albums": [
+        "time-out"
+      ],
+      "signatureTracks": [
+        "Take Five",
+        "Blue Rondo à la Turk",
+        "In Your Own Sweet Way"
+      ],
+      "videoQuery": "Dave Brubeck Quartet Take Five live 1961"
+    },
+    {
+      "id": "paul-desmond",
+      "name": "Paul Desmond",
+      "born": 1924,
+      "died": 1977,
+      "instrument": "Saxophone",
+      "eras": [
+        "cool"
+      ],
+      "primaryEra": "cool",
+      "wikipedia": "Paul_Desmond",
+      "blurb": "Brubeck's alto foil had a tone like a dry martini, light, witty and melodic, and he composed 'Take Five,' one of the best-selling jazz singles ever.",
+      "connections": [
+        "chet-baker",
+        "gerry-mulligan",
+        "dave-brubeck"
+      ],
+      "albums": [],
+      "signatureTracks": [
+        "Take Five",
+        "Wendy",
+        "Late Lament"
+      ],
+      "videoQuery": "Paul Desmond Dave Brubeck Quartet live"
+    },
+    {
+      "id": "stan-getz",
+      "name": "Stan Getz",
+      "born": 1927,
+      "died": 1991,
+      "instrument": "Saxophone",
+      "eras": [
+        "cool",
+        "latin"
+      ],
+      "primaryEra": "cool",
+      "wikipedia": "Stan_Getz",
+      "blurb": "Nicknamed The Sound for his luminous tenor tone, Getz became a cool-jazz star and then the American face of bossa nova.",
+      "connections": [
+        "chet-baker",
+        "gerry-mulligan",
+        "joao-gilberto",
+        "antonio-carlos-jobim",
+        "chick-corea"
+      ],
+      "albums": [
+        "getz-gilberto"
+      ],
+      "signatureTracks": [
+        "The Girl from Ipanema",
+        "Desafinado",
+        "Early Autumn"
+      ],
+      "videoQuery": "Stan Getz live bossa nova"
+    },
+    {
+      "id": "gil-evans",
+      "name": "Gil Evans",
+      "born": 1912,
+      "died": 1988,
+      "instrument": "Composer",
+      "eras": [
+        "cool",
+        "fusion"
+      ],
+      "primaryEra": "cool",
+      "wikipedia": "Gil_Evans",
+      "blurb": "An arranger who painted with orchestral color, Evans shaped Birth of the Cool and created lush masterpieces with Miles Davis before embracing electric sounds.",
+      "connections": [
+        "miles-davis",
+        "gerry-mulligan",
+        "cannonball-adderley",
+        "elvin-jones"
+      ],
+      "albums": [
+        "out-of-the-cool"
+      ],
+      "signatureTracks": [
+        "Boplicity",
+        "La Nevada",
+        "Concierto de Aranjuez"
+      ],
+      "videoQuery": "Gil Evans Orchestra live"
+    },
+    {
+      "id": "art-blakey",
+      "name": "Art Blakey",
+      "born": 1919,
+      "died": 1990,
+      "instrument": "Drums",
+      "eras": [
+        "bebop",
+        "hard-bop"
+      ],
+      "primaryEra": "hard-bop",
+      "wikipedia": "Art_Blakey",
+      "blurb": "The thunderous drummer behind the Jazz Messengers spent 35 years turning young players into stars, driving every band with his signature press roll.",
+      "connections": [
+        "thelonious-monk",
+        "horace-silver",
+        "clifford-brown",
+        "lee-morgan",
+        "wayne-shorter",
+        "freddie-hubbard",
+        "wynton-marsalis",
+        "keith-jarrett"
+      ],
+      "albums": [
+        "moanin"
+      ],
+      "signatureTracks": [
+        "Moanin'",
+        "Blues March",
+        "A Night in Tunisia"
+      ],
+      "videoQuery": "Art Blakey Jazz Messengers live 1958"
+    },
+    {
+      "id": "horace-silver",
+      "name": "Horace Silver",
+      "born": 1928,
+      "died": 2014,
+      "instrument": "Piano",
+      "eras": [
+        "hard-bop",
+        "soul-jazz"
+      ],
+      "primaryEra": "hard-bop",
+      "wikipedia": "Horace_Silver",
+      "blurb": "A pianist and composer who blended bebop with gospel, blues and Cape Verdean rhythm, writing catchy, funky tunes that defined hard bop.",
+      "connections": [
+        "art-blakey",
+        "clifford-brown",
+        "sonny-rollins"
+      ],
+      "albums": [
+        "song-for-my-father"
+      ],
+      "signatureTracks": [
+        "Song for My Father",
+        "Señor Blues",
+        "The Preacher"
+      ],
+      "videoQuery": "Horace Silver Quintet live"
+    },
+    {
+      "id": "clifford-brown",
+      "name": "Clifford Brown",
+      "born": 1930,
+      "died": 1956,
+      "instrument": "Trumpet",
+      "eras": [
+        "bebop",
+        "hard-bop"
+      ],
+      "primaryEra": "hard-bop",
+      "wikipedia": "Clifford_Brown",
+      "blurb": "Brownie's warm, golden tone and flawless invention made him the most admired young trumpeter of his day before a car crash took him at 25.",
+      "connections": [
+        "max-roach",
+        "sarah-vaughan",
+        "art-blakey",
+        "horace-silver",
+        "sonny-rollins"
+      ],
+      "albums": [
+        "study-in-brown"
+      ],
+      "signatureTracks": [
+        "Joy Spring",
+        "Daahoud",
+        "Cherokee"
+      ],
+      "videoQuery": "Clifford Brown Max Roach quintet"
+    },
+    {
+      "id": "sonny-rollins",
+      "name": "Sonny Rollins",
+      "born": 1930,
+      "instrument": "Saxophone",
+      "eras": [
+        "bebop",
+        "hard-bop"
+      ],
+      "primaryEra": "hard-bop",
+      "wikipedia": "Sonny_Rollins",
+      "blurb": "The Saxophone Colossus is jazz's great thematic improviser, building solos like sculptures from a tune's melody, with a calypso streak and a tenor tone like granite.",
+      "connections": [
+        "coleman-hawkins",
+        "thelonious-monk",
+        "bud-powell",
+        "max-roach",
+        "horace-silver",
+        "clifford-brown"
+      ],
+      "albums": [
+        "saxophone-colossus"
+      ],
+      "signatureTracks": [
+        "St. Thomas",
+        "Oleo",
+        "Doxy",
+        "Airegin"
+      ],
+      "videoQuery": "Sonny Rollins live concert"
+    },
+    {
+      "id": "lee-morgan",
+      "name": "Lee Morgan",
+      "born": 1938,
+      "died": 1972,
+      "instrument": "Trumpet",
+      "eras": [
+        "hard-bop",
+        "soul-jazz"
+      ],
+      "primaryEra": "hard-bop",
+      "wikipedia": "Lee_Morgan",
+      "blurb": "A brash Philadelphia prodigy who joined the Jazz Messengers as a teenager and later scored a crossover hit with 'The Sidewinder.' He was killed at 33.",
+      "connections": [
+        "art-blakey",
+        "wayne-shorter",
+        "freddie-hubbard",
+        "jimmy-smith"
+      ],
+      "albums": [
+        "the-sidewinder"
+      ],
+      "signatureTracks": [
+        "The Sidewinder",
+        "Ceora",
+        "Search for the New Land"
+      ],
+      "videoQuery": "Lee Morgan Art Blakey live trumpet"
+    },
+    {
+      "id": "cannonball-adderley",
+      "name": "Cannonball Adderley",
+      "born": 1928,
+      "died": 1975,
+      "instrument": "Saxophone",
+      "eras": [
+        "hard-bop",
+        "soul-jazz",
+        "modal"
+      ],
+      "primaryEra": "hard-bop",
+      "wikipedia": "Cannonball_Adderley",
+      "blurb": "A joyous alto saxophonist who played on Kind of Blue, then led a soulful quintet with his brother Nat that turned gospel-tinged jazz into a hit.",
+      "connections": [
+        "miles-davis",
+        "gil-evans",
+        "joe-zawinul",
+        "bill-evans"
+      ],
+      "albums": [
+        "somethin-else",
+        "mercy-mercy-mercy"
+      ],
+      "signatureTracks": [
+        "Mercy, Mercy, Mercy",
+        "Autumn Leaves",
+        "Work Song"
+      ],
+      "videoQuery": "Cannonball Adderley Quintet live"
+    },
+    {
+      "id": "dexter-gordon",
+      "name": "Dexter Gordon",
+      "born": 1923,
+      "died": 1990,
+      "instrument": "Saxophone",
+      "eras": [
+        "bebop",
+        "hard-bop"
+      ],
+      "primaryEra": "hard-bop",
+      "wikipedia": "Dexter_Gordon",
+      "blurb": "Long Tall Dexter brought bebop to the tenor with a big, laid-back sound and witty quotes, later earning an Oscar nomination for the film 'Round Midnight.",
+      "connections": [
+        "bud-powell",
+        "freddie-hubbard"
+      ],
+      "albums": [
+        "go"
+      ],
+      "signatureTracks": [
+        "Cheese Cake",
+        "Soy Califa",
+        "Tanya"
+      ],
+      "videoQuery": "Dexter Gordon live tenor saxophone"
+    },
+    {
+      "id": "charles-mingus",
+      "name": "Charles Mingus",
+      "born": 1922,
+      "died": 1979,
+      "instrument": "Bass",
+      "eras": [
+        "bebop",
+        "hard-bop",
+        "free"
+      ],
+      "primaryEra": "hard-bop",
+      "wikipedia": "Charles_Mingus",
+      "blurb": "A volcanic bassist and composer whose music swings from church shouts to Ellingtonian elegance to political fury, often in the same piece.",
+      "connections": [
+        "duke-ellington",
+        "charlie-parker",
+        "bud-powell",
+        "max-roach",
+        "eric-dolphy",
+        "bill-evans"
+      ],
+      "albums": [
+        "mingus-ah-um"
+      ],
+      "signatureTracks": [
+        "Goodbye Pork Pie Hat",
+        "Better Git It in Your Soul",
+        "Fables of Faubus",
+        "Haitian Fight Song"
+      ],
+      "videoQuery": "Charles Mingus live 1964"
+    },
+    {
+      "id": "freddie-hubbard",
+      "name": "Freddie Hubbard",
+      "born": 1938,
+      "died": 2008,
+      "instrument": "Trumpet",
+      "eras": [
+        "hard-bop",
+        "modal",
+        "free",
+        "fusion"
+      ],
+      "primaryEra": "hard-bop",
+      "wikipedia": "Freddie_Hubbard",
+      "blurb": "A trumpet powerhouse equally at home with Blakey, Ornette and Coltrane, whose CTI records like Red Clay bridged hard bop and fusion.",
+      "connections": [
+        "art-blakey",
+        "lee-morgan",
+        "dexter-gordon",
+        "ornette-coleman",
+        "eric-dolphy",
+        "herbie-hancock"
+      ],
+      "albums": [],
+      "signatureTracks": [
+        "Red Clay",
+        "Hub-Tones",
+        "Little Sunflower"
+      ],
+      "videoQuery": "Freddie Hubbard live trumpet"
+    },
+    {
+      "id": "tito-puente",
+      "name": "Tito Puente",
+      "born": 1923,
+      "died": 2000,
+      "instrument": "Bandleader",
+      "eras": [
+        "latin"
+      ],
+      "primaryEra": "latin",
+      "wikipedia": "Tito_Puente",
+      "blurb": "El Rey del Timbal ruled the Palladium's mambo era with a flashy timbales style and a big band that fused Cuban rhythm with jazz harmony.",
+      "connections": [
+        "machito",
+        "mongo-santamaria"
+      ],
+      "albums": [
+        "dance-mania"
+      ],
+      "signatureTracks": [
+        "Oye Como Va",
+        "Ran Kan Kan",
+        "El Cayuco"
+      ],
+      "videoQuery": "Tito Puente live timbales"
+    },
+    {
+      "id": "machito",
+      "name": "Machito",
+      "born": 1909,
+      "died": 1984,
+      "instrument": "Bandleader",
+      "eras": [
+        "latin"
+      ],
+      "primaryEra": "latin",
+      "wikipedia": "Machito",
+      "blurb": "With his Afro-Cubans and musical director Mario Bauzá, Machito married Cuban rhythm to big-band jazz in 1940s New York and laid the groundwork for Latin jazz.",
+      "connections": [
+        "dizzy-gillespie",
+        "tito-puente"
+      ],
+      "albums": [
+        "kenya"
+      ],
+      "signatureTracks": [
+        "Tanga",
+        "Mambo Inn"
+      ],
+      "videoQuery": "Machito and his Afro-Cubans"
+    },
+    {
+      "id": "antonio-carlos-jobim",
+      "name": "Antônio Carlos Jobim",
+      "born": 1927,
+      "died": 1994,
+      "instrument": "Composer",
+      "eras": [
+        "latin"
+      ],
+      "primaryEra": "latin",
+      "wikipedia": "Antônio_Carlos_Jobim",
+      "blurb": "Brazil's great songwriter gave bossa nova its repertoire, with sophisticated melodies over sumptuous harmonies that jazz musicians adopted as modern standards.",
+      "connections": [
+        "stan-getz",
+        "joao-gilberto"
+      ],
+      "albums": [
+        "wave"
+      ],
+      "signatureTracks": [
+        "The Girl from Ipanema",
+        "Wave",
+        "Corcovado",
+        "Águas de Março"
+      ],
+      "videoQuery": "Antonio Carlos Jobim live"
+    },
+    {
+      "id": "joao-gilberto",
+      "name": "João Gilberto",
+      "born": 1931,
+      "died": 2019,
+      "instrument": "Guitar",
+      "eras": [
+        "latin"
+      ],
+      "primaryEra": "latin",
+      "wikipedia": "João_Gilberto",
+      "blurb": "The quiet architect of bossa nova, whose whispered vocals and offbeat guitar rhythm distilled samba into something intimate and endlessly cool.",
+      "connections": [
+        "stan-getz",
+        "antonio-carlos-jobim"
+      ],
+      "albums": [
+        "chega-de-saudade"
+      ],
+      "signatureTracks": [
+        "Chega de Saudade",
+        "Desafinado",
+        "Bim Bom"
+      ],
+      "videoQuery": "Joao Gilberto live"
+    },
+    {
+      "id": "mongo-santamaria",
+      "name": "Mongo Santamaría",
+      "born": 1917,
+      "died": 2003,
+      "instrument": "Drums",
+      "eras": [
+        "latin",
+        "soul-jazz"
+      ],
+      "primaryEra": "latin",
+      "wikipedia": "Mongo_Santamaría",
+      "blurb": "A Havana-born conguero who composed 'Afro Blue' and turned Herbie Hancock's 'Watermelon Man' into a hit, bridging Afro-Cuban music, jazz and soul.",
+      "connections": [
+        "tito-puente",
+        "herbie-hancock",
+        "chick-corea"
+      ],
+      "albums": [
+        "watermelon-man"
+      ],
+      "signatureTracks": [
+        "Afro Blue",
+        "Watermelon Man",
+        "Cloud Nine"
+      ],
+      "videoQuery": "Mongo Santamaria live congas"
+    },
+    {
+      "id": "chucho-valdes",
+      "name": "Chucho Valdés",
+      "born": 1941,
+      "instrument": "Piano",
+      "eras": [
+        "latin",
+        "fusion",
+        "contemporary"
+      ],
+      "primaryEra": "latin",
+      "wikipedia": "Chucho_Valdés",
+      "blurb": "A towering Cuban pianist who co-founded the explosive band Irakere and fuses Afro-Cuban ritual rhythm, classical technique and jazz improvisation.",
+      "connections": [
+        "dizzy-gillespie",
+        "roy-hargrove"
+      ],
+      "albums": [
+        "jazz-bata-2"
+      ],
+      "signatureTracks": [
+        "Bacalao con Pan",
+        "Mambo Influenciado"
+      ],
+      "videoQuery": "Chucho Valdes live piano"
+    },
+    {
+      "id": "jimmy-smith",
+      "name": "Jimmy Smith",
+      "born": 1925,
+      "died": 2005,
+      "instrument": "Organ",
+      "eras": [
+        "soul-jazz"
+      ],
+      "primaryEra": "soul-jazz",
+      "wikipedia": "Jimmy_Smith_(musician)",
+      "blurb": "The man who made the Hammond B-3 a jazz instrument, with roaring, bluesy and swinging chops. Every organ player since has worked in his shadow.",
+      "connections": [
+        "lee-morgan",
+        "grant-green"
+      ],
+      "albums": [
+        "the-sermon",
+        "back-at-the-chicken-shack"
+      ],
+      "signatureTracks": [
+        "The Sermon",
+        "Back at the Chicken Shack",
+        "Walk on the Wild Side"
+      ],
+      "videoQuery": "Jimmy Smith Hammond organ live"
+    },
+    {
+      "id": "grant-green",
+      "name": "Grant Green",
+      "born": 1935,
+      "died": 1979,
+      "instrument": "Guitar",
+      "eras": [
+        "soul-jazz",
+        "hard-bop"
+      ],
+      "primaryEra": "soul-jazz",
+      "wikipedia": "Grant_Green",
+      "blurb": "A Blue Note house guitarist with a clean, horn-like single-note style steeped in the blues, equally at home in organ grooves and modal sessions.",
+      "connections": [
+        "jimmy-smith",
+        "herbie-hancock",
+        "mccoy-tyner",
+        "elvin-jones"
+      ],
+      "albums": [
+        "idle-moments"
+      ],
+      "signatureTracks": [
+        "Idle Moments",
+        "Sookie Sookie",
+        "Jean De Fleur"
+      ],
+      "videoQuery": "Grant Green guitar live"
+    },
+    {
+      "id": "nina-simone",
+      "name": "Nina Simone",
+      "born": 1933,
+      "died": 2003,
+      "instrument": "Vocals",
+      "eras": [
+        "soul-jazz"
+      ],
+      "primaryEra": "soul-jazz",
+      "wikipedia": "Nina_Simone",
+      "blurb": "A classically trained pianist who became the High Priestess of Soul, merging jazz, gospel, blues and Bach into music of fierce personal and political conviction.",
+      "connections": [
+        "billie-holiday",
+        "cecile-mclorin-salvant"
+      ],
+      "albums": [
+        "little-girl-blue"
+      ],
+      "signatureTracks": [
+        "Feeling Good",
+        "My Baby Just Cares for Me",
+        "Mississippi Goddam",
+        "I Loves You, Porgy"
+      ],
+      "videoQuery": "Nina Simone live Montreux 1976"
+    },
+    {
+      "id": "john-coltrane",
+      "name": "John Coltrane",
+      "born": 1926,
+      "died": 1967,
+      "instrument": "Saxophone",
+      "eras": [
+        "hard-bop",
+        "modal",
+        "free",
+        "spiritual"
+      ],
+      "primaryEra": "modal",
+      "wikipedia": "John_Coltrane",
+      "blurb": "Trane's relentless search took him from the harmonic sheets of sound on Giant Steps to the modal storms of his classic quartet and the prayer of A Love Supreme.",
+      "connections": [
+        "duke-ellington",
+        "thelonious-monk",
+        "miles-davis",
+        "mccoy-tyner",
+        "elvin-jones",
+        "eric-dolphy",
+        "alice-coltrane",
+        "pharoah-sanders"
+      ],
+      "albums": [
+        "blue-train",
+        "giant-steps",
+        "my-favorite-things",
+        "a-love-supreme"
+      ],
+      "signatureTracks": [
+        "Giant Steps",
+        "My Favorite Things",
+        "Naima",
+        "Alabama"
+      ],
+      "videoQuery": "John Coltrane Quartet live 1965"
+    },
+    {
+      "id": "bill-evans",
+      "name": "Bill Evans",
+      "born": 1929,
+      "died": 1980,
+      "instrument": "Piano",
+      "eras": [
+        "cool",
+        "modal"
+      ],
+      "primaryEra": "modal",
+      "wikipedia": "Bill_Evans",
+      "blurb": "An impressionistic pianist whose voicings colored Kind of Blue and whose interactive trios redefined the piano trio as a conversation among equals.",
+      "connections": [
+        "miles-davis",
+        "cannonball-adderley",
+        "charles-mingus"
+      ],
+      "albums": [
+        "sunday-at-the-village-vanguard"
+      ],
+      "signatureTracks": [
+        "Waltz for Debby",
+        "Peace Piece",
+        "Gloria's Step",
+        "Blue in Green"
+      ],
+      "videoQuery": "Bill Evans Trio live"
+    },
+    {
+      "id": "mccoy-tyner",
+      "name": "McCoy Tyner",
+      "born": 1938,
+      "died": 2020,
+      "instrument": "Piano",
+      "eras": [
+        "modal",
+        "spiritual"
+      ],
+      "primaryEra": "modal",
+      "wikipedia": "McCoy_Tyner",
+      "blurb": "The pianist of Coltrane's classic quartet invented a new keyboard language of stacked fourths and pounding left-hand pedal points, then led powerful bands of his own.",
+      "connections": [
+        "grant-green",
+        "john-coltrane",
+        "elvin-jones",
+        "kamasi-washington",
+        "christian-scott"
+      ],
+      "albums": [
+        "the-real-mccoy",
+        "sahara"
+      ],
+      "signatureTracks": [
+        "Passion Dance",
+        "Contemplation",
+        "Fly with the Wind"
+      ],
+      "videoQuery": "McCoy Tyner live piano"
+    },
+    {
+      "id": "wayne-shorter",
+      "name": "Wayne Shorter",
+      "born": 1933,
+      "died": 2023,
+      "instrument": "Saxophone",
+      "eras": [
+        "hard-bop",
+        "modal",
+        "fusion"
+      ],
+      "primaryEra": "modal",
+      "wikipedia": "Wayne_Shorter",
+      "blurb": "Arguably the finest jazz composer of the last six decades, Shorter wrote enigmatic classics for Blakey and Miles, co-founded Weather Report and never stopped exploring.",
+      "connections": [
+        "miles-davis",
+        "art-blakey",
+        "lee-morgan",
+        "herbie-hancock",
+        "joe-zawinul",
+        "jaco-pastorius",
+        "esperanza-spalding",
+        "ambrose-akinmusire"
+      ],
+      "albums": [
+        "speak-no-evil"
+      ],
+      "signatureTracks": [
+        "Footprints",
+        "Speak No Evil",
+        "Infant Eyes",
+        "Nefertiti"
+      ],
+      "videoQuery": "Wayne Shorter Quartet live"
+    },
+    {
+      "id": "herbie-hancock",
+      "name": "Herbie Hancock",
+      "born": 1940,
+      "instrument": "Piano",
+      "eras": [
+        "modal",
+        "fusion"
+      ],
+      "primaryEra": "fusion",
+      "wikipedia": "Herbie_Hancock",
+      "blurb": "From Miles's second quintet to the funk of Head Hunters and the electro of 'Rockit,' Hancock has embraced every new sound while remaining a supremely lyrical pianist.",
+      "connections": [
+        "miles-davis",
+        "freddie-hubbard",
+        "mongo-santamaria",
+        "grant-green",
+        "wayne-shorter",
+        "chick-corea",
+        "esperanza-spalding",
+        "ambrose-akinmusire"
+      ],
+      "albums": [
+        "maiden-voyage",
+        "head-hunters"
+      ],
+      "signatureTracks": [
+        "Maiden Voyage",
+        "Watermelon Man",
+        "Chameleon",
+        "Cantaloupe Island"
+      ],
+      "videoQuery": "Herbie Hancock Headhunters live"
+    },
+    {
+      "id": "elvin-jones",
+      "name": "Elvin Jones",
+      "born": 1927,
+      "died": 2004,
+      "instrument": "Drums",
+      "eras": [
+        "modal"
+      ],
+      "primaryEra": "modal",
+      "wikipedia": "Elvin_Jones",
+      "blurb": "The polyrhythmic engine of Coltrane's quartet played the drums like rolling surf, layering triplets and cross-rhythms into a churning, elemental swing.",
+      "connections": [
+        "gil-evans",
+        "grant-green",
+        "john-coltrane",
+        "mccoy-tyner"
+      ],
+      "albums": [],
+      "signatureTracks": [
+        "Resolution",
+        "Impressions",
+        "Passion Dance"
+      ],
+      "videoQuery": "Elvin Jones drum solo live"
+    },
+    {
+      "id": "ornette-coleman",
+      "name": "Ornette Coleman",
+      "born": 1930,
+      "died": 2015,
+      "instrument": "Saxophone",
+      "eras": [
+        "free"
+      ],
+      "primaryEra": "free",
+      "wikipedia": "Ornette_Coleman",
+      "blurb": "The Texan alto saxophonist who freed jazz from fixed chord changes, playing raw, vocal melodies that sounded both ancient and from the future.",
+      "connections": [
+        "freddie-hubbard",
+        "don-cherry",
+        "eric-dolphy",
+        "pat-metheny"
+      ],
+      "albums": [
+        "the-shape-of-jazz-to-come"
+      ],
+      "signatureTracks": [
+        "Lonely Woman",
+        "Ramblin'",
+        "Peace",
+        "Turnaround"
+      ],
+      "videoQuery": "Ornette Coleman live quartet"
+    },
+    {
+      "id": "cecil-taylor",
+      "name": "Cecil Taylor",
+      "born": 1929,
+      "died": 2018,
+      "instrument": "Piano",
+      "eras": [
+        "free"
+      ],
+      "primaryEra": "free",
+      "wikipedia": "Cecil_Taylor",
+      "blurb": "A pianist of volcanic energy who treated the keyboard like 88 tuned drums, building dense, cascading structures of sound unlike anything before.",
+      "connections": [
+        "max-roach",
+        "archie-shepp",
+        "albert-ayler"
+      ],
+      "albums": [
+        "unit-structures"
+      ],
+      "signatureTracks": [
+        "Steps",
+        "Enter Evening",
+        "Conquistador!"
+      ],
+      "videoQuery": "Cecil Taylor solo piano live"
+    },
+    {
+      "id": "albert-ayler",
+      "name": "Albert Ayler",
+      "born": 1936,
+      "died": 1970,
+      "instrument": "Saxophone",
+      "eras": [
+        "free",
+        "spiritual"
+      ],
+      "primaryEra": "free",
+      "wikipedia": "Albert_Ayler",
+      "blurb": "Ayler played folk-like themes with a huge, quivering tenor sound and then shattered them into ecstatic cries, the most spiritual of the free players.",
+      "connections": [
+        "cecil-taylor",
+        "don-cherry"
+      ],
+      "albums": [
+        "spiritual-unity"
+      ],
+      "signatureTracks": [
+        "Ghosts",
+        "Spirits Rejoice",
+        "Bells"
+      ],
+      "videoQuery": "Albert Ayler live 1966"
+    },
+    {
+      "id": "eric-dolphy",
+      "name": "Eric Dolphy",
+      "born": 1928,
+      "died": 1964,
+      "instrument": "Saxophone",
+      "eras": [
+        "hard-bop",
+        "free"
+      ],
+      "primaryEra": "free",
+      "wikipedia": "Eric_Dolphy",
+      "blurb": "A multi-instrumentalist on alto, flute and bass clarinet whose wide-interval leaps and vocal cries bridged hard bop and the avant-garde before his death at 36.",
+      "connections": [
+        "charles-mingus",
+        "freddie-hubbard",
+        "john-coltrane",
+        "ornette-coleman"
+      ],
+      "albums": [
+        "out-to-lunch"
+      ],
+      "signatureTracks": [
+        "Hat and Beard",
+        "Out to Lunch",
+        "Gazzelloni"
+      ],
+      "videoQuery": "Eric Dolphy live bass clarinet"
+    },
+    {
+      "id": "sun-ra",
+      "name": "Sun Ra",
+      "born": 1914,
+      "died": 1993,
+      "instrument": "Bandleader",
+      "eras": [
+        "free",
+        "spiritual"
+      ],
+      "primaryEra": "spiritual",
+      "wikipedia": "Sun_Ra",
+      "blurb": "A keyboardist and bandleader who claimed Saturn as his home, Sun Ra led his Arkestra through swing, space chants and electronic explorations, inventing Afrofuturism along the way.",
+      "connections": [
+        "coleman-hawkins",
+        "pharoah-sanders"
+      ],
+      "albums": [
+        "space-is-the-place"
+      ],
+      "signatureTracks": [
+        "Space Is the Place",
+        "Enlightenment",
+        "Lanquidity"
+      ],
+      "videoQuery": "Sun Ra Arkestra live"
+    },
+    {
+      "id": "don-cherry",
+      "name": "Don Cherry",
+      "born": 1936,
+      "died": 1995,
+      "instrument": "Trumpet",
+      "eras": [
+        "free",
+        "spiritual"
+      ],
+      "primaryEra": "free",
+      "wikipedia": "Don_Cherry_(trumpeter)",
+      "blurb": "Ornette's pocket-trumpet partner became a globe-trotting pioneer of world music, folding African, Indian and Scandinavian sounds into free jazz.",
+      "connections": [
+        "ornette-coleman",
+        "albert-ayler",
+        "pharoah-sanders",
+        "archie-shepp"
+      ],
+      "albums": [
+        "complete-communion"
+      ],
+      "signatureTracks": [
+        "Complete Communion",
+        "Brown Rice",
+        "Mopti"
+      ],
+      "videoQuery": "Don Cherry live trumpet"
+    },
+    {
+      "id": "archie-shepp",
+      "name": "Archie Shepp",
+      "born": 1937,
+      "instrument": "Saxophone",
+      "eras": [
+        "free",
+        "spiritual"
+      ],
+      "primaryEra": "free",
+      "wikipedia": "Archie_Shepp",
+      "blurb": "A fiery tenor saxophonist, playwright and activist who fused free jazz with the blues and made his horn a voice for Black liberation.",
+      "connections": [
+        "cecil-taylor",
+        "don-cherry"
+      ],
+      "albums": [
+        "fire-music"
+      ],
+      "signatureTracks": [
+        "Hambone",
+        "Attica Blues",
+        "Mama Too Tight"
+      ],
+      "videoQuery": "Archie Shepp live saxophone"
+    },
+    {
+      "id": "alice-coltrane",
+      "name": "Alice Coltrane",
+      "born": 1937,
+      "died": 2007,
+      "instrument": "Piano",
+      "eras": [
+        "spiritual"
+      ],
+      "primaryEra": "spiritual",
+      "wikipedia": "Alice_Coltrane",
+      "blurb": "A pianist, harpist and organist who transformed her spiritual practice into cosmic, devotional music, among the most visionary in jazz.",
+      "connections": [
+        "john-coltrane",
+        "pharoah-sanders"
+      ],
+      "albums": [
+        "journey-in-satchidananda"
+      ],
+      "signatureTracks": [
+        "Journey in Satchidananda",
+        "Turiya and Ramakrishna",
+        "Ptah, the El Daoud"
+      ],
+      "videoQuery": "Alice Coltrane live harp"
+    },
+    {
+      "id": "pharoah-sanders",
+      "name": "Pharoah Sanders",
+      "born": 1940,
+      "died": 2022,
+      "instrument": "Saxophone",
+      "eras": [
+        "free",
+        "spiritual"
+      ],
+      "primaryEra": "spiritual",
+      "wikipedia": "Pharoah_Sanders",
+      "blurb": "Coltrane's last saxophone partner developed a sound that moved from terrifying overblown cries to tender, prayer-like melody, the voice of spiritual jazz.",
+      "connections": [
+        "john-coltrane",
+        "sun-ra",
+        "don-cherry",
+        "alice-coltrane"
+      ],
+      "albums": [
+        "karma"
+      ],
+      "signatureTracks": [
+        "The Creator Has a Master Plan",
+        "Astral Traveling",
+        "You've Got to Have Freedom"
+      ],
+      "videoQuery": "Pharoah Sanders live"
+    },
+    {
+      "id": "chick-corea",
+      "name": "Chick Corea",
+      "born": 1941,
+      "died": 2021,
+      "instrument": "Piano",
+      "eras": [
+        "fusion",
+        "post-bop"
+      ],
+      "primaryEra": "fusion",
+      "wikipedia": "Chick_Corea",
+      "blurb": "A prolific pianist and composer who moved from Miles's electric band to Return to Forever's Latin-tinged fusion, writing standards like 'Spain' along the way.",
+      "connections": [
+        "stan-getz",
+        "mongo-santamaria",
+        "herbie-hancock",
+        "keith-jarrett",
+        "john-mclaughlin"
+      ],
+      "albums": [
+        "return-to-forever"
+      ],
+      "signatureTracks": [
+        "Spain",
+        "La Fiesta",
+        "Armando's Rhumba",
+        "Crystal Silence"
+      ],
+      "videoQuery": "Chick Corea Return to Forever live"
+    },
+    {
+      "id": "john-mclaughlin",
+      "name": "John McLaughlin",
+      "born": 1942,
+      "instrument": "Guitar",
+      "eras": [
+        "fusion"
+      ],
+      "primaryEra": "fusion",
+      "wikipedia": "John_McLaughlin_(musician)",
+      "blurb": "An English guitarist whose ferocious speed and Indian-influenced spirituality powered Miles's electric records and the Mahavishnu Orchestra.",
+      "connections": [
+        "miles-davis",
+        "chick-corea",
+        "joe-zawinul"
+      ],
+      "albums": [
+        "the-inner-mounting-flame"
+      ],
+      "signatureTracks": [
+        "Meeting of the Spirits",
+        "Birds of Fire",
+        "Dance of Maya"
+      ],
+      "videoQuery": "Mahavishnu Orchestra live 1972"
+    },
+    {
+      "id": "jaco-pastorius",
+      "name": "Jaco Pastorius",
+      "born": 1951,
+      "died": 1987,
+      "instrument": "Bass",
+      "eras": [
+        "fusion"
+      ],
+      "primaryEra": "fusion",
+      "wikipedia": "Jaco_Pastorius",
+      "blurb": "The self-proclaimed world's greatest bass player made a strong case. His fretless electric bass sang melodies, chords and harmonics, revolutionizing the instrument.",
+      "connections": [
+        "wayne-shorter",
+        "joe-zawinul",
+        "pat-metheny"
+      ],
+      "albums": [
+        "jaco-pastorius-album"
+      ],
+      "signatureTracks": [
+        "Portrait of Tracy",
+        "Donna Lee",
+        "Teen Town"
+      ],
+      "videoQuery": "Jaco Pastorius live bass solo"
+    },
+    {
+      "id": "joe-zawinul",
+      "name": "Joe Zawinul",
+      "born": 1932,
+      "died": 2007,
+      "instrument": "Piano",
+      "eras": [
+        "soul-jazz",
+        "fusion"
+      ],
+      "primaryEra": "fusion",
+      "wikipedia": "Joe_Zawinul",
+      "blurb": "An Austrian keyboardist who wrote 'Mercy, Mercy, Mercy' for Cannonball, shaped Miles's In a Silent Way and co-led Weather Report into synth-driven global grooves.",
+      "connections": [
+        "cannonball-adderley",
+        "wayne-shorter",
+        "john-mclaughlin",
+        "jaco-pastorius",
+        "snarky-puppy"
+      ],
+      "albums": [
+        "heavy-weather"
+      ],
+      "signatureTracks": [
+        "Birdland",
+        "Mercy, Mercy, Mercy",
+        "In a Silent Way"
+      ],
+      "videoQuery": "Weather Report live Birdland"
+    },
+    {
+      "id": "pat-metheny",
+      "name": "Pat Metheny",
+      "born": 1954,
+      "instrument": "Guitar",
+      "eras": [
+        "fusion",
+        "post-bop"
+      ],
+      "primaryEra": "fusion",
+      "wikipedia": "Pat_Metheny",
+      "blurb": "A Missouri guitarist with a warm, singing tone whose Pat Metheny Group crafted cinematic, melodic jazz and whose collaborations range from Ornette to Brad Mehldau.",
+      "connections": [
+        "ornette-coleman",
+        "jaco-pastorius",
+        "brad-mehldau",
+        "joshua-redman"
+      ],
+      "albums": [
+        "bright-size-life"
+      ],
+      "signatureTracks": [
+        "Phase Dance",
+        "Bright Size Life",
+        "Last Train Home"
+      ],
+      "videoQuery": "Pat Metheny Group live"
+    },
+    {
+      "id": "wynton-marsalis",
+      "name": "Wynton Marsalis",
+      "born": 1961,
+      "instrument": "Trumpet",
+      "eras": [
+        "post-bop"
+      ],
+      "primaryEra": "post-bop",
+      "wikipedia": "Wynton_Marsalis",
+      "blurb": "A brilliant trumpeter, composer and educator who led the 1980s acoustic revival and became the music's most visible advocate as artistic director of Jazz at Lincoln Center.",
+      "connections": [
+        "art-blakey",
+        "roy-hargrove",
+        "cassandra-wilson",
+        "cecile-mclorin-salvant"
+      ],
+      "albums": [
+        "black-codes"
+      ],
+      "signatureTracks": [
+        "Black Codes (From the Underground)",
+        "Delfeayo's Dilemma",
+        "Blood on the Fields"
+      ],
+      "videoQuery": "Wynton Marsalis live Jazz at Lincoln Center"
+    },
+    {
+      "id": "keith-jarrett",
+      "name": "Keith Jarrett",
+      "born": 1945,
+      "instrument": "Piano",
+      "eras": [
+        "fusion",
+        "post-bop"
+      ],
+      "primaryEra": "post-bop",
+      "wikipedia": "Keith_Jarrett",
+      "blurb": "A pianist of rapturous lyricism, known for vast solo improvisations like The Köln Concert and a long-running Standards Trio that rethought the American songbook.",
+      "connections": [
+        "art-blakey",
+        "chick-corea"
+      ],
+      "albums": [
+        "standards-vol-1"
+      ],
+      "signatureTracks": [
+        "Köln, January 24, 1975, Pt. I",
+        "God Bless the Child",
+        "My Song"
+      ],
+      "videoQuery": "Keith Jarrett Trio live"
+    },
+    {
+      "id": "roy-hargrove",
+      "name": "Roy Hargrove",
+      "born": 1969,
+      "died": 2018,
+      "instrument": "Trumpet",
+      "eras": [
+        "post-bop",
+        "contemporary"
+      ],
+      "primaryEra": "post-bop",
+      "wikipedia": "Roy_Hargrove",
+      "blurb": "A Texas trumpeter discovered by Wynton Marsalis who swung hard in the acoustic tradition, explored Cuban music with Crisol and funk with the RH Factor.",
+      "connections": [
+        "chucho-valdes",
+        "wynton-marsalis"
+      ],
+      "albums": [
+        "habana"
+      ],
+      "signatureTracks": [
+        "Strasbourg/St. Denis",
+        "Mambo for Roy",
+        "Hard Groove"
+      ],
+      "videoQuery": "Roy Hargrove Quintet live"
+    },
+    {
+      "id": "joshua-redman",
+      "name": "Joshua Redman",
+      "born": 1969,
+      "instrument": "Saxophone",
+      "eras": [
+        "post-bop",
+        "contemporary"
+      ],
+      "primaryEra": "post-bop",
+      "wikipedia": "Joshua_Redman",
+      "blurb": "A Harvard graduate who won the 1991 Monk Competition and became the most celebrated tenor of his generation, with a warm, soulful sound and intellectual flair.",
+      "connections": [
+        "pat-metheny",
+        "brad-mehldau"
+      ],
+      "albums": [
+        "wish"
+      ],
+      "signatureTracks": [
+        "Jig-a-Jug",
+        "Sweet Sorrow"
+      ],
+      "videoQuery": "Joshua Redman Quartet live"
+    },
+    {
+      "id": "cassandra-wilson",
+      "name": "Cassandra Wilson",
+      "born": 1955,
+      "instrument": "Vocals",
+      "eras": [
+        "post-bop"
+      ],
+      "primaryEra": "post-bop",
+      "wikipedia": "Cassandra_Wilson",
+      "blurb": "A Mississippi-born singer with a smoky contralto who reimagined Delta blues, pop and standards in earthy, atmospheric arrangements, redefining the jazz vocal album.",
+      "connections": [
+        "wynton-marsalis",
+        "billie-holiday"
+      ],
+      "albums": [
+        "blue-light-til-dawn"
+      ],
+      "signatureTracks": [
+        "Come On in My Kitchen",
+        "Tupelo Honey",
+        "Strange Fruit"
+      ],
+      "videoQuery": "Cassandra Wilson live"
+    },
+    {
+      "id": "brad-mehldau",
+      "name": "Brad Mehldau",
+      "born": 1970,
+      "instrument": "Piano",
+      "eras": [
+        "post-bop",
+        "contemporary"
+      ],
+      "primaryEra": "contemporary",
+      "wikipedia": "Brad_Mehldau",
+      "blurb": "The most influential jazz pianist of his generation folds Bach-like counterpoint, Romantic introspection and Radiohead covers into a deeply personal trio language.",
+      "connections": [
+        "pat-metheny",
+        "joshua-redman"
+      ],
+      "albums": [
+        "art-of-the-trio-vol-1"
+      ],
+      "signatureTracks": [
+        "Exit Music (For a Film)",
+        "Blackbird",
+        "Knives Out"
+      ],
+      "videoQuery": "Brad Mehldau Trio live"
+    },
+    {
+      "id": "kamasi-washington",
+      "name": "Kamasi Washington",
+      "born": 1981,
+      "instrument": "Saxophone",
+      "eras": [
+        "contemporary"
+      ],
+      "primaryEra": "contemporary",
+      "wikipedia": "Kamasi_Washington",
+      "blurb": "A Los Angeles tenor saxophonist whose epic, choir-and-strings albums revived spiritual jazz for a new generation and brought jazz back to rock festivals.",
+      "connections": [
+        "mccoy-tyner",
+        "robert-glasper"
+      ],
+      "albums": [
+        "the-epic"
+      ],
+      "signatureTracks": [
+        "Change of the Guard",
+        "Truth",
+        "Street Fighter Mas"
+      ],
+      "videoQuery": "Kamasi Washington live concert"
+    },
+    {
+      "id": "robert-glasper",
+      "name": "Robert Glasper",
+      "born": 1978,
+      "instrument": "Piano",
+      "eras": [
+        "contemporary"
+      ],
+      "primaryEra": "contemporary",
+      "wikipedia": "Robert_Glasper",
+      "blurb": "A Houston-born pianist who erased the line between jazz, hip-hop and neo-soul; his Black Radio albums made jazz harmony the backbone of modern R&B.",
+      "connections": [
+        "kamasi-washington",
+        "christian-scott",
+        "snarky-puppy"
+      ],
+      "albums": [
+        "black-radio"
+      ],
+      "signatureTracks": [
+        "Afro Blue",
+        "Ah Yeah",
+        "Cherish the Day"
+      ],
+      "videoQuery": "Robert Glasper Experiment live"
+    },
+    {
+      "id": "esperanza-spalding",
+      "name": "Esperanza Spalding",
+      "born": 1984,
+      "instrument": "Bass",
+      "eras": [
+        "contemporary"
+      ],
+      "primaryEra": "contemporary",
+      "wikipedia": "Esperanza_Spalding",
+      "blurb": "A bassist, singer and composer whose daring, genre-crossing projects run from Latin-inflected jazz to art-rock theater and opera with Wayne Shorter.",
+      "connections": [
+        "wayne-shorter",
+        "herbie-hancock"
+      ],
+      "albums": [
+        "emilys-d-evolution"
+      ],
+      "signatureTracks": [
+        "I Know You Know",
+        "Black Gold",
+        "Good Lava"
+      ],
+      "videoQuery": "Esperanza Spalding live"
+    },
+    {
+      "id": "shabaka-hutchings",
+      "name": "Shabaka Hutchings",
+      "born": 1984,
+      "instrument": "Saxophone",
+      "eras": [
+        "contemporary"
+      ],
+      "primaryEra": "contemporary",
+      "wikipedia": "Shabaka_Hutchings",
+      "blurb": "The catalyst of London's jazz renaissance led Sons of Kemet, The Comet Is Coming and Shabaka and the Ancestors, before turning to flutes for a meditative new chapter.",
+      "connections": [
+        "nubya-garcia",
+        "makaya-mccraven"
+      ],
+      "albums": [
+        "perceive-its-beauty"
+      ],
+      "signatureTracks": [
+        "My Queen Is Harriet Tubman",
+        "In the Castle of My Skin",
+        "End of Innocence"
+      ],
+      "videoQuery": "Sons of Kemet live"
+    },
+    {
+      "id": "cecile-mclorin-salvant",
+      "name": "Cécile McLorin Salvant",
+      "born": 1989,
+      "instrument": "Vocals",
+      "eras": [
+        "contemporary"
+      ],
+      "primaryEra": "contemporary",
+      "wikipedia": "Cécile_McLorin_Salvant",
+      "blurb": "A singer of rare intelligence and theatrical range who unearths forgotten songs and reinterprets standards with wit, darkness and astonishing control.",
+      "connections": [
+        "nina-simone",
+        "wynton-marsalis"
+      ],
+      "albums": [
+        "womanchild"
+      ],
+      "signatureTracks": [
+        "WomanChild",
+        "St. Louis Gal",
+        "Wives and Lovers"
+      ],
+      "videoQuery": "Cecile McLorin Salvant live"
+    },
+    {
+      "id": "makaya-mccraven",
+      "name": "Makaya McCraven",
+      "born": 1983,
+      "instrument": "Drums",
+      "eras": [
+        "contemporary"
+      ],
+      "primaryEra": "contemporary",
+      "wikipedia": "Makaya_McCraven",
+      "blurb": "A Chicago drummer and producer who records live improvisations and edits them into hypnotic beat-driven collages, a self-described beat scientist.",
+      "connections": [
+        "shabaka-hutchings",
+        "nubya-garcia"
+      ],
+      "albums": [
+        "universal-beings"
+      ],
+      "signatureTracks": [
+        "Holy Lands",
+        "Young Genius",
+        "In These Times"
+      ],
+      "videoQuery": "Makaya McCraven live"
+    },
+    {
+      "id": "christian-scott",
+      "name": "Christian Scott aTunde Adjuah",
+      "born": 1983,
+      "instrument": "Trumpet",
+      "eras": [
+        "contemporary"
+      ],
+      "primaryEra": "contemporary",
+      "wikipedia": "Chief_Xian_aTunde_Adjuah",
+      "blurb": "A New Orleans trumpeter and Black Indian chief whose stretch music blends jazz with West African rhythm, trap drums and his own redesigned instruments.",
+      "connections": [
+        "mccoy-tyner",
+        "robert-glasper"
+      ],
+      "albums": [
+        "ancestral-recall"
+      ],
+      "signatureTracks": [
+        "K.K.P.D.",
+        "Ancestral Recall",
+        "Sunrise in Beijing"
+      ],
+      "videoQuery": "Christian Scott aTunde Adjuah live"
+    },
+    {
+      "id": "snarky-puppy",
+      "name": "Snarky Puppy",
+      "born": 2004,
+      "instrument": "Bandleader",
+      "eras": [
+        "contemporary"
+      ],
+      "primaryEra": "contemporary",
+      "wikipedia": "Snarky_Puppy",
+      "blurb": "Bassist Michael League's sprawling collective, born at the University of North Texas, filmed its studio-with-audience sessions into a grassroots global phenomenon.",
+      "connections": [
+        "joe-zawinul",
+        "robert-glasper"
+      ],
+      "albums": [
+        "we-like-it-here"
+      ],
+      "signatureTracks": [
+        "Lingus",
+        "Shofukan",
+        "What About Me?"
+      ],
+      "videoQuery": "Snarky Puppy Lingus live"
+    },
+    {
+      "id": "ambrose-akinmusire",
+      "name": "Ambrose Akinmusire",
+      "born": 1982,
+      "instrument": "Trumpet",
+      "eras": [
+        "contemporary"
+      ],
+      "primaryEra": "contemporary",
+      "wikipedia": "Ambrose_Akinmusire",
+      "blurb": "An Oakland trumpeter with a vulnerable, searching sound whose Blue Note albums mix jazz with poetry, chamber strings and protest songs.",
+      "connections": [
+        "wayne-shorter",
+        "herbie-hancock"
+      ],
+      "albums": [
+        "the-imagined-savior"
+      ],
+      "signatureTracks": [
+        "Confessions to My Unborn Daughter",
+        "Rollcall for Those Absent",
+        "Vartha"
+      ],
+      "videoQuery": "Ambrose Akinmusire live"
+    },
+    {
+      "id": "nubya-garcia",
+      "name": "Nubya Garcia",
+      "born": 1991,
+      "instrument": "Saxophone",
+      "eras": [
+        "contemporary"
+      ],
+      "primaryEra": "contemporary",
+      "wikipedia": "Nubya_Garcia",
+      "blurb": "A London tenor saxophonist with a deep, rich tone whose music draws on dub, cumbia and Caribbean roots, a leading voice of the UK scene.",
+      "connections": [
+        "shabaka-hutchings",
+        "makaya-mccraven"
+      ],
+      "albums": [
+        "source"
+      ],
+      "signatureTracks": [
+        "Source",
+        "Pace",
+        "La Cumbia Me Está Llamando"
+      ],
+      "videoQuery": "Nubya Garcia live"
+    }
+  ],
+  "albums": [
+    {
+      "id": "essential-bessie-smith",
+      "title": "The Essential Bessie Smith",
+      "artist": "bessie-smith",
+      "artistName": "Bessie Smith",
+      "year": 1923,
+      "label": "Columbia",
+      "era": "roots",
+      "why": "The Empress of the Blues at full power: two discs of Columbia sides, including duets with a young Louis Armstrong, sung with a force that needed no microphone.",
+      "highlights": [
+        "St. Louis Blues",
+        "Backwater Blues",
+        "Nobody Knows You When You're Down and Out"
+      ],
+      "starter": true
+    },
+    {
+      "id": "ma-rainey",
+      "title": "Ma Rainey",
+      "artist": "ma-rainey",
+      "artistName": "Ma Rainey",
+      "year": 1923,
+      "label": "Milestone",
+      "era": "roots",
+      "why": "A generous gathering of the Mother of the Blues' Paramount recordings: tough, funny and frank songs about love, work and freedom from the tent-show era.",
+      "highlights": [
+        "See See the Rider Blues",
+        "Ma Rainey's Black Bottom",
+        "Prove It On Me"
+      ],
+      "starter": false
+    },
+    {
+      "id": "snowy-morning-blues",
+      "title": "Snowy Morning Blues",
+      "artist": "james-p-johnson",
+      "artistName": "James P. Johnson",
+      "year": 1930,
+      "label": "Decca",
+      "era": "roots",
+      "why": "Harlem stride in all its rolling, two-handed glory, from the showpiece 'Carolina Shout' to warm tributes to his student Fats Waller.",
+      "highlights": [
+        "Snowy Morning Blues",
+        "Carolina Shout",
+        "Jingles"
+      ],
+      "starter": false
+    },
+    {
+      "id": "hot-five-hot-seven",
+      "title": "The Complete Hot Five & Hot Seven Recordings",
+      "artist": "louis-armstrong",
+      "artistName": "Louis Armstrong",
+      "year": 1925,
+      "label": "Columbia",
+      "era": "new-orleans",
+      "why": "The most important small-group records in jazz. Here Armstrong turns the New Orleans ensemble into a launch pad for the improvising soloist, and invents swing along the way.",
+      "highlights": [
+        "West End Blues",
+        "Potato Head Blues",
+        "Heebie Jeebies"
+      ],
+      "starter": true
+    },
+    {
+      "id": "birth-of-the-hot",
+      "title": "Birth of the Hot",
+      "artist": "jelly-roll-morton",
+      "artistName": "Jelly Roll Morton",
+      "year": 1926,
+      "label": "Bluebird",
+      "era": "new-orleans",
+      "why": "Morton's Red Hot Peppers sessions are tightly composed yet wildly alive, with breaks, stop-time and shifting textures that showed jazz could be arranged without losing its heat.",
+      "highlights": [
+        "Black Bottom Stomp",
+        "Dead Man Blues",
+        "Smoke-House Blues"
+      ],
+      "starter": false
+    },
+    {
+      "id": "bix-singin-the-blues",
+      "title": "Bix Beiderbecke, Vol. I - Singin' the Blues",
+      "artist": "bix-beiderbecke",
+      "artistName": "Bix Beiderbecke",
+      "year": 1927,
+      "label": "Columbia",
+      "era": "new-orleans",
+      "why": "Bix's cornet rings like a struck bell on these late-1920s sides with Frankie Trumbauer, a cooler, more introspective alternative to Armstrong's fire.",
+      "highlights": [
+        "Singin' the Blues",
+        "In a Mist",
+        "I'm Coming, Virginia"
+      ],
+      "starter": false
+    },
+    {
+      "id": "blanton-webster-band",
+      "title": "Never No Lament: The Blanton-Webster Band",
+      "artist": "duke-ellington",
+      "artistName": "Duke Ellington",
+      "year": 1940,
+      "label": "Bluebird",
+      "era": "swing",
+      "why": "Ellington's orchestra at its peak, propelled by bassist Jimmy Blanton and tenor Ben Webster, and featuring 'Ko-Ko,' 'Concerto for Cootie' and 'Take the \"A\" Train.'",
+      "highlights": [
+        "Ko-Ko",
+        "Concerto for Cootie",
+        "Take the \"A\" Train"
+      ],
+      "starter": false
+    },
+    {
+      "id": "basie-complete-decca",
+      "title": "The Complete Decca Recordings",
+      "artist": "count-basie",
+      "artistName": "Count Basie",
+      "year": 1937,
+      "label": "Decca",
+      "era": "swing",
+      "why": "The young Basie band out of Kansas City, with Lester Young, Buck Clayton and the All-American Rhythm Section swinging lighter and harder than anyone.",
+      "highlights": [
+        "One O'Clock Jump",
+        "Jumpin' at the Woodside",
+        "Swingin' the Blues"
+      ],
+      "starter": false
+    },
+    {
+      "id": "carnegie-hall-1938",
+      "title": "The Famous 1938 Carnegie Hall Jazz Concert",
+      "artist": "benny-goodman",
+      "artistName": "Benny Goodman",
+      "year": 1950,
+      "label": "Columbia",
+      "era": "swing",
+      "why": "The night swing played America's most prestigious stage, with guests from the Basie and Ellington bands and a 'Sing, Sing, Sing' that brought the house down.",
+      "highlights": [
+        "Sing, Sing, Sing",
+        "Don't Be That Way",
+        "Honeysuckle Rose"
+      ],
+      "starter": false
+    },
+    {
+      "id": "billie-commodore",
+      "title": "The Commodore Master Takes",
+      "artist": "billie-holiday",
+      "artistName": "Billie Holiday",
+      "year": 1939,
+      "label": "Commodore",
+      "era": "swing",
+      "why": "Includes 'Strange Fruit,' the song Columbia wouldn't let her record, plus intimate small-group performances that capture Lady Day's phrasing at its most piercing.",
+      "highlights": [
+        "Strange Fruit",
+        "Fine and Mellow",
+        "I'll Be Seeing You"
+      ],
+      "starter": false
+    },
+    {
+      "id": "ella-cole-porter",
+      "title": "Ella Fitzgerald Sings the Cole Porter Song Book",
+      "artist": "ella-fitzgerald",
+      "artistName": "Ella Fitzgerald",
+      "year": 1956,
+      "label": "Verve",
+      "era": "swing",
+      "why": "The first of Ella's landmark Songbooks: Porter's witty, worldly songs sung with flawless diction, sly swing and Buddy Bregman's elegant arrangements.",
+      "highlights": [
+        "Anything Goes",
+        "Night and Day",
+        "I Get a Kick Out of You"
+      ],
+      "starter": true
+    },
+    {
+      "id": "hawkins-body-and-soul",
+      "title": "Body & Soul",
+      "artist": "coleman-hawkins",
+      "artistName": "Coleman Hawkins",
+      "year": 1939,
+      "label": "Bluebird",
+      "era": "swing",
+      "why": "Built around the 1939 masterpiece that rewrote the ballad solo, this set follows Hawk's huge tenor from swing into the bop years.",
+      "highlights": [
+        "Body and Soul",
+        "Bouncing with Bean",
+        "April in Paris"
+      ],
+      "starter": false
+    },
+    {
+      "id": "djangology",
+      "title": "Djangology",
+      "artist": "django-reinhardt",
+      "artistName": "Django Reinhardt",
+      "year": 1949,
+      "label": "Bluebird",
+      "era": "swing",
+      "why": "Django and Stéphane Grappelli reunited in Rome with a local rhythm section, revisiting their Hot Club repertoire with dazzling, bop-aware fire.",
+      "highlights": [
+        "Minor Swing",
+        "Djangology",
+        "Swing 42"
+      ],
+      "starter": false
+    },
+    {
+      "id": "savoy-dial-master-takes",
+      "title": "The Complete Savoy & Dial Master Takes",
+      "artist": "charlie-parker",
+      "artistName": "Charlie Parker",
+      "year": 1945,
+      "label": "Savoy",
+      "era": "bebop",
+      "why": "The bebop revolution in real time: Bird's 1945 to 1948 studio masters with Miles Davis, Dizzy Gillespie and Max Roach, including 'Ko-Ko' and 'Parker's Mood.'",
+      "highlights": [
+        "Ko-Ko",
+        "Now's the Time",
+        "Parker's Mood"
+      ],
+      "starter": false
+    },
+    {
+      "id": "jazz-at-massey-hall",
+      "title": "Jazz at Massey Hall",
+      "artist": "charlie-parker",
+      "artistName": "Charlie Parker, Dizzy Gillespie, Bud Powell, Max Roach & Charles Mingus",
+      "year": 1953,
+      "label": "Debut",
+      "era": "bebop",
+      "why": "Bebop's all-star summit: Parker, Gillespie, Powell, Mingus and Roach together in Toronto for one incandescent night, often called the greatest jazz concert ever.",
+      "highlights": [
+        "Salt Peanuts",
+        "A Night in Tunisia",
+        "Hot House"
+      ],
+      "starter": true
+    },
+    {
+      "id": "groovin-high",
+      "title": "Groovin' High",
+      "artist": "dizzy-gillespie",
+      "artistName": "Dizzy Gillespie",
+      "year": 1945,
+      "label": "Savoy",
+      "era": "bebop",
+      "why": "Dizzy's mid-1940s small-group and big-band sides, several with Charlie Parker, are the clearest blueprint of what bebop sounded like at birth.",
+      "highlights": [
+        "Groovin' High",
+        "Salt Peanuts",
+        "Hot House"
+      ],
+      "starter": false
+    },
+    {
+      "id": "genius-of-modern-music-1",
+      "title": "Genius of Modern Music, Vol. 1",
+      "artist": "thelonious-monk",
+      "artistName": "Thelonious Monk",
+      "year": 1951,
+      "label": "Blue Note",
+      "era": "bebop",
+      "why": "Monk's first sessions as a leader introduced a body of tunes so original that the jazz world took a decade to catch up, including his first recording of ''Round Midnight.'",
+      "highlights": [
+        "'Round Midnight",
+        "Ruby, My Dear",
+        "Well, You Needn't"
+      ],
+      "starter": false
+    },
+    {
+      "id": "amazing-bud-powell-1",
+      "title": "The Amazing Bud Powell, Vol. 1",
+      "artist": "bud-powell",
+      "artistName": "Bud Powell",
+      "year": 1951,
+      "label": "Blue Note",
+      "era": "bebop",
+      "why": "Powell at his most incandescent, with the furious Latin-tinged 'Un Poco Loco' and a 1949 quintet featuring Fats Navarro and a teenage Sonny Rollins.",
+      "highlights": [
+        "Un Poco Loco",
+        "Bouncin' with Bud",
+        "Dance of the Infidels"
+      ],
+      "starter": false
+    },
+    {
+      "id": "sarah-vaughan-1955",
+      "title": "Sarah Vaughan",
+      "artist": "sarah-vaughan",
+      "artistName": "Sarah Vaughan",
+      "year": 1955,
+      "label": "EmArcy",
+      "era": "bebop",
+      "why": "Sassy meets Clifford Brown: a small-group vocal record where the singer and the trumpeter trade ideas like two bebop horn players.",
+      "highlights": [
+        "Lullaby of Birdland",
+        "April in Paris",
+        "September Song"
+      ],
+      "starter": false
+    },
+    {
+      "id": "birth-of-the-cool",
+      "title": "Birth of the Cool",
+      "artist": "miles-davis",
+      "artistName": "Miles Davis",
+      "year": 1957,
+      "label": "Capitol",
+      "era": "cool",
+      "why": "The nonet sessions that launched cool jazz, with Gil Evans and Gerry Mulligan arrangements for French horn and tuba that turned bebop into chamber music.",
+      "highlights": [
+        "Boplicity",
+        "Jeru",
+        "Moon Dreams"
+      ],
+      "starter": false
+    },
+    {
+      "id": "chet-baker-sings",
+      "title": "Chet Baker Sings",
+      "artist": "chet-baker",
+      "artistName": "Chet Baker",
+      "year": 1954,
+      "label": "Pacific Jazz",
+      "era": "cool",
+      "why": "Baker's fragile, unadorned voice and trumpet made this the defining record of West Coast romance, and his 'My Funny Valentine' haunts to this day.",
+      "highlights": [
+        "My Funny Valentine",
+        "But Not for Me",
+        "Time After Time"
+      ],
+      "starter": false
+    },
+    {
+      "id": "time-out",
+      "title": "Time Out",
+      "artist": "dave-brubeck",
+      "artistName": "The Dave Brubeck Quartet",
+      "year": 1959,
+      "label": "Columbia",
+      "era": "cool",
+      "why": "A pop-chart smash built on odd meters: 'Take Five' in 5/4, 'Blue Rondo à la Turk' in 9/8, and Paul Desmond's alto floating effortlessly over it all.",
+      "highlights": [
+        "Take Five",
+        "Blue Rondo à la Turk",
+        "Strange Meadow Lark"
+      ],
+      "starter": true
+    },
+    {
+      "id": "miles-ahead",
+      "title": "Miles Ahead",
+      "artist": "miles-davis",
+      "artistName": "Miles Davis",
+      "year": 1957,
+      "label": "Columbia",
+      "era": "cool",
+      "why": "Miles's first full collaboration with Gil Evans, a seamless suite for flugelhorn and a jazz orchestra glowing with French horns and flutes.",
+      "highlights": [
+        "Springsville",
+        "The Maids of Cadiz",
+        "My Ship"
+      ],
+      "starter": false
+    },
+    {
+      "id": "out-of-the-cool",
+      "title": "Out of the Cool",
+      "artist": "gil-evans",
+      "artistName": "The Gil Evans Orchestra",
+      "year": 1961,
+      "label": "Impulse!",
+      "era": "cool",
+      "why": "Evans at his most atmospheric, with slow-burning grooves, shimmering colors and Elvin Jones on drums, on the record that helped launch Impulse!",
+      "highlights": [
+        "La Nevada",
+        "Where Flamingos Fly",
+        "Stratusphunk"
+      ],
+      "starter": false
+    },
+    {
+      "id": "moanin",
+      "title": "Moanin'",
+      "artist": "art-blakey",
+      "artistName": "Art Blakey & The Jazz Messengers",
+      "year": 1959,
+      "label": "Blue Note",
+      "era": "hard-bop",
+      "why": "Hard bop's definitive statement: Bobby Timmons's gospel call-and-response title track, Lee Morgan's brash trumpet and Blakey's thunder.",
+      "highlights": [
+        "Moanin'",
+        "Blues March",
+        "Along Came Betty"
+      ],
+      "starter": true
+    },
+    {
+      "id": "study-in-brown",
+      "title": "Study in Brown",
+      "artist": "clifford-brown",
+      "artistName": "Clifford Brown & Max Roach",
+      "year": 1955,
+      "label": "EmArcy",
+      "era": "hard-bop",
+      "why": "The Brown–Roach Quintet at full gallop, with Brownie's golden trumpet tearing through 'Cherokee' and swinging with impossible ease.",
+      "highlights": [
+        "Cherokee",
+        "Sandu",
+        "George's Dilemma"
+      ],
+      "starter": false
+    },
+    {
+      "id": "saxophone-colossus",
+      "title": "Saxophone Colossus",
+      "artist": "sonny-rollins",
+      "artistName": "Sonny Rollins",
+      "year": 1957,
+      "label": "Prestige",
+      "era": "hard-bop",
+      "why": "Rollins's masterpiece, from the calypso joy of 'St. Thomas' to 'Blue 7,' a solo so thematically developed it became a textbook example of improvisation.",
+      "highlights": [
+        "St. Thomas",
+        "Blue 7",
+        "Moritat"
+      ],
+      "starter": false
+    },
+    {
+      "id": "somethin-else",
+      "title": "Somethin' Else",
+      "artist": "cannonball-adderley",
+      "artistName": "Cannonball Adderley",
+      "year": 1958,
+      "label": "Blue Note",
+      "era": "hard-bop",
+      "why": "Cannonball's date with Miles Davis as sideman, featuring a smoky, unforgettable 'Autumn Leaves' that is a perfect first taste of 1950s jazz.",
+      "highlights": [
+        "Autumn Leaves",
+        "Somethin' Else",
+        "One for Daddy-O"
+      ],
+      "starter": false
+    },
+    {
+      "id": "go",
+      "title": "Go",
+      "artist": "dexter-gordon",
+      "artistName": "Dexter Gordon",
+      "year": 1962,
+      "label": "Blue Note",
+      "era": "hard-bop",
+      "why": "Dexter at his most big-toned, relaxed and swinging, with Sonny Clark's piano and the irresistible 'Cheese Cake.'",
+      "highlights": [
+        "Cheese Cake",
+        "I Guess I'll Hang My Tears Out to Dry",
+        "Love for Sale"
+      ],
+      "starter": false
+    },
+    {
+      "id": "mingus-ah-um",
+      "title": "Mingus Ah Um",
+      "artist": "charles-mingus",
+      "artistName": "Charles Mingus",
+      "year": 1959,
+      "label": "Columbia",
+      "era": "hard-bop",
+      "why": "Gospel shouts, Ellington tributes and political satire: Mingus's most accessible album, including the elegy 'Goodbye Pork Pie Hat' for Lester Young.",
+      "highlights": [
+        "Better Git It in Your Soul",
+        "Goodbye Pork Pie Hat",
+        "Fables of Faubus"
+      ],
+      "starter": false
+    },
+    {
+      "id": "blue-train",
+      "title": "Blue Train",
+      "artist": "john-coltrane",
+      "artistName": "John Coltrane",
+      "year": 1958,
+      "label": "Blue Note",
+      "era": "hard-bop",
+      "why": "Coltrane's lone Blue Note date as a leader, with Lee Morgan and Curtis Fuller in a three-horn front line on a blues that became an anthem.",
+      "highlights": [
+        "Blue Train",
+        "Moment's Notice",
+        "Locomotion"
+      ],
+      "starter": false
+    },
+    {
+      "id": "giant-steps",
+      "title": "Giant Steps",
+      "artist": "john-coltrane",
+      "artistName": "John Coltrane",
+      "year": 1960,
+      "label": "Atlantic",
+      "era": "hard-bop",
+      "why": "The Everest of harmonic improvisation: Coltrane's racing chord cycles on the title track, balanced by the tender ballad 'Naima.'",
+      "highlights": [
+        "Giant Steps",
+        "Naima",
+        "Mr. P.C."
+      ],
+      "starter": false
+    },
+    {
+      "id": "song-for-my-father",
+      "title": "Song for My Father",
+      "artist": "horace-silver",
+      "artistName": "Horace Silver",
+      "year": 1965,
+      "label": "Blue Note",
+      "era": "hard-bop",
+      "why": "Silver's tribute to his Cape Verdean father, with a bossa-tinged title groove and a Joe Henderson tenor solo that ranks among the era's best.",
+      "highlights": [
+        "Song for My Father",
+        "The Natives Are Restless Tonight",
+        "Que Pasa"
+      ],
+      "starter": false
+    },
+    {
+      "id": "getz-gilberto",
+      "title": "Getz/Gilberto",
+      "artist": "stan-getz",
+      "artistName": "Stan Getz & João Gilberto",
+      "year": 1964,
+      "label": "Verve",
+      "era": "latin",
+      "why": "The album that carried bossa nova around the world, with Jobim on piano, Astrud Gilberto's 'The Girl from Ipanema' and Getz's tenor at its most tender.",
+      "highlights": [
+        "The Girl from Ipanema",
+        "Desafinado",
+        "Corcovado (Quiet Nights of Quiet Stars)"
+      ],
+      "starter": true
+    },
+    {
+      "id": "chega-de-saudade",
+      "title": "Chega de Saudade",
+      "artist": "joao-gilberto",
+      "artistName": "João Gilberto",
+      "year": 1959,
+      "label": "Odeon",
+      "era": "latin",
+      "why": "Bossa nova's founding document: João's whispered voice and revolutionary guitar beat set to Jobim's arrangements, a quiet record that changed Brazilian music.",
+      "highlights": [
+        "Chega de Saudade",
+        "Desafinado",
+        "Brigas, Nunca Mais"
+      ],
+      "starter": false
+    },
+    {
+      "id": "wave",
+      "title": "Wave",
+      "artist": "antonio-carlos-jobim",
+      "artistName": "Antônio Carlos Jobim",
+      "year": 1967,
+      "label": "A&M",
+      "era": "latin",
+      "why": "Jobim as instrumentalist, with lush Claus Ogerman strings and breezy themes that became standards; elegant music for late-night listening.",
+      "highlights": [
+        "Wave",
+        "Triste",
+        "Look to the Sky"
+      ],
+      "starter": false
+    },
+    {
+      "id": "dance-mania",
+      "title": "Dance Mania, Vol. 1",
+      "artist": "tito-puente",
+      "artistName": "Tito Puente",
+      "year": 1958,
+      "label": "RCA Victor",
+      "era": "latin",
+      "why": "The Palladium era bottled: a blazing mambo big band with Santitos Colón on vocals and Puente's timbales driving every chart.",
+      "highlights": [
+        "El Cayuco",
+        "3-D Mambo",
+        "Hong Kong Mambo"
+      ],
+      "starter": false
+    },
+    {
+      "id": "kenya",
+      "title": "Kenya",
+      "artist": "machito",
+      "artistName": "Machito",
+      "year": 1958,
+      "label": "Roulette",
+      "era": "latin",
+      "why": "Machito's Afro-Cubans at their most jazz-forward, with Cannonball Adderley and Joe Newman soloing over hard-charging Afro-Cuban charts.",
+      "highlights": [
+        "Wild Jungle",
+        "Kenya",
+        "Cannonology"
+      ],
+      "starter": false
+    },
+    {
+      "id": "afro",
+      "title": "Afro",
+      "artist": "dizzy-gillespie",
+      "artistName": "Dizzy Gillespie",
+      "year": 1954,
+      "label": "Norgran",
+      "era": "latin",
+      "why": "Dizzy's Afro-Cuban suite with a full Latin rhythm section, built around 'Manteca' and arranged by Chico O'Farrill.",
+      "highlights": [
+        "Manteca Theme",
+        "Con Alma",
+        "A Night in Tunisia"
+      ],
+      "starter": false
+    },
+    {
+      "id": "watermelon-man",
+      "title": "Watermelon Man",
+      "artist": "mongo-santamaria",
+      "artistName": "Mongo Santamaria",
+      "year": 1963,
+      "label": "Battle",
+      "era": "latin",
+      "why": "Mongo's congas turned Herbie Hancock's tune into a hit, kicking off a run of Latin-soul crossovers with an irresistible boogaloo feel.",
+      "highlights": [
+        "Watermelon Man",
+        "Yeh-Yeh",
+        "Love, Oh Love"
+      ],
+      "starter": false
+    },
+    {
+      "id": "the-sermon",
+      "title": "The Sermon!",
+      "artist": "jimmy-smith",
+      "artistName": "Jimmy Smith",
+      "year": 1959,
+      "label": "Blue Note",
+      "era": "soul-jazz",
+      "why": "A twenty-minute church-meeting blues jam with Lee Morgan, Lou Donaldson and Kenny Burrell, the organ trio expanded into a revival tent.",
+      "highlights": [
+        "The Sermon",
+        "J.O.S.",
+        "Flamingo"
+      ],
+      "starter": false
+    },
+    {
+      "id": "back-at-the-chicken-shack",
+      "title": "Back at the Chicken Shack",
+      "artist": "jimmy-smith",
+      "artistName": "Jimmy Smith",
+      "year": 1963,
+      "label": "Blue Note",
+      "era": "soul-jazz",
+      "why": "The organ-trio sound in its purest form, with Stanley Turrentine's bluesy tenor and Kenny Burrell's guitar easing into a deep, after-hours groove.",
+      "highlights": [
+        "Back at the Chicken Shack",
+        "When I Grow Too Old to Dream",
+        "Messy Bessie"
+      ],
+      "starter": false
+    },
+    {
+      "id": "the-sidewinder",
+      "title": "The Sidewinder",
+      "artist": "lee-morgan",
+      "artistName": "Lee Morgan",
+      "year": 1964,
+      "label": "Blue Note",
+      "era": "soul-jazz",
+      "why": "Morgan's swaggering, boogaloo-flavored title track became one of Blue Note's biggest sellers, and the whole album crackles with streetwise confidence.",
+      "highlights": [
+        "The Sidewinder",
+        "Totem Pole",
+        "Hocus-Pocus"
+      ],
+      "starter": true
+    },
+    {
+      "id": "idle-moments",
+      "title": "Idle Moments",
+      "artist": "grant-green",
+      "artistName": "Grant Green",
+      "year": 1965,
+      "label": "Blue Note",
+      "era": "soul-jazz",
+      "why": "A late-night masterpiece with Joe Henderson and Bobby Hutcherson, whose fifteen-minute title track is the most relaxed and lyrical blues imaginable.",
+      "highlights": [
+        "Idle Moments",
+        "Jean De Fleur",
+        "Django"
+      ],
+      "starter": false
+    },
+    {
+      "id": "mercy-mercy-mercy",
+      "title": "Mercy, Mercy, Mercy! Live at \"The Club\"",
+      "artist": "cannonball-adderley",
+      "artistName": "Cannonball Adderley",
+      "year": 1966,
+      "label": "Capitol",
+      "era": "soul-jazz",
+      "why": "Recorded before a whooping audience, this set gave Cannonball a pop hit with Joe Zawinul's gospel-soaked title tune.",
+      "highlights": [
+        "Mercy, Mercy, Mercy",
+        "Fun",
+        "Sticks"
+      ],
+      "starter": false
+    },
+    {
+      "id": "little-girl-blue",
+      "title": "Little Girl Blue",
+      "artist": "nina-simone",
+      "artistName": "Nina Simone",
+      "year": 1959,
+      "label": "Bethlehem",
+      "era": "soul-jazz",
+      "why": "Nina's debut reveals her singular blend of jazz, classical counterpoint and soul, and includes 'My Baby Just Cares for Me' and her hit 'I Loves You, Porgy.'",
+      "highlights": [
+        "My Baby Just Cares for Me",
+        "I Loves You, Porgy",
+        "Little Girl Blue"
+      ],
+      "starter": false
+    },
+    {
+      "id": "kind-of-blue",
+      "title": "Kind of Blue",
+      "artist": "miles-davis",
+      "artistName": "Miles Davis",
+      "year": 1959,
+      "label": "Columbia",
+      "era": "modal",
+      "why": "The best-selling jazz album of all time and the perfect starting point: modal sketches played by Miles, Coltrane, Cannonball and Bill Evans with unhurried grace.",
+      "highlights": [
+        "So What",
+        "Blue in Green",
+        "All Blues"
+      ],
+      "starter": true
+    },
+    {
+      "id": "my-favorite-things",
+      "title": "My Favorite Things",
+      "artist": "john-coltrane",
+      "artistName": "John Coltrane",
+      "year": 1961,
+      "label": "Atlantic",
+      "era": "modal",
+      "why": "Coltrane's soprano turns a Broadway waltz into a hypnotic modal trance on his first studio album with McCoy Tyner and Elvin Jones.",
+      "highlights": [
+        "My Favorite Things",
+        "Summertime",
+        "But Not for Me"
+      ],
+      "starter": false
+    },
+    {
+      "id": "sunday-at-the-village-vanguard",
+      "title": "Sunday at the Village Vanguard",
+      "artist": "bill-evans",
+      "artistName": "Bill Evans Trio",
+      "year": 1961,
+      "label": "Riverside",
+      "era": "modal",
+      "why": "The Evans–LaFaro–Motian trio's telepathic final performance, recorded eleven days before LaFaro's death and a landmark of interactive improvisation.",
+      "highlights": [
+        "Gloria's Step",
+        "Alice in Wonderland",
+        "Jade Visions"
+      ],
+      "starter": false
+    },
+    {
+      "id": "maiden-voyage",
+      "title": "Maiden Voyage",
+      "artist": "herbie-hancock",
+      "artistName": "Herbie Hancock",
+      "year": 1965,
+      "label": "Blue Note",
+      "era": "modal",
+      "why": "An oceanic concept album whose suspended chords and floating rhythms became the model for post-bop composition.",
+      "highlights": [
+        "Maiden Voyage",
+        "Dolphin Dance",
+        "The Eye of the Hurricane"
+      ],
+      "starter": false
+    },
+    {
+      "id": "speak-no-evil",
+      "title": "Speak No Evil",
+      "artist": "wayne-shorter",
+      "artistName": "Wayne Shorter",
+      "year": 1966,
+      "label": "Blue Note",
+      "era": "modal",
+      "why": "Shorter's dark, mysterious tunes, played with Freddie Hubbard, Herbie Hancock and Elvin Jones, have the logic of fairy tales and the weight of standards.",
+      "highlights": [
+        "Speak No Evil",
+        "Infant Eyes",
+        "Witch Hunt"
+      ],
+      "starter": false
+    },
+    {
+      "id": "the-real-mccoy",
+      "title": "The Real McCoy",
+      "artist": "mccoy-tyner",
+      "artistName": "McCoy Tyner",
+      "year": 1967,
+      "label": "Blue Note",
+      "era": "modal",
+      "why": "Tyner's first statement after leaving Coltrane, with Joe Henderson and Elvin Jones, opening with the ferocious modal workout 'Passion Dance.'",
+      "highlights": [
+        "Passion Dance",
+        "Contemplation",
+        "Search for Peace"
+      ],
+      "starter": false
+    },
+    {
+      "id": "miles-smiles",
+      "title": "Miles Smiles",
+      "artist": "miles-davis",
+      "artistName": "Miles Davis",
+      "year": 1967,
+      "label": "Columbia",
+      "era": "modal",
+      "why": "The second great quintet at its most elastic, with Shorter, Hancock, Carter and Williams bending time on 'Footprints' and 'Orbits.'",
+      "highlights": [
+        "Footprints",
+        "Orbits",
+        "Dolores"
+      ],
+      "starter": false
+    },
+    {
+      "id": "the-shape-of-jazz-to-come",
+      "title": "The Shape of Jazz to Come",
+      "artist": "ornette-coleman",
+      "artistName": "Ornette Coleman",
+      "year": 1959,
+      "label": "Atlantic",
+      "era": "free",
+      "why": "The title wasn't hype. Ornette's pianoless quartet with Don Cherry plays melodies freed from chord changes, and the aching 'Lonely Woman' still stops listeners cold.",
+      "highlights": [
+        "Lonely Woman",
+        "Peace",
+        "Congeniality"
+      ],
+      "starter": true
+    },
+    {
+      "id": "spiritual-unity",
+      "title": "Spiritual Unity",
+      "artist": "albert-ayler",
+      "artistName": "Albert Ayler",
+      "year": 1965,
+      "label": "ESP-Disk",
+      "era": "free",
+      "why": "Ayler's trio with Gary Peacock and Sunny Murray: folk-like themes exploding into ecstatic, vibrato-drenched cries, a cornerstone of the avant-garde.",
+      "highlights": [
+        "Ghosts: First Variation",
+        "The Wizard",
+        "Spirits"
+      ],
+      "starter": false
+    },
+    {
+      "id": "out-to-lunch",
+      "title": "Out to Lunch!",
+      "artist": "eric-dolphy",
+      "artistName": "Eric Dolphy",
+      "year": 1964,
+      "label": "Blue Note",
+      "era": "free",
+      "why": "Dolphy's angular masterpiece, with vibraphone, a teenage Tony Williams and Freddie Hubbard, sounds like hard bop seen through a funhouse mirror.",
+      "highlights": [
+        "Hat and Beard",
+        "Gazzelloni",
+        "Out to Lunch"
+      ],
+      "starter": false
+    },
+    {
+      "id": "unit-structures",
+      "title": "Unit Structures",
+      "artist": "cecil-taylor",
+      "artistName": "Cecil Taylor",
+      "year": 1966,
+      "label": "Blue Note",
+      "era": "free",
+      "why": "A dense, exhilarating large-ensemble record where Taylor's piano storms set the architecture for collective improvisation on a grand scale.",
+      "highlights": [
+        "Steps",
+        "Enter Evening",
+        "Unit Structure/As of a Now/Section"
+      ],
+      "starter": false
+    },
+    {
+      "id": "fire-music",
+      "title": "Fire Music",
+      "artist": "archie-shepp",
+      "artistName": "Archie Shepp",
+      "year": 1965,
+      "label": "Impulse!",
+      "era": "free",
+      "why": "Shepp's fiery tenor mixes free blowing, Ellington, bossa nova and an elegy for Malcolm X, the avant-garde with roots and a political edge.",
+      "highlights": [
+        "Hambone",
+        "Malcolm, Malcolm - Semper Malcolm",
+        "Los Olvidados"
+      ],
+      "starter": false
+    },
+    {
+      "id": "complete-communion",
+      "title": "Complete Communion",
+      "artist": "don-cherry",
+      "artistName": "Don Cherry",
+      "year": 1966,
+      "label": "Blue Note",
+      "era": "free",
+      "why": "Two side-long suites in which Cherry and Gato Barbieri weave through themes and free improvisation with a joyful, conversational spirit.",
+      "highlights": [
+        "Complete Communion",
+        "Elephantasy"
+      ],
+      "starter": false
+    },
+    {
+      "id": "a-love-supreme",
+      "title": "A Love Supreme",
+      "artist": "john-coltrane",
+      "artistName": "John Coltrane",
+      "year": 1965,
+      "label": "Impulse!",
+      "era": "spiritual",
+      "why": "Coltrane's four-part prayer with his classic quartet: chanted, searching and overwhelming, one of the most profound records ever made.",
+      "highlights": [
+        "A Love Supreme, Pt. 1: Acknowledgement",
+        "A Love Supreme, Pt. 2: Resolution",
+        "A Love Supreme, Pt. 4: Psalm"
+      ],
+      "starter": true
+    },
+    {
+      "id": "journey-in-satchidananda",
+      "title": "Journey in Satchidananda",
+      "artist": "alice-coltrane",
+      "artistName": "Alice Coltrane",
+      "year": 1971,
+      "label": "Impulse!",
+      "era": "spiritual",
+      "why": "Harp glissandi, tamboura drones and Pharoah Sanders's soprano create a meditative masterpiece inspired by Alice's spiritual teacher.",
+      "highlights": [
+        "Journey in Satchidananda",
+        "Shiva-Loka",
+        "Something About John Coltrane"
+      ],
+      "starter": false
+    },
+    {
+      "id": "karma",
+      "title": "Karma",
+      "artist": "pharoah-sanders",
+      "artistName": "Pharoah Sanders",
+      "year": 1969,
+      "label": "Impulse!",
+      "era": "spiritual",
+      "why": "Dominated by the half-hour 'The Creator Has a Master Plan,' with Leon Thomas's yodeling vocals, a hymn that swings from serenity to fury and back.",
+      "highlights": [
+        "The Creator Has a Master Plan",
+        "Colors"
+      ],
+      "starter": false
+    },
+    {
+      "id": "space-is-the-place",
+      "title": "Space Is the Place",
+      "artist": "sun-ra",
+      "artistName": "Sun Ra",
+      "year": 1973,
+      "label": "Blue Thumb",
+      "era": "spiritual",
+      "why": "The Arkestra's Afrofuturist manifesto, with chanted invitations to the cosmos, swirling synthesizers and joyful big-band chaos.",
+      "highlights": [
+        "Space Is the Place",
+        "Images",
+        "Sea of Sounds"
+      ],
+      "starter": false
+    },
+    {
+      "id": "sahara",
+      "title": "Sahara",
+      "artist": "mccoy-tyner",
+      "artistName": "McCoy Tyner",
+      "year": 1972,
+      "label": "Milestone",
+      "era": "spiritual",
+      "why": "Tyner plays piano, koto and flute on a thunderous, Africa-inspired suite, spiritual jazz with the force of a sandstorm.",
+      "highlights": [
+        "Ebony Queen",
+        "Sahara",
+        "Valley of Life"
+      ],
+      "starter": false
+    },
+    {
+      "id": "bitches-brew",
+      "title": "Bitches Brew",
+      "artist": "miles-davis",
+      "artistName": "Miles Davis",
+      "year": 1970,
+      "label": "Columbia",
+      "era": "fusion",
+      "why": "A dark, bubbling electric cauldron of rock rhythms and collective improvisation that launched the fusion era and a dozen careers.",
+      "highlights": [
+        "Pharaoh's Dance",
+        "Bitches Brew",
+        "Miles Runs the Voodoo Down"
+      ],
+      "starter": false
+    },
+    {
+      "id": "the-inner-mounting-flame",
+      "title": "The Inner Mounting Flame",
+      "artist": "john-mclaughlin",
+      "artistName": "Mahavishnu Orchestra",
+      "year": 1971,
+      "label": "Columbia",
+      "era": "fusion",
+      "why": "McLaughlin's searing guitar, Jerry Goodman's violin and Billy Cobham's drums in odd-meter overdrive: jazz-rock at maximum intensity.",
+      "highlights": [
+        "Meeting of the Spirits",
+        "The Noonward Race",
+        "Dance of Maya"
+      ],
+      "starter": false
+    },
+    {
+      "id": "return-to-forever",
+      "title": "Return to Forever",
+      "artist": "chick-corea",
+      "artistName": "Chick Corea",
+      "year": 1972,
+      "label": "ECM",
+      "era": "fusion",
+      "why": "Corea's airy, Brazilian-tinged electric piano with Flora Purim's voice and Airto's percussion, fusion at its sunniest and most lyrical.",
+      "highlights": [
+        "Return to Forever",
+        "Crystal Silence",
+        "What Game Shall We Play Today"
+      ],
+      "starter": false
+    },
+    {
+      "id": "head-hunters",
+      "title": "Head Hunters",
+      "artist": "herbie-hancock",
+      "artistName": "Herbie Hancock",
+      "year": 1973,
+      "label": "Columbia",
+      "era": "fusion",
+      "why": "Herbie goes deep funk with clavinet, synth bass and an unstoppable groove on 'Chameleon,' one of the best-selling jazz albums ever.",
+      "highlights": [
+        "Chameleon",
+        "Watermelon Man",
+        "Sly"
+      ],
+      "starter": true
+    },
+    {
+      "id": "jaco-pastorius-album",
+      "title": "Jaco Pastorius",
+      "artist": "jaco-pastorius",
+      "artistName": "Jaco Pastorius",
+      "year": 1976,
+      "label": "Epic",
+      "era": "fusion",
+      "why": "The debut that redefined the electric bass, from a breakneck 'Donna Lee' to the harmonics-only ballad 'Portrait of Tracy.'",
+      "highlights": [
+        "Donna Lee",
+        "Portrait of Tracy",
+        "Continuum"
+      ],
+      "starter": false
+    },
+    {
+      "id": "bright-size-life",
+      "title": "Bright Size Life",
+      "artist": "pat-metheny",
+      "artistName": "Pat Metheny",
+      "year": 1976,
+      "label": "ECM",
+      "era": "fusion",
+      "why": "A 21-year-old Metheny with Jaco Pastorius and Bob Moses: open, airy and Midwestern, it invented a new kind of jazz guitar trio.",
+      "highlights": [
+        "Bright Size Life",
+        "Unity Village",
+        "Sirabhorn"
+      ],
+      "starter": false
+    },
+    {
+      "id": "heavy-weather",
+      "title": "Heavy Weather",
+      "artist": "joe-zawinul",
+      "artistName": "Weather Report",
+      "year": 1977,
+      "label": "Columbia",
+      "era": "fusion",
+      "why": "Weather Report's commercial peak, with Zawinul's synth orchestrations, Shorter's soprano, Jaco's bass and the irresistible 'Birdland.'",
+      "highlights": [
+        "Birdland",
+        "A Remark You Made",
+        "Teen Town"
+      ],
+      "starter": false
+    },
+    {
+      "id": "standards-vol-1",
+      "title": "Standards, Vol. 1",
+      "artist": "keith-jarrett",
+      "artistName": "Keith Jarrett, Gary Peacock & Jack DeJohnette",
+      "year": 1983,
+      "label": "ECM",
+      "era": "post-bop",
+      "why": "The debut of Jarrett's Standards Trio, which spent three decades proving that familiar songs could be improvised into something new every night.",
+      "highlights": [
+        "God Bless the Child",
+        "All the Things You Are",
+        "Meaning of the Blues"
+      ],
+      "starter": false
+    },
+    {
+      "id": "black-codes",
+      "title": "Black Codes (From the Underground)",
+      "artist": "wynton-marsalis",
+      "artistName": "Wynton Marsalis",
+      "year": 1985,
+      "label": "Columbia",
+      "era": "post-bop",
+      "why": "Wynton's quintet with Branford and Kenny Kirkland channels the mid-60s Miles quintet with fierce precision, the young lions' defining statement.",
+      "highlights": [
+        "Black Codes",
+        "Delfeayo's Dilemma",
+        "Phryzzinian Man"
+      ],
+      "starter": false
+    },
+    {
+      "id": "blue-light-til-dawn",
+      "title": "Blue Light 'til Dawn",
+      "artist": "cassandra-wilson",
+      "artistName": "Cassandra Wilson",
+      "year": 1993,
+      "label": "Blue Note",
+      "era": "post-bop",
+      "why": "Robert Johnson, Joni Mitchell and Van Morrison reimagined with acoustic guitars and hand percussion; a moody, earthy record that reinvented the jazz vocal album.",
+      "highlights": [
+        "You Don't Know What Love Is",
+        "Come On in My Kitchen",
+        "Tupelo Honey"
+      ],
+      "starter": true
+    },
+    {
+      "id": "wish",
+      "title": "Wish",
+      "artist": "joshua-redman",
+      "artistName": "Joshua Redman",
+      "year": 1993,
+      "label": "Warner Bros.",
+      "era": "post-bop",
+      "why": "Redman's second album pairs him with Pat Metheny, Charlie Haden and Billy Higgins, mixing originals, Ornette and pop with warm, grounded swing.",
+      "highlights": [
+        "Turnaround",
+        "Make Sure You're Sure",
+        "Wish"
+      ],
+      "starter": false
+    },
+    {
+      "id": "art-of-the-trio-vol-1",
+      "title": "The Art of the Trio, Vol. One",
+      "artist": "brad-mehldau",
+      "artistName": "Brad Mehldau",
+      "year": 1997,
+      "label": "Warner Bros.",
+      "era": "post-bop",
+      "why": "The first of Mehldau's influential trio series with Larry Grenadier and Jorge Rossy, introspective, contrapuntal and quietly radical.",
+      "highlights": [
+        "Blame It on My Youth",
+        "I Didn't Know What Time It Was",
+        "Ron's Place"
+      ],
+      "starter": false
+    },
+    {
+      "id": "habana",
+      "title": "Habana",
+      "artist": "roy-hargrove",
+      "artistName": "Roy Hargrove",
+      "year": 1997,
+      "label": "Verve",
+      "era": "post-bop",
+      "why": "Hargrove's Crisol project, recorded with Cuban and American players including Chucho Valdés, joins bebop fire to Afro-Cuban rhythm and won a Grammy.",
+      "highlights": [
+        "Mambo for Roy",
+        "O My Seh Yeh",
+        "Afrodisia"
+      ],
+      "starter": false
+    },
+    {
+      "id": "black-radio",
+      "title": "Black Radio",
+      "artist": "robert-glasper",
+      "artistName": "Robert Glasper Experiment",
+      "year": 2012,
+      "label": "Blue Note",
+      "era": "contemporary",
+      "why": "Jazz harmony meets neo-soul and hip-hop, with Erykah Badu, Lalah Hathaway and Meshell Ndegeocello guesting on a Grammy-winning crossover.",
+      "highlights": [
+        "Afro Blue",
+        "Ah Yeah",
+        "Cherish the Day"
+      ],
+      "starter": true
+    },
+    {
+      "id": "womanchild",
+      "title": "WomanChild",
+      "artist": "cecile-mclorin-salvant",
+      "artistName": "Cécile McLorin Salvant",
+      "year": 2013,
+      "label": "Mack Avenue",
+      "era": "contemporary",
+      "why": "A startling breakout album of rare and classic songs delivered with wit, theatrical daring and deep roots in Bessie Smith and Billie Holiday.",
+      "highlights": [
+        "WomanChild",
+        "St. Louis Gal",
+        "John Henry"
+      ],
+      "starter": false
+    },
+    {
+      "id": "the-imagined-savior",
+      "title": "The Imagined Savior Is Far Easier to Paint",
+      "artist": "ambrose-akinmusire",
+      "artistName": "Ambrose Akinmusire",
+      "year": 2014,
+      "label": "Blue Note",
+      "era": "contemporary",
+      "why": "An ambitious, emotionally raw album mixing quintet jazz, string quartet and vocal songs, anchored by Akinmusire's vulnerable trumpet.",
+      "highlights": [
+        "Vartha",
+        "Rollcall for Those Absent",
+        "Our Basement (Ed)"
+      ],
+      "starter": false
+    },
+    {
+      "id": "we-like-it-here",
+      "title": "We Like It Here",
+      "artist": "snarky-puppy",
+      "artistName": "Snarky Puppy",
+      "year": 2014,
+      "label": "GroundUP",
+      "era": "contemporary",
+      "why": "Recorded live in front of a small audience in the Netherlands, it captures the band's virtuosic, funk-powered ensemble energy, including the epic 'Lingus.'",
+      "highlights": [
+        "Lingus",
+        "Shofukan",
+        "What About Me?"
+      ],
+      "starter": false
+    },
+    {
+      "id": "the-epic",
+      "title": "The Epic",
+      "artist": "kamasi-washington",
+      "artistName": "Kamasi Washington",
+      "year": 2015,
+      "label": "Brainfeeder",
+      "era": "contemporary",
+      "why": "Three hours of choir, strings and roaring tenor that revived spiritual jazz for a generation raised on hip-hop and stadium rock.",
+      "highlights": [
+        "Change of the Guard",
+        "The Rhythm Changes",
+        "Malcolm's Theme"
+      ],
+      "starter": false
+    },
+    {
+      "id": "emilys-d-evolution",
+      "title": "Emily's D+Evolution",
+      "artist": "esperanza-spalding",
+      "artistName": "Esperanza Spalding",
+      "year": 2016,
+      "label": "Concord",
+      "era": "contemporary",
+      "why": "Spalding's art-rock alter ego: knotty bass riffs, prog-funk guitar and theatrical songs that take jazz harmony somewhere entirely new.",
+      "highlights": [
+        "Good Lava",
+        "Unconditional Love",
+        "Earth to Heaven"
+      ],
+      "starter": false
+    },
+    {
+      "id": "perceive-its-beauty",
+      "title": "Perceive Its Beauty, Acknowledge Its Grace",
+      "artist": "shabaka-hutchings",
+      "artistName": "Shabaka",
+      "year": 2024,
+      "label": "Impulse!",
+      "era": "contemporary",
+      "why": "Shabaka sets down the saxophone for shakuhachi and wooden flutes on a hushed, meditative record with guests including Moses Sumney, Saul Williams, Floating Points and Laraaji.",
+      "highlights": [
+        "End of Innocence",
+        "Insecurities",
+        "I'll Do Whatever You Want"
+      ],
+      "starter": false
+    },
+    {
+      "id": "universal-beings",
+      "title": "Universal Beings",
+      "artist": "makaya-mccraven",
+      "artistName": "Makaya McCraven",
+      "year": 2018,
+      "label": "International Anthem",
+      "era": "contemporary",
+      "why": "Sessions in Chicago, New York, London and Los Angeles, edited into a hypnotic, beat-driven portrait of a global jazz community.",
+      "highlights": [
+        "Holy Lands",
+        "Young Genius",
+        "Atlantic Black"
+      ],
+      "starter": false
+    },
+    {
+      "id": "jazz-bata-2",
+      "title": "Jazz Batá 2",
+      "artist": "chucho-valdes",
+      "artistName": "Chucho Valdés",
+      "year": 2018,
+      "label": "Mack Avenue",
+      "era": "contemporary",
+      "why": "Chucho revisits his 1972 trio concept of piano, bass and batá drums, with Yoruba ritual rhythms and dazzling Cuban pianism.",
+      "highlights": [
+        "Obatalá",
+        "Son XXI",
+        "100 Años de Bebo"
+      ],
+      "starter": false
+    },
+    {
+      "id": "ancestral-recall",
+      "title": "Ancestral Recall",
+      "artist": "christian-scott",
+      "artistName": "Christian Scott aTunde Adjuah",
+      "year": 2019,
+      "label": "Ropeadope",
+      "era": "contemporary",
+      "why": "Scott's most radical stretch-music statement layers West African and Native American rhythms, trap programming and spoken word under his blazing trumpet.",
+      "highlights": [
+        "Ancestral Recall",
+        "I Own the Night",
+        "Forevergirl"
+      ],
+      "starter": false
+    },
+    {
+      "id": "source",
+      "title": "Source",
+      "artist": "nubya-garcia",
+      "artistName": "Nubya Garcia",
+      "year": 2020,
+      "label": "Concord Jazz",
+      "era": "contemporary",
+      "why": "Garcia's full-length debut blends deep-toned tenor with dub, cumbia and Caribbean rhythms, a confident flagship for the new London jazz.",
+      "highlights": [
+        "Source",
+        "Pace",
+        "La Cumbia Me Está Llamando"
+      ],
+      "starter": false
+    }
+  ],
+  "milestones": [
+    {
+      "year": 1895,
+      "title": "Buddy Bolden's band",
+      "detail": "By the mid-1890s cornetist Buddy Bolden is loosening ragtime and blues into something new in New Orleans dance halls."
+    },
+    {
+      "year": 1899,
+      "title": "\"Maple Leaf Rag\" is published",
+      "detail": "Scott Joplin publishes 'Maple Leaf Rag' in Sedalia, Missouri; it becomes ragtime's defining hit and a pianist's rite of passage."
+    },
+    {
+      "year": 1912,
+      "title": "The blues goes to print",
+      "detail": "W.C. Handy's 'The Memphis Blues' helps carry the twelve-bar blues from Southern juke joints into published sheet music."
+    },
+    {
+      "year": 1913,
+      "title": "\"Jazz\" appears in print",
+      "detail": "The word surfaces in a San Francisco newspaper as baseball slang for pep, before attaching itself to the music."
+    },
+    {
+      "year": 1917,
+      "title": "The first jazz record",
+      "detail": "The Original Dixieland Jass Band records 'Livery Stable Blues' for Victor, and the disc becomes a nationwide sensation."
+    },
+    {
+      "year": 1920,
+      "title": "\"Crazy Blues\" sells big",
+      "detail": "Mamie Smith's 'Crazy Blues' becomes a smash, proving a market for Black artists and launching the 'race records' industry."
+    },
+    {
+      "year": 1923,
+      "title": "King Oliver records",
+      "detail": "King Oliver's Creole Jazz Band, with second cornetist Louis Armstrong, records in Richmond, Indiana, preserving New Orleans ensemble style."
+    },
+    {
+      "year": 1925,
+      "title": "The Hot Five's first session",
+      "detail": "Louis Armstrong cuts his first Hot Five sides in Chicago, the start of records that made the improvising soloist jazz's main event."
+    },
+    {
+      "year": 1927,
+      "title": "Ellington at the Cotton Club",
+      "detail": "Duke Ellington's orchestra opens at Harlem's Cotton Club, and radio broadcasts make his 'jungle' sound famous nationwide."
+    },
+    {
+      "year": 1928,
+      "title": "\"West End Blues\"",
+      "detail": "Armstrong's opening cadenza on 'West End Blues' announces jazz as an art capable of grandeur."
+    },
+    {
+      "year": 1935,
+      "title": "Swing explodes at the Palomar",
+      "detail": "Benny Goodman's band electrifies the Palomar Ballroom in Los Angeles, a night often cited as the start of the Swing Era."
+    },
+    {
+      "year": 1938,
+      "title": "Jazz at Carnegie Hall",
+      "detail": "Goodman's Carnegie Hall concert brings jazz, and an integrated bandstand, into America's temple of classical music."
+    },
+    {
+      "year": 1939,
+      "title": "Blue Note Records is founded",
+      "detail": "German émigré Alfred Lion launches Blue Note in New York with a boogie-woogie piano session."
+    },
+    {
+      "year": 1939,
+      "title": "\"Body and Soul\"",
+      "detail": "Coleman Hawkins records 'Body and Soul,' a ballad improvisation so harmonically bold that it became an unlikely hit."
+    },
+    {
+      "year": 1941,
+      "title": "Bebop's workshop at Minton's",
+      "detail": "Thelonious Monk and Kenny Clarke anchor after-hours jams at Minton's Playhouse in Harlem, where bebop takes shape."
+    },
+    {
+      "year": 1945,
+      "title": "Bebop on record",
+      "detail": "Charlie Parker's Savoy session yields 'Ko-Ko' and 'Now's the Time,' the bebop revolution captured at full speed."
+    },
+    {
+      "year": 1947,
+      "title": "Cubop is born",
+      "detail": "Dizzy Gillespie's big band features Cuban conguero Chano Pozo; their 'Manteca' fuses bebop with Afro-Cuban rhythm."
+    },
+    {
+      "year": 1948,
+      "title": "The LP arrives",
+      "detail": "Columbia introduces the 33 1/3 rpm long-playing record, freeing jazz from the three-minute limit of the 78."
+    },
+    {
+      "year": 1949,
+      "title": "Birth of the Cool sessions",
+      "detail": "Miles Davis's nonet records the first of the sessions later collected as Birth of the Cool."
+    },
+    {
+      "year": 1954,
+      "title": "The first Newport Jazz Festival",
+      "detail": "The Newport Jazz Festival debuts in Rhode Island, creating the template for the modern jazz festival."
+    },
+    {
+      "year": 1956,
+      "title": "Ellington's Newport triumph",
+      "detail": "Paul Gonsalves's 27-chorus solo on 'Diminuendo and Crescendo in Blue' sets Newport ablaze and revives Ellington's career."
+    },
+    {
+      "year": 1958,
+      "title": "Bossa nova's first record",
+      "detail": "João Gilberto's single 'Chega de Saudade' introduces bossa nova's hushed voice and syncopated guitar."
+    },
+    {
+      "year": 1959,
+      "title": "Jazz's miracle year",
+      "detail": "Kind of Blue, Time Out, Mingus Ah Um and The Shape of Jazz to Come all appear in a single astonishing year."
+    },
+    {
+      "year": 1961,
+      "title": "Bill Evans at the Vanguard",
+      "detail": "Bill Evans's trio records live at the Village Vanguard; bassist Scott LaFaro dies in a car crash eleven days later."
+    },
+    {
+      "year": 1964,
+      "title": "Bossa nova conquers the world",
+      "detail": "Getz/Gilberto and 'The Girl from Ipanema' turn bossa nova into a global phenomenon; the album wins Album of the Year."
+    },
+    {
+      "year": 1965,
+      "title": "A Love Supreme",
+      "detail": "Coltrane releases A Love Supreme, a four-part devotional suite that redefines what a jazz album can be."
+    },
+    {
+      "year": 1967,
+      "title": "John Coltrane dies",
+      "detail": "Coltrane dies at 40; his late music's spiritual search becomes a guiding light for the decade that follows."
+    },
+    {
+      "year": 1969,
+      "title": "ECM is founded",
+      "detail": "Manfred Eicher starts ECM in Munich, building a pristine, spacious sound that reshapes European and American jazz."
+    },
+    {
+      "year": 1970,
+      "title": "Bitches Brew",
+      "detail": "Miles Davis's Bitches Brew brings rock electricity to jazz and becomes his first gold record."
+    },
+    {
+      "year": 1973,
+      "title": "Head Hunters",
+      "detail": "Herbie Hancock's Head Hunters fuses jazz and funk and becomes one of the best-selling jazz albums of all time."
+    },
+    {
+      "year": 1975,
+      "title": "The Köln Concert",
+      "detail": "Keith Jarrett improvises a solo concert in Cologne on a substandard piano; the recording becomes a best-selling solo piano album."
+    },
+    {
+      "year": 1984,
+      "title": "Wynton's double Grammy",
+      "detail": "Wynton Marsalis wins Grammys in both jazz and classical categories and becomes the face of a neo-traditional revival."
+    },
+    {
+      "year": 1987,
+      "title": "Jazz, a national treasure",
+      "detail": "The U.S. Congress passes a resolution recognizing jazz as a rare and valuable American national treasure."
+    },
+    {
+      "year": 2001,
+      "title": "Ken Burns's Jazz",
+      "detail": "Ken Burns's ten-part PBS documentary Jazz reaches millions and sparks fresh debate about how the music's story is told."
+    },
+    {
+      "year": 2008,
+      "title": "Herbie's Album of the Year",
+      "detail": "Herbie Hancock's River: The Joni Letters wins Album of the Year, the first jazz album to do so since Getz/Gilberto."
+    },
+    {
+      "year": 2011,
+      "title": "Esperanza is Best New Artist",
+      "detail": "Esperanza Spalding becomes the first jazz musician to win the Grammy for Best New Artist."
+    },
+    {
+      "year": 2013,
+      "title": "Black Radio wins R&B Grammy",
+      "detail": "Robert Glasper Experiment's Black Radio wins Best R&B Album, crystallizing jazz's new fluency with hip-hop and soul."
+    },
+    {
+      "year": 2015,
+      "title": "The Epic",
+      "detail": "Kamasi Washington's three-hour The Epic arrives weeks after To Pimp a Butterfly and ignites a new, young jazz audience."
+    },
+    {
+      "year": 2018,
+      "title": "We Out Here",
+      "detail": "Brownswood's We Out Here compilation spotlights London's young jazz scene, featuring Nubya Garcia, Ezra Collective and Kokoroko."
+    },
+    {
+      "year": 2024,
+      "title": "Shabaka turns to the flute",
+      "detail": "Shabaka Hutchings steps back from the saxophone and releases the flute-led Perceive Its Beauty, Acknowledge Its Grace."
+    }
+  ]
+}
