@@ -457,7 +457,10 @@ final class Scrobbler {
 
 /// Generic passwords in the login keychain, for the Last.fm API key, shared secret and session key.
 enum Keychain {
-    private static let service = "io.github.davidlago.JazzDiscovery.lastfm"
+    /// "io.github.davidlago.JazzDiscovery.lastfm" for the app. A build with another bundle ID (a test copy, a Personal
+    /// Team build) keeps its own items: on the Mac, reading another app's items makes the system ask to allow it, once
+    /// per item, and again after every rebuild.
+    private static let service = (Bundle.main.bundleIdentifier ?? "io.github.davidlago.JazzDiscovery") + ".lastfm"
 
     private static func query(_ account: String) -> [String: Any] {
         [kSecClass as String: kSecClassGenericPassword,

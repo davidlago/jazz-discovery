@@ -54,8 +54,13 @@ struct HomeHero: View {
     @Environment(JazzLibrary.self) private var library
 
     private var faces: [(Artist, Color)] {
-        library.eras.compactMap { era in
-            library.artist(era.keyArtists.first ?? "").map { ($0, era.tint) }
+        // Each era's first key artist who isn't already shown: Miles Davis leads three eras.
+        var shown = Set<String>()
+        return library.eras.compactMap { era in
+            guard let artist = era.keyArtists.lazy.compactMap({ library.artist($0) }).first(where: { !shown.contains($0.id) })
+            else { return nil }
+            shown.insert(artist.id)
+            return (artist, era.tint)
         }
     }
 

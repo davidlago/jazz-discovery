@@ -62,11 +62,13 @@ struct AlbumDetailView: View {
     @State private var catalog: CatalogAlbum?
     @State private var tracks: [CatalogTrack] = []
     @State private var loaded = false
+    @State private var hoveredTrack: CatalogTrack?
 
     var body: some View {
         let tint = library.color(forEra: album.era)
         let era = library.era(album.era)
         let artist = library.artist(album.artist)
+        let session = library.session(for: album.id)
         let more = library.albums(by: album.artist).filter { $0.id != album.id }
         let sameEra = library.albums(inEra: album.era).filter { $0.id != album.id && $0.artist != album.artist }
 
@@ -106,6 +108,12 @@ struct AlbumDetailView: View {
                 }
                 .frame(height: 470)
 
+                if let session {
+                    PersonnelSection(session: session, trackCount: tracks.isEmpty ? nil : tracks.count, tint: tint,
+                                     hoveredTrack: hoveredTrack?.name)
+                        .padding(.horizontal, 40)
+                }
+
                 VStack(alignment: .leading, spacing: 12) {
                     SectionHeader(title: "Tracklist", subtitle: album.highlights.isEmpty ? nil : "★ marks the tracks to start with.", tint: tint)
                     if tracks.isEmpty {
@@ -114,7 +122,8 @@ struct AlbumDetailView: View {
                                 .foregroundStyle(Theme.muted)
                         } else { ProgressView().controlSize(.small) }
                     } else {
-                        TrackList(tracks: tracks, tint: tint, highlight: album.highlights)
+                        TrackList(tracks: tracks, tint: tint, highlight: album.highlights,
+                                  onHover: session?.hasPerTrackCredits == true ? { hoveredTrack = $0 } : nil)
                             .frame(maxWidth: 860)
                     }
                 }
@@ -148,5 +157,49 @@ struct AlbumDetailView: View {
             if let c = catalog { tracks = await ITunes.shared.tracks(collectionId: c.collectionId) }
             loaded = true
         }
+    }
+}
+
+/// Who played on the record, set like the credits on the back of an LP, with when and where it was recorded and who
+/// was behind the glass. Pointing at a track in the tracklist dims the players who aren't on it.
+struct PersonnelSection: View {
+    let session: Session
+    /// The Apple Music tracklist's length once it's loaded (the credits' own list otherwise).
+    var trackCount: Int?
+    var tint: Color
+    var hoveredTrack: String?
+    @Environment(Router.self) private var router
+
+    var body: some View {
+        // Counts in the credits refer to the session's own track list; Apple Music's is the fallback.
+        let count = session.tracks?.count ?? trackCount ?? 0
+        VStack(alignment: .leading, spacing: 14) {
+            SectionHeader(title: "Personnel", subtitle: subtitle, tint: tint)
+            // Two columns read top to bottom, like liner notes: the first half of the band, then the rest.
+            let people = session.personnel
+            let half = (people.count + 1) / 2
+            HStack(alignment: .top, spacing: 48) {
+                ForEach([Array(people.prefix(half)), Array(people.dropFirst(half))], id: \.first?.name) { column in
+                    VStack(alignment: .leading, spacing: 10) {
+                        ForEach(Array(column.enumerated()), id: \.offset) { _, credit in
+                            CreditRow(credit: credit, trackCount: count, tint: tint, nameSize: 11, detailSize: 12,
+                                      dimmed: hoveredTrack.map { !credit.plays(on: $0) } ?? false,
+                                      openArtist: { router.go(.artist($0)) })
+                        }
+                    }
+                    .frame(maxWidth: .infinity, alignment: .topLeading)
+                }
+            }
+            .frame(maxWidth: 860, alignment: .leading)
+            if let crew = session.crewText {
+                Text(crew).font(.system(size: 12)).foregroundStyle(Theme.muted)
+                    .frame(maxWidth: 860, alignment: .leading).fixedSize(horizontal: false, vertical: true)
+            }
+        }
+    }
+
+    private var subtitle: String? {
+        if let hoveredTrack, session.hasPerTrackCredits { return "On “\(hoveredTrack)”" }
+        return session.recordedText.map { "Recorded \($0)" }
     }
 }

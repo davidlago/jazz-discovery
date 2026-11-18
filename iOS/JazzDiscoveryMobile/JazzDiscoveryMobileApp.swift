@@ -84,10 +84,13 @@ struct RouteView: View {
 
     var body: some View {
         switch route {
-        case .era(let id): if let e = library.era(id) { EraDetailView(era: e) }
-        case .artist(let id): if let a = library.artist(id) { ArtistDetailView(artist: a) }
-        case .album(let id): if let a = library.album(id) { AlbumDetailView(album: a) }
-        case .decade(let d): DecadeDetailView(decade: d)
+        case .page(let page):
+            switch page {
+            case .era(let id): if let e = library.era(id) { EraDetailView(era: e) }
+            case .artist(let id): if let a = library.artist(id) { ArtistDetailView(artist: a) }
+            case .album(let id): if let a = library.album(id) { AlbumDetailView(album: a) }
+            case .decade(let d): DecadeDetailView(decade: d)
+            }
         case .decades: DecadesPage()
         case .connections(let focus): ConnectionsMapView(focus: focus)
         }

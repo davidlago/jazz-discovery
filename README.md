@@ -17,13 +17,15 @@ How it gets to the App Store: [docs/app-store.md](docs/app-store.md).
 | **Timeline** | A "river" of 14 styles from ragtime to today, packed into lanes so overlapping eras run side by side, with milestone markers. It also has a *Start Here* listening path, a daily artist spotlight and a strip of decades. |
 | **Eras & Styles** | Poster cards styled like record sleeves. Each era page has a narrative, sonic traits, places, key artists, essential records, playable essential tracks, YouTube documentaries, a picture archive from Wikimedia Commons and the Wikipedia summary. |
 | **Decades** | 1890s–2020s, each with the styles in the air, turning points, records released and who was playing. |
-| **Artists** | Duotone portrait grid, filterable by era and instrument. Artist pages have a Wikipedia bio, popular songs on Apple Music, records, live videos and a "Played With" row. |
-| **The Crate** | A wall of album covers grouped by decade. Album pages have the tracklist (playable), why the album matters, YouTube clips, more by the artist and more from the era. |
-| **Connections** | A chronological network: left to right is when each artist came of age, and lines are collaborations. Hover or click a face to light up their circle; double-click to open the artist. |
+| **Artists** | Duotone portrait grid, filterable by era, instrument and leaders or sidemen. Artist pages have a Wikipedia bio, popular songs on Apple Music, their records, the records they play on, live videos and a "Played With" row. |
+| **The Crate** | A wall of album covers grouped by decade. Album pages have the personnel (who played what, when and where it was recorded, the producer and engineer), the tracklist (playable), why the album matters, YouTube clips, more by the artist and more from the era. |
+| **Connections** | A chronological network: left to right is when each artist came of age, and lines are the records two artists share (thicker for more) or a bond with a note (mentor, influence, duo). Click a face to light up their circle and a second to see what ties them; *Find a Path* draws the shortest chain between any two artists and plays one track from each link. |
 
 ## Sources
 
 - **Content**: `Shared/Resources/jazz.json` is a curated dataset with original summaries (eras, artists, albums, milestones).
+- **Wikidata** and **MusicBrainz** (both CC0): artists' IDs and exact dates (`ids.json`), and who played on each record,
+  when and where (`sessions.json`), drafted by scripts and reviewed by hand.
 - **Wikipedia REST API**: artist and era summaries and photos (CC BY-SA / Wikimedia Commons), cached on disk.
 - **iTunes Search API**: Apple Music catalog IDs, artwork and 30-second previews. Album lookups are precomputed into `Resources/catalog.json` by `scripts/build-catalog.py`. Live lookups are cached and throttled.
 - **YouTube**: videos are found from YouTube's public search page (no API key) and play in the embedded YouTube player.
@@ -88,19 +90,39 @@ xcodebuild -project JazzDiscovery.xcodeproj -scheme JazzDiscoveryMobile -destina
 Its signing settings are in `iOS/Signing.xcconfig` (overrides, such as another team or the app's own Last.fm API key,
 go in `iOS/Local.xcconfig`, which isn't committed). `scripts/install-iphone.sh` builds it and installs it on a
 connected development iPhone, signed with your development profile (no Apple ID in Xcode needed). Release tags upload it to TestFlight from CI (`scripts/testflight.sh`) and
-`scripts/app-store-screenshots.sh` takes the App Store screenshots; see [docs/app-store.md](docs/app-store.md). Links
-like `jazzdiscovery://artist/miles-davis`, `era/bebop`, `album/kind-of-blue`, `decade/1950`, `connections`,
-`now-playing` and `settings` open those screens (`xcrun simctl openurl booted …`).
+`scripts/app-store-screenshots.sh` takes the App Store screenshots; see [docs/app-store.md](docs/app-store.md).
 
-After you edit `jazz.json`, refresh the album catalog. The script only looks up albums it hasn't resolved yet:
+### Links
+
+Links like `jazzdiscovery://artist/miles-davis`, `era/bebop`, `album/kind-of-blue`, `decade/1950`, `decades`,
+`connections[/<artist>]`, `between/<artist>/<artist>`, `tab/search?q=…`, `now-playing` and `settings` open those screens, in both apps (`open …` on
+the Mac, `xcrun simctl openurl <device> …` in the simulator). `Shared/Model/Route.swift` parses them, and only accepts
+pages that exist; a link never starts music.
+
+### Tests
 
 ```bash
-python3 -I scripts/build-catalog.py
+xcodebuild test -project JazzDiscovery.xcodeproj -scheme JazzDiscoveryTests -destination 'platform=macOS'
 ```
+
+or ⌘U in Xcode with the JazzDiscovery scheme. The tests in `Tests/` cover the shared code (`Shared/`, which the test
+bundle compiles itself, with no app to host it, so it needs no signing), and CI runs them on every push.
+
+After you edit `jazz.json`, refresh the generated data. Each script only looks up what it hasn't resolved yet:
+
+```bash
+python3 -I scripts/build-catalog.py    # Apple Music album matches → catalog.json
+python3 -I scripts/build-ids.py        # Wikidata and MusicBrainz IDs, exact dates → ids.json
+python3 -I scripts/build-sessions.py   # personnel, sessions and studios from MusicBrainz → sessions.json
+```
+
+`build-sessions.py` writes drafts (`"reviewed": false`) that the app ignores. Each one is checked against the liner
+notes, fixed, and marked `"reviewed": true`; `build/sessions-report.md` lists the drafts, what looked off in each, and
+the players who don't have a page yet. `validate-data.py` counts how many are reviewed.
 
 ### Releases
 
-CI (`.github/workflows/ci.yml`) checks the data and builds the app on every push and pull request. Those builds are ad-hoc signed and attached to the run as an artifact. Pushing a `vX.Y.Z` tag does more:
+CI (`.github/workflows/ci.yml`) checks the data, runs the tests and builds the app on every push and pull request. Those builds are ad-hoc signed and attached to the run as an artifact. Pushing a `vX.Y.Z` tag does more:
 
 1. Builds a universal app signed with the Developer ID certificate.
 2. Notarizes and staples it.
@@ -139,17 +161,22 @@ To sign and notarize locally, run `SIGN_IDENTITY="Developer ID Application: …"
 
 ```
 Shared/                       used by both apps
-  Model/                      data types, JazzLibrary (lookups/search), Theme
+  Model/                      data types, JazzLibrary (lookups/search), Route (pages and jazzdiscovery:// links), Theme
   Services/                   Wikipedia, ITunes, YouTube, Player (MusicKit + previews), LastFM, HTTP/DiskCache, Platform
   Design/                     remote images, duotone portraits, album covers, FlowLayout, the Connections graph layout
   Resources/jazz.json         curated content
   Resources/catalog.json      precomputed Apple Music album matches
+  Resources/ids.json          Wikidata/MusicBrainz IDs and exact dates (build-ids.py)
+  Resources/sessions.json     personnel, sessions, studios per album (build-sessions.py, reviewed by hand)
 JazzDiscovery/                the Mac app: JazzDiscoveryApp (menus, Settings), Views/, Diagnostics/ (--self-test, --snapshots)
 iOS/JazzDiscoveryMobile/      the iPhone app: tabs, pages, player, Connections map, Settings
 iOS/Signing.xcconfig          the iPhone app's team, bundle ID and optional Last.fm API account; Version.xcconfig
-scripts/                      build-app.sh, notarize.sh, validate-data.py, build-catalog.py, make-icon.swift (--ios),
+Tests/                        unit tests of the shared code (Swift Testing; the JazzDiscoveryTests scheme)
+scripts/                      build-app.sh, notarize.sh, validate-data.py, build-catalog.py, build-ids.py,
+                              build-sessions.py, make-icon.swift (--ios),
                               import-certificate.sh / set-signing-secret.sh (CI signing), testflight.sh,
                               provisioning-profiles.swift, select-xcode.sh, app-store-screenshots.sh
-docs/                         app-store.md (iPhone release guide and listing), privacy.md, app-store/ (screenshots)
-.github/workflows/ci.yml      build both apps on every push; on vX.Y.Z tags, release the Mac app and upload the iPhone app
+docs/                         app-store.md (iPhone release guide and listing), privacy.md, app-store/ (screenshots),
+                              roadmap/ (the plan for 1.1–1.8)
+.github/workflows/ci.yml      test and build both apps on every push; on vX.Y.Z tags, release the Mac app and upload the iPhone app
 ```
