@@ -2,11 +2,13 @@
   "guides": [
     {
       "album": "kind-of-blue",
+      "duration": 548,
       "form": "AABA, 32 bars: sixteen on one scale, eight a half step higher, eight back home. Two choruses each for Miles, Coltrane and Cannonball, one for Bill Evans.",
       "id": "so-what",
       "intro": "Nine minutes built from almost nothing: two scales, a bass phrase and a two-note answer. With no chord changes to race through, each soloist has to decide what to say, and you can hear four very different answers to the same question.",
       "sections": [
         {
+          "at": 0,
           "kind": "intro",
           "label": "Prelude",
           "note": "Piano and bass alone, out of tempo. There's no beat yet and no clear key: Bill Evans and Paul Chambers circle around, quietly, as if deciding where to begin.",
@@ -16,6 +18,7 @@
           ]
         },
         {
+          "at": 33.1,
           "kind": "head",
           "label": "The theme",
           "note": "The beat arrives and Chambers plays the melody on the bass, one phrase at a time. After each, the horns and piano answer with a two-note chord, the 'so what'. It happens eight times: twice on the home scale, twice a half step up for the bridge, then home again.",
@@ -28,6 +31,7 @@
           ]
         },
         {
+          "at": 90.3,
           "kind": "solo",
           "label": "Miles Davis",
           "note": "A cymbal crash, the bass starts walking, and Miles comes in. He plays few notes and leaves long spaces, choosing each one from the scale rather than running chord patterns. Notice how calm it is, and how the bridge's half step up feels like a door opening.",
@@ -40,6 +44,7 @@
           ]
         },
         {
+          "at": 204.9,
           "kind": "solo",
           "label": "John Coltrane",
           "note": "Where Miles was spare, Coltrane is restless: long, fast runs that climb, turn back and climb again, as if trying every note in the scale in turn. Same two scales, the opposite answer.",
@@ -51,6 +56,7 @@
           ]
         },
         {
+          "at": 315.2,
           "kind": "solo",
           "label": "Cannonball Adderley",
           "note": "The alto's bright, bluesy sound. Cannonball swings harder than either of the others and bends notes the way a blues singer would, finding bebop shapes in a tune that barely has chords.",
@@ -62,6 +68,7 @@
           ]
         },
         {
+          "at": 424.9,
           "kind": "solo",
           "label": "Bill Evans",
           "note": "The horns now play the two-note answer behind him, softly, and Evans replies in chords: the band's riff and the solo have swapped places. One chorus, mostly chords, nothing hurried.",
@@ -74,6 +81,7 @@
           ]
         },
         {
+          "at": 492.8,
           "kind": "head-out",
           "label": "The theme, and away",
           "note": "Chambers takes the melody again and the horns answer as at the start. Then the band keeps the figure going and fades out, as if the music carries on somewhere you can't hear.",
@@ -82,6 +90,7 @@
           ]
         }
       ],
+      "songID": 268443097,
       "source": "Kind of Blue liner notes (Bill Evans); Ashley Kahn, Kind of Blue: The Making of the Miles Davis Masterpiece (2000).",
       "track": "Miles Davis|So What",
       "tune": "so-what"

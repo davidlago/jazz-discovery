@@ -61,6 +61,18 @@ struct GuideTests {
         }
     }
 
+    @Test("Timed guides fit the recording the app plays for them")
+    func timedFit() throws {
+        let so = try #require(library.guide("so-what"))
+        #expect(so.isTimed)
+        for g in library.guides where g.isTimed {
+            let t = try #require(library.tracks[g.track])
+            let length = Double(t.track.durationMillis ?? 0) / 1000
+            #expect(g.fits(songID: t.id, title: t.title, artist: t.artistName, duration: length), "\(g.id)")
+            #expect(g.section(at: 0) == 0, "\(g.id)")
+        }
+    }
+
     @Test("What's playing finds its guide by the recording's song ID")
     func lookup() throws {
         let so = try #require(library.tracks["Miles Davis|So What"])
