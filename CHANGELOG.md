@@ -11,7 +11,7 @@ section for the tagged version at the top of the GitHub release notes (or **Unre
   and with Apple Music it follows the full track as it plays: the section playing is highlighted and its note says
   what to listen for. Click a section to go to it. They're under Listen on the Mac and on Discover on the iPhone, and
   Now Playing offers the guide when its recording plays.
-- A track that Apple Music lists under another ID in your country plays in full instead of as a preview.
+- The first track you play right after opening the app plays in full with Apple Music, not as a 30-second preview.
 
 ## 1.10.0
 

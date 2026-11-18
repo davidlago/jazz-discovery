@@ -2,6 +2,7 @@ import SwiftUI
 import AVFoundation
 import MusicKit
 import Observation
+import OSLog
 #if os(iOS)
 import MediaPlayer
 #else
@@ -388,10 +389,7 @@ final class PlayerController {
             let ids = tracks.map { MusicItemID(String($0.trackId)) }
             let req = MusicCatalogResourceRequest<Song>(matching: \.id, memberOf: ids)
             let resp = try await req.response()
-            var byID = Dictionary(resp.items.map { ($0.id, $0) }, uniquingKeysWith: { a, _ in a })
-            // The song to start with isn't in this country's catalogue under its ID (Apple Music lists some
-            // recordings under different IDs in different countries): find the same recording by name.
-            if byID[ids[index]] == nil, let found = await findSong(like: tracks[index]) { byID[ids[index]] = found }
+            let byID = Dictionary(resp.items.map { ($0.id, $0) }, uniquingKeysWith: { a, _ in a })
             let songs = ids.compactMap { byID[$0] }
             guard let start = byID[ids[index]] ?? songs.first else {
                 lastError = "Apple Music doesn't have \(tracks[index].name) here. Playing a preview instead."
@@ -406,7 +404,18 @@ final class PlayerController {
             #if os(macOS)
             await matchOutput()
             #endif
-            try await player.play()
+            do {
+                try await player.play()
+            } catch let error as NSError where error.domain == "MPMusicPlayerControllerErrorDomain" && error.code == 6 {
+                // "Prepare queue failed with unexpected start item". It happens to the first song played in the
+                // seconds after launch, while the system player is still getting ready (seen on the Mac,
+                // 2026-11-18); a moment later the same queue plays. Try once more, queuing from that song on.
+                Self.log.notice("Apple Music refused the start item \(start.id.rawValue, privacy: .public); trying again")
+                try? await Task.sleep(for: .milliseconds(600))
+                let from = songs.firstIndex { $0.id == start.id } ?? 0
+                player.queue = ApplicationMusicPlayer.Queue(for: Array(songs[from...]))
+                try await player.play()
+            }
             switchTo(.appleMusic)
             current = NowPlaying(title: start.title, artist: start.artistName,
                                  artwork: start.artwork?.url(width: 600, height: 600) ?? tracks[index].artwork(600),
@@ -414,25 +423,13 @@ final class PlayerController {
             duration = start.duration ?? 0
             return true
         } catch {
+            Self.log.error("Apple Music couldn't play songs: \(String(reflecting: error), privacy: .public)")
             lastError = "Apple Music: \(error.localizedDescription). Playing a preview instead."
             return false
         }
     }
 
-    /// The same recording in the catalogue, by title and artist, and within a few seconds of its length when that's
-    /// known (so a live or later version isn't taken for it).
-    private func findSong(like track: CatalogTrack) async -> Song? {
-        var req = MusicCatalogSearchRequest(term: "\(track.name) \(track.artistName)", types: [Song.self])
-        req.limit = 15
-        guard let found = try? await req.response().songs else { return nil }
-        func fold(_ s: String) -> String { s.folding(options: [.diacriticInsensitive, .caseInsensitive], locale: nil) }
-        let title = fold(track.name), artist = fold(track.artistName)
-        let named = found.filter { fold($0.title) == title && (fold($0.artistName).contains(artist) || artist.contains(fold($0.artistName))) }
-        guard let ms = track.durationMillis else { return named.first }
-        let length = Double(ms) / 1000
-        return named.filter { abs(($0.duration ?? 0) - length) <= 3 }
-            .min { abs(($0.duration ?? 0) - length) < abs(($1.duration ?? 0) - length) }
-    }
+    static let log = Logger(subsystem: "io.github.davidlago.JazzDiscovery", category: "player")
 
     private func playAlbumWithMusicKit(_ album: CatalogAlbum) async -> Bool {
         do {
