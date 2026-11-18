@@ -15,6 +15,8 @@ section for the tagged version at the top of the GitHub release notes (or **Unre
 - **The Crate** can be grouped by label as well as by decade.
 - **The player** on the Mac floats at the bottom of the window as a rounded glass panel, and shows whenever music is
   playing, including after the app was reopened mid-song or started by Siri or a widget.
+- **The player** shows the record's cover again while an album plays on the Mac (Apple Music's own cover address
+  couldn't be drawn there), and clicking the cover opens that record's page in the app (tapping it on iPhone).
 - Passport sync keeps details written by a newer version of the app, so an older copy on another device doesn't erase
   them.
 
