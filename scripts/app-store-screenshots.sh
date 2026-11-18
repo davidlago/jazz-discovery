@@ -18,7 +18,7 @@ BUNDLE=io.github.davidlago.JazzDiscovery
 
 # name|links (space-separated, opened in order)|extra seconds
 SHOTS=(
-    "01-timeline|jazzdiscovery://tab/timeline|0"
+    "01-timeline|jazzdiscovery://tab/discover|0"
     "02-era|jazzdiscovery://era/bebop|0"
     "03-artist|jazzdiscovery://artist/miles-davis|0"
     "04-album|jazzdiscovery://album/kind-of-blue|0"
@@ -27,6 +27,7 @@ SHOTS=(
     "07-crate|jazzdiscovery://tab/crate|0"
     "08-eras|jazzdiscovery://tab/eras|0"
     "09-passport|jazzdiscovery://passport|0"
+    "10-radio|jazzdiscovery://radio|0"
 )
 
 echo "Building for the simulator…"

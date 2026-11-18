@@ -10,6 +10,13 @@ struct TimelineTab: View {
 
                 ContinueSection()
 
+                VStack(alignment: .leading, spacing: 6) {
+                    SectionHeader(title: "Radio", subtitle: "Stations that keep playing, and say why each track is there.") {
+                        SeeAllLink(route: .radio)
+                    }
+                    HRow(spacing: 16) { RadioRow(labelSize: 110) }
+                }
+
                 VStack(alignment: .leading, spacing: 14) {
                     SectionHeader(title: "The River of Jazz",
                                   subtitle: "130 years of styles flowing, overlapping and splitting. Tap a style to dive in, or a dot for a turning point.")
@@ -36,6 +43,8 @@ struct TimelineTab: View {
 
                 SpotlightCard()
 
+                BlindfoldCard()
+
                 VStack(alignment: .leading, spacing: 6) {
                     SectionHeader(title: "Travel by Decade") { SeeAllLink(route: .decades) }
                     HRow(spacing: 12) {
@@ -48,7 +57,7 @@ struct TimelineTab: View {
         .scrollIndicators(.hidden)
         .ignoresSafeArea(edges: .top)
         .background(Theme.ink)
-        .revealedTitle("Jazz Discovery", after: 400)
+        .revealedTitle("Discover", after: 400)
         .rootToolbar()
     }
 }
@@ -419,5 +428,27 @@ struct ContinueSection: View {
                 .padding(.horizontal, Theme.gutter)
             }
         }
+    }
+}
+
+/// An invitation to the Blindfold Test.
+struct BlindfoldCard: View {
+    var body: some View {
+        NavigationLink(value: PhoneRoute.blindfold) {
+            HStack(spacing: 16) {
+                BlindSleeve(playing: false).frame(width: 96, height: 96)
+                VStack(alignment: .leading, spacing: 4) {
+                    Text("BLINDFOLD TEST").font(Theme.label(11)).tracking(1.6).foregroundStyle(Theme.brass)
+                    Text("Ten clips, covers hidden. Can you name the era, the player, the instrument?")
+                        .font(.system(.subheadline, design: .serif)).foregroundStyle(Theme.cream)
+                        .fixedSize(horizontal: false, vertical: true)
+                }
+                Spacer(minLength: 0)
+            }
+            .padding(14)
+            .background(RoundedRectangle(cornerRadius: 14).fill(Theme.panel))
+        }
+        .buttonStyle(.pressable)
+        .padding(.horizontal, Theme.gutter)
     }
 }

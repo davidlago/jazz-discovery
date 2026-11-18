@@ -171,7 +171,7 @@ reason" API the app uses (UserDefaults, CA92.1).
 
 ### Version text
 
-This text is for 1.2 (127 artists, personnel, Find a Path, Passport). If 1.0.1 is submitted on its own first, say
+This text is for 1.3 (127 artists, personnel, Find a Path, Passport, Radio, the Blindfold Test). If 1.0.1 is submitted on its own first, say
 "86 artists" and leave out the *Who played on what* and *Your passport* paragraphs and the path-finding sentence.
 
 **Promotional text** (170 characters, can change any time without review):
@@ -209,6 +209,12 @@ Every album lists its band like the back of an LP: who played what, who sat out 
 Connections
 A map of who played with whom across the whole century, drawn from the records they share: tap a face to light up their circle, and another to see what ties them. Find the shortest path between any two artists, from Scott Joplin to Nubya Garcia, and play one track from each link.
 
+Radio
+Stations for every era, decade and instrument, plus The Long Way through 130 years in order. They keep playing, and the player tells you why each track is there.
+
+The Blindfold Test
+Ten clips, covers hidden: name the era, the player, the lead instrument, or which came first. Easy or hard, every era or just one.
+
 Your passport
 Mark the records you've heard (or let the app notice when you play one through) and save the ones to come back to. Every era has a stamp that inks in as you hear its records, and every record opens three doors: the record that shares the most players with it, the style that came next, and an echo of it playing today. It syncs between your iPhone and Mac through your own iCloud, and can start from your Last.fm history.
 
@@ -236,5 +242,5 @@ Last.fm (optional): Settings > Last.fm connects the user's own Last.fm account, 
 
 Background audio is used only to keep music playing while the phone is locked.
 
-Suggested path: Timeline (scroll the River of Jazz sideways and tap a style), an era page, an artist (Artists tab), an album (Crate tab) with its Personnel, Play, Mark as Heard and Save buttons and its three doors at the bottom, the Passport (the seal button at the top right), Artists > Connections (pinch and tap faces, then the path button at the top to find a path between two artists), and Search.
+Suggested path: Discover (scroll the River of Jazz sideways and tap a style), an era page, an artist (Artists tab), an album (Crate tab) with its Personnel, Play, Mark as Heard and Save buttons and its three doors at the bottom, the Radio row and the Blindfold Test card on the Discover tab, the Passport (the seal button at the top right), Artists > Connections (pinch and tap faces, then the path button at the top to find a path between two artists), and Search.
 ```

@@ -19,8 +19,15 @@ final class JazzLibrary {
     let ties: [Tie]
     private let tieByPair: [String: Tie]
     private let tiesByArtist: [String: [Tie]]
+    /// Every named track resolved to Apple Music ahead of time (tracks.json), by "artist|title".
+    let tracks: [String: StationTrack]
+    /// Each Crate album's Apple Music tracks (tracklists.json), by album ID.
+    let tracklists: [String: [CatalogTrack]]
 
-    init(data: JazzData, sessions: [String: Session] = [:]) {
+    init(data: JazzData, sessions: [String: Session] = [:], tracks: [String: StationTrack] = [:],
+         tracklists: [String: [CatalogTrack]] = [:]) {
+        self.tracks = StationTrack.load(tracks)
+        self.tracklists = tracklists
         eras = data.eras.sorted { $0.start < $1.start }
         artists = data.artists
         albums = data.albums.sorted { $0.year < $1.year }
@@ -80,7 +87,9 @@ final class JazzLibrary {
         do {
             let data = try Data(contentsOf: url)
             return JazzLibrary(data: try JSONDecoder().decode(JazzData.self, from: data),
-                               sessions: optional([String: Session].self, "sessions", in: bundle) ?? [:])
+                               sessions: optional([String: Session].self, "sessions", in: bundle) ?? [:],
+                               tracks: optional([String: StationTrack].self, "tracks", in: bundle) ?? [:],
+                               tracklists: optional([String: [CatalogTrack]].self, "tracklists", in: bundle) ?? [:])
         } catch {
             fatalError("Could not decode jazz.json: \(error)")
         }
@@ -100,6 +109,17 @@ final class JazzLibrary {
 
     func artists(_ ids: [String]) -> [Artist] { ids.compactMap { artistByID[$0] } }
     func albums(_ ids: [String]) -> [Album] { ids.compactMap { albumByID[$0] } }
+
+    /// The artist a resolved track is by: the one named in its ref, or its record's leader.
+    func artist(ofTrack t: StationTrack) -> Artist? {
+        let name = t.artistName
+        return artists.first { $0.name == name } ?? t.album.flatMap { album($0) }.flatMap { artist($0.artist) }
+            ?? artist(named: name)
+    }
+
+    /// A named track, resolved ahead of time.
+    func track(_ ref: TrackRef) -> StationTrack? { tracks[ref.id] }
+    func track(_ title: String, by artist: String) -> StationTrack? { tracks["\(artist)|\(title)"] }
 
     func artist(named name: String) -> Artist? {
         let n = name.lowercased()

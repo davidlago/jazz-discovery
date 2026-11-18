@@ -25,6 +25,8 @@ struct RootView: View {
                         case .albums: CrateView()
                         case .connections: ConnectionsView()
                         case .passport: PassportView()
+                        case .radio: RadioView()
+                        case .blindfold: BlindfoldPage()
                         }
                     }
                 }
@@ -70,6 +72,11 @@ struct Sidebar: View {
 
                 Section("Explore") {
                     ForEach(AppSection.explore) { s in
+                        Label(s.rawValue, systemImage: s.symbol).tag(s)
+                    }
+                }
+                Section("Listen") {
+                    ForEach(AppSection.listen) { s in
                         Label(s.rawValue, systemImage: s.symbol).tag(s)
                     }
                 }

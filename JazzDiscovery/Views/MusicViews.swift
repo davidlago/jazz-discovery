@@ -199,6 +199,9 @@ struct NowPlayingBar: View {
         if let np = player.current {
             VStack(spacing: 10) {
             FinishedAlbumDoors { router.go(.album($0)) }
+            WhyThisTrack(compact: true, openAlbum: { router.go(.album($0)) }, openArtist: { router.go(.artist($0)) },
+                         openEra: { router.go(.era($0)) })
+                .frame(maxWidth: .infinity, alignment: .leading)
             HStack(spacing: 16) {
                 RemoteImage(url: np.artwork) { Theme.panelHi }
                     .frame(width: 48, height: 48).clipShape(RoundedRectangle(cornerRadius: 4))

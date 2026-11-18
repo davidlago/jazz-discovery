@@ -6,7 +6,7 @@ enum PhoneTab: String, Hashable, CaseIterable {
 
     init(_ tab: DeepLink.Tab) {
         switch tab {
-        case .timeline: self = .timeline
+        case .timeline, .discover: self = .timeline
         case .eras: self = .eras
         case .artists: self = .artists
         case .crate: self = .crate
@@ -22,6 +22,8 @@ enum PhoneRoute: Hashable {
     case decades
     case connections(focus: String?)
     case passport
+    case radio
+    case blindfold
 
     static func era(_ id: String) -> PhoneRoute { .page(.era(id)) }
     static func artist(_ id: String) -> PhoneRoute { .page(.artist(id)) }
@@ -94,6 +96,8 @@ final class PhoneRouter {
         case .nowPlaying: showSettings = false; showNowPlaying = player.current != nil
         case .settings: showNowPlaying = false; showSettings = true
         case .passport: show(.crate, [.passport])
+        case .radio: show(.timeline, [.radio])
+        case .blindfold: show(.timeline, [.blindfold])
         case .playAlbum(let id):
             guard fromLaunchArguments, let album = library.album(id) else { return }
             Task {
