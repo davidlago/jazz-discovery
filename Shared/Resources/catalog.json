@@ -8,6 +8,15 @@
   "trackCount": 4,
   "url": "https://music.apple.com/us/album/a-love-supreme/1440713018"
  },
+ "accelerando": {
+  "artistName": "Vijay Iyer Trio",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/99/78/3a/99783a0c-5c7e-1ca8-df24-8777e0e29c97/cover.jpg/100x100bb.jpg",
+  "collectionId": 499542389,
+  "name": "Accelerando (Bonus Track Version) [with Stephan Crump & Marcus Gilmore]",
+  "releaseYear": 2012,
+  "trackCount": 12,
+  "url": "https://music.apple.com/us/album/accelerando-bonus-track-version-with-stephan-crump/499542389"
+ },
  "afro": {
   "artistName": "Dizzy Gillespie",
   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/dc/62/24/dc6224d5-a974-a8e6-f08a-cbeafb71a8fe/00602567828303.rgb.jpg/100x100bb.jpg",
@@ -16,6 +25,24 @@
   "releaseYear": 1954,
   "trackCount": 7,
   "url": "https://music.apple.com/us/album/afro/1434895578"
+ },
+ "afro-harping": {
+  "artistName": "Dorothy Ashby",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/ef/a6/3e/efa63e4f-47a4-ccba-f401-d70fae167a60/00044007603727.rgb.jpg/100x100bb.jpg",
+  "collectionId": 1443481982,
+  "name": "Afro-Harping",
+  "releaseYear": 1968,
+  "trackCount": 10,
+  "url": "https://music.apple.com/us/album/afro-harping/1443481982"
+ },
+ "alligator-bogaloo": {
+  "artistName": "Lou Donaldson",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/a7/ed/88/a7ed8803-fe2f-5471-6635-247900aefcd4/00602537409655.rgb.jpg/100x100bb.jpg",
+  "collectionId": 1443141452,
+  "name": "Alligator Bogaloo",
+  "releaseYear": 1967,
+  "trackCount": 7,
+  "url": "https://music.apple.com/us/album/alligator-bogaloo/1443141452"
  },
  "amazing-bud-powell-1": {
   "artistName": "Bud Powell",
@@ -35,6 +62,15 @@
   "trackCount": 12,
   "url": "https://music.apple.com/us/album/ancestral-recall/1650599922"
  },
+ "another-mind": {
+  "artistName": "Hiromi",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/4d/bc/4e/4dbc4e7e-a715-74ff-e507-21813422a036/00888072051522.rgb.jpg/100x100bb.jpg",
+  "collectionId": 1391404218,
+  "name": "Another Mind",
+  "releaseYear": 2003,
+  "trackCount": 9,
+  "url": "https://music.apple.com/us/album/another-mind/1391404218"
+ },
  "art-of-the-trio-vol-1": {
   "artistName": "Brad Mehldau",
   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music/0d/82/8e/mzi.jcznzciu.jpg/100x100bb.jpg",
@@ -43,6 +79,15 @@
   "releaseYear": 1997,
   "trackCount": 9,
   "url": "https://music.apple.com/us/album/the-art-of-the-trio-vol-one/358124890"
+ },
+ "astral-traveling": {
+  "artistName": "Lonnie Liston Smith & The Cosmic Echoes",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/08/ef/43/08ef435a-3486-ea3e-1e9c-ce65bb64ea11/29667527385.jpg/100x100bb.jpg",
+  "collectionId": 1621366576,
+  "name": "Astral Traveling",
+  "releaseYear": 1973,
+  "trackCount": 10,
+  "url": "https://music.apple.com/us/album/astral-traveling/1621366576"
  },
  "back-at-the-chicken-shack": {
   "artistName": "Jimmy Smith",
@@ -61,6 +106,15 @@
   "releaseYear": 1992,
   "trackCount": 63,
   "url": "https://music.apple.com/us/album/the-complete-decca-recordings/1427369671"
+ },
+ "beyond-the-missouri-sky": {
+  "artistName": "Charlie Haden & Pat Metheny",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/ca/fc/c4/cafcc466-5800-3ca4-3a55-c57fbfc9f72b/00731453713024.rgb.jpg/100x100bb.jpg",
+  "collectionId": 1440918548,
+  "name": "Beyond the Missouri Sky (Short Stories)",
+  "releaseYear": 1996,
+  "trackCount": 13,
+  "url": "https://music.apple.com/us/album/beyond-the-missouri-sky-short-stories/1440918548"
  },
  "billie-commodore": {
   "artistName": "Billie Holiday",
@@ -134,6 +188,15 @@
   "trackCount": 75,
   "url": "https://music.apple.com/us/album/never-no-lament-the-blanton-webster-band-remastered/164149672"
  },
+ "blood-on-the-fields": {
+  "artistName": "Wynton Marsalis & Lincoln Center Jazz Orchestra",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music/a4/ac/f8/mzi.ogfqenxa.jpg/100x100bb.jpg",
+  "collectionId": 215594380,
+  "name": "Blood On the Fields",
+  "releaseYear": 1997,
+  "trackCount": 27,
+  "url": "https://music.apple.com/us/album/blood-on-the-fields/215594380"
+ },
  "blue-light-til-dawn": {
   "artistName": "Cassandra Wilson",
   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/a8/ef/9c/a8ef9c5a-f979-d922-33b0-a5e57cd43364/00602537829095.rgb.jpg/100x100bb.jpg",
@@ -160,6 +223,15 @@
   "releaseYear": 1976,
   "trackCount": 9,
   "url": "https://music.apple.com/us/album/bright-size-life/1523943125"
+ },
+ "canvas": {
+  "artistName": "Robert Glasper",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/4b/28/66/4b28665a-5cb3-7090-42e3-80ed5ebed24e/00724347713057.jpg/100x100bb.jpg",
+  "collectionId": 723467280,
+  "name": "Canvas",
+  "releaseYear": 2005,
+  "trackCount": 10,
+  "url": "https://music.apple.com/us/album/canvas/723467280"
  },
  "carnegie-hall-1938": {
   "artistName": "Benny Goodman",
@@ -197,6 +269,24 @@
   "trackCount": 2,
   "url": "https://music.apple.com/us/album/complete-communion/1443797315"
  },
+ "conference-of-the-birds": {
+  "artistName": "Dave Holland Quartet",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/a6/c8/2e/a6c82e73-cd02-eb30-c263-11c351485908/00602547801531.rgb.jpg/100x100bb.jpg",
+  "collectionId": 1442845534,
+  "name": "Conference of the Birds",
+  "releaseYear": 1972,
+  "trackCount": 7,
+  "url": "https://music.apple.com/us/album/conference-of-the-birds/1442845534"
+ },
+ "danca-das-cabecas": {
+  "artistName": "EGBERTO GISMONTI",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/4f/e7/4c/4fe74cf8-f083-989a-ae97-ac28d1154c6e/00602547809285.rgb.jpg/100x100bb.jpg",
+  "collectionId": 1443236290,
+  "name": "Dan\u00e7a Das Cabe\u00e7as",
+  "releaseYear": 1977,
+  "trackCount": 3,
+  "url": "https://music.apple.com/us/album/dan%C3%A7a-das-cabe%C3%A7as/1443236290"
+ },
  "dance-mania": {
   "artistName": "Tito Puente",
   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music/af/98/c4/mzi.wecpgnuh.jpg/100x100bb.jpg",
@@ -205,6 +295,15 @@
   "releaseYear": 1961,
   "trackCount": 12,
   "url": "https://music.apple.com/us/album/dance-mania-vol-1-remastered/252742319"
+ },
+ "dedicated-to-you": {
+  "artistName": "Kurt Elling",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/93/da/69/93da6959-9643-4e25-70c5-68a4abc9e8a5/00888072313149.rgb.jpg/100x100bb.jpg",
+  "collectionId": 1442907830,
+  "name": "Dedicated To You: Kurt Elling Sings the Music of Coltrane and Hartman",
+  "releaseYear": 2009,
+  "trackCount": 12,
+  "url": "https://music.apple.com/us/album/dedicated-to-you-kurt-elling-sings-the-music-of/1442907830"
  },
  "djangology": {
   "artistName": "Django Reinhardt",
@@ -250,6 +349,42 @@
   "releaseYear": 1965,
   "trackCount": 6,
   "url": "https://music.apple.com/us/album/fire-music/1443837989"
+ },
+ "flight-to-freedom": {
+  "artistName": "Arturo Sandoval",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/7c/72/21/7c722188-f6b1-0bb2-cff1-8314a7478f39/00011105963428.rgb.jpg/100x100bb.jpg",
+  "collectionId": 1444171554,
+  "name": "Flight to Freedom",
+  "releaseYear": 1991,
+  "trackCount": 10,
+  "url": "https://music.apple.com/us/album/flight-to-freedom/1444171554"
+ },
+ "footprints-live": {
+  "artistName": "Wayne Shorter",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/2b/07/50/2b075037-a1d4-139c-79bf-916cd24d84f9/00731458967927.rgb.jpg/100x100bb.jpg",
+  "collectionId": 1444192352,
+  "name": "Footprints Live!",
+  "releaseYear": 2002,
+  "trackCount": 8,
+  "url": "https://music.apple.com/us/album/footprints-live/1444192352"
+ },
+ "free-jazz": {
+  "artistName": "Ornette Coleman",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Features/v4/6f/09/84/6f098449-23bc-4c33-a9fd-6da9887aba45/dj.yrbzojng.jpg/100x100bb.jpg",
+  "collectionId": 50235783,
+  "name": "Free Jazz",
+  "releaseYear": 1961,
+  "trackCount": 2,
+  "url": "https://music.apple.com/us/album/free-jazz/50235783"
+ },
+ "future-shock": {
+  "artistName": "Herbie Hancock",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/80/bc/3f/80bc3fd0-44b9-266a-ad03-088acd54f034/dj.qxuqsbxw.jpg/100x100bb.jpg",
+  "collectionId": 157473816,
+  "name": "Future Shock",
+  "releaseYear": 1983,
+  "trackCount": 7,
+  "url": "https://music.apple.com/us/album/future-shock/157473816"
  },
  "genius-of-modern-music-1": {
   "artistName": "Thelonious Monk",
@@ -332,6 +467,15 @@
   "trackCount": 8,
   "url": "https://music.apple.com/us/album/heavy-weather/170409940"
  },
+ "historicity": {
+  "artistName": "Vijay Iyer Trio",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/fe/a6/0e/fea60e3a-34da-7916-15d0-a69cfbac2256/cover.jpg/100x100bb.jpg",
+  "collectionId": 338742081,
+  "name": "Historicity (Bonus Track Edition)",
+  "releaseYear": 2009,
+  "trackCount": 11,
+  "url": "https://music.apple.com/us/album/historicity-bonus-track-edition/338742081"
+ },
  "hot-five-hot-seven": {
   "artistName": "Louis Armstrong",
   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Features/v4/a6/37/90/a6379001-6d78-77af-64a8-2d370390d345/dj.xhneepwy.jpg/100x100bb.jpg",
@@ -377,6 +521,15 @@
   "trackCount": 8,
   "url": "https://music.apple.com/us/album/jazz-bat%C3%A1-2/1850044271"
  },
+ "john-coltrane-and-johnny-hartman": {
+  "artistName": "John Coltrane & Johnny Hartman",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/2b/6c/b7/2b6cb70e-8e01-1d96-f8f8-23aa73d5d7c2/06UMGIM09995.rgb.jpg/100x100bb.jpg",
+  "collectionId": 1440640282,
+  "name": "John Coltrane and Johnny Hartman",
+  "releaseYear": 1963,
+  "trackCount": 6,
+  "url": "https://music.apple.com/us/album/john-coltrane-and-johnny-hartman/1440640282"
+ },
  "journey-in-satchidananda": {
   "artistName": "Alice Coltrane",
   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/af/5c/40/af5c40a1-54b1-855d-3da2-f875efbd8372/06UMGIM04169.rgb.jpg/100x100bb.jpg",
@@ -385,6 +538,15 @@
   "releaseYear": 1971,
   "trackCount": 5,
   "url": "https://music.apple.com/us/album/journey-in-satchidananda/1440719294"
+ },
+ "journey-to-the-urge-within": {
+  "artistName": "Courtney Pine",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/42/ad/df/42addf7a-8a64-fce6-791b-14e871883ca3/00075679090928.rgb.jpg/100x100bb.jpg",
+  "collectionId": 1443404374,
+  "name": "Journey to the Urge Within",
+  "releaseYear": 1986,
+  "trackCount": 12,
+  "url": "https://music.apple.com/us/album/journey-to-the-urge-within/1443404374"
  },
  "karma": {
   "artistName": "Pharoah Sanders",
@@ -404,6 +566,15 @@
   "trackCount": 12,
   "url": "https://music.apple.com/us/album/kenya/696175088"
  },
+ "keystone-3": {
+  "artistName": "Art Blakey & The Jazz Messengers",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/1d/ed/b0/1dedb04d-7912-50d0-6b26-c509847902c6/00013431419624.rgb.jpg/100x100bb.jpg",
+  "collectionId": 1442432733,
+  "name": "Keystone 3 (Live)",
+  "releaseYear": 1982,
+  "trackCount": 5,
+  "url": "https://music.apple.com/us/album/keystone-3-live/1442432733"
+ },
  "kind-of-blue": {
   "artistName": "Miles Davis",
   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music/7f/9f/d6/mzi.vtnaewef.jpg/100x100bb.jpg",
@@ -421,6 +592,15 @@
   "releaseYear": 1959,
   "trackCount": 11,
   "url": "https://music.apple.com/us/album/little-girl-blue-2021-stereo-remaster/1568988846"
+ },
+ "lush-life": {
+  "artistName": "Joe Henderson",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/97/f6/bd/97f6bd7f-f1a5-0879-b479-44bfb10446e3/00731451177927.rgb.jpg/100x100bb.jpg",
+  "collectionId": 1442903381,
+  "name": "Lush Life - The Music of Billy Strayhorn",
+  "releaseYear": 1992,
+  "trackCount": 10,
+  "url": "https://music.apple.com/us/album/lush-life-the-music-of-billy-strayhorn/1442903381"
  },
  "ma-rainey": {
   "artistName": "Ma Rainey",
@@ -485,6 +665,15 @@
   "trackCount": 7,
   "url": "https://music.apple.com/us/album/moanin/1459438950"
  },
+ "mulatu-of-ethiopia": {
+  "artistName": "Mulatu Astatke",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/58/10/09/5810099d-35d5-ac1f-e786-9c11e2ee70b4/0730003312953_1448.jpg/100x100bb.jpg",
+  "collectionId": 1225952989,
+  "name": "Mulatu of Ethiopia",
+  "releaseYear": 2017,
+  "trackCount": 14,
+  "url": "https://music.apple.com/us/album/mulatu-of-ethiopia/1225952989"
+ },
  "my-favorite-things": {
   "artistName": "John Coltrane",
   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/38/49/44/384944a8-297f-0844-77da-1ae3b976c457/603497893119.jpg/100x100bb.jpg",
@@ -493,6 +682,15 @@
   "releaseYear": 1961,
   "trackCount": 4,
   "url": "https://music.apple.com/us/album/my-favorite-things/962193155"
+ },
+ "new-moon-daughter": {
+  "artistName": "Cassandra Wilson",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/47/76/7f/47767fed-e660-af34-ce53-9728678f1fb3/00602537445943.rgb.jpg/100x100bb.jpg",
+  "collectionId": 1443111209,
+  "name": "New Moon Daughter",
+  "releaseYear": 1995,
+  "trackCount": 12,
+  "url": "https://music.apple.com/us/album/new-moon-daughter/1443111209"
  },
  "out-of-the-cool": {
   "artistName": "Gil Evans",
@@ -521,6 +719,33 @@
   "trackCount": 11,
   "url": "https://music.apple.com/us/album/perceive-its-beauty-acknowledge-its-grace/1731422250"
  },
+ "ptah-the-el-daoud": {
+  "artistName": "Alice Coltrane",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/71/c5/2a/71c52a48-cd92-fb2b-f74e-c1edf51a25f1/06UMGIM04794.rgb.jpg/100x100bb.jpg",
+  "collectionId": 1440756392,
+  "name": "Ptah the El Daoud",
+  "releaseYear": 1970,
+  "trackCount": 4,
+  "url": "https://music.apple.com/us/album/ptah-the-el-daoud/1440756392"
+ },
+ "queen-of-the-organ": {
+  "artistName": "Shirley Scott",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/f4/3a/4e/f43a4e1a-376e-c8a0-2660-503a5b14a7cb/21UMGIM27926.rgb.jpg/100x100bb.jpg",
+  "collectionId": 1561884295,
+  "name": "Queen Of The Organ (Live From The Front Room/1964)",
+  "releaseYear": 1965,
+  "trackCount": 5,
+  "url": "https://music.apple.com/us/album/queen-of-the-organ-live-from-the-front-room-1964/1561884295"
+ },
+ "rabo-de-nube": {
+  "artistName": "Charles Lloyd, Jason Moran, Reuben Rogers & Eric Harland",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/5f/a0/1a/5fa01a1d-1737-6bed-b0e8-4aa21bcad5e7/00602517548114.rgb.jpg/100x100bb.jpg",
+  "collectionId": 1442912527,
+  "name": "Rabo de Nube (Live)",
+  "releaseYear": 2008,
+  "trackCount": 7,
+  "url": "https://music.apple.com/us/album/rabo-de-nube-live/1442912527"
+ },
  "return-to-forever": {
   "artistName": "Chick Corea",
   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/32/f7/2e/32f72eab-d932-8ff0-e81b-d3c46e513976/00602537765348.rgb.jpg/100x100bb.jpg",
@@ -529,6 +754,15 @@
   "releaseYear": 1972,
   "trackCount": 5,
   "url": "https://music.apple.com/us/album/return-to-forever/1445876621"
+ },
+ "river-the-joni-letters": {
+  "artistName": "Herbie Hancock",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/f8/2a/63/f82a63ef-6473-50b7-1d2d-05beac979daa/00602527883397.rgb.jpg/100x100bb.jpg",
+  "collectionId": 1442831171,
+  "name": "River: The Joni Letters",
+  "releaseYear": 2007,
+  "trackCount": 10,
+  "url": "https://music.apple.com/us/album/river-the-joni-letters/1442831171"
  },
  "sahara": {
   "artistName": "McCoy Tyner",
@@ -566,6 +800,24 @@
   "trackCount": 5,
   "url": "https://music.apple.com/us/album/saxophone-colossus/1440737584"
  },
+ "seven-days-of-falling": {
+  "artistName": "e.s.t.",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/c4/e5/e3/c4e5e389-4eaf-357f-a7e4-1e6f3940dca5/cover.jpg/100x100bb.jpg",
+  "collectionId": 307509926,
+  "name": "Seven Days of Falling",
+  "releaseYear": 2003,
+  "trackCount": 10,
+  "url": "https://music.apple.com/us/album/seven-days-of-falling/307509926"
+ },
+ "shack-man": {
+  "artistName": "Medeski, Martin & Wood",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music/86/33/3b/mzi.xmspaivh.jpg/100x100bb.jpg",
+  "collectionId": 160691472,
+  "name": "Shack-Man",
+  "releaseYear": 1996,
+  "trackCount": 11,
+  "url": "https://music.apple.com/us/album/shack-man/160691472"
+ },
  "snowy-morning-blues": {
   "artistName": "James P. Johnson",
   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/25/31/20/253120c7-ff68-b897-9865-79ff5ee904f1/00602567509998.rgb.jpg/100x100bb.jpg",
@@ -592,6 +844,33 @@
   "releaseYear": 1964,
   "trackCount": 7,
   "url": "https://music.apple.com/us/album/song-for-my-father/1471085186"
+ },
+ "song-x": {
+  "artistName": "Ornette Coleman & Pat Metheny",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/68/cb/47/68cb47a6-42fe-4c94-cfe5-534f36b65730/06UMGIM13948.rgb.jpg/100x100bb.jpg",
+  "collectionId": 1469583441,
+  "name": "Song X",
+  "releaseYear": 1986,
+  "trackCount": 8,
+  "url": "https://music.apple.com/us/album/song-x/1469583441"
+ },
+ "soul-of-things": {
+  "artistName": "Tomasz Stanko Quartet",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/b3/52/6c/b3526c34-8f4e-8009-b86e-be798b4a8088/00044001637421.rgb.jpg/100x100bb.jpg",
+  "collectionId": 1444125007,
+  "name": "Soul of Things",
+  "releaseYear": 2002,
+  "trackCount": 13,
+  "url": "https://music.apple.com/us/album/soul-of-things/1444125007"
+ },
+ "sound-grammar": {
+  "artistName": "Ornette Coleman",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music/6e/f2/d3/mzi.vdyyjywu.tif/100x100bb.jpg",
+  "collectionId": 186046592,
+  "name": "Sound Grammar (Live in Germany 2005)",
+  "releaseYear": 2006,
+  "trackCount": 9,
+  "url": "https://music.apple.com/us/album/sound-grammar-live-in-germany-2005/186046592"
  },
  "source": {
   "artistName": "Nubya Garcia",
@@ -620,6 +899,15 @@
   "trackCount": 7,
   "url": "https://music.apple.com/us/album/speak-no-evil/1453750007"
  },
+ "spirits-known-and-unknown": {
+  "artistName": "Leon Thomas",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/87/94/7e/87947e58-3e7f-176e-2011-582b60f1515c/29667526289.jpg/100x100bb.jpg",
+  "collectionId": 1621357214,
+  "name": "Spirits Known and Unknown",
+  "releaseYear": 1969,
+  "trackCount": 10,
+  "url": "https://music.apple.com/us/album/spirits-known-and-unknown/1621357214"
+ },
  "spiritual-unity": {
   "artistName": "Albert Ayler Trio",
   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/c0/44/a6/c044a613-e7b3-a124-12c2-b9ed9ad32cb7/0825481010023.png/100x100bb.jpg",
@@ -638,6 +926,15 @@
   "trackCount": 6,
   "url": "https://music.apple.com/us/album/standards-vol-1/1440839750"
  },
+ "state-of-the-tenor-vol-1": {
+  "artistName": "Joe Henderson",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/0a/88/af/0a88afe0-5350-ba18-8d32-3369550d943c/21UM1IM28532.rgb.jpg/100x100bb.jpg",
+  "collectionId": 1591645161,
+  "name": "The State Of The Tenor (Vol. 1 / Live At The Village Vanguard/1985)",
+  "releaseYear": 1985,
+  "trackCount": 7,
+  "url": "https://music.apple.com/us/album/the-state-of-the-tenor-vol-1-live-at-the-village-vanguard-1985/1591645161"
+ },
  "study-in-brown": {
   "artistName": "Clifford Brown & Max Roach",
   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/4b/45/36/4b453694-c7bc-b9bd-3aba-04dae49dc7c4/06UMGIM11224.rgb.jpg/100x100bb.jpg",
@@ -647,6 +944,15 @@
   "trackCount": 9,
   "url": "https://music.apple.com/us/album/study-in-brown/1434889869"
  },
+ "sugar": {
+  "artistName": "Stanley Turrentine",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music/64/6c/d9/mzi.lvagijcn.jpg/100x100bb.jpg",
+  "collectionId": 394275529,
+  "name": "Sugar (40th Anniversary Edition)",
+  "releaseYear": 2010,
+  "trackCount": 5,
+  "url": "https://music.apple.com/us/album/sugar-40th-anniversary-edition/394275529"
+ },
  "sunday-at-the-village-vanguard": {
   "artistName": "Bill Evans Trio",
   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/3d/f2/ab/3df2ab45-5e51-b4b6-07dd-daefe8c0ecbc/00888072305090.rgb.jpg/100x100bb.jpg",
@@ -655,6 +961,24 @@
   "releaseYear": 1961,
   "trackCount": 10,
   "url": "https://music.apple.com/us/album/sunday-at-the-village-vanguard-keepnews-collection-live/1440926338"
+ },
+ "swiss-movement": {
+  "artistName": "Les McCann & Eddie Harris",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/19/43/52/19435294-b288-7c71-f722-c347f694a8f3/s06.baqlnvdv.jpg/100x100bb.jpg",
+  "collectionId": 50234801,
+  "name": "Swiss Movement (Montreux 30th Anniversary Edition) [Live]",
+  "releaseYear": 1969,
+  "trackCount": 6,
+  "url": "https://music.apple.com/us/album/swiss-movement-montreux-30th-anniversary-edition-live/50234801"
+ },
+ "the-bandwagon": {
+  "artistName": "Jason Moran",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/b0/39/84/b03984f8-ae5d-c483-72ef-279a95777184/00724358091755.jpg/100x100bb.jpg",
+  "collectionId": 716251862,
+  "name": "The Bandwagon (Live)",
+  "releaseYear": 2003,
+  "trackCount": 10,
+  "url": "https://music.apple.com/us/album/the-bandwagon-live/716251862"
  },
  "the-epic": {
   "artistName": "Kamasi Washington",
@@ -682,6 +1006,15 @@
   "releaseYear": 1971,
   "trackCount": 9,
   "url": "https://music.apple.com/us/album/the-inner-mounting-flame-with-john-mclaughlin/511075517"
+ },
+ "the-koln-concert": {
+  "artistName": "Keith Jarrett",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/88/a5/ac/88a5ac07-7eac-6e07-a970-8073f48c0ad6/00602547299819.rgb.jpg/100x100bb.jpg",
+  "collectionId": 1440840566,
+  "name": "The K\u00f6ln Concert (Live)",
+  "releaseYear": 1975,
+  "trackCount": 5,
+  "url": "https://music.apple.com/us/album/the-k%C3%B6ln-concert-live/1440840566"
  },
  "the-real-mccoy": {
   "artistName": "McCoy Tyner",
@@ -719,6 +1052,15 @@
   "trackCount": 6,
   "url": "https://music.apple.com/us/album/the-sidewinder/1458548311"
  },
+ "the-voice": {
+  "artistName": "Bobby McFerrin",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Features124/v4/47/8c/9c/478c9cb2-26fb-b09c-18f9-4e4ab5fbbdf0/dj.raulhotc.jpg/100x100bb.jpg",
+  "collectionId": 41228101,
+  "name": "The Voice",
+  "releaseYear": 1984,
+  "trackCount": 10,
+  "url": "https://music.apple.com/us/album/the-voice/41228101"
+ },
  "time-out": {
   "artistName": "The Dave Brubeck Quartet",
   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/7a/e3/06/7ae30672-0c73-a4d4-0a74-624eefc2843b/dj.ytdbjvto.jpg/100x100bb.jpg",
@@ -727,6 +1069,15 @@
   "releaseYear": 1959,
   "trackCount": 7,
   "url": "https://music.apple.com/us/album/time-out/193085545"
+ },
+ "tutu": {
+  "artistName": "Miles Davis",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/40/de/69/40de6964-245d-f678-26e3-06248fed8976/075992549028.jpg/100x100bb.jpg",
+  "collectionId": 828544687,
+  "name": "Tutu",
+  "releaseYear": 1986,
+  "trackCount": 8,
+  "url": "https://music.apple.com/us/album/tutu/828544687"
  },
  "unit-structures": {
   "artistName": "Cecil Taylor",
@@ -737,6 +1088,15 @@
   "trackCount": 5,
   "url": "https://music.apple.com/us/album/unit-structures/724608454"
  },
+ "unity": {
+  "artistName": "Larry Young",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/c3/fd/d4/c3fdd47a-303a-72fb-587a-7ea1eb893d9b/19UMGIM28885.rgb.jpg/100x100bb.jpg",
+  "collectionId": 1457590359,
+  "name": "Unity",
+  "releaseYear": 1966,
+  "trackCount": 7,
+  "url": "https://music.apple.com/us/album/unity/1457590359"
+ },
  "universal-beings": {
   "artistName": "Makaya McCraven",
   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/6c/6b/98/6c6b98d3-6de6-5d2c-ab83-d87377615a26/603784912073.jpg/100x100bb.jpg",
@@ -745,6 +1105,15 @@
   "releaseYear": 2018,
   "trackCount": 22,
   "url": "https://music.apple.com/us/album/universal-beings/1410969638"
+ },
+ "water-from-an-ancient-well": {
+  "artistName": "Abdullah Ibrahim, Ben Riley, Carlos Ward, Charles Davis, David Williams, Dick Griffin & Ricky Ford",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/5a/95/9b/5a959b03-332c-e865-1217-c96d15a85c54/cover.jpg/100x100bb.jpg",
+  "collectionId": 287950999,
+  "name": "Water from an Ancient Well",
+  "releaseYear": 1985,
+  "trackCount": 8,
+  "url": "https://music.apple.com/us/album/water-from-an-ancient-well/287950999"
  },
  "watermelon-man": {
   "artistName": "Mongo Santamaria",
@@ -781,6 +1150,15 @@
   "releaseYear": 1993,
   "trackCount": 10,
   "url": "https://music.apple.com/us/album/wish/305687509"
+ },
+ "witchi-tai-to": {
+  "artistName": "Bobo Stenson Quartet & Jan Garbarek",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/b6/71/59/b67159ac-cf01-063d-d103-bff44e08c16b/00042283333024.rgb.jpg/100x100bb.jpg",
+  "collectionId": 1443228150,
+  "name": "Witchi-Tai-To",
+  "releaseYear": 1974,
+  "trackCount": 5,
+  "url": "https://music.apple.com/us/album/witchi-tai-to/1443228150"
  },
  "womanchild": {
   "artistName": "C\u00e9cile McLorin Salvant",
