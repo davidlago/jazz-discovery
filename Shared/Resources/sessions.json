@@ -6,17 +6,15 @@
   "edition": "1965-01 US",
   "recorded": [
    {
-    "date": "1964-12"
-   },
-   {
     "date": "1964-12-09",
-    "place": "Van Gelder Studio"
+    "place": "Van Gelder Studio, Englewood Cliffs"
    }
   ],
   "tracks": [
-   "A Love Supreme, Part 1: Acknowledgement",
-   "A Love Supreme, Part 2: Resolution",
-   "A Love Supreme, Part 3: Pursuance / A Love Supreme, Part 4: Psalm"
+   "A Love Supreme, Pt. 1: Acknowledgement",
+   "A Love Supreme, Pt. 2: Resolution",
+   "A Love Supreme, Pt. 3: Pursuance",
+   "A Love Supreme, Pt. 4: Psalm"
   ],
   "personnel": [
    {
@@ -52,15 +50,16 @@
   "crew": [
    {
     "artist": null,
-    "name": "Rudy Van Gelder",
-    "role": "engineer"
+    "name": "Bob Thiele",
+    "role": "producer"
    },
    {
     "artist": null,
-    "name": "Bob Thiele",
-    "role": "producer"
+    "name": "Rudy Van Gelder",
+    "role": "engineer"
    }
-  ]
+  ],
+  "edited": true
  },
  "afro": {
   "reviewed": false,
@@ -372,7 +371,8 @@
     "name": "Dizzy Gillespie",
     "role": "arranger"
    }
-  ]
+  ],
+  "edited": true
  },
  "amazing-bud-powell-1": {
   "reviewed": true,
@@ -684,7 +684,7 @@
   ]
  },
  "back-at-the-chicken-shack": {
-  "reviewed": false,
+  "reviewed": true,
   "source": "musicbrainz:release/16ff71ba-6d9e-435b-ad13-951ed918dff2",
   "mbReleaseGroup": "10bb15b0-2d55-369a-90c3-a5131406ac9e",
   "edition": "1963 US",
@@ -742,8 +742,7 @@
     "name": "Rudy Van Gelder",
     "role": "engineer"
    }
-  ],
-  "edited": true
+  ]
  },
  "basie-complete-decca": {
   "reviewed": false,
@@ -3297,11 +3296,6 @@
   "source": "musicbrainz:release/7eef0e8a-483c-49b5-883d-b828541d7cfc",
   "mbReleaseGroup": "9e4072b4-11c3-3fe6-be4f-4a607bbb94f9",
   "edition": "1963 US",
-  "recorded": [
-   {
-    "date": "1962-10-19"
-   }
-  ],
   "tracks": [
    "Desafinado",
    "Rosa Morena",
@@ -3321,10 +3315,28 @@
     "artist": "joao-gilberto",
     "name": "João Gilberto",
     "instruments": [
-     "guitar"
-    ]
+     "guitar",
+     "vocals"
+    ],
+    "tracks": 12
    }
-  ]
+  ],
+  "kind": "compilation",
+  "recordedBetween": [
+   1958,
+   1959
+  ],
+  "crew": [
+   {
+    "artist": "antonio-carlos-jobim",
+    "name": "Antônio Carlos Jobim",
+    "role": "arranger"
+   }
+  ],
+  "draftNotes": [
+   "Gathers Gilberto's 1958–59 Odeon sessions; the original LP doesn't credit the orchestra's players, so only Gilberto and arranger Jobim are listed. MusicBrainz had matched a 1962 US reissue's date."
+  ],
+  "edited": true
  },
  "chet-baker-sings": {
   "reviewed": true,
@@ -3546,7 +3558,8 @@
     "name": "Rudy Van Gelder",
     "role": "engineer"
    }
-  ]
+  ],
+  "edited": true
  },
  "dance-mania": {
   "reviewed": false,
@@ -3554,30 +3567,196 @@
   "mbReleaseGroup": "522f179f-7c31-3a7c-95ed-c22218eba84f",
   "edition": "1958 US",
   "tracks": [
-   "El cayuco",
+   "El Cayuco",
    "Complicación",
    "3-D Mambo",
    "Llegó Miján",
-   "Cuando te vea",
+   "Cuando Te Vea",
    "Hong Kong Mambo",
-   "Mambo gozón",
-   "Mi chiquita quiere bembé",
+   "Mambo Gozón",
+   "Mi Chiquita Quiere Bembé",
    "Varsity Drag",
-   "Estoy siempre junto a ti",
-   "Agua limpia todo",
-   "Saca tu mujer"
+   "Estoy Siempre Junto a Ti",
+   "Agua Limpia Todo",
+   "Saca Tu Mujer"
   ],
-  "personnel": [],
-  "crew": [
+  "personnel": [
+   {
+    "artist": "tito-puente",
+    "name": "Tito Puente",
+    "instruments": [
+     "timbales",
+     "vibraphone",
+     "marimba"
+    ]
+   },
    {
     "artist": null,
-    "name": "Fred Reynolds",
+    "name": "Bernie Glow",
+    "instruments": [
+     "trumpet"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Jimmy Frisaura",
+    "instruments": [
+     "trumpet"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Frank Lo Pinto",
+    "instruments": [
+     "trumpet"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "George López",
+    "instruments": [
+     "trumpet"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Gene Repetti",
+    "instruments": [
+     "trumpet"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Larry Moser",
+    "instruments": [
+     "trumpet"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "León Merian",
+    "instruments": [
+     "trumpet"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Rafael Palau",
+    "instruments": [
+     "saxophone"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Jerry Sanfino",
+    "instruments": [
+     "saxophone"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Schapp Pullman",
+    "instruments": [
+     "saxophone"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Tony Buonpastore",
+    "instruments": [
+     "saxophone"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Raymond Concepción",
+    "instruments": [
+     "piano"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Bobby Rodríguez",
+    "instruments": [
+     "bass"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Ray Barretto",
+    "instruments": [
+     "congas"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Julito Collazo",
+    "instruments": [
+     "congas"
+    ],
+    "only": [
+     "Llegó Miján",
+     "Agua Limpia Todo"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Ray Rodríguez",
+    "instruments": [
+     "bongos"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Santitos Colón",
+    "instruments": [
+     "vocals"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Vitin Avilés",
+    "instruments": [
+     "vocals"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Otto Olivar",
+    "instruments": [
+     "vocals"
+    ]
+   }
+  ],
+  "crew": [
+   {
+    "artist": "tito-puente",
+    "name": "Tito Puente",
+    "role": "arranger"
+   },
+   {
+    "artist": null,
+    "name": "Mickey Crofford",
     "role": "producer"
+   },
+   {
+    "artist": null,
+    "name": "Mickey Crofford",
+    "role": "engineer"
    }
   ],
   "draftNotes": [
-   "no players credited on this edition"
-  ]
+   "MusicBrainz credited nobody; written from Wikipedia. Recorded in New York, November–December 1957 (no exact dates)."
+  ],
+  "recorded": [
+   {
+    "date": "1957-11"
+   },
+   {
+    "date": "1957-12"
+   }
+  ],
+  "edited": true
  },
  "djangology": {
   "reviewed": false,
@@ -4248,7 +4427,11 @@
   "recorded": [
    {
     "date": "1965-02-16",
-    "place": "Van Gelder Studio"
+    "place": "Van Gelder Studio, Englewood Cliffs"
+   },
+   {
+    "date": "1965-03-09",
+    "place": "Van Gelder Studio, Englewood Cliffs"
    }
   ],
   "tracks": [
@@ -4256,7 +4439,7 @@
    "Los Olvidados",
    "Malcolm, Malcolm - Semper Malcolm",
    "Prelude to a Kiss",
-   "The Girl From Ipanema"
+   "The Girl from Ipanema"
   ],
   "personnel": [
    {
@@ -4312,9 +4495,38 @@
     "name": "Joe Chambers",
     "instruments": [
      "drums"
+    ],
+    "except": [
+     "Malcolm, Malcolm - Semper Malcolm"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "J.C. Moses",
+    "instruments": [
+     "drums"
+    ],
+    "only": [
+     "Malcolm, Malcolm - Semper Malcolm"
     ]
    }
-  ]
+  ],
+  "crew": [
+   {
+    "artist": null,
+    "name": "Bob Thiele",
+    "role": "producer"
+   },
+   {
+    "artist": null,
+    "name": "Rudy Van Gelder",
+    "role": "engineer"
+   }
+  ],
+  "draftNotes": [
+   "Apple Music's sixth track, a live \"Hambone\" (Village Gate, 28 Mar 1965), isn't part of these sessions; it matches the studio \"Hambone\" by title."
+  ],
+  "edited": true
  },
  "genius-of-modern-music-1": {
   "reviewed": true,
@@ -4513,22 +4725,23 @@
   "edition": "1964-03 US",
   "recorded": [
    {
-    "date": "1963-03"
+    "date": "1963-03-18",
+    "place": "A&R Recording, New York"
    },
    {
-    "date": "1963-03-18",
-    "place": "A&R Recording Studio"
+    "date": "1963-03-19",
+    "place": "A&R Recording, New York"
    }
   ],
   "tracks": [
    "The Girl from Ipanema",
    "Doralice",
-   "Para machucar meu coração",
+   "Para Machucar Meu Coração",
    "Desafinado",
-   "Corcovado",
-   "Só danço samba",
-   "O grande amor",
-   "Vivo sonhando"
+   "Corcovado (Quiet Nights of Quiet Stars)",
+   "Só Danço Samba",
+   "O Grande Amor",
+   "Vivo Sonhando"
   ],
   "personnel": [
    {
@@ -4555,9 +4768,8 @@
    },
    {
     "artist": null,
-    "name": "Tommy Williams",
+    "name": "Sebastião Neto",
     "instruments": [
-     "electric bass",
      "bass"
     ]
    },
@@ -4565,7 +4777,8 @@
     "artist": null,
     "name": "Milton Banana",
     "instruments": [
-     "drums"
+     "drums",
+     "pandeiro"
     ]
    },
    {
@@ -4576,8 +4789,7 @@
     ],
     "only": [
      "The Girl from Ipanema",
-     "Corcovado",
-     "O grande amor"
+     "Corcovado"
     ]
    }
   ],
@@ -4592,7 +4804,11 @@
     "name": "Phil Ramone",
     "role": "engineer"
    }
-  ]
+  ],
+  "draftNotes": [
+   "Bass: Sebastião Neto. Reissues (and MusicBrainz) credit Tommy Williams in error, per Wikipedia."
+  ],
+  "edited": true
  },
  "giant-steps": {
   "reviewed": true,
@@ -5456,7 +5672,7 @@
   ]
  },
  "idle-moments": {
-  "reviewed": false,
+  "reviewed": true,
   "source": "musicbrainz:release/b080958a-f13b-4be3-b02d-7537f9a14735",
   "mbReleaseGroup": "b65889f6-1a7a-3233-b42c-6382fac570b1",
   "edition": "1964 US",
@@ -5536,8 +5752,7 @@
     "name": "Alfred Lion",
     "role": "producer"
    }
-  ],
-  "edited": true
+  ]
  },
  "jaco-pastorius-album": {
   "reviewed": false,
@@ -6182,7 +6397,8 @@
     "name": "Orville O'Brien",
     "role": "engineer"
    }
-  ]
+  ],
+  "edited": true
  },
  "karma": {
   "reviewed": false,
@@ -6199,8 +6415,7 @@
    }
   ],
   "tracks": [
-   "The Creator Has a Master Plan, Part I",
-   "The Creator Has a Master Plan, Part II",
+   "The Creator Has a Master Plan",
    "Colors"
   ],
   "personnel": [
@@ -6315,7 +6530,8 @@
     "name": "Bob Thiele",
     "role": "producer"
    }
-  ]
+  ],
+  "edited": true
  },
  "kenya": {
   "reviewed": false,
@@ -6367,7 +6583,7 @@
    },
    {
     "artist": null,
-    "name": "Frank ''Paquito'' Davilla",
+    "name": "Frank “Paquito” Davilla",
     "instruments": [
      "trumpet"
     ]
@@ -6579,11 +6795,12 @@
    }
   ],
   "draftNotes": [
-   "the leader (Machito) isn't among the credited players"
-  ]
+   "No album page on Wikipedia; credits from MusicBrainz (apparently the liner notes). Machito is credited as conductor, not as a player. Cannonball Adderley's appearance is confirmed by his discography."
+  ],
+  "edited": true
  },
  "kind-of-blue": {
-  "reviewed": false,
+  "reviewed": true,
   "source": "musicbrainz:release/49234de2-790c-46e5-b780-3cd6be79a2db",
   "mbReleaseGroup": "8e8a594f-2175-38c7-a871-abb68ec363e7",
   "edition": "1959 US",
@@ -6678,11 +6895,10 @@
   ],
   "draftNotes": [
    "The full run had picked a 3-track edition; rebuilt for the five tracks, with Wynton Kelly on \"Freddie Freeloader\"."
-  ],
-  "edited": true
+  ]
  },
  "little-girl-blue": {
-  "reviewed": false,
+  "reviewed": true,
   "source": "musicbrainz:release/8f663ff6-b63f-4501-86ae-40b3cc41448b",
   "mbReleaseGroup": "19ca48c1-af98-3000-bc9a-97ef5fa3e3be",
   "edition": "1958-06-24 US",
@@ -6728,8 +6944,7 @@
      "drums"
     ]
    }
-  ],
-  "edited": true
+  ]
  },
  "ma-rainey": {
   "reviewed": false,
@@ -6782,7 +6997,7 @@
   ]
  },
  "maiden-voyage": {
-  "reviewed": false,
+  "reviewed": true,
   "source": "musicbrainz:release/8b3ca77d-647d-4e3e-b3a9-e7d5dd17f3e0",
   "mbReleaseGroup": "c5e5e8ad-dc89-319e-8b2d-b3ff5e59fcea",
   "edition": "1965-05-17 US",
@@ -6847,11 +7062,10 @@
     "name": "Rudy Van Gelder",
     "role": "engineer"
    }
-  ],
-  "edited": true
+  ]
  },
  "mercy-mercy-mercy": {
-  "reviewed": false,
+  "reviewed": true,
   "source": "musicbrainz:release/fab8d478-df30-3199-9212-49a37070a687",
   "mbReleaseGroup": "28ea51ba-f497-3bc1-9290-dc9d476c21ea",
   "edition": "1995-07-03 US",
@@ -6916,8 +7130,7 @@
   ],
   "draftNotes": [
    "Recorded at Capitol's Hollywood studio before an invited audience, not at \"The Club\" in Chicago, despite the title."
-  ],
-  "edited": true
+  ]
  },
  "miles-ahead": {
   "reviewed": true,
@@ -7161,7 +7374,7 @@
   ]
  },
  "miles-smiles": {
-  "reviewed": false,
+  "reviewed": true,
   "source": "musicbrainz:release/3a883a4f-dbab-4062-b016-483d603526f7",
   "mbReleaseGroup": "60fa4ab0-bf92-3184-80ca-6dcadbb5c748",
   "edition": "1967 US",
@@ -7236,8 +7449,7 @@
     "name": "Vernon Smith",
     "role": "photography"
    }
-  ],
-  "edited": true
+  ]
  },
  "mingus-ah-um": {
   "reviewed": true,
@@ -7423,7 +7635,7 @@
   ]
  },
  "my-favorite-things": {
-  "reviewed": false,
+  "reviewed": true,
   "source": "musicbrainz:release/1dbacf08-e08c-4f44-a409-81ea1fb4b8aa",
   "mbReleaseGroup": "b60cdf20-74b7-3bed-b233-0f4818235895",
   "edition": "1961 US",
@@ -7504,8 +7716,7 @@
     "name": "Phil Iehle",
     "role": "engineer"
    }
-  ],
-  "edited": true
+  ]
  },
  "out-of-the-cool": {
   "reviewed": true,
@@ -7748,7 +7959,8 @@
     "name": "Rudy Van Gelder",
     "role": "engineer"
    }
-  ]
+  ],
+  "edited": true
  },
  "perceive-its-beauty": {
   "reviewed": false,
@@ -8147,7 +8359,7 @@
   "recorded": [
    {
     "date": "1972-01",
-    "place": "Decca Studios"
+    "place": "Decca Studios, New York"
    }
   ],
   "tracks": [
@@ -8212,7 +8424,8 @@
     "name": "Orrin Keepnews",
     "role": "producer"
    }
-  ]
+  ],
+  "edited": true
  },
  "sarah-vaughan-1955": {
   "reviewed": true,
@@ -8877,7 +9090,11 @@
   "recorded": [
    {
     "date": "1972-10-19",
-    "place": "Streeterville Studios"
+    "place": "Streeterville Studios, Chicago"
+   },
+   {
+    "date": "1972-10-20",
+    "place": "Streeterville Studios, Chicago"
    }
   ],
   "tracks": [
@@ -9079,11 +9296,17 @@
     "artist": "sun-ra",
     "name": "Sun Ra",
     "role": "arranger"
+   },
+   {
+    "artist": null,
+    "name": "Baker Bigsby",
+    "role": "engineer"
    }
-  ]
+  ],
+  "edited": true
  },
  "speak-no-evil": {
-  "reviewed": false,
+  "reviewed": true,
   "source": "musicbrainz:release/2e2833d1-a6b0-48a4-aba0-4d5fc1a0c436",
   "mbReleaseGroup": "eae0c18f-f2fd-3b97-8631-3f682a2f3957",
   "edition": "1965 US",
@@ -9159,8 +9382,7 @@
     "name": "Reid Miles",
     "role": "photography"
    }
-  ],
-  "edited": true
+  ]
  },
  "spiritual-unity": {
   "reviewed": false,
@@ -9176,7 +9398,8 @@
    "Ghosts: First Variation",
    "The Wizard",
    "Spirits",
-   "Ghosts: Second Variation"
+   "Ghosts: Second Variation",
+   "Vibrations"
   ],
   "personnel": [
    {
@@ -9200,7 +9423,15 @@
      "drums"
     ]
    }
-  ]
+  ],
+  "crew": [
+   {
+    "artist": null,
+    "name": "Bernard Stollman",
+    "role": "producer"
+   }
+  ],
+  "edited": true
  },
  "standards-vol-1": {
   "reviewed": false,
@@ -9330,7 +9561,7 @@
   ]
  },
  "sunday-at-the-village-vanguard": {
-  "reviewed": false,
+  "reviewed": true,
   "source": "musicbrainz:release/06bf4534-e253-4edb-9727-ec76cb94929a",
   "mbReleaseGroup": "79a8fca9-2678-3c9c-a18f-b6f715d2375d",
   "edition": "1961 US",
@@ -9385,8 +9616,7 @@
   ],
   "draftNotes": [
    "Apple Music has 10 tracks (two takes of several tunes); takes match by title."
-  ],
-  "edited": true
+  ]
  },
  "the-epic": {
   "reviewed": false,
@@ -10081,7 +10311,7 @@
   ]
  },
  "the-real-mccoy": {
-  "reviewed": false,
+  "reviewed": true,
   "source": "musicbrainz:release/45e77330-7301-427e-96da-471c89ad9876",
   "mbReleaseGroup": "637892d3-1941-3905-9795-76564a7e4413",
   "edition": "1967 US",
@@ -10139,11 +10369,10 @@
     "name": "Rudy Van Gelder",
     "role": "engineer"
    }
-  ],
-  "edited": true
+  ]
  },
  "the-sermon": {
-  "reviewed": false,
+  "reviewed": true,
   "source": "musicbrainz:release/a515abf5-6dc8-4230-a7c7-9bcbf44d332a",
   "mbReleaseGroup": "6d9fa1f7-59c7-3ced-b2b6-a581f75696ed",
   "edition": "1959 US",
@@ -10272,8 +10501,7 @@
   ],
   "draftNotes": [
    "Per Jazzdisco and Wikipedia: Curtis Fuller (credited by MusicBrainz) isn't on the album; Tina Brooks plays only on \"The Sermon\"."
-  ],
-  "edited": true
+  ]
  },
  "the-shape-of-jazz-to-come": {
   "reviewed": false,
@@ -10282,7 +10510,8 @@
   "edition": "1959 US",
   "recorded": [
    {
-    "date": "1959-05-22"
+    "date": "1959-05-22",
+    "place": "Radio Recorders, Hollywood"
    }
   ],
   "tracks": [
@@ -10326,13 +10555,19 @@
   "crew": [
    {
     "artist": null,
-    "name": "Dayton “Bones” Howe",
+    "name": "Nesuhi Ertegun",
+    "role": "producer"
+   },
+   {
+    "artist": null,
+    "name": "Bones Howe",
     "role": "engineer"
    }
-  ]
+  ],
+  "edited": true
  },
  "the-sidewinder": {
-  "reviewed": false,
+  "reviewed": true,
   "source": "musicbrainz:release/6b09dbc1-b4be-4fb9-9996-886b32852a19",
   "mbReleaseGroup": "24d2fedc-7976-3b88-bb91-b49a05f26e55",
   "edition": "1964-07 US",
@@ -10407,8 +10642,7 @@
     "name": "Rudy Van Gelder",
     "role": "engineer"
    }
-  ],
-  "edited": true
+  ]
  },
  "time-out": {
   "reviewed": true,
@@ -10572,8 +10806,19 @@
     "artist": null,
     "name": "Rudy Van Gelder",
     "role": "engineer"
+   },
+   {
+    "artist": null,
+    "name": "Francis Wolff",
+    "role": "photography"
+   },
+   {
+    "artist": null,
+    "name": "Reid Miles",
+    "role": "design"
    }
-  ]
+  ],
+  "edited": true
  },
  "universal-beings": {
   "reviewed": false,
@@ -10642,7 +10887,19 @@
   "recorded": [
    {
     "date": "1967-05-22",
-    "place": "Van Gelder Studio"
+    "place": "Van Gelder Studio, Englewood Cliffs"
+   },
+   {
+    "date": "1967-05-23",
+    "place": "Van Gelder Studio, Englewood Cliffs"
+   },
+   {
+    "date": "1967-05-24",
+    "place": "Van Gelder Studio, Englewood Cliffs"
+   },
+   {
+    "date": "1967-06-15",
+    "place": "Van Gelder Studio, Englewood Cliffs"
    }
   ],
   "tracks": [
@@ -10652,7 +10909,7 @@
    "Batidinha",
    "Triste",
    "Mojave",
-   "Dialogo",
+   "Diálogo",
    "Lamento",
    "Antigua",
    "Captain Bacardi"
@@ -10662,24 +10919,10 @@
     "artist": "antonio-carlos-jobim",
     "name": "Antônio Carlos Jobim",
     "instruments": [
-     "guitar",
      "piano",
+     "guitar",
+     "harpsichord",
      "vocals"
-    ],
-    "only": [
-     "Wave",
-     "Triste",
-     "Lamento"
-    ]
-   },
-   {
-    "artist": null,
-    "name": "Jimmy Cleveland",
-    "instruments": [
-     "trombone"
-    ],
-    "only": [
-     "Triste"
     ]
    },
    {
@@ -10687,9 +10930,13 @@
     "name": "Urbie Green",
     "instruments": [
      "trombone"
-    ],
-    "only": [
-     "Triste"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Jimmy Cleveland",
+    "instruments": [
+     "trombone"
     ]
    },
    {
@@ -10697,9 +10944,152 @@
     "name": "Joseph Singer",
     "instruments": [
      "French horn"
-    ],
-    "only": [
-     "Triste"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Raymond Beckenstein",
+    "instruments": [
+     "flute",
+     "bass flute",
+     "piccolo"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Romeo Penque",
+    "instruments": [
+     "flute",
+     "bass flute",
+     "piccolo"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Jerome Richardson",
+    "instruments": [
+     "flute",
+     "bass flute",
+     "piccolo"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Bernard Eichen",
+    "instruments": [
+     "violin"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Lewis Eley",
+    "instruments": [
+     "violin"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Paul Gershman",
+    "instruments": [
+     "violin"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Emanuel Green",
+    "instruments": [
+     "violin"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Louis Haber",
+    "instruments": [
+     "violin"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Julius Held",
+    "instruments": [
+     "violin"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Leo Kruczek",
+    "instruments": [
+     "violin"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Harry Lookofsky",
+    "instruments": [
+     "violin"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Joseph Malignaggi",
+    "instruments": [
+     "violin"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Gene Orloff",
+    "instruments": [
+     "violin"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Raoul Poliakin",
+    "instruments": [
+     "violin"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Irving Spice",
+    "instruments": [
+     "violin"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Louis Stone",
+    "instruments": [
+     "violin"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Abe Kessler",
+    "instruments": [
+     "cello"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Charles McCracken",
+    "instruments": [
+     "cello"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "George Ricci",
+    "instruments": [
+     "cello"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Harvey Shapiro",
+    "instruments": [
+     "cello"
     ]
    },
    {
@@ -10711,29 +11101,23 @@
    },
    {
     "artist": null,
-    "name": "Claudio Slon",
+    "name": "Dom Um Romão",
     "instruments": [
      "drums"
     ]
    },
    {
     "artist": null,
-    "name": "Dom Um Romão",
+    "name": "Bobby Rosengarden",
     "instruments": [
-     "percussion"
-    ],
-    "only": [
-     "Triste"
+     "drums"
     ]
    },
    {
     "artist": null,
-    "name": "Bobby Rosengarden",
+    "name": "Claudio Slon",
     "instruments": [
-     "percussion"
-    ],
-    "only": [
-     "Triste"
+     "drums"
     ]
    }
   ],
@@ -10750,15 +11134,29 @@
    },
    {
     "artist": null,
+    "name": "Creed Taylor",
+    "role": "producer"
+   },
+   {
+    "artist": null,
     "name": "Rudy Van Gelder",
     "role": "engineer"
    },
    {
     "artist": null,
-    "name": "Creed Taylor",
-    "role": "producer"
+    "name": "Sam Antupit",
+    "role": "design"
+   },
+   {
+    "artist": null,
+    "name": "Pete Turner",
+    "role": "photography"
    }
-  ]
+  ],
+  "draftNotes": [
+   "From the liner notes via Wikipedia. Who plays on which track isn't documented, so everyone is shown on all tracks."
+  ],
+  "edited": true
  },
  "we-like-it-here": {
   "reviewed": false,

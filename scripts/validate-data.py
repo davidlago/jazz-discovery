@@ -67,6 +67,14 @@ if os.path.exists(sessions_path):
     import re
     sessions = json.load(open(sessions_path))
     reviewed = 0
+
+    def track_key(title):
+        """As Session.trackKey in the app: everything from the first bracket on is ignored, then case, accents and
+        punctuation ("Corcovado" is "Corcovado (Quiet Nights of Quiet Stars)")."""
+        import unicodedata
+        cut = re.split(r"[(\[]", title, maxsplit=1)[0]
+        cut = unicodedata.normalize("NFKD", cut).encode("ascii", "ignore").decode().lower()
+        return re.sub(r"[^a-z0-9]", "", cut)
     for album_id, s in sessions.items():
         where = f"sessions.json: {album_id}"
         if album_id not in albums:
@@ -75,9 +83,9 @@ if os.path.exists(sessions_path):
         for c in s.get("personnel", []) + s.get("crew", []):
             if c.get("artist") is not None and c["artist"] not in artists:
                 errors.append(f"{where}: unknown artist {c['artist']} ({c.get('name')})")
-            tracks = set(s.get("tracks", []))
+            tracks = {track_key(t) for t in s.get("tracks", [])}
             for t in c.get("only", []) + c.get("except", []):
-                if tracks and t not in tracks:
+                if tracks and track_key(t) not in tracks:
                     errors.append(f"{where}: {c.get('name')} lists a track that isn't on the album: {t}")
         for r in s.get("recorded", []):
             if "date" not in r and "place" not in r:
