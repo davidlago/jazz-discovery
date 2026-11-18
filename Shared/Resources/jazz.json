@@ -1254,16 +1254,7 @@
       "primaryEra": "new-orleans",
       "wikipedia": "Louis_Armstrong",
       "blurb": "Jazz's first great soloist and its most joyous ambassador. Armstrong's 1920s recordings taught the world to swing, and his warm, gravelly voice made him a global star.",
-      "connections": [
-        "bessie-smith",
-        "ma-rainey",
-        "king-oliver",
-        "sidney-bechet",
-        "coleman-hawkins",
-        "ella-fitzgerald",
-        "duke-ellington",
-        "bix-beiderbecke"
-      ],
+      "connections": ["bessie-smith", "ma-rainey", "king-oliver", "sidney-bechet", "coleman-hawkins", "ella-fitzgerald", "duke-ellington", "bix-beiderbecke", "lonnie-johnson", "fletcher-henderson", "jack-teagarden"],
       "albums": ["hot-five-hot-seven", "satchmo-at-symphony-hall"],
       "signatureTracks": [
         "West End Blues",
@@ -1316,11 +1307,7 @@
         "duke-ellington"
       ],
       "albums": [],
-      "signatureTracks": [
-        "Summertime",
-        "Petite Fleur",
-        "Wild Cat Blues"
-      ],
+      "signatureTracks": ["Summertime", "Petite Fleur", "Wild Cat Blues", "Egyptian Fantasy"],
       "videoQuery": "Sidney Bechet live soprano saxophone"
     },
     {
@@ -1335,9 +1322,7 @@
       "primaryEra": "new-orleans",
       "wikipedia": "Bix_Beiderbecke",
       "blurb": "A self-taught cornetist from Iowa whose clear, bell-like tone and thoughtful phrasing offered a lyrical alternative to hot jazz before his death at 28.",
-      "connections": [
-        "louis-armstrong"
-      ],
+      "connections": ["louis-armstrong", "original-dixieland-jass-band"],
       "albums": [
         "bix-singin-the-blues"
       ],
@@ -1361,18 +1346,7 @@
       "primaryEra": "swing",
       "wikipedia": "Duke_Ellington",
       "blurb": "America's great jazz composer used his orchestra as his instrument, writing more than a thousand works tailored to the voices of his players over a fifty-year career.",
-      "connections": [
-        "louis-armstrong",
-        "sidney-bechet",
-        "john-coltrane",
-        "count-basie",
-        "ella-fitzgerald",
-        "charles-mingus",
-        "coleman-hawkins",
-        "django-reinhardt",
-        "abdullah-ibrahim",
-        "mulatu-astatke"
-      ],
+      "connections": ["louis-armstrong", "sidney-bechet", "john-coltrane", "count-basie", "ella-fitzgerald", "charles-mingus", "coleman-hawkins", "django-reinhardt", "abdullah-ibrahim", "mulatu-astatke", "lonnie-johnson", "mary-lou-williams", "wild-bill-davis"],
       "albums": [
         "blanton-webster-band"
       ],
@@ -1396,13 +1370,7 @@
       "primaryEra": "swing",
       "wikipedia": "Count_Basie",
       "blurb": "The Kansas City bandleader who made economy swing: a few perfectly placed piano notes, a rhythm section that floated, and brass riffs that hit like a wave.",
-      "connections": [
-        "duke-ellington",
-        "lester-young",
-        "billie-holiday",
-        "ella-fitzgerald",
-        "fats-waller"
-      ],
+      "connections": ["duke-ellington", "lester-young", "billie-holiday", "ella-fitzgerald", "fats-waller", "dicky-wells", "wild-bill-davis"],
       "albums": [
         "basie-complete-decca"
       ],
@@ -1425,11 +1393,7 @@
       "primaryEra": "swing",
       "wikipedia": "Benny_Goodman",
       "blurb": "The King of Swing led the band that ignited the big-band craze and broke the color line with his integrated small groups featuring Teddy Wilson and Lionel Hampton.",
-      "connections": [
-        "billie-holiday",
-        "ella-fitzgerald",
-        "lester-young"
-      ],
+      "connections": ["billie-holiday", "ella-fitzgerald", "lester-young", "fletcher-henderson", "artie-shaw", "red-norvo", "mary-lou-williams", "anat-cohen", "jack-teagarden"],
       "albums": [
         "carnegie-hall-1938"
       ],
@@ -1454,15 +1418,7 @@
       "primaryEra": "swing",
       "wikipedia": "Coleman_Hawkins",
       "blurb": "The man who established the tenor saxophone as a jazz voice, Hawk played with a huge, rhapsodic tone and an ear for harmony that made him a champion of bebop.",
-      "connections": [
-        "louis-armstrong",
-        "duke-ellington",
-        "thelonious-monk",
-        "dizzy-gillespie",
-        "sonny-rollins",
-        "django-reinhardt",
-        "art-tatum"
-      ],
+      "connections": ["louis-armstrong", "duke-ellington", "thelonious-monk", "dizzy-gillespie", "sonny-rollins", "django-reinhardt", "art-tatum", "fletcher-henderson"],
       "albums": [
         "hawkins-body-and-soul"
       ],
@@ -1486,11 +1442,7 @@
       "primaryEra": "swing",
       "wikipedia": "Lester_Young",
       "blurb": "Prez floated where Hawkins thundered: a light, vibrato-less tenor sound and gliding phrasing that inspired the cool school and Billie Holiday's finest records.",
-      "connections": [
-        "count-basie",
-        "benny-goodman",
-        "billie-holiday"
-      ],
+      "connections": ["count-basie", "benny-goodman", "billie-holiday", "dicky-wells"],
       "albums": ["kansas-city-sessions"],
       "signatureTracks": [
         "Lester Leaps In",
@@ -1511,13 +1463,7 @@
       "primaryEra": "swing",
       "wikipedia": "Billie_Holiday",
       "blurb": "Lady Day phrased like a horn player and sang behind the beat with devastating emotional truth, turning pop songs into confessions and 'Strange Fruit' into a protest landmark.",
-      "connections": [
-        "count-basie",
-        "benny-goodman",
-        "lester-young",
-        "nina-simone",
-        "cassandra-wilson"
-      ],
+      "connections": ["count-basie", "benny-goodman", "lester-young", "nina-simone", "cassandra-wilson", "artie-shaw", "jack-teagarden"],
       "albums": [
         "billie-commodore"
       ],
@@ -1542,13 +1488,7 @@
       "primaryEra": "swing",
       "wikipedia": "Ella_Fitzgerald",
       "blurb": "The First Lady of Song combined flawless pitch, pure tone and boundless swing; her scat improvisations rival any horn, and her Songbook albums canonized American song.",
-      "connections": [
-        "louis-armstrong",
-        "duke-ellington",
-        "count-basie",
-        "benny-goodman",
-        "dizzy-gillespie"
-      ],
+      "connections": ["louis-armstrong", "duke-ellington", "count-basie", "benny-goodman", "dizzy-gillespie", "wild-bill-davis"],
       "albums": [
         "ella-cole-porter"
       ],
@@ -1571,10 +1511,7 @@
       "primaryEra": "swing",
       "wikipedia": "Django_Reinhardt",
       "blurb": "A Belgian-born Romani guitarist who, despite a badly burned fretting hand, invented a dazzling European jazz style with Stéphane Grappelli in the Quintette du Hot Club de France.",
-      "connections": [
-        "duke-ellington",
-        "coleman-hawkins"
-      ],
+      "connections": ["duke-ellington", "coleman-hawkins", "dicky-wells"],
       "albums": [
         "djangology"
       ],
@@ -1623,11 +1560,7 @@
       "primaryEra": "swing",
       "wikipedia": "Fats_Waller",
       "blurb": "A stride piano master, prolific songwriter and irrepressible entertainer whose comic asides never hid the brilliance of his playing.",
-      "connections": [
-        "james-p-johnson",
-        "count-basie",
-        "art-tatum"
-      ],
+      "connections": ["james-p-johnson", "count-basie", "art-tatum", "jack-teagarden"],
       "albums": ["if-you-got-to-ask"],
       "signatureTracks": [
         "Ain't Misbehavin'",
@@ -1648,16 +1581,7 @@
       "primaryEra": "bebop",
       "wikipedia": "Charlie_Parker",
       "blurb": "Bird rewired jazz. His alto lines poured out at impossible speed yet sang with blues feeling, and his harmonic language became the foundation of modern jazz improvisation.",
-      "connections": [
-        "dizzy-gillespie",
-        "max-roach",
-        "bud-powell",
-        "miles-davis",
-        "thelonious-monk",
-        "charles-mingus",
-        "sarah-vaughan",
-        "chet-baker"
-      ],
+      "connections": ["dizzy-gillespie", "max-roach", "bud-powell", "miles-davis", "thelonious-monk", "charles-mingus", "sarah-vaughan", "chet-baker", "red-norvo"],
       "albums": [
         "savoy-dial-master-takes",
         "jazz-at-massey-hall"
@@ -1683,18 +1607,7 @@
       "primaryEra": "bebop",
       "wikipedia": "Dizzy_Gillespie",
       "blurb": "Bebop's trumpet virtuoso and chief educator, Dizzy also pioneered Afro-Cuban jazz, all with puffed cheeks, an upturned horn and an unbeatable sense of humor.",
-      "connections": [
-        "coleman-hawkins",
-        "ella-fitzgerald",
-        "charlie-parker",
-        "thelonious-monk",
-        "sarah-vaughan",
-        "machito",
-        "max-roach",
-        "chucho-valdes",
-        "arturo-sandoval",
-        "johnny-hartman"
-      ],
+      "connections": ["coleman-hawkins", "ella-fitzgerald", "charlie-parker", "thelonious-monk", "sarah-vaughan", "machito", "max-roach", "chucho-valdes", "arturo-sandoval", "johnny-hartman", "red-norvo"],
       "albums": ["groovin-high", "afro", "dizzy-rca-victor"],
       "signatureTracks": [
         "Salt Peanuts",
@@ -1717,16 +1630,7 @@
       "primaryEra": "bebop",
       "wikipedia": "Thelonious_Monk",
       "blurb": "A composer of singular genius whose crooked melodies, percussive touch and strategic silences made him sound like no one else. His tunes are now jazz's essential repertoire.",
-      "connections": [
-        "coleman-hawkins",
-        "charlie-parker",
-        "dizzy-gillespie",
-        "john-coltrane",
-        "sonny-rollins",
-        "art-blakey",
-        "max-roach",
-        "gerry-mulligan"
-      ],
+      "connections": ["coleman-hawkins", "charlie-parker", "dizzy-gillespie", "john-coltrane", "sonny-rollins", "art-blakey", "max-roach", "gerry-mulligan", "mary-lou-williams"],
       "albums": [
         "genius-of-modern-music-1"
       ],
@@ -1750,13 +1654,7 @@
       "primaryEra": "bebop",
       "wikipedia": "Bud_Powell",
       "blurb": "He translated Parker's language to the keyboard, with blazing right-hand lines and sparse left-hand chords that defined the modern jazz piano for generations.",
-      "connections": [
-        "charlie-parker",
-        "max-roach",
-        "sonny-rollins",
-        "charles-mingus",
-        "dexter-gordon"
-      ],
+      "connections": ["charlie-parker", "max-roach", "sonny-rollins", "charles-mingus", "dexter-gordon", "fats-navarro", "mary-lou-williams"],
       "albums": [
         "amazing-bud-powell-1"
       ],
@@ -1810,11 +1708,7 @@
       "primaryEra": "bebop",
       "wikipedia": "Sarah_Vaughan",
       "blurb": "Sassy had an operatic range and a bebop musician's ear, bending harmonies and swooping through octaves with breathtaking control.",
-      "connections": [
-        "charlie-parker",
-        "dizzy-gillespie",
-        "clifford-brown"
-      ],
+      "connections": ["charlie-parker", "dizzy-gillespie", "clifford-brown", "samara-joy", "jazzmeia-horn"],
       "albums": [
         "sarah-vaughan-1955"
       ],
@@ -1842,19 +1736,7 @@
       "primaryEra": "modal",
       "wikipedia": "Miles_Davis",
       "blurb": "Jazz's restless visionary helped launch cool, hard bop, modal jazz and fusion, and his spare, burnished trumpet made every note count.",
-      "connections": [
-        "charlie-parker",
-        "john-coltrane",
-        "bill-evans",
-        "gil-evans",
-        "cannonball-adderley",
-        "wayne-shorter",
-        "herbie-hancock",
-        "john-mclaughlin",
-        "dave-holland",
-        "larry-young",
-        "lonnie-liston-smith"
-      ],
+      "connections": ["charlie-parker", "john-coltrane", "bill-evans", "gil-evans", "cannonball-adderley", "wayne-shorter", "herbie-hancock", "john-mclaughlin", "dave-holland", "larry-young", "lonnie-liston-smith", "joey-defrancesco"],
       "albums": [
         "birth-of-the-cool",
         "miles-ahead",
@@ -1939,10 +1821,7 @@
       "primaryEra": "cool",
       "wikipedia": "Dave_Brubeck",
       "blurb": "A pianist with a classical composer's curiosity who brought odd meters and polytonality to a mass audience; his quartet's Time Out became a household record.",
-      "connections": [
-        "gerry-mulligan",
-        "paul-desmond"
-      ],
+      "connections": ["gerry-mulligan", "paul-desmond", "cal-tjader"],
       "albums": [
         "time-out"
       ],
@@ -1991,13 +1870,7 @@
       "primaryEra": "cool",
       "wikipedia": "Stan_Getz",
       "blurb": "Nicknamed The Sound for his luminous tenor tone, Getz became a cool-jazz star and then the American face of bossa nova.",
-      "connections": [
-        "chet-baker",
-        "gerry-mulligan",
-        "joao-gilberto",
-        "antonio-carlos-jobim",
-        "chick-corea"
-      ],
+      "connections": ["chet-baker", "gerry-mulligan", "joao-gilberto", "antonio-carlos-jobim", "chick-corea", "jimmy-giuffre", "gary-burton"],
       "albums": ["getz-gilberto", "jazz-samba"],
       "signatureTracks": [
         "The Girl from Ipanema",
@@ -2048,17 +1921,7 @@
       "primaryEra": "hard-bop",
       "wikipedia": "Art_Blakey",
       "blurb": "The thunderous drummer behind the Jazz Messengers spent 35 years turning young players into stars, driving every band with his signature press roll.",
-      "connections": [
-        "thelonious-monk",
-        "horace-silver",
-        "clifford-brown",
-        "lee-morgan",
-        "wayne-shorter",
-        "freddie-hubbard",
-        "wynton-marsalis",
-        "keith-jarrett",
-        "lou-donaldson"
-      ],
+      "connections": ["thelonious-monk", "horace-silver", "clifford-brown", "lee-morgan", "wayne-shorter", "freddie-hubbard", "wynton-marsalis", "keith-jarrett", "lou-donaldson", "curtis-fuller"],
       "albums": [
         "moanin",
         "keystone-3"
@@ -2111,13 +1974,7 @@
       "primaryEra": "hard-bop",
       "wikipedia": "Clifford_Brown",
       "blurb": "Brownie's warm, golden tone and flawless invention made him the most admired young trumpeter of his day before a car crash took him at 25.",
-      "connections": [
-        "max-roach",
-        "sarah-vaughan",
-        "art-blakey",
-        "horace-silver",
-        "sonny-rollins"
-      ],
+      "connections": ["max-roach", "sarah-vaughan", "art-blakey", "horace-silver", "sonny-rollins", "fats-navarro"],
       "albums": [
         "study-in-brown"
       ],
@@ -2173,13 +2030,7 @@
       "primaryEra": "hard-bop",
       "wikipedia": "Lee_Morgan",
       "blurb": "A brash Philadelphia prodigy who joined the Jazz Messengers as a teenager and later scored a crossover hit with 'The Sidewinder.' He was killed at 33.",
-      "connections": [
-        "art-blakey",
-        "wayne-shorter",
-        "freddie-hubbard",
-        "jimmy-smith",
-        "lou-donaldson"
-      ],
+      "connections": ["art-blakey", "wayne-shorter", "freddie-hubbard", "jimmy-smith", "lou-donaldson", "lonnie-smith"],
       "albums": [
         "the-sidewinder"
       ],
@@ -2260,14 +2111,7 @@
       "primaryEra": "hard-bop",
       "wikipedia": "Charles_Mingus",
       "blurb": "A volcanic bassist and composer whose music swings from church shouts to Ellingtonian elegance to political fury, often in the same piece.",
-      "connections": [
-        "duke-ellington",
-        "charlie-parker",
-        "bud-powell",
-        "max-roach",
-        "eric-dolphy",
-        "bill-evans"
-      ],
+      "connections": ["duke-ellington", "charlie-parker", "bud-powell", "max-roach", "eric-dolphy", "bill-evans", "red-norvo"],
       "albums": [
         "mingus-ah-um"
       ],
@@ -2294,15 +2138,7 @@
       "primaryEra": "hard-bop",
       "wikipedia": "Freddie_Hubbard",
       "blurb": "A trumpet powerhouse equally at home with Blakey, Ornette and Coltrane, whose CTI records like Red Clay bridged hard bop and fusion.",
-      "connections": [
-        "art-blakey",
-        "lee-morgan",
-        "dexter-gordon",
-        "ornette-coleman",
-        "eric-dolphy",
-        "herbie-hancock",
-        "stanley-turrentine"
-      ],
+      "connections": ["art-blakey", "lee-morgan", "dexter-gordon", "ornette-coleman", "eric-dolphy", "herbie-hancock", "stanley-turrentine", "christian-mcbride"],
       "albums": [],
       "signatureTracks": [
         "Red Clay",
@@ -2323,10 +2159,7 @@
       "primaryEra": "latin",
       "wikipedia": "Tito_Puente",
       "blurb": "El Rey del Timbal ruled the Palladium's mambo era with a flashy timbales style and a big band that fused Cuban rhythm with jazz harmony.",
-      "connections": [
-        "machito",
-        "mongo-santamaria"
-      ],
+      "connections": ["machito", "mongo-santamaria", "cal-tjader"],
       "albums": [
         "dance-mania"
       ],
@@ -2374,10 +2207,7 @@
       "primaryEra": "latin",
       "wikipedia": "Antônio_Carlos_Jobim",
       "blurb": "Brazil's great songwriter gave bossa nova its repertoire, with sophisticated melodies over sumptuous harmonies that jazz musicians adopted as modern standards.",
-      "connections": [
-        "stan-getz",
-        "joao-gilberto"
-      ],
+      "connections": ["stan-getz", "joao-gilberto", "anat-cohen"],
       "albums": [
         "wave"
       ],
@@ -2428,11 +2258,7 @@
       "primaryEra": "latin",
       "wikipedia": "Mongo_Santamaría",
       "blurb": "A Havana-born conguero who composed 'Afro Blue' and turned Herbie Hancock's 'Watermelon Man' into a hit, bridging Afro-Cuban music, jazz and soul.",
-      "connections": [
-        "tito-puente",
-        "herbie-hancock",
-        "chick-corea"
-      ],
+      "connections": ["tito-puente", "herbie-hancock", "chick-corea", "cal-tjader"],
       "albums": [
         "watermelon-man"
       ],
@@ -2482,12 +2308,7 @@
       "primaryEra": "soul-jazz",
       "wikipedia": "Jimmy_Smith_(musician)",
       "blurb": "The man who made the Hammond B-3 a jazz instrument, with roaring, bluesy and swinging chops. Every organ player since has worked in his shadow.",
-      "connections": [
-        "lee-morgan",
-        "grant-green",
-        "stanley-turrentine",
-        "lou-donaldson"
-      ],
+      "connections": ["lee-morgan", "grant-green", "stanley-turrentine", "lou-donaldson", "jimmy-mcgriff", "joey-defrancesco", "wild-bill-davis"],
       "albums": [
         "the-sermon",
         "back-at-the-chicken-shack"
@@ -2569,17 +2390,7 @@
       "primaryEra": "modal",
       "wikipedia": "John_Coltrane",
       "blurb": "Trane's relentless search took him from the harmonic sheets of sound on Giant Steps to the modal storms of his classic quartet and the prayer of A Love Supreme.",
-      "connections": [
-        "duke-ellington",
-        "thelonious-monk",
-        "miles-davis",
-        "mccoy-tyner",
-        "elvin-jones",
-        "eric-dolphy",
-        "alice-coltrane",
-        "pharoah-sanders",
-        "johnny-hartman"
-      ],
+      "connections": ["duke-ellington", "thelonious-monk", "miles-davis", "mccoy-tyner", "elvin-jones", "eric-dolphy", "alice-coltrane", "pharoah-sanders", "johnny-hartman", "curtis-fuller"],
       "albums": [
         "blue-train",
         "giant-steps",
@@ -2702,15 +2513,7 @@
       "primaryEra": "fusion",
       "wikipedia": "Herbie_Hancock",
       "blurb": "From Miles's second quintet to the funk of Head Hunters and the electro of 'Rockit,' Hancock has embraced every new sound while remaining a supremely lyrical pianist.",
-      "connections": [
-        "miles-davis",
-        "freddie-hubbard",
-        "mongo-santamaria",
-        "grant-green",
-        "wayne-shorter",
-        "chick-corea",
-        "dave-holland"
-      ],
+      "connections": ["miles-davis", "freddie-hubbard", "mongo-santamaria", "grant-green", "wayne-shorter", "chick-corea", "dave-holland", "domi-and-jd-beck"],
       "albums": [
         "maiden-voyage",
         "head-hunters",
@@ -2990,15 +2793,7 @@
       "primaryEra": "spiritual",
       "wikipedia": "Pharoah_Sanders",
       "blurb": "Coltrane's last saxophone partner developed a sound that moved from terrifying overblown cries to tender, prayer-like melody, the voice of spiritual jazz.",
-      "connections": [
-        "john-coltrane",
-        "sun-ra",
-        "don-cherry",
-        "alice-coltrane",
-        "leon-thomas",
-        "lonnie-liston-smith",
-        "joe-henderson"
-      ],
+      "connections": ["john-coltrane", "sun-ra", "don-cherry", "alice-coltrane", "leon-thomas", "lonnie-liston-smith", "joe-henderson", "joey-defrancesco"],
       "albums": [
         "karma"
       ],
@@ -3022,15 +2817,7 @@
       "primaryEra": "fusion",
       "wikipedia": "Chick_Corea",
       "blurb": "A prolific pianist and composer who moved from Miles's electric band to Return to Forever's Latin-tinged fusion, writing standards like 'Spain' along the way.",
-      "connections": [
-        "stan-getz",
-        "mongo-santamaria",
-        "herbie-hancock",
-        "keith-jarrett",
-        "john-mclaughlin",
-        "hiromi",
-        "dave-holland"
-      ],
+      "connections": ["stan-getz", "mongo-santamaria", "herbie-hancock", "keith-jarrett", "john-mclaughlin", "hiromi", "dave-holland", "gary-burton"],
       "albums": [
         "return-to-forever"
       ],
@@ -3053,13 +2840,7 @@
       "primaryEra": "fusion",
       "wikipedia": "John_McLaughlin_(musician)",
       "blurb": "An English guitarist whose ferocious speed and Indian-influenced spirituality powered Miles's electric records and the Mahavishnu Orchestra.",
-      "connections": [
-        "miles-davis",
-        "chick-corea",
-        "joe-zawinul",
-        "dave-holland",
-        "larry-young"
-      ],
+      "connections": ["miles-davis", "chick-corea", "joe-zawinul", "dave-holland", "larry-young", "joey-defrancesco"],
       "albums": [
         "the-inner-mounting-flame"
       ],
@@ -3140,12 +2921,7 @@
       "primaryEra": "fusion",
       "wikipedia": "Pat_Metheny",
       "blurb": "A Missouri guitarist with a warm, singing tone whose Pat Metheny Group crafted cinematic, melodic jazz and whose collaborations range from Ornette to Brad Mehldau.",
-      "connections": [
-        "ornette-coleman",
-        "jaco-pastorius",
-        "brad-mehldau",
-        "joshua-redman"
-      ],
+      "connections": ["ornette-coleman", "jaco-pastorius", "brad-mehldau", "joshua-redman", "gary-burton"],
       "albums": [
         "bright-size-life",
         "song-x"
@@ -3198,12 +2974,7 @@
       "primaryEra": "post-bop",
       "wikipedia": "Keith_Jarrett",
       "blurb": "A pianist of rapturous lyricism, known for vast solo improvisations like The Köln Concert and a long-running Standards Trio that rethought the American songbook.",
-      "connections": [
-        "art-blakey",
-        "chick-corea",
-        "jan-garbarek",
-        "charles-lloyd"
-      ],
+      "connections": ["art-blakey", "chick-corea", "jan-garbarek", "charles-lloyd", "gary-burton"],
       "albums": [
         "standards-vol-1",
         "the-koln-concert"
@@ -3254,10 +3025,7 @@
       "primaryEra": "post-bop",
       "wikipedia": "Joshua_Redman",
       "blurb": "A Harvard graduate who won the 1991 Monk Competition and became the most celebrated tenor of his generation, with a warm, soulful sound and intellectual flair.",
-      "connections": [
-        "pat-metheny",
-        "brad-mehldau"
-      ],
+      "connections": ["pat-metheny", "brad-mehldau", "christian-mcbride", "tigran-hamasyan"],
       "albums": [
         "wish"
       ],
@@ -3306,10 +3074,7 @@
       "primaryEra": "contemporary",
       "wikipedia": "Brad_Mehldau",
       "blurb": "The most influential jazz pianist of his generation folds Bach-like counterpoint, Romantic introspection and Radiohead covers into a deeply personal trio language.",
-      "connections": [
-        "pat-metheny",
-        "joshua-redman"
-      ],
+      "connections": ["pat-metheny", "joshua-redman", "christian-mcbride"],
       "albums": [
         "art-of-the-trio-vol-1"
       ],
@@ -3403,11 +3168,7 @@
       "primaryEra": "contemporary",
       "wikipedia": "Shabaka_Hutchings",
       "blurb": "The catalyst of London's jazz renaissance led Sons of Kemet, The Comet Is Coming and Shabaka and the Ancestors, before turning to flutes for a meditative new chapter.",
-      "connections": [
-        "nubya-garcia",
-        "makaya-mccraven",
-        "jason-moran"
-      ],
+      "connections": ["nubya-garcia", "makaya-mccraven", "jason-moran", "yussef-dayes"],
       "albums": [
         "perceive-its-beauty"
       ],
@@ -3451,10 +3212,7 @@
       "primaryEra": "contemporary",
       "wikipedia": "Makaya_McCraven",
       "blurb": "A Chicago drummer and producer who records live improvisations and edits them into hypnotic beat-driven collages, a self-described beat scientist.",
-      "connections": [
-        "shabaka-hutchings",
-        "nubya-garcia"
-      ],
+      "connections": ["shabaka-hutchings", "nubya-garcia", "joel-ross", "emma-jean-thackray"],
       "albums": ["universal-beings", "in-these-times"],
       "signatureTracks": [
         "Holy Lands",
@@ -3521,7 +3279,7 @@
       "primaryEra": "contemporary",
       "wikipedia": "Ambrose_Akinmusire",
       "blurb": "An Oakland trumpeter with a vulnerable, searching sound whose Blue Note albums mix jazz with poetry, chamber strings and protest songs.",
-      "connections": [],
+      "connections": ["tigran-hamasyan"],
       "albums": ["the-imagined-savior", "on-the-tender-spot"],
       "signatureTracks": [
         "Confessions to My Unborn Daughter",
@@ -3905,7 +3663,7 @@
       "primaryEra": "hard-bop",
       "wikipedia": "Tommy_Flanagan_(musician)",
       "blurb": "A Detroit pianist of quiet elegance, Flanagan played on both Saxophone Colossus and Giant Steps and spent years as Ella Fitzgerald's accompanist.",
-      "connections": [],
+      "connections": ["curtis-fuller"],
       "albums": [],
       "signatureTracks": [
         "St. Thomas",
@@ -3949,7 +3707,7 @@
       "primaryEra": "new-orleans",
       "wikipedia": "Earl_Hines",
       "blurb": "Hines's \"trumpet-style\" piano, its octave melodies punching through like a horn, transformed jazz piano on his 1928 records with Louis Armstrong; his big band later gave the young Charlie Parker and Dizzy Gillespie a home.",
-      "connections": [],
+      "connections": ["jack-teagarden"],
       "albums": ["classic-earl-hines-sessions"],
       "signatureTracks": [
         "West End Blues",
@@ -3994,11 +3752,7 @@
       "blurb": "Johnson proved the trombone could play bebop, matching the speed of Parker and Gillespie with a clean, almost valve-like articulation, and set the standard for the instrument for generations.",
       "connections": [],
       "albums": [],
-      "signatureTracks": [
-        "Manteca Theme",
-        "Boplicity",
-        "Moon Dreams"
-      ],
+      "signatureTracks": ["Manteca Theme", "Boplicity", "Moon Dreams", "Blue Trombone"],
       "videoQuery": "J.J. Johnson trombone"
     },
     {
@@ -4013,13 +3767,9 @@
       "primaryEra": "new-orleans",
       "wikipedia": "Kid_Ory",
       "blurb": "The New Orleans bandleader who gave the young King Oliver and Louis Armstrong work, Ory perfected the \"tailgate\" trombone, sliding glissandos under the melody, on Armstrong's Hot Five records.",
-      "connections": [],
+      "connections": ["jack-teagarden"],
       "albums": ["kid-ory-1944-45"],
-      "signatureTracks": [
-        "Heebie Jeebies",
-        "Struttin' with Some Barbecue",
-        "Muskrat Ramble"
-      ],
+      "signatureTracks": ["Heebie Jeebies", "Struttin' with Some Barbecue", "Muskrat Ramble", "Ory's Creole Trombone"],
       "videoQuery": "Kid Ory Creole Jazz Band"
     },
     {
@@ -4078,7 +3828,7 @@
       "primaryEra": "free",
       "wikipedia": "Bobby_Hutcherson",
       "blurb": "Hutcherson gave the vibraphone a modern, harmonically open voice on 1960s Blue Note records, from Eric Dolphy's Out to Lunch to Grant Green's Idle Moments and his own Components.",
-      "connections": [],
+      "connections": ["joel-ross"],
       "albums": [],
       "signatureTracks": [
         "Hat and Beard",
@@ -4151,7 +3901,7 @@
       "primaryEra": "swing",
       "wikipedia": "Johnny_Hodges",
       "blurb": "Duke Ellington's lead alto for nearly four decades, Hodges had the most sensuous sound in jazz, gliding between notes on ballads like \"Passion Flower\" and \"Prelude to a Kiss\".",
-      "connections": [],
+      "connections": ["wild-bill-davis"],
       "albums": [],
       "signatureTracks": [
         "Never No Lament",
@@ -4193,7 +3943,7 @@
       "primaryEra": "cool",
       "wikipedia": "Lee_Konitz",
       "blurb": "A student of Lennie Tristano and the alto voice of Birth of the Cool, Konitz offered a dry, light alternative to Charlie Parker and kept improvising with rare freedom for seventy years.",
-      "connections": [],
+      "connections": ["jimmy-giuffre"],
       "albums": ["lee-konitz-with-warne-marsh"],
       "signatureTracks": [
         "Boplicity",
@@ -4297,7 +4047,7 @@
       "primaryEra": "swing",
       "wikipedia": "Buck_Clayton",
       "blurb": "Count Basie's lyrical trumpet star of the late 1930s, Clayton played with clean, singing phrasing on Basie's Decca records and on Billie Holiday and Lester Young's small-group classics.",
-      "connections": [],
+      "connections": ["dicky-wells"],
       "albums": [],
       "signatureTracks": [
         "One O'Clock Jump",
@@ -4652,12 +4402,7 @@
       "primaryEra": "soul-jazz",
       "wikipedia": "Lou_Donaldson",
       "blurb": "An alto player who started out as a disciple of Charlie Parker, on Art Blakey's A Night at Birdland among other sessions, Donaldson settled into bluesy, danceable soul jazz with organ bands, from Jimmy Smith's The Sermon! to his own Alligator Bogaloo.",
-      "connections": [
-        "jimmy-smith",
-        "lee-morgan",
-        "kenny-burrell",
-        "art-blakey"
-      ],
+      "connections": ["jimmy-smith", "lee-morgan", "kenny-burrell", "art-blakey", "lonnie-smith"],
       "albums": [
         "alligator-bogaloo"
       ],
@@ -4968,10 +4713,7 @@
       "primaryEra": "fusion",
       "wikipedia": "Egberto_Gismonti",
       "blurb": "A self-taught Brazilian guitarist who plays eight- and ten-string instruments as well as piano, Gismonti drew on time spent with the peoples of the Xingu in the Amazon; his ECM records with Naná Vasconcelos and with Charlie Haden and Jan Garbarek made him known abroad.",
-      "connections": [
-        "jan-garbarek",
-        "charlie-haden"
-      ],
+      "connections": ["jan-garbarek", "charlie-haden", "anat-cohen"],
       "albums": [
         "danca-das-cabecas"
       ],
@@ -5050,10 +4792,7 @@
       "primaryEra": "contemporary",
       "wikipedia": "Jason_Moran_(musician)",
       "blurb": "A Houston pianist whose trio The Bandwagon threads stride, Brahms, hip-hop and recorded speech through the same set, Moran also plays in Charles Lloyd's quartet and was named a MacArthur Fellow in 2010.",
-      "connections": [
-        "charles-lloyd",
-        "shabaka-hutchings"
-      ],
+      "connections": ["charles-lloyd", "shabaka-hutchings", "immanuel-wilkins"],
       "albums": [
         "the-bandwagon"
       ],
@@ -5196,7 +4935,7 @@
       "primaryEra": "swing",
       "wikipedia": "Fletcher_Henderson",
       "blurb": "Henderson's New York orchestra, with Louis Armstrong in 1924 and 1925, Coleman Hawkins on tenor and Don Redman's arrangements, worked out how a big band could swing. When it broke up in 1934 he sold arrangements to Benny Goodman, and later joined him as pianist and arranger.",
-      "connections": ["louis-armstrong", "coleman-hawkins", "benny-goodman"],
+      "connections": ["louis-armstrong", "coleman-hawkins", "benny-goodman", "dicky-wells"],
       "albums": ["henderson-armstrong-1924"],
       "signatureTracks": ["Sugar Foot Stomp", "King Porter Stomp", "Christopher Columbus"],
       "videoQuery": "Fletcher Henderson Orchestra"
@@ -5226,7 +4965,7 @@
       "primaryEra": "swing",
       "wikipedia": "Red_Norvo",
       "blurb": "Norvo brought the xylophone and marimba into jazz in the 1930s, when he and his wife, singer Mildred Bailey, were billed as \"Mr. and Mrs. Swing\". On vibraphone he kept moving: a 1945 session with Charlie Parker and Dizzy Gillespie, then a drummerless trio with Tal Farlow and Charles Mingus.",
-      "connections": ["benny-goodman", "charles-mingus", "charlie-parker", "dizzy-gillespie"],
+      "connections": ["benny-goodman", "charles-mingus", "charlie-parker", "dizzy-gillespie", "gary-burton"],
       "albums": ["dance-of-the-octopus"],
       "signatureTracks": ["Dance of the Octopus", "Knockin' On Wood", "Congo Blues"],
       "videoQuery": "Red Norvo vibraphone"
@@ -5350,7 +5089,7 @@
     {
       "id": "curtis-fuller",
       "name": "Curtis Fuller",
-      "born": 1932,
+      "born": 1934,
       "died": 2021,
       "instrument": "Trombone",
       "eras": ["hard-bop"],
@@ -5467,6 +5206,7 @@
     {
       "id": "emma-jean-thackray",
       "name": "Emma-Jean Thackray",
+      "born": 1989,
       "instrument": "Trumpet",
       "eras": ["contemporary"],
       "primaryEra": "contemporary",
@@ -5504,6 +5244,65 @@
       "albums": ["dear-love"],
       "signatureTracks": ["Tight", "Free Your Mind", "Where Is Freedom!?"],
       "videoQuery": "Jazzmeia Horn live"
+    },
+    {
+      "id": "jack-teagarden",
+      "name": "Jack Teagarden",
+      "born": 1905,
+      "died": 1964,
+      "instrument": "Trombone",
+      "eras": ["new-orleans", "swing"],
+      "primaryEra": "swing",
+      "wikipedia": "Jack_Teagarden",
+      "blurb": "A Texan who made the trombone sound like a blues singer, with long, smooth lines and a technique he largely taught himself, and who sang in the same lazy drawl. He was the trombone and second voice of Louis Armstrong's All Stars from 1947 to 1951.",
+      "connections": ["louis-armstrong", "kid-ory", "fats-waller", "benny-goodman", "billie-holiday", "earl-hines"],
+      "albums": [],
+      "signatureTracks": ["Basin Street Blues", "St. James Infirmary", "I Gotta Right to Sing the Blues"],
+      "videoQuery": "Jack Teagarden trombone Basin Street Blues"
+    },
+    {
+      "id": "dicky-wells",
+      "name": "Dicky Wells",
+      "born": 1907,
+      "died": 1985,
+      "instrument": "Trombone",
+      "eras": ["swing"],
+      "primaryEra": "swing",
+      "wikipedia": "Dicky_Wells",
+      "blurb": "Count Basie's trombonist from 1938, with a vocabulary of slurs, rips and growls that made his solos sound like speech. In Paris in 1937 he led a session with Django Reinhardt and Bill Coleman, his solos full of jokes and surprises.",
+      "connections": ["count-basie", "lester-young", "django-reinhardt", "buck-clayton", "fletcher-henderson"],
+      "albums": [],
+      "signatureTracks": ["Dicky Wells Blues", "Between the Devil and the Deep Blue Sea", "I Got Rhythm"],
+      "videoQuery": "Dicky Wells trombone"
+    },
+    {
+      "id": "gary-burton",
+      "name": "Gary Burton",
+      "born": 1943,
+      "instrument": "Vibraphone",
+      "eras": ["fusion", "post-bop"],
+      "primaryEra": "fusion",
+      "wikipedia": "Gary_Burton",
+      "blurb": "Burton played the vibraphone with four mallets, voicing chords like a pianist, and his 1967 quartet record Duster mixed jazz with country and rock before fusion had a name. His duets with Chick Corea ran for forty years, and he taught at Berklee for thirty.",
+      "connections": ["chick-corea", "stan-getz", "pat-metheny", "keith-jarrett", "red-norvo"],
+      "albums": [],
+      "signatureTracks": ["Crystal Silence", "General Mojo's Well Laid Plan", "Country Roads"],
+      "videoQuery": "Gary Burton vibraphone four mallets"
+    },
+    {
+      "id": "wild-bill-davis",
+      "name": "Wild Bill Davis",
+      "born": 1918,
+      "died": 1995,
+      "instrument": "Organ",
+      "eras": ["swing", "soul-jazz"],
+      "primaryEra": "soul-jazz",
+      "wikipedia": "Wild_Bill_Davis",
+      "blurb": "Louis Jordan's pianist turned organist, who led one of the first Hammond trios from 1950 and set the instrument's pace until Jimmy Smith arrived. His arrangement of April in Paris became Count Basie's 1955 hit.",
+      "connections": ["count-basie", "johnny-hodges", "duke-ellington", "ella-fitzgerald", "jimmy-smith"],
+      "albums": [],
+      "signatureTracks": ["April in Paris", "Lullaby of Birdland", "Azure-Te"],
+      "videoQuery": "Wild Bill Davis Hammond organ"
     }
   ],
   "albums": [

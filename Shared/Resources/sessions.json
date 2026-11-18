@@ -536,7 +536,7 @@
     ]
    },
    {
-    "artist": null,
+    "artist": "lonnie-smith",
     "name": "Lonnie Smith",
     "instruments": [
      "organ"
@@ -598,7 +598,7 @@
     ]
    },
    {
-    "artist": null,
+    "artist": "fats-navarro",
     "name": "Fats Navarro",
     "instruments": [
      "trumpet"
@@ -1403,7 +1403,7 @@
     "tracks": 33
    },
    {
-    "artist": null,
+    "artist": "dicky-wells",
     "name": "Dicky Wells",
     "instruments": [
      "trombone"
@@ -4207,7 +4207,7 @@
     ]
    },
    {
-    "artist": null,
+    "artist": "curtis-fuller",
     "name": "Curtis Fuller",
     "instruments": [
      "trombone"
@@ -7040,7 +7040,7 @@
     ]
    },
    {
-    "artist": null,
+    "artist": "fletcher-henderson",
     "name": "Fletcher Henderson",
     "instruments": [
      "piano"
@@ -11520,7 +11520,7 @@
     "tracks": 14
    },
    {
-    "artist": null,
+    "artist": "dicky-wells",
     "name": "Dicky Wells",
     "instruments": [
      "trombone"
@@ -12574,7 +12574,7 @@
     ]
    },
    {
-    "artist": null,
+    "artist": "christian-mcbride",
     "name": "Christian McBride",
     "instruments": [
      "bass"
@@ -19644,7 +19644,7 @@
     ]
    },
    {
-    "artist": null,
+    "artist": "joel-ross",
     "name": "Joel Ross",
     "instruments": [
      "vibraphone"

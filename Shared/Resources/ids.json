@@ -308,6 +308,12 @@
    "1990-04-26"
   ]
  },
+ "dicky-wells": {
+  "wikidata": "Q350879",
+  "musicbrainz": "c43e27c8-3c26-4cea-a39a-9a091aabfd36",
+  "born": "1907-06-10",
+  "died": "1985-11-12"
+ },
  "dizzy-gillespie": {
   "wikidata": "Q49575",
   "musicbrainz": "e9ba8ccb-505f-4e5c-b909-65998d0d35b5",
@@ -431,6 +437,11 @@
   "born": "1938-04-07",
   "died": "2008-12-29"
  },
+ "gary-burton": {
+  "wikidata": "Q353096",
+  "musicbrainz": "7b5b8b1b-414b-44e8-862f-b1f20fcef5dc",
+  "born": "1943-01-23"
+ },
  "gary-peacock": {
   "wikidata": "Q466198",
   "musicbrainz": "0cd9e25c-1cb1-45e3-aba2-644705f6e4f4",
@@ -508,6 +519,12 @@
   "musicbrainz": "f2d13d28-6f74-4dd5-b596-8bd0b6f67615",
   "born": "1942-08-09",
   "died": "2025-10-26"
+ },
+ "jack-teagarden": {
+  "wikidata": "Q504485",
+  "musicbrainz": "79dcf09e-2290-4740-9edc-907f82420160",
+  "born": "1905-08-20",
+  "died": "1964-01-15"
  },
  "jaco-pastorius": {
   "wikidata": "Q211136",
@@ -1075,6 +1092,15 @@
   "musicbrainz": "2379937f-6e0d-46a2-b8ff-633fafd72002",
   "born": "1933-08-25",
   "died": "2023-03-02"
+ },
+ "wild-bill-davis": {
+  "wikidata": "Q2570294",
+  "musicbrainz": "6b4a5233-1989-4f11-b1b3-78143e0db45d",
+  "born": "1918-11-24",
+  "died": "1995-08-17",
+  "diedAlso": [
+   "1995-08-24"
+  ]
  },
  "wynton-kelly": {
   "wikidata": "Q536415",

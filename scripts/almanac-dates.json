@@ -1,195 +1,562 @@
 {
- "about": "Hand-gathered exact dates for scripts/build-almanac.py, each with its source. Releases: the first release of a Crate album, kept only when the day is documented (Wikidata publication date with day precision, or two agreeing sources such as the label, the Wikipedia infobox and MusicBrainz); month-only and conflicting dates are left out, as are the release dates of later compilations and reissues. Milestones: jazz.json milestones (by title) with a documented day; one with a Crate album becomes a 'recorded' event on that album with its hand-written line, one without an album is 'held' until the app has a milestone kind.",
- "releases": [
+ "lineages": [
   {
-   "album": "ella-cole-porter",
-   "date": "1956-05-15",
-   "source": "Wikidata Q1317668 publication date (day precision); Wikipedia infobox agrees (MusicBrainz has only 1956-09)"
+   "id": "trombone",
+   "family": "Trombone",
+   "title": "The Trombone",
+   "intro": "In the New Orleans band the trombone played underneath: Kid Ory filled the gaps below the cornet with slides and smears, a style called tailgate. The swing era made it a soloist, smooth and singing in Jack Teagarden's hands, talkative and full of tricks in Dicky Wells's. Bebop was harder, because a slide is slow for fast lines; J.J. Johnson's answer, clean tonguing that made the trombone sound almost like a valve instrument, became the model most modern players followed, and the rest defined themselves against it.\n\nListen for the slide: how much each player smears between notes, and how much they hide it.",
+   "players": [
+    {
+     "artist": "kid-ory",
+     "idea": "Tailgate trombone: rhythmic slides and smears under the cornet, the New Orleans band's bass line in brass.",
+     "track": "Kid Ory|Ory's Creole Trombone"
+    },
+    {
+     "artist": "jack-teagarden",
+     "idea": "The trombone as a blues singer: long, smooth lines with the slide almost hidden.",
+     "track": "Jack Teagarden|Basin Street Blues"
+    },
+    {
+     "artist": "dicky-wells",
+     "idea": "A talking trombone: rips, slurs and growls placed with a comedian's timing in Count Basie's band.",
+     "track": "Dicky Wells|Dicky Wells Blues"
+    },
+    {
+     "artist": "j-j-johnson",
+     "idea": "Bebop on the trombone: clean, tongued notes at speed, so the slide sounded like valves.",
+     "track": "J.J. Johnson|Blue Trombone"
+    },
+    {
+     "artist": "jimmy-knepper",
+     "idea": "Charlie Parker's lines on the slide, smooth and unpredictable, in Mingus's bands.",
+     "track": "Jimmy Knepper|Fables of Faubus"
+    },
+    {
+     "artist": "curtis-fuller",
+     "idea": "A warm, round hard-bop sound, with Art Blakey's Messengers and on Coltrane's Blue Train.",
+     "track": "Curtis Fuller|Five Spot After Dark"
+    }
+   ],
+   "links": [
+    {
+     "from": "kid-ory",
+     "to": "jack-teagarden",
+     "kind": "reaction",
+     "note": "Teagarden never played the tailgate style Ory had made the trombone's job; he played long, smooth solos the way a trumpeter would."
+    },
+    {
+     "from": "dicky-wells",
+     "to": "j-j-johnson",
+     "kind": "influence",
+     "note": "Wells and Trummy Young were the first trombonists Johnson admired; he loved Wells's playing, he said, for its minimum of articulation."
+    },
+    {
+     "from": "j-j-johnson",
+     "to": "curtis-fuller",
+     "kind": "influence",
+     "note": "As a boy in a Detroit orphanage, Fuller was taken to hear Illinois Jacquet's band with Johnson on trombone; Johnson became his main model."
+    },
+    {
+     "from": "j-j-johnson",
+     "to": "jimmy-knepper",
+     "kind": "reaction",
+     "note": "Knepper said most modern trombonists imitated J.J.; his own influences weren't trombonists at all, but Charlie Parker, whose solos he transcribed."
+    }
+   ]
   },
   {
-   "album": "miles-ahead",
-   "date": "1957-10-21",
-   "source": "Wikidata Q953618 publication date (day precision); Wikipedia infobox, citing milesdavis.com"
+   "id": "clarinet",
+   "family": "Clarinet",
+   "title": "The Clarinet",
+   "intro": "The clarinet was the New Orleans band's high voice, weaving around the cornet's melody. Johnny Dodds and Sidney Bechet both took lessons from the Creole Tio family of clarinetists, and the records the New Orleans players made in Chicago in the 1920s reached a teenage Benny Goodman there. In the swing era the clarinet led the most popular bands in America; after bebop it moved to the edges, where Eric Dolphy made the bass clarinet a solo voice and Anat Cohen made the clarinet sound new again.\n\nListen for the tone, dark and woody low down, bright and piercing at the top, and then for the vibrato: wide and fast in New Orleans, narrower or gone later.",
+   "players": [
+    {
+     "artist": "johnny-dodds",
+     "idea": "The New Orleans blues clarinet: a big, dark tone and crying phrases in Oliver's and Armstrong's bands.",
+     "track": "Johnny Dodds|Weary City"
+    },
+    {
+     "artist": "sidney-bechet",
+     "idea": "A clarinetist before he was a saxophonist: a huge tone and a wide, fast vibrato that led any band he was in.",
+     "track": "Sidney Bechet|Egyptian Fantasy"
+    },
+    {
+     "artist": "benny-goodman",
+     "idea": "Swing's clarinet: a clean, centred tone and fast, even runs, in front of a big band and in small groups.",
+     "track": "Benny Goodman|Sing, Sing, Sing"
+    },
+    {
+     "artist": "artie-shaw",
+     "idea": "A clarinetist with a composer's ambitions: a pure, soaring top register, strings, and a concerto of his own.",
+     "track": "Artie Shaw|Concerto for Clarinet"
+    },
+    {
+     "artist": "eric-dolphy",
+     "idea": "Made the bass clarinet a solo instrument: honks, cries and wide leaps across its whole range.",
+     "track": "Eric Dolphy|Hat and Beard"
+    },
+    {
+     "artist": "bennie-maupin",
+     "idea": "The bass clarinet as atmosphere: dark, slow-moving lines inside the electric bands of Miles Davis and Herbie Hancock.",
+     "track": "Bennie Maupin|Pharaoh's Dance"
+    },
+    {
+     "artist": "anat-cohen",
+     "idea": "A warm, singing clarinet at home in New Orleans jazz, Brazilian choro and modern small groups.",
+     "track": "Anat Cohen|Happy Song"
+    }
+   ],
+   "links": [
+    {
+     "from": "johnny-dodds",
+     "to": "benny-goodman",
+     "kind": "influence",
+     "note": "Goodman grew up in Chicago listening to its New Orleans clarinetists, Dodds among them, and said no one ever surpassed Dodds's tone."
+    },
+    {
+     "from": "benny-goodman",
+     "to": "artie-shaw",
+     "kind": "reaction",
+     "note": "Rivals at the top of swing with different aims: Shaw recalled telling Goodman he was too hung up on the clarinet, while Shaw was trying to play music."
+    },
+    {
+     "from": "sidney-bechet",
+     "to": "anat-cohen",
+     "kind": "influence",
+     "note": "Cohen started on clarinet in a Dixieland band in Tel Aviv, and names Bechet, with John Coltrane, as her two great heroes growing up."
+    },
+    {
+     "from": "benny-goodman",
+     "to": "anat-cohen",
+     "kind": "influence",
+     "note": "Goodman was Cohen's first introduction to jazz clarinet; for his centenary she played his repertoire in her Clarinetwork band at the Village Vanguard."
+    },
+    {
+     "from": "eric-dolphy",
+     "to": "bennie-maupin",
+     "kind": "influence",
+     "note": "Maupin heard Dolphy and met him in Detroit, where Dolphy gave him a flute lesson; Dolphy's bass clarinet showed him what the instrument could do."
+    }
+   ]
   },
   {
-   "album": "kind-of-blue",
-   "date": "1959-08-17",
-   "source": "Wikidata Q283221 publication date (day precision); Wikipedia infobox and MusicBrainz agree"
+   "id": "vibraphone",
+   "family": "Vibraphone",
+   "title": "The Vibraphone",
+   "intro": "The vibraphone was a 1920s novelty, metal bars over tubes with a motor that makes the sound pulse. Red Norvo had already shown on xylophone and marimba how quietly a mallet instrument could swing; Lionel Hampton, a drummer, made the vibes a jazz voice in Benny Goodman's quartet. Milt Jackson slowed the pulse down and played bebop and the blues on it, and nearly every vibraphonist since comes from him or from Gary Burton, who played it like a piano with four mallets.\n\nListen for the shimmer, how long each player lets notes ring, and count the mallets: two for horn-like lines, four for chords.",
+   "players": [
+    {
+     "artist": "red-norvo",
+     "idea": "Chamber jazz on mallets: a light, quiet touch on xylophone and marimba, then a trio with guitar and bass instead of drums.",
+     "track": "Red Norvo|Dance of the Octopus"
+    },
+    {
+     "artist": "lionel-hampton",
+     "idea": "Made the vibraphone a jazz instrument: a drummer's drive, hard riffs and swing in the Goodman Quartet.",
+     "track": "Lionel Hampton|Avalon"
+    },
+    {
+     "artist": "milt-jackson",
+     "idea": "Bebop and the blues on vibes: a slow, warm vibrato and long, singing lines.",
+     "track": "Milt Jackson|Misterioso"
+    },
+    {
+     "artist": "cal-tjader",
+     "idea": "Brought the vibes into Latin jazz: cool, clear lines over Cuban rhythm.",
+     "track": "Cal Tjader|Soul Sauce (Guachi Guara)"
+    },
+    {
+     "artist": "bobby-hutcherson",
+     "idea": "Open, ringing chords and fast, modern lines: the vibes in Blue Note's 1960s avant-garde.",
+     "track": "Bobby Hutcherson|Out to Lunch"
+    },
+    {
+     "artist": "gary-burton",
+     "idea": "Four mallets and piano voicings: the vibraphone as a full harmony instrument, in duets and country-tinged jazz.",
+     "track": "Gary Burton|Crystal Silence"
+    },
+    {
+     "artist": "joel-ross",
+     "idea": "Two mallets, little pedal, and a band that talks across different pulses.",
+     "track": "Joel Ross|nublues"
+    }
+   ],
+   "links": [
+    {
+     "from": "lionel-hampton",
+     "to": "milt-jackson",
+     "kind": "influence",
+     "note": "Jackson took up the vibraphone at sixteen after hearing Hampton with Benny Goodman's band."
+    },
+    {
+     "from": "lionel-hampton",
+     "to": "cal-tjader",
+     "kind": "influence",
+     "note": "Tjader named Hampton as his first inspiration on vibes, before Milt Jackson became his model."
+    },
+    {
+     "from": "milt-jackson",
+     "to": "cal-tjader",
+     "kind": "influence",
+     "note": "Tjader said Jackson influenced him strongly; his cool, bluesy lines on the Latin dates come from Bags."
+    },
+    {
+     "from": "milt-jackson",
+     "to": "bobby-hutcherson",
+     "kind": "influence",
+     "note": "As a boy Hutcherson heard Jackson play Bemsha Swing on a Miles Davis record and decided to take up the vibraphone."
+    },
+    {
+     "from": "red-norvo",
+     "to": "gary-burton",
+     "kind": "influence",
+     "note": "Burton called Norvo his great example; on his 2001 tribute For Hamp, Red, Bags, and Cal he re-created Norvo's 1950s trio."
+    },
+    {
+     "from": "milt-jackson",
+     "to": "joel-ross",
+     "kind": "influence",
+     "note": "Ross grew up on Jackson's records and names him as his formative influence on the instrument; like Jackson, he plays with two mallets."
+    },
+    {
+     "from": "bobby-hutcherson",
+     "to": "joel-ross",
+     "kind": "influence",
+     "note": "At eighteen Ross visited Hutcherson at home in California; Hutcherson told him to write about his own life, advice Ross says he took literally."
+    }
+   ]
   },
   {
-   "album": "time-out",
-   "date": "1959-12-14",
-   "source": "Wikidata Q498089 publication date (day precision); Wikipedia infobox agrees"
-  },
-  {
-   "album": "maiden-voyage",
-   "date": "1965-05-17",
-   "source": "Wikidata Q908746 publication date (day precision); Wikipedia infobox and MusicBrainz agree"
-  },
-  {
-   "album": "bitches-brew",
-   "date": "1970-03-30",
-   "source": "Wikidata Q804096 publication date (day precision)"
-  },
-  {
-   "album": "wish",
-   "date": "1993-09-21",
-   "source": "Wikipedia infobox and MusicBrainz release group 8e14116f-2f6a-3ed0-8903-ea261716f007 agree"
-  },
-  {
-   "album": "black-radio",
-   "date": "2012-02-28",
-   "source": "Blue Note's release announcement (Nov 2011) and AllMusic; Wikipedia infobox agrees (MusicBrainz has 2012-02-22)"
-  },
-  {
-   "album": "we-like-it-here",
-   "date": "2014-02-25",
-   "source": "Wikipedia infobox and MusicBrainz release group fcf368c7-9ce7-487e-bd95-14543f6764cd agree"
-  },
-  {
-   "album": "the-epic",
-   "date": "2015-05-05",
-   "source": "Wikipedia infobox and MusicBrainz release group fffaa737-94cb-42b9-b1f1-44698110ea8a agree (some UK retailers list May 4)"
-  },
-  {
-   "album": "emilys-d-evolution",
-   "date": "2016-03-04",
-   "source": "Wikidata Q23647067 publication date (day precision)"
-  },
-  {
-   "album": "universal-beings",
-   "date": "2018-10-26",
-   "source": "Wikipedia infobox and MusicBrainz release group 02bc86ec-e917-4cda-bd15-ffe65e10511a agree (Wikidata has 2018-10-24)"
-  },
-  {
-   "album": "source",
-   "date": "2020-08-21",
-   "source": "Wikidata Q99292197 publication date (day precision); Wikipedia infobox and MusicBrainz agree"
-  },
-  {
-   "album": "perceive-its-beauty",
-   "date": "2024-04-12",
-   "source": "Wikidata Q124739762 publication date (day precision); Wikipedia infobox and MusicBrainz agree"
+   "id": "organ",
+   "family": "Organ",
+   "title": "The Organ",
+   "intro": "Fats Waller recorded jazz on the pipe organ in the 1920s, but the Hammond became a jazz instrument of its own in the 1950s. Wild Bill Davis led some of the first organ trios, with guitar and drums; Jimmy Smith played the Hammond with a bebop horn player's speed, the bass line on the lower keyboard, and the organ trio became the sound of soul jazz. Larry Young took it into Coltrane's modal world and fusion, and Joey DeFrancesco brought it back to the centre of jazz at the end of the 1980s.\n\nListen to the left hand and the pedals: they play the bass, so the organist is half the rhythm section too. Then listen for the drawbars and the rotating speaker, which make the sound swell and whirl.",
+   "players": [
+    {
+     "artist": "fats-waller",
+     "idea": "Jazz on the pipe organ in the 1920s and on the Hammond in 1942, with stride's bounce in both.",
+     "track": "Fats Waller|Jitterbug Waltz"
+    },
+    {
+     "artist": "wild-bill-davis",
+     "idea": "An early Hammond trio leader, with guitar and drums, who gave the organ the punch of a big band.",
+     "track": "Wild Bill Davis|April in Paris"
+    },
+    {
+     "artist": "jimmy-smith",
+     "idea": "Made the Hammond B-3 a jazz instrument: bebop speed in the right hand, walking bass in the left, the blues all through.",
+     "track": "Jimmy Smith|The Sermon"
+    },
+    {
+     "artist": "shirley-scott",
+     "idea": "Soul jazz with a light, crisp touch, trading choruses with tenor saxophonists.",
+     "track": "Shirley Scott|Just in Time"
+    },
+    {
+     "artist": "jimmy-mcgriff",
+     "idea": "The blues and gospel organ: a big, churchy sound and grooves built for dancing.",
+     "track": "Jimmy McGriff|I've Got A Woman"
+    },
+    {
+     "artist": "larry-young",
+     "idea": "Took the organ into Coltrane's modal world, then fusion: open chords and long, floating lines.",
+     "track": "Larry Young|Zoltan"
+    },
+    {
+     "artist": "lonnie-smith",
+     "idea": "Church organ and funk: slow-building grooves, swelling chords and the Hammond's wildest sounds.",
+     "track": "Dr. Lonnie Smith|Move Your Hand"
+    },
+    {
+     "artist": "joey-defrancesco",
+     "idea": "Brought the organ back to jazz in the late 1980s, playing Jimmy Smith's language at a blazing pace.",
+     "track": "Joey DeFrancesco|All of Me"
+    }
+   ],
+   "links": [
+    {
+     "from": "fats-waller",
+     "to": "wild-bill-davis",
+     "kind": "influence",
+     "note": "Davis took Waller and Art Tatum as his early models, before he moved from piano and guitar to the organ."
+    },
+    {
+     "from": "wild-bill-davis",
+     "to": "jimmy-smith",
+     "kind": "influence",
+     "note": "Smith switched from piano to organ for good in 1954 after hearing Davis play."
+    },
+    {
+     "from": "wild-bill-davis",
+     "to": "lonnie-smith",
+     "kind": "influence",
+     "note": "Lonnie Smith remembered hearing Davis on the radio first, then Jimmy Smith; he learned from Davis's records and from the church organ."
+    },
+    {
+     "from": "jimmy-smith",
+     "to": "lonnie-smith",
+     "kind": "influence",
+     "note": "After Davis came Jimmy Smith's records, which Lonnie Smith immersed himself in as a young player in Buffalo."
+    },
+    {
+     "from": "jimmy-smith",
+     "to": "shirley-scott",
+     "kind": "influence",
+     "note": "Scott said Jackie Davis and Jimmy Smith were the first two organists who inspired her to take up the instrument."
+    },
+    {
+     "from": "jimmy-smith",
+     "to": "jimmy-mcgriff",
+     "kind": "teacher",
+     "note": "Smith was a childhood friend; McGriff took private lessons from him, and from Milt Buckner, after buying his first Hammond in 1956."
+    },
+    {
+     "from": "jimmy-smith",
+     "to": "larry-young",
+     "kind": "influence",
+     "note": "Young's first records were soul jazz in Smith's manner; at Blue Note from 1964 he turned toward Coltrane."
+    },
+    {
+     "from": "jimmy-smith",
+     "to": "joey-defrancesco",
+     "kind": "teacher",
+     "note": "DeFrancesco was playing Smith's records note for note at five; Smith became his mentor and recorded with him on Incredible! and Legacy."
+    }
+   ]
   }
  ],
- "milestones": [
+ "artists": [
   {
-   "milestone": "The first jazz record",
-   "date": "1917-02-26",
-   "source": "Wikipedia, Livery Stable Blues: recorded by the Original Dixieland Jass Band on February 26, 1917",
-   "kind": "milestone",
-   "line": "On this day in 1917, the Original Dixieland Jass Band recorded \"Livery Stable Blues\", the first jazz record."
+   "id": "jack-teagarden",
+   "name": "Jack Teagarden",
+   "born": 1905,
+   "died": 1964,
+   "instrument": "Trombone",
+   "eras": [
+    "new-orleans",
+    "swing"
+   ],
+   "primaryEra": "swing",
+   "wikipedia": "Jack_Teagarden",
+   "blurb": "A Texan who made the trombone sound like a blues singer, with long, smooth lines and a technique he largely taught himself, and who sang in the same lazy drawl. He was the trombone and second voice of Louis Armstrong's All Stars from 1947 to 1951.",
+   "connections": [
+    "louis-armstrong",
+    "kid-ory",
+    "fats-waller",
+    "benny-goodman",
+    "billie-holiday",
+    "earl-hines"
+   ],
+   "albums": [],
+   "signatureTracks": [
+    "Basin Street Blues",
+    "St. James Infirmary",
+    "I Gotta Right to Sing the Blues"
+   ],
+   "videoQuery": "Jack Teagarden trombone Basin Street Blues"
   },
   {
-   "milestone": "\"Crazy Blues\" sells big",
-   "date": "1920-08-10",
-   "source": "Wikipedia, Crazy Blues: Mamie Smith and Her Jazz Hounds recorded it on August 10, 1920",
-   "kind": "milestone",
-   "line": "On this day in 1920, Mamie Smith and Her Jazz Hounds recorded \"Crazy Blues\", the hit that showed there was a market for records by Black artists."
+   "id": "dicky-wells",
+   "name": "Dicky Wells",
+   "born": 1907,
+   "died": 1985,
+   "instrument": "Trombone",
+   "eras": [
+    "swing"
+   ],
+   "primaryEra": "swing",
+   "wikipedia": "Dicky_Wells",
+   "blurb": "Count Basie's trombonist from 1938, with a vocabulary of slurs, rips and growls that made his solos sound like speech. In Paris in 1937 he led a session with Django Reinhardt and Bill Coleman, his solos full of jokes and surprises.",
+   "connections": [
+    "count-basie",
+    "lester-young",
+    "django-reinhardt",
+    "buck-clayton",
+    "fletcher-henderson"
+   ],
+   "albums": [],
+   "signatureTracks": [
+    "Dicky Wells Blues",
+    "Between the Devil and the Deep Blue Sea",
+    "I Got Rhythm"
+   ],
+   "videoQuery": "Dicky Wells trombone"
   },
   {
-   "milestone": "The Hot Five's first session",
-   "date": "1925-11-12",
-   "album": "hot-five-hot-seven",
-   "line": "On this day in 1925, Louis Armstrong cut his first Hot Five sides in Chicago, the records that made the improvising soloist jazz's main event.",
-   "source": "Wikipedia, Louis Armstrong and His Hot Five: the first sides were recorded on November 12, 1925, at OKeh's Chicago studio"
+   "id": "gary-burton",
+   "name": "Gary Burton",
+   "born": 1943,
+   "instrument": "Vibraphone",
+   "eras": [
+    "fusion",
+    "post-bop"
+   ],
+   "primaryEra": "fusion",
+   "wikipedia": "Gary_Burton",
+   "blurb": "Burton played the vibraphone with four mallets, voicing chords like a pianist, and his 1967 quartet record Duster mixed jazz with country and rock before fusion had a name. His duets with Chick Corea ran for forty years, and he taught at Berklee for thirty.",
+   "connections": [
+    "chick-corea",
+    "stan-getz",
+    "pat-metheny",
+    "keith-jarrett",
+    "red-norvo"
+   ],
+   "albums": [],
+   "signatureTracks": [
+    "Crystal Silence",
+    "General Mojo's Well Laid Plan",
+    "Country Roads"
+   ],
+   "videoQuery": "Gary Burton vibraphone four mallets"
   },
   {
-   "milestone": "Ellington at the Cotton Club",
-   "date": "1927-12-04",
-   "source": "Wikipedia, Cotton Club: Ellington's orchestra was the house band from December 4, 1927",
-   "kind": "milestone",
-   "line": "On this day in 1927, Duke Ellington's orchestra opened as the house band at the Cotton Club.",
-   "artist": "duke-ellington"
-  },
-  {
-   "milestone": "\"West End Blues\"",
-   "date": "1928-06-28",
-   "album": "hot-five-hot-seven",
-   "line": "On this day in 1928, Louis Armstrong and His Hot Five recorded West End Blues, opening cadenza and all.",
-   "source": "Wikipedia, West End Blues: made by Louis Armstrong and His Hot Five on June 28, 1928"
-  },
-  {
-   "milestone": "Swing explodes at the Palomar",
-   "date": "1935-08-21",
-   "source": "Wikipedia, Palomar Ballroom: Benny Goodman began his first Palomar engagement on August 21, 1935",
-   "kind": "milestone",
-   "line": "On this day in 1935, Benny Goodman's band began its first engagement at the Palomar Ballroom in Los Angeles.",
-   "artist": "benny-goodman"
-  },
-  {
-   "milestone": "\"Body and Soul\"",
-   "date": "1939-10-11",
-   "album": "hawkins-body-and-soul",
-   "line": "On this day in 1939, Coleman Hawkins recorded Body and Soul, a ballad improvisation so bold it became an unlikely hit.",
-   "source": "Wikipedia, Body and Soul (1930 song): recorded by Coleman Hawkins and His Orchestra on October 11, 1939"
-  },
-  {
-   "milestone": "Bebop on record",
-   "date": "1945-11-26",
-   "album": "savoy-dial-master-takes",
-   "line": "On this day in 1945, Charlie Parker's first Savoy session as a leader gave the world Ko-Ko and Now's the Time.",
-   "source": "Wikipedia, Ko-Ko: recorded November 26, 1945, at WOR Studios, New York"
-  },
-  {
-   "milestone": "Bossa nova's first record",
-   "date": "1958-07-10",
-   "album": "chega-de-saudade",
-   "line": "On this day in 1958, João Gilberto recorded Chega de Saudade at Odeon in Rio, bossa nova's first record.",
-   "source": "Estado de Minas/UAI, 'Primeira gravação da Bossa Nova completa 60 anos' (July 10, 2018); Milenio, 'La bossa nova cumple 60 años'"
-  },
-  {
-   "milestone": "Bossa nova conquers the world",
-   "date": "1965-04-13",
-   "album": "getz-gilberto",
-   "line": "On this day in 1965, Getz/Gilberto won the Grammy for Album of the Year.",
-   "source": "Wikipedia, 7th Annual Grammy Awards: held April 13, 1965; Album of the Year, Getz/Gilberto"
-  },
-  {
-   "milestone": "The Köln Concert",
-   "date": "1975-01-24",
-   "source": "Wikipedia, The Köln Concert: recorded at the Opera House in Cologne on 24 January 1975",
-   "kind": "milestone",
-   "line": "On this day in 1975, Keith Jarrett played The Köln Concert at the opera house in Cologne.",
-   "artist": "keith-jarrett"
-  },
-  {
-   "milestone": "Wynton's double Grammy",
-   "date": "1984-02-28",
-   "source": "Wikipedia, 26th Annual Grammy Awards: held February 28, 1984; Marsalis won jazz and classical soloist awards",
-   "kind": "milestone",
-   "line": "On this day in 1984, Wynton Marsalis won Grammys for both a jazz and a classical recording.",
-   "artist": "wynton-marsalis"
-  },
-  {
-   "milestone": "Ken Burns's Jazz",
-   "date": "2001-01-08",
-   "source": "Wikipedia, Jazz (miniseries): first aired on PBS on January 8, 2001",
-   "kind": "milestone",
-   "line": "On this day in 2001, Ken Burns's Jazz began on PBS."
-  },
-  {
-   "milestone": "Herbie's Album of the Year",
-   "date": "2008-02-10",
-   "source": "Wikipedia, 50th Annual Grammy Awards: held February 10, 2008; Album of the Year, River: The Joni Letters",
-   "kind": "milestone",
-   "line": "On this day in 2008, Herbie Hancock's River: The Joni Letters won the Grammy for Album of the Year.",
-   "artist": "herbie-hancock"
-  },
-  {
-   "milestone": "Esperanza is Best New Artist",
-   "date": "2011-02-13",
-   "source": "Wikipedia, 53rd Annual Grammy Awards: held February 13, 2011; Best New Artist, Esperanza Spalding",
-   "kind": "milestone",
-   "line": "On this day in 2011, Esperanza Spalding won the Grammy for Best New Artist.",
-   "artist": "esperanza-spalding"
-  },
-  {
-   "milestone": "Black Radio wins R&B Grammy",
-   "date": "2013-02-10",
-   "album": "black-radio",
-   "line": "On this day in 2013, the Robert Glasper Experiment's Black Radio won the Grammy for Best R&B Album.",
-   "source": "Wikipedia, 55th Annual Grammy Awards: held February 10, 2013; Best R&B Album, Black Radio"
+   "id": "wild-bill-davis",
+   "name": "Wild Bill Davis",
+   "born": 1918,
+   "died": 1995,
+   "instrument": "Organ",
+   "eras": [
+    "swing",
+    "soul-jazz"
+   ],
+   "primaryEra": "soul-jazz",
+   "wikipedia": "Wild_Bill_Davis",
+   "blurb": "Louis Jordan's pianist turned organist, who led one of the first Hammond trios from 1950 and set the instrument's pace until Jimmy Smith arrived. His arrangement of April in Paris became Count Basie's 1955 hit.",
+   "connections": [
+    "count-basie",
+    "johnny-hodges",
+    "duke-ellington",
+    "ella-fitzgerald",
+    "jimmy-smith"
+   ],
+   "albums": [],
+   "signatureTracks": [
+    "April in Paris",
+    "Lullaby of Birdland",
+    "Azure-Te"
+   ],
+   "videoQuery": "Wild Bill Davis Hammond organ"
   }
+ ],
+ "sources": {
+  "trombone": {
+   "kid-ory→jack-teagarden": [
+    "https://en.wikipedia.org/wiki/Jack_Teagarden (\"avoided a traditional 'tailgate' approach\"; \"did not follow traditional Dixieland style\")",
+    "Scott Yanow, 'Jack Teagarden: Profiles in Jazz', The Syncopated Times, 1 May 2017: https://syncopatedtimes.com/jack-teagarden-profiles-in-jazz/ (before Teagarden, most trombonists played the guttural percussive style pioneered by Ory; Teagarden played on a trumpeter's level)"
+   ],
+   "dicky-wells→j-j-johnson": [
+    "Bob Bernotas, 'An Interview with J. J. Johnson', Online Trombone Journal, 15 Nov 1999: https://www.trombone.org/articles/view.php?id=84 (\"I loved Dickie Wells' trombone conceptualizing because it was based on a minimum of articulation\")",
+    "Pierre Breton, 'Johnson, Jay Jay', Encyclopaedia Universalis: https://www.universalis.fr/encyclopedie/jay-jay-johnson/ (\"Ses premières admirations vont à Trummy Young et Dicky Wells\")"
+   ],
+   "j-j-johnson→curtis-fuller": [
+    "https://en.wikipedia.org/wiki/Curtis_Fuller (nun took him to see Illinois Jacquet's band with J.J. Johnson)",
+    "Russ Musto, 'Curtis Fuller: Motor City Messenger', All About Jazz: https://www.allaboutjazz.com/curtis-fuller-motor-city-messenger-curtis-fuller-by-russ-musto (Fuller on hearing J.J. on Parker's 'Quasimodo' and with Jacquet; Johnson became his greatest influence)",
+    "https://arts.gov/honors/jazz/curtis-fuller"
+   ],
+   "j-j-johnson→jimmy-knepper": [
+    "Les Tomkins, interview with Jimmy Knepper, 1981, National Jazz Archive: https://nationaljazzarchive.org.uk/explore/interviews/1635377-jimmy-knepper-interview-2 (\"most of them imitate J. J.\"; \"Most of my influences are Charlie Parker\"; \"My influences aren't from trombone players at all, I don't think.\")",
+    "https://en.wikipedia.org/wiki/Jimmy_Knepper (named his children after his idol Charlie Parker)"
+   ]
+  },
+  "clarinet": {
+   "johnny-dodds→benny-goodman": [
+    "https://en.wikipedia.org/wiki/Johnny_Dodds (Goodman \"stated that no one ever surpassed Dodds in achieving a finer tone with the clarinet\")",
+    "https://en.wikipedia.org/wiki/Benny_Goodman (early influences: Jimmie Noone, Johnny Dodds, Leon Roppolo)"
+   ],
+   "benny-goodman→artie-shaw": [
+    "Artie Shaw oral history, Smithsonian Jazz Oral History Program, NMAH AC0808: https://mads.si.edu/mads/id/NMAH-AC0808_Shaw_Artie_Transcript (\"Benny, you're too hung up on the clarinet\" ... \"Benny, I've been trying to play music\")",
+    "https://en.wikipedia.org/wiki/Artie_Shaw (Goodman as his main rival; the 'King of Swing' / 'King of the Clarinet' exchange)"
+   ],
+   "sidney-bechet→anat-cohen": [
+    "Ron Netsky, 'Interview: Anat Cohen', Rochester City Newspaper, 12 Jun 2013: https://www.roccitymag.com/special-sections/interview-anat-cohen-2236361 (her two greatest heroes growing up: Sidney Bechet and John Coltrane)",
+    "https://college.berklee.edu/node/1030630 (Berklee, 'Stories from the Promised Land': began on clarinet in a Tel Aviv conservatory Dixieland band)"
+   ],
+   "benny-goodman→anat-cohen": [
+    "https://downbeat.com/news/detail/anat-cohens-eclectic-sensibility (DownBeat: Goodman her \"first clarinet introduction to jazz\")",
+    "https://www.npr.org/2010/05/20/127009958/anat-cohen-clarinetwork-at-the-vanguard (Clarinetwork: Live at the Village Vanguard, Goodman centennial tribute)",
+    "https://www.minnpost.com/arts-arena/2010/04/anat-cohen-brings-her-benny-goodman-tribute-dakota/"
+   ],
+   "eric-dolphy→bennie-maupin": [
+    "All About Jazz interview with Bennie Maupin: https://www.allaboutjazz.com/php/article.php?id=22723 (had heard Dolphy and met him in Detroit; Dolphy gave him a flute lesson)",
+    "Metro Times, 'Life lesson': https://www.metrotimes.com/music-2/life-lesson-2195702/ (Dolphy inspired Maupin to take on the bass clarinet)",
+    "https://www.npr.org/sections/ablogsupreme/2009/09/bennie_maupin_dolphyana_at_the.html"
+   ]
+  },
+  "vibraphone": {
+   "lionel-hampton→milt-jackson": [
+    "https://en.wikipedia.org/wiki/Milt_Jackson (\"took up the vibraphone at 16 after hearing Lionel Hampton play the instrument in Benny Goodman's band\")",
+    "National Jazz Archive biography of Milt Jackson: https://nationaljazzarchive.org.uk/view/1633622-milt-jackson (inspired by seeing Hampton in 1940; two mallets; slower vibrato than Hampton)"
+   ],
+   "lionel-hampton→cal-tjader": [
+    "Ted Gioia, West Coast Jazz (1992), on Tjader, reprinted at https://cerra.substack.com/p/jazz-vignette-2-ted-gioia-on-cal (Tjader cited Hampton as his first inspiration; Jackson later)",
+    "https://jazzprofiles.blogspot.com/2019/05/cal-tjader-understated-vibraphonist.html (Tjader's two main influences on vibes: Hampton and Milt Jackson)"
+   ],
+   "milt-jackson→cal-tjader": [
+    "Ted Gioia, West Coast Jazz, via https://cerra.substack.com/p/jazz-vignette-2-ted-gioia-on-cal (Tjader: strongly influenced by Jackson)"
+   ],
+   "milt-jackson→bobby-hutcherson": [
+    "https://en.wikipedia.org/wiki/Bobby_Hutcherson (inspired to take up the vibraphone at about 12 on hearing Milt Jackson play 'Bemsha Swing' on Miles Davis All Stars, Vol. 2)",
+    "https://arts.gov/honors/jazz/bobby-hutcherson"
+   ],
+   "red-norvo→gary-burton": [
+    "David Adler, review of Gary Burton, For Hamp, Red, Bags, and Cal (Concord, 2001), All About Jazz: https://www.allaboutjazz.com/for-hamp-red-bags-and-cal-gary-burton-concord-music-group-review-by-david-adler (Norvo tracks re-create his 1950s trio)",
+    "https://nl.wikipedia.org/wiki/For_Hamp,_Red,_Bags,_and_Cal (Burton called Norvo his great example)",
+    "https://www.berklee.edu/node/2382866 (Norvo used four mallets before Burton)"
+   ],
+   "milt-jackson→joel-ross": [
+    "https://en.wikipedia.org/wiki/Joel_Ross_(vibraphonist) (\"Jackson being Ross's formative influence on vibraphone\"; plays with two mallets)",
+    "https://www.bluenote.com/spotlight/joel-ross-good-vibes/"
+   ],
+   "bobby-hutcherson→joel-ross": [
+    "https://www.bluenote.com/spotlight/joel-ross-good-vibes/ (visit to Hutcherson at 18; \"I took Bobby's words literally\")",
+    "https://www.npr.org/2019/05/23/725759208/joel-ross-and-his-exceptionally-good-vibes"
+   ]
+  },
+  "organ": {
+   "fats-waller→wild-bill-davis": [
+    "https://en.wikipedia.org/wiki/Wild_Bill_Davis (\"In his early career he took inspiration from Fats Waller and Art Tatum\")"
+   ],
+   "wild-bill-davis→jimmy-smith": [
+    "https://en.wikipedia.org/wiki/Jimmy_Smith_(musician) (\"He switched to organ permanently in 1954 after hearing Wild Bill Davis play\")",
+    "https://en.wikipedia.org/wiki/Wild_Bill_Davis (pacesetter among organists before Smith's emergence in 1956)"
+   ],
+   "wild-bill-davis→lonnie-smith": [
+    "https://www.arts.gov/honors/jazz/dr-lonnie-smith (NEA: immersed himself in the records of Wild Bill Davis, Bill Doggett and Jimmy Smith, and the church organ)",
+    "https://brooklynbowl.com/blog/detail/qa-dr-lonnie-smith-talks-about-his-new-album-how-playing-the-organ-makes-him-feel-and-returning-to-nyc (heard Wild Bill on the radio, then Jimmy Smith)"
+   ],
+   "jimmy-smith→lonnie-smith": [
+    "https://www.arts.gov/honors/jazz/dr-lonnie-smith",
+    "https://www.allaboutjazz.com/dr-lonnie-smith-organ-guru-dr-lonnie-smith-by-mikayla-gilbreath"
+   ],
+   "jimmy-smith→shirley-scott": [
+    "https://en.wikipedia.org/wiki/Shirley_Scott (quoting A.D. Amorosi: \"Davis and Smith were truly the first two organists who inspired me to pick up the instrument\")",
+    "Guardian obituary of Shirley Scott, 13 May 2002: https://www.theguardian.com/news/2002/may/13/guardianobituaries"
+   ],
+   "jimmy-smith→jimmy-mcgriff": [
+    "https://en.wikipedia.org/wiki/Jimmy_McGriff (\"His childhood friend, organist Jimmy Smith\"; \"He also studied privately with Milt Buckner, Jimmy Smith, and Sonny Gatewood\")"
+   ],
+   "jimmy-smith→larry-young": [
+    "https://en.wikipedia.org/wiki/Larry_Young_(musician) (\"Young's early work was strongly influenced by the soul jazz of Jimmy Smith\"; Coltrane's influence from his 1964 Blue Note signing)"
+   ],
+   "jimmy-smith→joey-defrancesco": [
+    "https://en.wikipedia.org/wiki/Joey_DeFrancesco (playing Jimmy Smith songs verbatim at five; 'his idol Jimmy Smith' on Incredible!; Legacy, 2005; Hammond Hall of Fame 2013 'with his mentor, Jimmy Smith')",
+    "https://en.wikipedia.org/wiki/Jimmy_Smith_(musician) (\"with his protégé, Joey DeFrancesco\")"
+   ]
+  }
+ },
+ "notes": [
+  "TROMBONE: six players, four links, and two of the links are weaker than the standard you asked for. (1) Kid Ory → Jack Teagarden is marked 'reaction' on historians' framing (Wikipedia's Teagarden article and Scott Yanow), not on anything Teagarden said; I found no documented Ory → Teagarden influence or bandmate relationship (they shared the stage at Newport in 1957, which isn't enough). If the reviewer drops it, Teagarden is left without a link and the tree falls to five linked players. (2) Jack Teagarden → J.J. Johnson is NOT drawn: in Johnson's own interviews (Bernotas 1999; Universalis) the trombonists he names are Dicky Wells, Trummy Young, J.C. Higginbotham and Fred Beckett, never Teagarden.",
+  "TROMBONE: Dicky Wells is a second proposed new artist (entry in `artists`), added because he is the trombonist J.J. Johnson named, which gives the bebop branch a documented root in the swing era. Wikipedia gives his birth year as '1907 or 1909'; I used 1907. On Apple Music his records are credited variously to 'Dicky Wells', 'Dickie Wells', 'Dicky Wells & Bill Coleman' and 'Dicky Wells and His Orchestra'.",
+  "TROMBONE: Trombone Shorty is left out. Asked about his trombone heroes, he points to Rebirth Brass Band and, through them, the JB Horns, and his named mentors (Cyril Neville, Wynton Marsalis, Kermit Ruffins, Allen Toussaint, Lenny Kravitz) aren't trombonists in jazz.json. No documented link reaches anyone in this tree, so the tree stops at Fuller and Knepper (1950s-60s). Adding Rebirth Brass Band, Fred Wesley or Delfeayo Marsalis would be the way to reach him.",
+  "TROMBONE: J.J. Johnson's track is 'J.J. Johnson|Blue Trombone' (1957, on Apple Music as 'Blue Trombone (Part 1 & 2)' and on The Trombone Master). It is NOT in his signatureTracks: those three (Manteca Theme, Boplicity, Moon Dreams) are ensemble pieces where he is barely featured, so it's worth adding Blue Trombone to his signatureTracks. Jimmy Knepper's 'Fables of Faubus' is from Mingus Ah Um: Wikipedia's personnel lists Knepper on tracks 1 and 7 (Better Git It in Your Soul, Fables of Faubus) and Willie Dennis on the others.",
+  "CLARINET: Jimmy Giuffre is left out. I found no documented link between him and any clarinetist in the cast (his named model is Lester Young on tenor, and even that is secondary), and Giuffre's own words weren't findable. Eric Dolphy (bass clarinet; already in the saxophone tree) and Bennie Maupin (instrument 'Clarinet' in jazz.json, bass clarinet on Bitches Brew) are in instead, as a second branch with its own documented link. That branch doesn't connect to the New Orleans/swing branch.",
+  "CLARINET: Sidney Bechet's track 'Egyptian Fantasy' (1941, Victor, on Apple Music as 'Sidney Bechet|Egyptian Fantasy') is NOT in his signatureTracks, which are all soprano saxophone features (Summertime, Petite Fleur, Wild Cat Blues). I chose it because it's a clarinet feature; please confirm by ear that it's the clarinet take before shipping. The fallback is 'Sidney Bechet|Wild Cat Blues'. Johnny Dodds's 'Weary City' is a highlight of blue-clarinet-stomp.",
+  "CLARINET (optional improvement): Jimmie Noone isn't in jazz.json, but Wikipedia documents all three of his links: Noone studied with the young Sidney Bechet (teacher), and Goodman and Artie Shaw both named him as an influence. Adding him would connect Bechet to the swing players and give Shaw a second, gentler root.",
+  "VIBRAPHONE: Gary Burton is a proposed new artist, added so that Red Norvo has a documented heir. I found no source in which Hampton or Jackson credits Norvo. Burton's artist name varies on Apple Music ('Gary Burton', 'The Gary Burton Quartet', 'Gary Burton & Chick Corea'/'Chick Corea & Gary Burton'). The Norvo → Burton note rests on Burton's tribute album and the Dutch Wikipedia/Berklee accounts. A direct Burton interview quote would strengthen it.",
+  "VIBRAPHONE: Mulatu Astatke (Vibraphone, in jazz.json) is left out: the only connection I found is that he saw Milt Jackson in New York, which isn't an influence claim. Bobby Hutcherson's track 'Out to Lunch' is the Dolphy record's title track, from his signatureTracks.",
+  "ORGAN: Wild Bill Davis is a proposed new artist and the tree's documented root for the Hammond (Jimmy Smith switched to organ after hearing him). Fats Waller is included as the pipe-organ and early-Hammond pioneer (Jitterbug Waltz, 1942, is a Hammond record and is in his signatureTracks); his link to Davis rests on one Wikipedia sentence ('took inspiration from Fats Waller and Art Tatum'), which may refer to piano. The note says 'early models', not organ specifically. Waller's instrument in jazz.json is Piano; he'd need 'Organ' in a future `instruments` list. Apple Music titles for Davis's third signature track vary ('Azure-te (Paris Blues)', 'Azure 'Te').",
+  "ORGAN: John Medeski is left out: the only artist in jazz.json is the group Medeski Martin & Wood, and Jimmy Smith's Wikipedia lists MMW (the band) among those Smith influenced, not Medeski himself. A group can't stand as an organist in the tree. Data note: jazz.json has Jimmy Smith born 1925; Wikipedia currently says 8 December 1928 (sources disagree).",
+  "All four trees use only the kinds already in use (influence, teacher, reaction). Every link either goes forward in time or is a reaction. Every player in every tree has at least one link. Notes paraphrase; the exact quotes are in `sources`.",
+  "New artist entries have `albums: []` and no `died` key for living artists. Every signatureTrack was confirmed on the US iTunes Search API (entity=song), including Teagarden: Basin Street Blues, St. James Infirmary, I Gotta Right to Sing the Blues, each with multiple Jack Teagarden-credited results. Teagarden's Wikipedia title is Jack_Teagarden."
  ]
 }

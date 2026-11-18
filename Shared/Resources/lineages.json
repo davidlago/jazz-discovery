@@ -836,6 +836,330 @@
      "note": "Her repertoire reaches back to 1920s blues and vaudeville, songs Bessie Smith sang."
     }
    ]
+  },
+  {
+   "id": "trombone",
+   "family": "Trombone",
+   "title": "The Trombone",
+   "intro": "In the New Orleans band the trombone played underneath: Kid Ory filled the gaps below the cornet with slides and smears, a style called tailgate. The swing era made it a soloist, smooth and singing in Jack Teagarden's hands, talkative and full of tricks in Dicky Wells's. Bebop was harder, because a slide is slow for fast lines; J.J. Johnson's answer, clean tonguing that made the trombone sound almost like a valve instrument, became the model most modern players followed, and the rest defined themselves against it.\n\nListen for the slide: how much each player smears between notes, and how much they hide it.",
+   "players": [
+    {
+     "artist": "kid-ory",
+     "idea": "Tailgate trombone: rhythmic slides and smears under the cornet, the New Orleans band's bass line in brass.",
+     "track": "Kid Ory|Ory's Creole Trombone"
+    },
+    {
+     "artist": "jack-teagarden",
+     "idea": "The trombone as a blues singer: long, smooth lines with the slide almost hidden.",
+     "track": "Jack Teagarden|Basin Street Blues"
+    },
+    {
+     "artist": "dicky-wells",
+     "idea": "A talking trombone: rips, slurs and growls placed with a comedian's timing in Count Basie's band.",
+     "track": "Dicky Wells|Dicky Wells Blues"
+    },
+    {
+     "artist": "j-j-johnson",
+     "idea": "Bebop on the trombone: clean, tongued notes at speed, so the slide sounded like valves.",
+     "track": "J.J. Johnson|Blue Trombone"
+    },
+    {
+     "artist": "jimmy-knepper",
+     "idea": "Charlie Parker's lines on the slide, smooth and unpredictable, in Mingus's bands.",
+     "track": "Jimmy Knepper|Fables of Faubus"
+    },
+    {
+     "artist": "curtis-fuller",
+     "idea": "A warm, round hard-bop sound, with Art Blakey's Messengers and on Coltrane's Blue Train.",
+     "track": "Curtis Fuller|Five Spot After Dark"
+    }
+   ],
+   "links": [
+    {
+     "from": "kid-ory",
+     "to": "jack-teagarden",
+     "kind": "reaction",
+     "note": "Teagarden never played the tailgate style Ory had made the trombone's job; he played long, smooth solos the way a trumpeter would."
+    },
+    {
+     "from": "dicky-wells",
+     "to": "j-j-johnson",
+     "kind": "influence",
+     "note": "Wells and Trummy Young were the first trombonists Johnson admired; he loved Wells's playing, he said, for its minimum of articulation."
+    },
+    {
+     "from": "j-j-johnson",
+     "to": "curtis-fuller",
+     "kind": "influence",
+     "note": "As a boy in a Detroit orphanage, Fuller was taken to hear Illinois Jacquet's band with Johnson on trombone; Johnson became his main model."
+    },
+    {
+     "from": "j-j-johnson",
+     "to": "jimmy-knepper",
+     "kind": "reaction",
+     "note": "Knepper said most modern trombonists imitated J.J.; his own influences weren't trombonists at all, but Charlie Parker, whose solos he transcribed."
+    }
+   ]
+  },
+  {
+   "id": "clarinet",
+   "family": "Clarinet",
+   "title": "The Clarinet",
+   "intro": "The clarinet was the New Orleans band's high voice, weaving around the cornet's melody. Johnny Dodds and Sidney Bechet both took lessons from the Creole Tio family of clarinetists, and the records the New Orleans players made in Chicago in the 1920s reached a teenage Benny Goodman there. In the swing era the clarinet led the most popular bands in America; after bebop it moved to the edges, where Eric Dolphy made the bass clarinet a solo voice and Anat Cohen made the clarinet sound new again.\n\nListen for the tone, dark and woody low down, bright and piercing at the top, and then for the vibrato: wide and fast in New Orleans, narrower or gone later.",
+   "players": [
+    {
+     "artist": "johnny-dodds",
+     "idea": "The New Orleans blues clarinet: a big, dark tone and crying phrases in Oliver's and Armstrong's bands.",
+     "track": "Johnny Dodds|Weary City"
+    },
+    {
+     "artist": "sidney-bechet",
+     "idea": "A clarinetist before he was a saxophonist: a huge tone and a wide, fast vibrato that led any band he was in.",
+     "track": "Sidney Bechet|Egyptian Fantasy"
+    },
+    {
+     "artist": "benny-goodman",
+     "idea": "Swing's clarinet: a clean, centred tone and fast, even runs, in front of a big band and in small groups.",
+     "track": "Benny Goodman|Sing, Sing, Sing"
+    },
+    {
+     "artist": "artie-shaw",
+     "idea": "A clarinetist with a composer's ambitions: a pure, soaring top register, strings, and a concerto of his own.",
+     "track": "Artie Shaw|Concerto for Clarinet"
+    },
+    {
+     "artist": "eric-dolphy",
+     "idea": "Made the bass clarinet a solo instrument: honks, cries and wide leaps across its whole range.",
+     "track": "Eric Dolphy|Hat and Beard"
+    },
+    {
+     "artist": "bennie-maupin",
+     "idea": "The bass clarinet as atmosphere: dark, slow-moving lines inside the electric bands of Miles Davis and Herbie Hancock.",
+     "track": "Bennie Maupin|Pharaoh's Dance"
+    },
+    {
+     "artist": "anat-cohen",
+     "idea": "A warm, singing clarinet at home in New Orleans jazz, Brazilian choro and modern small groups.",
+     "track": "Anat Cohen|Happy Song"
+    }
+   ],
+   "links": [
+    {
+     "from": "johnny-dodds",
+     "to": "benny-goodman",
+     "kind": "influence",
+     "note": "Goodman grew up in Chicago listening to its New Orleans clarinetists, Dodds among them, and said no one ever surpassed Dodds's tone."
+    },
+    {
+     "from": "benny-goodman",
+     "to": "artie-shaw",
+     "kind": "reaction",
+     "note": "Rivals at the top of swing with different aims: Shaw recalled telling Goodman he was too hung up on the clarinet, while Shaw was trying to play music."
+    },
+    {
+     "from": "sidney-bechet",
+     "to": "anat-cohen",
+     "kind": "influence",
+     "note": "Cohen started on clarinet in a Dixieland band in Tel Aviv, and names Bechet, with John Coltrane, as her two great heroes growing up."
+    },
+    {
+     "from": "benny-goodman",
+     "to": "anat-cohen",
+     "kind": "influence",
+     "note": "Goodman was Cohen's first introduction to jazz clarinet; for his centenary she played his repertoire in her Clarinetwork band at the Village Vanguard."
+    },
+    {
+     "from": "eric-dolphy",
+     "to": "bennie-maupin",
+     "kind": "influence",
+     "note": "Maupin heard Dolphy and met him in Detroit, where Dolphy gave him a flute lesson; Dolphy's bass clarinet showed him what the instrument could do."
+    }
+   ]
+  },
+  {
+   "id": "vibraphone",
+   "family": "Vibraphone",
+   "title": "The Vibraphone",
+   "intro": "The vibraphone was a 1920s novelty, metal bars over tubes with a motor that makes the sound pulse. Red Norvo had already shown on xylophone and marimba how quietly a mallet instrument could swing; Lionel Hampton, a drummer, made the vibes a jazz voice in Benny Goodman's quartet. Milt Jackson slowed the pulse down and played bebop and the blues on it, and nearly every vibraphonist since comes from him or from Gary Burton, who played it like a piano with four mallets.\n\nListen for the shimmer, how long each player lets notes ring, and count the mallets: two for horn-like lines, four for chords.",
+   "players": [
+    {
+     "artist": "red-norvo",
+     "idea": "Chamber jazz on mallets: a light, quiet touch on xylophone and marimba, then a trio with guitar and bass instead of drums.",
+     "track": "Red Norvo|Dance of the Octopus"
+    },
+    {
+     "artist": "lionel-hampton",
+     "idea": "Made the vibraphone a jazz instrument: a drummer's drive, hard riffs and swing in the Goodman Quartet.",
+     "track": "Lionel Hampton|Avalon"
+    },
+    {
+     "artist": "milt-jackson",
+     "idea": "Bebop and the blues on vibes: a slow, warm vibrato and long, singing lines.",
+     "track": "Milt Jackson|Misterioso"
+    },
+    {
+     "artist": "cal-tjader",
+     "idea": "Brought the vibes into Latin jazz: cool, clear lines over Cuban rhythm.",
+     "track": "Cal Tjader|Soul Sauce (Guachi Guara)"
+    },
+    {
+     "artist": "bobby-hutcherson",
+     "idea": "Open, ringing chords and fast, modern lines: the vibes in Blue Note's 1960s avant-garde.",
+     "track": "Bobby Hutcherson|Out to Lunch"
+    },
+    {
+     "artist": "gary-burton",
+     "idea": "Four mallets and piano voicings: the vibraphone as a full harmony instrument, in duets and country-tinged jazz.",
+     "track": "Gary Burton|Crystal Silence"
+    },
+    {
+     "artist": "joel-ross",
+     "idea": "Two mallets, little pedal, and a band that talks across different pulses.",
+     "track": "Joel Ross|nublues"
+    }
+   ],
+   "links": [
+    {
+     "from": "lionel-hampton",
+     "to": "milt-jackson",
+     "kind": "influence",
+     "note": "Jackson took up the vibraphone at sixteen after hearing Hampton with Benny Goodman's band."
+    },
+    {
+     "from": "lionel-hampton",
+     "to": "cal-tjader",
+     "kind": "influence",
+     "note": "Tjader named Hampton as his first inspiration on vibes, before Milt Jackson became his model."
+    },
+    {
+     "from": "milt-jackson",
+     "to": "cal-tjader",
+     "kind": "influence",
+     "note": "Tjader said Jackson influenced him strongly; his cool, bluesy lines on the Latin dates come from Bags."
+    },
+    {
+     "from": "milt-jackson",
+     "to": "bobby-hutcherson",
+     "kind": "influence",
+     "note": "As a boy Hutcherson heard Jackson play Bemsha Swing on a Miles Davis record and decided to take up the vibraphone."
+    },
+    {
+     "from": "red-norvo",
+     "to": "gary-burton",
+     "kind": "influence",
+     "note": "Burton called Norvo his great example; on his 2001 tribute For Hamp, Red, Bags, and Cal he re-created Norvo's 1950s trio."
+    },
+    {
+     "from": "milt-jackson",
+     "to": "joel-ross",
+     "kind": "influence",
+     "note": "Ross grew up on Jackson's records and names him as his formative influence on the instrument; like Jackson, he plays with two mallets."
+    },
+    {
+     "from": "bobby-hutcherson",
+     "to": "joel-ross",
+     "kind": "influence",
+     "note": "At eighteen Ross visited Hutcherson at home in California; Hutcherson told him to write about his own life, advice Ross says he took literally."
+    }
+   ]
+  },
+  {
+   "id": "organ",
+   "family": "Organ",
+   "title": "The Organ",
+   "intro": "Fats Waller recorded jazz on the pipe organ in the 1920s, but the Hammond became a jazz instrument of its own in the 1950s. Wild Bill Davis led some of the first organ trios, with guitar and drums; Jimmy Smith played the Hammond with a bebop horn player's speed, the bass line on the lower keyboard, and the organ trio became the sound of soul jazz. Larry Young took it into Coltrane's modal world and fusion, and Joey DeFrancesco brought it back to the centre of jazz at the end of the 1980s.\n\nListen to the left hand and the pedals: they play the bass, so the organist is half the rhythm section too. Then listen for the drawbars and the rotating speaker, which make the sound swell and whirl.",
+   "players": [
+    {
+     "artist": "fats-waller",
+     "idea": "Jazz on the pipe organ in the 1920s and on the Hammond in 1942, with stride's bounce in both.",
+     "track": "Fats Waller|Jitterbug Waltz"
+    },
+    {
+     "artist": "wild-bill-davis",
+     "idea": "An early Hammond trio leader, with guitar and drums, who gave the organ the punch of a big band.",
+     "track": "Wild Bill Davis|April in Paris"
+    },
+    {
+     "artist": "jimmy-smith",
+     "idea": "Made the Hammond B-3 a jazz instrument: bebop speed in the right hand, walking bass in the left, the blues all through.",
+     "track": "Jimmy Smith|The Sermon"
+    },
+    {
+     "artist": "shirley-scott",
+     "idea": "Soul jazz with a light, crisp touch, trading choruses with tenor saxophonists.",
+     "track": "Shirley Scott|Just in Time"
+    },
+    {
+     "artist": "jimmy-mcgriff",
+     "idea": "The blues and gospel organ: a big, churchy sound and grooves built for dancing.",
+     "track": "Jimmy McGriff|I've Got A Woman"
+    },
+    {
+     "artist": "larry-young",
+     "idea": "Took the organ into Coltrane's modal world, then fusion: open chords and long, floating lines.",
+     "track": "Larry Young|Zoltan"
+    },
+    {
+     "artist": "lonnie-smith",
+     "idea": "Church organ and funk: slow-building grooves, swelling chords and the Hammond's wildest sounds.",
+     "track": "Dr. Lonnie Smith|Move Your Hand"
+    },
+    {
+     "artist": "joey-defrancesco",
+     "idea": "Brought the organ back to jazz in the late 1980s, playing Jimmy Smith's language at a blazing pace.",
+     "track": "Joey DeFrancesco|All of Me"
+    }
+   ],
+   "links": [
+    {
+     "from": "fats-waller",
+     "to": "wild-bill-davis",
+     "kind": "influence",
+     "note": "Davis took Waller and Art Tatum as his early models, before he moved from piano and guitar to the organ."
+    },
+    {
+     "from": "wild-bill-davis",
+     "to": "jimmy-smith",
+     "kind": "influence",
+     "note": "Smith switched from piano to organ for good in 1954 after hearing Davis play."
+    },
+    {
+     "from": "wild-bill-davis",
+     "to": "lonnie-smith",
+     "kind": "influence",
+     "note": "Lonnie Smith remembered hearing Davis on the radio first, then Jimmy Smith; he learned from Davis's records and from the church organ."
+    },
+    {
+     "from": "jimmy-smith",
+     "to": "lonnie-smith",
+     "kind": "influence",
+     "note": "After Davis came Jimmy Smith's records, which Lonnie Smith immersed himself in as a young player in Buffalo."
+    },
+    {
+     "from": "jimmy-smith",
+     "to": "shirley-scott",
+     "kind": "influence",
+     "note": "Scott said Jackie Davis and Jimmy Smith were the first two organists who inspired her to take up the instrument."
+    },
+    {
+     "from": "jimmy-smith",
+     "to": "jimmy-mcgriff",
+     "kind": "teacher",
+     "note": "Smith was a childhood friend; McGriff took private lessons from him, and from Milt Buckner, after buying his first Hammond in 1956."
+    },
+    {
+     "from": "jimmy-smith",
+     "to": "larry-young",
+     "kind": "influence",
+     "note": "Young's first records were soul jazz in Smith's manner; at Blue Note from 1964 he turned toward Coltrane."
+    },
+    {
+     "from": "jimmy-smith",
+     "to": "joey-defrancesco",
+     "kind": "teacher",
+     "note": "DeFrancesco was playing Smith's records note for note at five; Smith became his mentor and recorded with him on Incredible! and Legacy."
+    }
+   ]
   }
  ]
 }
