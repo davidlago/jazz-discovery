@@ -26,13 +26,13 @@ enum Snapshots {
         let shots: [(String, () -> Void)] = [
             ("01-timeline", { router.show(.timeline) }),
             ("02-eras", { router.show(.eras) }),
-            ("03-era-detail", { router.show(.eras); router.go(.era("bebop")) }),
+            ("03-era-detail", { router.show(.era("bebop")) }),
             ("04-decades", { router.show(.decades) }),
-            ("05-decade-detail", { router.show(.decades); router.go(.decade(1950)) }),
+            ("05-decade-detail", { router.show(.decade(1950)) }),
             ("06-artists", { router.show(.artists) }),
-            ("07-artist-detail", { router.show(.artists); router.go(.artist(artist.id)) }),
+            ("07-artist-detail", { router.show(.artist(artist.id)) }),
             ("08-crate", { router.show(.albums) }),
-            ("09-album-detail", { router.show(.albums); router.go(.album(album.id)) }),
+            ("09-album-detail", { router.show(.album(album.id)) }),
             ("10-connections", { router.show(.connections) }),
         ]
         try? FileManager.default.createDirectory(atPath: dir, withIntermediateDirectories: true)

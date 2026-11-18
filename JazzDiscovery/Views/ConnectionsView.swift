@@ -50,6 +50,13 @@ struct ConnectionsView: View {
             .allowsHitTesting(false)
         }
         .navigationTitle("Connections")
+        .onChange(of: router.connectionsFocus, initial: true) {
+            // A connections/<artist> link: select that artist.
+            if let focus = router.connectionsFocus {
+                selected = focus
+                router.connectionsFocus = nil
+            }
+        }
         .task {
             if layout == nil {
                 let artists = library.artists, edges = library.edges

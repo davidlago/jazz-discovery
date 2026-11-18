@@ -22,8 +22,8 @@ final class JazzLibrary {
         albumByID = Dictionary(data.albums.map { ($0.id, $0) }, uniquingKeysWith: { a, _ in a })
     }
 
-    static func load() -> JazzLibrary {
-        guard let url = Bundle.main.url(forResource: "jazz", withExtension: "json") else {
+    static func load(from bundle: Bundle = .main) -> JazzLibrary {
+        guard let url = bundle.url(forResource: "jazz", withExtension: "json") else {
             fatalError("jazz.json missing from bundle")
         }
         do {
@@ -98,41 +98,4 @@ final class JazzLibrary {
             albums: albums.filter { m($0.title) || m($0.artistName) || m($0.label) || String($0.year) == q }
         )
     }
-}
-
-enum Route: Hashable {
-    case era(String)
-    case artist(String)
-    case album(String)
-    case decade(Int)
-}
-
-enum AppSection: String, CaseIterable, Identifiable {
-    case timeline = "Timeline"
-    case eras = "Eras & Styles"
-    case decades = "Decades"
-    case artists = "Artists"
-    case albums = "The Crate"
-    case connections = "Connections"
-    var id: String { rawValue }
-    var symbol: String {
-        switch self {
-        case .timeline: return "timeline.selection"
-        case .eras: return "square.stack.3d.up.fill"
-        case .decades: return "calendar"
-        case .artists: return "person.2.fill"
-        case .albums: return "square.grid.3x3.fill"
-        case .connections: return "point.3.connected.trianglepath.dotted"
-        }
-    }
-}
-
-@Observable
-final class Router {
-    var section: AppSection = .timeline
-    var path: [Route] = []
-
-    func go(_ route: Route) { path.append(route) }
-    func back() { if !path.isEmpty { path.removeLast() } }
-    func show(_ section: AppSection) { self.section = section; path = [] }
 }

@@ -6,6 +6,9 @@ section for the tagged version at the top of the GitHub release notes (or **Unre
 
 ## Unreleased
 
+- Mac: `jazzdiscovery://` links open pages in the Mac app too (`jazzdiscovery://artist/miles-davis`, `era/bebop`,
+  `album/kind-of-blue`…), as they already did on iPhone.
+
 ## 1.0.1
 
 - **Privacy**: the app no longer keeps or sends cookies when it looks things up, and YouTube's player (now its

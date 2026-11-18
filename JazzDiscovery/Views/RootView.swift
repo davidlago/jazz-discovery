@@ -4,7 +4,7 @@ struct RootView: View {
     @Environment(Router.self) private var router
     @Environment(JazzLibrary.self) private var library
     @Environment(PlayerController.self) private var player
-    @State private var query = ""
+    @Environment(\.openSettings) private var openSettings
 
     var body: some View {
         @Bindable var router = router
@@ -14,8 +14,8 @@ struct RootView: View {
         } detail: {
             NavigationStack(path: $router.path) {
                 Group {
-                    if !query.trimmingCharacters(in: .whitespaces).isEmpty {
-                        SearchResultsView(query: query)
+                    if !router.query.trimmingCharacters(in: .whitespaces).isEmpty {
+                        SearchResultsView(query: router.query)
                     } else {
                         switch router.section {
                         case .timeline: HomeView()
@@ -40,8 +40,12 @@ struct RootView: View {
             .safeAreaInset(edge: .bottom, spacing: 0) { NowPlayingBar() }
             .animation(.spring(response: 0.35), value: player.current)
         }
-        .searchable(text: $query, placement: .sidebar, prompt: "Artists, albums, eras")
-        .onChange(of: router.path) { if !router.path.isEmpty, !query.isEmpty { query = "" } }
+        .searchable(text: $router.query, placement: .sidebar, prompt: "Artists, albums, eras")
+        .onChange(of: router.path) { if !router.path.isEmpty, !router.query.isEmpty { router.query = "" } }
+        .onOpenURL { url in
+            guard let link = DeepLink(url, library: library) else { return }
+            if link == .settings { openSettings() } else { router.open(link) }
+        }
         .overlay(alignment: .top) { ErrorToast() }
     }
 }
@@ -71,8 +75,7 @@ struct Sidebar: View {
                 Section("Eras") {
                     ForEach(library.eras) { era in
                         Button {
-                            router.show(.eras)
-                            router.go(.era(era.id))
+                            router.show(.era(era.id))
                         } label: {
                             HStack(spacing: 8) {
                                 RoundedRectangle(cornerRadius: 2).fill(era.tint).frame(width: 10, height: 10)

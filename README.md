@@ -88,9 +88,23 @@ xcodebuild -project JazzDiscovery.xcodeproj -scheme JazzDiscoveryMobile -destina
 Its signing settings are in `iOS/Signing.xcconfig` (overrides, such as another team or the app's own Last.fm API key,
 go in `iOS/Local.xcconfig`, which isn't committed). `scripts/install-iphone.sh` builds it and installs it on a
 connected development iPhone, signed with your development profile (no Apple ID in Xcode needed). Release tags upload it to TestFlight from CI (`scripts/testflight.sh`) and
-`scripts/app-store-screenshots.sh` takes the App Store screenshots; see [docs/app-store.md](docs/app-store.md). Links
-like `jazzdiscovery://artist/miles-davis`, `era/bebop`, `album/kind-of-blue`, `decade/1950`, `connections`,
-`now-playing` and `settings` open those screens (`xcrun simctl openurl booted …`).
+`scripts/app-store-screenshots.sh` takes the App Store screenshots; see [docs/app-store.md](docs/app-store.md).
+
+### Links
+
+Links like `jazzdiscovery://artist/miles-davis`, `era/bebop`, `album/kind-of-blue`, `decade/1950`, `decades`,
+`connections[/<artist>]`, `tab/search?q=…`, `now-playing` and `settings` open those screens, in both apps (`open …` on
+the Mac, `xcrun simctl openurl <device> …` in the simulator). `Shared/Model/Route.swift` parses them, and only accepts
+pages that exist; a link never starts music.
+
+### Tests
+
+```bash
+xcodebuild test -project JazzDiscovery.xcodeproj -scheme JazzDiscoveryTests -destination 'platform=macOS'
+```
+
+or ⌘U in Xcode with the JazzDiscovery scheme. The tests in `Tests/` cover the shared code (`Shared/`, which the test
+bundle compiles itself, with no app to host it, so it needs no signing), and CI runs them on every push.
 
 After you edit `jazz.json`, refresh the album catalog. The script only looks up albums it hasn't resolved yet:
 
@@ -100,7 +114,7 @@ python3 -I scripts/build-catalog.py
 
 ### Releases
 
-CI (`.github/workflows/ci.yml`) checks the data and builds the app on every push and pull request. Those builds are ad-hoc signed and attached to the run as an artifact. Pushing a `vX.Y.Z` tag does more:
+CI (`.github/workflows/ci.yml`) checks the data, runs the tests and builds the app on every push and pull request. Those builds are ad-hoc signed and attached to the run as an artifact. Pushing a `vX.Y.Z` tag does more:
 
 1. Builds a universal app signed with the Developer ID certificate.
 2. Notarizes and staples it.
@@ -139,7 +153,7 @@ To sign and notarize locally, run `SIGN_IDENTITY="Developer ID Application: …"
 
 ```
 Shared/                       used by both apps
-  Model/                      data types, JazzLibrary (lookups/search), Theme
+  Model/                      data types, JazzLibrary (lookups/search), Route (pages and jazzdiscovery:// links), Theme
   Services/                   Wikipedia, ITunes, YouTube, Player (MusicKit + previews), LastFM, HTTP/DiskCache, Platform
   Design/                     remote images, duotone portraits, album covers, FlowLayout, the Connections graph layout
   Resources/jazz.json         curated content
@@ -147,9 +161,11 @@ Shared/                       used by both apps
 JazzDiscovery/                the Mac app: JazzDiscoveryApp (menus, Settings), Views/, Diagnostics/ (--self-test, --snapshots)
 iOS/JazzDiscoveryMobile/      the iPhone app: tabs, pages, player, Connections map, Settings
 iOS/Signing.xcconfig          the iPhone app's team, bundle ID and optional Last.fm API account; Version.xcconfig
+Tests/                        unit tests of the shared code (Swift Testing; the JazzDiscoveryTests scheme)
 scripts/                      build-app.sh, notarize.sh, validate-data.py, build-catalog.py, make-icon.swift (--ios),
                               import-certificate.sh / set-signing-secret.sh (CI signing), testflight.sh,
                               provisioning-profiles.swift, select-xcode.sh, app-store-screenshots.sh
-docs/                         app-store.md (iPhone release guide and listing), privacy.md, app-store/ (screenshots)
-.github/workflows/ci.yml      build both apps on every push; on vX.Y.Z tags, release the Mac app and upload the iPhone app
+docs/                         app-store.md (iPhone release guide and listing), privacy.md, app-store/ (screenshots),
+                              roadmap/ (the plan for 1.1–1.8)
+.github/workflows/ci.yml      test and build both apps on every push; on vX.Y.Z tags, release the Mac app and upload the iPhone app
 ```

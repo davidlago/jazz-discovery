@@ -25,6 +25,8 @@ struct JazzDiscoveryApp: App {
                 .environment(player)
                 .preferredColorScheme(.dark)
                 .frame(minWidth: 1100, minHeight: 720)
+                // jazzdiscovery:// links go to the open window instead of opening another one.
+                .handlesExternalEvents(preferring: ["*"], allowing: ["*"])
         }
         .windowToolbarStyle(.unified)
         .defaultSize(width: 1440, height: 900)
