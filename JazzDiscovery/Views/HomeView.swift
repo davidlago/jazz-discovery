@@ -11,6 +11,17 @@ struct HomeView: View {
 
                 ContinueSection()
 
+                VStack(alignment: .leading, spacing: 6) {
+                    HStack(alignment: .firstTextBaseline) {
+                        SectionHeader(title: "Radio", subtitle: "Stations that keep playing, and say why each track is there.")
+                        Spacer()
+                        Button("All Stations →") { router.show(.radio) }.buttonStyle(.plain)
+                            .font(.system(size: 13, weight: .semibold)).foregroundStyle(Theme.brass)
+                    }
+                    .padding(.horizontal, 40)
+                    HRow(spacing: 22) { RadioRow() }
+                }
+
                 VStack(alignment: .leading, spacing: 14) {
                     SectionHeader(title: "The River of Jazz",
                                   subtitle: "130 years of styles flowing, overlapping and splitting. Click a style to dive in; hover a dot for a turning point.")
@@ -48,7 +59,7 @@ struct HomeView: View {
             .padding(.bottom, 50)
         }
         .background(Theme.ink)
-        .navigationTitle("Timeline")
+        .navigationTitle("Discover")
     }
 }
 

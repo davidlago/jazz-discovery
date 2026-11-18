@@ -131,6 +131,27 @@ if os.path.exists(sessions_path):
     print(f"sessions.json: {reviewed} of {len(albums)} albums reviewed, {len(sessions) - reviewed} drafts, "
           f"{missing} not drafted")
 
+# tracks.json: every key is a track the data still names; albums and eras resolve; thin eras reported.
+tp = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "Shared", "Resources", "tracks.json")
+if os.path.exists(tp):
+    named = set()
+    for e in data["eras"]:
+        named |= {f"{t['artist']}|{t['title']}" for t in e["essentialTracks"]}
+    for al in data["albums"]:
+        named |= {f"{al['artistName']}|{h}" for h in al["highlights"]}
+    for a in data["artists"]:
+        named |= {f"{a['name']}|{t}" for t in a["signatureTracks"]}
+    tracks = json.load(open(tp))
+    per_era = {}
+    for k, t in tracks.items():
+        if k not in named: errors.append(f"tracks.json: {k} isn't named anywhere in jazz.json (rerun build-tracks.py)")
+        if t.get("album") and t["album"] not in albums: errors.append(f"tracks.json: {k}: unknown album {t['album']}")
+        era = t.get("era") or (next((a["era"] for a in data["albums"] if a["id"] == t.get("album")), None))
+        if era and era not in eras: errors.append(f"tracks.json: {k}: unknown era {era}")
+        if era: per_era[era] = per_era.get(era, 0) + 1
+    thin = [f"{e} ({per_era.get(e, 0)})" for e in eras if per_era.get(e, 0) < 12]
+    print(f"tracks.json: {len(tracks)} of {len(named)} named tracks resolved" + (f"; thin stations: {', '.join(thin)}" if thin else ""))
+
 if warnings:
     print("\n".join("warning: " + w for w in warnings))
 if errors:

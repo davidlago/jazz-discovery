@@ -337,7 +337,15 @@ struct NowPlayingView: View {
                     .accessibilityLabel("More")
                 }
 
-                SourceLine(np: np)
+                if player.isBlind {
+                    Text("A Blindfold Test clip: the answer is on the game's page.").font(.caption).foregroundStyle(Theme.muted)
+                } else {
+                    SourceLine(np: np)
+                }
+
+                WhyThisTrack(compact: true,
+                             openAlbum: { router.go(.album($0)) }, openArtist: { router.go(.artist($0)) },
+                             openEra: { router.go(.era($0)) })
 
                 Scrubber(elapsed: player.elapsed, duration: player.duration) { player.seek(to: $0) }
 

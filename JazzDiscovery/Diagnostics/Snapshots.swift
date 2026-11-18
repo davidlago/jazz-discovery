@@ -35,6 +35,8 @@ enum Snapshots {
             ("09-album-detail", { router.show(.album(album.id)) }),
             ("10-connections", { router.show(.connections) }),
             ("11-passport", { router.show(.passport) }),
+            ("12-radio", { router.show(.radio) }),
+            ("13-blindfold", { router.show(.blindfold) }),
         ]
         // A passport with something in it (in memory only: snapshots don't touch the real one).
         passport.fillWithDemo(library: library)

@@ -3,16 +3,19 @@ import Observation
 
 /// The Mac app's sidebar sections.
 enum AppSection: String, CaseIterable, Identifiable {
-    case timeline = "Timeline"
+    case timeline = "Discover"
     case eras = "Eras & Styles"
     case decades = "Decades"
     case artists = "Artists"
     case albums = "The Crate"
     case connections = "Connections"
+    case radio = "Radio"
+    case blindfold = "Blindfold Test"
     case passport = "Passport"
     var id: String { rawValue }
-    /// The sections under Explore in the sidebar (Passport has its own, You).
-    static var explore: [AppSection] { allCases.filter { $0 != .passport } }
+    /// The sections under Explore in the sidebar (Listen and You have their own).
+    static var explore: [AppSection] { allCases.filter { ![.passport, .radio, .blindfold].contains($0) } }
+    static var listen: [AppSection] { [.radio, .blindfold] }
     var symbol: String {
         switch self {
         case .timeline: return "timeline.selection"
@@ -22,6 +25,8 @@ enum AppSection: String, CaseIterable, Identifiable {
         case .albums: return "square.grid.3x3.fill"
         case .connections: return "point.3.connected.trianglepath.dotted"
         case .passport: return "checkmark.seal.fill"
+        case .radio: return "dot.radiowaves.left.and.right"
+        case .blindfold: return "eyes"
         }
     }
 
@@ -85,9 +90,15 @@ final class Router {
         case .passport:
             query = ""
             show(.passport)
+        case .radio:
+            query = ""
+            show(.radio)
+        case .blindfold:
+            query = ""
+            show(.blindfold)
         case .tab(let tab, let q):
             switch tab {
-            case .timeline: query = ""; show(.timeline)
+            case .timeline, .discover: query = ""; show(.timeline)
             case .eras: query = ""; show(.eras)
             case .artists: query = ""; show(.artists)
             case .crate: query = ""; show(.albums)

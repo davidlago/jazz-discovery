@@ -57,7 +57,7 @@ struct PhoneRootView: View {
     var body: some View {
         @Bindable var router = router
         TabView(selection: router.tabSelection) {
-            Tab("Timeline", systemImage: "timeline.selection", value: PhoneTab.timeline) {
+            Tab("Discover", systemImage: "sparkles", value: PhoneTab.timeline) {
                 TabStack(tab: .timeline) { TimelineTab() }
             }
             Tab("Eras", systemImage: "square.stack.3d.up.fill", value: PhoneTab.eras) {
@@ -113,6 +113,8 @@ struct RouteView: View {
         case .decades: DecadesPage()
         case .connections(let focus): ConnectionsMapView(focus: focus)
         case .passport: PassportView()
+        case .radio: RadioPage()
+        case .blindfold: BlindfoldPage()
         }
     }
 }

@@ -6,6 +6,22 @@ section for the tagged version at the top of the GitHub release notes (or **Unre
 
 ## Unreleased
 
+## 1.3.0
+
+- **Radio**: stations that keep playing, one per era, decade and instrument, plus **The Long Way** (130 years in order,
+  two or three tracks per era) and, once you've heard something, **New to You**. Never the same artist twice in a row
+  or the same record twice in five tracks, and each station opens with one of its era's essential tracks.
+- **Why this track**: while a station plays, the player says why the track is there (from its record's story, that
+  year's turning point or the artist) and links to its record, artist and era.
+- **The Blindfold Test**: ten clips with the cover hidden. Which era? Who's playing? What's the lead instrument? Which
+  came first? Easy or hard, across every era or just one; the sleeve turns over to show what it was. Your answers add
+  up in your passport ("Your ear knows Hard Bop; Swing needs work"). Clips never show on the lock screen.
+- *Play Radio* on every era and decade page; a Radio row and a Blindfold Test card on the home screen.
+- The first tab is now **Discover** (the Mac's Timeline too); `jazzdiscovery://tab/discover`, `radio` and `blindfold`
+  links.
+- Every named track and every Crate album's tracklist now comes with the app, so era, artist and album pages show
+  their tracks at once. A preview whose link has gone stale is looked up again.
+
 ## 1.2.0
 
 - **Passport**: mark the records you've heard and save the ones to come back to (on every album page, and in any

@@ -57,6 +57,14 @@ final class PlayerController {
     /// The Apple Music album a queue was started from, or the album of each song in it.
     @ObservationIgnored private var queueCollectionId: Int?
     @ObservationIgnored private var songCollections: [String: Int] = [:]
+    /// The station playing, if any, and its tracks by song ID (for "why this track").
+    private(set) var station: Station?
+    @ObservationIgnored private var stationTracks: [Int: StationTrack] = [:]
+    /// More of the station, for when a preview queue runs low.
+    @ObservationIgnored private var stationRefill: (() -> [StationTrack])?
+    /// A Blindfold Test clip is playing: nothing that would give it away is shown or published.
+    private(set) var isBlind = false
+    @ObservationIgnored private var refreshedPreviews: Set<Int> = []
     /// The Apple Music album that just played to its end (for the three doors), until something else plays.
     private(set) var finishedCollectionId: Int?
     /// The last track of an album queue is about to end.
@@ -195,6 +203,8 @@ final class PlayerController {
     func play(_ tracks: [CatalogTrack], startAt index: Int = 0, key: String? = nil) {
         guard tracks.indices.contains(index) else { return }
         finishedCollectionId = nil; nearEndOfAlbum = false
+        if !startingStation { station = nil; stationTracks = [:]; stationRefill = nil }
+        isBlind = false
         let k = key ?? "track-\(tracks[index].trackId)"
         loadingKey = k
         currentTrackID = tracks[index].trackId
@@ -207,8 +217,37 @@ final class PlayerController {
 
     func play(_ track: CatalogTrack) { play([track], startAt: 0) }
 
+    @ObservationIgnored private var startingStation = false
+
+    /// Plays a station: its first tracks now, and more from `refill` when a preview queue runs low (an Apple Music
+    /// queue gets a hundred tracks, hours of music).
+    func playStation(_ station: Station, tracks: [StationTrack], refill: @escaping () -> [StationTrack]) {
+        guard !tracks.isEmpty else { return }
+        self.station = station
+        stationTracks = Dictionary(tracks.map { ($0.id, $0) }, uniquingKeysWith: { a, _ in a })
+        stationRefill = refill
+        startingStation = true
+        play(tracks.map(\.track), startAt: 0, key: "station-\(station.id)")
+        startingStation = false
+    }
+
+    /// The station track playing now, for its reason.
+    var currentStationTrack: StationTrack? { currentTrackID.flatMap { stationTracks[$0] } }
+
+    /// Plays a Blindfold Test clip: always the 30-second preview, shown and published as a mystery.
+    func playBlind(_ track: CatalogTrack) {
+        guard track.preview != nil else { return }
+        finishedCollectionId = nil
+        station = nil; stationTracks = [:]; stationRefill = nil
+        isBlind = true
+        previewQueue = [track]
+        switchTo(.preview)
+        startPreview(at: 0)
+    }
+
     func playAlbum(_ album: CatalogAlbum, tracks: [CatalogTrack]) {
         finishedCollectionId = nil; nearEndOfAlbum = false
+        station = nil; stationTracks = [:]; stationRefill = nil; isBlind = false
         let k = "album-\(album.collectionId)"
         loadingKey = k
         Task {
@@ -275,6 +314,7 @@ final class PlayerController {
         avPlayer.replaceCurrentItem(with: nil)
         if mode == .appleMusic { ApplicationMusicPlayer.shared.stop() }
         endScrobbleTracking()
+        station = nil; stationTracks = [:]; stationRefill = nil; isBlind = false
         mode = .none
         quality = nil; songBest = nil; variantsEntryID = nil
         #if os(macOS)
@@ -406,9 +446,14 @@ final class PlayerController {
         elapsed = 0
         duration = 30
         currentTrackID = t.trackId
-        current = NowPlaying(title: t.name, artist: t.artistName, artwork: t.artwork(600),
-                             appleMusicURL: t.url, isFullTrack: false)
-        onListen?(ListenEvent(songID: String(t.trackId), collectionId: t.collectionId, full: false))
+        if isBlind {
+            current = NowPlaying(title: "Blindfold Test", artist: "Who's playing?", artwork: nil, appleMusicURL: nil,
+                                 isFullTrack: false)
+        } else {
+            current = NowPlaying(title: t.name, artist: t.artistName, artwork: t.artwork(600),
+                                 appleMusicURL: t.url, isFullTrack: false)
+            onListen?(ListenEvent(songID: String(t.trackId), collectionId: t.collectionId, full: false))
+        }
         #if os(iOS)
         updateNowPlayingInfo()
         #endif
@@ -416,6 +461,10 @@ final class PlayerController {
 
     private func previewEnded() {
         guard mode == .preview else { return }
+        if previewIndex + 1 >= previewQueue.count, station != nil, let more = stationRefill?(), !more.isEmpty {
+            for t in more { stationTracks[t.id] = t }
+            previewQueue += more.map(\.track).filter { $0.preview != nil }
+        }
         if previewIndex + 1 < previewQueue.count { startPreview(at: previewIndex + 1) }
         else {
             isPlaying = false; elapsed = duration
@@ -450,6 +499,7 @@ final class PlayerController {
         case .preview:
             let t = avPlayer.currentTime().seconds
             if t.isFinite { elapsed = t }
+            if avPlayer.currentItem?.status == .failed { refreshPreview() }
             if let d = avPlayer.currentItem?.duration.seconds, d.isFinite, d > 0 { duration = d }
         case .appleMusic:
             let p = ApplicationMusicPlayer.shared
@@ -463,6 +513,7 @@ final class PlayerController {
                     if let art = entry.artwork?.url(width: 600, height: 600) { current?.artwork = art }
                 }
                 if case .song(let s)? = entry.item, let d = s.duration { duration = d }
+                if case .song(let s)? = entry.item, let id = Int(s.id.rawValue), currentTrackID != id { currentTrackID = id }
                 sameEntry = entry.id == scrobbleEntryID
                 trackForScrobbling(entry)
                 lookUpVariants(entry)
@@ -485,6 +536,20 @@ final class PlayerController {
         case .none: break
         }
         if mode != .none { refreshOutput() }
+    }
+
+    /// A stored preview link that no longer works: look the song up again once, and play the fresh link.
+    private func refreshPreview() {
+        guard previewQueue.indices.contains(previewIndex) else { return }
+        let t = previewQueue[previewIndex]
+        guard refreshedPreviews.insert(t.trackId).inserted else { return }
+        let index = previewIndex
+        Task {
+            guard let fresh = await ITunes.shared.refresh(trackId: t.trackId), fresh.preview != nil, fresh.preview != t.preview,
+                  mode == .preview, previewIndex == index, previewQueue.indices.contains(index) else { return }
+            previewQueue[index] = fresh
+            startPreview(at: index)
+        }
     }
 
     // MARK: Listening (for the passport)
@@ -622,7 +687,7 @@ final class PlayerController {
             MPNowPlayingInfoPropertyElapsedPlaybackTime: elapsed,
             MPNowPlayingInfoPropertyPlaybackRate: isPlaying ? 1.0 : 0.0,
         ]
-        if let album = previewQueue.indices.contains(previewIndex) ? previewQueue[previewIndex].albumName : nil {
+        if !isBlind, let album = previewQueue.indices.contains(previewIndex) ? previewQueue[previewIndex].albumName : nil {
             info[MPMediaItemPropertyAlbumTitle] = album
         }
         center.nowPlayingInfo = info

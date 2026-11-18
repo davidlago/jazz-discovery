@@ -91,6 +91,9 @@ struct DecadeDetailView: View {
                             .padding(.bottom, -30)
                         Spacer()
                         HStack(spacing: 10) {
+                            if let station = StationStarter.station(decade: decade, library: library) {
+                                PlayRadioButton(station: station)
+                            }
                             if decade > library.decades.first! {
                                 Button { router.go(.decade(decade - 10)) } label: { Label("\(String(decade - 10))s", systemImage: "chevron.left") }
                             }

@@ -77,7 +77,10 @@ struct EraDetailView: View {
             VStack(alignment: .leading, spacing: 40) {
                 HeroBanner(imageURL: heroImage, tint: era.tint,
                            kicker: era.years, title: era.name, subtitle: era.tagline, height: 420) {
-                    EraProgressBadge(era: era)
+                    VStack(alignment: .trailing, spacing: 14) {
+                        EraProgressBadge(era: era)
+                        if let station = StationStarter.station(era: era.id, library: library) { PlayRadioButton(station: station) }
+                    }
                 }
 
                 HStack(alignment: .top, spacing: 40) {

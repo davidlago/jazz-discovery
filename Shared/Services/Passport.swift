@@ -46,16 +46,30 @@ struct PassportMark: Codable, Equatable {
     }
 }
 
+/// Blindfold Test answers for one era.
+struct EarScore: Codable, Equatable {
+    var right: Int
+    var total: Int
+    var at: Date
+}
+
 struct PassportData: Codable, Equatable {
     var albums: [String: PassportMark] = [:]
     var artists: [String: PassportMark] = [:]
+    /// Blindfold Test results by era (added in 1.3).
+    var ears: [String: EarScore]? = nil
 
     /// Both orders give the same result.
     static func merged(_ a: PassportData, _ b: PassportData) -> PassportData {
         func merge(_ x: [String: PassportMark], _ y: [String: PassportMark]) -> [String: PassportMark] {
             x.merging(y) { PassportMark.merged($0, $1) }
         }
-        return PassportData(albums: merge(a.albums, b.albums), artists: merge(a.artists, b.artists))
+        // Scores: the more recently updated copy of each era's tally.
+        let ears = (a.ears ?? [:]).merging(b.ears ?? [:]) { x, y in
+            x.at != y.at ? (x.at > y.at ? x : y) : (x.total >= y.total ? x : y)
+        }
+        return PassportData(albums: merge(a.albums, b.albums), artists: merge(a.artists, b.artists),
+                            ears: ears.isEmpty ? nil : ears)
     }
 }
 
@@ -228,6 +242,11 @@ final class Passport {
         save()
     }
 
+    fileprivate func replaceEars(_ ears: [String: EarScore]) {
+        data.ears = ears
+        save()
+    }
+
     func erase() {
         data = PassportData()
         save()
@@ -277,5 +296,34 @@ extension Passport {
         }
         for (i, a) in library.albums.enumerated() where i % 7 == 1 { setSaved(a.id, true) }
         for id in ["thelonious-monk", "mary-lou-williams", "nubya-garcia"] where library.artist(id) != nil { toggleSaved(artist: id) }
+    }
+}
+
+extension Passport {
+    /// Counts a Blindfold Test answer toward its era.
+    func recordAnswer(era: String, right: Bool, at: Date = .now) {
+        var ears = data.ears ?? [:]
+        var s = ears[era] ?? EarScore(right: 0, total: 0, at: Self.stamp(at))
+        s.total += 1
+        if right { s.right += 1 }
+        s.at = Self.stamp(at)
+        ears[era] = s
+        replaceEars(ears)
+    }
+
+    /// "Your ear knows Hard Bop; Swing needs work." Once there are a few answers in two eras or more.
+    func earSummary(library: JazzLibrary) -> String? {
+        let scored = (data.ears ?? [:]).filter { $0.value.total >= 3 }.compactMap { id, s -> (Era, Double)? in
+            library.era(id).map { ($0, Double(s.right) / Double(s.total)) }
+        }
+        guard scored.count >= 2, let best = scored.max(by: { $0.1 < $1.1 }), let worst = scored.min(by: { $0.1 < $1.1 }),
+              best.0.id != worst.0.id else { return nil }
+        return "Your ear knows \(best.0.name); \(worst.0.name) needs work."
+    }
+
+    /// The era your ear knows least, for a station to practise with.
+    func weakestEar() -> String? {
+        (data.ears ?? [:]).filter { $0.value.total >= 3 }
+            .min { Double($0.value.right) / Double($0.value.total) < Double($1.value.right) / Double($1.value.total) }?.key
     }
 }

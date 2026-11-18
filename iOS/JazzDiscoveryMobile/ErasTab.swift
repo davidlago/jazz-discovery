@@ -103,6 +103,10 @@ struct EraDetailView: View {
 
                 EraProgressRow(era: era)
 
+                if let station = StationStarter.station(era: era.id, library: library) {
+                    PlayRadioButton(station: station).padding(.horizontal, Theme.gutter).padding(.top, -16)
+                }
+
                 VStack(alignment: .leading, spacing: 16) {
                     ForEach(era.summary.components(separatedBy: "\n\n"), id: \.self) { p in
                         Text(p).font(.system(.body, design: .serif)).lineSpacing(5)
@@ -351,6 +355,9 @@ struct DecadeDetailView: View {
                             .minimumScaleFactor(0.6).lineLimit(1)
                             .padding(.bottom, -22)
                             .accessibilityAddTraits(.isHeader)
+                        if let station = StationStarter.station(decade: decade, library: library) {
+                            PlayRadioButton(station: station)
+                        }
                         HStack(spacing: 10) {
                             if decade > library.decades.first! {
                                 NavigationLink(value: PhoneRoute.decade(decade - 10)) {

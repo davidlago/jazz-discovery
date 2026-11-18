@@ -46,6 +46,22 @@ actor ITunes {
               let map = try? JSONDecoder().decode([String: CatalogAlbum].self, from: data) else { return [:] }
         return map
     }()
+    /// Named tracks resolved ahead of time (tracks.json), by "artist|title".
+    private lazy var bundledTracks: [String: CatalogTrack] = {
+        guard let url = Bundle.main.url(forResource: "tracks", withExtension: "json"),
+              let data = try? Data(contentsOf: url),
+              let map = try? JSONDecoder().decode([String: CatalogTrack].self, from: data) else { return [:] }
+        return map
+    }()
+    /// Crate albums' tracklists (tracklists.json), by Apple Music album ID.
+    private lazy var bundledLists: [Int: [CatalogTrack]] = {
+        guard let url = Bundle.main.url(forResource: "tracklists", withExtension: "json"),
+              let data = try? Data(contentsOf: url),
+              let map = try? JSONDecoder().decode([String: [CatalogTrack]].self, from: data) else { return [:] }
+        var out: [Int: [CatalogTrack]] = [:]
+        for (albumID, list) in map { if let c = bundled[albumID]?.collectionId { out[c] = list } }
+        return out
+    }()
     private var lastRequest = Date.distantPast
     private var inflight: [String: Task<Data?, Never>] = [:]
 
@@ -156,6 +172,7 @@ actor ITunes {
     }
 
     func tracks(collectionId: Int) async -> [CatalogTrack] {
+        if let list = bundledLists[collectionId], !list.isEmpty { return list }
         let key = "itunes-tracks-v1-\(collectionId)"
         if let c = await DiskCache.shared.get(key, as: [CatalogTrack].self) { return c }
         guard let d = await fetch("https://itunes.apple.com/lookup?id=\(collectionId)&entity=song&limit=200"),
@@ -168,6 +185,7 @@ actor ITunes {
 
     /// Best catalog match for a named track by an artist.
     func track(_ title: String, artist: String) async -> CatalogTrack? {
+        if let t = bundledTracks["\(artist)|\(title)"] { return refreshed[t.trackId] ?? t }
         let key = "itunes-track-v1-\(artist)-\(title)"
         if let c = await DiskCache.shared.get(key, as: CatalogTrack.self) { return c }
         guard let d = await fetch("https://itunes.apple.com/search?term=\(q(artist + " " + title))&entity=song&media=music&limit=15"),
@@ -187,6 +205,19 @@ actor ITunes {
         guard let best = tracks.max(by: { score($0) < score($1) }), score(best) >= 8 else { return nil }
         await DiskCache.shared.set(key, best)
         return best
+    }
+
+    /// Tracks looked up again because their stored preview link stopped working.
+    private var refreshed: [Int: CatalogTrack] = [:]
+
+    /// Looks a song up again by its ID, for a fresh preview link (Apple changes them now and then). Once per song.
+    func refresh(trackId: Int) async -> CatalogTrack? {
+        if let r = refreshed[trackId] { return r }
+        guard let d = await fetch("https://itunes.apple.com/lookup?id=\(trackId)"),
+              let r = try? JSONDecoder().decode(Response.self, from: d), let t = r.results.compactMap(\.track).first
+        else { return nil }
+        refreshed[trackId] = t
+        return t
     }
 
     /// Most popular songs for an artist on Apple Music.
