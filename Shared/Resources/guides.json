@@ -97,11 +97,13 @@
     },
     {
       "album": "hot-five-hot-seven",
+      "duration": 198.5,
       "form": "A twelve-bar blues, slow: an unaccompanied opening, five choruses, a short ending.",
       "id": "west-end-blues",
       "intro": "Three minutes from 1928 that changed what a jazz record could be. It opens with a trumpet alone, unaccompanied, and every chorus after that puts one voice in front: the soloist had arrived.",
       "sections": [
         {
+          "at": 0,
           "kind": "intro",
           "label": "The opening call",
           "note": "Armstrong alone, in free time: a phrase that climbs, tumbles down in a rush of notes and lands. No one had opened a record like this. Listen for how sure every note sounds.",
@@ -110,6 +112,7 @@
           ]
         },
         {
+          "at": 15,
           "kind": "head",
           "label": "The theme",
           "note": "The band comes in at a slow walk. Armstrong carries the melody while clarinet and trombone weave around him, the New Orleans way. Twelve bars: the blues.",
@@ -122,6 +125,7 @@
           ]
         },
         {
+          "at": 50,
           "kind": "solo",
           "label": "Trombone",
           "note": "Fred Robinson's trombone takes a chorus, plainly, keeping close to the tune, with the band quiet behind him.",
@@ -130,6 +134,7 @@
           ]
         },
         {
+          "at": 85,
           "kind": "trading",
           "label": "Clarinet and voice",
           "note": "Jimmy Strong's low clarinet plays a phrase, and Armstrong answers it by singing, without words. Back and forth, phrase by phrase: an instrument and a voice having the same conversation.",
@@ -143,6 +148,7 @@
           ]
         },
         {
+          "at": 120,
           "kind": "solo",
           "label": "Earl Hines",
           "note": "Hines alone at the piano: quick right-hand lines in octaves, like a trumpet played on the keys, darting ahead of the beat and pulling back. It's why he's called the first modern jazz pianist.",
@@ -151,6 +157,7 @@
           ]
         },
         {
+          "at": 155,
           "kind": "ensemble",
           "label": "The last chorus",
           "note": "Armstrong holds a single high note for four bars while the band moves underneath him, then lets it go in a cascade of falling phrases. The held note is the most famous moment on the record.",
@@ -159,6 +166,7 @@
           ]
         },
         {
+          "at": 185,
           "kind": "coda",
           "label": "Ending",
           "note": "Hines plays a short, delicate passage, Armstrong a last quiet phrase, and the band closes on one soft chord.",
@@ -168,16 +176,19 @@
           ]
         }
       ],
+      "songID": 477023924,
       "source": "Gunther Schuller, Early Jazz (1968); Thomas Brothers, Louis Armstrong, Master of Modernism (2014).",
       "track": "Louis Armstrong|West End Blues"
     },
     {
       "album": "hawkins-body-and-soul",
+      "duration": 182.4,
       "form": "AABA, 32 bars. Two choruses of tenor saxophone, start to finish, and a brief ending.",
       "id": "body-and-soul",
       "intro": "A pop ballad, recorded at the end of a session as an afterthought in 1939, that became a hit with almost none of the melody in it. Hawkins improvises on the song's chords for two choruses, and listeners heard where jazz saxophone was going.",
       "sections": [
         {
+          "at": 0,
           "kind": "intro",
           "label": "Introduction",
           "note": "Gene Rodgers's piano, a few bars, setting the slow tempo and the key.",
@@ -186,6 +197,7 @@
           ]
         },
         {
+          "at": 9,
           "kind": "solo",
           "label": "First chorus",
           "note": "Hawkins hints at the melody in the first bars and then leaves it, improvising on the harmony instead. Listen to the tone, big and breathy, and how each phrase flows into the next without a gap.",
@@ -198,6 +210,7 @@
           ]
         },
         {
+          "at": 92,
           "kind": "solo",
           "label": "Second chorus",
           "note": "The band's soft chords stay underneath while he builds: faster runs, higher notes, more force, climbing to the record's peak in the last eight bars.",
@@ -209,6 +222,7 @@
           ]
         },
         {
+          "at": 172,
           "kind": "coda",
           "label": "Ending",
           "note": "A short phrase on his own to close, and a last held note.",
@@ -217,17 +231,20 @@
           ]
         }
       ],
+      "songID": 298551074,
       "source": "Scott DeVeaux, The Birth of Bebop (1997); John Chilton, The Song of the Hawk (1990).",
       "track": "Coleman Hawkins|Body and Soul",
       "tune": "body-and-soul"
     },
     {
       "album": "time-out",
+      "duration": 328.8,
       "form": "Five beats to the bar, felt as 3 + 2. A vamp, a theme with a bridge, an alto solo and a drum solo over the vamp, the theme again.",
       "id": "take-five",
       "intro": "A hit single in five beats to the bar, when almost all jazz was in four. The trick is that it never feels strange: a piano figure repeats underneath the whole way through, so you can always count it.",
       "sections": [
         {
+          "at": 0,
           "kind": "intro",
           "label": "The vamp",
           "note": "Joe Morello's drums start, then Brubeck's piano sets the figure that won't stop: count ONE-two-three, FOUR-five. Eugene Wright's bass locks in with it.",
@@ -242,6 +259,7 @@
           ]
         },
         {
+          "at": 21,
           "kind": "head",
           "label": "The theme",
           "note": "Paul Desmond's alto plays the melody, cool and light. The middle part moves to new chords and a longer line, then the opening tune comes back.",
@@ -253,6 +271,7 @@
           ]
         },
         {
+          "at": 84,
           "kind": "solo",
           "label": "Paul Desmond",
           "note": "Desmond improvises over the vamp. His phrases float across the bar lines, so the five beats sound natural rather than tricky.",
@@ -261,6 +280,7 @@
           ]
         },
         {
+          "at": 176,
           "kind": "solo",
           "label": "Joe Morello",
           "note": "The drum solo, with piano and bass still playing the vamp, so the count is never lost. Morello plays against the five, with accents that seem to break the bar and then land on ONE.",
@@ -269,6 +289,7 @@
           ]
         },
         {
+          "at": 275,
           "kind": "head-out",
           "label": "The theme again",
           "note": "Desmond brings the melody back, and the piece winds down on the vamp.",
@@ -277,17 +298,20 @@
           ]
         }
       ],
+      "songID": 193085790,
       "source": "Time Out liner notes; Fred Hall, It's About Time: The Dave Brubeck Story (1996).",
       "track": "Dave Brubeck|Take Five",
       "tune": "take-five"
     },
     {
       "album": "moanin",
+      "duration": 572.2,
       "form": "AABA, 32 bars. The A sections are call and response between piano and horns; the bridge is written out for the horns. Solos by trumpet, tenor saxophone, piano and bass.",
       "id": "moanin",
       "intro": "Hard bop at its most direct: a tune that sounds like a church service, then four soloists over Art Blakey's drums. The piano preaches and the horns answer 'amen'.",
       "sections": [
         {
+          "at": 0,
           "kind": "head",
           "label": "The theme",
           "note": "Bobby Timmons plays a bluesy phrase on the piano and the horns answer with two notes, straight from the gospel church. After the bridge, played by the horns together, the call and response comes back.",
@@ -302,6 +326,7 @@
           ]
         },
         {
+          "at": 62,
           "kind": "solo",
           "label": "Lee Morgan",
           "note": "Morgan's trumpet, at twenty: bright and cocky, with smeared notes, half-valve squeezes and a shout at the top of the range. Blakey pushes him from behind.",
@@ -310,6 +335,7 @@
           ]
         },
         {
+          "at": 180,
           "kind": "solo",
           "label": "Benny Golson",
           "note": "Golson's tenor is rounder and more relaxed, with long winding phrases full of the blues.",
@@ -318,6 +344,7 @@
           ]
         },
         {
+          "at": 300,
           "kind": "solo",
           "label": "Bobby Timmons",
           "note": "The tune's composer on piano: gospel figures and block chords, with Blakey's ride cymbal and the backbeat keeping it in church.",
@@ -329,6 +356,7 @@
           ]
         },
         {
+          "at": 420,
           "kind": "solo",
           "label": "Jymie Merritt",
           "note": "A short bass solo, the band dropping back to let it through.",
@@ -337,6 +365,7 @@
           ]
         },
         {
+          "at": 480,
           "kind": "head-out",
           "label": "The theme again",
           "note": "Piano calls, horns answer, once more, and the record ends.",
@@ -347,17 +376,20 @@
           ]
         }
       ],
+      "songID": 1459438988,
       "source": "Moanin' liner notes; Alan Goldsher, Hard Bop Academy (2002).",
       "track": "Art Blakey|Moanin'",
       "tune": "moanin"
     },
     {
       "album": "getz-gilberto",
+      "duration": 317.9,
       "form": "AABA, with a long bridge: 8 + 8 + 16 + 8 bars. Sung in Portuguese, then in English, then a tenor chorus, a little piano, and the last chorus.",
       "id": "the-girl-from-ipanema",
       "intro": "The record that made bossa nova a worldwide sound in 1964: two voices, a tenor saxophone and a guitar, all of them quiet. Everything happens softly, and the rhythm does the work.",
       "sections": [
         {
+          "at": 0,
           "kind": "intro",
           "label": "Guitar",
           "note": "João Gilberto's guitar alone sets up the bossa nova rhythm: the thumb steady on the bass notes, the fingers off the beat.",
@@ -366,6 +398,7 @@
           ]
         },
         {
+          "at": 7,
           "kind": "head",
           "label": "In Portuguese",
           "note": "Gilberto sings the first chorus in Portuguese, so softly it's nearly speech, with the band barely there.",
@@ -374,6 +407,7 @@
           ]
         },
         {
+          "at": 70,
           "kind": "head",
           "label": "In English",
           "note": "Astrud Gilberto sings it in English, plainly, without vibrato. It was her first recording, and the reason the song became a hit.",
@@ -382,6 +416,7 @@
           ]
         },
         {
+          "at": 133,
           "kind": "solo",
           "label": "Stan Getz",
           "note": "Getz takes a chorus on tenor, airy and close to a whisper, staying near the melody's shape.",
@@ -390,6 +425,7 @@
           ]
         },
         {
+          "at": 196,
           "kind": "solo",
           "label": "Jobim",
           "note": "A few bars of Antônio Carlos Jobim's piano, the composer, spare and simple.",
@@ -398,6 +434,7 @@
           ]
         },
         {
+          "at": 228,
           "kind": "head-out",
           "label": "The last chorus",
           "note": "Astrud Gilberto sings again, with Getz playing lines around her, and the record fades.",
@@ -407,6 +444,7 @@
           ]
         }
       ],
+      "songID": 1422656474,
       "source": "Getz/Gilberto liner notes; Ruy Castro, Bossa Nova: The Story of the Brazilian Music That Seduced the World (2000).",
       "track": "Stan Getz & João Gilberto|The Girl from Ipanema",
       "tune": "the-girl-from-ipanema"

@@ -24,11 +24,13 @@ final class GuideEditorModel {
         selectedID = guides.first?.id
     }
 
-    /// Puts the editor's saved work into the library, so guide pages follow it from launch. Saved guides win, but ones
-    /// added to the bundle since are kept, and saved ones it has dropped go.
+    /// Puts the editor's saved work into the library, so guide pages follow it from launch. A saved guide wins when it
+    /// has times of its own (an untimed one was only saved alongside another, and the bundle may have times for it
+    /// since); guides added to the bundle since are kept, and saved ones it has dropped go.
     static func applySaved(to library: JazzLibrary) {
         guard let saved = loadSaved() else { return }
-        let byID = Dictionary(saved.map { ($0.id, $0) }, uniquingKeysWith: { a, _ in a })
+        let byID = Dictionary(saved.filter { $0.sections.contains { $0.at != nil } }.map { ($0.id, $0) },
+                              uniquingKeysWith: { a, _ in a })
         library.guides = library.guides.map { byID[$0.id] ?? $0 }
     }
 
