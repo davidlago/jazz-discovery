@@ -517,7 +517,7 @@
   ]
  },
  "ancestral-recall": {
-  "reviewed": false,
+  "reviewed": true,
   "source": "musicbrainz:release/4553a5c5-e9f4-4e50-b14a-09effb9ec72f",
   "mbReleaseGroup": "414c1abb-e741-43c0-b4d5-291b6d3df97d",
   "edition": "2019-03-22 XW",
@@ -657,11 +657,10 @@
     "name": "Louis H. Marks",
     "role": "producer"
    }
-  ],
-  "edited": true
+  ]
  },
  "art-of-the-trio-vol-1": {
-  "reviewed": false,
+  "reviewed": true,
   "source": "Wikipedia: The Art of the Trio Volume One",
   "mbReleaseGroup": "08a932f2-ab57-39b9-a154-c2f96b5d1321",
   "edition": "1997 None",
@@ -718,8 +717,7 @@
     "name": "Matt Pierson",
     "role": "producer"
    }
-  ],
-  "edited": true
+  ]
  },
  "back-at-the-chicken-shack": {
   "reviewed": true,
@@ -1064,6 +1062,275 @@
     "name": "Harry “Sweets” Edison",
     "role": "arranger"
    }
+  ],
+  "edited": true
+ },
+ "billie-commodore": {
+  "reviewed": false,
+  "source": "Jazzdisco: Billie Holiday discography",
+  "tracks": [
+   "Strange Fruit",
+   "Yesterdays",
+   "Fine and Mellow",
+   "I Gotta Right to Sing the Blues",
+   "How Am I to Know?",
+   "My Old Flame",
+   "I'll Get By",
+   "I Cover the Waterfront",
+   "I'll Be Seeing You",
+   "I'm Yours",
+   "Embraceable You",
+   "As Time Goes By",
+   "He's Funny That Way",
+   "Lover, Come Back to Me",
+   "Billie's Blues",
+   "On the Sunny Side of the Street"
+  ],
+  "personnel": [
+   {
+    "artist": "billie-holiday",
+    "name": "Billie Holiday",
+    "instruments": [
+     "vocals"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Frankie Newton",
+    "instruments": [
+     "trumpet"
+    ],
+    "only": [
+     "Strange Fruit",
+     "Yesterdays",
+     "Fine and Mellow",
+     "I Gotta Right to Sing the Blues"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Tab Smith",
+    "instruments": [
+     "soprano saxophone",
+     "alto saxophone"
+    ],
+    "only": [
+     "Strange Fruit",
+     "Yesterdays",
+     "Fine and Mellow",
+     "I Gotta Right to Sing the Blues"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Kenneth Hollon",
+    "instruments": [
+     "tenor saxophone"
+    ],
+    "only": [
+     "Strange Fruit",
+     "Yesterdays",
+     "Fine and Mellow",
+     "I Gotta Right to Sing the Blues"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Stanley Payne",
+    "instruments": [
+     "tenor saxophone"
+    ],
+    "only": [
+     "Strange Fruit",
+     "Yesterdays",
+     "Fine and Mellow",
+     "I Gotta Right to Sing the Blues"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Sonny White",
+    "instruments": [
+     "piano"
+    ],
+    "only": [
+     "Strange Fruit",
+     "Yesterdays",
+     "Fine and Mellow",
+     "I Gotta Right to Sing the Blues"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Jimmy McLin",
+    "instruments": [
+     "guitar"
+    ],
+    "only": [
+     "Strange Fruit",
+     "Yesterdays",
+     "Fine and Mellow",
+     "I Gotta Right to Sing the Blues"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "John Williams",
+    "instruments": [
+     "bass"
+    ],
+    "only": [
+     "Strange Fruit",
+     "Yesterdays",
+     "Fine and Mellow",
+     "I Gotta Right to Sing the Blues"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Eddie Dougherty",
+    "instruments": [
+     "drums"
+    ],
+    "only": [
+     "Strange Fruit",
+     "Yesterdays",
+     "Fine and Mellow",
+     "I Gotta Right to Sing the Blues"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Doc Cheatham",
+    "instruments": [
+     "trumpet"
+    ],
+    "only": [
+     "How Am I to Know?",
+     "My Old Flame",
+     "I'll Get By",
+     "I Cover the Waterfront",
+     "I'll Be Seeing You",
+     "I'm Yours",
+     "Embraceable You",
+     "As Time Goes By"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Vic Dickenson",
+    "instruments": [
+     "trombone"
+    ],
+    "only": [
+     "How Am I to Know?",
+     "My Old Flame",
+     "I'll Get By",
+     "I Cover the Waterfront",
+     "I'll Be Seeing You",
+     "I'm Yours",
+     "Embraceable You",
+     "As Time Goes By"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Lem Davis",
+    "instruments": [
+     "alto saxophone"
+    ],
+    "only": [
+     "How Am I to Know?",
+     "My Old Flame",
+     "I'll Get By",
+     "I Cover the Waterfront",
+     "I'll Be Seeing You",
+     "I'm Yours",
+     "Embraceable You",
+     "As Time Goes By"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Eddie Heywood",
+    "instruments": [
+     "piano"
+    ],
+    "except": [
+     "Strange Fruit",
+     "Yesterdays",
+     "Fine and Mellow",
+     "I Gotta Right to Sing the Blues"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Teddy Walters",
+    "instruments": [
+     "guitar"
+    ],
+    "only": [
+     "How Am I to Know?",
+     "My Old Flame",
+     "I'll Get By",
+     "I Cover the Waterfront"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "John Simmons",
+    "instruments": [
+     "bass"
+    ],
+    "except": [
+     "Strange Fruit",
+     "Yesterdays",
+     "Fine and Mellow",
+     "I Gotta Right to Sing the Blues"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Sid Catlett",
+    "instruments": [
+     "drums"
+    ],
+    "except": [
+     "Strange Fruit",
+     "Yesterdays",
+     "Fine and Mellow",
+     "I Gotta Right to Sing the Blues"
+    ]
+   }
+  ],
+  "recorded": [
+   {
+    "date": "1939-04-20",
+    "place": "New York"
+   },
+   {
+    "date": "1944-03-25",
+    "place": "New York"
+   },
+   {
+    "date": "1944-04-01",
+    "place": "New York"
+   },
+   {
+    "date": "1944-04-08",
+    "place": "New York"
+   }
+  ],
+  "crew": [
+   {
+    "artist": null,
+    "name": "Milt Gabler",
+    "role": "producer"
+   }
+  ],
+  "edited": true,
+  "draftNotes": [
+   "MusicBrainz had nothing; four sessions from Jazzdisco: \"Strange Fruit\" (1939) with Frankie Newton's band, then three 1944 dates with Eddie Heywood."
   ]
  },
  "birth-of-the-cool": {
@@ -1459,14 +1726,13 @@
     "artist": null,
     "name": "Andrew Hilaire",
     "instruments": [
-     "drums",
-     "membranophone"
+     "drums"
     ],
     "tracks": 15
    },
    {
     "artist": null,
-    "name": "Warren “Baby” Dodds",
+    "name": "Baby Dodds",
     "instruments": [
      "drums"
     ],
@@ -1476,31 +1742,25 @@
     "artist": null,
     "name": "Marty Bloom",
     "instruments": [
-     "other instruments"
+     "sound effects"
     ],
     "tracks": 5
    }
   ],
   "crew": [
    {
-    "artist": null,
-    "name": "Brian Bacchus",
-    "role": "producer"
-   },
-   {
-    "artist": null,
-    "name": "Orrin Keepnews",
-    "role": "producer"
-   },
-   {
     "artist": "jelly-roll-morton",
     "name": "Jelly Roll Morton",
-    "role": "conductor"
+    "role": "arranger"
    }
+  ],
+  "edited": true,
+  "draftNotes": [
+   "The 1995 reissue's producers removed from the crew."
   ]
  },
  "bitches-brew": {
-  "reviewed": false,
+  "reviewed": true,
   "source": "musicbrainz:release/6dc111e0-c557-4065-b0c5-30f4d2b4a202",
   "mbReleaseGroup": "a9e30282-5b37-3f92-b897-b9659a1a312b",
   "edition": "1970 CA",
@@ -1668,7 +1928,6 @@
     "role": "design"
    }
   ],
-  "edited": true,
   "draftNotes": [
    "Juma Santos was credited on the LP as \"Jim Riley\": one player, on all six tracks.",
    "Apple Music's seventh track, \"Feio\", is from a 1970 session not covered here."
@@ -1688,12 +1947,11 @@
   ],
   "personnel": [],
   "draftNotes": [
-   "no players credited on this edition",
-   "this edition has 5 tracks; the Apple Music album has 20"
+   "MusicBrainz matched a 5-track record; no source found yet for the 20 OKeh sides on Apple Music's edition."
   ]
  },
  "black-codes": {
-  "reviewed": false,
+  "reviewed": true,
   "source": "musicbrainz:release/0ae20169-fb03-4339-bf18-49323d55caed",
   "mbReleaseGroup": "b5dfd3b1-2c14-36f9-82c1-66e7e7441665",
   "edition": "1985 AT",
@@ -1772,11 +2030,10 @@
     "name": "Tim Geelan",
     "role": "engineer"
    }
-  ],
-  "edited": true
+  ]
  },
  "black-radio": {
-  "reviewed": false,
+  "reviewed": true,
   "source": "musicbrainz:release/f202506d-74c1-40ec-8a8e-f800076fbdce",
   "mbReleaseGroup": "dc7a73e4-b92a-4000-8ae5-d87492dfcbb1",
   "edition": "2012 XE",
@@ -2080,7 +2337,6 @@
     "role": "engineer"
    }
   ],
-  "edited": true,
   "draftNotes": [
    "The app's Apple Music match was Black Radio 2 (2013); corrected to Black Radio (2012) in catalog.json."
   ]
@@ -2177,109 +2433,149 @@
     "artist": "duke-ellington",
     "name": "Duke Ellington",
     "instruments": [
-     "piano",
-     "celesta"
-    ],
-    "tracks": 21
+     "piano"
+    ]
    },
    {
     "artist": null,
     "name": "Rex Stewart",
     "instruments": [
-     "cornet",
+     "cornet"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Cootie Williams",
+    "instruments": [
      "trumpet"
-    ],
-    "tracks": 19
+    ]
    },
    {
     "artist": null,
     "name": "Wallace Jones",
     "instruments": [
      "trumpet"
-    ],
-    "tracks": 18
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Ray Nance",
+    "instruments": [
+     "trumpet",
+     "violin",
+     "vocals"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Joe Nanton",
+    "instruments": [
+     "trombone"
+    ]
    },
    {
     "artist": null,
     "name": "Lawrence Brown",
     "instruments": [
      "trombone"
-    ],
-    "tracks": 19
-   },
-   {
-    "artist": null,
-    "name": "Joe \"Tricky Sam\" Nanton",
-    "instruments": [
-     "trombone"
-    ],
-    "tracks": 19
+    ]
    },
    {
     "artist": null,
     "name": "Juan Tizol",
     "instruments": [
-     "trombone"
-    ],
-    "tracks": 19
+     "valve trombone"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Barney Bigard",
+    "instruments": [
+     "clarinet",
+     "tenor saxophone"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Chauncey Haughton",
+    "instruments": [
+     "clarinet",
+     "tenor saxophone"
+    ]
    },
    {
     "artist": null,
     "name": "Johnny Hodges",
     "instruments": [
      "alto saxophone",
-     "clarinet",
-     "saxophone",
-     "reeds",
-     "soprano saxophone"
-    ],
-    "tracks": 19
-   },
-   {
-    "artist": null,
-    "name": "Harry Carney",
-    "instruments": [
-     "alto saxophone",
-     "baritone saxophone",
-     "clarinet",
-     "reeds"
-    ],
-    "tracks": 19
+     "soprano saxophone",
+     "clarinet"
+    ]
    },
    {
     "artist": null,
     "name": "Otto Hardwick",
     "instruments": [
-     "alto saxophone",
-     "clarinet",
-     "reeds",
-     "saxophone"
-    ],
-    "tracks": 19
+     "alto saxophone"
+    ]
    },
    {
     "artist": null,
     "name": "Ben Webster",
     "instruments": [
      "tenor saxophone"
-    ],
-    "tracks": 19
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Harry Carney",
+    "instruments": [
+     "baritone saxophone",
+     "alto saxophone",
+     "clarinet"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Billy Strayhorn",
+    "instruments": [
+     "piano"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Fred Guy",
+    "instruments": [
+     "guitar"
+    ]
    },
    {
     "artist": null,
     "name": "Jimmy Blanton",
     "instruments": [
      "bass"
-    ],
-    "tracks": 18
+    ]
    },
    {
     "artist": null,
     "name": "Sonny Greer",
     "instruments": [
      "drums"
-    ],
-    "tracks": 19
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Ivie Anderson",
+    "instruments": [
+     "vocals"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Herb Jeffries",
+    "instruments": [
+     "vocals"
+    ]
    }
   ],
   "crew": [
@@ -2295,16 +2591,22 @@
    },
    {
     "artist": null,
+    "name": "Mercer Ellington",
+    "role": "arranger"
+   },
+   {
+    "artist": null,
     "name": "Ben Webster",
     "role": "arranger"
    }
   ],
   "draftNotes": [
-   "only 24 of 75 tracks have players credited"
-  ]
+   "The orchestra of 1940–42 from Wikipedia. MusicBrainz credits only 21 of 75 tracks, so no track counts; the band changed over the period (Ray Nance replaced Cootie Williams late in 1940)."
+  ],
+  "edited": true
  },
  "blue-light-til-dawn": {
-  "reviewed": false,
+  "reviewed": true,
   "source": "musicbrainz:release/1029765e-a851-3a09-b3de-6cf1295ef242",
   "mbReleaseGroup": "57c53976-86a5-3cb8-913e-ecfc2874918d",
   "edition": "1993-10-18 DE",
@@ -2566,8 +2868,7 @@
   ],
   "draftNotes": [
    "Apple Music adds three live 1994 tracks, not covered. Per-track arranging credits left out."
-  ],
-  "edited": true
+  ]
  },
  "blue-train": {
   "reviewed": true,
@@ -2655,7 +2956,7 @@
   ]
  },
  "bright-size-life": {
-  "reviewed": false,
+  "reviewed": true,
   "source": "musicbrainz:release/655219aa-f312-445d-9182-5af2d23ab65e",
   "mbReleaseGroup": "abac8d3d-f25a-386f-a819-5063c8df56a4",
   "edition": "1976 DE",
@@ -2719,8 +3020,7 @@
     "name": "Manfred Eicher",
     "role": "producer"
    }
-  ],
-  "edited": true
+  ]
  },
  "carnegie-hall-1938": {
   "reviewed": false,
@@ -2789,8 +3089,7 @@
     "artist": "benny-goodman",
     "name": "Benny Goodman",
     "instruments": [
-     "clarinet",
-     "vocals"
+     "clarinet"
     ],
     "except": [
      "[Benny Goodman 1950 introduction]",
@@ -2823,8 +3122,7 @@
     "artist": null,
     "name": "Harry James",
     "instruments": [
-     "trumpet",
-     "instruments"
+     "trumpet"
     ],
     "only": [
      "Don't Be That Way",
@@ -2969,17 +3267,6 @@
    },
    {
     "artist": null,
-    "name": "[unknown]",
-    "instruments": [
-     "reeds",
-     "trombone"
-    ],
-    "only": [
-     "I'm Coming Virginia"
-    ]
-   },
-   {
-    "artist": null,
     "name": "Johnny Hodges",
     "instruments": [
      "soprano saxophone",
@@ -2992,7 +3279,7 @@
    },
    {
     "artist": null,
-    "name": "Hymie Shertzer",
+    "name": "Hymie Schertzer",
     "instruments": [
      "alto saxophone"
     ],
@@ -3016,7 +3303,6 @@
     "artist": null,
     "name": "Art Rollini",
     "instruments": [
-     "reeds",
      "tenor saxophone"
     ],
     "only": [
@@ -3037,10 +3323,9 @@
    },
    {
     "artist": null,
-    "name": "Irving “Babe” Russin",
+    "name": "Babe Russin",
     "instruments": [
-     "tenor saxophone",
-     "reeds"
+     "tenor saxophone"
     ],
     "only": [
      "Don't Be That Way",
@@ -3261,7 +3546,7 @@
     "artist": null,
     "name": "George Koenig",
     "instruments": [
-     "reeds"
+     "alto saxophone"
     ],
     "only": [
      "Don't Be That Way",
@@ -3308,8 +3593,9 @@
    }
   ],
   "draftNotes": [
-   "only 25 of 49 tracks have players credited"
-  ]
+   "Per-track credits from MusicBrainz; an \"[unknown]\" entry removed and instruments tidied. Guests from the Basie and Ellington bands appear only on their numbers."
+  ],
+  "edited": true
  },
  "chega-de-saudade": {
   "reviewed": true,
@@ -3777,51 +4063,33 @@
  },
  "djangology": {
   "reviewed": false,
-  "source": "musicbrainz:release/4f99c2d9-8a77-4e1e-baf9-8b260a9f42e9",
+  "source": "Wikipedia: Djangology",
   "mbReleaseGroup": "670d7864-6d23-37bc-84ea-75b01d76d702",
   "edition": "2004 None",
-  "kind": "compilation",
-  "recordedBetween": [
-   1934,
-   1947
-  ],
   "tracks": [
-   "Djangology",
-   "Crazy Rhythm",
-   "Clouds",
-   "Honeysuckle Row",
-   "Jeepers Creepers",
-   "I Got Rhythm",
-   "Billet Doux",
-   "Lentement Mademoiselle",
-   "Liza (All the Clouds 'll Roll Away)",
-   "My Melancholy Baby",
-   "Nuages",
+   "I Saw Stars",
+   "After You've Gone",
+   "Heavy Artillery",
+   "Beyond the Sea",
+   "Minor Swing",
+   "Menilmontant",
+   "Brick Top",
    "Swing Guitars",
-   "Tears",
-   "Sweet Chorus",
-   "Ol' Man River",
-   "St. Louis Blues",
-   "Limehouse Blues",
-   "Porto Cabello",
-   "Dinah",
-   "Blue Drag",
-   "I Cover the Waterfront",
-   "Daphne",
-   "September Song",
-   "Manoir De Mes Reves",
-   "Some of These Days",
-   "Place De Broukere",
-   "I Love You",
-   "Just One of Those Things",
-   "I Wonder Where My Baby Is Tonight",
-   "Swing '39",
-   "The Sunshine of Your Smile",
-   "The Sheik of Araby",
-   "Melodie Au Crepuscule",
+   "All the Things You Are",
+   "Daphné",
+   "It's Only a Paper Moon",
+   "Improvisation on Pathétique",
+   "The World Is Waiting for the Sunrise",
+   "Djangology",
+   "Où Es-Tu, Mon Amour?",
+   "Marie",
+   "I Surrender, Dear",
+   "Hallelujah",
+   "Swing '42",
+   "I'll Never Be the Same",
+   "Honeysuckle Rose",
    "Lover Man",
-   "Fiddle Blues",
-   "Louise"
+   "I Got Rhythm"
   ],
   "personnel": [
    {
@@ -3829,14 +4097,47 @@
     "name": "Django Reinhardt",
     "instruments": [
      "guitar"
-    ],
-    "tracks": 4
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Stéphane Grappelli",
+    "instruments": [
+     "violin"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Gianni Safred",
+    "instruments": [
+     "piano"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Carlo Pecori",
+    "instruments": [
+     "bass"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Aurelio de Carolis",
+    "instruments": [
+     "drums"
+    ]
    }
   ],
   "draftNotes": [
-   "only 4 of 36 tracks have players credited",
-   "this edition has 36 tracks; the Apple Music album has 23"
-  ]
+   "MusicBrainz had matched a different Djangology set (1934–47). This is the 1949 Rome quintet, on all 23 tracks."
+  ],
+  "recorded": [
+   {
+    "date": "1949",
+    "place": "Rome"
+   }
+  ],
+  "edited": true
  },
  "ella-cole-porter": {
   "reviewed": false,
@@ -3846,15 +4147,19 @@
   "recorded": [
    {
     "date": "1956-02-07",
-    "place": "Capitol Studios"
+    "place": "Capitol Studios, Los Angeles"
    },
    {
     "date": "1956-02-08",
-    "place": "Capitol Studios"
+    "place": "Capitol Studios, Los Angeles"
    },
    {
     "date": "1956-02-09",
-    "place": "Capitol Studios"
+    "place": "Capitol Studios, Los Angeles"
+   },
+   {
+    "date": "1956-03-27",
+    "place": "Capitol Studios, Los Angeles"
    }
   ],
   "tracks": [
@@ -3864,16 +4169,32 @@
    "Too Darn Hot",
    "In the Still of the Night",
    "I Get a Kick Out of You",
-   "Do I Love You",
+   "Do I Love You?",
    "Always True to You in My Fashion",
-   "Let’s Do It",
+   "Let's Do It, Let's Fall in Love",
    "Just One of Those Things",
-   "Ev’ry Time We Say Goodbye",
+   "Ev'ry Time We Say Goodbye",
    "All of You",
    "Begin the Beguine",
    "Get Out of Town",
    "I Am in Love",
-   "From This Moment On"
+   "From This Moment On",
+   "I Love Paris",
+   "You Do Something to Me",
+   "Ridin' High",
+   "You'd Be So Easy to Love",
+   "It's All Right with Me",
+   "Why Can't You Behave?",
+   "What Is This Thing Called Love?",
+   "You're the Top",
+   "Love for Sale",
+   "It's De-Lovely",
+   "Night and Day",
+   "Ace in the Hole",
+   "So in Love",
+   "I've Got You Under My Skin",
+   "I Concentrate on You",
+   "Don't Fence Me In"
   ],
   "personnel": [
    {
@@ -3888,16 +4209,6 @@
     "name": "Pete Candoli",
     "instruments": [
      "trumpet"
-    ],
-    "only": [
-     "All Through the Night",
-     "Anything Goes",
-     "Too Darn Hot",
-     "In the Still of the Night",
-     "Always True to You in My Fashion",
-     "Just One of Those Things",
-     "Begin the Beguine",
-     "From This Moment On"
     ]
    },
    {
@@ -3905,16 +4216,6 @@
     "name": "Harry “Sweets” Edison",
     "instruments": [
      "trumpet"
-    ],
-    "only": [
-     "All Through the Night",
-     "Anything Goes",
-     "Too Darn Hot",
-     "In the Still of the Night",
-     "Always True to You in My Fashion",
-     "Just One of Those Things",
-     "Begin the Beguine",
-     "From This Moment On"
     ]
    },
    {
@@ -3922,16 +4223,6 @@
     "name": "Maynard Ferguson",
     "instruments": [
      "trumpet"
-    ],
-    "only": [
-     "All Through the Night",
-     "Anything Goes",
-     "Too Darn Hot",
-     "In the Still of the Night",
-     "Always True to You in My Fashion",
-     "Just One of Those Things",
-     "Begin the Beguine",
-     "From This Moment On"
     ]
    },
    {
@@ -3939,16 +4230,6 @@
     "name": "Conrad Gozzo",
     "instruments": [
      "trumpet"
-    ],
-    "only": [
-     "All Through the Night",
-     "Anything Goes",
-     "Too Darn Hot",
-     "In the Still of the Night",
-     "Always True to You in My Fashion",
-     "Just One of Those Things",
-     "Begin the Beguine",
-     "From This Moment On"
     ]
    },
    {
@@ -3956,15 +4237,6 @@
     "name": "Milt Bernhart",
     "instruments": [
      "trombone"
-    ],
-    "except": [
-     "Miss Otis Regrets",
-     "I Get a Kick Out of You",
-     "Do I Love You",
-     "Let’s Do It",
-     "Ev’ry Time We Say Goodbye",
-     "Get Out of Town",
-     "I Am in Love"
     ]
    },
    {
@@ -3972,15 +4244,6 @@
     "name": "Joe Howard",
     "instruments": [
      "trombone"
-    ],
-    "except": [
-     "Miss Otis Regrets",
-     "I Get a Kick Out of You",
-     "Do I Love You",
-     "Let’s Do It",
-     "Ev’ry Time We Say Goodbye",
-     "Get Out of Town",
-     "I Am in Love"
     ]
    },
    {
@@ -3988,49 +4251,30 @@
     "name": "Lloyd Ulyate",
     "instruments": [
      "trombone"
-    ],
-    "except": [
-     "Miss Otis Regrets",
-     "I Get a Kick Out of You",
-     "Do I Love You",
-     "Let’s Do It",
-     "Ev’ry Time We Say Goodbye",
-     "Get Out of Town",
-     "I Am in Love"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "George Roberts",
+    "instruments": [
+     "bass trombone"
     ]
    },
    {
     "artist": null,
     "name": "Herb Geller",
     "instruments": [
-     "alto saxophone"
-    ],
-    "only": [
-     "All Through the Night",
-     "Anything Goes",
-     "Too Darn Hot",
-     "In the Still of the Night",
-     "Always True to You in My Fashion",
-     "Just One of Those Things",
-     "Begin the Beguine",
-     "From This Moment On"
+     "alto saxophone",
+     "clarinet"
     ]
    },
    {
     "artist": null,
     "name": "Bud Shank",
     "instruments": [
-     "alto saxophone"
-    ],
-    "only": [
-     "All Through the Night",
-     "Anything Goes",
-     "Too Darn Hot",
-     "In the Still of the Night",
-     "Always True to You in My Fashion",
-     "Just One of Those Things",
-     "Begin the Beguine",
-     "From This Moment On"
+     "alto saxophone",
+     "flute",
+     "clarinet"
     ]
    },
    {
@@ -4038,14 +4282,8 @@
     "name": "Bob Cooper",
     "instruments": [
      "tenor saxophone",
-     "oboe"
-    ],
-    "except": [
-     "Miss Otis Regrets",
-     "I Get a Kick Out of You",
-     "Let’s Do It",
-     "All of You",
-     "Get Out of Town"
+     "oboe",
+     "clarinet"
     ]
    },
    {
@@ -4053,42 +4291,16 @@
     "name": "Ted Nash",
     "instruments": [
      "tenor saxophone",
-     "flute"
-    ],
-    "except": [
-     "Miss Otis Regrets",
-     "I Get a Kick Out of You",
-     "Let’s Do It",
-     "All of You",
-     "Get Out of Town"
+     "flute",
+     "clarinet"
     ]
    },
    {
     "artist": null,
     "name": "Chuck Gentry",
     "instruments": [
-     "baritone saxophone"
-    ],
-    "only": [
-     "All Through the Night",
-     "Anything Goes",
-     "Too Darn Hot",
-     "In the Still of the Night",
-     "Always True to You in My Fashion",
-     "Just One of Those Things",
-     "Begin the Beguine",
-     "From This Moment On"
-    ]
-   },
-   {
-    "artist": null,
-    "name": "Barney Kessel",
-    "instruments": [
-     "guitar"
-    ],
-    "except": [
-     "Miss Otis Regrets",
-     "Let’s Do It"
+     "baritone saxophone",
+     "bass clarinet"
     ]
    },
    {
@@ -4101,17 +4313,16 @@
    },
    {
     "artist": null,
+    "name": "Barney Kessel",
+    "instruments": [
+     "guitar"
+    ]
+   },
+   {
+    "artist": null,
     "name": "Corky Hale",
     "instruments": [
      "harp"
-    ],
-    "only": [
-     "All Through the Night",
-     "Anything Goes",
-     "Do I Love You",
-     "Ev’ry Time We Say Goodbye",
-     "Begin the Beguine",
-     "I Am in Love"
     ]
    },
    {
@@ -4119,24 +4330,13 @@
     "name": "Joe Mondragon",
     "instruments": [
      "bass"
-    ],
-    "except": [
-     "Miss Otis Regrets"
     ]
    },
    {
     "artist": null,
-    "name": "Robert La Marchina",
+    "name": "Robert LaMarchina",
     "instruments": [
      "cello"
-    ],
-    "only": [
-     "All Through the Night",
-     "Anything Goes",
-     "Do I Love You",
-     "Ev’ry Time We Say Goodbye",
-     "Begin the Beguine",
-     "I Am in Love"
     ]
    },
    {
@@ -4144,14 +4344,6 @@
     "name": "Edgar Lustgarten",
     "instruments": [
      "cello"
-    ],
-    "only": [
-     "All Through the Night",
-     "Anything Goes",
-     "Do I Love You",
-     "Ev’ry Time We Say Goodbye",
-     "Begin the Beguine",
-     "I Am in Love"
     ]
    },
    {
@@ -4159,25 +4351,6 @@
     "name": "Alvin Stoller",
     "instruments": [
      "drums"
-    ],
-    "except": [
-     "Miss Otis Regrets"
-    ]
-   },
-   {
-    "artist": null,
-    "name": "George Roberts",
-    "instruments": [
-     "bass trombone"
-    ],
-    "except": [
-     "Miss Otis Regrets",
-     "I Get a Kick Out of You",
-     "Do I Love You",
-     "Let’s Do It",
-     "Ev’ry Time We Say Goodbye",
-     "Get Out of Town",
-     "I Am in Love"
     ]
    }
   ],
@@ -4194,21 +4367,22 @@
    },
    {
     "artist": null,
-    "name": "Val Valentin",
-    "role": "engineer"
+    "name": "Norman Granz",
+    "role": "producer"
    },
    {
     "artist": null,
-    "name": "Norman Granz",
-    "role": "producer"
+    "name": "Val Valentin",
+    "role": "engineer"
    }
   ],
   "draftNotes": [
-   "this edition has 16 tracks; the Apple Music album has 32"
-  ]
+   "Who plays on which of the 32 songs varies (strings and horns on some, the rhythm section alone on others), and the sources disagree, so it isn't shown per song."
+  ],
+  "edited": true
  },
  "emilys-d-evolution": {
-  "reviewed": false,
+  "reviewed": true,
   "source": "musicbrainz:release/20ba2210-5863-451f-a373-41511b969bba",
   "mbReleaseGroup": "68b352ae-a374-4535-834a-96e920782e8f",
   "edition": "2016 XW",
@@ -4364,8 +4538,7 @@
     "name": "Tony Visconti",
     "role": "producer"
    }
-  ],
-  "edited": true
+  ]
  },
  "essential-bessie-smith": {
   "reviewed": false,
@@ -4422,20 +4595,69 @@
     "instruments": [
      "vocals"
     ],
-    "tracks": 26
+    "tracks": 36
+   },
+   {
+    "artist": "louis-armstrong",
+    "name": "Louis Armstrong",
+    "instruments": [
+     "cornet"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Joe Smith",
+    "instruments": [
+     "cornet"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Charlie Green",
+    "instruments": [
+     "trombone"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Buster Bailey",
+    "instruments": [
+     "clarinet"
+    ]
    },
    {
     "artist": null,
     "name": "Fletcher Henderson",
     "instruments": [
      "piano"
-    ],
-    "tracks": 9
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Clarence Williams",
+    "instruments": [
+     "piano"
+    ]
+   },
+   {
+    "artist": "james-p-johnson",
+    "name": "James P. Johnson",
+    "instruments": [
+     "piano"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Irving Johns",
+    "instruments": [
+     "piano"
+    ]
    }
   ],
   "draftNotes": [
-   "only 26 of 36 tracks have players credited"
-  ]
+   "MusicBrainz credits only 26 of the 36 tracks, so her accompanists are listed without track counts."
+  ],
+  "edited": true
  },
  "fire-music": {
   "reviewed": true,
@@ -5121,7 +5343,7 @@
   ]
  },
  "habana": {
-  "reviewed": false,
+  "reviewed": true,
   "source": "musicbrainz:release/66437bea-0fb1-40ca-98d9-46222725f7f0",
   "mbReleaseGroup": "c187c69f-3f5b-3614-8538-c339d91ef025",
   "edition": "1997-06-03 US",
@@ -5266,42 +5488,128 @@
     "name": "Adam Blackburn",
     "role": "engineer"
    }
-  ],
-  "edited": true
+  ]
  },
  "hawkins-body-and-soul": {
   "reviewed": false,
-  "source": "musicbrainz:release/5f482909-6979-40b5-b2ed-20dd79a883e5",
+  "source": "Wikipedia: Body and Soul (Coleman Hawkins album)",
   "mbReleaseGroup": "434b2e03-c60b-48e9-96eb-4040276976c8",
   "edition": "GB",
   "kind": "compilation",
   "tracks": [
-   "The Original Dixieland One-Step",
-   "Honeysuckle Rose",
-   "Crazy Rhythm",
-   "Sweet Georgia Brown",
-   "The Darktown Strutters Ball",
-   "My Melancholy Baby",
    "Meet Doctor Foo",
    "Fine Dinner",
+   "She's Funny That Way",
    "Body and Soul",
-   "Bouncing With Bean",
-   "Smack",
-   "I Surrender Dear",
-   "Dedication",
-   "Rocky Comfort",
-   "9-20 Special",
-   "Feeding the Bean",
-   "Bugle Call Rag",
-   "I Can't Believe That You're in Love With Me"
+   "When Day Is Done",
+   "The Sheik of Araby",
+   "My Blue Heaven",
+   "Bouncing with Bean",
+   "Say It Isn't So",
+   "Spotlite",
+   "April in Paris",
+   "How Strange",
+   "Half Step Down, Please",
+   "Angel Face",
+   "There Will Never Be Another You",
+   "The Bean Stalks Again",
+   "Body and Soul",
+   "I Love Paris",
+   "Under Paris Skies"
   ],
-  "personnel": [],
+  "personnel": [
+   {
+    "artist": "coleman-hawkins",
+    "name": "Coleman Hawkins",
+    "instruments": [
+     "tenor saxophone"
+    ],
+    "tracks": 19
+   },
+   {
+    "artist": null,
+    "name": "Tommy Lindsay",
+    "instruments": [
+     "trumpet"
+    ],
+    "tracks": 4
+   },
+   {
+    "artist": null,
+    "name": "Joe Guy",
+    "instruments": [
+     "trumpet"
+    ],
+    "tracks": 4
+   },
+   {
+    "artist": null,
+    "name": "Earl Hardy",
+    "instruments": [
+     "trombone"
+    ],
+    "tracks": 4
+   },
+   {
+    "artist": null,
+    "name": "Jackie Fields",
+    "instruments": [
+     "alto saxophone"
+    ],
+    "tracks": 4
+   },
+   {
+    "artist": null,
+    "name": "Eustis Moore",
+    "instruments": [
+     "alto saxophone"
+    ],
+    "tracks": 4
+   },
+   {
+    "artist": null,
+    "name": "Gene Rodgers",
+    "instruments": [
+     "piano"
+    ],
+    "tracks": 4
+   },
+   {
+    "artist": null,
+    "name": "William Oscar Smith",
+    "instruments": [
+     "bass"
+    ],
+    "tracks": 4
+   },
+   {
+    "artist": null,
+    "name": "Arthur Herbert",
+    "instruments": [
+     "drums"
+    ],
+    "tracks": 4
+   },
+   {
+    "artist": null,
+    "name": "Thelma Carpenter",
+    "instruments": [
+     "vocals"
+    ],
+    "tracks": 1
+   }
+  ],
   "draftNotes": [
-   "no players credited on this edition"
-  ]
+   "Wikipedia gives only the 1939 orchestra (\"Body and Soul\" and three more); the 1940–56 sessions behind the other 15 tracks aren't listed."
+  ],
+  "recordedBetween": [
+   1939,
+   1956
+  ],
+  "edited": true
  },
  "head-hunters": {
-  "reviewed": false,
+  "reviewed": true,
   "source": "musicbrainz:release/52dda2f2-d7ee-4ec5-b00e-b1f4f86ebb95",
   "mbReleaseGroup": "322f18bb-5491-38e9-9044-c0a468651eec",
   "edition": "1973 JP",
@@ -5391,11 +5699,10 @@
     "name": "Fred Catero",
     "role": "engineer"
    }
-  ],
-  "edited": true
+  ]
  },
  "heavy-weather": {
-  "reviewed": false,
+  "reviewed": true,
   "source": "musicbrainz:release/0aad5359-7b31-44da-aa7c-bcbfc5f141b6",
   "mbReleaseGroup": "f1753c0a-50be-3591-8cbb-6848142e055f",
   "edition": "1977 JP",
@@ -5539,7 +5846,6 @@
     "role": "design"
    }
   ],
-  "edited": true,
   "draftNotes": [
    "\"Rumba Mamá\" was recorded live at Montreux (8 Jul 1976); the rest at Devonshire, Dec 1976–Jan 1977."
   ]
@@ -5655,9 +5961,8 @@
     "name": "Louis Armstrong",
     "instruments": [
      "cornet",
-     "vocals",
      "trumpet",
-     "slide whistle"
+     "vocals"
     ],
     "tracks": 85
    },
@@ -5672,6 +5977,22 @@
    },
    {
     "artist": null,
+    "name": "Fred Robinson",
+    "instruments": [
+     "trombone"
+    ],
+    "tracks": 18
+   },
+   {
+    "artist": null,
+    "name": "John Thomas",
+    "instruments": [
+     "trombone"
+    ],
+    "tracks": 11
+   },
+   {
+    "artist": null,
     "name": "Johnny Dodds",
     "instruments": [
      "clarinet",
@@ -5681,12 +6002,12 @@
    },
    {
     "artist": null,
-    "name": "Johnny St. Cyr",
+    "name": "Jimmy Strong",
     "instruments": [
-     "banjo",
-     "guitar"
+     "clarinet",
+     "tenor saxophone"
     ],
-    "tracks": 57
+    "tracks": 15
    },
    {
     "artist": null,
@@ -5702,10 +6023,50 @@
     "name": "Earl Hines",
     "instruments": [
      "piano",
-     "vocals",
      "celesta"
     ],
     "tracks": 30
+   },
+   {
+    "artist": null,
+    "name": "Johnny St. Cyr",
+    "instruments": [
+     "banjo",
+     "guitar"
+    ],
+    "tracks": 57
+   },
+   {
+    "artist": null,
+    "name": "Mancy Carr",
+    "instruments": [
+     "banjo"
+    ],
+    "tracks": 15
+   },
+   {
+    "artist": null,
+    "name": "Pete Briggs",
+    "instruments": [
+     "tuba"
+    ],
+    "tracks": 12
+   },
+   {
+    "artist": null,
+    "name": "Baby Dodds",
+    "instruments": [
+     "drums"
+    ],
+    "tracks": 17
+   },
+   {
+    "artist": null,
+    "name": "Zutty Singleton",
+    "instruments": [
+     "drums"
+    ],
+    "tracks": 17
    }
   ],
   "crew": [
@@ -5721,8 +6082,9 @@
    }
   ],
   "draftNotes": [
-   "only 85 of 93 tracks have players credited"
-  ]
+   "Track counts from MusicBrainz, which credits 85 of the 93 tracks; players on 11 or more listed (the Hot Five, the Hot Seven and the 1928 band)."
+  ],
+  "edited": true
  },
  "idle-moments": {
   "reviewed": true,
@@ -5808,7 +6170,7 @@
   ]
  },
  "jaco-pastorius-album": {
-  "reviewed": false,
+  "reviewed": true,
   "source": "musicbrainz:release/4f5d9424-3e67-4c4a-8b89-ca2da123bb78",
   "mbReleaseGroup": "346b2263-a899-3d3e-8b08-84efe58dfe10",
   "edition": "1976 GB",
@@ -6237,7 +6599,6 @@
     "role": "arranger"
    }
   ],
-  "edited": true,
   "draftNotes": [
    "No Wikipedia personnel; credits from MusicBrainz (\"clarinet\" for Herbie Hancock removed as an error).",
    "Apple Music adds an alternate \"(Used to Be a) Cha-Cha\" and \"6/4 Jam\", not covered."
@@ -6311,7 +6672,7 @@
   ]
  },
  "jazz-bata-2": {
-  "reviewed": false,
+  "reviewed": true,
   "source": "Mack Avenue / Tower Records listings",
   "mbReleaseGroup": "f15650c8-2c26-4136-a95a-5da5d50554e2",
   "edition": "2018 None",
@@ -6358,8 +6719,7 @@
   ],
   "draftNotes": [
    "MusicBrainz credited nobody and there's no Wikipedia page; the quartet from Mack Avenue's and Tower's listings. Regina Carter (violin) guests on \"Ochún\" and \"100 Años de Bebo\": add her once the track titles are confirmed."
-  ],
-  "edited": true
+  ]
  },
  "journey-in-satchidananda": {
   "reviewed": true,
@@ -7074,12 +7434,27 @@
     "instruments": [
      "vocals"
     ],
-    "tracks": 9
+    "tracks": 24
+   },
+   {
+    "artist": null,
+    "name": "Thomas A. Dorsey",
+    "instruments": [
+     "piano"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Tampa Red",
+    "instruments": [
+     "guitar"
+    ]
    }
   ],
   "draftNotes": [
-   "only 9 of 24 tracks have players credited"
-  ]
+   "MusicBrainz credits only 9 of the 24 tracks; her other accompanists (the Paramount sessions of 1923–28) aren't listed."
+  ],
+  "edited": true
  },
  "maiden-voyage": {
   "reviewed": true,
@@ -8047,7 +8422,7 @@
   ]
  },
  "perceive-its-beauty": {
-  "reviewed": false,
+  "reviewed": true,
   "source": "musicbrainz:release/541931ec-79a7-4ba2-8397-529783ed060e",
   "mbReleaseGroup": "33973f9b-1e19-49b6-b67f-df7c73b6941f",
   "edition": "2024-04-12 None",
@@ -8363,11 +8738,10 @@
     "name": "Floating Points",
     "role": "producer"
    }
-  ],
-  "edited": true
+  ]
  },
  "return-to-forever": {
-  "reviewed": false,
+  "reviewed": true,
   "source": "musicbrainz:release/2f0ff863-0713-4925-a4eb-73216c612e71",
   "mbReleaseGroup": "46fa76ea-8bed-3f13-808b-ac313db502b8",
   "edition": "1972 US",
@@ -8445,7 +8819,6 @@
     "place": "A&R Studios, New York"
    }
   ],
-  "edited": true,
   "draftNotes": [
    "MusicBrainz had a bogus \"1772\" date, so the script took it for a compilation."
   ]
@@ -8866,22 +9239,9 @@
     "tracks": 16
    }
   ],
-  "crew": [
-   {
-    "artist": null,
-    "name": "Dave Grusin",
-    "role": "producer"
-   },
-   {
-    "artist": null,
-    "name": "Orrin Keepnews",
-    "role": "producer"
-   },
-   {
-    "artist": null,
-    "name": "Larry Rosen",
-    "role": "producer"
-   }
+  "edited": true,
+  "draftNotes": [
+   "The reissue's producers removed from the crew."
   ]
  },
  "somethin-else": {
@@ -9101,7 +9461,7 @@
   ]
  },
  "source": {
-  "reviewed": false,
+  "reviewed": true,
   "source": "Wikipedia: Source (album), credits from Tidal",
   "mbReleaseGroup": "11a8e523-e4b0-4c7b-a425-54b5e10c5569",
   "edition": "2020-08-21 XW",
@@ -9223,8 +9583,7 @@
   ],
   "draftNotes": [
    "MusicBrainz credited one track; written from Wikipedia. La Perla (a group) stands for its three singers on track 7."
-  ],
-  "edited": true
+  ]
  },
  "space-is-the-place": {
   "reviewed": true,
@@ -9576,7 +9935,7 @@
   ]
  },
  "standards-vol-1": {
-  "reviewed": false,
+  "reviewed": true,
   "source": "musicbrainz:release/692da41e-008a-4752-9b04-a82c0feec396",
   "mbReleaseGroup": "794ec2de-07e4-3773-84c2-9d807678746f",
   "edition": "1983 DE",
@@ -9636,8 +9995,7 @@
     "name": "Manfred Eicher",
     "role": "producer"
    }
-  ],
-  "edited": true
+  ]
  },
  "study-in-brown": {
   "reviewed": true,
@@ -9766,7 +10124,7 @@
   ]
  },
  "the-epic": {
-  "reviewed": false,
+  "reviewed": true,
   "source": "musicbrainz:release/b303e6b3-216c-4cf5-ad0c-96c70e9b60a6",
   "mbReleaseGroup": "fffaa737-94cb-42b9-b1f1-44698110ea8a",
   "edition": "2015-05-05 XW",
@@ -10206,13 +10564,12 @@
     "role": "producer"
    }
   ],
-  "edited": true,
   "draftNotes": [
    "Wikipedia's per-track credits added for four missing players. The 20-voice choir and some of the strings aren't listed one by one."
   ]
  },
  "the-imagined-savior": {
-  "reviewed": false,
+  "reviewed": true,
   "source": "musicbrainz:release/7c088418-e3bd-41c2-a7bd-5e6331bb1a47",
   "mbReleaseGroup": "277051be-edd9-4347-815b-2074fdc9de69",
   "edition": "2014 US",
@@ -10445,11 +10802,10 @@
     "name": "Jack Clow",
     "role": "engineer"
    }
-  ],
-  "edited": true
+  ]
  },
  "the-inner-mounting-flame": {
-  "reviewed": false,
+  "reviewed": true,
   "source": "musicbrainz:release/9a2db308-dd6b-39dc-a99f-d5befecd5371",
   "mbReleaseGroup": "cc166f72-5bb4-3534-941f-e974b20604aa",
   "edition": "1971 US",
@@ -10518,8 +10874,7 @@
     "date": "1971-08-14",
     "place": "Columbia Studios, New York"
    }
-  ],
-  "edited": true
+  ]
  },
  "the-real-mccoy": {
   "reviewed": true,
@@ -11030,7 +11385,7 @@
   ]
  },
  "universal-beings": {
-  "reviewed": false,
+  "reviewed": true,
   "source": "Wikipedia: Universal Beings (liner notes)",
   "mbReleaseGroup": "02bc86ec-e917-4cda-bd15-ffe65e10511a",
   "edition": "2018-10-26 XW",
@@ -11313,8 +11668,7 @@
     "name": "Aaron Lowell Denton",
     "role": "design"
    }
-  ],
-  "edited": true
+  ]
  },
  "watermelon-man": {
   "reviewed": false,
@@ -11337,8 +11691,7 @@
   ],
   "personnel": [],
   "draftNotes": [
-   "no players credited on this edition",
-   "this edition has 12 tracks; the Apple Music album has 18"
+   "No source found yet for the studio band (liner notes needed)."
   ]
  },
  "wave": {
@@ -11620,7 +11973,7 @@
   ]
  },
  "we-like-it-here": {
-  "reviewed": false,
+  "reviewed": true,
   "source": "musicbrainz:release/43812508-764e-43ce-b99d-8d48aec5ae6d",
   "mbReleaseGroup": "fcf368c7-9ce7-487e-bd95-14543f6764cd",
   "edition": "2014 XE",
@@ -11828,11 +12181,10 @@
   ],
   "draftNotes": [
    "Snarky Puppy is the band, so no single leader appears among the players."
-  ],
-  "edited": true
+  ]
  },
  "wish": {
-  "reviewed": false,
+  "reviewed": true,
   "source": "musicbrainz:release/23c798ce-6cc3-4fc7-9fdc-5614eba67921",
   "mbReleaseGroup": "8e14116f-2f6a-3ed0-8903-ea261716f007",
   "edition": "1993-09-21 US",
@@ -11884,11 +12236,10 @@
     "name": "Matt Pierson",
     "role": "producer"
    }
-  ],
-  "edited": true
+  ]
  },
  "womanchild": {
-  "reviewed": false,
+  "reviewed": true,
   "source": "musicbrainz:release/38998b4c-7644-46a9-8436-8a00cdcaf807",
   "mbReleaseGroup": "420913c4-bf63-4674-9a74-9886dfdda436",
   "edition": "2013 FR",
@@ -11976,7 +12327,6 @@
     "name": "Aaron Diehl",
     "role": "arranger"
    }
-  ],
-  "edited": true
+  ]
  }
 }
