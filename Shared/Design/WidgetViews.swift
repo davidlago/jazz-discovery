@@ -54,11 +54,13 @@ extension JazzLibrary {
         case .born: short = "\(artist?.name ?? "Someone") · born \(String(lead.year))"
         case .died: short = "Remembering \(artist?.name ?? "someone")"
         case .recorded: short = album.map { "\($0.title) · \(String(lead.year))" } ?? "A session in \(String(lead.year))"
+        case .milestone: short = "\(lead.milestone ?? "A turning point") · \(String(lead.year))"
         }
         let link = route(for: lead).flatMap { r -> URL? in
             switch r {
             case .album(let id): return URL(string: "\(DeepLink.scheme)://album/\(id)")
             case .artist(let id): return URL(string: "\(DeepLink.scheme)://artist/\(id)")
+            case .decade(let d): return URL(string: "\(DeepLink.scheme)://decade/\(d)")
             default: return nil
             }
         } ?? URL(string: "\(DeepLink.scheme)://today")!

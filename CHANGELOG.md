@@ -17,6 +17,14 @@ section for the tagged version at the top of the GitHub release notes (or **Unre
   there or on that label, and who played there.
 - **The map** groups places that would overlap into one numbered pin; tap it to zoom in.
 - The large Today in Jazz widget lists the next days with something when the day has only one event.
+- **The Songbook** has all forty of its first list: Manteca, Misty, So What, Giant Steps, Naima, Moanin', Song for My
+  Father, Maiden Voyage, Nardis, Stella by Starlight, On Green Dolphin Street and Birdland join, with 45 more versions.
+- **Three new paths**: From Hip-Hop Back to Jazz, The Protest Tradition and London Now.
+- **Lineages** for the bass (from Jimmy Blanton to Esperanza Spalding) and the guitar.
+- **Who played on what** is complete: Bix Beiderbecke's Singin' the Blues and Mongo Santamaría's Watermelon Man! now
+  list their bands, session by session.
+- **On This Day** covers 227 days, up from 207: release days, milestones like the first jazz record and Ellington's
+  first night at the Cotton Club, and the two records above.
 
 ## 1.9.0
 

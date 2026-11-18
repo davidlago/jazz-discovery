@@ -179,7 +179,7 @@ struct AlmanacDayList: View {
             ForEach(Array(events.enumerated()), id: \.offset) { _, e in
                 Button { if let r = library.route(for: e) { open(r) } } label: {
                     HStack(alignment: .top, spacing: 10) {
-                        Image(systemName: e.kind == .recorded ? "opticaldisc" : e.kind == .born ? "birthday.cake" : "leaf")
+                        Image(systemName: e.kind == .recorded ? "opticaldisc" : e.kind == .born ? "birthday.cake" : e.kind == .milestone ? "star" : "leaf")
                             .foregroundStyle(Theme.brass).frame(width: 20)
                         Text(library.line(for: e, on: date, today: false)).font(.system(size: 15, design: .serif))
                             .foregroundStyle(Theme.cream).multilineTextAlignment(.leading)

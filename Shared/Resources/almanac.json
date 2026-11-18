@@ -501,6 +501,14 @@
     "year": 1993
    }
   ],
+  "01-08": [
+   {
+    "kind": "milestone",
+    "line": "On this day in 2001, Ken Burns's Jazz began on PBS.",
+    "milestone": "Ken Burns's Jazz",
+    "year": 2001
+   }
+  ],
   "01-09": [
    {
     "artist": "kenny-clarke",
@@ -576,6 +584,15 @@
     "artist": "kid-ory",
     "kind": "died",
     "year": 1973
+   }
+  ],
+  "01-24": [
+   {
+    "artist": "keith-jarrett",
+    "kind": "milestone",
+    "line": "On this day in 1975, Keith Jarrett played The Köln Concert at the opera house in Cologne.",
+    "milestone": "The Köln Concert",
+    "year": 1975
    }
   ],
   "01-25": [
@@ -700,6 +717,22 @@
     "kind": "recorded",
     "line": "On this day in 2013, the Robert Glasper Experiment's Black Radio won the Grammy for Best R&B Album.",
     "year": 2013
+   },
+   {
+    "artist": "herbie-hancock",
+    "kind": "milestone",
+    "line": "On this day in 2008, Herbie Hancock's River: The Joni Letters won the Grammy for Album of the Year.",
+    "milestone": "Herbie's Album of the Year",
+    "year": 2008
+   }
+  ],
+  "02-13": [
+   {
+    "artist": "esperanza-spalding",
+    "kind": "milestone",
+    "line": "On this day in 2011, Esperanza Spalding won the Grammy for Best New Artist.",
+    "milestone": "Esperanza is Best New Artist",
+    "year": 2011
    }
   ],
   "02-14": [
@@ -825,6 +858,14 @@
     "year": 2014
    }
   ],
+  "02-26": [
+   {
+    "kind": "milestone",
+    "line": "On this day in 1917, the Original Dixieland Jass Band recorded \"Livery Stable Blues\", the first jazz record.",
+    "milestone": "The first jazz record",
+    "year": 1917
+   }
+  ],
   "02-27": [
    {
     "artist": "dexter-gordon",
@@ -838,6 +879,13 @@
     "kind": "recorded",
     "line": "On this day in 2012, Robert Glasper Experiment released Black Radio on Blue Note.",
     "year": 2012
+   },
+   {
+    "artist": "wynton-marsalis",
+    "kind": "milestone",
+    "line": "On this day in 1984, Wynton Marsalis won Grammys for both a jazz and a classical recording.",
+    "milestone": "Wynton's double Grammy",
+    "year": 1984
    }
   ],
   "03-01": [
@@ -1858,6 +1906,14 @@
     "year": 1942
    }
   ],
+  "08-10": [
+   {
+    "kind": "milestone",
+    "line": "On this day in 1920, Mamie Smith and Her Jazz Hounds recorded \"Crazy Blues\", the hit that showed there was a market for records by Black artists.",
+    "milestone": "\"Crazy Blues\" sells big",
+    "year": 1920
+   }
+  ],
   "08-12": [
    {
     "artist": "pat-metheny",
@@ -1936,6 +1992,13 @@
     "kind": "recorded",
     "line": "On this day in 2020, Nubya Garcia released Source on Concord Jazz.",
     "year": 2020
+   },
+   {
+    "artist": "benny-goodman",
+    "kind": "milestone",
+    "line": "On this day in 1935, Benny Goodman's band began its first engagement at the Palomar Ballroom in Los Angeles.",
+    "milestone": "Swing explodes at the Palomar",
+    "year": 1935
    },
    {
     "artist": "count-basie",
@@ -2590,6 +2653,13 @@
    }
   ],
   "12-04": [
+   {
+    "artist": "duke-ellington",
+    "kind": "milestone",
+    "line": "On this day in 1927, Duke Ellington's orchestra opened as the house band at the Cotton Club.",
+    "milestone": "Ellington at the Cotton Club",
+    "year": 1927
+   },
    {
     "artist": "cassandra-wilson",
     "kind": "born",

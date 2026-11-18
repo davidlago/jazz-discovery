@@ -56,4 +56,14 @@ struct AlmanacTests {
     func fullDates() {
         #expect(library.fullDates(of: "miles-davis") == "May 26, 1926 – September 28, 1991")
     }
+
+    @Test("Milestones that aren't records: their own line, their artist's page or their decade")
+    func milestones() throws {
+        let feb26 = library.calendar.events(on: date(2027, 2, 26), calendar: cal)
+        let odjb = try #require(feb26.first { $0.kind == .milestone })
+        #expect(library.line(for: odjb, on: date(2027, 2, 26), calendar: cal).contains("Livery Stable Blues"))
+        #expect(library.route(for: odjb) == .decade(1910))
+        let ellington = try #require(library.calendar.events(on: date(2027, 12, 4), calendar: cal).first { $0.kind == .milestone })
+        #expect(library.route(for: ellington) == .artist("duke-ellington"))
+    }
 }

@@ -91,15 +91,25 @@ def build():
             raise SystemExit(f"almanac-dates.json: unknown milestone {m.get('milestone')!r}")
         check(m, f"milestone {m['milestone']!r}")
         if m.get("held"):
-            continue  # needs a milestone kind in the app (DayEvent.Kind); see the source file
+            continue
+        d = m["date"]
+        if m.get("kind") == "milestone":
+            # A turning point that isn't a record in the Crate: its own line, and its artist's page if there's one.
+            if not m.get("line"):
+                raise SystemExit(f"almanac-dates.json: milestone {m['milestone']!r} needs a line")
+            if m.get("artist") and m["artist"] not in artists:
+                raise SystemExit(f"almanac-dates.json: milestone {m['milestone']!r}: unknown artist {m['artist']}")
+            e = {"kind": "milestone", "year": int(d[:4]), "milestone": m["milestone"], "line": m["line"]}
+            if m.get("artist"): e["artist"] = m["artist"]
+            add(d[5:], e)
+            continue
         if not m.get("album") or not m.get("line"):
             raise SystemExit(f"almanac-dates.json: milestone {m['milestone']!r} needs an album and a line, or held")
-        d = m["date"]
         add(d[5:], {"kind": "recorded", "year": int(d[:4]), "album": m["album"], "line": m["line"]})
 
-    order = {"recorded": 0, "born": 1, "died": 2}
+    order = {"recorded": 0, "milestone": 1, "born": 2, "died": 3}
     for md in days:
-        days[md].sort(key=lambda e: (order[e["kind"]], e["year"], e.get("artist") or e.get("album")))
+        days[md].sort(key=lambda e: (order[e["kind"]], e["year"], e.get("artist") or e.get("album") or e.get("milestone") or ""))
     return {"days": dict(sorted(days.items())), "artists": dates}
 
 
