@@ -485,7 +485,7 @@ struct NewListenerCard: View {
 
     var body: some View {
         if passport.heardCount == 0 {
-            HowToListenCard { router.go(.term($0)) }.padding(.horizontal, Theme.gutter)
+            HowToListenCard(openTerm: { router.go(.term($0)) }, openGuide: { router.go(.guide($0)) }).padding(.horizontal, Theme.gutter)
         }
     }
 }

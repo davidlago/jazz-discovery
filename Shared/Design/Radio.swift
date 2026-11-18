@@ -135,6 +135,8 @@ struct RadioWall: View {
     @Environment(JazzLibrary.self) private var library
     @Environment(Passport.self) private var passport
     @Environment(PlayerController.self) private var player
+    /// Cities, rooms and labels with enough recorded there or for them (worked out once: it reads every track).
+    @State private var placesAndLabels: [Station] = []
 
     var body: some View {
         let all = Programmer.stations(library: library, includeNewToYou: passport.heardCount > 0)
@@ -146,8 +148,13 @@ struct RadioWall: View {
             group("Eras", all.filter { if case .era = $0.kind { return true } else { return false } })
             group("Decades", all.filter { if case .decade = $0.kind { return true } else { return false } })
             group("Instruments", all.filter { if case .instrument = $0.kind { return true } else { return false } })
+            let places = placesAndLabels.filter { if case .place = $0.kind { return true } else { return false } }
+            let labels = placesAndLabels.filter { if case .label = $0.kind { return true } else { return false } }
+            if !places.isEmpty { group("Places", places) }
+            if !labels.isEmpty { group("Labels", labels) }
         }
         .padding(.horizontal, gutter)
+        .task { if placesAndLabels.isEmpty { placesAndLabels = Programmer.placeAndLabelStations(library: library) } }
     }
 
     private func group(_ title: String, _ stations: [Station]) -> some View {

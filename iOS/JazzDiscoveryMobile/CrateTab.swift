@@ -5,6 +5,7 @@ struct CrateTab: View {
     @State private var era: String? = nil
     @State private var startersOnly = false
     @State private var heard = HeardFilter.all
+    @State private var byLabel = false
     @Environment(Passport.self) private var passport
     private let columns = [GridItem(.flexible(), spacing: 14), GridItem(.flexible(), spacing: 14)]
 
@@ -17,7 +18,14 @@ struct CrateTab: View {
 
         ScrollView {
             LazyVStack(alignment: .leading, spacing: 18, pinnedViews: [.sectionHeaders]) {
-                PageHeader(title: "The Crate", subtitle: "\(list.count) records that changed the music. Flip through by decade.")
+                PageHeader(title: "The Crate", subtitle: "\(list.count) records that changed the music. Flip through by \(byLabel ? "label" : "decade").")
+
+                Picker("Group", selection: $byLabel) {
+                    Text("By Decade").tag(false)
+                    Text("By Label").tag(true)
+                }
+                .pickerStyle(.segmented)
+                .padding(.horizontal, Theme.gutter)
 
                 ScrollView(.horizontal) {
                     HStack(spacing: 8) {
@@ -45,7 +53,34 @@ struct CrateTab: View {
                         .padding(.top, 30)
                 }
 
-                ForEach(decades, id: \.self) { d in
+                if byLabel {
+                    ForEach(library.groupedByLabel(list), id: \.id) { g in
+                        Section {
+                            LazyVGrid(columns: columns, alignment: .leading, spacing: 22) {
+                                ForEach(g.albums) { AlbumCard(album: $0, width: nil) }
+                            }
+                            .padding(.horizontal, Theme.gutter)
+                            .padding(.bottom, 10)
+                        } header: {
+                            HStack(alignment: .firstTextBaseline, spacing: 12) {
+                                if let l = g.label {
+                                    NavigationLink(value: PhoneRoute.label(l.id)) {
+                                        Text(g.title.uppercased()).font(Theme.display(28)).foregroundStyle(Color(hex: l.color)).lineLimit(1)
+                                    }
+                                    .buttonStyle(.plain)
+                                } else {
+                                    Text(g.title.uppercased()).font(Theme.display(28)).foregroundStyle(Theme.cream)
+                                }
+                                Rectangle().fill(Theme.panelHi).frame(height: 1)
+                                Text("\(g.albums.count)").font(Theme.label(11)).foregroundStyle(Theme.faint)
+                            }
+                            .padding(.horizontal, Theme.gutter).padding(.vertical, 6)
+                            .background(Theme.ink.opacity(0.94))
+                            .accessibilityAddTraits(.isHeader)
+                        }
+                    }
+                }
+                ForEach(byLabel ? [] : decades, id: \.self) { d in
                     Section {
                         LazyVGrid(columns: columns, alignment: .leading, spacing: 22) {
                             ForEach(list.filter { $0.decade == d }) { AlbumCard(album: $0, width: nil) }

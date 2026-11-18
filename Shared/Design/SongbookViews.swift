@@ -26,6 +26,7 @@ struct TuneCard: View {
     let tune: Tune
     var width: CGFloat? = 220
     @Environment(JazzLibrary.self) private var library
+    @Environment(Passport.self) private var passport
 
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
@@ -37,8 +38,10 @@ struct TuneCard: View {
                 .font(Theme.label(9)).tracking(1).foregroundStyle(Theme.muted).lineLimit(2)
             Spacer(minLength: 0)
             VersionDots(tune: tune).frame(height: 14)
-            Text("\(tune.versions.count) versions · \(String(tune.span.lowerBound))–\(String(tune.span.upperBound))")
-                .font(.system(size: 11)).foregroundStyle(Theme.faint)
+            let heard = passport.versionsHeard(of: tune, library: library)
+            Text(heard.heard > 0 ? "\(heard.heard) of \(heard.total) heard · \(String(tune.span.lowerBound))–\(String(tune.span.upperBound))"
+                 : "\(tune.versions.count) versions · \(String(tune.span.lowerBound))–\(String(tune.span.upperBound))")
+                .font(.system(size: 11)).foregroundStyle(heard.heard > 0 ? Theme.brass : Theme.faint)
         }
         .padding(14)
         .frame(width: width, height: 190, alignment: .topLeading)
@@ -151,7 +154,9 @@ struct TuneDetailContent: View {
                         .foregroundStyle(Theme.ink).background(Capsule().fill(Theme.brass))
                 }
                 .buttonStyle(.plain).disabled(resolved.isEmpty)
-                Text("\(versions.count) versions, \(String(tune.span.lowerBound)) to \(String(tune.span.upperBound))")
+                let heard = passport.versionsHeard(of: tune, library: library)
+                Text("\(versions.count) versions, \(String(tune.span.lowerBound)) to \(String(tune.span.upperBound))"
+                     + (heard.heard > 0 ? " · \(heard.heard) of \(heard.total) heard" : ""))
                     .font(.system(size: 12)).foregroundStyle(Theme.muted)
             }
             ForEach(tune.summary.components(separatedBy: "\n\n"), id: \.self) { p in
@@ -181,6 +186,22 @@ struct TuneDetailContent: View {
                         }
                         .buttonStyle(.plain)
                     }
+                }
+            }
+
+            let sameForm = library.sameForm(as: tune)
+            if !sameForm.isEmpty {
+                VStack(alignment: .leading, spacing: 10) {
+                    header("Same Form", subtitle: tune.formFamily == "blues"
+                           ? "Other blues in the Songbook: the same short cycle of chords, played every way there is."
+                           : "Other 32-bar AABA songs: two statements, a bridge, and the statement again.")
+                    FlowLayout(spacing: 12) {
+                        ForEach(sameForm) { t in
+                            Button(t.title) { openTune(t.id) }.buttonStyle(.plain)
+                                .font(.system(size: 15, design: .serif)).italic().foregroundStyle(Theme.brass)
+                        }
+                    }
+                    .frame(maxWidth: 680, alignment: .leading)
                 }
             }
 

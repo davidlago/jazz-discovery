@@ -5,7 +5,9 @@ struct CrateView: View {
     @State private var era: String? = nil
     @State private var startersOnly = false
     @State private var heard = HeardFilter.all
+    @State private var byLabel = false
     @Environment(Passport.self) private var passport
+    @Environment(Router.self) private var router
     private let columns = [GridItem(.adaptive(minimum: 170, maximum: 210), spacing: 20)]
 
     var body: some View {
@@ -20,10 +22,15 @@ struct CrateView: View {
                 HStack(alignment: .bottom) {
                     VStack(alignment: .leading, spacing: 6) {
                         Text("THE CRATE").font(Theme.display(64)).foregroundStyle(Theme.cream)
-                        Text("\(list.count) records that changed the music. Flip through by decade.")
+                        Text("\(list.count) records that changed the music. Flip through by \(byLabel ? "label" : "decade").")
                             .font(Theme.serif(18)).italic().foregroundStyle(Theme.muted)
                     }
                     Spacer()
+                    Picker("Group", selection: $byLabel) {
+                        Text("By Decade").tag(false)
+                        Text("By Label").tag(true)
+                    }
+                    .pickerStyle(.segmented).labelsHidden().fixedSize()
                     Picker("Show", selection: $heard) {
                         ForEach(HeardFilter.allCases) { Text($0.rawValue).tag($0) }
                     }
@@ -43,14 +50,37 @@ struct CrateView: View {
                     }
                 }
 
-                ForEach(decades, id: \.self) { d in
-                    VStack(alignment: .leading, spacing: 14) {
-                        HStack(alignment: .firstTextBaseline, spacing: 12) {
-                            Text("\(String(d))s").font(Theme.display(44)).foregroundStyle(Theme.cream)
-                            Rectangle().fill(Theme.panelHi).frame(height: 1)
+                if byLabel {
+                    ForEach(library.groupedByLabel(list), id: \.id) { g in
+                        VStack(alignment: .leading, spacing: 14) {
+                            HStack(alignment: .firstTextBaseline, spacing: 12) {
+                                if let l = g.label {
+                                    Button { router.go(.label(l.id)) } label: {
+                                        Text(g.title.uppercased()).font(Theme.display(40)).foregroundStyle(Color(hex: l.color))
+                                    }
+                                    .buttonStyle(.plain)
+                                    Text("since \(String(l.founded))").font(Theme.label(11)).foregroundStyle(Theme.faint)
+                                } else {
+                                    Text(g.title.uppercased()).font(Theme.display(40)).foregroundStyle(Theme.cream)
+                                }
+                                Rectangle().fill(Theme.panelHi).frame(height: 1)
+                                Text("\(g.albums.count)").font(Theme.label(11)).foregroundStyle(Theme.faint)
+                            }
+                            LazyVGrid(columns: columns, alignment: .leading, spacing: 26) {
+                                ForEach(g.albums) { AlbumCard(album: $0, width: 180) }
+                            }
                         }
-                        LazyVGrid(columns: columns, alignment: .leading, spacing: 26) {
-                            ForEach(list.filter { $0.decade == d }) { AlbumCard(album: $0, width: 180) }
+                    }
+                } else {
+                    ForEach(decades, id: \.self) { d in
+                        VStack(alignment: .leading, spacing: 14) {
+                            HStack(alignment: .firstTextBaseline, spacing: 12) {
+                                Text("\(String(d))s").font(Theme.display(44)).foregroundStyle(Theme.cream)
+                                Rectangle().fill(Theme.panelHi).frame(height: 1)
+                            }
+                            LazyVGrid(columns: columns, alignment: .leading, spacing: 26) {
+                                ForEach(list.filter { $0.decade == d }) { AlbumCard(album: $0, width: 180) }
+                            }
                         }
                     }
                 }

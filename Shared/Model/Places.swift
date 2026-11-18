@@ -122,3 +122,20 @@ extension JazzLibrary {
             .prefix(limit).compactMap { k, v in artist(k).map { ($0, v) } }
     }
 }
+
+extension JazzLibrary {
+    /// Records grouped by label for the Crate: each label with a page of its own, in the order they were founded, then
+    /// the rest together as "Other labels". Within a group, in year order.
+    func groupedByLabel(_ albums: [Album]) -> [(id: String, title: String, label: LabelInfo?, albums: [Album])] {
+        var byLabel: [String: [Album]] = [:]
+        var other: [Album] = []
+        for a in albums {
+            if let l = label(for: a) { byLabel[l.id, default: []].append(a) } else { other.append(a) }
+        }
+        var groups = labels.filter { byLabel[$0.id] != nil }
+            .sorted { ($0.founded, $0.name) < ($1.founded, $1.name) }
+            .map { (id: $0.id, title: $0.name, label: Optional($0), albums: byLabel[$0.id]!.sorted { $0.year < $1.year }) }
+        if !other.isEmpty { groups.append((id: "other", title: "Other labels", label: nil, albums: other.sorted { $0.year < $1.year })) }
+        return groups
+    }
+}

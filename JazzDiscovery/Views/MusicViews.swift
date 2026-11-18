@@ -71,6 +71,11 @@ struct TrackRow: View {
                             .buttonStyle(.plain).font(.system(size: 10)).foregroundStyle(Theme.muted)
                             .help("\(tune.title) in the Songbook")
                     }
+                    if let guide = library.guide(forSongID: track.trackId) {
+                        Button { router.go(.guide(guide.id)) } label: { Image(systemName: "list.bullet.rectangle.portrait") }
+                            .buttonStyle(.plain).font(.system(size: 10)).foregroundStyle(Theme.brass)
+                            .help("A listening guide follows this recording")
+                    }
                 }
                 if showArtist {
                     Text([track.artistName, track.albumName].compactMap { $0 }.joined(separator: " — "))
@@ -270,10 +275,26 @@ struct NowPlayingBar: View {
                     .buttonStyle(.plain).foregroundStyle(Theme.faint)
             }
             }
-            .padding(.horizontal, 20).padding(.vertical, 10)
-            .background(.ultraThinMaterial)
-            .overlay(alignment: .top) { Rectangle().fill(Theme.panelHi).frame(height: 1) }
+            .padding(.horizontal, 20).padding(.vertical, 12)
+            .modifier(GlassPanel(cornerRadius: 24))
+            .padding(.horizontal, 16).padding(.bottom, 12)
             .transition(.move(edge: .bottom).combined(with: .opacity))
+        }
+    }
+}
+
+/// A floating panel in the system's glass (Liquid Glass from macOS 26; a blurred material before it).
+struct GlassPanel: ViewModifier {
+    var cornerRadius: CGFloat
+
+    func body(content: Content) -> some View {
+        if #available(macOS 26.0, *) {
+            content.glassEffect(.regular, in: .rect(cornerRadius: cornerRadius))
+        } else {
+            content
+                .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: cornerRadius, style: .continuous))
+                .overlay(RoundedRectangle(cornerRadius: cornerRadius, style: .continuous).strokeBorder(Theme.panelHi))
+                .shadow(color: .black.opacity(0.35), radius: 18, y: 6)
         }
     }
 }

@@ -114,6 +114,52 @@ struct SearchTab: View {
                         }
                     }
                 }
+                if !r.guides.isEmpty {
+                    resultSection("Listening Guides") {
+                        ForEach(r.guides) { g in
+                            let t = library.tracks[g.track]
+                            ResultRow(route: .guide(g.id), title: t?.title ?? g.id, subtitle: "\(t?.artistName ?? "") · Listening guide") {
+                                symbolThumb("list.bullet.rectangle.portrait.fill", Theme.brass)
+                            }
+                        }
+                    }
+                }
+                if !r.paths.isEmpty {
+                    resultSection("Paths") {
+                        ForEach(r.paths) { p in
+                            ResultRow(route: .journey(p.id), title: p.title, subtitle: p.subtitle) {
+                                symbolThumb("point.topright.arrow.triangle.backward.to.point.bottomleft.scurvepath.fill", p.color)
+                            }
+                        }
+                    }
+                }
+                if !r.places.isEmpty {
+                    resultSection("Places") {
+                        ForEach(r.places) { p in
+                            ResultRow(route: .place(p.id), title: p.name, subtitle: "\(p.kindLabel) · \(p.years)") {
+                                symbolThumb("mappin.circle.fill", Theme.brass)
+                            }
+                        }
+                    }
+                }
+                if !r.labels.isEmpty {
+                    resultSection("Labels") {
+                        ForEach(r.labels) { l in
+                            ResultRow(route: .label(l.id), title: l.name, subtitle: "Founded \(String(l.founded))\(l.city.map { " · \($0)" } ?? "")") {
+                                symbolThumb("opticaldisc.fill", Color(hex: l.color))
+                            }
+                        }
+                    }
+                }
+                if !r.terms.isEmpty {
+                    resultSection("Glossary") {
+                        ForEach(r.terms) { t in
+                            ResultRow(route: .term(t.id), title: t.term, subtitle: t.short) {
+                                symbolThumb("character.book.closed.fill", Theme.brass)
+                            }
+                        }
+                    }
+                }
                 if !r.players.isEmpty {
                     resultSection("On the Records") {
                         ForEach(r.players) { p in
@@ -139,6 +185,12 @@ struct SearchTab: View {
             }
             .padding(.top, 12).padding(.bottom, 32)
         }
+    }
+
+    private func symbolThumb(_ name: String, _ tint: Color) -> some View {
+        Image(systemName: name).font(.title3).foregroundStyle(tint)
+            .frame(maxWidth: .infinity, maxHeight: .infinity).background(Theme.panelHi)
+            .clipShape(RoundedRectangle(cornerRadius: 8, style: .continuous))
     }
 
     private func resultSection<Content: View>(_ title: String, @ViewBuilder content: () -> Content) -> some View {

@@ -128,6 +128,11 @@ struct GuidesData: Codable { var guides: [Guide] }
 extension JazzLibrary {
     func guide(_ id: String) -> Guide? { guides.first { $0.id == id } }
 
+    /// The guide for an Apple Music song: the one its times were taken from, or the one tracks.json resolves to.
+    func guide(forSongID id: Int) -> Guide? {
+        guides.first { $0.songID == id || tracks[$0.track]?.id == id }
+    }
+
     /// The guide for a recording in tracks.json ("artist|title").
     func guide(forTrack ref: String) -> Guide? { guides.first { $0.track == ref } }
 

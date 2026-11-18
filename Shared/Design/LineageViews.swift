@@ -390,6 +390,8 @@ struct TermDetailContent: View {
 /// How to Listen: five steps through one recording.
 struct HowToListenCard: View {
     var openTerm: (String) -> Void
+    /// Opens the recording's listening guide, when it has one.
+    var openGuide: ((String) -> Void)? = nil
     @Environment(JazzLibrary.self) private var library
     @Environment(PlayerController.self) private var player
 
@@ -408,6 +410,14 @@ struct HowToListenCard: View {
                         }
                         .buttonStyle(.plain)
                     }
+                }
+                if let openGuide, let ref = library.glossary.howToListenTrack, let g = library.guide(forTrack: ref) {
+                    Button { openGuide(g.id) } label: {
+                        Label("Then follow the whole recording, section by section, with its listening guide", systemImage: "list.bullet.rectangle.portrait")
+                            .font(.system(size: 13, weight: .semibold)).foregroundStyle(Theme.brass)
+                            .multilineTextAlignment(.leading)
+                    }
+                    .buttonStyle(.plain)
                 }
                 ForEach(Array(steps.enumerated()), id: \.offset) { i, s in
                     HStack(alignment: .top, spacing: 12) {
