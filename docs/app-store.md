@@ -171,7 +171,7 @@ reason" API the app uses (UserDefaults, CA92.1).
 
 ### Version text
 
-This text is for 1.5 (127 artists, personnel, Find a Path, Passport, Radio, the Blindfold Test, the Songbook, Places and Labels). If 1.0.1 is submitted on its own first, say
+This text is for 1.6 (127 artists, personnel, Find a Path, Passport, Radio, the Blindfold Test, the Songbook, Places and Labels, Lineages and the Glossary). If 1.0.1 is submitted on its own first, say
 "86 artists" and leave out the *Who played on what* and *Your passport* paragraphs and the path-finding sentence.
 
 **Promotional text** (170 characters, can change any time without review):
@@ -212,6 +212,9 @@ A map of who played with whom across the whole century, drawn from the records t
 The Songbook
 Twenty-eight standards and jazz originals, each a page with its story and the versions that made it matter, from the first recording to last decade's, with what to listen for in each. Play them in order and hear the same song travel.
 
+Lineages and the glossary
+Family trees for the trumpet, the saxophone, the piano, the drums and the voice, showing who learned from whom, and a glossary of the words jazz uses, from swing to sheets of sound, each with a recording to hear it in. New to jazz? How to Listen walks you through one record in five steps.
+
 Places and labels
 A map of jazz with a time slider, from New Orleans in 1895 to South London today, with a page for every city, club and studio, and the records made there. And the labels, from Blue Note to ECM, with their sound, their look and a wall of their covers.
 
@@ -248,5 +251,5 @@ Last.fm (optional): Settings > Last.fm connects the user's own Last.fm account, 
 
 Background audio is used only to keep music playing while the phone is locked.
 
-Suggested path: Discover (scroll the River of Jazz sideways and tap a style), an era page, an artist (Artists tab), the Explore tab (eras, decades, the Songbook, the Places map with its time slider, Labels), an album (Crate tab) with its Personnel, Play, Mark as Heard and Save buttons and its three doors at the bottom, the Radio row and the Blindfold Test card on the Discover tab, the Passport (the seal button at the top right), Artists > Connections (pinch and tap faces, then the path button at the top to find a path between two artists), and Search.
+Suggested path: Discover (scroll the River of Jazz sideways and tap a style), an era page, an artist (Artists tab), the Explore tab (eras, decades, the Songbook, the Places map with its time slider, Labels, Lineages, the Glossary), an album (Crate tab) with its Personnel, Play, Mark as Heard and Save buttons and its three doors at the bottom, the Radio row and the Blindfold Test card on the Discover tab, the Passport (the seal button at the top right), Artists > Connections (pinch and tap faces, then the path button at the top to find a path between two artists), and Search.
 ```

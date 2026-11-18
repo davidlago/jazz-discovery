@@ -145,8 +145,7 @@ struct AlbumDetailView: View {
                 .padding(.horizontal, Theme.gutter)
                 .padding(.top, -12)
 
-                Text(album.why).font(.system(.body, design: .serif)).lineSpacing(4)
-                    .foregroundStyle(Theme.cream.opacity(0.9))
+                TermText(text: album.why, font: .system(.body, design: .serif)) { router.go(.term($0)) }.lineSpacing(4)
                     .fixedSize(horizontal: false, vertical: true)
                     .padding(.horizontal, Theme.gutter)
 

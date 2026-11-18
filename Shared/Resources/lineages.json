@@ -1,0 +1,658 @@
+{
+ "lineages": [
+  {
+   "id": "trumpet",
+   "family": "Trumpet",
+   "title": "The Trumpet",
+   "intro": "Jazz began as a trumpet music: the cornet led the New Orleans band, and Louis Armstrong turned the lead voice into the solo voice. Every trumpeter since has answered him, by adding speed and harmony, as Dizzy Gillespie did, or by taking notes away, as Miles Davis did.\n\nFollow the line and listen for two things: how high and fast each player goes, and how much space they leave.",
+   "players": [
+    {
+     "artist": "king-oliver",
+     "idea": "The New Orleans cornet lead, with mutes and plungers that made the horn talk.",
+     "track": "King Oliver|Dipper Mouth Blues"
+    },
+    {
+     "artist": "louis-armstrong",
+     "idea": "Turned the lead line into the solo: swing, the high register and the blues in every phrase.",
+     "track": "Louis Armstrong|West End Blues"
+    },
+    {
+     "artist": "bix-beiderbecke",
+     "idea": "A cooler, rounder tone and thoughtful phrasing, the other way to play in the 1920s.",
+     "track": "Bix Beiderbecke|Singin' the Blues"
+    },
+    {
+     "artist": "cootie-williams",
+     "idea": "The growling plunger trumpet of Ellington's band, then a big open sound of his own.",
+     "track": "Cootie Williams|Concerto for Cootie"
+    },
+    {
+     "artist": "dizzy-gillespie",
+     "idea": "Bebop's harmony and speed on the trumpet, up into registers no one had used.",
+     "track": "Dizzy Gillespie|Salt Peanuts"
+    },
+    {
+     "artist": "miles-davis",
+     "idea": "Fewer notes, the middle register, the Harmon mute: the trumpet as a voice of understatement.",
+     "track": "Miles Davis|So What"
+    },
+    {
+     "artist": "clifford-brown",
+     "idea": "Bebop with warmth: fat tone, perfect articulation and long, singing lines.",
+     "track": "Clifford Brown|Joy Spring"
+    },
+    {
+     "artist": "lee-morgan",
+     "idea": "Hard bop swagger: half-valve smears, bluesy cries and a grin in the sound.",
+     "track": "Lee Morgan|The Sidewinder"
+    },
+    {
+     "artist": "freddie-hubbard",
+     "idea": "Brilliant, brassy power across hard bop, modal jazz and the avant-garde.",
+     "track": "Freddie Hubbard|Red Clay"
+    },
+    {
+     "artist": "wynton-marsalis",
+     "idea": "Virtuosity in the service of the whole tradition, from New Orleans to Miles.",
+     "track": "Wynton Marsalis|Black Codes (From the Underground)"
+    },
+    {
+     "artist": "roy-hargrove",
+     "idea": "A bebop trumpeter at home in hip-hop and neo-soul.",
+     "track": "Roy Hargrove|Strasbourg/St. Denis"
+    },
+    {
+     "artist": "ambrose-akinmusire",
+     "idea": "Breathy, vocal tone and long silences: the trumpet as a poet's instrument.",
+     "track": "Ambrose Akinmusire|Confessions to My Unborn Daughter"
+    }
+   ],
+   "links": [
+    {
+     "from": "king-oliver",
+     "to": "louis-armstrong",
+     "kind": "teacher",
+     "note": "Armstrong called Oliver his mentor; Oliver sent for him to play second cornet in his Chicago band in 1922."
+    },
+    {
+     "from": "louis-armstrong",
+     "to": "cootie-williams",
+     "kind": "influence",
+     "note": "Williams started out modelling his open horn on Armstrong's, before Ellington made him a growl specialist."
+    },
+    {
+     "from": "louis-armstrong",
+     "to": "dizzy-gillespie",
+     "kind": "influence",
+     "note": "By way of Roy Eldridge, Gillespie came out of Armstrong, and said so: 'No him, no me.'"
+    },
+    {
+     "from": "dizzy-gillespie",
+     "to": "miles-davis",
+     "kind": "influence",
+     "note": "Miles came to New York in 1944 to find Parker and Gillespie, learned bebop from Dizzy, then went the other way: fewer notes, middle register."
+    },
+    {
+     "from": "clifford-brown",
+     "to": "lee-morgan",
+     "kind": "influence",
+     "note": "Morgan's early style was built on Brown's; after Brown's death in 1956 he was hailed as his heir."
+    },
+    {
+     "from": "clifford-brown",
+     "to": "freddie-hubbard",
+     "kind": "influence",
+     "note": "Hubbard grew up in Indianapolis studying Brown's records, and his bright attack starts there."
+    },
+    {
+     "from": "freddie-hubbard",
+     "to": "wynton-marsalis",
+     "kind": "influence",
+     "note": "Marsalis's early playing with Art Blakey's Jazz Messengers drew on Hubbard, who had held the same chair."
+    },
+    {
+     "from": "miles-davis",
+     "to": "wynton-marsalis",
+     "kind": "influence",
+     "note": "Marsalis's first quintet took Miles Davis's mid-1960s quintet as its model."
+    },
+    {
+     "from": "wynton-marsalis",
+     "to": "roy-hargrove",
+     "kind": "teacher",
+     "note": "Marsalis heard the teenage Hargrove at his Dallas high school in 1987 and helped launch his career."
+    }
+   ]
+  },
+  {
+   "id": "saxophone",
+   "family": "Saxophone",
+   "title": "The Saxophone",
+   "intro": "The saxophone came late to jazz and became its signature sound. Two founding tenors set up the argument everyone since has joined: Coleman Hawkins's big tone and harmonic thinking, and Lester Young's light, floating lines. Charlie Parker joined them on alto and made the saxophone the voice of modern jazz; John Coltrane took it as far as it could go.\n\nListen for the tone first, heavy or airy, then for how each player handles the chords.",
+   "players": [
+    {
+     "artist": "sidney-bechet",
+     "idea": "The first great saxophone soloist, on soprano, with a wide, operatic vibrato.",
+     "track": "Sidney Bechet|Summertime"
+    },
+    {
+     "artist": "coleman-hawkins",
+     "idea": "The tenor as a solo instrument: a huge tone and solos built on the chords.",
+     "track": "Coleman Hawkins|Body and Soul"
+    },
+    {
+     "artist": "lester-young",
+     "idea": "A light, airy tone and relaxed, melodic lines that floated over the beat.",
+     "track": "Lester Young|Lester Leaps In"
+    },
+    {
+     "artist": "johnny-hodges",
+     "idea": "The most beautiful alto sound of the swing era, gliding between notes.",
+     "track": "Johnny Hodges|Warm Valley"
+    },
+    {
+     "artist": "ben-webster",
+     "idea": "Breathy ballads and a growl on the up-tempo numbers.",
+     "track": "Ben Webster|Cotton Tail"
+    },
+    {
+     "artist": "charlie-parker",
+     "idea": "Bebop itself: speed, new harmony and the blues, on alto.",
+     "track": "Charlie Parker|Ko-Ko"
+    },
+    {
+     "artist": "dexter-gordon",
+     "idea": "Bebop on tenor with a big, laid-back sound.",
+     "track": "Dexter Gordon|Cheese Cake"
+    },
+    {
+     "artist": "stan-getz",
+     "idea": "The cool tenor: a pure, singing tone that made bossa nova a hit.",
+     "track": "Stan Getz|The Girl from Ipanema"
+    },
+    {
+     "artist": "sonny-rollins",
+     "idea": "Thematic improvisation: developing a solo from a motif, with wit.",
+     "track": "Sonny Rollins|St. Thomas"
+    },
+    {
+     "artist": "cannonball-adderley",
+     "idea": "Parker's language with the warmth of the church: soul on alto.",
+     "track": "Cannonball Adderley|Autumn Leaves"
+    },
+    {
+     "artist": "john-coltrane",
+     "idea": "Sheets of sound, then modes, then spiritual search: the saxophone pushed to its limits.",
+     "track": "John Coltrane|Giant Steps"
+    },
+    {
+     "artist": "ornette-coleman",
+     "idea": "Melody without chord changes: free jazz on a plastic alto.",
+     "track": "Ornette Coleman|Lonely Woman"
+    },
+    {
+     "artist": "eric-dolphy",
+     "idea": "Wide leaps and bird-like cries on alto, flute and bass clarinet.",
+     "track": "Eric Dolphy|Hat and Beard"
+    },
+    {
+     "artist": "wayne-shorter",
+     "idea": "The composer's saxophone: elliptical phrases that leave things unsaid.",
+     "track": "Wayne Shorter|Speak No Evil"
+    },
+    {
+     "artist": "joe-henderson",
+     "idea": "A personal blend of hard bop, modal and free, with a distinctive cry.",
+     "track": "Joe Henderson|Totem Pole"
+    },
+    {
+     "artist": "pharoah-sanders",
+     "idea": "Overblown screams and gentle chants: spiritual jazz on tenor.",
+     "track": "Pharoah Sanders|The Creator Has a Master Plan"
+    },
+    {
+     "artist": "archie-shepp",
+     "idea": "Free jazz with the blues and the ballad still inside it, and a political edge.",
+     "track": "Archie Shepp|Malcolm, Malcolm - Semper Malcolm"
+    },
+    {
+     "artist": "joshua-redman",
+     "idea": "The tradition's language played with clarity and lyricism for a new generation.",
+     "track": "Joshua Redman|Wish"
+    },
+    {
+     "artist": "kamasi-washington",
+     "idea": "Coltrane's and Sanders's spiritual jazz at epic, orchestral scale.",
+     "track": "Kamasi Washington|Change of the Guard"
+    },
+    {
+     "artist": "shabaka-hutchings",
+     "idea": "Short, chant-like riffs over Caribbean and African rhythms.",
+     "track": "Shabaka Hutchings|End of Innocence"
+    },
+    {
+     "artist": "nubya-garcia",
+     "idea": "A warm, dark tenor over dub, Afrobeat and London club rhythms.",
+     "track": "Nubya Garcia|Source"
+    }
+   ],
+   "links": [
+    {
+     "from": "coleman-hawkins",
+     "to": "ben-webster",
+     "kind": "influence",
+     "note": "Webster's big tone and rhapsodic ballads came out of Hawkins, whom he admired openly."
+    },
+    {
+     "from": "coleman-hawkins",
+     "to": "sonny-rollins",
+     "kind": "influence",
+     "note": "Rollins grew up idolising Hawkins; in 1963 they recorded together, on Sonny Meets Hawk!"
+    },
+    {
+     "from": "lester-young",
+     "to": "charlie-parker",
+     "kind": "influence",
+     "note": "As a teenager in Kansas City, Parker learned Young's solos from Count Basie records note for note."
+    },
+    {
+     "from": "lester-young",
+     "to": "stan-getz",
+     "kind": "influence",
+     "note": "Getz and the other 'Four Brothers' tenors built their light, airy sound on Young's."
+    },
+    {
+     "from": "lester-young",
+     "to": "dexter-gordon",
+     "kind": "influence",
+     "note": "Gordon named Young as his first model, and added bebop to Young's relaxed flow."
+    },
+    {
+     "from": "charlie-parker",
+     "to": "cannonball-adderley",
+     "kind": "influence",
+     "note": "When Adderley arrived in New York in 1955, critics called him 'the new Bird'."
+    },
+    {
+     "from": "charlie-parker",
+     "to": "eric-dolphy",
+     "kind": "influence",
+     "note": "Dolphy's alto starts from Parker's language, then stretches its intervals until they break."
+    },
+    {
+     "from": "charlie-parker",
+     "to": "ornette-coleman",
+     "kind": "reaction",
+     "note": "Coleman learned Parker's bebop in Texas, then threw away the chord changes it ran on."
+    },
+    {
+     "from": "dexter-gordon",
+     "to": "john-coltrane",
+     "kind": "influence",
+     "note": "Coltrane named Gordon among his early influences; Gordon's bebop tenor was the bridge from Young and Hawkins."
+    },
+    {
+     "from": "john-coltrane",
+     "to": "wayne-shorter",
+     "kind": "influence",
+     "note": "Shorter and Coltrane practised together in the late 1950s; Shorter later held the tenor chair Coltrane had in Miles Davis's quintet."
+    },
+    {
+     "from": "john-coltrane",
+     "to": "joe-henderson",
+     "kind": "influence",
+     "note": "Henderson absorbed Coltrane's modal and harmonic ideas and found his own sound inside them."
+    },
+    {
+     "from": "john-coltrane",
+     "to": "pharoah-sanders",
+     "kind": "bandmate",
+     "note": "Sanders joined Coltrane's band in 1965 and carried its spiritual search on after Coltrane's death."
+    },
+    {
+     "from": "john-coltrane",
+     "to": "archie-shepp",
+     "kind": "teacher",
+     "note": "Coltrane championed Shepp and helped bring him to Impulse!, which signed him in 1964."
+    },
+    {
+     "from": "john-coltrane",
+     "to": "joshua-redman",
+     "kind": "influence",
+     "note": "Redman names Coltrane and Rollins, alongside his father Dewey Redman, as his foundations."
+    },
+    {
+     "from": "pharoah-sanders",
+     "to": "kamasi-washington",
+     "kind": "influence",
+     "note": "Washington's music openly descends from Sanders's spiritual jazz and Coltrane's last bands."
+    }
+   ]
+  },
+  {
+   "id": "piano",
+   "family": "Piano",
+   "title": "The Piano",
+   "intro": "The piano is the jazz orchestra in one instrument: rhythm in the left hand, melody and harmony in the right. Ragtime wrote it down, stride set it swinging, Art Tatum took it to virtuoso heights, and bebop's pianists turned it into a horn. Then Bill Evans changed its harmony for everyone who followed.\n\nListen to the left hand: it tells you which generation you're in.",
+   "players": [
+    {
+     "artist": "scott-joplin",
+     "idea": "Composed ragtime: the left hand's march, the right hand's syncopations, written down.",
+     "track": "Scott Joplin|Maple Leaf Rag"
+    },
+    {
+     "artist": "jelly-roll-morton",
+     "idea": "Ragtime loosened into jazz, with arranged breaks and a Spanish tinge.",
+     "track": "Jelly Roll Morton|Black Bottom Stomp"
+    },
+    {
+     "artist": "james-p-johnson",
+     "idea": "Harlem stride: a leaping left hand and a swinging right.",
+     "track": "James P. Johnson|Carolina Shout"
+    },
+    {
+     "artist": "fats-waller",
+     "idea": "Stride with humour and lightness, and a singer's gift for melody.",
+     "track": "Fats Waller|Ain't Misbehavin'"
+    },
+    {
+     "artist": "earl-hines",
+     "idea": "'Trumpet-style' piano: right-hand octaves that cut through a band like a horn.",
+     "track": "Earl Hines|Weather Bird"
+    },
+    {
+     "artist": "duke-ellington",
+     "idea": "Stride rooted, but the piano as the composer's sketchpad for an orchestra.",
+     "track": "Duke Ellington|Caravan|1962"
+    },
+    {
+     "artist": "art-tatum",
+     "idea": "Unmatched virtuosity: runs, reharmonisations and speed that stunned other pianists.",
+     "track": "Art Tatum|Tiger Rag"
+    },
+    {
+     "artist": "thelonious-monk",
+     "idea": "Dissonance, space and surprise: every note placed deliberately.",
+     "track": "Thelonious Monk|'Round Midnight"
+    },
+    {
+     "artist": "bud-powell",
+     "idea": "Bebop piano: right-hand horn lines over sparse left-hand chords.",
+     "track": "Bud Powell|Un Poco Loco"
+    },
+    {
+     "artist": "bill-evans",
+     "idea": "Impressionist voicings without the root and a trio of equals.",
+     "track": "Bill Evans|Waltz for Debby"
+    },
+    {
+     "artist": "mccoy-tyner",
+     "idea": "Chords built in fourths and a thunderous left hand, the sound of Coltrane's quartet.",
+     "track": "McCoy Tyner|Passion Dance"
+    },
+    {
+     "artist": "herbie-hancock",
+     "idea": "Harmonic daring in Miles's quintet, then funk and electronics.",
+     "track": "Herbie Hancock|Maiden Voyage"
+    },
+    {
+     "artist": "cecil-taylor",
+     "idea": "Free piano as percussion: clusters, energy and architecture.",
+     "track": "Cecil Taylor|Steps"
+    },
+    {
+     "artist": "keith-jarrett",
+     "idea": "Long improvised solo concerts and the standards trio's singing lines.",
+     "track": "Keith Jarrett|Köln, January 24, 1975, Pt. I"
+    },
+    {
+     "artist": "brad-mehldau",
+     "idea": "Contrapuntal lines in both hands, and pop songs as standards.",
+     "track": "Brad Mehldau|Blame It on My Youth"
+    },
+    {
+     "artist": "robert-glasper",
+     "idea": "Jazz harmony with hip-hop's beat and R&B's voices.",
+     "track": "Robert Glasper Experiment|Afro Blue"
+    }
+   ],
+   "links": [
+    {
+     "from": "scott-joplin",
+     "to": "james-p-johnson",
+     "kind": "influence",
+     "note": "Stride grew out of ragtime: Johnson learned the rags before freeing the left hand and loosening the rhythm."
+    },
+    {
+     "from": "james-p-johnson",
+     "to": "fats-waller",
+     "kind": "teacher",
+     "note": "Waller took lessons from Johnson as a teenager in Harlem."
+    },
+    {
+     "from": "james-p-johnson",
+     "to": "duke-ellington",
+     "kind": "influence",
+     "note": "Ellington learned Johnson's Carolina Shout from a piano roll, slowing it down to copy it."
+    },
+    {
+     "from": "art-tatum",
+     "to": "bud-powell",
+     "kind": "influence",
+     "note": "Powell's speed and harmonic reach owed a great deal to Tatum, whom he idolised."
+    },
+    {
+     "from": "thelonious-monk",
+     "to": "bud-powell",
+     "kind": "teacher",
+     "note": "Monk took the teenage Powell under his wing at Minton's and stood up for him."
+    },
+    {
+     "from": "bud-powell",
+     "to": "bill-evans",
+     "kind": "influence",
+     "note": "Evans named Powell among his early models before finding his own harmonic world."
+    },
+    {
+     "from": "bud-powell",
+     "to": "mccoy-tyner",
+     "kind": "influence",
+     "note": "Tyner grew up in Philadelphia with Bud Powell's family in the neighbourhood; Powell was his first model."
+    },
+    {
+     "from": "bill-evans",
+     "to": "herbie-hancock",
+     "kind": "influence",
+     "note": "Hancock has said that Evans's voicings shaped his own harmony."
+    },
+    {
+     "from": "bill-evans",
+     "to": "keith-jarrett",
+     "kind": "influence",
+     "note": "Jarrett's ballad touch and trio interplay continue what Evans's trio began."
+    },
+    {
+     "from": "bill-evans",
+     "to": "brad-mehldau",
+     "kind": "influence",
+     "note": "Mehldau's trio, and his lyrical, introspective playing, are often traced to Evans, as he acknowledges."
+    },
+    {
+     "from": "duke-ellington",
+     "to": "cecil-taylor",
+     "kind": "influence",
+     "note": "Taylor named Ellington, with Monk, as a source for his own wildly different piano."
+    },
+    {
+     "from": "herbie-hancock",
+     "to": "robert-glasper",
+     "kind": "influence",
+     "note": "Glasper cites Hancock as a main influence, and plays his Maiden Voyage alongside Radiohead."
+    }
+   ]
+  },
+  {
+   "id": "drums",
+   "family": "Drums",
+   "title": "The Drums",
+   "intro": "Jazz drumming moved the time from the bass drum to the cymbals, and the drummer from timekeeper to conversation partner. Kenny Clarke started it in the bebop years; Max Roach made the kit melodic; Elvin Jones and Tony Williams made it the centre of the band.\n\nListen to the ride cymbal: it's where the time lives.",
+   "players": [
+    {
+     "artist": "baby-dodds",
+     "idea": "New Orleans drumming: press rolls and constant colour on a small kit.",
+     "track": "Baby Dodds|Potato Head Blues"
+    },
+    {
+     "artist": "kenny-clarke",
+     "idea": "Moved the time to the ride cymbal and 'dropped bombs' on the bass drum.",
+     "track": "Kenny Clarke|Venus de Milo"
+    },
+    {
+     "artist": "max-roach",
+     "idea": "Melodic drumming: solos built like compositions, and a crisp, driving ride.",
+     "track": "Max Roach|Joy Spring"
+    },
+    {
+     "artist": "art-blakey",
+     "idea": "Press rolls, shuffle grooves and thunder behind the soloists.",
+     "track": "Art Blakey|Moanin'"
+    },
+    {
+     "artist": "roy-haynes",
+     "idea": "Crisp, unpredictable snare comments; 'snap crackle'.",
+     "track": "Roy Haynes|Bouncin' with Bud"
+    },
+    {
+     "artist": "elvin-jones",
+     "idea": "Polyrhythm: triplets rolling over the beat, the drums as a churning sea.",
+     "track": "Elvin Jones|Passion Dance"
+    },
+    {
+     "artist": "billy-higgins",
+     "idea": "A smiling, light ride cymbal that made free and hard bop both swing.",
+     "track": "Billy Higgins|Lonely Woman"
+    },
+    {
+     "artist": "tony-williams",
+     "idea": "Time that stretched and broke, at seventeen, in Miles's quintet; then fusion's power.",
+     "track": "Tony Williams|Footprints"
+    },
+    {
+     "artist": "jack-dejohnette",
+     "idea": "Fluid, colouristic time across the standards trio and fusion.",
+     "track": "Keith Jarrett, Gary Peacock & Jack DeJohnette|God Bless the Child"
+    },
+    {
+     "artist": "makaya-mccraven",
+     "idea": "Live drumming edited like a beat-maker: jazz built from loops.",
+     "track": "Makaya McCraven|Young Genius"
+    }
+   ],
+   "links": [
+    {
+     "from": "kenny-clarke",
+     "to": "max-roach",
+     "kind": "influence",
+     "note": "Roach built on Clarke's innovations, the ride-cymbal time and bass-drum accents, and said so."
+    },
+    {
+     "from": "max-roach",
+     "to": "tony-williams",
+     "kind": "influence",
+     "note": "Williams studied Roach's playing as a boy in Boston; Roach was his model before Miles hired him."
+    },
+    {
+     "from": "elvin-jones",
+     "to": "jack-dejohnette",
+     "kind": "influence",
+     "note": "DeJohnette names Jones as a major influence; the rolling, polyrhythmic feel carries straight over."
+    }
+   ]
+  },
+  {
+   "id": "voice",
+   "family": "Voice",
+   "title": "The Voice",
+   "intro": "Jazz singing began with the blues queens of the 1920s, who sang over jazz bands in vaudeville tents. Louis Armstrong showed that a singer could improvise like a horn; Billie Holiday turned that into intimacy; Ella Fitzgerald and Sarah Vaughan into virtuosity. Every singer since has drawn on those few.\n\nListen for where the singer sits against the beat, and how far they'll bend the melody.",
+   "players": [
+    {
+     "artist": "ma-rainey",
+     "idea": "The Mother of the Blues: a huge, earthy voice from the tent shows.",
+     "track": "Ma Rainey|See See Rider Blues"
+    },
+    {
+     "artist": "bessie-smith",
+     "idea": "The Empress of the Blues: power and control, every word weighed.",
+     "track": "Bessie Smith|St. Louis Blues"
+    },
+    {
+     "artist": "louis-armstrong",
+     "idea": "Sang like he played: rewriting melodies, swinging the words, inventing scat on record.",
+     "track": "Louis Armstrong|Heebie Jeebies"
+    },
+    {
+     "artist": "billie-holiday",
+     "idea": "Behind the beat and inside the lyric: phrasing as storytelling.",
+     "track": "Billie Holiday|Strange Fruit"
+    },
+    {
+     "artist": "ella-fitzgerald",
+     "idea": "Perfect pitch, joyful swing and the greatest scat singing on record.",
+     "track": "Ella Fitzgerald|Night and Day"
+    },
+    {
+     "artist": "sarah-vaughan",
+     "idea": "An operatic range and bebop harmony in the voice.",
+     "track": "Sarah Vaughan|Lullaby of Birdland"
+    },
+    {
+     "artist": "nina-simone",
+     "idea": "Classical piano, gospel and protest in one voice.",
+     "track": "Nina Simone|My Baby Just Cares for Me"
+    },
+    {
+     "artist": "cassandra-wilson",
+     "idea": "A dark contralto taking the blues, folk and pop into jazz.",
+     "track": "Cassandra Wilson|You Don't Know What Love Is"
+    },
+    {
+     "artist": "cecile-mclorin-salvant",
+     "idea": "Theatrical, witty and precise, from 1920s blues to new songs.",
+     "track": "Cécile McLorin Salvant|WomanChild"
+    }
+   ],
+   "links": [
+    {
+     "from": "ma-rainey",
+     "to": "bessie-smith",
+     "kind": "teacher",
+     "note": "The two toured in the same travelling shows around 1912, and Rainey is often said to have coached the young Smith."
+    },
+    {
+     "from": "bessie-smith",
+     "to": "billie-holiday",
+     "kind": "influence",
+     "note": "Holiday said she learned to sing from Bessie Smith's and Louis Armstrong's records."
+    },
+    {
+     "from": "louis-armstrong",
+     "to": "billie-holiday",
+     "kind": "influence",
+     "note": "Holiday wanted Armstrong's feeling in her voice: his phrasing, not his sound, she said."
+    },
+    {
+     "from": "sarah-vaughan",
+     "to": "cecile-mclorin-salvant",
+     "kind": "influence",
+     "note": "McLorin Salvant names Vaughan, with Bessie Smith and Billie Holiday, among the singers she studied."
+    },
+    {
+     "from": "bessie-smith",
+     "to": "cecile-mclorin-salvant",
+     "kind": "influence",
+     "note": "Her repertoire reaches back to 1920s blues and vaudeville, songs Bessie Smith sang."
+    }
+   ]
+  }
+ ]
+}

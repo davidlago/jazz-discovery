@@ -151,6 +151,14 @@ struct ArtistDetailView: View {
                     }
                 }
 
+                if !library.roots(of: artist.id).isEmpty || !library.heirs(of: artist.id).isEmpty {
+                    VStack(alignment: .leading, spacing: 12) {
+                        SectionHeader(title: "Lineage", subtitle: "Whose sound theirs came from, and whose came from theirs.", tint: tint)
+                        ArtistLineageStrip(artist: artist, openArtist: { router.go(.artist($0)) }, openLineage: { router.go(.lineage($0)) })
+                    }
+                    .padding(.horizontal, 40)
+                }
+
                 let written = library.tunes(writtenBy: artist.id)
                 let played = library.versions(by: artist.id).filter { v in !written.contains(v.tune) }
                 if !written.isEmpty || !played.isEmpty {

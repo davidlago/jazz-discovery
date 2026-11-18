@@ -40,7 +40,7 @@ struct StationTrack: Decodable, Hashable, Identifiable {
 
 /// A station: an endless, explained mix from part of the guide.
 struct Station: Identifiable, Hashable {
-    enum Kind: Hashable { case era(String), decade(Int), instrument(String), longWay, newToYou, tune(String), songbook }
+    enum Kind: Hashable { case era(String), decade(Int), instrument(String), longWay, newToYou, tune(String), songbook, lineage(String) }
     let kind: Kind
     let title: String
     let subtitle: String
@@ -56,6 +56,7 @@ struct Station: Identifiable, Hashable {
         case .newToYou: return "new-to-you"
         case .tune(let t): return "tune-\(t)"
         case .songbook: return "songbook"
+        case .lineage(let l): return "lineage-\(l)"
         }
     }
 }
@@ -135,6 +136,8 @@ enum Programmer {
             return tune.sortedVersions.compactMap { library.track(for: $0, of: tune) }
         case .songbook:
             return library.tunes.flatMap { t in t.versions.compactMap { library.track(for: $0, of: t) } }
+        case .lineage(let id):
+            return library.lineage(id)?.players.compactMap { $0.track.flatMap { library.tracks[$0] } } ?? []
         }
     }
 

@@ -112,7 +112,7 @@ struct AlbumDetailView: View {
                             } else {
                                 Text(album.artistName).font(Theme.serif(24)).italic().foregroundStyle(tint)
                             }
-                            Text(album.why).font(Theme.serif(17)).foregroundStyle(Theme.cream.opacity(0.88))
+                            TermText(text: album.why, font: Theme.serif(17), color: Theme.cream.opacity(0.88)) { router.go(.term($0)) }
                                 .frame(maxWidth: 620, alignment: .leading).fixedSize(horizontal: false, vertical: true)
                             HStack(spacing: 10) {
                                 AlbumPlayControls(catalog: catalog, tracks: tracks, tint: tint)

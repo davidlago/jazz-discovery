@@ -28,7 +28,7 @@ struct TuneDetailView: View {
             VStack(alignment: .leading, spacing: 28) {
                 TuneDetailContent(tune: tune, compact: true,
                                   openArtist: { router.go(.artist($0)) }, openAlbum: { router.go(.album($0)) },
-                                  openTune: { router.go(.tune($0)) })
+                                  openTune: { router.go(.tune($0)) }, openTerm: { router.go(.term($0)) })
                     .padding(.horizontal, Theme.gutter)
                 VStack(alignment: .leading, spacing: 4) {
                     SectionHeader(title: "Watch & Listen on YouTube")

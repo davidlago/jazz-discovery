@@ -10,6 +10,8 @@ struct TimelineTab: View {
 
                 ContinueSection()
 
+                NewListenerCard()
+
                 VStack(alignment: .leading, spacing: 6) {
                     SectionHeader(title: "Radio", subtitle: "Stations that keep playing, and say why each track is there.") {
                         SeeAllLink(route: .radio)
@@ -450,5 +452,17 @@ struct BlindfoldCard: View {
         }
         .buttonStyle(.pressable)
         .padding(.horizontal, Theme.gutter)
+    }
+}
+
+/// For someone who hasn't heard anything yet: How to Listen.
+struct NewListenerCard: View {
+    @Environment(Passport.self) private var passport
+    @Environment(PhoneRouter.self) private var router
+
+    var body: some View {
+        if passport.heardCount == 0 {
+            HowToListenCard { router.go(.term($0)) }.padding(.horizontal, Theme.gutter)
+        }
     }
 }

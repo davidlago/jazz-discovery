@@ -143,6 +143,7 @@ struct ArtistDetailView: View {
     let artist: Artist
     @Environment(JazzLibrary.self) private var library
     @Environment(PlayerController.self) private var player
+    @Environment(PhoneRouter.self) private var router
     @State private var summary: WikiSummary?
     @State private var top: [CatalogTrack] = []
     @State private var loadedTop = false
@@ -241,6 +242,14 @@ struct ArtistDetailView: View {
                     VStack(alignment: .leading, spacing: 4) {
                         SectionHeader(title: "Essential Records", tint: tint)
                         HRow { ForEach(albums) { AlbumCard(album: $0, width: 150, showArtist: false) } }
+                    }
+                }
+
+                if !library.roots(of: artist.id).isEmpty || !library.heirs(of: artist.id).isEmpty {
+                    VStack(alignment: .leading, spacing: 12) {
+                        SectionHeader(title: "Lineage", subtitle: "Whose sound theirs came from, and whose came from theirs.", tint: tint)
+                        ArtistLineageStrip(artist: artist, openArtist: { router.go(.artist($0)) }, openLineage: { router.go(.lineage($0)) })
+                            .padding(.horizontal, Theme.gutter)
                     }
                 }
 

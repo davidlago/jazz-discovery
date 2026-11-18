@@ -31,7 +31,7 @@ struct TuneDetailView: View {
         ScrollView {
             VStack(alignment: .leading, spacing: 30) {
                 TuneDetailContent(tune: tune, openArtist: { router.go(.artist($0)) }, openAlbum: { router.go(.album($0)) },
-                                  openTune: { router.go(.tune($0)) })
+                                  openTune: { router.go(.tune($0)) }, openTerm: { router.go(.term($0)) })
                 VStack(alignment: .leading, spacing: 4) {
                     SectionHeader(title: "Watch & Listen on YouTube")
                     VideoStrip(query: "\(tune.title) jazz live", tint: Theme.brass).padding(.horizontal, -40)

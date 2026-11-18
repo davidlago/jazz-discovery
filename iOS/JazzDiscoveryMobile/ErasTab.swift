@@ -75,6 +75,36 @@ struct ErasTab: View {
                     }
                 }
 
+                if !library.lineages.isEmpty {
+                    VStack(alignment: .leading, spacing: 6) {
+                        SectionHeader(title: "Lineages", subtitle: "Who learned from whom, instrument by instrument.") { SeeAllLink(route: .lineages) }
+                        HRow(spacing: 12) {
+                            ForEach(library.lineages) { l in
+                                NavigationLink(value: PhoneRoute.lineage(l.id)) { LineageCard(lineage: l, width: 230) }.buttonStyle(.pressable)
+                            }
+                        }
+                    }
+                }
+
+                if !library.glossary.terms.isEmpty {
+                    VStack(alignment: .leading, spacing: 10) {
+                        SectionHeader(title: "Glossary", subtitle: "\(library.glossary.terms.count) words jazz uses, each with a recording to hear it in.") {
+                            SeeAllLink(route: .glossary)
+                        }
+                        NavigationLink(value: PhoneRoute.glossary) {
+                            HStack {
+                                Label("How to Listen, and the glossary", systemImage: "character.book.closed.fill")
+                                    .font(.subheadline.weight(.semibold)).foregroundStyle(Theme.cream)
+                                Spacer()
+                                Image(systemName: "chevron.right").font(.caption.weight(.bold)).foregroundStyle(Theme.faint)
+                            }
+                            .padding(14).background(RoundedRectangle(cornerRadius: 12).fill(Theme.panel))
+                        }
+                        .buttonStyle(.pressable)
+                        .padding(.horizontal, Theme.gutter)
+                    }
+                }
+
                 VStack(alignment: .leading, spacing: 10) {
                     SectionHeader(title: "Connections", subtitle: "Who played with whom, across the century.")
                     NavigationLink(value: PhoneRoute.connections(focus: nil)) {
@@ -143,6 +173,7 @@ struct EraPosterCard: View {
 struct EraDetailView: View {
     let era: Era
     @Environment(JazzLibrary.self) private var library
+    @Environment(PhoneRouter.self) private var router
     @State private var summary: WikiSummary?
     @State private var gallery: [WikiImage] = []
     @State private var heroImage: URL?
@@ -167,8 +198,8 @@ struct EraDetailView: View {
 
                 VStack(alignment: .leading, spacing: 16) {
                     ForEach(era.summary.components(separatedBy: "\n\n"), id: \.self) { p in
-                        Text(p).font(.system(.body, design: .serif)).lineSpacing(5)
-                            .foregroundStyle(Theme.cream.opacity(0.92))
+                        TermText(text: p, font: .system(.body, design: .serif), color: Theme.cream.opacity(0.92)) { router.go(.term($0)) }
+                            .lineSpacing(5)
                             .fixedSize(horizontal: false, vertical: true)
                     }
                 }

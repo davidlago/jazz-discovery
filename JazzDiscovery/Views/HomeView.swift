@@ -11,6 +11,8 @@ struct HomeView: View {
 
                 ContinueSection()
 
+                HowToListenHome()
+
                 VStack(alignment: .leading, spacing: 6) {
                     HStack(alignment: .firstTextBaseline) {
                         SectionHeader(title: "Radio", subtitle: "Stations that keep playing, and say why each track is there.")
@@ -371,6 +373,18 @@ struct ContinueSection: View {
                 }
             }
             .padding(.horizontal, 40)
+        }
+    }
+}
+
+/// For someone who hasn't heard anything yet: how to listen to a jazz performance, in five steps.
+struct HowToListenHome: View {
+    @Environment(Passport.self) private var passport
+    @Environment(Router.self) private var router
+
+    var body: some View {
+        if passport.heardCount == 0 {
+            HowToListenCard { router.go(.term($0)) }.padding(.horizontal, 40)
         }
     }
 }
