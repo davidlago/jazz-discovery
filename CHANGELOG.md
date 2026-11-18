@@ -6,6 +6,8 @@ section for the tagged version at the top of the GitHub release notes (or **Unre
 
 ## Unreleased
 
+## 1.0.1
+
 - **Privacy**: the app no longer keeps or sends cookies when it looks things up, and YouTube's player (now its
   "privacy-enhanced" one) forgets everything when you close a video, so YouTube can't tie one search or video to the
   next.
