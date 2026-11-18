@@ -222,7 +222,7 @@ reason" API the app uses (UserDefaults, CA92.1).
 
 ### Version text
 
-This text is for the release after 1.9 (152 artists, 130 records, personnel, Find a Path, Passport, Radio, the Blindfold Test, the Songbook, Places and Labels, Lineages and the Glossary, Paths, Today in Jazz, widgets, Siri). If 1.0.1 is submitted on its own first, say
+This text is for 1.10 (152 artists, 130 records, personnel, Find a Path, Passport, Radio, the Blindfold Test, the Songbook, Places and Labels, Lineages and the Glossary, Paths, Today in Jazz, widgets, Siri). If 1.0.1 is submitted on its own first, say
 "86 artists" and leave out the *Who played on what* and *Your passport* paragraphs and the path-finding sentence.
 
 **Promotional text** (170 characters, can change any time without review):
