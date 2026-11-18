@@ -162,7 +162,8 @@ struct ConnectionsMapView: View {
         guard let x0 = points.map(\.x).min(), let x1 = points.map(\.x).max(),
               let y0 = points.map(\.y).min(), let y1 = points.map(\.y).max() else { return }
         let card: CGFloat = 400
-        let usable = CGSize(width: viewport.width - 60, height: viewport.height - insets.top - card - 40)
+        // Names are centred under the faces, so the ends need room for half a name each side.
+        let usable = CGSize(width: viewport.width - 160, height: viewport.height - insets.top - card - 40)
         let z = max(MapCamera.minZoom, min(1, usable.width / max(x1 - x0, 1), usable.height / max(y1 - y0, 1)))
         camera.zoom = z
         camera.offset = CGPoint(x: viewport.width / 2 - (x0 + x1) / 2 * z,
@@ -340,9 +341,12 @@ private struct GraphMap: View {
 
     /// Decade labels pinned under the navigation bar, so you always know when you are, and the eras as a ribbon.
     private func drawRuler(in ctx: inout GraphicsContext, size: CGSize, cam: MapCamera) {
+        // Zoomed out, the decades crowd together: skip any label that would run into the one before it.
+        var lastLabel = -CGFloat.infinity
         for d in layout.decades {
             let x = layout.x(forYear: d) * cam.zoom + cam.offset.x
-            guard x > -60, x < size.width + 60 else { continue }
+            guard x > -60, x < size.width + 60, x >= lastLabel + 44 else { continue }
+            lastLabel = x
             ctx.draw(Text("\(String(d))s").font(Theme.label(10)).foregroundStyle(Theme.muted),
                      at: CGPoint(x: x + 5, y: topInset + 10), anchor: .leading)
         }

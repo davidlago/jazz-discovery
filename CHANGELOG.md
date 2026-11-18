@@ -6,6 +6,18 @@ section for the tagged version at the top of the GitHub release notes (or **Unre
 
 ## Unreleased
 
+## 1.1.0
+
+- **Personnel**: album pages list who played on the record, set like the credits on an LP's back cover, with when and
+  where it was recorded and who produced, arranged and engineered it. Players with a page in the app link to it, and
+  on the Mac, pointing at a track dims the players who aren't on it. 86 of the 88 albums so far, each checked by hand
+  against the liner notes, Wikipedia or a discography.
+- **Sidemen**: 41 more artists, the players all over the records in the Crate: Ron Carter, Paul Chambers, Billy Higgins,
+  Tony Williams, Wynton Kelly, Joe Henderson, Johnny Hodges, Jimmy Blanton, Lil Hardin Armstrong and more, including
+  the guide's first trombonists, vibraphonists, percussionists, a harpist and a flutist. Their pages show the records
+  they play on (*Also Plays On*, with their instrument on each), and so do the pages of everyone already in the guide.
+- Artists can be filtered to **Leaders** or **Sidemen**, and search also finds players who don't have a page yet,
+  with the records they're on.
 - **Connections** now come from the records: two artists are linked when they play on the same album, and the more
   records they share, the thicker the line. Links that aren't on a record (a mentor, a band before the Crate's
   records, an influence, a duo) each say what they were. Select a face, then another in their circle, to see what
@@ -13,20 +25,12 @@ section for the tagged version at the top of the GitHub release notes (or **Unre
 - **Find a Path** on the Connections map: the shortest chain of records and bonds between any two artists (Scott
   Joplin to Nubya Garcia is nine links), drawn on the map and listed step by step, with *Play the Path*: one track
   from each link, in order. Links like `jazzdiscovery://between/miles-davis/nubya-garcia` open it.
-- **Sidemen**: 41 more artists, the players all over the records in the Crate: Ron Carter, Paul Chambers, Billy Higgins,
-  Tony Williams, Wynton Kelly, Joe Henderson, Johnny Hodges, Jimmy Blanton, Lil Hardin Armstrong and more, including
-  the guide's first trombonists, vibraphonists, percussionists, a harpist and a flutist. Their pages show the records
-  they play on (*Also Plays On*, with their instrument on each), and so do the pages of everyone already in the guide.
-- Artists can be filtered to **Leaders** or **Sidemen**, and search also finds players who don't have a page yet,
-  with the records they're on.
-- **Personnel**: album pages list who played on the record, set like the credits on an LP's back cover, with when and
-  where it was recorded and who produced, arranged and engineered it. Players with a page in the app link to it, and
-  on the Mac, pointing at a track dims the players who aren't on it. 86 of the 88 albums so far, each checked by hand
-  against the liner notes, Wikipedia or a discography.
-- *Black Radio* plays the 2012 album; it had been matched to *Black Radio 2* on Apple Music.
-- Sonny Rollins (1930–2026) and Cassandra Wilson (1955–2026), who died this year, are shown with their dates.
 - Mac: `jazzdiscovery://` links open pages in the Mac app too (`jazzdiscovery://artist/miles-davis`, `era/bebop`,
   `album/kind-of-blue`…), as they already did on iPhone.
+- *Black Radio* plays the 2012 album; it had been matched to *Black Radio 2* on Apple Music.
+- Mac: the faces at the top of the home screen no longer show Miles Davis three times (he leads three eras); each era
+  shows a different artist.
+- Sonny Rollins (1930–2026) and Cassandra Wilson (1955–2026), who died this year, are shown with their dates.
 
 ## 1.0.1
 

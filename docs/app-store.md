@@ -171,10 +171,13 @@ reason" API the app uses (UserDefaults, CA92.1).
 
 ### Version text
 
+This text is for 1.1 (127 artists, personnel, Find a Path). If 1.0.1 is submitted on its own first, say "86 artists"
+and leave out the *Who played on what* paragraph and the path-finding sentence.
+
 **Promotional text** (170 characters, can change any time without review):
 
 ```
-Fourteen eras, 86 artists and 88 essential records, from ragtime to today. Play them with Apple Music, watch them on YouTube and scrobble to Last.fm.
+127 artists and 88 essential records, from ragtime to today, with who played on every one. Find the path between any two players, and listen as you go.
 ```
 
 **Keywords** (100 characters):
@@ -194,14 +197,17 @@ Fourteen styles flow across a timeline like river channels, overlapping where th
 Eras and decades
 Each era has its story, its sound, the places it happened, its key artists and essential records, tracks to play, documentaries and performances, and a picture archive. Or travel by decade, from the 1890s to the 2020s: the styles in the air, the turning points, the records and who was playing.
 
-86 artists
-Players, singers and composers in Blue Note–style duotone portraits, filterable by era and instrument, each with a biography, their most popular songs, their records, live videos and the people they played with.
+127 artists
+Leaders and the sidemen all over their records, in Blue Note–style duotone portraits, filterable by era and instrument, each with a biography, their most popular songs, their records, the records they play on, live videos and the people they played with.
 
 The Crate
 88 essential albums, by decade, with why each one matters, its tracklist and the tracks to start with. New to jazz? Follow the Start Here path, one record at a time.
 
+Who played on what
+Every album lists its band like the back of an LP: who played what, who sat out which track, when and where it was recorded, and who produced it, checked against the liner notes and discographies.
+
 Connections
-A map of who played with whom across the whole century: pinch around it, tap a face, and watch their circle light up.
+A map of who played with whom across the whole century, drawn from the records they share: tap a face to light up their circle, and another to see what ties them. Find the shortest path between any two artists, from Scott Joplin to Nubya Garcia, and play one track from each link.
 
 Listen and watch
 Connect Apple Music to play every song and album in full; without a subscription you hear 30-second previews, and everything opens in the Music app with one tap. Playback continues on the lock screen and works with AirPlay. Videos play right in the app.
@@ -227,5 +233,5 @@ Last.fm (optional): Settings > Last.fm connects the user's own Last.fm account, 
 
 Background audio is used only to keep music playing while the phone is locked.
 
-Suggested path: Timeline (scroll the River of Jazz sideways and tap a style), an era page, an artist (Artists tab), an album (Crate tab) and its Play button, Artists > Connections (pinch and tap faces), and Search.
+Suggested path: Timeline (scroll the River of Jazz sideways and tap a style), an era page, an artist (Artists tab), an album (Crate tab) with its Personnel and Play button, Artists > Connections (pinch and tap faces, then the path button at the top to find a path between two artists), and Search.
 ```

@@ -2,6 +2,10 @@
 
 *Written 2026-11-17, against `main` at 452078b (Mac 1.0.0 released; the iPhone app built, not yet on the App Store).*
 
+**Status (2026-11-18):** 1.0.1 and 1.1 are released (`v1.0.1`, `v1.1.0`). 1.1 shipped with 86 of the 88 albums'
+personnel reviewed: Bix Beiderbecke's *Singin' the Blues* and Mongo Santamaría's *Watermelon Man!* still need a source
+for their players. Next: 1.2, Passport.
+
 Today the app is a beautiful encyclopedia: 14 eras, 86 artists, 88 records and 40 milestones, and every screen is
 browse → read → play. This roadmap adds three things it doesn't have:
 
