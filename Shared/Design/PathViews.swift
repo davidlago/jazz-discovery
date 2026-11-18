@@ -42,6 +42,8 @@ struct PathDetailContent: View {
     var compact = false
     var open: (PathStop) -> Void
     var openPath: (String) -> Void
+    /// Opens a stop's listening guide, when its recording has one.
+    var openGuide: ((String) -> Void)? = nil
     @Environment(JazzLibrary.self) private var library
     @Environment(Passport.self) private var passport
     @Environment(PlayerController.self) private var player
@@ -123,6 +125,10 @@ struct PathDetailContent: View {
                     if let t = library.playable(stop) {
                         Button { PathPlayback.play(i, of: path, library: library, player: player) } label: { Label("Play \(t.title)", systemImage: "play.fill") }
                             .buttonStyle(.plain).foregroundStyle(path.color)
+                        if let openGuide, let g = library.guide(forSongID: t.id) {
+                            Button { openGuide(g.id) } label: { Label("Listening guide", systemImage: "list.bullet.rectangle.portrait") }
+                                .buttonStyle(.plain).foregroundStyle(Theme.brass)
+                        }
                     }
                     Button {
                         passport.setStop(stop.key, of: path.id, done: !passport.isTicked(stop.key, of: path.id))

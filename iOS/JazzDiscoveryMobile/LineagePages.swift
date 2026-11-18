@@ -42,7 +42,7 @@ struct GlossaryPage: View {
         ScrollView {
             VStack(alignment: .leading, spacing: 22) {
                 PageHeader(title: "Glossary", subtitle: "The words jazz uses, each with a recording to hear it in.")
-                HowToListenCard { router.go(.term($0)) }.padding(.horizontal, Theme.gutter)
+                HowToListenCard(openTerm: { router.go(.term($0)) }, openGuide: { router.go(.guide($0)) }).padding(.horizontal, Theme.gutter)
                 GlossaryList { router.go(.term($0)) }.padding(.horizontal, Theme.gutter)
             }
             .padding(.top, 8).padding(.bottom, 32)
@@ -92,7 +92,7 @@ struct PathDetailView: View {
         ScrollView {
             PathDetailContent(path: path, compact: true,
                               open: { stop in if let r = Route(stop: stop, library: library) { router.go(.page(r)) } },
-                              openPath: { router.go(.journey($0)) })
+                              openPath: { router.go(.journey($0)) }, openGuide: { router.go(.guide($0)) })
                 .padding(.horizontal, Theme.gutter).padding(.top, 16).padding(.bottom, 32)
         }
         .background(Theme.ink)

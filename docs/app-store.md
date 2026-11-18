@@ -180,8 +180,9 @@ on a real iPhone, which the simulator can't:
 
 In App Store Connect, the app ▸ **iOS App** ▸ the version (**+** to add one after the first release):
 
-1. **Screenshots** (Media Manager): drag in `docs/app-store/iphone-6.9/*` for the 6.9-inch display and
-   `docs/app-store/iphone-6.3/*` for 6.3-inch, in file order (ten each, the most App Store Connect takes). They're the
+1. **Screenshots**: App Store Connect takes one iPhone set (iPhone with Dynamic Island, 6.1"/6.3") and uses it for every
+   size, so drag in `docs/app-store/iphone-6.3/*` in file order; `iphone-6.9` is for Media Manager if a size ever needs
+   its own. The review video goes under App Review Information ▸ Attachment, under 10 MB for a browser upload (ten each, the most App Store Connect takes). They're the
    screens in `docs/app-store/screens/`, framed with a headline: make new screens with `scripts/app-store-screenshots.sh`,
    then `swift scripts/app-store-art.swift` (headlines and colours are at its top). `10-widgets.png` is drawn by the Mac
    app (`--snapshots <dir> --widgets-only`). The product page's **header** (optional, above the screenshots) is
@@ -298,6 +299,8 @@ Also on the Mac: https://github.com/davidlago/jazz-discovery
 Jazz Discovery is a guide to the history of jazz: eras, decades, artists and essential albums. Its content is an original dataset written for the app, illustrated with Wikipedia and Wikimedia Commons text and photos (credited on each page, CC BY-SA), album artwork and 30-second previews from Apple's iTunes Search API, and YouTube videos that play in YouTube's official embedded player.
 
 No sign-in is needed: every screen works right away.
+
+The attached video shows the app on an iPhone: launching, an era page, full tracks playing with Apple Music, an album page, Connections and the Artists tab.
 
 Apple Music (optional): Settings (gear at the top right of any tab) > Connect Apple Music asks for Apple Music access through MusicKit. With a subscription, songs and albums play in full in the app (ApplicationMusicPlayer); without one, the app plays 30-second previews and "Apple Music" buttons open the album or song in the Music app.
 

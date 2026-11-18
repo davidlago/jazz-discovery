@@ -548,6 +548,11 @@ final class PlayerController {
             isPlaying = p.state.playbackStatus == .playing
             var sameEntry = false
             if let entry = p.queue.currentEntry {
+                // Whatever is playing has a player bar, even if the app lost track of what it started.
+                if current == nil {
+                    current = NowPlaying(title: entry.title, artist: entry.subtitle ?? "",
+                                         artwork: entry.artwork?.url(width: 600, height: 600), appleMusicURL: nil, isFullTrack: true)
+                }
                 if entry.title != current?.title {
                     current?.title = entry.title
                     current?.artist = entry.subtitle ?? current?.artist ?? ""
@@ -574,9 +579,29 @@ final class PlayerController {
             if isPlaying || moved > 0 { scrobbler.played(listened) }
             measureListening(p.queue.currentEntry, listened: listened)
             noticeAlbumEnd(p)
-        case .none: break
+        case .none:
+            adoptSystemPlayback()
         }
         if mode != .none { refreshOutput() }
+    }
+
+    /// Apple Music's player can be playing while this controller thinks nothing is (the app relaunched mid-song, or
+    /// was woken by a widget or Siri): take it over, so the player bar shows and its controls work.
+    private func adoptSystemPlayback() {
+        guard MusicAuthorization.currentStatus == .authorized else { return }
+        let p = ApplicationMusicPlayer.shared
+        guard p.state.playbackStatus == .playing, let entry = p.queue.currentEntry else { return }
+        mode = .appleMusic
+        isPlaying = true
+        var np = NowPlaying(title: entry.title, artist: entry.subtitle ?? "",
+                            artwork: entry.artwork?.url(width: 600, height: 600), appleMusicURL: nil, isFullTrack: true)
+        if case .song(let s)? = entry.item {
+            np.appleMusicURL = s.url
+            duration = s.duration ?? 0
+            currentTrackID = Int(s.id.rawValue)
+        }
+        current = np
+        Self.log.notice("Took over Apple Music playback the app hadn't started: \(entry.title, privacy: .public)")
     }
 
     /// A stored preview link that no longer works: look the song up again once, and play the fresh link.

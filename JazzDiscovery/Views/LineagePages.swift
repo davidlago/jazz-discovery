@@ -52,7 +52,7 @@ struct GlossaryView: View {
                     Text("The words jazz uses, each with a recording to hear it in.").font(Theme.serif(18)).italic().foregroundStyle(Theme.muted)
                 }
                 .padding(.top, 30)
-                HowToListenCard { router.go(.term($0)) }
+                HowToListenCard(openTerm: { router.go(.term($0)) }, openGuide: { router.go(.guide($0)) })
                 GlossaryList { router.go(.term($0)) }
             }
             .padding(.horizontal, 40).padding(.bottom, 50)
@@ -110,7 +110,7 @@ struct PathDetailView: View {
     var body: some View {
         ScrollView {
             PathDetailContent(path: path, open: { stop in if let r = Route(stop: stop, library: library) { router.go(r) } },
-                              openPath: { router.go(.journey($0)) })
+                              openPath: { router.go(.journey($0)) }, openGuide: { router.go(.guide($0)) })
                 .padding(.top, 40).padding(.horizontal, 40).padding(.bottom, 50)
                 .frame(maxWidth: .infinity, alignment: .leading)
         }

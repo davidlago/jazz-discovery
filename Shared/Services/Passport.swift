@@ -62,6 +62,49 @@ struct PassportData: Codable, Equatable {
     var paths: [String: [String: Date]]? = nil
     /// Songs (Apple Music IDs) heard in full, from any record, and when first (added in 1.7, for path stops).
     var songsHeard: [String: Date]? = nil
+    /// Fields a newer version of the app wrote that this one doesn't know, kept as they were so syncing through an
+    /// older copy of the app doesn't erase them.
+    var unknown: [String: JSONValue]? = nil
+
+    init(albums: [String: PassportMark] = [:], artists: [String: PassportMark] = [:], ears: [String: EarScore]? = nil,
+         paths: [String: [String: Date]]? = nil, songsHeard: [String: Date]? = nil, unknown: [String: JSONValue]? = nil) {
+        self.albums = albums; self.artists = artists; self.ears = ears; self.paths = paths; self.songsHeard = songsHeard
+        self.unknown = unknown
+    }
+
+    private enum Keys: String, CodingKey, CaseIterable { case albums, artists, ears, paths, songsHeard }
+    private struct AnyKey: CodingKey {
+        var stringValue: String; var intValue: Int? { nil }
+        init(stringValue: String) { self.stringValue = stringValue }
+        init?(intValue: Int) { nil }
+    }
+
+    init(from decoder: Decoder) throws {
+        let c = try decoder.container(keyedBy: Keys.self)
+        albums = try c.decodeIfPresent([String: PassportMark].self, forKey: .albums) ?? [:]
+        artists = try c.decodeIfPresent([String: PassportMark].self, forKey: .artists) ?? [:]
+        ears = try c.decodeIfPresent([String: EarScore].self, forKey: .ears)
+        paths = try c.decodeIfPresent([String: [String: Date]].self, forKey: .paths)
+        songsHeard = try c.decodeIfPresent([String: Date].self, forKey: .songsHeard)
+        let all = try decoder.container(keyedBy: AnyKey.self)
+        let known = Set(Keys.allCases.map(\.rawValue))
+        var extra: [String: JSONValue] = [:]
+        for k in all.allKeys where !known.contains(k.stringValue) {
+            extra[k.stringValue] = try all.decode(JSONValue.self, forKey: k)
+        }
+        unknown = extra.isEmpty ? nil : extra
+    }
+
+    func encode(to encoder: Encoder) throws {
+        var c = encoder.container(keyedBy: Keys.self)
+        try c.encode(albums, forKey: .albums)
+        try c.encode(artists, forKey: .artists)
+        try c.encodeIfPresent(ears, forKey: .ears)
+        try c.encodeIfPresent(paths, forKey: .paths)
+        try c.encodeIfPresent(songsHeard, forKey: .songsHeard)
+        var all = encoder.container(keyedBy: AnyKey.self)
+        for (k, v) in unknown ?? [:] { try all.encode(v, forKey: AnyKey(stringValue: k)) }
+    }
 
     /// Both orders give the same result.
     static func merged(_ a: PassportData, _ b: PassportData) -> PassportData {
@@ -75,9 +118,11 @@ struct PassportData: Codable, Equatable {
         var paths: [String: [String: Date]] = a.paths ?? [:]
         for (id, stops) in b.paths ?? [:] { paths[id] = (paths[id] ?? [:]).merging(stops) { min($0, $1) } }
         let songs = (a.songsHeard ?? [:]).merging(b.songsHeard ?? [:]) { min($0, $1) }
+        // Unknown fields can't be merged by meaning: keep both sides', and on a clash the same one whichever way round.
+        let unknown = (a.unknown ?? [:]).merging(b.unknown ?? [:]) { x, y in x.sortKey >= y.sortKey ? x : y }
         return PassportData(albums: merge(a.albums, b.albums), artists: merge(a.artists, b.artists),
                             ears: ears.isEmpty ? nil : ears, paths: paths.isEmpty ? nil : paths,
-                            songsHeard: songs.isEmpty ? nil : songs)
+                            songsHeard: songs.isEmpty ? nil : songs, unknown: unknown.isEmpty ? nil : unknown)
     }
 }
 
@@ -356,5 +401,39 @@ extension Passport {
     func weakestEar() -> String? {
         (data.ears ?? [:]).filter { $0.value.total >= 3 }
             .min { Double($0.value.right) / Double($0.value.total) < Double($1.value.right) / Double($1.value.total) }?.key
+    }
+}
+
+/// Any JSON value, kept as it was read.
+enum JSONValue: Codable, Equatable {
+    case null, bool(Bool), number(Double), string(String), array([JSONValue]), object([String: JSONValue])
+
+    init(from decoder: Decoder) throws {
+        let c = try decoder.singleValueContainer()
+        if c.decodeNil() { self = .null }
+        else if let b = try? c.decode(Bool.self) { self = .bool(b) }
+        else if let n = try? c.decode(Double.self) { self = .number(n) }
+        else if let s = try? c.decode(String.self) { self = .string(s) }
+        else if let a = try? c.decode([JSONValue].self) { self = .array(a) }
+        else { self = .object(try c.decode([String: JSONValue].self)) }
+    }
+
+    func encode(to encoder: Encoder) throws {
+        var c = encoder.singleValueContainer()
+        switch self {
+        case .null: try c.encodeNil()
+        case .bool(let b): try c.encode(b)
+        case .number(let n): try c.encode(n)
+        case .string(let s): try c.encode(s)
+        case .array(let a): try c.encode(a)
+        case .object(let o): try c.encode(o)
+        }
+    }
+
+    /// A stable text form, to pick between two values the same way whichever order they come in.
+    var sortKey: String {
+        let e = JSONEncoder()
+        e.outputFormatting = [.sortedKeys]
+        return (try? e.encode(self)).map { String(decoding: $0, as: UTF8.self) } ?? ""
     }
 }

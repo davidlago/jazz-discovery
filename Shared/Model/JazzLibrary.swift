@@ -302,7 +302,16 @@ final class JazzLibrary {
     struct SearchResults { var eras: [Era] = []; var artists: [Artist] = []; var albums: [Album] = []
         var players: [Player] = []
         var tunes: [Tune] = []
-        var isEmpty: Bool { eras.isEmpty && artists.isEmpty && albums.isEmpty && players.isEmpty && tunes.isEmpty } }
+        var places: [Place] = []
+        var labels: [LabelInfo] = []
+        var terms: [GlossaryTerm] = []
+        var paths: [JourneyPath] = []
+        var guides: [Guide] = []
+        var isEmpty: Bool {
+            eras.isEmpty && artists.isEmpty && albums.isEmpty && players.isEmpty && tunes.isEmpty && places.isEmpty
+                && labels.isEmpty && terms.isEmpty && paths.isEmpty && guides.isEmpty
+        }
+    }
 
     func search(_ q: String) -> SearchResults {
         let q = q.trimmingCharacters(in: .whitespaces).lowercased()
@@ -327,7 +336,12 @@ final class JazzLibrary {
             artists: artists.filter { m($0.name) || m($0.instrument) },
             albums: albums.filter { m($0.title) || m($0.artistName) || m($0.label) || String($0.year) == q },
             players: Array(players.prefix(20)),
-            tunes: tunes.filter { t in m(t.title) || (t.aliases ?? []).contains(where: m) || t.composers.map(composerName).contains(where: m) }
+            tunes: tunes.filter { t in m(t.title) || (t.aliases ?? []).contains(where: m) || t.composers.map(composerName).contains(where: m) },
+            places: places.filter { m($0.name) || ($0.city.map(m) ?? false) },
+            labels: labels.filter { m($0.name) || $0.matches.contains(where: m) },
+            terms: glossary.terms.filter { m($0.term) || $0.also.contains(where: m) },
+            paths: paths.filter { m($0.title) || m($0.subtitle) },
+            guides: guides.filter { g in tracks[g.track].map { m($0.title) || m($0.artistName) } ?? false }
         )
     }
 }

@@ -53,11 +53,22 @@ enum Snapshots {
             ("21-term", { router.show(.term("rhythm-changes")) }),
             ("22-path", { router.show(.journey("nineteen-fifty-nine")) }),
             ("23-paths", { router.show(.paths) }),
+            ("24-guides", { router.show(.guides) }),
+            // A guide with its recording playing (a preview here: snapshots have no Apple Music), and the player.
+            ("25-guide", {
+                router.show(.guide("so-what"))
+                if let t = library.tracks["Miles Davis|So What"] { player.play(t.track) }
+            }),
+            ("26-search", { router.show(.timeline); router.query = "blue" }),
         ]
+        // `--only <prefix>`: just the shots whose names start with it ("25", "2").
+        let only = CommandLine.arguments.firstIndex(of: "--only").flatMap { i in
+            i + 1 < CommandLine.arguments.count ? CommandLine.arguments[i + 1] : nil
+        }
         // A passport with something in it (in memory only: snapshots don't touch the real one).
         passport.fillWithDemo(library: library)
         try? FileManager.default.createDirectory(atPath: dir, withIntermediateDirectories: true)
-        for (name, setup) in shots {
+        for (name, setup) in shots where only.map(name.hasPrefix) ?? true {
             setup()
             try? await Task.sleep(for: .seconds(9))
             host.layoutSubtreeIfNeeded()

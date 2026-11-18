@@ -416,7 +416,7 @@ struct HowToListenHome: View {
 
     var body: some View {
         if passport.heardCount == 0 {
-            HowToListenCard { router.go(.term($0)) }.padding(.horizontal, 40)
+            HowToListenCard(openTerm: { router.go(.term($0)) }, openGuide: { router.go(.guide($0)) }).padding(.horizontal, 40)
         }
     }
 }

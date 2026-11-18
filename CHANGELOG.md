@@ -6,6 +6,18 @@ section for the tagged version at the top of the GitHub release notes (or **Unre
 
 ## Unreleased
 
+- **Search** finds places, labels, glossary terms, paths and listening guides too.
+- **Listening guides** are easier to find: a mark on guided tracks in album, era and tune lists, a *Listening guide*
+  button on path stops that have one, and How to Listen leads to the So What guide.
+- **The Songbook** shows how many of a tune's versions you've heard in full, and a tune's page lists the others in the
+  same form (the blues; 32-bar AABA songs).
+- **Radio** lists the city, club and label stations too.
+- **The Crate** can be grouped by label as well as by decade.
+- **The player** on the Mac floats at the bottom of the window as a rounded glass panel, and shows whenever music is
+  playing, including after the app was reopened mid-song or started by Siri or a widget.
+- Passport sync keeps details written by a newer version of the app, so an older copy on another device doesn't erase
+  them.
+
 ## 1.11.0
 
 - **Listening guides**: So What, West End Blues, Body and Soul, Take Five, Moanin' and The Girl from Ipanema, section

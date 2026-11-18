@@ -114,3 +114,31 @@ extension JazzLibrary {
     /// A composer's name: the artist's, for an ID.
     func composerName(_ s: String) -> String { artist(s)?.name ?? s }
 }
+
+extension Tune {
+    /// The family of forms the tune belongs to, for "Same form" on its page: the blues in any length, or the 32-bar
+    /// AABA song. Nil for the rest, which are too varied to group.
+    var formFamily: String? {
+        let f = form.lowercased()
+        if f.contains("blues") { return "blues" }
+        if f.hasPrefix("aaba, 32 bars") { return "aaba-32" }
+        return nil
+    }
+}
+
+extension JazzLibrary {
+    /// Other tunes in the same form family, A–Z.
+    func sameForm(as tune: Tune) -> [Tune] {
+        guard let family = tune.formFamily else { return [] }
+        return tunes.filter { $0.id != tune.id && $0.formFamily == family }
+    }
+}
+
+extension Passport {
+    /// How many of a tune's versions (the ones that resolve to a song) have been heard in full.
+    func versionsHeard(of tune: Tune, library: JazzLibrary) -> (heard: Int, total: Int) {
+        let ids = tune.versions.compactMap { library.track(for: $0, of: tune)?.id }
+        let heard = ids.filter { data.songsHeard?[String($0)] != nil }.count
+        return (heard, ids.count)
+    }
+}

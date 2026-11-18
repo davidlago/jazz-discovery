@@ -205,6 +205,26 @@ struct SearchResultsView: View {
                     SectionHeader(title: "Songbook").padding(.horizontal, 40)
                     HRow { ForEach(r.tunes) { t in Button { router.go(.tune(t.id)) } label: { TuneCard(tune: t) }.buttonStyle(.plain) } }
                 }
+                if !r.guides.isEmpty {
+                    SectionHeader(title: "Listening Guides").padding(.horizontal, 40)
+                    HRow { ForEach(r.guides) { g in Button { router.go(.guide(g.id)) } label: { GuideCard(guide: g, width: 280) }.buttonStyle(.plain) } }
+                }
+                if !r.paths.isEmpty {
+                    SectionHeader(title: "Paths").padding(.horizontal, 40)
+                    HRow { ForEach(r.paths) { p in Button { router.go(.journey(p.id)) } label: { SearchChip(title: p.title, subtitle: p.subtitle, symbol: "point.topright.arrow.triangle.backward.to.point.bottomleft.scurvepath.fill", tint: p.color) }.buttonStyle(.plain) } }
+                }
+                if !r.places.isEmpty {
+                    SectionHeader(title: "Places").padding(.horizontal, 40)
+                    HRow { ForEach(r.places) { p in Button { router.go(.place(p.id)) } label: { SearchChip(title: p.name, subtitle: "\(p.kindLabel) · \(p.years)", symbol: "mappin.circle.fill", tint: Theme.brass) }.buttonStyle(.plain) } }
+                }
+                if !r.labels.isEmpty {
+                    SectionHeader(title: "Labels").padding(.horizontal, 40)
+                    HRow { ForEach(r.labels) { l in Button { router.go(.label(l.id)) } label: { SearchChip(title: l.name, subtitle: "Founded \(String(l.founded))", symbol: "opticaldisc.fill", tint: Color(hex: l.color)) }.buttonStyle(.plain) } }
+                }
+                if !r.terms.isEmpty {
+                    SectionHeader(title: "Glossary").padding(.horizontal, 40)
+                    HRow { ForEach(r.terms) { t in Button { router.go(.term(t.id)) } label: { SearchChip(title: t.term, subtitle: t.short, symbol: "character.book.closed.fill", tint: Theme.brass) }.buttonStyle(.plain) } }
+                }
                 if !r.players.isEmpty {
                     SectionHeader(title: "On the Records", subtitle: "Players credited on the albums who don't have a page yet.")
                         .padding(.horizontal, 40)
@@ -232,6 +252,29 @@ struct SearchResultsView: View {
             .padding(.bottom, 40)
         }
         .background(Theme.ink)
+    }
+}
+
+/// A search result for a page without a card of its own: a symbol, a title and a line.
+struct SearchChip: View {
+    let title: String
+    let subtitle: String
+    let symbol: String
+    let tint: Color
+
+    var body: some View {
+        HStack(spacing: 12) {
+            Image(systemName: symbol).font(.system(size: 20)).foregroundStyle(tint)
+                .frame(width: 44, height: 44).background(RoundedRectangle(cornerRadius: 8).fill(Theme.panelHi))
+            VStack(alignment: .leading, spacing: 2) {
+                Text(title).font(.system(size: 14, weight: .semibold)).foregroundStyle(Theme.cream).lineLimit(1)
+                Text(subtitle).font(.system(size: 12)).foregroundStyle(Theme.muted).lineLimit(2)
+            }
+            Spacer(minLength: 0)
+        }
+        .padding(10)
+        .frame(width: 300, alignment: .leading)
+        .background(RoundedRectangle(cornerRadius: 12).fill(Theme.panel))
     }
 }
 
