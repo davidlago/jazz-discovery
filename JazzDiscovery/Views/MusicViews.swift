@@ -6,13 +6,21 @@ struct TrackList: View {
     var tint: Color = Theme.brass
     var showArtist = false
     var highlight: [String] = []
+    /// Told which track the pointer is over (nil when it leaves the list), for the album page's personnel.
+    var onHover: ((CatalogTrack?) -> Void)? = nil
     @Environment(PlayerController.self) private var player
+    @State private var hovered: Int?
 
     var body: some View {
         VStack(spacing: 0) {
             ForEach(Array(tracks.enumerated()), id: \.element.id) { i, t in
                 TrackRow(track: t, number: t.trackNumber ?? (i + 1), tint: tint, showArtist: showArtist,
-                         highlighted: highlight.contains { t.name.localizedCaseInsensitiveContains($0) }) {
+                         highlighted: highlight.contains { t.name.localizedCaseInsensitiveContains($0) },
+                         hoverChanged: { inside in
+                             // Entering the next row can arrive before leaving this one.
+                             if inside { hovered = t.trackId; onHover?(t) }
+                             else if hovered == t.trackId { hovered = nil; onHover?(nil) }
+                         }) {
                     player.play(tracks, startAt: i)
                 }
                 if i < tracks.count - 1 { Divider().overlay(Theme.panelHi) }
@@ -27,6 +35,7 @@ struct TrackRow: View {
     var tint: Color
     var showArtist = false
     var highlighted = false
+    var hoverChanged: ((Bool) -> Void)? = nil
     var action: () -> Void
     @Environment(PlayerController.self) private var player
     @State private var hovering = false
@@ -71,7 +80,7 @@ struct TrackRow: View {
         .padding(.vertical, 8).padding(.horizontal, 12)
         .background(RoundedRectangle(cornerRadius: 6).fill(hovering ? Theme.panelHi : .clear))
         .contentShape(Rectangle())
-        .onHover { hovering = $0 }
+        .onHover { hovering = $0; hoverChanged?($0) }
         .onTapGesture(count: 1, perform: action)
     }
 }

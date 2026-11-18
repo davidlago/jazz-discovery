@@ -6,6 +6,10 @@ section for the tagged version at the top of the GitHub release notes (or **Unre
 
 ## Unreleased
 
+- **Personnel**: album pages list who played on the record, set like the credits on an LP's back cover, with when and
+  where it was recorded and who produced, arranged and engineered it. Players with a page in the app link to it, and
+  on the Mac, pointing at a track dims the players who aren't on it. 86 of the 88 albums so far, each checked by hand
+  against the liner notes, Wikipedia or a discography.
 - *Black Radio* plays the 2012 album; it had been matched to *Black Radio 2* on Apple Music.
 - Sonny Rollins (1930–2026) and Cassandra Wilson (1955–2026), who died this year, are shown with their dates.
 - Mac: `jazzdiscovery://` links open pages in the Mac app too (`jazzdiscovery://artist/miles-davis`, `era/bebop`,

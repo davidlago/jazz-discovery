@@ -138,6 +138,8 @@ struct Session: Codable, Hashable {
     let recordedBetween: [Int]?
     let personnel: [Credit]
     let crew: [CrewCredit]?
+    /// The tracks the credits refer to (titles as on the edition that was checked).
+    var tracks: [String]? = nil
 
     var isCompilation: Bool { kind == "compilation" }
 

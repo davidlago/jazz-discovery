@@ -79,6 +79,7 @@ struct AlbumDetailView: View {
         let tint = library.color(forEra: album.era)
         let era = library.era(album.era)
         let artist = library.artist(album.artist)
+        let session = library.session(for: album.id)
         let more = library.albums(by: album.artist).filter { $0.id != album.id }
         let sameEra = library.albums(inEra: album.era).filter { $0.id != album.id && $0.artist != album.artist }
 
@@ -131,6 +132,10 @@ struct AlbumDetailView: View {
                     .fixedSize(horizontal: false, vertical: true)
                     .padding(.horizontal, Theme.gutter)
 
+                if let session {
+                    PersonnelSection(session: session, trackCount: tracks.isEmpty ? nil : tracks.count, tint: tint)
+                }
+
                 VStack(alignment: .leading, spacing: 10) {
                     SectionHeader(title: "Tracklist", subtitle: album.highlights.isEmpty ? nil : "★ marks the tracks to start with.", tint: tint)
                     Group {
@@ -176,6 +181,44 @@ struct AlbumDetailView: View {
             catalog = await ITunes.shared.album(for: album)
             if let c = catalog { tracks = await ITunes.shared.tracks(collectionId: c.collectionId) }
             loaded = true
+        }
+    }
+}
+
+/// Who played on the record, as liner credits, with when and where it was recorded and who was behind the glass.
+/// Big bands show the first eight players and a button for the rest.
+struct PersonnelSection: View {
+    let session: Session
+    var trackCount: Int?
+    var tint: Color
+    @Environment(PhoneRouter.self) private var router
+    @State private var showAll = false
+    private let collapsed = 8
+
+    var body: some View {
+        // Counts in the credits refer to the session's own track list; Apple Music's is the fallback.
+        let count = session.tracks?.count ?? trackCount ?? 0
+        let people = session.personnel
+        let shown = showAll || people.count <= collapsed + 2 ? people : Array(people.prefix(collapsed))
+        VStack(alignment: .leading, spacing: 12) {
+            SectionHeader(title: "Personnel", subtitle: session.recordedText.map { "Recorded \($0)" }, tint: tint)
+            VStack(alignment: .leading, spacing: 11) {
+                ForEach(Array(shown.enumerated()), id: \.offset) { _, credit in
+                    CreditRow(credit: credit, trackCount: count, tint: tint, nameSize: 11, detailSize: 14,
+                              openArtist: { router.go(.artist($0)) })
+                }
+                if shown.count < people.count {
+                    Button("Show all \(people.count)") { withAnimation(.easeInOut(duration: 0.25)) { showAll = true } }
+                        .font(.subheadline.weight(.semibold)).foregroundStyle(tint)
+                        .padding(.top, 2)
+                }
+                if let crew = session.crewText {
+                    Text(crew).font(.footnote).foregroundStyle(Theme.muted)
+                        .fixedSize(horizontal: false, vertical: true)
+                        .padding(.top, 4)
+                }
+            }
+            .padding(.horizontal, Theme.gutter)
         }
     }
 }
