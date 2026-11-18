@@ -26,6 +26,7 @@ struct JazzDiscoveryApp: App {
         AppContext.shared.library = library
         AppContext.shared.passport = passport
         AppContext.shared.player = player
+        MorningNote.shared.start(library: library)
         if SelfTest.requested {
             Task { @MainActor in await SelfTest.run(library) }
         }

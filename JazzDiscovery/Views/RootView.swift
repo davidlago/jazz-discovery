@@ -237,6 +237,7 @@ struct SettingsView: View {
         TabView {
             AppleMusicSettings().tabItem { Label("Apple Music", systemImage: "applelogo") }
             LastFMSettings(scrobbler: player.scrobbler).tabItem { Label("Last.fm", systemImage: "dot.radiowaves.left.and.right") }
+            Form { MorningNoteSettings() }.formStyle(.grouped).tabItem { Label("Today in Jazz", systemImage: "calendar") }
         }
         .frame(width: 560)
     }

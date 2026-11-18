@@ -26,6 +26,8 @@ struct SettingsView: View {
                     Text("Scrobble the full tracks you play with Apple Music to your Last.fm profile.")
                 }
 
+                MorningNoteSettings()
+
                 Section("About") {
                     LabeledContent("Version", value: Self.version)
                     Link(destination: URL(string: "https://github.com/davidlago/jazz-discovery")!) {

@@ -27,6 +27,7 @@ struct JazzDiscoveryMobileApp: App {
         AppContext.shared.library = library
         AppContext.shared.passport = passport
         AppContext.shared.player = player
+        MorningNote.shared.start(library: library)
     }
 
     var body: some Scene {

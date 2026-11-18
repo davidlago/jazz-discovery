@@ -94,6 +94,7 @@
 				Services/Intents.swift,
 				Services/LastFM.swift,
 				Services/LastFMImport.swift,
+				Services/MorningNote.swift,
 				Services/PassportSync.swift,
 				Services/Player.swift,
 				Services/WidgetPublisher.swift,
