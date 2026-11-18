@@ -13,6 +13,7 @@ To show its pages, the app asks these public services for information. The reque
 - **Wikipedia and Wikimedia Commons** (Wikimedia Foundation): artist and era summaries and photos.
 - **Apple's iTunes Search API**: album and song matches, artwork and 30-second previews.
 - **YouTube** (Google): video search results, and the videos you choose to play, in YouTube's embedded player.
+- **Apple Maps**: map tiles for the Places map. The app doesn't ask for or use your location.
 
 Like any website, these services see your device's IP address when the app connects to them. Their own privacy policies
 apply.

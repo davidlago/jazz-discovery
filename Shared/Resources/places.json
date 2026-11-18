@@ -1,0 +1,1011 @@
+{
+ "places": [
+  {
+   "id": "new-orleans",
+   "name": "New Orleans",
+   "kind": "city",
+   "wikipedia": "New_Orleans",
+   "lat": 29.9511,
+   "lon": -90.0715,
+   "from": 1895,
+   "to": null,
+   "summary": "The port city where brass bands, blues, ragtime, Creole song and Caribbean rhythm met, and jazz was born around the turn of the twentieth century. Its musicians carried the music up the river; it has never stopped playing it, and in the 1980s its sons, the Marsalis brothers among them, led the return to the tradition.",
+   "eras": [
+    "roots",
+    "new-orleans",
+    "post-bop"
+   ],
+   "artists": [
+    "louis-armstrong",
+    "jelly-roll-morton",
+    "king-oliver",
+    "sidney-bechet",
+    "wynton-marsalis",
+    "kid-ory",
+    "johnny-dodds",
+    "baby-dodds"
+   ]
+  },
+  {
+   "id": "storyville",
+   "name": "Storyville",
+   "kind": "district",
+   "city": "new-orleans",
+   "wikipedia": "Storyville",
+   "lat": 29.9578,
+   "lon": -90.0745,
+   "from": 1897,
+   "to": 1917,
+   "summary": "New Orleans's licensed red-light district, where piano 'professors' and small bands played in the parlours and dance halls. Its closing by the Navy in 1917 is part of the story of why musicians headed north.",
+   "eras": [
+    "new-orleans"
+   ],
+   "artists": [
+    "jelly-roll-morton",
+    "king-oliver",
+    "sidney-bechet"
+   ]
+  },
+  {
+   "id": "sedalia",
+   "name": "Sedalia, Missouri",
+   "kind": "city",
+   "wikipedia": "Sedalia,_Missouri",
+   "lat": 38.7045,
+   "lon": -93.2283,
+   "from": 1894,
+   "to": 1901,
+   "summary": "The railroad town where Scott Joplin played at the Maple Leaf Club and published the Maple Leaf Rag in 1899, the sheet music that made ragtime a national craze.",
+   "eras": [
+    "roots"
+   ],
+   "artists": [
+    "scott-joplin"
+   ]
+  },
+  {
+   "id": "st-louis",
+   "name": "St. Louis",
+   "kind": "city",
+   "wikipedia": "St._Louis",
+   "lat": 38.627,
+   "lon": -90.1994,
+   "from": 1900,
+   "to": 1930,
+   "summary": "A ragtime centre at the turn of the century, where Joplin lived after Sedalia and the 1904 World's Fair brought the music to visitors from everywhere, and later a stop for the riverboat bands heading north.",
+   "eras": [
+    "roots"
+   ],
+   "artists": [
+    "scott-joplin"
+   ]
+  },
+  {
+   "id": "mississippi-delta",
+   "name": "The Mississippi Delta",
+   "kind": "district",
+   "wikipedia": "Mississippi_Delta",
+   "lat": 33.8,
+   "lon": -90.4,
+   "from": 1900,
+   "to": 1940,
+   "summary": "The cotton country between the Mississippi and Yazoo rivers, where the country blues took shape: a voice and a guitar, field hollers and work songs, the raw material jazz kept returning to.",
+   "eras": [
+    "roots"
+   ],
+   "artists": []
+  },
+  {
+   "id": "chicago",
+   "name": "Chicago",
+   "kind": "city",
+   "wikipedia": "Chicago",
+   "lat": 41.8781,
+   "lon": -87.6298,
+   "from": 1918,
+   "to": null,
+   "summary": "Where New Orleans musicians landed in the Great Migration and jazz became a recorded, national music in the 1920s: King Oliver's band, Armstrong's Hot Fives, the young white players who studied them. Later the home of the AACM's experiments and, today, a new scene around International Anthem.",
+   "eras": [
+    "new-orleans",
+    "free",
+    "soul-jazz",
+    "contemporary"
+   ],
+   "artists": [
+    "louis-armstrong",
+    "king-oliver",
+    "earl-hines",
+    "lil-hardin-armstrong",
+    "makaya-mccraven",
+    "johnny-dodds"
+   ]
+  },
+  {
+   "id": "south-side-chicago",
+   "name": "Chicago's South Side",
+   "kind": "district",
+   "city": "chicago",
+   "wikipedia": "South_Side,_Chicago",
+   "lat": 41.8,
+   "lon": -87.62,
+   "from": 1918,
+   "to": null,
+   "summary": "The Black neighbourhood along State Street where the cabarets and dance halls of the 1920s, the Stroll, made Chicago jazz. Forty years later the Association for the Advancement of Creative Musicians was founded here, in 1965.",
+   "eras": [
+    "new-orleans",
+    "free"
+   ],
+   "artists": [
+    "louis-armstrong",
+    "king-oliver",
+    "earl-hines"
+   ]
+  },
+  {
+   "id": "lincoln-gardens",
+   "name": "Lincoln Gardens",
+   "kind": "venue",
+   "city": "chicago",
+   "wikipedia": "Lincoln_Gardens",
+   "lat": 41.8383,
+   "lon": -87.6147,
+   "from": 1921,
+   "to": 1927,
+   "summary": "The South Side dance hall where King Oliver's Creole Jazz Band played, with the young Louis Armstrong on second cornet from 1922. Musicians crowded in to hear the two cornets weave their breaks.",
+   "eras": [
+    "new-orleans"
+   ],
+   "artists": [
+    "king-oliver",
+    "louis-armstrong",
+    "lil-hardin-armstrong",
+    "johnny-dodds",
+    "baby-dodds"
+   ]
+  },
+  {
+   "id": "new-york",
+   "name": "New York",
+   "kind": "city",
+   "wikipedia": "New_York_City",
+   "lat": 40.7128,
+   "lon": -74.006,
+   "from": 1917,
+   "to": null,
+   "summary": "The capital of jazz for most of its history: Harlem's ballrooms in the swing era, 52nd Street and Minton's for bebop, Blue Note and the Village clubs for hard bop, the lofts for free jazz, and the record companies and studios that captured all of it.",
+   "eras": [
+    "new-orleans",
+    "swing",
+    "bebop",
+    "cool",
+    "hard-bop",
+    "latin",
+    "modal",
+    "free",
+    "spiritual",
+    "fusion",
+    "post-bop",
+    "contemporary"
+   ],
+   "artists": [
+    "duke-ellington",
+    "charlie-parker",
+    "thelonious-monk",
+    "miles-davis",
+    "john-coltrane",
+    "art-blakey",
+    "sonny-rollins"
+   ]
+  },
+  {
+   "id": "harlem",
+   "name": "Harlem",
+   "kind": "district",
+   "city": "new-york",
+   "wikipedia": "Harlem",
+   "lat": 40.8116,
+   "lon": -73.9465,
+   "from": 1920,
+   "to": null,
+   "summary": "The centre of Black American culture in the 1920s and 30s: stride pianists at rent parties, Ellington at the Cotton Club, Chick Webb and Ella at the Savoy, and in the 1940s the after-hours sessions at Minton's and Monroe's where bebop was worked out.",
+   "eras": [
+    "new-orleans",
+    "swing",
+    "bebop",
+    "soul-jazz"
+   ],
+   "artists": [
+    "james-p-johnson",
+    "fats-waller",
+    "duke-ellington",
+    "ella-fitzgerald",
+    "thelonious-monk"
+   ]
+  },
+  {
+   "id": "cotton-club",
+   "name": "Cotton Club",
+   "kind": "venue",
+   "city": "new-york",
+   "wikipedia": "Cotton_Club",
+   "lat": 40.8189,
+   "lon": -73.9393,
+   "from": 1923,
+   "to": 1940,
+   "summary": "A Harlem nightclub with Black performers and a white-only audience, where Duke Ellington's orchestra played from 1927 and radio broadcasts made it famous: the 'jungle' sound was written for its floor shows.",
+   "eras": [
+    "swing"
+   ],
+   "artists": [
+    "duke-ellington",
+    "cootie-williams"
+   ]
+  },
+  {
+   "id": "savoy-ballroom",
+   "name": "Savoy Ballroom",
+   "kind": "venue",
+   "city": "new-york",
+   "wikipedia": "Savoy_Ballroom",
+   "lat": 40.8174,
+   "lon": -73.9384,
+   "from": 1926,
+   "to": 1958,
+   "summary": "A block-long Harlem ballroom with two bandstands and a dance floor where the Lindy Hop was born. Bands battled nightly; Chick Webb's, with the teenage Ella Fitzgerald, was the house champion.",
+   "eras": [
+    "swing"
+   ],
+   "artists": [
+    "ella-fitzgerald",
+    "benny-goodman",
+    "count-basie"
+   ]
+  },
+  {
+   "id": "mintons-playhouse",
+   "name": "Minton's Playhouse",
+   "kind": "venue",
+   "city": "new-york",
+   "wikipedia": "Minton%27s_Playhouse",
+   "lat": 40.8047,
+   "lon": -73.9522,
+   "from": 1940,
+   "to": null,
+   "summary": "A club in the Hotel Cecil in Harlem whose Monday jam sessions, with Thelonious Monk on piano and Kenny Clarke on drums, became the laboratory of bebop. Players came after their big-band gigs to try new harmonies at punishing tempos.",
+   "eras": [
+    "bebop"
+   ],
+   "artists": [
+    "thelonious-monk",
+    "kenny-clarke",
+    "charlie-parker",
+    "dizzy-gillespie"
+   ]
+  },
+  {
+   "id": "monroes-uptown-house",
+   "name": "Monroe's Uptown House",
+   "kind": "venue",
+   "city": "new-york",
+   "wikipedia": "Monroe%27s_Uptown_House",
+   "lat": 40.8122,
+   "lon": -73.944,
+   "from": 1939,
+   "to": 1945,
+   "summary": "Clark Monroe's after-hours club in Harlem, where the young Charlie Parker jammed for tips in the early 1940s, the other cradle of bebop alongside Minton's.",
+   "eras": [
+    "bebop"
+   ],
+   "artists": [
+    "charlie-parker",
+    "max-roach"
+   ]
+  },
+  {
+   "id": "52nd-street",
+   "name": "52nd Street",
+   "kind": "district",
+   "city": "new-york",
+   "wikipedia": "52nd_Street_(Manhattan)",
+   "lat": 40.7604,
+   "lon": -73.979,
+   "from": 1934,
+   "to": 1950,
+   "summary": "Swing Street: a block of brownstone basements between Fifth and Sixth Avenues packed with clubs, the Onyx, the Three Deuces, the Spotlite. In the mid-1940s it was where bebop went public.",
+   "eras": [
+    "swing",
+    "bebop"
+   ],
+   "artists": [
+    "charlie-parker",
+    "dizzy-gillespie",
+    "coleman-hawkins",
+    "billie-holiday",
+    "art-tatum"
+   ]
+  },
+  {
+   "id": "carnegie-hall",
+   "name": "Carnegie Hall",
+   "kind": "venue",
+   "city": "new-york",
+   "wikipedia": "Carnegie_Hall",
+   "lat": 40.7651,
+   "lon": -73.9799,
+   "from": 1938,
+   "to": null,
+   "summary": "New York's grandest concert hall, where Benny Goodman's 1938 concert brought jazz into the temple of classical music, and Ellington premiered Black, Brown and Beige in 1943.",
+   "eras": [
+    "swing"
+   ],
+   "artists": [
+    "benny-goodman",
+    "duke-ellington",
+    "count-basie"
+   ],
+   "sessionNames": [
+    "Carnegie Hall"
+   ]
+  },
+  {
+   "id": "birdland",
+   "name": "Birdland",
+   "kind": "venue",
+   "city": "new-york",
+   "wikipedia": "Birdland_(New_York_jazz_club)",
+   "lat": 40.7616,
+   "lon": -73.984,
+   "from": 1949,
+   "to": 1965,
+   "summary": "The 'jazz corner of the world' on Broadway, named for Charlie Parker. Its broadcasts and live albums, from Blakey's A Night at Birdland to Coltrane's Live at Birdland, carried modern jazz far beyond Manhattan.",
+   "eras": [
+    "bebop",
+    "hard-bop",
+    "modal"
+   ],
+   "artists": [
+    "charlie-parker",
+    "art-blakey",
+    "clifford-brown",
+    "john-coltrane",
+    "count-basie"
+   ]
+  },
+  {
+   "id": "palladium-ballroom",
+   "name": "Palladium Ballroom",
+   "kind": "venue",
+   "city": "new-york",
+   "wikipedia": "Palladium_Ballroom",
+   "lat": 40.7616,
+   "lon": -73.9845,
+   "from": 1947,
+   "to": 1966,
+   "summary": "The 'Home of the Mambo' on Broadway, where Machito, Tito Puente and Tito Rodríguez battled for dancers and jazz musicians came to hear Afro-Cuban rhythm at full power.",
+   "eras": [
+    "latin"
+   ],
+   "artists": [
+    "machito",
+    "tito-puente"
+   ]
+  },
+  {
+   "id": "village-vanguard",
+   "name": "Village Vanguard",
+   "kind": "venue",
+   "city": "new-york",
+   "wikipedia": "Village_Vanguard",
+   "lat": 40.736,
+   "lon": -74.0016,
+   "from": 1957,
+   "to": null,
+   "summary": "A wedge-shaped basement in Greenwich Village, open since 1935 and a jazz club since 1957. More great live albums were recorded here than anywhere else: Rollins, Bill Evans's Sunday trio, Coltrane's Impulse! sets.",
+   "eras": [
+    "hard-bop",
+    "modal",
+    "post-bop"
+   ],
+   "artists": [
+    "bill-evans",
+    "john-coltrane",
+    "sonny-rollins",
+    "wynton-marsalis",
+    "brad-mehldau"
+   ],
+   "sessionNames": [
+    "Village Vanguard"
+   ]
+  },
+  {
+   "id": "five-spot",
+   "name": "Five Spot Café",
+   "kind": "venue",
+   "city": "new-york",
+   "wikipedia": "Five_Spot_Caf%C3%A9",
+   "lat": 40.7286,
+   "lon": -73.9887,
+   "from": 1956,
+   "to": 1967,
+   "summary": "A Bowery bar where Monk played a long residency with Coltrane in 1957 and Ornette Coleman's quartet opened in 1959 to an audience of baffled and thrilled musicians.",
+   "eras": [
+    "hard-bop",
+    "free"
+   ],
+   "artists": [
+    "thelonious-monk",
+    "john-coltrane",
+    "ornette-coleman",
+    "eric-dolphy"
+   ]
+  },
+  {
+   "id": "half-note",
+   "name": "The Half Note",
+   "kind": "venue",
+   "city": "new-york",
+   "wikipedia": "Half_Note_Club",
+   "lat": 40.7262,
+   "lon": -74.0079,
+   "from": 1957,
+   "to": 1974,
+   "summary": "A family-run club on Hudson Street with the bandstand above the bar, where Coltrane's quartet played in 1965 and Wes Montgomery with Wynton Kelly recorded Smokin' at the Half Note.",
+   "eras": [
+    "modal"
+   ],
+   "artists": [
+    "john-coltrane",
+    "wynton-kelly"
+   ]
+  },
+  {
+   "id": "village-gate",
+   "name": "The Village Gate",
+   "kind": "venue",
+   "city": "new-york",
+   "wikipedia": "Village_Gate",
+   "lat": 40.7284,
+   "lon": -74.0001,
+   "from": 1958,
+   "to": 1993,
+   "summary": "A large Greenwich Village room where everyone from Nina Simone to Herbie Mann to Sun Ra played, and the Latin jazz 'Salsa Meets Jazz' nights later ran.",
+   "eras": [
+    "modal",
+    "latin"
+   ],
+   "artists": [
+    "nina-simone",
+    "sun-ra"
+   ],
+   "sessionNames": [
+    "The Village Gate"
+   ]
+  },
+  {
+   "id": "lower-east-side",
+   "name": "Lower East Side lofts",
+   "kind": "district",
+   "city": "new-york",
+   "wikipedia": "Loft_jazz",
+   "lat": 40.715,
+   "lon": -73.9843,
+   "from": 1965,
+   "to": 1980,
+   "summary": "When clubs wouldn't book free jazz, players opened their own spaces in cheap downtown lofts, Studio Rivbea, Ali's Alley, and ran concerts themselves: the loft jazz scene.",
+   "eras": [
+    "free"
+   ],
+   "artists": [
+    "archie-shepp",
+    "albert-ayler",
+    "sun-ra"
+   ]
+  },
+  {
+   "id": "fillmore-east",
+   "name": "Fillmore East",
+   "kind": "venue",
+   "city": "new-york",
+   "wikipedia": "Fillmore_East",
+   "lat": 40.7275,
+   "lon": -73.9878,
+   "from": 1968,
+   "to": 1971,
+   "summary": "Bill Graham's rock palace on Second Avenue, where Miles Davis opened for rock bands in 1970 and played his electric music to a young audience.",
+   "eras": [
+    "fusion"
+   ],
+   "artists": [
+    "miles-davis"
+   ]
+  },
+  {
+   "id": "jazz-at-lincoln-center",
+   "name": "Jazz at Lincoln Center",
+   "kind": "venue",
+   "city": "new-york",
+   "wikipedia": "Jazz_at_Lincoln_Center",
+   "lat": 40.7685,
+   "lon": -73.9827,
+   "from": 1987,
+   "to": null,
+   "summary": "Jazz's own institution inside New York's cultural centre, led by Wynton Marsalis since the start, with an orchestra, a hall overlooking Central Park and a mission to keep the tradition central.",
+   "eras": [
+    "post-bop",
+    "contemporary"
+   ],
+   "artists": [
+    "wynton-marsalis"
+   ]
+  },
+  {
+   "id": "columbia-30th-street",
+   "name": "Columbia 30th Street Studio",
+   "kind": "studio",
+   "city": "new-york",
+   "wikipedia": "CBS_30th_Street_Studio",
+   "lat": 40.7461,
+   "lon": -73.9824,
+   "from": 1949,
+   "to": 1981,
+   "summary": "A former church on East 30th Street, famous for its huge natural reverb, where Columbia recorded Kind of Blue, Time Out, Mingus Ah Um and Bitches Brew.",
+   "eras": [
+    "cool",
+    "modal",
+    "fusion"
+   ],
+   "artists": [
+    "miles-davis",
+    "dave-brubeck",
+    "charles-mingus"
+   ],
+   "sessionNames": [
+    "Columbia 30th Street Studio, New York",
+    "CBS 30th Street Studio",
+    "CBS 30th Street Studio, New York"
+   ]
+  },
+  {
+   "id": "atlantic-studios",
+   "name": "Atlantic Studios",
+   "kind": "studio",
+   "city": "new-york",
+   "wikipedia": "Atlantic_Records",
+   "lat": 40.759,
+   "lon": -73.9845,
+   "from": 1956,
+   "to": 1975,
+   "summary": "Atlantic's own studio in Midtown, engineered by Tom Dowd, where Coltrane recorded Giant Steps and My Favorite Things and Ornette Coleman made The Shape of Jazz to Come.",
+   "eras": [
+    "hard-bop",
+    "modal",
+    "free"
+   ],
+   "artists": [
+    "john-coltrane",
+    "ornette-coleman",
+    "charles-mingus"
+   ],
+   "sessionNames": [
+    "Atlantic Studios"
+   ]
+  },
+  {
+   "id": "wor-studios",
+   "name": "WOR Studios",
+   "kind": "studio",
+   "city": "new-york",
+   "wikipedia": "WOR_(AM)",
+   "lat": 40.7524,
+   "lon": -73.9877,
+   "from": 1930,
+   "to": 1960,
+   "summary": "The radio station's studios on Broadway, used by many labels for recording sessions in the 1940s and 50s, from Blue Note's early dates to bebop sessions.",
+   "eras": [
+    "swing",
+    "bebop"
+   ],
+   "artists": [],
+   "sessionNames": [
+    "WOR Studios",
+    "WOR Studios, New York"
+   ]
+  },
+  {
+   "id": "van-gelder-studio",
+   "name": "Van Gelder Studio",
+   "kind": "studio",
+   "city": "new-jersey",
+   "wikipedia": "Van_Gelder_Studio",
+   "lat": 40.8754,
+   "lon": -73.9493,
+   "from": 1952,
+   "to": 2016,
+   "summary": "Rudy Van Gelder recorded first in his parents' living room in Hackensack, then from 1959 in a high-ceilinged studio he built in Englewood Cliffs: the sound of Blue Note, Prestige and Impulse!, including A Love Supreme.",
+   "eras": [
+    "hard-bop",
+    "soul-jazz",
+    "modal",
+    "spiritual"
+   ],
+   "artists": [
+    "art-blakey",
+    "john-coltrane",
+    "horace-silver",
+    "lee-morgan",
+    "jimmy-smith",
+    "herbie-hancock",
+    "wayne-shorter"
+   ],
+   "sessionNames": [
+    "Van Gelder Studio",
+    "Van Gelder Studio, Englewood Cliffs"
+   ]
+  },
+  {
+   "id": "new-jersey",
+   "name": "Northern New Jersey",
+   "kind": "city",
+   "wikipedia": "North_Jersey",
+   "lat": 40.85,
+   "lon": -74.1,
+   "from": 1940,
+   "to": null,
+   "summary": "Across the Hudson from Manhattan: Newark, a jazz town in its own right that gave the world Sarah Vaughan, and the suburbs where Rudy Van Gelder built the studio that recorded a generation.",
+   "eras": [
+    "bebop",
+    "hard-bop",
+    "soul-jazz"
+   ],
+   "artists": [
+    "sarah-vaughan"
+   ]
+  },
+  {
+   "id": "coltrane-home",
+   "name": "The Coltrane Home",
+   "kind": "studio",
+   "city": "new-york",
+   "wikipedia": "John_and_Alice_Coltrane_Home",
+   "lat": 40.8073,
+   "lon": -73.329,
+   "from": 1964,
+   "to": 1973,
+   "summary": "The house in Dix Hills, Long Island, where John Coltrane wrote A Love Supreme in 1964, and where Alice Coltrane later recorded in her home studio.",
+   "eras": [
+    "spiritual"
+   ],
+   "artists": [
+    "john-coltrane",
+    "alice-coltrane"
+   ],
+   "sessionNames": [
+    "The Coltrane Home Studio"
+   ]
+  },
+  {
+   "id": "kansas-city",
+   "name": "Kansas City",
+   "kind": "city",
+   "wikipedia": "Kansas_City,_Missouri",
+   "lat": 39.0997,
+   "lon": -94.5786,
+   "from": 1925,
+   "to": 1942,
+   "summary": "A wide-open town under the Pendergast machine, where clubs on 12th and 18th Streets never closed and jam sessions went all night. Its riff-driven, blues-based swing came to the world through Count Basie, Lester Young and the young Charlie Parker.",
+   "eras": [
+    "swing",
+    "bebop"
+   ],
+   "artists": [
+    "count-basie",
+    "lester-young",
+    "charlie-parker",
+    "walter-page"
+   ]
+  },
+  {
+   "id": "philadelphia",
+   "name": "Philadelphia",
+   "kind": "city",
+   "wikipedia": "Philadelphia",
+   "lat": 39.9526,
+   "lon": -75.1652,
+   "from": 1940,
+   "to": null,
+   "summary": "A hard bop and organ jazz city: Coltrane came of age here, as did Lee Morgan, McCoy Tyner, Jimmy Smith and Philly Joe Jones, and its bars kept the Hammond B-3 roaring.",
+   "eras": [
+    "hard-bop",
+    "soul-jazz",
+    "spiritual"
+   ],
+   "artists": [
+    "john-coltrane",
+    "lee-morgan",
+    "mccoy-tyner",
+    "jimmy-smith",
+    "sun-ra"
+   ]
+  },
+  {
+   "id": "detroit",
+   "name": "Detroit",
+   "kind": "city",
+   "wikipedia": "Detroit",
+   "lat": 42.3314,
+   "lon": -83.0458,
+   "from": 1945,
+   "to": 1965,
+   "summary": "In the 1950s the car city sent a stream of polished hard bop players to New York: Tommy Flanagan, Kenny Burrell, Donald Byrd, Paul Chambers, Ron Carter's early years, Elvin Jones.",
+   "eras": [
+    "hard-bop"
+   ],
+   "artists": [
+    "tommy-flanagan",
+    "kenny-burrell",
+    "paul-chambers",
+    "elvin-jones",
+    "ron-carter"
+   ]
+  },
+  {
+   "id": "los-angeles",
+   "name": "Los Angeles",
+   "kind": "city",
+   "wikipedia": "Los_Angeles",
+   "lat": 34.0522,
+   "lon": -118.2437,
+   "from": 1945,
+   "to": null,
+   "summary": "Central Avenue's clubs in the 1940s, the cool West Coast sound of the 1950s, Capitol's studios, the spiritual jazz of Alice Coltrane's later years, and today the scene around Kamasi Washington and Brainfeeder.",
+   "eras": [
+    "cool",
+    "spiritual",
+    "fusion",
+    "contemporary"
+   ],
+   "artists": [
+    "chet-baker",
+    "gerry-mulligan",
+    "alice-coltrane",
+    "kamasi-washington",
+    "charles-mingus"
+   ]
+  },
+  {
+   "id": "the-haig",
+   "name": "The Haig",
+   "kind": "venue",
+   "city": "los-angeles",
+   "wikipedia": "The_Haig",
+   "lat": 34.0617,
+   "lon": -118.301,
+   "from": 1947,
+   "to": 1960,
+   "summary": "A tiny club on Wilshire Boulevard where Gerry Mulligan's pianoless quartet with Chet Baker played in 1952, the start of the West Coast cool sound.",
+   "eras": [
+    "cool"
+   ],
+   "artists": [
+    "gerry-mulligan",
+    "chet-baker"
+   ]
+  },
+  {
+   "id": "lighthouse-cafe",
+   "name": "Lighthouse Café",
+   "kind": "venue",
+   "city": "los-angeles",
+   "wikipedia": "The_Lighthouse_Caf%C3%A9",
+   "lat": 33.8622,
+   "lon": -118.4005,
+   "from": 1949,
+   "to": null,
+   "summary": "A bar on the beach at Hermosa Beach whose Sunday jam sessions, run by bassist Howard Rumsey, became the home of West Coast jazz.",
+   "eras": [
+    "cool"
+   ],
+   "artists": []
+  },
+  {
+   "id": "capitol-studios",
+   "name": "Capitol Studios",
+   "kind": "studio",
+   "city": "los-angeles",
+   "wikipedia": "Capitol_Studios",
+   "lat": 34.1031,
+   "lon": -118.3256,
+   "from": 1956,
+   "to": null,
+   "summary": "The studios in the round Capitol Records Tower in Hollywood, with echo chambers dug under the parking lot; earlier Capitol dates, Birth of the Cool's label among them, were cut at the Melrose studios.",
+   "eras": [
+    "cool",
+    "contemporary"
+   ],
+   "artists": [],
+   "sessionNames": [
+    "Capitol Studios",
+    "Capitol Studios, Los Angeles",
+    "Capitol Melrose Studios, Los Angeles"
+   ]
+  },
+  {
+   "id": "havana",
+   "name": "Havana",
+   "kind": "city",
+   "wikipedia": "Havana",
+   "lat": 23.1136,
+   "lon": -82.3666,
+   "from": 1920,
+   "to": null,
+   "summary": "The source of the son, the mambo and the Afro-Cuban rhythms that, carried to New York by Machito, Mario Bauzá and Chano Pozo, became Latin jazz; and the home of Chucho Valdés and Irakere's virtuoso jazz.",
+   "eras": [
+    "latin"
+   ],
+   "artists": [
+    "chucho-valdes",
+    "machito",
+    "candido"
+   ]
+  },
+  {
+   "id": "rio-de-janeiro",
+   "name": "Rio de Janeiro",
+   "kind": "city",
+   "wikipedia": "Rio_de_Janeiro",
+   "lat": -22.9068,
+   "lon": -43.1729,
+   "from": 1958,
+   "to": null,
+   "summary": "Where bossa nova was born in the late 1950s, in the apartments of Copacabana and Ipanema: João Gilberto's guitar and voice, Jobim's songs, Vinícius de Moraes's words.",
+   "eras": [
+    "latin"
+   ],
+   "artists": [
+    "antonio-carlos-jobim",
+    "joao-gilberto"
+   ]
+  },
+  {
+   "id": "paris",
+   "name": "Paris",
+   "kind": "city",
+   "wikipedia": "Paris",
+   "lat": 48.8566,
+   "lon": 2.3522,
+   "from": 1925,
+   "to": null,
+   "summary": "Jazz's European capital since Sidney Bechet and Josephine Baker in the 1920s: Django Reinhardt's Hot Club in the 30s, a refuge for American players in the 50s, and a home for the free jazz exiles of the late 60s.",
+   "eras": [
+    "swing",
+    "free"
+   ],
+   "artists": [
+    "django-reinhardt",
+    "sidney-bechet",
+    "kenny-clarke",
+    "archie-shepp"
+   ]
+  },
+  {
+   "id": "london",
+   "name": "London",
+   "kind": "city",
+   "wikipedia": "London",
+   "lat": 51.5074,
+   "lon": -0.1278,
+   "from": 2010,
+   "to": null,
+   "summary": "In the 2010s a new generation from South London's community workshops, Tomorrow's Warriors among them, mixed jazz with grime, Afrobeat and Caribbean music and made the city one of jazz's liveliest scenes.",
+   "eras": [
+    "contemporary"
+   ],
+   "artists": [
+    "shabaka-hutchings",
+    "nubya-garcia"
+   ]
+  },
+  {
+   "id": "montreux",
+   "name": "Montreux Jazz Festival",
+   "kind": "festival",
+   "wikipedia": "Montreux_Jazz_Festival",
+   "lat": 46.4312,
+   "lon": 6.9107,
+   "from": 1967,
+   "to": null,
+   "summary": "Claude Nobs's festival on Lake Geneva, founded in 1967 and famous for its recordings: Bill Evans, Nina Simone and dozens of fusion-era bands made live albums there.",
+   "eras": [
+    "fusion"
+   ],
+   "artists": [
+    "bill-evans",
+    "nina-simone"
+   ],
+   "sessionNames": [
+    "Montreux Jazz Festival"
+   ]
+  },
+  {
+   "id": "newport",
+   "name": "Newport Jazz Festival",
+   "kind": "festival",
+   "wikipedia": "Newport_Jazz_Festival",
+   "lat": 41.4785,
+   "lon": -71.3381,
+   "from": 1954,
+   "to": null,
+   "summary": "The first big American jazz festival, in Newport, Rhode Island, where Ellington's 1956 performance of Diminuendo and Crescendo in Blue revived his career and Miles Davis's 1955 'Round Midnight won him his Columbia contract.",
+   "eras": [
+    "hard-bop",
+    "modal"
+   ],
+   "artists": [
+    "duke-ellington",
+    "miles-davis",
+    "john-coltrane"
+   ]
+  },
+  {
+   "id": "massey-hall",
+   "name": "Massey Hall",
+   "kind": "venue",
+   "city": "toronto",
+   "wikipedia": "Massey_Hall",
+   "lat": 43.654,
+   "lon": -79.3787,
+   "from": 1953,
+   "to": 1953,
+   "summary": "Toronto's concert hall, where Parker, Gillespie, Powell, Mingus and Roach played together once, on 15 May 1953, and Mingus recorded it: Jazz at Massey Hall.",
+   "eras": [
+    "bebop"
+   ],
+   "artists": [
+    "charlie-parker",
+    "dizzy-gillespie",
+    "bud-powell",
+    "charles-mingus",
+    "max-roach"
+   ],
+   "sessionNames": [
+    "Massey Hall, Toronto"
+   ]
+  },
+  {
+   "id": "toronto",
+   "name": "Toronto",
+   "kind": "city",
+   "wikipedia": "Toronto",
+   "lat": 43.6532,
+   "lon": -79.3832,
+   "from": 1953,
+   "to": 1953,
+   "summary": "Remembered in jazz for one night in 1953, when bebop's five greatest players shared the stage at Massey Hall.",
+   "eras": [
+    "bebop"
+   ],
+   "artists": []
+  },
+  {
+   "id": "ludwigsburg",
+   "name": "Tonstudio Bauer",
+   "kind": "studio",
+   "wikipedia": "Tonstudio_Bauer",
+   "lat": 48.8975,
+   "lon": 9.1916,
+   "from": 1970,
+   "to": null,
+   "summary": "A studio in Ludwigsburg near Stuttgart, where ECM's producer Manfred Eicher recorded many of the label's 1970s albums, among them Pat Metheny's Bright Size Life.",
+   "eras": [
+    "fusion"
+   ],
+   "artists": [
+    "pat-metheny",
+    "keith-jarrett"
+   ],
+   "sessionNames": [
+    "Tonstudio Bauer, Ludwigsburg"
+   ]
+  }
+ ]
+}

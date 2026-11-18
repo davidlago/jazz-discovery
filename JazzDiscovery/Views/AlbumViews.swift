@@ -92,7 +92,15 @@ struct AlbumDetailView: View {
                         VStack(alignment: .leading, spacing: 10) {
                             HStack(spacing: 8) {
                                 if let era { EraChip(era: era) }
-                                Text("\(String(album.year)) · \(album.label)").font(Theme.label(12)).foregroundStyle(Theme.muted)
+                                Text(String(album.year)).font(Theme.label(12)).foregroundStyle(Theme.muted)
+                                if let label = library.label(for: album) {
+                                    Button { router.go(.label(label.id)) } label: {
+                                        Text("· \(album.label)").font(Theme.label(12)).foregroundStyle(label.tint).underline(color: label.tint.opacity(0.5))
+                                    }
+                                    .buttonStyle(.plain).help("\(label.name): the label's page")
+                                } else {
+                                    Text("· \(album.label)").font(Theme.label(12)).foregroundStyle(Theme.muted)
+                                }
                             }
                             Text(album.title.uppercased()).font(Theme.display(64)).foregroundStyle(Theme.cream)
                                 .lineLimit(3).minimumScaleFactor(0.4)

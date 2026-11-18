@@ -25,12 +25,17 @@ final class JazzLibrary {
     let tracklists: [String: [CatalogTrack]]
     /// The Songbook's tunes, A–Z (songbook.json).
     let tunes: [Tune]
+    /// Cities, rooms, studios and festivals (places.json), and labels with pages (labels.json).
+    let places: [Place]
+    let labels: [LabelInfo]
     private let tuneByID: [String: Tune]
     /// Title key → tune, from titles and aliases.
     private let tuneByKey: [String: Tune]
 
     init(data: JazzData, sessions: [String: Session] = [:], tracks: [String: StationTrack] = [:],
-         tracklists: [String: [CatalogTrack]] = [:], tunes: [Tune] = []) {
+         tracklists: [String: [CatalogTrack]] = [:], tunes: [Tune] = [], places: [Place] = [], labels: [LabelInfo] = []) {
+        self.places = places
+        self.labels = labels
         self.tracks = StationTrack.load(tracks)
         self.tracklists = tracklists
         self.tunes = tunes.sorted { Tune.key($0.title) < Tune.key($1.title) }
@@ -100,7 +105,9 @@ final class JazzLibrary {
                                sessions: optional([String: Session].self, "sessions", in: bundle) ?? [:],
                                tracks: optional([String: StationTrack].self, "tracks", in: bundle) ?? [:],
                                tracklists: optional([String: [CatalogTrack]].self, "tracklists", in: bundle) ?? [:],
-                               tunes: optional(SongbookData.self, "songbook", in: bundle)?.tunes ?? [])
+                               tunes: optional(SongbookData.self, "songbook", in: bundle)?.tunes ?? [],
+                               places: optional(PlacesData.self, "places", in: bundle)?.places ?? [],
+                               labels: optional(LabelsData.self, "labels", in: bundle)?.labels ?? [])
         } catch {
             fatalError("Could not decode jazz.json: \(error)")
         }

@@ -25,6 +25,8 @@ struct RootView: View {
                         case .albums: CrateView()
                         case .connections: ConnectionsView()
                         case .songbook: SongbookView()
+                        case .places: PlacesView()
+                        case .labels: LabelsView()
                         case .passport: PassportView()
                         case .radio: RadioView()
                         case .blindfold: BlindfoldPage()
@@ -38,6 +40,8 @@ struct RootView: View {
                     case .album(let id): if let a = library.album(id) { AlbumDetailView(album: a) }
                     case .decade(let d): DecadeDetailView(decade: d)
                     case .tune(let id): if let t = library.tune(id) { TuneDetailView(tune: t) }
+                    case .place(let id): if let p = library.place(id) { PlaceDetailView(place: p) }
+                    case .label(let id): if let l = library.label(id) { LabelDetailView(label: l) }
                     }
                 }
                 .background(Theme.ink)

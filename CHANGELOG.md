@@ -6,6 +6,19 @@ section for the tagged version at the top of the GitHub release notes (or **Unre
 
 ## Unreleased
 
+## 1.5.0
+
+- **Places**: a map of jazz, with 47 cities, neighbourhoods, clubs, studios and festivals as pins in their era's
+  colour, and a **time slider** from 1895 to now. Drag it, or press play, and New Orleans lights up, then Chicago and
+  Harlem, 52nd Street, the West Coast and, lately, South London. Shortcuts fly to New Orleans, Chicago, Kansas City,
+  New York, Los Angeles, Europe and the world.
+- **Place pages**: the story of each city and room, a small map with *Open in Maps*, its rooms, who was there, and the
+  records made there (from where each Crate record was recorded).
+- **Labels**: 14 label pages, Blue Note to Mack Avenue, each with its story, its sound and its look, the people behind
+  it, a wall of its covers and its regulars. Labels on album pages are links.
+- Era pages link to their places. iPhone: Places and Labels rows on Explore; Mac: Places and Labels in the sidebar.
+  `jazzdiscovery://place/<id>`, `map`, `label/<id>` and `labels` links.
+
 ## 1.4.0
 
 - **The Songbook**: 28 tunes, from *St. Louis Blues* to *Footprints*, each with its story, who wrote it and when, its
