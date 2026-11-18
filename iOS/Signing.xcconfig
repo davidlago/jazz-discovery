@@ -20,5 +20,13 @@ DEVELOPMENT_TEAM = 2M74C6J5ZY
 LASTFM_API_KEY =
 LASTFM_SHARED_SECRET =
 
+// iCloud (the passport's sync, PassportSync): key-value storage needs iCloud on the App ID, which a Personal Team can't
+// have, so the app is signed without it unless Local.xcconfig (or scripts/testflight.sh with ICLOUD=1) switches to the
+// iCloud entitlements:
+//
+//     APP_ENTITLEMENTS = iOS/JazzDiscoveryMobile.entitlements
+APP_ENTITLEMENTS =
+CODE_SIGN_ENTITLEMENTS = $(APP_ENTITLEMENTS)
+
 #include "Version.xcconfig"
 #include? "Local.xcconfig"

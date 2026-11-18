@@ -42,6 +42,45 @@ It exports only that identity (macOS asks for your login password), checks it im
 year: when Apple emails that it's expiring, create a new one (Xcode ▸ Settings ▸ Accounts ▸ the team ▸ Manage
 Certificates… ▸ **+** ▸ Apple Distribution) and run the script again, here and in Music Library.
 
+### iCloud: the passport's sync
+
+The passport syncs between the Mac and iPhone through iCloud key-value storage (`PassportSync`), which needs the
+`com.apple.developer.ubiquity-kvstore-identifier` entitlement (`$(TeamIdentifierPrefix)$(CFBundleIdentifier)`). Both
+apps share the bundle ID, so they share the store. Done on 2026-11-18:
+
+1. iCloud is ticked on the App ID `io.github.davidlago.JazzDiscovery` (key-value storage needs no container). That
+   invalidated the App Store profile, so it was made again (`--replace` below).
+2. The Mac app's **Developer ID** profile, "io.github.davidlago.JazzDiscovery Developer ID" (valid until 2044), made
+   with the API key and stored as the `MAC_PROVISIONING_PROFILE` secret:
+
+   ```bash
+   # The notarizing API key: its file, key ID and issuer ID (App Store Connect ▸ Users and Access ▸ Integrations).
+   KEY=~/.appstoreconnect/private_keys/AuthKey_<key ID>.p8 KEY_ID=<key ID> ISSUER=<issuer ID>
+   swift scripts/provisioning-profiles.swift --developer-id "$KEY" "$KEY_ID" "$ISSUER" io.github.davidlago.JazzDiscovery
+   base64 -i build/profiles/io.github.davidlago.JazzDiscovery.provisionprofile | gh secret set MAC_PROVISIONING_PROFILE
+   swift scripts/provisioning-profiles.swift --replace "$KEY" "$KEY_ID" "$ISSUER" io.github.davidlago.JazzDiscovery
+   ```
+
+   Do this again if the Developer ID certificate is replaced, or after changing the App ID's capabilities.
+
+Builds stay without iCloud until the repository variable `ICLOUD` is `1`:
+
+```bash
+gh variable set ICLOUD --body 1
+```
+
+Then a release tag embeds the profile in the Mac app (`scripts/build-app.sh` with `PROVISIONING_PROFILE=…`, which
+checks the profile is a Developer ID one for this App ID that allows key-value storage, and signs with
+`Config/JazzDiscovery-iCloud.entitlements`), and the iPhone upload is signed with `iOS/JazzDiscoveryMobile.entitlements`
+(`scripts/testflight.sh` with `ICLOUD=1`). To build either on this Mac:
+
+```bash
+SIGN_IDENTITY="Developer ID Application: Dave Lago (2M74C6J5ZY)" PROVISIONING_PROFILE=build/profiles/io.github.davidlago.JazzDiscovery.provisionprofile scripts/build-app.sh
+```
+
+and, for the iPhone, `APP_ENTITLEMENTS = iOS/JazzDiscoveryMobile.entitlements` in `iOS/Local.xcconfig`. Without them
+(pull requests, ad-hoc builds, a Personal Team) the apps build as before and the passport stays on the device.
+
 ### 3. App Store Connect: the app record
 
 [App Store Connect](https://appstoreconnect.apple.com) ▸ **Apps** ▸ **+** ▸ **New App**:
