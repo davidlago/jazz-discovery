@@ -353,6 +353,7 @@ struct NowPlayingView: View {
                 WhyThisTrack(compact: true,
                              openAlbum: { router.go(.album($0)) }, openArtist: { router.go(.artist($0)) },
                              openEra: { router.go(.era($0)) })
+                NextStopButton { router.go(.page($0)) }
 
                 Scrubber(elapsed: player.elapsed, duration: player.duration) { player.seek(to: $0) }
 

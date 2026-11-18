@@ -55,7 +55,7 @@ struct TimelineTab: View {
                     }
                 }
 
-                if library.calendar.events(on: .now).isEmpty && library.calendar.nearest(to: .now) == nil {
+                if library.calendar.events(on: Today.date).isEmpty && library.calendar.nearest(to: Today.date) == nil {
                     SpotlightCard()
                 }
 

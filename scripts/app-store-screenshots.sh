@@ -6,6 +6,9 @@
 #
 #   SIZES="6.3"     only some sizes (default: "6.9 6.3")
 #   WAIT=10         seconds to let each screen's pictures load (default: 10)
+#
+# The widgets' screenshot (11-widgets.png) isn't taken here: the Mac app draws it from the widgets' own views
+# (Jazz Discovery --snapshots <dir> --widgets-only, see JazzDiscovery/Diagnostics/Snapshots.swift).
 set -euo pipefail
 
 cd "$(dirname "$0")/.."
@@ -44,8 +47,9 @@ device_for() {
 
 shoot() {  # udid, links…
     local udid="$1"; shift
-    # A made-up passport, in memory only, so the stamps and the Continue row have something to show.
-    local args=(--demo-passport)
+    # A made-up passport, in memory only, so the stamps and the Continue row have something to show; and a day with a
+    # birthday (Miles Davis's hundredth), so the Today card has a happy lead.
+    local args=(--demo-passport --today 2026-05-26)
     for l in "$@"; do args+=(--open "$l"); done
     xcrun simctl launch --terminate-running-process "$udid" "$BUNDLE" "${args[@]}" > /dev/null
 }

@@ -40,7 +40,8 @@ extension WidgetSnapshot {
             let p = passport.progress(on: path, library: library)
             let next = p.next.map { library.title(of: path.stops[$0]) }
             self.path = PathState(id: path.id, title: path.title, tint: path.tint, done: p.done, total: p.total,
-                                  nextTitle: next?.title ?? "", nextSubtitle: next?.subtitle ?? "")
+                                  nextTitle: next?.title ?? "", nextSubtitle: next?.subtitle ?? "",
+                                  nextPlayable: p.next.map { library.playable(path.stops[$0]) != nil } ?? false)
         }
         // The stamp nearest to inking in: the unfinished era with the most heard, the earliest among equals. None
         // before anything's heard: the widget then invites you to Start Here.

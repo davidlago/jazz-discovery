@@ -23,6 +23,9 @@ struct JazzDiscoveryApp: App {
         _passport = State(initialValue: passport)
         _sync = State(initialValue: snapshots == nil ? PassportSync(passport: passport) : nil)
         _widgets = State(initialValue: snapshots == nil ? WidgetPublisher(passport: passport, library: library) : nil)
+        AppContext.shared.library = library
+        AppContext.shared.passport = passport
+        AppContext.shared.player = player
         if SelfTest.requested {
             Task { @MainActor in await SelfTest.run(library) }
         }

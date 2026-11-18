@@ -62,6 +62,12 @@ struct RootView: View {
             guard let link = DeepLink(url, library: library) else { return }
             if link == .settings { openSettings() } else { router.open(link) }
         }
+        .onAppear {
+            AppContext.shared.navigate = { [router, library] url in
+                if let link = DeepLink(url, library: library) { router.open(link) }
+            }
+            SpotlightIndex.update(library: library)
+        }
         .overlay(alignment: .top) { ErrorToast() }
     }
 }

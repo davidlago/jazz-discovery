@@ -151,3 +151,17 @@ extension JazzLibrary {
         return nil
     }
 }
+
+/// Today's date, as the app shows it. Normally the real one; `--today 2026-05-26` (a launch argument, for scripted
+/// screenshots) pins it to another day, so the Today card shows a chosen event.
+enum Today {
+    static let date: Date = {
+        let args = CommandLine.arguments
+        guard let i = args.firstIndex(of: "--today"), i + 1 < args.count else { return .now }
+        let parts = args[i + 1].split(separator: "-").compactMap { Int($0) }
+        guard parts.count == 3,
+              let d = Calendar.current.date(from: DateComponents(year: parts[0], month: parts[1], day: parts[2], hour: 12))
+        else { return .now }
+        return d
+    }()
+}

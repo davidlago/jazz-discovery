@@ -200,9 +200,21 @@ final class PlayerController {
 
     // MARK: Public playback API
 
+    /// A stop on a path, when what's playing was started from one: the player then offers the next stop.
+    struct PathStopRef: Equatable { let pathID: String; let index: Int }
+    private(set) var pathStop: PathStopRef?
+    @ObservationIgnored private var startingPathStop: PathStopRef?
+
+    /// Plays a path stop's track, remembering where on the path it is.
+    func play(_ track: CatalogTrack, pathStop stop: PathStopRef) {
+        startingPathStop = stop
+        play([track], startAt: 0)
+    }
+
     func play(_ tracks: [CatalogTrack], startAt index: Int = 0, key: String? = nil) {
         guard tracks.indices.contains(index) else { return }
         finishedCollectionId = nil; nearEndOfAlbum = false
+        pathStop = startingPathStop; startingPathStop = nil
         if !startingStation { station = nil; stationTracks = [:]; stationRefill = nil }
         isBlind = false
         let k = key ?? "track-\(tracks[index].trackId)"
@@ -238,7 +250,7 @@ final class PlayerController {
     func playBlind(_ track: CatalogTrack) {
         guard track.preview != nil else { return }
         finishedCollectionId = nil
-        station = nil; stationTracks = [:]; stationRefill = nil
+        station = nil; stationTracks = [:]; stationRefill = nil; pathStop = nil
         isBlind = true
         previewQueue = [track]
         switchTo(.preview)
@@ -247,7 +259,7 @@ final class PlayerController {
 
     func playAlbum(_ album: CatalogAlbum, tracks: [CatalogTrack]) {
         finishedCollectionId = nil; nearEndOfAlbum = false
-        station = nil; stationTracks = [:]; stationRefill = nil; isBlind = false
+        station = nil; stationTracks = [:]; stationRefill = nil; isBlind = false; pathStop = nil
         let k = "album-\(album.collectionId)"
         loadingKey = k
         Task {
@@ -314,7 +326,7 @@ final class PlayerController {
         avPlayer.replaceCurrentItem(with: nil)
         if mode == .appleMusic { ApplicationMusicPlayer.shared.stop() }
         endScrobbleTracking()
-        station = nil; stationTracks = [:]; stationRefill = nil; isBlind = false
+        station = nil; stationTracks = [:]; stationRefill = nil; isBlind = false; pathStop = nil
         mode = .none
         quality = nil; songBest = nil; variantsEntryID = nil
         #if os(macOS)

@@ -12,6 +12,8 @@ struct WidgetSnapshot: Codable, Equatable {
         let total: Int
         let nextTitle: String
         let nextSubtitle: String
+        /// Whether the next stop is a record or track (the widget's play button), not something to read.
+        var nextPlayable = false
     }
     struct EraState: Codable, Equatable {
         let id: String

@@ -121,7 +121,7 @@ struct PathDetailContent: View {
                 }
                 HStack(spacing: 14) {
                     if let t = library.playable(stop) {
-                        Button { player.play(t.track) } label: { Label("Play \(t.title)", systemImage: "play.fill") }
+                        Button { PathPlayback.play(i, of: path, library: library, player: player) } label: { Label("Play \(t.title)", systemImage: "play.fill") }
                             .buttonStyle(.plain).foregroundStyle(path.color)
                     }
                     Button {
@@ -189,7 +189,7 @@ struct PathDetailContent: View {
 
     private func start(_ index: Int) {
         let stop = path.stops[index]
-        if let t = library.playable(stop) { player.play(t.track) } else { tick(stop); open(stop) }
+        if !PathPlayback.play(index, of: path, library: library, player: player) { tick(stop); open(stop) }
     }
 }
 
@@ -228,6 +228,41 @@ struct PathStamps: View {
                     .buttonStyle(.plain)
                 }
             }
+        }
+    }
+}
+
+/// In the player, when what's playing came from a path: the stop after it. Plays it, or opens it when it's a stop to
+/// read (and ticks it, as opening it from the path page does).
+struct NextStopButton: View {
+    var open: (Route) -> Void
+    @Environment(JazzLibrary.self) private var library
+    @Environment(Passport.self) private var passport
+    @Environment(PlayerController.self) private var player
+
+    var body: some View {
+        if let ref = player.pathStop, let (path, i) = PathPlayback.after(ref, library: library, passport: passport) {
+            let stop = path.stops[i]
+            Button {
+                if !PathPlayback.play(i, of: path, library: library, player: player) {
+                    if ![.album, .track].contains(stop.kind) { passport.setStop(stop.key, of: path.id, done: true) }
+                    if let r = Route(stop: stop, library: library) { open(r) }
+                }
+            } label: {
+                HStack(spacing: 8) {
+                    Image(systemName: library.playable(stop) == nil ? "arrow.right.circle.fill" : "forward.end.fill")
+                    VStack(alignment: .leading, spacing: 1) {
+                        Text("\(path.title.uppercased()) · NEXT STOP \(i + 1) OF \(path.stops.count)").font(Theme.label(9))
+                            .tracking(1.1).foregroundStyle(path.color).lineLimit(1)
+                        Text(library.title(of: stop).title).font(.system(size: 13, weight: .semibold))
+                            .foregroundStyle(Theme.cream).lineLimit(1)
+                    }
+                }
+                .padding(.horizontal, 12).padding(.vertical, 8)
+                .background(Capsule().fill(path.color.opacity(0.18)))
+            }
+            .buttonStyle(.plain)
+            .frame(maxWidth: .infinity, alignment: .leading)
         }
     }
 }

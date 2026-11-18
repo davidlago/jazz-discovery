@@ -91,6 +91,7 @@
 				Resources/tracklists.json,
 				Resources/tracks.json,
 				Services/AudioQuality.swift,
+				Services/Intents.swift,
 				Services/LastFM.swift,
 				Services/LastFMImport.swift,
 				Services/PassportSync.swift,
