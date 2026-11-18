@@ -1,0 +1,535 @@
+{
+ "albert-ayler": {
+  "wikidata": "Q457125",
+  "musicbrainz": "b2dcc67a-45f9-4b9f-8221-3da4e0d32491",
+  "born": "1936-07-13",
+  "died": "1970-11-25",
+  "diedAlso": [
+   "1970-11-05"
+  ]
+ },
+ "alice-coltrane": {
+  "wikidata": "Q238243",
+  "musicbrainz": "d24fc285-7b2f-47da-8ac5-4070b08570b1",
+  "born": "1937-08-27",
+  "died": "2007-01-12"
+ },
+ "ambrose-akinmusire": {
+  "wikidata": "Q34054",
+  "musicbrainz": "2d3f545f-f56d-47cf-93c6-956c4fea6b39",
+  "born": "1982-05-01"
+ },
+ "antonio-carlos-jobim": {
+  "wikidata": "Q200131",
+  "musicbrainz": "7a8dbe84-f4c0-4457-bfa3-edced1f8cde0",
+  "born": "1927-01-25",
+  "died": "1994-12-08"
+ },
+ "archie-shepp": {
+  "wikidata": "Q200791",
+  "musicbrainz": "5ceff60b-8183-49bf-a855-328d3c172106",
+  "born": "1937-05-24"
+ },
+ "art-blakey": {
+  "wikidata": "Q311715",
+  "musicbrainz": "601e7466-eaf5-4a91-9909-ffd770b7e04a",
+  "born": "1919-10-11",
+  "died": "1990-10-16"
+ },
+ "art-tatum": {
+  "wikidata": "Q109053",
+  "musicbrainz": "e073f6af-d696-4340-b847-e81fabc4d55b",
+  "born": "1909-10-13",
+  "died": "1956-11-05"
+ },
+ "benny-goodman": {
+  "wikidata": "Q46755",
+  "musicbrainz": "b09ae88f-4156-4caa-b129-1cacb5e1632e",
+  "born": "1909-05-30",
+  "died": "1986-06-13"
+ },
+ "bessie-smith": {
+  "wikidata": "Q93349",
+  "musicbrainz": "ffa28768-ecda-42c6-ac49-6ce5c7d33043",
+  "born": "1894-04-15",
+  "died": "1937-09-26"
+ },
+ "bill-evans": {
+  "wikidata": "Q208205",
+  "musicbrainz": "8247a3f2-3a8e-4256-b322-6c57b03a4e36",
+  "born": "1929-08-16",
+  "died": "1980-09-15"
+ },
+ "billie-holiday": {
+  "wikidata": "Q104358",
+  "musicbrainz": "d59c4cda-11d9-48db-8bfe-b557ee602aed",
+  "born": "1915-04-07",
+  "died": "1959-07-17"
+ },
+ "bix-beiderbecke": {
+  "wikidata": "Q225131",
+  "musicbrainz": "32286190-da0f-4a85-b3d6-09a84d7e2bbc",
+  "born": "1903-03-10",
+  "died": "1931-08-06"
+ },
+ "brad-mehldau": {
+  "wikidata": "Q356187",
+  "musicbrainz": "b7723b3f-9a35-438d-bc42-8ad8b5e027ae",
+  "born": "1970-08-23"
+ },
+ "bud-powell": {
+  "wikidata": "Q312692",
+  "musicbrainz": "dbc5809c-7837-4b6f-961e-340d64fbb41c",
+  "born": "1924-09-27",
+  "died": "1966-07-31"
+ },
+ "cannonball-adderley": {
+  "wikidata": "Q110477",
+  "musicbrainz": "a4c73ebe-b2c7-4f13-b99d-2fe1f9f27da8",
+  "born": "1928-09-15",
+  "died": "1975-08-08"
+ },
+ "cassandra-wilson": {
+  "wikidata": "Q239860",
+  "musicbrainz": "eb6595d3-e559-4bcc-a516-843bfdba82e9",
+  "born": "1955-12-04",
+  "died": "2026-09-02"
+ },
+ "cecil-taylor": {
+  "wikidata": "Q363908",
+  "musicbrainz": "0d06bb57-c3b6-4188-9b73-826c41c3e29e",
+  "born": "1929-03-25",
+  "died": "2018-04-05"
+ },
+ "cecile-mclorin-salvant": {
+  "wikidata": "Q960524",
+  "musicbrainz": "c12e6a0e-2317-40d1-b092-cc70f50fd548",
+  "born": "1989-08-28"
+ },
+ "charles-mingus": {
+  "wikidata": "Q107432",
+  "musicbrainz": "f3b8e107-abe8-4743-b6a3-4a4ee995e71f",
+  "born": "1922-04-22",
+  "died": "1979-01-05"
+ },
+ "charlie-parker": {
+  "wikidata": "Q103767",
+  "musicbrainz": "c7356af9-9ea6-4a78-a55b-c73775716312",
+  "born": "1920-08-29",
+  "died": "1955-03-12"
+ },
+ "chet-baker": {
+  "wikidata": "Q2274",
+  "musicbrainz": "1ba1d493-7114-45e2-b163-a36d49a0c065",
+  "born": "1929-12-23",
+  "died": "1988-05-13"
+ },
+ "chick-corea": {
+  "wikidata": "Q192465",
+  "musicbrainz": "8446fcca-109e-4c6d-a2ff-5a269b32b4c2",
+  "born": "1941-06-12",
+  "died": "2021-02-09"
+ },
+ "christian-scott": {
+  "wikidata": "Q730718",
+  "musicbrainz": "29b9d080-7de7-4608-8a50-57274a611bdd",
+  "born": "1983-03-31"
+ },
+ "chucho-valdes": {
+  "wikidata": "Q918872",
+  "musicbrainz": "6999d571-cc1b-4426-8071-b3b266a0a5d1",
+  "born": "1941-10-09"
+ },
+ "clifford-brown": {
+  "wikidata": "Q354490",
+  "musicbrainz": "2a291f34-73cb-40c5-b721-eab1269c7ba8",
+  "born": "1930-10-30",
+  "died": "1956-06-26"
+ },
+ "coleman-hawkins": {
+  "wikidata": "Q217812",
+  "musicbrainz": "5c8cb181-38fe-4300-8153-650b2ed0258f",
+  "born": "1904-11-21",
+  "died": "1969-05-19"
+ },
+ "count-basie": {
+  "wikidata": "Q107008",
+  "musicbrainz": "0dbd6300-efdc-420b-857e-895e18fad317",
+  "born": "1904-08-21",
+  "died": "1984-04-26"
+ },
+ "dave-brubeck": {
+  "wikidata": "Q108597",
+  "musicbrainz": "de0222a6-e1c4-403d-8b01-3f66d505061b",
+  "born": "1920-12-06",
+  "died": "2012-12-05"
+ },
+ "dexter-gordon": {
+  "wikidata": "Q118116",
+  "musicbrainz": "cc1588e1-5ba3-45a6-b80c-b31035c89339",
+  "born": "1923-02-27",
+  "died": "1990-04-25",
+  "diedAlso": [
+   "1990-04-26"
+  ]
+ },
+ "dizzy-gillespie": {
+  "wikidata": "Q49575",
+  "musicbrainz": "e9ba8ccb-505f-4e5c-b909-65998d0d35b5",
+  "born": "1917-10-21",
+  "died": "1993-01-06"
+ },
+ "django-reinhardt": {
+  "wikidata": "Q44122",
+  "musicbrainz": "650bf385-6f6d-4992-a3b9-779d144920a4",
+  "born": "1910-01-23",
+  "died": "1953-05-16"
+ },
+ "don-cherry": {
+  "wikidata": "Q456180",
+  "musicbrainz": "adf3879a-e091-4f73-8792-861a7a3e3abe",
+  "born": "1936-11-18",
+  "died": "1995-10-19"
+ },
+ "duke-ellington": {
+  "wikidata": "Q4030",
+  "musicbrainz": "3af06bc4-68ad-4cae-bb7a-7eeeb45e411f",
+  "born": "1899-04-29",
+  "died": "1974-05-24"
+ },
+ "ella-fitzgerald": {
+  "wikidata": "Q1768",
+  "musicbrainz": "54799c0e-eb45-4eea-996d-c4d71a63c499",
+  "born": "1917-04-25",
+  "died": "1996-06-15"
+ },
+ "elvin-jones": {
+  "wikidata": "Q357179",
+  "musicbrainz": "d5ac66e4-ea5d-4ebb-9e0d-bed4063208e7",
+  "born": "1927-09-09",
+  "died": "2004-05-18"
+ },
+ "eric-dolphy": {
+  "wikidata": "Q367508",
+  "musicbrainz": "badda5cf-f2c5-4dc2-b3d3-07467bdf0f71",
+  "born": "1928-06-20",
+  "died": "1964-06-29"
+ },
+ "esperanza-spalding": {
+  "wikidata": "Q238705",
+  "musicbrainz": "5c12b265-5e59-44e0-b657-5cf4169f7316",
+  "born": "1984-10-18"
+ },
+ "fats-waller": {
+  "wikidata": "Q310476",
+  "musicbrainz": "569fc5bf-bcb6-4bc5-9a00-bd0d258e34f1",
+  "born": "1904-05-21",
+  "died": "1943-12-15"
+ },
+ "freddie-hubbard": {
+  "wikidata": "Q346762",
+  "musicbrainz": "59ae7a1a-f454-435b-8a5a-e327e692bb5a",
+  "born": "1938-04-07",
+  "died": "2008-12-29"
+ },
+ "gerry-mulligan": {
+  "wikidata": "Q156535",
+  "musicbrainz": "68f19808-1f7b-46d4-bd1d-71aaf0f6b267",
+  "born": "1927-04-06",
+  "died": "1996-01-20",
+  "diedAlso": [
+   "1996-01-19"
+  ]
+ },
+ "gil-evans": {
+  "wikidata": "Q348477",
+  "musicbrainz": "83b1d510-c4ae-485b-91bf-c69b63044dd6",
+  "born": "1912-05-13",
+  "died": "1988-03-20",
+  "diedAlso": [
+   "1988-05-20"
+  ]
+ },
+ "grant-green": {
+  "wikidata": "Q601427",
+  "musicbrainz": "1a88b270-d763-48d5-a62c-2bb9cabb140c",
+  "born": "1935-06-06",
+  "died": "1979-01-31",
+  "bornAlso": [
+   "1931-06-06"
+  ]
+ },
+ "herbie-hancock": {
+  "wikidata": "Q105875",
+  "musicbrainz": "27613b78-1b9d-4ec3-9db5-fa0743465fdd",
+  "born": "1940-04-12"
+ },
+ "horace-silver": {
+  "wikidata": "Q365560",
+  "musicbrainz": "d185d986-ee96-4fd3-bd61-8c848a4765b6",
+  "born": "1928-09-02",
+  "died": "2014-06-18"
+ },
+ "jaco-pastorius": {
+  "wikidata": "Q211136",
+  "musicbrainz": "46a6fac0-2e14-4214-b08e-3bdb1cffa5aa",
+  "born": "1951-12-01",
+  "died": "1987-09-21"
+ },
+ "james-p-johnson": {
+  "wikidata": "Q550541",
+  "musicbrainz": "2a58b026-9659-4bfb-90c9-56c4ad9125f1",
+  "born": "1894-02-01",
+  "died": "1955-11-17"
+ },
+ "jelly-roll-morton": {
+  "wikidata": "Q317128",
+  "musicbrainz": "3d094919-071f-4070-95dc-e1f350e4a5f3",
+  "born": "1890-10-20",
+  "died": "1941-07-10"
+ },
+ "jimmy-smith": {
+  "wikidata": "Q318948",
+  "musicbrainz": "4f8a0d9b-5777-40da-b29a-e9753d5ae693",
+  "born": "1925-12-08",
+  "died": "2005-02-08",
+  "bornAlso": [
+   "1928-12-08"
+  ]
+ },
+ "joao-gilberto": {
+  "wikidata": "Q192359",
+  "musicbrainz": "286ec4c2-b5ca-4f85-b331-280a6d73dd14",
+  "born": "1931-06-10",
+  "died": "2019-07-06"
+ },
+ "joe-zawinul": {
+  "wikidata": "Q44767",
+  "musicbrainz": "dfe8c9e1-10c0-49ab-a07a-5b4c60179611",
+  "born": "1932-07-07",
+  "died": "2007-09-11"
+ },
+ "john-coltrane": {
+  "wikidata": "Q7346",
+  "musicbrainz": "b625448e-bf4a-41c3-a421-72ad46cdb831",
+  "born": "1926-09-23",
+  "died": "1967-07-17"
+ },
+ "john-mclaughlin": {
+  "wikidata": "Q164757",
+  "musicbrainz": "fcbc2086-5863-4659-b03d-44be704697d2",
+  "born": "1942-01-04"
+ },
+ "joshua-redman": {
+  "wikidata": "Q361927",
+  "musicbrainz": "b00a17c3-72b2-4e39-96f9-770ba6cf4573",
+  "born": "1969-02-01"
+ },
+ "kamasi-washington": {
+  "wikidata": "Q16221677",
+  "musicbrainz": "c7a3e868-c6d8-4512-a5ef-f6cbe42899b0",
+  "born": "1981-02-18"
+ },
+ "keith-jarrett": {
+  "wikidata": "Q207034",
+  "musicbrainz": "061c4920-3ea6-4835-98f6-02f3b82f5e3a",
+  "born": "1945-05-08"
+ },
+ "king-oliver": {
+  "wikidata": "Q313368",
+  "musicbrainz": "744fa1ae-051c-463c-957a-25a4ddc01c2f",
+  "born": "1881-12-19",
+  "died": "1938-04-10"
+ },
+ "lee-morgan": {
+  "wikidata": "Q362564",
+  "musicbrainz": "a1235272-3650-4ed7-9317-5a55a08701ec",
+  "born": "1938-07-10",
+  "died": "1972-02-19"
+ },
+ "lester-young": {
+  "wikidata": "Q110714",
+  "musicbrainz": "d613e4ae-093a-49a1-b06a-579480f7f7e8",
+  "born": "1909-08-27",
+  "died": "1959-03-15"
+ },
+ "louis-armstrong": {
+  "wikidata": "Q1779",
+  "musicbrainz": "eea8a864-fcda-4602-9569-38ab446decd6",
+  "born": "1901-08-04",
+  "died": "1971-07-06"
+ },
+ "ma-rainey": {
+  "wikidata": "Q239533",
+  "musicbrainz": "e1deae56-c8f0-4e73-8264-f4b02dfc051c",
+  "born": "1886-04-26",
+  "died": "1939-12-22"
+ },
+ "machito": {
+  "wikidata": "Q462983",
+  "musicbrainz": "8b280260-dacb-4195-a34d-16e5068de288",
+  "born": "1912-02-16",
+  "died": "1984-04-15",
+  "bornAlso": [
+   "1908-02-16"
+  ]
+ },
+ "makaya-mccraven": {
+  "wikidata": "Q59942387",
+  "musicbrainz": "59476fae-d0c9-4ebd-b03c-c38b19b30dff",
+  "born": "1983-10-19"
+ },
+ "max-roach": {
+  "wikidata": "Q175899",
+  "musicbrainz": "0b6aea55-d855-4a33-ae08-b0280dd28684",
+  "born": "1924-01-10",
+  "died": "2007-08-16"
+ },
+ "mccoy-tyner": {
+  "wikidata": "Q318619",
+  "musicbrainz": "22fe7b6f-af38-458e-87bd-8971e7a2912e",
+  "born": "1938-12-11",
+  "died": "2020-03-06"
+ },
+ "miles-davis": {
+  "wikidata": "Q93341",
+  "musicbrainz": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+  "born": "1926-05-26",
+  "died": "1991-09-28"
+ },
+ "mongo-santamaria": {
+  "wikidata": "Q472644",
+  "musicbrainz": "915f84de-eac2-4e78-99ad-9ab6e2c50af6",
+  "born": "1917-04-07",
+  "died": "2003-02-01",
+  "bornAlso": [
+   "1922-04-07"
+  ]
+ },
+ "nina-simone": {
+  "wikidata": "Q174957",
+  "musicbrainz": "2944824d-4c26-476f-a981-be849081942f",
+  "born": "1933-02-21",
+  "died": "2003-04-21"
+ },
+ "nubya-garcia": {
+  "wikidata": "Q58191150",
+  "musicbrainz": "42dd1862-7255-47ed-8584-651abce3bf53",
+  "born": "1991"
+ },
+ "ornette-coleman": {
+  "wikidata": "Q208797",
+  "musicbrainz": "169c0d1b-fcb8-4a43-9097-829aa7b39205",
+  "born": "1930-03-09",
+  "died": "2015-06-11",
+  "bornAlso": [
+   "1930-03-19"
+  ]
+ },
+ "pat-metheny": {
+  "wikidata": "Q213887",
+  "musicbrainz": "7daac7f9-8fcc-485f-a14f-f8091d98cf25",
+  "born": "1954-08-12"
+ },
+ "paul-desmond": {
+  "wikidata": "Q332471",
+  "musicbrainz": "d5bf3447-c526-4f7c-9931-4b7c80fe34de",
+  "born": "1924-11-25",
+  "died": "1977-05-30"
+ },
+ "pharoah-sanders": {
+  "wikidata": "Q470617",
+  "musicbrainz": "b3a0912a-a62a-4388-9368-7cb21ed5caf9",
+  "born": "1940-10-13",
+  "died": "2022-09-24"
+ },
+ "robert-glasper": {
+  "wikidata": "Q1370642",
+  "musicbrainz": "6e8f82ea-9e6d-4fdd-9b32-32feef13186b",
+  "born": "1978-04-05"
+ },
+ "roy-hargrove": {
+  "wikidata": "Q648750",
+  "musicbrainz": "8cdf780e-b909-4d25-9060-e552e95b3414",
+  "born": "1969-10-16",
+  "died": "2018-11-02"
+ },
+ "sarah-vaughan": {
+  "wikidata": "Q229513",
+  "musicbrainz": "351d8bdf-33a1-45e2-8c04-c85fad20da55",
+  "born": "1924-03-27",
+  "died": "1990-04-03"
+ },
+ "scott-joplin": {
+  "wikidata": "Q191499",
+  "musicbrainz": "aec8a328-d2e8-4780-b2ea-318c7f8d6f75",
+  "born": "1868-03-31",
+  "died": "1917-04-01",
+  "bornAlso": [
+   "1867",
+   "1868-11-24"
+  ],
+  "diedAlso": [
+   "1917-04-17"
+  ]
+ },
+ "shabaka-hutchings": {
+  "wikidata": "Q31191422",
+  "musicbrainz": "5b0f26cc-1203-49d8-abe2-90bec87a2e71",
+  "born": "1984"
+ },
+ "sidney-bechet": {
+  "wikidata": "Q313519",
+  "musicbrainz": "bf1b23ea-9b76-42cf-a5f6-4a691e81af5e",
+  "born": "1897-05-14",
+  "died": "1959-05-14"
+ },
+ "snarky-puppy": {
+  "wikidata": "Q7547407",
+  "musicbrainz": "fe85367e-4036-43c1-874b-b91af81cb4f3"
+ },
+ "sonny-rollins": {
+  "wikidata": "Q299208",
+  "musicbrainz": "3b47247e-5b57-49b6-a0ed-bad80243802a",
+  "born": "1930-09-07",
+  "died": "2026-05-25"
+ },
+ "stan-getz": {
+  "wikidata": "Q30587",
+  "musicbrainz": "8f2422ab-0ec6-4c92-80c4-afe9622fab32",
+  "born": "1927-02-02",
+  "died": "1991-06-06"
+ },
+ "sun-ra": {
+  "wikidata": "Q354508",
+  "musicbrainz": "c27cac8e-4c4a-48c0-a4ba-41399b9c176d",
+  "born": "1914-05-22",
+  "died": "1993-05-30"
+ },
+ "thelonious-monk": {
+  "wikidata": "Q109612",
+  "musicbrainz": "8e8c7417-c905-46b1-b42a-5260b4274ed4",
+  "born": "1917-10-10",
+  "died": "1982-02-17"
+ },
+ "tito-puente": {
+  "wikidata": "Q317122",
+  "musicbrainz": "f19ad155-d809-4770-ab8d-7579467d9f55",
+  "born": "1923-04-20",
+  "died": "2000-05-31",
+  "diedAlso": [
+   "2000-06-01"
+  ]
+ },
+ "wayne-shorter": {
+  "wikidata": "Q317161",
+  "musicbrainz": "2379937f-6e0d-46a2-b8ff-633fafd72002",
+  "born": "1933-08-25",
+  "died": "2023-03-02"
+ },
+ "wynton-marsalis": {
+  "wikidata": "Q273076",
+  "musicbrainz": "0d74dcc7-5684-4695-830f-a9846aad8ba9",
+  "born": "1961-10-18"
+ }
+}

@@ -24,6 +24,8 @@ How it gets to the App Store: [docs/app-store.md](docs/app-store.md).
 ## Sources
 
 - **Content**: `Shared/Resources/jazz.json` is a curated dataset with original summaries (eras, artists, albums, milestones).
+- **Wikidata** and **MusicBrainz** (both CC0): artists' IDs and exact dates (`ids.json`), and who played on each record,
+  when and where (`sessions.json`), drafted by scripts and reviewed by hand.
 - **Wikipedia REST API**: artist and era summaries and photos (CC BY-SA / Wikimedia Commons), cached on disk.
 - **iTunes Search API**: Apple Music catalog IDs, artwork and 30-second previews. Album lookups are precomputed into `Resources/catalog.json` by `scripts/build-catalog.py`. Live lookups are cached and throttled.
 - **YouTube**: videos are found from YouTube's public search page (no API key) and play in the embedded YouTube player.
@@ -106,11 +108,17 @@ xcodebuild test -project JazzDiscovery.xcodeproj -scheme JazzDiscoveryTests -des
 or ⌘U in Xcode with the JazzDiscovery scheme. The tests in `Tests/` cover the shared code (`Shared/`, which the test
 bundle compiles itself, with no app to host it, so it needs no signing), and CI runs them on every push.
 
-After you edit `jazz.json`, refresh the album catalog. The script only looks up albums it hasn't resolved yet:
+After you edit `jazz.json`, refresh the generated data. Each script only looks up what it hasn't resolved yet:
 
 ```bash
-python3 -I scripts/build-catalog.py
+python3 -I scripts/build-catalog.py    # Apple Music album matches → catalog.json
+python3 -I scripts/build-ids.py        # Wikidata and MusicBrainz IDs, exact dates → ids.json
+python3 -I scripts/build-sessions.py   # personnel, sessions and studios from MusicBrainz → sessions.json
 ```
+
+`build-sessions.py` writes drafts (`"reviewed": false`) that the app ignores. Each one is checked against the liner
+notes, fixed, and marked `"reviewed": true`; `build/sessions-report.md` lists the drafts, what looked off in each, and
+the players who don't have a page yet. `validate-data.py` counts how many are reviewed.
 
 ### Releases
 
@@ -158,11 +166,14 @@ Shared/                       used by both apps
   Design/                     remote images, duotone portraits, album covers, FlowLayout, the Connections graph layout
   Resources/jazz.json         curated content
   Resources/catalog.json      precomputed Apple Music album matches
+  Resources/ids.json          Wikidata/MusicBrainz IDs and exact dates (build-ids.py)
+  Resources/sessions.json     personnel, sessions, studios per album (build-sessions.py, reviewed by hand)
 JazzDiscovery/                the Mac app: JazzDiscoveryApp (menus, Settings), Views/, Diagnostics/ (--self-test, --snapshots)
 iOS/JazzDiscoveryMobile/      the iPhone app: tabs, pages, player, Connections map, Settings
 iOS/Signing.xcconfig          the iPhone app's team, bundle ID and optional Last.fm API account; Version.xcconfig
 Tests/                        unit tests of the shared code (Swift Testing; the JazzDiscoveryTests scheme)
-scripts/                      build-app.sh, notarize.sh, validate-data.py, build-catalog.py, make-icon.swift (--ios),
+scripts/                      build-app.sh, notarize.sh, validate-data.py, build-catalog.py, build-ids.py,
+                              build-sessions.py, make-icon.swift (--ios),
                               import-certificate.sh / set-signing-secret.sh (CI signing), testflight.sh,
                               provisioning-profiles.swift, select-xcode.sh, app-store-screenshots.sh
 docs/                         app-store.md (iPhone release guide and listing), privacy.md, app-store/ (screenshots),

@@ -2109,6 +2109,7 @@
       "id": "sonny-rollins",
       "name": "Sonny Rollins",
       "born": 1930,
+      "died": 2026,
       "instrument": "Saxophone",
       "eras": [
         "bebop",
@@ -2116,7 +2117,7 @@
       ],
       "primaryEra": "hard-bop",
       "wikipedia": "Sonny_Rollins",
-      "blurb": "The Saxophone Colossus is jazz's great thematic improviser, building solos like sculptures from a tune's melody, with a calypso streak and a tenor tone like granite.",
+      "blurb": "The Saxophone Colossus was jazz's great thematic improviser, building solos like sculptures from a tune's melody, with a calypso streak and a tenor tone like granite.",
       "connections": [
         "coleman-hawkins",
         "thelonious-monk",
@@ -3222,6 +3223,7 @@
       "id": "cassandra-wilson",
       "name": "Cassandra Wilson",
       "born": 1955,
+      "died": 2026,
       "instrument": "Vocals",
       "eras": [
         "post-bop"

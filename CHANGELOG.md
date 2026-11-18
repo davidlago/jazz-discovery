@@ -6,6 +6,7 @@ section for the tagged version at the top of the GitHub release notes (or **Unre
 
 ## Unreleased
 
+- Sonny Rollins (1930–2026) and Cassandra Wilson (1955–2026), who died this year, are shown with their dates.
 - Mac: `jazzdiscovery://` links open pages in the Mac app too (`jazzdiscovery://artist/miles-davis`, `era/bebop`,
   `album/kind-of-blue`…), as they already did on iPhone.
 
