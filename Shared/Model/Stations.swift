@@ -151,17 +151,23 @@ enum Programmer {
             if pending.isEmpty { pending = pool.shuffled(using: &rng) }
             let lastArtist = out.last.map(artistKey)
             let recentAlbums = Set(out.suffix(5).compactMap { $0.track.collectionId })
-            let recentTracks = Set(out.suffix(min(pool.count - 1, 30)).map(\.id))
-            let ok = pending.firstIndex { t in
+            let recentTracks = Set(out.suffix(max(1, pool.count / 2)).map(\.id))
+            func fits(_ t: StationTrack, albums: Bool) -> Bool {
                 artistKey(t) != lastArtist && !recentTracks.contains(t.id)
-                    && !(t.track.collectionId.map(recentAlbums.contains) ?? false)
-            } ?? pending.firstIndex { artistKey($0) != lastArtist && !recentTracks.contains($0.id) }
-            guard let i = ok else {
-                // Nothing fits (a tiny pool): start the bag over.
-                if pending.count == pool.count { break }
-                pending = pool.shuffled(using: &rng); continue
+                    && (!albums || !(t.track.collectionId.map(recentAlbums.contains) ?? false))
             }
-            out.append(pending.remove(at: i))
+            // The bag first; then anything in the pool that fits; only then let a record come back early.
+            if let i = pending.firstIndex(where: { fits($0, albums: true) }) {
+                out.append(pending.remove(at: i))
+            } else if let t = pool.shuffled(using: &rng).first(where: { fits($0, albums: true) }) {
+                out.append(t)
+                pending.removeAll { $0.id == t.id }
+            } else if let t = pool.shuffled(using: &rng).first(where: { fits($0, albums: false) }) {
+                out.append(t)
+                pending.removeAll { $0.id == t.id }
+            } else {
+                break
+            }
         }
         return out
     }
