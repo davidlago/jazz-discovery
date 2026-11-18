@@ -206,6 +206,7 @@ struct NowPlayingBar: View {
     @Environment(PlayerController.self) private var player
     @Environment(JazzLibrary.self) private var library
     @Environment(Router.self) private var router
+    @Environment(Passport.self) private var passport
 
     var body: some View {
         if let np = player.current {
@@ -217,8 +218,14 @@ struct NowPlayingBar: View {
             NextStopButton { router.go($0) }
             NowPlayingGuide { router.go(.guide($0)) }
             HStack(spacing: 16) {
-                RemoteImage(url: np.artwork) { Theme.panelHi }
-                    .frame(width: 48, height: 48).clipShape(RoundedRectangle(cornerRadius: 4))
+                let record = player.currentCollectionId.flatMap { passport.albumID(forCollection: $0) }.flatMap { library.album($0) }
+                Button { if let record { router.go(.album(record.id)) } } label: {
+                    RemoteImage(url: np.artwork) { Theme.panelHi }
+                        .frame(width: 48, height: 48).clipShape(RoundedRectangle(cornerRadius: 4))
+                }
+                .buttonStyle(.plain)
+                .disabled(record == nil)
+                .help(record.map { "Open \($0.title)" } ?? "")
                 VStack(alignment: .leading, spacing: 2) {
                     Text(np.title).font(.system(size: 13, weight: .semibold)).foregroundStyle(Theme.cream).lineLimit(1)
                     HStack(spacing: 6) {

@@ -58,6 +58,18 @@ final class PlayerController {
     @ObservationIgnored private var meter = ListenMeter()
     /// The Apple Music album a queue was started from, or the album of each song in it.
     @ObservationIgnored private var queueCollectionId: Int?
+    /// The Apple Music album of what's playing, when known: the cover opens its page if it's in the Crate.
+    private(set) var currentCollectionId: Int?
+    /// Covers to fall back on when MusicKit's artwork for a queue entry isn't a web URL (on the Mac it's often a
+    /// musicKit:// address that only its own ArtworkImage can draw): each song's, and the album's for an album queue.
+    @ObservationIgnored private var songArtwork: [String: URL] = [:]
+    @ObservationIgnored private var queueArtwork: URL?
+
+    /// A cover address the app can load itself (http or https), or nil.
+    private static func web(_ url: URL?) -> URL? {
+        guard let url, let scheme = url.scheme?.lowercased(), scheme == "http" || scheme == "https" else { return nil }
+        return url
+    }
     @ObservationIgnored private var songCollections: [String: Int] = [:]
     /// The station playing, if any, and its tracks by song ID (for "why this track").
     private(set) var station: Station?
@@ -345,6 +357,7 @@ final class PlayerController {
         restoreOutput()
         #endif
         current = nil
+        currentCollectionId = nil
         isPlaying = false
         currentTrackID = nil
         elapsed = 0; duration = 0
@@ -401,6 +414,10 @@ final class PlayerController {
             queueCollectionId = nil
             songCollections = Dictionary(tracks.compactMap { t in t.collectionId.map { (String(t.trackId), $0) } },
                                          uniquingKeysWith: { a, _ in a })
+            songArtwork = Dictionary(tracks.compactMap { t in t.artwork(600).map { (String(t.trackId), $0) } },
+                                     uniquingKeysWith: { a, _ in a })
+            queueArtwork = nil
+            currentCollectionId = songCollections[start.id.rawValue] ?? tracks[index].collectionId
             #if os(macOS)
             await matchOutput()
             #endif
@@ -418,7 +435,7 @@ final class PlayerController {
             }
             switchTo(.appleMusic)
             current = NowPlaying(title: start.title, artist: start.artistName,
-                                 artwork: start.artwork?.url(width: 600, height: 600) ?? tracks[index].artwork(600),
+                                 artwork: Self.web(start.artwork?.url(width: 600, height: 600)) ?? tracks[index].artwork(600),
                                  appleMusicURL: start.url ?? tracks[index].url, isFullTrack: true)
             duration = start.duration ?? 0
             return true
@@ -440,13 +457,16 @@ final class PlayerController {
             queueAlbumTitle = item.title
             queueCollectionId = album.collectionId
             songCollections = [:]
+            songArtwork = [:]
+            queueArtwork = album.artwork(600)
+            currentCollectionId = album.collectionId
             #if os(macOS)
             await matchOutput()
             #endif
             try await player.play()
             switchTo(.appleMusic)
             current = NowPlaying(title: item.title, artist: item.artistName,
-                                 artwork: item.artwork?.url(width: 600, height: 600) ?? album.artwork(600),
+                                 artwork: Self.web(item.artwork?.url(width: 600, height: 600)) ?? album.artwork(600),
                                  appleMusicURL: item.url ?? album.url, isFullTrack: true)
             return true
         } catch {
@@ -491,6 +511,7 @@ final class PlayerController {
             current = NowPlaying(title: "Blindfold Test", artist: "Who's playing?", artwork: nil, appleMusicURL: nil,
                                  isFullTrack: false)
         } else {
+            currentCollectionId = t.collectionId
             current = NowPlaying(title: t.name, artist: t.artistName, artwork: t.artwork(600),
                                  appleMusicURL: t.url, isFullTrack: false)
             onListen?(ListenEvent(songID: String(t.trackId), collectionId: t.collectionId, full: false))
@@ -549,14 +570,18 @@ final class PlayerController {
             var sameEntry = false
             if let entry = p.queue.currentEntry {
                 // Whatever is playing has a player bar, even if the app lost track of what it started.
+                let songID: String? = { if case .song(let s)? = entry.item { return s.id.rawValue } else { return nil } }()
+                let cover = Self.web(entry.artwork?.url(width: 600, height: 600))
+                    ?? songID.flatMap { songArtwork[$0] } ?? queueArtwork
                 if current == nil {
-                    current = NowPlaying(title: entry.title, artist: entry.subtitle ?? "",
-                                         artwork: entry.artwork?.url(width: 600, height: 600), appleMusicURL: nil, isFullTrack: true)
+                    current = NowPlaying(title: entry.title, artist: entry.subtitle ?? "", artwork: cover, appleMusicURL: nil,
+                                         isFullTrack: true)
                 }
                 if entry.title != current?.title {
                     current?.title = entry.title
                     current?.artist = entry.subtitle ?? current?.artist ?? ""
-                    if let art = entry.artwork?.url(width: 600, height: 600) { current?.artwork = art }
+                    if let cover { current?.artwork = cover }
+                    currentCollectionId = songID.flatMap { songCollections[$0] } ?? queueCollectionId
                 }
                 if case .song(let s)? = entry.item, let d = s.duration { duration = d }
                 if case .song(let s)? = entry.item, let id = Int(s.id.rawValue), currentTrackID != id { currentTrackID = id }
@@ -594,7 +619,7 @@ final class PlayerController {
         mode = .appleMusic
         isPlaying = true
         var np = NowPlaying(title: entry.title, artist: entry.subtitle ?? "",
-                            artwork: entry.artwork?.url(width: 600, height: 600), appleMusicURL: nil, isFullTrack: true)
+                            artwork: Self.web(entry.artwork?.url(width: 600, height: 600)), appleMusicURL: nil, isFullTrack: true)
         if case .song(let s)? = entry.item {
             np.appleMusicURL = s.url
             duration = s.duration ?? 0
