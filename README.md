@@ -79,7 +79,7 @@ xcodebuild -project JazzDiscovery.xcodeproj -scheme JazzDiscovery -configuration
 open "build/DerivedData/Build/Products/Release/Jazz Discovery.app"
 ```
 
-Signing uses team `2M74C6J5ZY` with automatic signing (set in the project). The project uses synchronized folders, so new files are picked up automatically: `Shared/` goes into both apps, `JazzDiscovery/` only into the Mac app and `iOS/JazzDiscoveryMobile/` only into the iPhone app.
+Signing uses team `2M74C6J5ZY` with automatic signing (set in the project). The project uses synchronized folders, so new files are picked up automatically: `Shared/` goes into both apps, `JazzDiscovery/` only into the Mac app, `iOS/JazzDiscoveryMobile/` only into the iPhone app, and `Widgets/` into the widget extension both apps embed. The extension also takes a few of `Shared/`'s files; the rest are listed as exceptions in the project (a new file in `Shared/` joins the widgets too, so it must build in an app extension or be added to those exceptions).
 
 The iPhone app is the `JazzDiscoveryMobile` scheme:
 
@@ -170,6 +170,7 @@ Shared/                       used by both apps
   Resources/sessions.json     personnel, sessions, studios per album (build-sessions.py, reviewed by hand)
 JazzDiscovery/                the Mac app: JazzDiscoveryApp (menus, Settings), Views/, Diagnostics/ (--self-test, --snapshots)
 iOS/JazzDiscoveryMobile/      the iPhone app: tabs, pages, player, Connections map, Settings
+Widgets/                      the widgets (both platforms): Today in Jazz and Continue; their views are in Shared/Design
 iOS/Signing.xcconfig          the iPhone app's team, bundle ID and optional Last.fm API account; Version.xcconfig
 Tests/                        unit tests of the shared code (Swift Testing; the JazzDiscoveryTests scheme)
 scripts/                      build-app.sh, notarize.sh, validate-data.py, build-catalog.py, build-ids.py,

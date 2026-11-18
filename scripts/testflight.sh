@@ -18,8 +18,9 @@
 #                        development certificate and an App Manager API key can't use cloud signing
 #   LASTFM_API_KEY=… LASTFM_SHARED_SECRET=…
 #                        build in the app's own Last.fm API account (see iOS/Signing.xcconfig)
-#   ICLOUD=1             sign the app with iCloud key-value storage (iOS/JazzDiscoveryMobile.entitlements, see
-#                        iOS/Signing.xcconfig), once its App ID has iCloud (docs/app-store.md)
+#   ICLOUD=1             sign the app with iCloud key-value storage and the app group, and the widgets with the app
+#                        group (iOS/JazzDiscoveryMobile.entitlements, iOS/JazzDiscoveryWidgets.entitlements; see
+#                        iOS/Signing.xcconfig), once the App IDs have them (docs/app-store.md)
 set -euo pipefail
 
 cd "$(dirname "$0")/.."
@@ -34,7 +35,10 @@ if [[ -n "${DEVELOPMENT_TEAM:-}" ]]; then SETTINGS+=(DEVELOPMENT_TEAM="$DEVELOPM
 if [[ -n "${LASTFM_API_KEY:-}" && -n "${LASTFM_SHARED_SECRET:-}" ]]; then
     SETTINGS+=(LASTFM_API_KEY="$LASTFM_API_KEY" LASTFM_SHARED_SECRET="$LASTFM_SHARED_SECRET")
 fi
-if [[ "${ICLOUD:-0}" == "1" ]]; then SETTINGS+=(APP_ENTITLEMENTS=iOS/JazzDiscoveryMobile.entitlements); fi
+if [[ "${ICLOUD:-0}" == "1" ]]; then
+    SETTINGS+=(APP_ENTITLEMENTS=iOS/JazzDiscoveryMobile.entitlements IOS_WIDGET_ENTITLEMENTS=iOS/JazzDiscoveryWidgets.entitlements
+               'APP_GROUP_IN_USE=$(APP_GROUP_IDENTIFIER)')
+fi
 
 AUTH=()
 if [[ -n "${ASC_KEY:-}" ]]; then
@@ -54,14 +58,17 @@ python3 -I scripts/validate-data.py
 PROFILES=()   # bundle ID, profile name, … for manual signing
 if [[ "${DISTRIBUTION_CERTIFICATE:-0}" == "1" ]]; then
     [[ -n "${ASC_KEY:-}" ]] || { echo "error: DISTRIBUTION_CERTIFICATE=1 needs ASC_KEY, ASC_KEY_ID and ASC_ISSUER" >&2; exit 1; }
-    # Manual signing with an App Store profile for that certificate (scripts/provisioning-profiles.swift names it
-    # "<bundle ID> App Store (CI)"): automatic signing can't be told to use it, and the profiles Xcode manages for
-    # cloud signing don't include it.
-    BUNDLE_ID="$(xcodebuild -project JazzDiscovery.xcodeproj -target JazzDiscoveryMobile -configuration Release \
-        -showBuildSettings -json "${SETTINGS[@]}" 2> /dev/null | plutil -extract 0.buildSettings.PRODUCT_BUNDLE_IDENTIFIER raw -)" \
-        || { echo "error: couldn't read the iPhone app's bundle ID" >&2; exit 1; }
-    swift scripts/provisioning-profiles.swift "$ASC_KEY" "$ASC_KEY_ID" "$ASC_ISSUER" "$BUNDLE_ID"
-    PROFILES+=("$BUNDLE_ID" "$BUNDLE_ID App Store (CI)")
+    # Manual signing with App Store profiles for that certificate (scripts/provisioning-profiles.swift names them
+    # "<bundle ID> App Store (CI)"): automatic signing can't be told to use them, and the profiles Xcode manages for
+    # cloud signing don't include it. One for the app, one for its widgets.
+    bundle_id() {
+        xcodebuild -project JazzDiscovery.xcodeproj -target "$1" -configuration Release -sdk iphoneos \
+            -showBuildSettings -json "${SETTINGS[@]}" 2> /dev/null | plutil -extract 0.buildSettings.PRODUCT_BUNDLE_IDENTIFIER raw - \
+            || { echo "error: couldn't read $1's bundle ID" >&2; exit 1; }
+    }
+    BUNDLE_IDS=("$(bundle_id JazzDiscoveryMobile)" "$(bundle_id JazzDiscoveryWidgets)")
+    swift scripts/provisioning-profiles.swift "$ASC_KEY" "$ASC_KEY_ID" "$ASC_ISSUER" "${BUNDLE_IDS[@]}"
+    for id in "${BUNDLE_IDS[@]}"; do PROFILES+=("$id" "$id App Store (CI)"); done
     SETTINGS+=(CODE_SIGN_STYLE=Manual CODE_SIGN_IDENTITY="Apple Distribution"
                PROVISIONING_PROFILE_SPECIFIER='$(PRODUCT_BUNDLE_IDENTIFIER) App Store (CI)')
 fi

@@ -6,6 +6,12 @@ section for the tagged version at the top of the GitHub release notes (or **Unre
 
 ## Unreleased
 
+- **Widgets** on the iPhone (Home Screen, Lock Screen, StandBy) and the Mac (desktop, Notification Center):
+  - **Today in Jazz**: the day's calendar page, the record's cover or the artist's portrait, and whose birthday it is
+    or what was recorded on this date. Tap it to open that page. Small, medium and large, and on the Lock Screen.
+  - **Continue**: the path you're on and its next stop, or the era stamp you're closest to inking. It updates as soon
+    as you tick a stop or hear a record.
+
 ## 1.8.1
 
 - **Your passport syncs** between your Mac and iPhone through your own iCloud: the records you've heard and saved,

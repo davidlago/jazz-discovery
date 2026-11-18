@@ -1,48 +1,5 @@
 import SwiftUI
 
-/// A tear-off calendar page: the month in the label face, the day huge, a torn top edge.
-struct CalendarPage: View {
-    let date: Date
-    var size: CGFloat = 130
-    var tint: Color = Theme.brass
-
-    var body: some View {
-        VStack(spacing: 0) {
-            ZigzagEdge().fill(tint).frame(height: size * 0.07)
-            VStack(spacing: size * 0.02) {
-                Text(date.formatted(.dateTime.month(.wide)).uppercased()).font(Theme.label(size * 0.09)).tracking(1.5)
-                    .foregroundStyle(Theme.ink)
-                    .frame(maxWidth: .infinity).padding(.vertical, size * 0.05).background(tint)
-                Text(date.formatted(.dateTime.day())).font(Theme.display(size * 0.5)).foregroundStyle(Theme.ink)
-                    .padding(.top, -size * 0.02)
-                Text(date.formatted(.dateTime.weekday(.wide)).uppercased()).font(Theme.label(size * 0.07)).tracking(1.2)
-                    .foregroundStyle(Theme.ink.opacity(0.6)).padding(.bottom, size * 0.06)
-            }
-            .background(Theme.cream)
-        }
-        .frame(width: size)
-        .clipShape(RoundedRectangle(cornerRadius: 4))
-        .shadow(color: .black.opacity(0.4), radius: 8, y: 4)
-        .rotationEffect(.degrees(-2))
-        .accessibilityElement(children: .ignore)
-        .accessibilityLabel(date.formatted(date: .complete, time: .omitted))
-    }
-}
-
-struct ZigzagEdge: Shape {
-    func path(in rect: CGRect) -> Path {
-        var p = Path()
-        let teeth = 14, w = rect.width / CGFloat(teeth)
-        p.move(to: CGPoint(x: 0, y: rect.maxY))
-        for i in 0..<teeth {
-            p.addLine(to: CGPoint(x: CGFloat(i) * w + w / 2, y: rect.minY))
-            p.addLine(to: CGPoint(x: CGFloat(i + 1) * w, y: rect.maxY))
-        }
-        p.closeSubpath()
-        return p
-    }
-}
-
 /// Today in jazz: who was born, what was recorded. Falls back to the nearest day with something, then to nothing
 /// (the caller shows the spotlight instead).
 struct TodayCard: View {
@@ -69,7 +26,7 @@ struct TodayCard: View {
                     picture(lead).frame(width: compact ? 96 : 150, height: compact ? 96 : 150)
                 }
                 VStack(alignment: .leading, spacing: 10) {
-                    Text(near.map { offsetLabel($0.offset) } ?? "TODAY IN JAZZ").font(Theme.label(11)).tracking(1.6).foregroundStyle(tint)
+                    Text(Almanac.label(offset: near?.offset)).font(Theme.label(11)).tracking(1.6).foregroundStyle(tint)
                     Text(library.line(for: lead, on: day, today: near == nil))
                         .font(.system(size: compact ? 20 : 24, weight: .semibold, design: .serif)).foregroundStyle(Theme.cream)
                         .fixedSize(horizontal: false, vertical: true)
@@ -109,13 +66,6 @@ struct TodayCard: View {
     }
     private func heard(_ e: DayEvent) -> Bool { e.album.map { passport.isHeard($0) } ?? false }
 
-    private func offsetLabel(_ o: Int) -> String {
-        switch o {
-        case 1: return "TOMORROW IN JAZZ"
-        case -1: return "YESTERDAY IN JAZZ"
-        default: return o > 0 ? "IN \(o) DAYS" : "\(-o) DAYS AGO"
-        }
-    }
 
     private func tint(for e: DayEvent) -> Color {
         if let a = e.album.flatMap({ library.album($0) }) { return library.color(forEra: a.era) }

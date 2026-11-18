@@ -20,13 +20,21 @@ DEVELOPMENT_TEAM = 2M74C6J5ZY
 LASTFM_API_KEY =
 LASTFM_SHARED_SECRET =
 
-// iCloud (the passport's sync, PassportSync): key-value storage needs iCloud on the App ID, which a Personal Team can't
-// have, so the app is signed without it unless Local.xcconfig (or scripts/testflight.sh with ICLOUD=1) switches to the
-// iCloud entitlements:
+// The widgets (JazzDiscoveryWidgets, which uses this file too) have the app's bundle ID plus ".Widgets", and share the
+// app group group.$(APP_BUNDLE_ID) with the app.
+//
+// iCloud (the passport's sync, PassportSync) and the app group (how the app tells the widgets where you are on a path)
+// need those capabilities on the App IDs, which a Personal Team can't have, so both are signed without them unless
+// Local.xcconfig (or scripts/testflight.sh with ICLOUD=1) switches to the full entitlements:
 //
 //     APP_ENTITLEMENTS = iOS/JazzDiscoveryMobile.entitlements
+//     IOS_WIDGET_ENTITLEMENTS = iOS/JazzDiscoveryWidgets.entitlements
+//     APP_GROUP_IN_USE = $(APP_GROUP_IDENTIFIER)
 APP_ENTITLEMENTS =
 CODE_SIGN_ENTITLEMENTS = $(APP_ENTITLEMENTS)
+APP_GROUP_IDENTIFIER = group.$(APP_BUNDLE_ID)
+// Named in Info.plist (JazzDiscoveryAppGroup) only when signed with the group, so the apps know they may open it.
+APP_GROUP_IN_USE =
 
 #include "Version.xcconfig"
 #include? "Local.xcconfig"
