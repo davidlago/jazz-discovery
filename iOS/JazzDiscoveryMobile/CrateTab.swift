@@ -141,6 +141,7 @@ struct AlbumDetailView: View {
                 VStack(spacing: 10) {
                     AlbumPlayControls(catalog: catalog, tracks: tracks, tint: tint)
                     AlbumPassportButtons(albumID: album.id, tint: tint)
+                    ShareCardButton(card: .record(album))
                 }
                 .padding(.horizontal, Theme.gutter)
                 .padding(.top, -12)

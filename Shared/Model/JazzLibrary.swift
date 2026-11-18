@@ -33,6 +33,8 @@ final class JazzLibrary {
     let glossary: GlossaryData
     /// Journeys with a point of view (paths.json); Start Here's stops come from the starter picks.
     let paths: [JourneyPath]
+    /// Births, deaths and sessions by day of the year (almanac.json).
+    let almanac: AlmanacData
     let termLinker: TermLinker
     private let tuneByID: [String: Tune]
     /// Title key → tune, from titles and aliases.
@@ -40,7 +42,9 @@ final class JazzLibrary {
 
     init(data: JazzData, sessions: [String: Session] = [:], tracks: [String: StationTrack] = [:],
          tracklists: [String: [CatalogTrack]] = [:], tunes: [Tune] = [], places: [Place] = [], labels: [LabelInfo] = [],
-         lineages: [Lineage] = [], glossary: GlossaryData = GlossaryData(terms: []), paths: [JourneyPath] = []) {
+         lineages: [Lineage] = [], glossary: GlossaryData = GlossaryData(terms: []), paths: [JourneyPath] = [],
+         almanac: AlmanacData = AlmanacData()) {
+        self.almanac = almanac
         self.paths = paths.map { p in
             guard p.id == "start-here", p.stops.isEmpty else { return p }
             var filled = p
@@ -128,7 +132,8 @@ final class JazzLibrary {
                                labels: optional(LabelsData.self, "labels", in: bundle)?.labels ?? [],
                                lineages: optional(LineagesData.self, "lineages", in: bundle)?.lineages ?? [],
                                glossary: optional(GlossaryData.self, "glossary", in: bundle) ?? GlossaryData(terms: []),
-                               paths: optional(PathsData.self, "paths", in: bundle)?.paths ?? [])
+                               paths: optional(PathsData.self, "paths", in: bundle)?.paths ?? [],
+                               almanac: optional(AlmanacData.self, "almanac", in: bundle) ?? AlmanacData())
         } catch {
             fatalError("Could not decode jazz.json: \(error)")
         }

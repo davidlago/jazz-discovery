@@ -99,3 +99,26 @@ struct PathDetailView: View {
         .revealedTitle(path.title, after: 100)
     }
 }
+
+/// The year at a glance, and what happened on any day.
+struct AlmanacPage: View {
+    var month: Int?
+    var day: Int?
+    @Environment(PhoneRouter.self) private var router
+    @State private var selected = Calendar.current.dateComponents([.month, .day], from: .now)
+
+    var body: some View {
+        ScrollView {
+            VStack(alignment: .leading, spacing: 20) {
+                PageHeader(title: "On This Day", subtitle: "Birthdays and recording sessions, every day of the year.")
+                AlmanacDayList(month: selected.month ?? 1, day: selected.day ?? 1) { router.go(.page($0)) }
+                    .padding(.horizontal, Theme.gutter)
+                AlmanacGrid(selected: $selected, columns: 2).padding(.horizontal, Theme.gutter)
+            }
+            .padding(.top, 8).padding(.bottom, 32)
+        }
+        .background(Theme.ink)
+        .revealedTitle("On This Day", after: 60)
+        .onAppear { if let month, let day { selected = DateComponents(month: month, day: day) } }
+    }
+}

@@ -118,3 +118,31 @@ struct PathDetailView: View {
         .navigationTitle(path.title)
     }
 }
+
+/// The year at a glance, and what happened on any day.
+struct AlmanacView: View {
+    @Environment(Router.self) private var router
+    @State private var selected = Calendar.current.dateComponents([.month, .day], from: .now)
+
+    var body: some View {
+        ScrollView {
+            VStack(alignment: .leading, spacing: 26) {
+                VStack(alignment: .leading, spacing: 6) {
+                    Text("ON THIS DAY").font(Theme.display(64)).foregroundStyle(Theme.cream)
+                    Text("Birthdays and recording sessions, every day of the year. Pick a day, yours for instance.")
+                        .font(Theme.serif(18)).italic().foregroundStyle(Theme.muted)
+                }
+                .padding(.top, 30)
+                HStack(alignment: .top, spacing: 36) {
+                    AlmanacGrid(selected: $selected, columns: 3).frame(maxWidth: 680)
+                    AlmanacDayList(month: selected.month ?? 1, day: selected.day ?? 1) { router.go($0) }
+                        .frame(maxWidth: 420, alignment: .leading)
+                }
+            }
+            .padding(.horizontal, 40).padding(.bottom, 50)
+        }
+        .background(Theme.ink)
+        .navigationTitle("On This Day")
+        .onAppear { if let d = router.almanacDay { selected = d; router.almanacDay = nil } }
+    }
+}

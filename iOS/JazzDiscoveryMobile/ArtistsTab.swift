@@ -170,7 +170,7 @@ struct ArtistDetailView: View {
                                            .init(color: Theme.ink, location: 1)],
                                    startPoint: .top, endPoint: .bottom)
                     VStack(alignment: .leading, spacing: 4) {
-                        Kicker(text: [artist.instrument, artist.lifespan].filter { !$0.isEmpty }.joined(separator: " · "), tint: tint)
+                        Kicker(text: [artist.instrument, library.fullDates(of: artist.id) ?? artist.lifespan].filter { !$0.isEmpty }.joined(separator: " · "), tint: tint)
                         Text(artist.name.uppercased()).font(Theme.display(58)).foregroundStyle(Theme.cream)
                             .lineLimit(2).minimumScaleFactor(0.5)
                             .shadow(color: .black.opacity(0.4), radius: 12)

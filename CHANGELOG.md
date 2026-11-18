@@ -6,6 +6,19 @@ section for the tagged version at the top of the GitHub release notes (or **Unre
 
 ## Unreleased
 
+## 1.8.0
+
+- **Today in Jazz** at the top of the home screen: a tear-off calendar page with whose birthday it is and what was
+  recorded on this date, round anniversaries first ("Miles Davis was born 100 years ago today"), a picture, and one
+  tap to play. On a quiet day it shows the nearest day that isn't.
+- **This Week**: the next seven days, one line each.
+- **On This Day**: the year at a glance, twelve months with every day that has something marked in its era's colour;
+  pick any day (your birthday, say) to see what happened. 320 events on 207 days, from exact birth dates and the
+  dated sessions in the personnel data.
+- Artist pages show full dates ("May 26, 1926 – September 28, 1991").
+- **Share cards**: a poster for a record (on its page) or for today's event, with a link back into the app.
+- `jazzdiscovery://today` and `almanac/<mm>-<dd>` links.
+
 ## 1.7.0
 
 - **Paths**: journeys with a point of view, a few stops each, every stop with something to listen for. Start Here

@@ -5,7 +5,9 @@
 **Status (2026-11-18):** 1.0.1, 1.1 and 1.2 are released (`v1.0.1`, `v1.1.0`, `v1.2.0`); 1.2's iCloud sync waits on
 the App ID's iCloud capability (see its file). 1.1 shipped with 86 of the 88 albums'
 personnel reviewed: Bix Beiderbecke's *Singin' the Blues* and Mongo Santamaría's *Watermelon Man!* still need a source
-for their players. 1.3 (Radio & the Blindfold Test) is released as `v1.3.0`. 1.4 (the Songbook) is released as `v1.4.0`. 1.5 (Places & Labels) is released as `v1.5.0`. 1.6 (Lineages & Glossary) is released as `v1.6.0`. 1.7 is released as `v1.7.0` with Paths; its listening guides wait for hand timing. Next: 1.8, On This Day.
+for their players. 1.3 (Radio & the Blindfold Test) is released as `v1.3.0`. 1.4 (the Songbook) is released as `v1.4.0`. 1.5 (Places & Labels) is released as `v1.5.0`. 1.6 (Lineages & Glossary) is released as `v1.6.0`. 1.7 is released as `v1.7.0` with Paths; its listening guides wait for hand timing. 1.8 (On This Day) is released as `v1.8.0`; its widgets wait for an app group in the developer portal. Remaining
+across releases: 1.2's iCloud entitlement, 1.7's listening guides (hand timing), 1.8's widgets, App Intents and
+Spotlight.
 
 Today the app is a beautiful encyclopedia: 14 eras, 86 artists, 88 records and 40 milestones, and every screen is
 browse → read → play. This roadmap adds three things it doesn't have:

@@ -36,7 +36,7 @@ extension Route {
 ///
 ///     era/<id>  artist/<id>  album/<id>  decade/<1950>  decades  connections[/<artist id>]  between/<artist>/<artist>
 ///     tab/<timeline|eras|artists|crate|search>[?q=<search>]  now-playing  settings  passport  radio  blindfold  tune/<id>  songbook  place/<id>  map  label/<id>  labels
-///     lineage/<id>  lineages  term/<id>  glossary  how-to-listen  path/<id>  paths
+///     lineage/<id>  lineages  term/<id>  glossary  how-to-listen  path/<id>  paths  today  almanac[/<mm>-<dd>]
 ///
 /// Links come from anywhere (a web page, another app, a widget), so a link only parses when the page it names exists.
 /// `play/album/<id>` parses as `.playAlbum`; it's the one link that starts music, and the apps honour it only from their
@@ -61,6 +61,8 @@ enum DeepLink: Equatable {
     case glossary
     /// The paths' index.
     case paths
+    /// The almanac, at a day ("05-26") or today.
+    case almanac(month: Int?, day: Int?)
     /// Your listening passport.
     case passport
     /// The radio stations (a station's ID only opens the page: links don't start music).
@@ -117,6 +119,12 @@ enum DeepLink: Equatable {
             self = .page(.journey(id))
         case "paths":
             self = .paths
+        case "today":
+            self = .almanac(month: nil, day: nil)
+        case "almanac":
+            let md = arg?.split(separator: "-").compactMap { Int($0) } ?? []
+            if md.count == 2, (1...12).contains(md[0]), (1...31).contains(md[1]) { self = .almanac(month: md[0], day: md[1]) }
+            else { self = .almanac(month: nil, day: nil) }
         case "glossary", "how-to-listen":
             self = .glossary
         case "labels":

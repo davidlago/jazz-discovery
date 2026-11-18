@@ -13,6 +13,7 @@ enum AppSection: String, CaseIterable, Identifiable {
     case places = "Places"
     case labels = "Labels"
     case lineages = "Lineages"
+    case almanac = "On This Day"
     case glossary = "Glossary"
     case paths = "Paths"
     case radio = "Radio"
@@ -34,6 +35,7 @@ enum AppSection: String, CaseIterable, Identifiable {
         case .places: return "map.fill"
         case .labels: return "opticaldisc.fill"
         case .lineages: return "point.topleft.down.to.point.bottomright.curvepath.fill"
+        case .almanac: return "calendar.badge.clock"
         case .glossary: return "character.book.closed.fill"
         case .passport: return "checkmark.seal.fill"
         case .radio: return "dot.radiowaves.left.and.right"
@@ -70,6 +72,8 @@ final class Router {
     var connectionsFocus: String?
     /// A chain for Connections to draw when it next shows (from a `between/<a>/<b>` link).
     var pathRequest: PathRequest?
+    /// A day for the almanac to show when it next opens (from an `almanac/<mm>-<dd>` link).
+    var almanacDay: DateComponents?
 
     func go(_ route: Route) { path.append(route) }
     func back() { if !path.isEmpty { path.removeLast() } }
@@ -123,6 +127,10 @@ final class Router {
         case .paths:
             query = ""
             show(.paths)
+        case .almanac(let m, let d):
+            query = ""
+            almanacDay = m.flatMap { m in d.map { DateComponents(month: m, day: $0) } }
+            show(.almanac)
         case .glossary:
             query = ""
             show(.glossary)

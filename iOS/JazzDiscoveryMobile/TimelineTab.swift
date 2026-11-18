@@ -9,6 +9,12 @@ struct TimelineTab: View {
             VStack(alignment: .leading, spacing: 44) {
                 HomeHero()
 
+                VStack(alignment: .leading, spacing: 12) {
+                    TodayCard(compact: true, open: { router.go(.page($0)) }, openAlmanac: { router.go(.almanac(month: nil, day: nil)) })
+                        .padding(.horizontal, Theme.gutter)
+                    HRow(spacing: 10) { ThisWeekStrip { router.go(.page($0)) } }
+                }
+
                 ContinueSection()
 
                 NewListenerCard()
@@ -49,7 +55,9 @@ struct TimelineTab: View {
                     }
                 }
 
-                SpotlightCard()
+                if library.calendar.events(on: .now).isEmpty && library.calendar.nearest(to: .now) == nil {
+                    SpotlightCard()
+                }
 
                 BlindfoldCard()
 

@@ -277,6 +277,15 @@ if os.path.exists(pa_p):
             if st.get("track") and st["track"] not in tracks_all: errors.append(f"{w}: start track {st['track']} isn't resolved")
     print(f"paths.json: {len(paths)} paths")
 
+# almanac.json is rebuilt from ids.json and sessions.json; it must not be stale.
+import subprocess
+if os.path.exists(os.path.join(res_dir, "almanac.json")):
+    r = subprocess.run([sys.executable, "-I", os.path.join(os.path.dirname(os.path.abspath(__file__)), "build-almanac.py"), "--check"],
+                       capture_output=True, text=True)
+    if r.returncode != 0: errors.append(r.stderr.strip() or "almanac.json is stale")
+    days = json.load(open(os.path.join(res_dir, "almanac.json")))["days"]
+    print(f"almanac.json: {sum(len(v) for v in days.values())} events on {len(days)} days")
+
 if warnings:
     print("\n".join("warning: " + w for w in warnings))
 if errors:
