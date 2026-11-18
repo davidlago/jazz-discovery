@@ -6,6 +6,8 @@ section for the tagged version at the top of the GitHub release notes (or **Unre
 
 ## Unreleased
 
+## 1.12.0
+
 - **31 more artists and 46 more records** (183 and 176 in all). Before 1950: the roots of jazz (the Original
   Dixieland Jass Band, James Reese Europe, Blind Lemon Jefferson, Lonnie Johnson, Robert Johnson), New Orleans, swing
   and bebop records, including the first records here for King Oliver, Johnny Dodds, Earl Hines, Kid Ory, Art Tatum,
