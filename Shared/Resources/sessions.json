@@ -379,20 +379,18 @@
   "source": "musicbrainz:release/bfe29cd3-2577-4237-9b34-fe166e04cb18",
   "mbReleaseGroup": "34887975-3564-3094-831f-2476fe3b64e9",
   "edition": "1951 US",
-  "kind": "compilation",
-  "recordedBetween": [
-   1949,
-   1951
-  ],
   "tracks": [
-   "Un poco loco",
-   "Over the Rainbow",
-   "Ornithology",
+   "Bouncin' With Bud",
    "Wail",
+   "Dance of the Infidels",
+   "52nd Street Theme",
+   "You Go to My Head",
+   "Ornithology",
+   "Un Poco Loco",
+   "Over the Rainbow",
    "A Night in Tunisia",
    "It Could Happen to You",
-   "You Go to My Head",
-   "Bouncing With Bud"
+   "Parisian Thoroughfare"
   ],
   "personnel": [
    {
@@ -400,8 +398,7 @@
     "name": "Bud Powell",
     "instruments": [
      "piano"
-    ],
-    "tracks": 8
+    ]
    },
    {
     "artist": null,
@@ -409,7 +406,12 @@
     "instruments": [
      "trumpet"
     ],
-    "tracks": 2
+    "only": [
+     "Bouncin' With Bud",
+     "Wail",
+     "Dance of the Infidels",
+     "52nd Street Theme"
+    ]
    },
    {
     "artist": "sonny-rollins",
@@ -417,7 +419,12 @@
     "instruments": [
      "tenor saxophone"
     ],
-    "tracks": 2
+    "only": [
+     "Bouncin' With Bud",
+     "Wail",
+     "Dance of the Infidels",
+     "52nd Street Theme"
+    ]
    },
    {
     "artist": null,
@@ -425,7 +432,14 @@
     "instruments": [
      "bass"
     ],
-    "tracks": 4
+    "only": [
+     "Bouncin' With Bud",
+     "Wail",
+     "Dance of the Infidels",
+     "52nd Street Theme",
+     "You Go to My Head",
+     "Ornithology"
+    ]
    },
    {
     "artist": null,
@@ -433,7 +447,11 @@
     "instruments": [
      "bass"
     ],
-    "tracks": 2
+    "only": [
+     "Un Poco Loco",
+     "A Night in Tunisia",
+     "Parisian Thoroughfare"
+    ]
    },
    {
     "artist": null,
@@ -441,7 +459,14 @@
     "instruments": [
      "drums"
     ],
-    "tracks": 4
+    "only": [
+     "Bouncin' With Bud",
+     "Wail",
+     "Dance of the Infidels",
+     "52nd Street Theme",
+     "You Go to My Head",
+     "Ornithology"
+    ]
    },
    {
     "artist": "max-roach",
@@ -449,7 +474,11 @@
     "instruments": [
      "drums"
     ],
-    "tracks": 2
+    "only": [
+     "Un Poco Loco",
+     "A Night in Tunisia",
+     "Parisian Thoroughfare"
+    ]
    }
   ],
   "crew": [
@@ -462,11 +491,33 @@
     "artist": null,
     "name": "Doug Hawkins",
     "role": "engineer"
+   },
+   {
+    "artist": null,
+    "name": "John Hermansader",
+    "role": "design"
+   },
+   {
+    "artist": null,
+    "name": "Francis Wolff",
+    "role": "photography"
    }
   ],
   "draftNotes": [
-   "this edition has 8 tracks; the Apple Music album has 20"
-  ]
+   "\"Over the Rainbow\" and \"It Could Happen to You\" are solo piano.",
+   "\"Parisian Thoroughfare\" (RVG bonus) is assumed to be from the 1951 trio session: check."
+  ],
+  "recorded": [
+   {
+    "date": "1949-08-08",
+    "place": "WOR Studios"
+   },
+   {
+    "date": "1951-05-01",
+    "place": "WOR Studios"
+   }
+  ],
+  "edited": true
  },
  "ancestral-recall": {
   "reviewed": false,
@@ -4126,6 +4177,197 @@
    }
   ]
  },
+ "genius-of-modern-music-1": {
+  "reviewed": false,
+  "source": "musicbrainz:release/1dd96446-9f54-428a-9939-e9c33208e754",
+  "mbReleaseGroup": "4ef4f9b3-f1e1-35fa-a117-ca9004b2a80c",
+  "edition": "1951 US",
+  "recorded": [
+   {
+    "date": "1947-10-15",
+    "place": "WOR Studios"
+   },
+   {
+    "date": "1947-10-24",
+    "place": "WOR Studios"
+   },
+   {
+    "date": "1947-11-21",
+    "place": "WOR Studios"
+   },
+   {
+    "date": "1948-07-02",
+    "place": "Apex Studios"
+   }
+  ],
+  "tracks": [
+   "'Round Midnight",
+   "Off Minor",
+   "Ruby My Dear",
+   "I Mean You",
+   "April in Paris",
+   "In Walked Bud",
+   "Thelonious",
+   "Epistrophy",
+   "Misterioso",
+   "Well You Needn't",
+   "Introspection",
+   "Humph"
+  ],
+  "personnel": [
+   {
+    "artist": "thelonious-monk",
+    "name": "Thelonious Monk",
+    "instruments": [
+     "piano"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Idrees Sulieman",
+    "instruments": [
+     "trumpet"
+    ],
+    "only": [
+     "Thelonious",
+     "Humph"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "George Taitt",
+    "instruments": [
+     "trumpet"
+    ],
+    "only": [
+     "'Round Midnight",
+     "In Walked Bud"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Danny Quebec West",
+    "instruments": [
+     "alto saxophone"
+    ],
+    "only": [
+     "Thelonious",
+     "Humph"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Sahib Shihab",
+    "instruments": [
+     "alto saxophone"
+    ],
+    "only": [
+     "'Round Midnight",
+     "In Walked Bud"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Billy Smith",
+    "instruments": [
+     "tenor saxophone"
+    ],
+    "only": [
+     "Thelonious",
+     "Humph"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Milt Jackson",
+    "instruments": [
+     "vibraphone"
+    ],
+    "only": [
+     "I Mean You",
+     "Epistrophy",
+     "Misterioso"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Gene Ramey",
+    "instruments": [
+     "bass"
+    ],
+    "except": [
+     "'Round Midnight",
+     "In Walked Bud",
+     "I Mean You",
+     "Epistrophy",
+     "Misterioso"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Bob Paige",
+    "instruments": [
+     "bass"
+    ],
+    "only": [
+     "'Round Midnight",
+     "In Walked Bud"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "John Simmons",
+    "instruments": [
+     "bass"
+    ],
+    "only": [
+     "I Mean You",
+     "Epistrophy",
+     "Misterioso"
+    ]
+   },
+   {
+    "artist": "art-blakey",
+    "name": "Art Blakey",
+    "instruments": [
+     "drums"
+    ],
+    "except": [
+     "I Mean You",
+     "Epistrophy",
+     "Misterioso"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Shadow Wilson",
+    "instruments": [
+     "drums"
+    ],
+    "only": [
+     "I Mean You",
+     "Epistrophy",
+     "Misterioso"
+    ]
+   }
+  ],
+  "crew": [
+   {
+    "artist": null,
+    "name": "Alfred Lion",
+    "role": "producer"
+   },
+   {
+    "artist": null,
+    "name": "Doug Hawkins",
+    "role": "engineer"
+   }
+  ],
+  "draftNotes": [
+   "Four sessions, 15 Oct 1947 to 2 Jul 1948. Wikipedia places them all at WOR; MusicBrainz has the 1948 session at Apex Studios (kept)."
+  ],
+  "edited": true
+ },
  "getz-gilberto": {
   "reviewed": false,
   "source": "musicbrainz:release/3dbe8250-a4e4-4bc4-a32c-db0e3a88375d",
@@ -4385,17 +4627,123 @@
  },
  "groovin-high": {
   "reviewed": false,
-  "source": "musicbrainz:release/4bf92b08-3403-487d-94fd-c05d0d2327ca",
-  "mbReleaseGroup": "6369e0c4-2840-3269-9105-e35ed8155b1e",
-  "edition": "1945-04 US",
+  "source": "musicbrainz:release/e694b1ed-84a7-4bc0-8bb5-bd7b6cb4b467",
+  "mbReleaseGroup": "d1f677a1-710c-30ee-8f8c-716c3632bed3",
+  "edition": "1993 US",
+  "kind": "compilation",
   "tracks": [
+   "Blue 'n' Boogie",
    "Groovin' High",
-   "Blue'n Boogie"
+   "Dizzy Atmosphere",
+   "All the Things You Are",
+   "Salt Peanuts",
+   "Hot House",
+   "Oop Bop Sh'Bam",
+   "That's Earl, Brother",
+   "Our Delight",
+   "One Bass Hit, Pt. 2",
+   "Things to Come",
+   "Ray's Idea",
+   "Emanon"
   ],
-  "personnel": [],
+  "personnel": [
+   {
+    "artist": "dizzy-gillespie",
+    "name": "Dizzy Gillespie",
+    "instruments": [
+     "trumpet"
+    ],
+    "tracks": 13
+   },
+   {
+    "artist": "charlie-parker",
+    "name": "Charlie Parker",
+    "instruments": [
+     "alto saxophone"
+    ],
+    "tracks": 5
+   },
+   {
+    "artist": null,
+    "name": "Milt Jackson",
+    "instruments": [
+     "vibraphone",
+     "piano"
+    ],
+    "tracks": 7
+   },
+   {
+    "artist": null,
+    "name": "Remo Palmieri",
+    "instruments": [
+     "guitar"
+    ],
+    "tracks": 3
+   },
+   {
+    "artist": null,
+    "name": "Al Haig",
+    "instruments": [
+     "piano"
+    ],
+    "tracks": 4
+   },
+   {
+    "artist": null,
+    "name": "John Lewis",
+    "instruments": [
+     "piano"
+    ],
+    "tracks": 4
+   },
+   {
+    "artist": null,
+    "name": "Clyde Hart",
+    "instruments": [
+     "piano"
+    ],
+    "tracks": 3
+   },
+   {
+    "artist": null,
+    "name": "Ray Brown",
+    "instruments": [
+     "bass"
+    ],
+    "tracks": 7
+   },
+   {
+    "artist": null,
+    "name": "Slam Stewart",
+    "instruments": [
+     "bass"
+    ],
+    "tracks": 3
+   },
+   {
+    "artist": null,
+    "name": "Kenny Clarke",
+    "instruments": [
+     "drums"
+    ],
+    "tracks": 6
+   },
+   {
+    "artist": null,
+    "name": "Cozy Cole",
+    "instruments": [
+     "drums"
+    ],
+    "tracks": 3
+   }
+  ],
   "draftNotes": [
-   "no players credited on this edition",
-   "this edition has 2 tracks; the Apple Music album has 13"
+   "Seven studio sessions, 9 Feb 1945 to 12 Nov 1946, per Jazzdisco's Dizzy Gillespie discography; lists the players on three or more of the 13 tracks. The 1946 big band's sections aren't listed."
+  ],
+  "edited": true,
+  "recordedBetween": [
+   1945,
+   1946
   ]
  },
  "habana": {
@@ -5482,23 +5830,71 @@
  },
  "jazz-at-massey-hall": {
   "reviewed": false,
-  "source": "musicbrainz:release/2731796e-824e-4c1a-ba0c-cbfcd4217b6d",
-  "mbReleaseGroup": "a05cb37f-6907-4817-bef6-b01ea0e5f67a",
-  "edition": "1954 US",
-  "tracks": [
-   "Les Oignons",
-   "Wang Wang Blues",
-   "Doudou Blues",
-   "Ja-Da",
-   "Basin Street Blues",
-   "Royal Garden Blues",
-   "Piano Rag Nik",
-   "When the Saints Go Marching In"
+  "source": "musicbrainz:release/85852184-01f4-4770-bd03-87b42b8108fa",
+  "mbReleaseGroup": "f9afcb1d-6674-353e-8a8a-0dbff1054ed7",
+  "edition": "1956 US",
+  "recorded": [
+   {
+    "date": "1953-05-15",
+    "place": "Massey Hall, Toronto"
+   }
   ],
-  "personnel": [],
+  "tracks": [
+   "Perdido",
+   "Salt Peanuts",
+   "All the Things You Are / 52nd Street Theme",
+   "Wee (Allen's Alley)",
+   "Hot House",
+   "A Night in Tunisia"
+  ],
+  "personnel": [
+   {
+    "artist": "dizzy-gillespie",
+    "name": "Dizzy Gillespie",
+    "instruments": [
+     "trumpet"
+    ]
+   },
+   {
+    "artist": "charlie-parker",
+    "name": "Charlie Parker",
+    "instruments": [
+     "alto saxophone"
+    ]
+   },
+   {
+    "artist": "bud-powell",
+    "name": "Bud Powell",
+    "instruments": [
+     "piano"
+    ]
+   },
+   {
+    "artist": "charles-mingus",
+    "name": "Charles Mingus",
+    "instruments": [
+     "bass"
+    ]
+   },
+   {
+    "artist": "max-roach",
+    "name": "Max Roach",
+    "instruments": [
+     "drums"
+    ]
+   }
+  ],
   "draftNotes": [
-   "no players credited on this edition"
-  ]
+   "Parker is credited on the original LP as \"Charlie Chan\" (contract reasons); Mingus overdubbed some of his bass parts afterwards. Neither is shown in the app."
+  ],
+  "crew": [
+   {
+    "artist": "charles-mingus",
+    "name": "Charles Mingus",
+    "role": "producer"
+   }
+  ],
+  "edited": true
  },
  "jazz-bata-2": {
   "reviewed": false,
@@ -7559,13 +7955,13 @@
   "tracks": [
    "Lullaby of Birdland",
    "April in Paris",
-   "He’s My Guy",
+   "He's My Guy",
    "Jim",
-   "You’re Not the Kind",
-   "Embracable You",
-   "I’m Glad There Is You",
+   "You're Not the Kind",
+   "Embraceable You",
+   "I'm Glad There Is You",
    "September Song",
-   "It’s Crazy"
+   "It's Crazy"
   ],
   "personnel": [
    {
@@ -7586,8 +7982,7 @@
     "artist": null,
     "name": "Paul Quinichette",
     "instruments": [
-     "tenor saxophone",
-     "saxophone"
+     "tenor saxophone"
     ]
    },
    {
@@ -7602,9 +7997,6 @@
     "name": "Jimmy Jones",
     "instruments": [
      "piano"
-    ],
-    "except": [
-     "April in Paris"
     ]
    },
    {
@@ -7630,15 +8022,14 @@
    },
    {
     "artist": null,
-    "name": "Ernie Wilkins",
-    "role": "conductor"
-   },
-   {
-    "artist": null,
-    "name": "Robert A. Shad",
+    "name": "Bob Shad",
     "role": "producer"
    }
-  ]
+  ],
+  "draftNotes": [
+   "Jimmy Jones plays throughout (michaelminn.net's Vaughan discography lists one band for 16–18 Dec 1954); MusicBrainz's exception on \"April in Paris\" dropped."
+  ],
+  "edited": true
  },
  "savoy-dial-master-takes": {
   "reviewed": false,
@@ -7763,51 +8154,6 @@
   "crew": [
    {
     "artist": null,
-    "name": "J.J. Stelmach",
-    "role": "design"
-   },
-   {
-    "artist": null,
-    "name": "Paul Reid III",
-    "role": "engineer"
-   },
-   {
-    "artist": null,
-    "name": "Scott Johnson",
-    "role": "design"
-   },
-   {
-    "artist": null,
-    "name": "Frank Driggs",
-    "role": "photography"
-   },
-   {
-    "artist": null,
-    "name": "Bob Parent",
-    "role": "photography"
-   },
-   {
-    "artist": null,
-    "name": "Steve Backer",
-    "role": "producer"
-   },
-   {
-    "artist": null,
-    "name": "Orrin Keepnews",
-    "role": "producer"
-   },
-   {
-    "artist": null,
-    "name": "Buck Ram",
-    "role": "producer"
-   },
-   {
-    "artist": null,
-    "name": "Doug Hawkins",
-    "role": "engineer"
-   },
-   {
-    "artist": null,
     "name": "Teddy Reig",
     "role": "producer"
    },
@@ -7815,13 +8161,13 @@
     "artist": null,
     "name": "Ross Russell",
     "role": "producer"
-   },
-   {
-    "artist": null,
-    "name": "James \"Jimmy\" Siracuse",
-    "role": "engineer"
    }
-  ]
+  ],
+  "draftNotes": [
+   "Compilation of the 1944–48 Savoy and Dial sessions: lists the five players who recur; guests (Dizzy Gillespie, Bud Powell, J.J. Johnson, Erroll Garner, Lucky Thompson…) are left out.",
+   "Crew: only the original producers (Teddy Reig for Savoy, Ross Russell for Dial); the reissue's staff removed."
+  ],
+  "edited": true
  },
  "saxophone-colossus": {
   "reviewed": false,

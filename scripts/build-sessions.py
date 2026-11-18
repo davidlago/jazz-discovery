@@ -3,11 +3,12 @@
 tracks and instruments, when and where it was recorded, and who produced, engineered, arranged and designed it.
 
     python3 -I scripts/build-sessions.py                draft albums that have no entry yet
-    python3 -I scripts/build-sessions.py --redo         draft every album again, except reviewed ones
+    python3 -I scripts/build-sessions.py --redo         draft every album again, except reviewed or hand-edited ones
     python3 -I scripts/build-sessions.py --only a,b     draft these albums again (even reviewed ones)
 
 Drafts are written with "reviewed": false, and the app ignores them until a person has checked each one against the
 liner notes (or the album's Wikipedia page), fixed it and set "reviewed": true. "draftNotes" lists what looked off.
+A draft corrected by hand but not yet approved carries "edited": true, so --redo leaves it alone.
 
 For each album the script finds the release group (by the leader's MusicBrainz ID from ids.json, so run
 scripts/build-ids.py first, and the release year), tries up to four of its editions and keeps the one with the most
@@ -32,7 +33,10 @@ USER_AGENT = "JazzDiscoveryCatalog/1.0"
 
 # Albums the search can't find, or finds wrongly: album ID → MusicBrainz release group ID ("release:<id>" pins one
 # edition). Fill in as review finds them.
-OVERRIDES = {}
+OVERRIDES = {
+    "groovin-high": "d1f677a1-710c-30ee-8f8c-716c3632bed3",          # the 1955 Savoy LP, not the 1945 78
+    "jazz-at-massey-hall": "f9afcb1d-6674-353e-8a8a-0dbff1054ed7",   # credited to "The Quintet"
+}
 
 # MusicBrainz instrument names → the app's words. Anything not here is kept as MusicBrainz spells it.
 INSTRUMENTS = {
@@ -68,6 +72,7 @@ last_request = 0.0
 
 def norm(s):
     s = unicodedata.normalize("NFKD", s).encode("ascii", "ignore").decode().lower().replace("&", "and")
+    s = re.sub(r"\bvol\b\.?", "volume", s)  # "Vol. 1" and "Volume 1" are the same title
     return re.sub(r"[^a-z0-9]", "", s)
 
 
@@ -336,7 +341,7 @@ def main():
         if only is not None:
             return a["id"] in only
         e = out.get(a["id"])
-        return e is None or (redo and not e.get("reviewed"))
+        return e is None or (redo and not e.get("reviewed") and not e.get("edited"))
 
     todo = [a for a in data["albums"] if wanted(a)]
     failures = []

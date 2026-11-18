@@ -7,19 +7,31 @@ final class JazzLibrary {
     let artists: [Artist]
     let albums: [Album]
     let milestones: [Milestone]
+    /// Reviewed sessions only, by album ID (sessions.json; drafts are left out).
+    let sessions: [String: Session]
 
     private let eraByID: [String: Era]
     private let artistByID: [String: Artist]
     private let albumByID: [String: Album]
+    /// Artist ID → IDs of the albums they're credited on (as a player), led or not.
+    private let creditedAlbums: [String: Set<String>]
 
-    init(data: JazzData) {
+    init(data: JazzData, sessions: [String: Session] = [:]) {
         eras = data.eras.sorted { $0.start < $1.start }
         artists = data.artists
         albums = data.albums.sorted { $0.year < $1.year }
         milestones = data.milestones.sorted { $0.year < $1.year }
         eraByID = Dictionary(data.eras.map { ($0.id, $0) }, uniquingKeysWith: { a, _ in a })
         artistByID = Dictionary(data.artists.map { ($0.id, $0) }, uniquingKeysWith: { a, _ in a })
-        albumByID = Dictionary(data.albums.map { ($0.id, $0) }, uniquingKeysWith: { a, _ in a })
+        let albumByID = Dictionary(data.albums.map { ($0.id, $0) }, uniquingKeysWith: { a, _ in a })
+        self.albumByID = albumByID
+        let reviewed = sessions.filter { $0.value.reviewed && albumByID[$0.key] != nil }
+        self.sessions = reviewed
+        var credited: [String: Set<String>] = [:]
+        for (albumID, session) in reviewed {
+            for case let id? in session.personnel.map(\.artist) { credited[id, default: []].insert(albumID) }
+        }
+        creditedAlbums = credited
     }
 
     static func load(from bundle: Bundle = .main) -> JazzLibrary {
@@ -28,10 +40,19 @@ final class JazzLibrary {
         }
         do {
             let data = try Data(contentsOf: url)
-            return JazzLibrary(data: try JSONDecoder().decode(JazzData.self, from: data))
+            return JazzLibrary(data: try JSONDecoder().decode(JazzData.self, from: data),
+                               sessions: optional([String: Session].self, "sessions", in: bundle) ?? [:])
         } catch {
             fatalError("Could not decode jazz.json: \(error)")
         }
+    }
+
+    /// A data file that may not be there (a section still being written). Missing or unreadable means empty, so the
+    /// app still opens; scripts/validate-data.py and the unit tests catch a file that doesn't decode.
+    static func optional<T: Decodable>(_ type: T.Type, _ name: String, in bundle: Bundle) -> T? {
+        guard let url = bundle.url(forResource: name, withExtension: "json"),
+              let data = try? Data(contentsOf: url) else { return nil }
+        return try? JSONDecoder().decode(T.self, from: data)
     }
 
     func era(_ id: String) -> Era? { eraByID[id] }
@@ -58,6 +79,37 @@ final class JazzLibrary {
         var result = albums(listed)
         for a in albums where a.artist == artistID && !listed.contains(a.id) { result.append(a) }
         return result.sorted { $0.year < $1.year }
+    }
+
+    // MARK: Sessions
+
+    /// Who played on an album, when and where: nil until its session has been reviewed.
+    func session(for albumID: String) -> Session? { sessions[albumID] }
+
+    /// Albums the artist plays on but doesn't lead, in year order.
+    func appearances(of artistID: String) -> [Album] {
+        (creditedAlbums[artistID] ?? []).compactMap { albumByID[$0] }
+            .filter { $0.artist != artistID }
+            .sorted { ($0.year, $0.title) < ($1.year, $1.title) }
+    }
+
+    /// Albums both artists are on (leading or playing), in year order.
+    func sharedAlbums(_ a: String, _ b: String) -> [Album] {
+        func on(_ id: String) -> Set<String> {
+            (creditedAlbums[id] ?? []).union(albums.filter { $0.artist == id && sessions[$0.id] != nil }.map(\.id))
+        }
+        return on(a).intersection(on(b)).compactMap { albumByID[$0] }.sorted { ($0.year, $0.title) < ($1.year, $1.title) }
+    }
+
+    /// The instruments an artist is credited with across the reviewed albums, most albums first.
+    func instruments(of artistID: String) -> [String] {
+        var count: [String: Int] = [:]
+        for albumID in creditedAlbums[artistID] ?? [] {
+            for credit in sessions[albumID]?.personnel ?? [] where credit.artist == artistID {
+                for i in credit.instruments { count[i, default: 0] += 1 }
+            }
+        }
+        return count.sorted { ($0.value, $1.key) > ($1.value, $0.key) }.map(\.key)
     }
 
     var decades: [Int] { Array(stride(from: 1890, through: 2020, by: 10)) }
