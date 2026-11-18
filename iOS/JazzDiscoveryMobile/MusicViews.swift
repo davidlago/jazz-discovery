@@ -277,6 +277,7 @@ struct NowPlayingView: View {
     @Environment(PlayerController.self) private var player
     @Environment(PhoneRouter.self) private var router
     @Environment(JazzLibrary.self) private var library
+    @Environment(Passport.self) private var passport
     @Environment(\.dismiss) private var dismiss
 
     var body: some View {
@@ -310,6 +311,7 @@ struct NowPlayingView: View {
         let artist = library.artist(named: np.artist)
         return VStack(spacing: 0) {
             Spacer(minLength: 24)
+            let record = player.currentCollectionId.flatMap { passport.albumID(forCollection: $0) }.flatMap { library.album($0) }
             RemoteImage(url: np.artwork) { Theme.panelHi.overlay(Image(systemName: "music.note").font(.largeTitle).foregroundStyle(Theme.faint)) }
                 .aspectRatio(1, contentMode: .fit)
                 .clipShape(RoundedRectangle(cornerRadius: 14, style: .continuous))
@@ -317,7 +319,11 @@ struct NowPlayingView: View {
                 .scaleEffect(player.isPlaying ? 1 : 0.84)
                 .animation(.spring(response: 0.45, dampingFraction: 0.72), value: player.isPlaying)
                 .padding(.horizontal, 32)
-                .accessibilityHidden(true)
+                .contentShape(Rectangle())
+                .onTapGesture { if let record { router.go(.album(record.id)) } }
+                .accessibilityElement()
+                .accessibilityLabel(record.map { "Open \($0.title)" } ?? "Album cover")
+                .accessibilityAddTraits(record == nil ? [] : .isButton)
             Spacer(minLength: 28)
 
             VStack(alignment: .leading, spacing: 18) {
