@@ -264,7 +264,7 @@
      "note": "Solo piano: the melody stated plainly, then knocked off balance with Monk's dissonances."
     }
    ],
-   "outro": "The Songbook has 27 more tunes, each with versions across the decades.",
+   "outro": "The Songbook has 39 more tunes, each with versions across the decades.",
    "next": [
     "late-night",
     "nineteen-fifty-nine"
@@ -315,6 +315,160 @@
    "next": [
     "late-night",
     "nineteen-fifty-nine"
+   ]
+  },
+  {
+   "id": "hip-hop",
+   "title": "From Hip-Hop Back to Jazz",
+   "subtitle": "The records the samples came from",
+   "tint": "#C8553D",
+   "intro": "From the late 1980s, hip-hop producers dug through old jazz records for loops, and their tracks sent listeners back to the originals. Each stop here is a jazz recording or tune that a hip-hop record was built on, and then the musicians who carried the conversation back the other way.",
+   "stops": [
+    {
+     "kind": "tune",
+     "ref": "a-night-in-tunisia",
+     "note": "Gang Starr's first single, Words I Manifest (1989), was built on a sample of Dizzy Gillespie's A Night in Tunisia. Play the versions here and listen for the bass vamp under the theme and the horn break before the solos."
+    },
+    {
+     "kind": "tune",
+     "ref": "on-green-dolphin-street",
+     "note": "A Tribe Called Quest's Jazz (We've Got) (1991) is built on an organ version of this tune by Jimmy McGriff, and the song's credits name Bronisław Kaper and Ned Washington, who wrote it for a 1947 film. Listen for the held bass note under its opening bars."
+    },
+    {
+     "kind": "artist",
+     "ref": "ron-carter",
+     "note": "A Tribe Called Quest went further than sampling on the same album, The Low End Theory: they hired Ron Carter, Miles Davis's bassist in the 1960s, to play on Verses from the Abstract. Hear him here on Maiden Voyage, Footprints and Speak No Evil."
+    },
+    {
+     "kind": "track",
+     "ref": "Herbie Hancock|Cantaloupe Island",
+     "note": "Us3, a London group given the run of the Blue Note archive, looped three one-bar pieces of this 1964 recording for Cantaloop (Flip Fantasia), which reached the US top ten. The same album built Eleven Long Years on Horace Silver's Song for My Father. Listen for the piano vamp, which barely changes for the whole track."
+    },
+    {
+     "kind": "track",
+     "ref": "Bill Evans|Nardis|1968",
+     "note": "Madlib sampled this live Bill Evans Trio recording from Montreux for Raid, on the Madvillain album Madvillainy (2004). Listen for the minor-key theme Evans played for twenty years."
+    },
+    {
+     "kind": "album",
+     "ref": "the-epic",
+     "track": "Kamasi Washington|Change of the Guard",
+     "note": "Kamasi Washington played tenor and arranged the strings on Kendrick Lamar's To Pimp a Butterfly, released in March 2015, with Robert Glasper on piano and keyboards. Two months later came Washington's own three-hour album, recorded years earlier with the same Los Angeles circle of musicians. Listen for the choir and strings around the band."
+    },
+    {
+     "kind": "album",
+     "ref": "universal-beings",
+     "track": "Makaya McCraven|Holy Lands",
+     "note": "The method turned around: Makaya McCraven records bands improvising, in New York, Chicago, London and Los Angeles for this album, then cuts, layers and repitches the tapes the way a producer works with samples. He calls himself a beat scientist. Listen for loops you know were played live."
+    }
+   ],
+   "outro": "Every tune and recording on this path has more versions in the Songbook and more records on its artist's page. For jazz musicians and hip-hop in the same room, try Robert Glasper's Black Radio.",
+   "next": [
+    "people-who-hate-jazz",
+    "london-now"
+   ]
+  },
+  {
+   "id": "protest",
+   "title": "The Protest Tradition",
+   "subtitle": "Songs that said something, and what they said it about",
+   "tint": "#8C3B3B",
+   "intro": "Jazz has always carried the history of the people who made it, and sometimes it named that history out loud: lynching, segregation, a church bombing, a prison uprising. Here are seven recordings, over seventy-five years, that each answered something in the news.",
+   "stops": [
+    {
+     "kind": "album",
+     "ref": "billie-commodore",
+     "track": "Billie Holiday|Strange Fruit",
+     "note": "Abel Meeropol's poem about lynching, sung by Billie Holiday in 1939. Columbia, her label, wouldn't record it for fear of Southern retailers and radio, so she made it for Milt Gabler's small Commodore label. Listen to how slowly she sings, holding back on every line."
+    },
+    {
+     "kind": "album",
+     "ref": "mingus-ah-um",
+     "track": "Charles Mingus|Fables of Faubus",
+     "note": "A portrait of Orval Faubus, the Arkansas governor who in 1957 sent the National Guard to keep nine Black students out of Little Rock Central High School. Columbia wouldn't allow the words, so it's an instrumental here; Mingus recorded the version with lyrics for Candid in 1960. Listen for the mocking, lurching melody."
+    },
+    {
+     "kind": "track",
+     "ref": "Max Roach|Driva' Man",
+     "note": "From We Insist! Max Roach's Freedom Now Suite (1960), begun for the centenary of the Emancipation Proclamation and hurried into the studio as the sit-ins spread. Abbey Lincoln sings Oscar Brown Jr.'s words about a slave overseer, then Coleman Hawkins solos. Listen to Lincoln alone at the start, keeping time on a tambourine."
+    },
+    {
+     "kind": "track",
+     "ref": "John Coltrane|Alabama",
+     "note": "Recorded in November 1963, two months after the Ku Klux Klan bombed the 16th Street Baptist Church in Birmingham and killed four girls; it's widely heard as Coltrane's response. One account says the melody follows the rhythm of a speech by Martin Luther King. Listen to the saxophone phrase it like speech over McCoy Tyner's rolling chords."
+    },
+    {
+     "kind": "track",
+     "ref": "Nina Simone|Mississippi Goddam",
+     "note": "Simone said she wrote it in under an hour, after the murder of Medgar Evers in Mississippi and the Birmingham bombing. It's built like a bright show tune; it was banned in several Southern states, and some radio stations sent their copies back broken in half. Listen to how cheerful the music stays while the words get angrier."
+    },
+    {
+     "kind": "track",
+     "ref": "Archie Shepp|Attica Blues",
+     "note": "The title track of Shepp's 1972 album named for the Attica prison uprising of 1971: a band of more than thirty, with singers. Listen for the soul and funk in it, from a player known for free jazz."
+    },
+    {
+     "kind": "album",
+     "ref": "the-imagined-savior",
+     "track": "Ambrose Akinmusire|Rollcall for Those Absent",
+     "note": "Ambrose Akinmusire's Rollcall for Those Absent (2014) is a reading of the names of young people killed by gunfire, Trayvon Martin among them. Listen to each name in turn."
+    }
+   ],
+   "outro": "Christian Scott's K.K.P.D., inspired by an unwarranted traffic stop, and Archie Shepp's Malcolm, Malcolm – Semper Malcolm, on Fire Music, carry the tradition on; both are in the library.",
+   "next": [
+    "nineteen-fifty-nine",
+    "hip-hop"
+   ]
+  },
+  {
+   "id": "london-now",
+   "title": "London Now",
+   "subtitle": "The scene around Nubya Garcia and Shabaka Hutchings",
+   "tint": "#3E8E5A",
+   "intro": "In the 2010s a generation of London musicians, many of them from community workshops, made the city one of jazz's liveliest scenes, mixing it with grime, Afrobeat and Caribbean music.",
+   "stops": [
+    {
+     "kind": "place",
+     "ref": "london",
+     "note": "Where it happened, and the workshops, Tomorrow's Warriors among them, where many of these players met."
+    },
+    {
+     "kind": "artist",
+     "ref": "shabaka-hutchings",
+     "note": "Born in London and raised in Barbados, Hutchings came through Tomorrow's Warriors, led three bands at once and directed We Out Here (2018), the compilation that drew attention to the scene."
+    },
+    {
+     "kind": "track",
+     "ref": "Sons of Kemet|In the Castle of My Skin",
+     "note": "Sons of Kemet was saxophone, tuba and two drummers, with no piano or guitar. Listen to the tuba play the bass line and the two drum kits lock into one Caribbean-inflected groove."
+    },
+    {
+     "kind": "track",
+     "ref": "Shabaka Hutchings|My Queen Is Harriet Tubman",
+     "note": "From Your Queen Is a Reptile (2018), the band's first album for Impulse!, the label of John Coltrane's A Love Supreme. Listen to the tuba carry the whole bass line under the saxophone."
+    },
+    {
+     "kind": "album",
+     "ref": "source",
+     "track": "Nubya Garcia|Source",
+     "note": "Nubya Garcia grew up in Camden with a Guyanese mother and a Trinidadian father, and also came through Tomorrow's Warriors. Her first album, Source (2020), was shortlisted for the Mercury Prize. Listen to her tenor sound, big and unhurried."
+    },
+    {
+     "kind": "track",
+     "ref": "Nubya Garcia|La Cumbia Me Está Llamando",
+     "note": "Garcia with La Perla, an all-woman group from Colombia: a cumbia rhythm and their voices, with the saxophone weaving between them."
+    },
+    {
+     "kind": "album",
+     "ref": "perceive-its-beauty",
+     "track": "Shabaka|End of Innocence",
+     "note": "Hutchings stopped playing saxophone at the end of 2023, and his 2024 album is mostly flutes, from the Japanese shakuhachi to the Andean quena, recorded at Van Gelder Studio in New Jersey. On End of Innocence he plays clarinet with Jason Moran on piano. Listen to how quiet it is after Sons of Kemet."
+    }
+   ],
+   "outro": "For more cumbia and clave, try The Latin Tinge; for more flutes and slow, meditative jazz, the Spiritual Jazz era has Pharoah Sanders and Alice Coltrane.",
+   "next": [
+    "latin-tinge",
+    "hip-hop"
    ]
   }
  ]

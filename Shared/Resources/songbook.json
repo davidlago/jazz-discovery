@@ -1150,6 +1150,526 @@
      "record": "John Coltrane and Johnny Hartman"
     }
    ]
+  },
+  {
+   "id": "manteca",
+   "title": "Manteca",
+   "composers": [
+    "dizzy-gillespie",
+    "Chano Pozo",
+    "Gil Fuller"
+   ],
+   "lyricists": [],
+   "year": 1947,
+   "origin": "Jazz original",
+   "form": "AABA, with a 16-bar bridge",
+   "summary": "Chano Pozo, a Cuban percussionist already famous at home, joined Dizzy Gillespie's big band in 1947 on Mario Bauzá's recommendation and brought him the idea for this tune. Pozo wrote the layered Afro-Cuban figures of the introduction and the A sections, Gillespie the bridge, and Gil Fuller the horn lines. Pozo was killed in Harlem the next year, but Manteca became one of the first Latin jazz standards.\n\nListen for the change at the bridge: the Cuban vamp gives way to sixteen bars of swing (Gillespie said he meant to write eight), and every version decides how hard to mark the switch.",
+   "aliases": [
+    "Manteca Theme"
+   ],
+   "versions": [
+    {
+     "artist": "dizzy-gillespie",
+     "artistName": "Dizzy Gillespie",
+     "year": 1947,
+     "note": "The first recording, by the big band in December 1947: Pozo's conga and the bass set up the groove, and the horns stack riffs on top of it, layer by layer.",
+     "landmark": true,
+     "record": "Complete RCA Victor"
+    },
+    {
+     "artist": "dizzy-gillespie",
+     "artistName": "Dizzy Gillespie",
+     "title": "Manteca Theme",
+     "year": 1954,
+     "note": "The opening of a four-part suite Chico O'Farrill arranged for an enlarged orchestra on Afro: the same theme, rescored with more brass and a full Latin percussion section.",
+     "album": "afro"
+    },
+    {
+     "artist": null,
+     "artistName": "Red Garland",
+     "year": 1958,
+     "note": "A piano trio with Ray Barretto added on congas: the big-band riffs turned into Garland's block chords, with the conga keeping the Cuban feel underneath.",
+     "record": "Manteca"
+    },
+    {
+     "artist": null,
+     "artistName": "Bobby Sanabria",
+     "year": 2000,
+     "note": "Half a century on, a big band led from the drums by Bobby Sanabria, from Afro-Cuban Dream: Live & In Clave!!!, with the percussion section as loud as the brass.",
+     "record": "Afro-Cuban Dream"
+    }
+   ]
+  },
+  {
+   "id": "misty",
+   "title": "Misty",
+   "composers": [
+    "Erroll Garner"
+   ],
+   "lyricists": [
+    "Johnny Burke"
+   ],
+   "year": 1954,
+   "origin": "Popular song",
+   "form": "AABA, 32 bars",
+   "summary": "Erroll Garner said he thought of it on a flight to Chicago, watching a rainbow through the haze as the plane came down, and recorded it as a piano piece in July 1954. Johnny Burke added the words a few years later, and singers took it up.\n\nListen to how the melody falls and climbs back in every phrase. Garner's right hand lags a little behind the beat while his left keeps a steady, guitar-like strum.",
+   "versions": [
+    {
+     "artist": null,
+     "artistName": "Erroll Garner",
+     "year": 1954,
+     "note": "The first recording, with Wyatt Ruther on bass and Fats Heard on drums: the melody in thick, ringing chords, the left hand keeping an even, guitar-like pulse.",
+     "landmark": true,
+     "record": "Contrasts"
+    },
+    {
+     "artist": "sarah-vaughan",
+     "artistName": "Sarah Vaughan",
+     "year": 1958,
+     "note": "Recorded in Paris in July 1958 with an orchestra and strings arranged by Quincy Jones, and issued on a single with Broken Hearted Melody in 1959.",
+     "record": "Vaughan and Violins"
+    },
+    {
+     "artist": null,
+     "artistName": "Johnny Mathis",
+     "year": 1959,
+     "note": "The pop hit: Mathis's high, gentle tenor with an orchestra arranged by Glenn Osser. It reached No. 12 in the US and became his signature song.",
+     "record": "Heavenly"
+    },
+    {
+     "artist": "ella-fitzgerald",
+     "artistName": "Ella Fitzgerald",
+     "year": 1960,
+     "note": "Live in Berlin in February 1960 with Paul Smith's quartet, at the same concert as her Mack the Knife.",
+     "record": "Ella in Berlin"
+    }
+   ]
+  },
+  {
+   "id": "so-what",
+   "title": "So What",
+   "composers": [
+    "miles-davis"
+   ],
+   "lyricists": [
+    "Christopher Acemandese Hall"
+   ],
+   "year": 1959,
+   "origin": "Jazz original",
+   "form": "AABA, 32 bars: D Dorian, with the bridge a half step up",
+   "summary": "The opening track of Kind of Blue, recorded in March 1959. Instead of chords that change every bar or two, there are only two scales: sixteen bars of D Dorian, eight a half step higher, then D again. The bass plays the theme, and the band answers each phrase with a two-chord figure, 'so what', voiced by Bill Evans in stacked fourths.\n\nWith so little harmony to follow, the soloists have to make the shape themselves. Listen for how the tempo rose over the years: the band played it faster and faster on stage.",
+   "versions": [
+    {
+     "artist": "miles-davis",
+     "artistName": "Miles Davis",
+     "year": 1959,
+     "note": "Paul Chambers states the theme on bass, the horns answer with the two-chord figure, and Davis's solo leaves a lot of space.",
+     "landmark": true,
+     "album": "kind-of-blue"
+    },
+    {
+     "artist": "miles-davis",
+     "artistName": "Miles Davis & John Coltrane",
+     "year": 1960,
+     "note": "Live at the Olympia in Paris in March 1960, on Coltrane's last tour with the band, with Wynton Kelly on piano: much faster than the record, and over thirteen minutes long.",
+     "record": "Final Tour"
+    },
+    {
+     "artist": "miles-davis",
+     "artistName": "Miles Davis",
+     "year": 1964,
+     "note": "The second quintet at Philharmonic Hall in New York, with Herbie Hancock, Ron Carter, Tony Williams and George Coleman: even faster than in 1960.",
+     "record": "Four & More"
+    },
+    {
+     "artist": null,
+     "artistName": "Eddie Jefferson",
+     "year": 1968,
+     "note": "Eddie Jefferson, credited as an innovator of vocalese, sings a lyric by Christopher Acemandese Hall over the tune, with James Moody in the band.",
+     "record": "Body and Soul"
+    }
+   ]
+  },
+  {
+   "id": "giant-steps",
+   "title": "Giant Steps",
+   "composers": [
+    "john-coltrane"
+   ],
+   "lyricists": [],
+   "year": 1959,
+   "origin": "Jazz original",
+   "form": "16 bars, moving between three keys a major third apart",
+   "summary": "John Coltrane recorded it in May 1959 for the album of the same name. The chords move through B, G and E-flat major, a new key every bar or two, joined by quick two-five-one progressions; players still practise it as a test.\n\nListen to the pianist on the original: Tommy Flanagan, given the tune with little preparation, plays a halting, stop-start solo. Every later version is partly an answer to how hard the changes are.",
+   "versions": [
+    {
+     "artist": "john-coltrane",
+     "artistName": "John Coltrane",
+     "year": 1959,
+     "note": "Coltrane runs the changes at full speed, chorus after chorus, and Flanagan gets through his solo in short, careful phrases.",
+     "landmark": true,
+     "album": "giant-steps"
+    },
+    {
+     "artist": null,
+     "artistName": "Woody Herman",
+     "year": 1973,
+     "note": "A big-band arrangement, from a Woody Herman album named for the tune that won a Grammy in 1974.",
+     "record": "Giant Steps"
+    },
+    {
+     "artist": "tommy-flanagan",
+     "artistName": "Tommy Flanagan",
+     "year": 1982,
+     "note": "Twenty-three years later Flanagan made a whole album of Coltrane's tunes in his memory, with George Mraz and Al Foster, and this time plays the tune as the leader.",
+     "record": "In Memory of John Coltrane"
+    },
+    {
+     "artist": null,
+     "artistName": "Joey Alexander",
+     "year": 2015,
+     "note": "From the debut album of a pianist from Bali, released when he was eleven. It earned him a Grammy nomination for best improvised jazz solo.",
+     "record": "My Favorite Things"
+    }
+   ]
+  },
+  {
+   "id": "naima",
+   "title": "Naima",
+   "composers": [
+    "john-coltrane"
+   ],
+   "lyricists": [],
+   "year": 1959,
+   "origin": "Jazz original",
+   "form": "AABA, over held bass notes",
+   "summary": "Coltrane's ballad for his wife, Juanita Naima Grubbs, recorded for Giant Steps in 1959. He described it as suspended chords over a held E-flat in the bass, with a B-flat underneath the middle section: almost no movement at the bottom, while the chords above shift.\n\nIt was the one slow piece on a record of fast ones, and he kept playing it through the 1960s. Listen for how much the band around it changes, from the calm of 1959 to the long live versions of the 1960s.",
+   "versions": [
+    {
+     "artist": "john-coltrane",
+     "artistName": "John Coltrane",
+     "year": 1959,
+     "note": "Paul Chambers holds the bass note while the chords move above it. Wynton Kelly takes a short piano solo; Coltrane plays the melody almost without ornament.",
+     "landmark": true,
+     "album": "giant-steps"
+    },
+    {
+     "artist": "john-coltrane",
+     "artistName": "John Coltrane",
+     "year": 1966,
+     "note": "Live at the Village Vanguard in May 1966, with Pharoah Sanders, Alice Coltrane and Rashied Ali: fifteen minutes, with a seven-minute solo from Sanders between two shorter ones by Coltrane.",
+     "record": "Village Vanguard Again"
+    },
+    {
+     "artist": "mccoy-tyner",
+     "artistName": "McCoy Tyner",
+     "year": 1972,
+     "note": "Solo piano, recorded in Tokyo in 1972 for Echoes of a Friend, Tyner's tribute to Coltrane five years after his death: big rolling chords where the band used to be.",
+     "record": "Echoes of a Friend"
+    },
+    {
+     "artist": "tommy-flanagan",
+     "artistName": "Tommy Flanagan",
+     "year": 1982,
+     "note": "A trio version from Flanagan's album in Coltrane's memory, with George Mraz and Al Foster: unhurried, the melody kept close.",
+     "record": "In Memory of John Coltrane"
+    }
+   ]
+  },
+  {
+   "id": "moanin",
+   "title": "Moanin'",
+   "composers": [
+    "Bobby Timmons"
+   ],
+   "lyricists": [
+    "Jon Hendricks"
+   ],
+   "year": 1958,
+   "origin": "Jazz original",
+   "form": "AABA, 32 bars, the A sections in call and response",
+   "summary": "Bobby Timmons, the Jazz Messengers' pianist, used to play its opening eight bars between tunes; Benny Golson, the band's tenor player, told him to add a bridge and make it a song. Art Blakey's band recorded it in October 1958 and it gave the record its name.\n\nThe A sections are a church call and response: the piano asks, the horns answer. Listen for that exchange, which comes straight from the Black church.",
+   "versions": [
+    {
+     "artist": "art-blakey",
+     "artistName": "Art Blakey & The Jazz Messengers",
+     "year": 1958,
+     "note": "Listen to Lee Morgan's trumpet bending notes like a blues singer, and to Timmons's solo, full of gospel chords.",
+     "landmark": true,
+     "album": "moanin",
+     "record": "Moanin'"
+    },
+    {
+     "artist": "art-blakey",
+     "artistName": "Art Blakey",
+     "year": 1958,
+     "note": "The same band at the Olympia in Paris a few weeks after the studio session, playing the new tune to a European audience.",
+     "record": "Olympia"
+    },
+    {
+     "artist": null,
+     "artistName": "Lambert, Hendricks & Ross",
+     "year": 1959,
+     "note": "Jon Hendricks's lyric, sung by the vocal trio: three voices taking the parts the horns played.",
+     "record": "The Hottest New Group in Jazz"
+    },
+    {
+     "artist": null,
+     "artistName": "Bobby Timmons",
+     "year": 1960,
+     "note": "The composer's own trio version, with Sam Jones and Jimmy Cobb, from his first album as a leader.",
+     "record": "This Here Is Bobby Timmons"
+    }
+   ]
+  },
+  {
+   "id": "song-for-my-father",
+   "title": "Song for My Father",
+   "composers": [
+    "horace-silver"
+   ],
+   "lyricists": [
+    "Horace Silver"
+   ],
+   "year": 1964,
+   "origin": "Jazz original",
+   "form": "AAB, 24 bars, in F minor",
+   "summary": "Horace Silver said the rhythm came from a trip to Brazil and the melody from the Cape Verdean folk music he heard from his father. It's four chords, a bass line of roots and fifths, and straight eighth notes rather than swing. Steely Dan borrowed its opening for Rikki Don't Lose That Number in 1974.\n\nOn the original, listen to Joe Henderson's tenor solo: he builds it almost entirely from the first three notes he plays, turning them over chorus after chorus.",
+   "versions": [
+    {
+     "artist": "horace-silver",
+     "artistName": "Horace Silver",
+     "year": 1964,
+     "note": "Recorded in October 1964 with Carmell Jones and Joe Henderson: Silver's piano solo first, then Henderson's, built from a three-note idea.",
+     "landmark": true,
+     "album": "song-for-my-father"
+    },
+    {
+     "artist": null,
+     "artistName": "Dee Dee Bridgewater",
+     "year": 1994,
+     "note": "Recorded in Paris for her Horace Silver tribute, with Silver's own words and Silver himself at the piano on this track.",
+     "record": "Love and Peace"
+    },
+    {
+     "artist": null,
+     "artistName": "Madlib",
+     "year": 2003,
+     "note": "From Shades of Blue, the hip-hop producer Madlib's album made from the Blue Note catalog: a loose, lounge-like version credited to Sound Directions, one of his projects.",
+     "record": "Shades of Blue"
+    },
+    {
+     "artist": null,
+     "artistName": "Louis Hayes",
+     "year": 2017,
+     "note": "Louis Hayes joined Silver's quintet on drums in 1956; sixty years on he made a tribute album, with Gregory Porter singing.",
+     "record": "Serenade for Horace"
+    }
+   ]
+  },
+  {
+   "id": "maiden-voyage",
+   "title": "Maiden Voyage",
+   "composers": [
+    "herbie-hancock"
+   ],
+   "lyricists": [],
+   "year": 1965,
+   "origin": "Jazz original",
+   "form": "AABA, 32 bars, two suspended chords per section",
+   "summary": "Herbie Hancock first wrote it for a television commercial, for Yardley; the master tape was labelled 'TV Jingle' until it got its name. On the 1965 album it opens the record: a sea-voyage theme over a repeated rhythm that comes from the bossa nova.\n\nThe chords are suspended, neither major nor minor, and they don't pull toward a home key. Listen to how the soloists float over them instead of running changes.",
+   "versions": [
+    {
+     "artist": "herbie-hancock",
+     "artistName": "Herbie Hancock",
+     "year": 1965,
+     "note": "Freddie Hubbard, George Coleman, Ron Carter and Tony Williams: the rhythm section keeps the ostinato going under the solos, and nobody hurries.",
+     "landmark": true,
+     "album": "maiden-voyage"
+    },
+    {
+     "artist": "bobby-hutcherson",
+     "artistName": "Bobby Hutcherson",
+     "year": 1966,
+     "note": "Vibraphone in place of the horns, with Hancock himself on piano, recorded a year after the original for Hutcherson's album Happenings.",
+     "record": "Happenings"
+    },
+    {
+     "artist": "robert-glasper",
+     "artistName": "Robert Glasper",
+     "title": "Maiden Voyage / Everything In Its Right Place",
+     "year": 2007,
+     "note": "Glasper's trio runs it together with Radiohead's Everything in Its Right Place, from the album In My Element.",
+     "record": "In My Element"
+    }
+   ]
+  },
+  {
+   "id": "nardis",
+   "title": "Nardis",
+   "composers": [
+    "miles-davis"
+   ],
+   "lyricists": [],
+   "year": 1958,
+   "origin": "Jazz original",
+   "form": "AABA, 32 bars, in E minor",
+   "summary": "Miles Davis wrote it in 1958 for a Cannonball Adderley session and never recorded it himself. Bill Evans, the pianist on that date, took it up and played it for the rest of his life, so often that many assumed he'd written it.\n\nIts scales, the Phrygian dominant and the double harmonic, give it a Spanish or Middle Eastern sound. Listen for how Evans's trios let it grow: from under six minutes in 1961 to twenty-minute performances built around the drums by the end of the decade.",
+   "versions": [
+    {
+     "artist": "cannonball-adderley",
+     "artistName": "Cannonball Adderley",
+     "year": 1958,
+     "note": "The first recording, from Portrait of Cannonball, with Blue Mitchell on trumpet and Bill Evans on piano. Davis wrote it for this session.",
+     "record": "Portrait of Cannonball"
+    },
+    {
+     "artist": "bill-evans",
+     "artistName": "Bill Evans Trio",
+     "year": 1961,
+     "note": "With Scott LaFaro and Paul Motian, a few months before LaFaro died: the three instruments trade the lead rather than piano with accompaniment.",
+     "landmark": true,
+     "record": "Explorations"
+    },
+    {
+     "artist": "bill-evans",
+     "artistName": "Bill Evans",
+     "year": 1968,
+     "note": "Live at the Montreux festival with Eddie Gomez and Jack DeJohnette, the tune stretched out around a drum solo. Madlib sampled this recording for the Madvillain track Raid in 2004.",
+     "record": "Montreux"
+    }
+   ]
+  },
+  {
+   "id": "stella-by-starlight",
+   "title": "Stella by Starlight",
+   "composers": [
+    "Victor Young"
+   ],
+   "lyricists": [
+    "Ned Washington"
+   ],
+   "year": 1944,
+   "origin": "Film song",
+   "form": "ABCA', 32 bars",
+   "summary": "Victor Young wrote the melody for the 1944 ghost film The Uninvited; Ned Washington added words in 1946, and Harry James and Frank Sinatra both had hits with it in 1947. Jazz players liked its long, arching melody and its chords, which keep heading for a key and then turning away.\n\nListen to the first chord: it isn't the home key, and the song takes a while to settle. Every version has to find its way through that wandering harmony.",
+   "versions": [
+    {
+     "artist": "charlie-parker",
+     "artistName": "Charlie Parker",
+     "year": 1952,
+     "note": "The first jazz recording, from January 1952, with a large studio orchestra: Parker states the melody and decorates it in quick runs.",
+     "record": "Big Band"
+    },
+    {
+     "artist": "miles-davis",
+     "artistName": "Miles Davis",
+     "year": 1958,
+     "note": "The 1958 sextet with Coltrane, Cannonball Adderley and Bill Evans: Davis plays the melody quietly and Evans's chords set the mood.",
+     "landmark": true,
+     "record": "1958 Miles"
+    },
+    {
+     "artist": "ella-fitzgerald",
+     "artistName": "Ella Fitzgerald",
+     "year": 1961,
+     "note": "From Clap Hands, Here Comes Charlie!, with Lou Levy on piano and Herb Ellis on guitar: three minutes, the words sung over a light swing.",
+     "record": "Clap Hands"
+    },
+    {
+     "artist": "keith-jarrett",
+     "artistName": "Keith Jarrett, Gary Peacock & Jack DeJohnette",
+     "year": 1985,
+     "note": "Recorded live in Paris in July 1985, the first track of Standards Live: over eleven minutes, the trio taking the old film song a long way from its melody.",
+     "record": "Standards Live"
+    }
+   ]
+  },
+  {
+   "id": "on-green-dolphin-street",
+   "title": "On Green Dolphin Street",
+   "composers": [
+    "Bronisław Kaper"
+   ],
+   "lyricists": [
+    "Ned Washington"
+   ],
+   "year": 1947,
+   "origin": "Film song",
+   "form": "ABAC, 32 bars: held bass notes alternating with moving chords",
+   "summary": "Bronisław Kaper wrote it for the 1947 film Green Dolphin Street, with Lana Turner. Jazz players picked it up a decade later, first Ahmad Jamal, then Miles Davis, and it has been recorded hundreds of times since.\n\nThe tune alternates eight bars over a held bass note with eight bars of fast-moving chords. Listen for the switch between the still sections and the moving ones, and how each band marks it.",
+   "aliases": [
+    "Green Dolphin Street"
+   ],
+   "versions": [
+    {
+     "artist": null,
+     "artistName": "Ahmad Jamal",
+     "year": 1956,
+     "note": "Ahmad Jamal's trio, from Count 'Em 88: light, spacious, full of pauses. Miles Davis was listening to Jamal's repertoire closely at the time.",
+     "record": "Count 'Em 88"
+    },
+    {
+     "artist": "miles-davis",
+     "artistName": "Miles Davis",
+     "year": 1958,
+     "note": "The 1958 sextet with Coltrane, Cannonball Adderley and Bill Evans: the version that made it a jazz standard.",
+     "landmark": true,
+     "record": "1958 Miles"
+    },
+    {
+     "artist": "eric-dolphy",
+     "artistName": "Eric Dolphy",
+     "year": 1960,
+     "note": "From Outward Bound, Dolphy's first album as a leader, with Freddie Hubbard: Dolphy plays bass clarinet, rarely heard as a jazz solo instrument before him, leaping across its range.",
+     "record": "Outward Bound"
+    },
+    {
+     "artist": null,
+     "artistName": "Mark Murphy",
+     "year": 1961,
+     "note": "Mark Murphy sings the words, from his album Rah!: the critic Ted Gioia's pick among the vocal versions.",
+     "record": "Rah"
+    }
+   ]
+  },
+  {
+   "id": "birdland",
+   "title": "Birdland",
+   "composers": [
+    "joe-zawinul"
+   ],
+   "lyricists": [
+    "Jon Hendricks"
+   ],
+   "year": 1977,
+   "origin": "Jazz original",
+   "form": "A chain of riffs over one groove, built up in layers",
+   "summary": "Joe Zawinul named it for the New York club where he'd heard Basie, Armstrong, Ellington and Miles, and where he met his wife; he called it the most important place in his life. Weather Report put it first on Heavy Weather in 1977, and the recording is now in the Grammy Hall of Fame.\n\nThere's little improvising: the piece is its arrangement, one riff after another, each added on top of the last until the big theme arrives. Listen for how each new part joins the ones already playing.",
+   "versions": [
+    {
+     "artist": "joe-zawinul",
+     "artistName": "Weather Report",
+     "year": 1977,
+     "note": "The bass line, then synthesizer and saxophone riffs piling up until the main theme. Jaco Pastorius said the studio version was a single take.",
+     "landmark": true,
+     "album": "heavy-weather"
+    },
+    {
+     "artist": null,
+     "artistName": "The Manhattan Transfer",
+     "year": 1979,
+     "note": "With a lyric by Jon Hendricks: four voices sing the riffs and the theme. It won a Grammy.",
+     "record": "Extensions"
+    },
+    {
+     "artist": null,
+     "artistName": "Quincy Jones",
+     "year": 1989,
+     "note": "From Back on the Block, with Miles Davis and Dizzy Gillespie on trumpet, James Moody, and Ella Fitzgerald and Sarah Vaughan singing. It won two Grammys.",
+     "record": "Back on the Block"
+    }
+   ]
   }
  ]
 }

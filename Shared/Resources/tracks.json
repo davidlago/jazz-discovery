@@ -33,6 +33,23 @@
   "url": "https://music.apple.com/us/album/blue-monk-remastered/1880974411",
   "year": 1961
  },
+ "Ahmad Jamal|On Green Dolphin Street|1956": {
+  "album": null,
+  "albumName": "Count 'Em 88",
+  "artistName": "Ahmad Jamal Trio",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/2a/2a/0b/2a2a0ba3-e914-8d23-dc01-3531b364e9f7/00602557702446.rgb.jpg/100x100bb.jpg",
+  "collectionId": 1444011971,
+  "discNumber": 1,
+  "durationMillis": 200373,
+  "era": null,
+  "name": "On Green Dolphin Street",
+  "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/eb/02/d2/eb02d27f-9849-5b38-9976-396e94de6421/mzaf_11315534779205501648.plus.aac.p.m4a",
+  "record": "Count 'Em 88",
+  "trackId": 1444012277,
+  "trackNumber": 2,
+  "url": "https://music.apple.com/us/album/on-green-dolphin-street/1444011971",
+  "year": 1956
+ },
  "Al Jarreau|Take Five|1977": {
   "album": null,
   "albumName": "Look to the Rainbow: Live In Europe",
@@ -514,6 +531,23 @@
   "url": "https://music.apple.com/us/album/moanin/1459438950",
   "year": 1959
  },
+ "Art Blakey & The Jazz Messengers|Moanin'|1958": {
+  "album": "moanin",
+  "albumName": "Moanin'",
+  "artistName": "Art Blakey & The Jazz Messengers",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/83/91/66/839166b8-0b77-a5fa-c5ff-16907ffe54d4/19UMGIM32054.rgb.jpg/100x100bb.jpg",
+  "collectionId": 1459438950,
+  "discNumber": 1,
+  "durationMillis": 572204,
+  "era": "hard-bop",
+  "name": "Moanin'",
+  "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/de/02/ae/de02ae53-d5ac-39c5-e3e2-938fbcc81eb1/mzaf_16199492914577337819.plus.aac.p.m4a",
+  "record": "Moanin'",
+  "trackId": 1459438988,
+  "trackNumber": 1,
+  "url": "https://music.apple.com/us/album/moanin/1459438950",
+  "year": 1958
+ },
  "Art Blakey|A Night in Tunisia": {
   "album": null,
   "albumName": "A Night In Tunisia (Remastered)",
@@ -612,6 +646,23 @@
   "trackNumber": 1,
   "url": "https://music.apple.com/us/album/moanin/1459438950",
   "year": 1959
+ },
+ "Art Blakey|Moanin'|1958": {
+  "album": null,
+  "albumName": "Olympia Concert",
+  "artistName": "Art Blakey",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/50/4a/05/504a0566-2e56-98d3-5900-10224e92678e/00602527666273.rgb.jpg/100x100bb.jpg",
+  "collectionId": 1443267002,
+  "discNumber": 1,
+  "durationMillis": 797813,
+  "era": "hard-bop",
+  "name": "Moanin' (Olympia 58)",
+  "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/46/72/f2/4672f28a-5136-9713-21ed-0c7e3325d02a/mzaf_11996081279729314087.plus.aac.p.m4a",
+  "record": "Olympia",
+  "trackId": 1443267171,
+  "trackNumber": 4,
+  "url": "https://music.apple.com/us/album/moanin-olympia-58/1443267002",
+  "year": 1958
  },
  "Art Tatum|Tea for Two": {
   "album": null,
@@ -1030,6 +1081,23 @@
   "url": "https://music.apple.com/us/album/jade-visions-take-2-live/1440926338",
   "year": 1961
  },
+ "Bill Evans Trio|Nardis|1961": {
+  "album": null,
+  "albumName": "Explorations (Remastered)",
+  "artistName": "Bill Evans Trio",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/05/5c/f5/055cf5a3-a88c-b7c8-935c-858bfed2ccec/09CMGIM01544.rgb.jpg/100x100bb.jpg",
+  "collectionId": 1440794254,
+  "discNumber": 1,
+  "durationMillis": 349493,
+  "era": "modal",
+  "name": "Nardis",
+  "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ae/af/95/aeaf95da-b2ae-c53c-c29c-d48e4e37af30/mzaf_6120325310010482078.plus.aac.p.m4a",
+  "record": "Explorations",
+  "trackId": 1440794789,
+  "trackNumber": 6,
+  "url": "https://music.apple.com/us/album/nardis/1440794254",
+  "year": 1961
+ },
  "Bill Evans|Autumn Leaves|1959": {
   "album": null,
   "albumName": "Portrait In Jazz (Remastered)",
@@ -1078,6 +1146,23 @@
   "trackNumber": 1,
   "url": "https://music.apple.com/us/album/glorias-step-take-2-live/1440926338",
   "year": 1961
+ },
+ "Bill Evans|Nardis|1968": {
+  "album": null,
+  "albumName": "Bill Evans - At The Montreux Jazz Festival",
+  "artistName": "Bill Evans",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/36/a6/3e/36a63edc-191c-0f44-6494-8deccafa7181/00602567829256.rgb.jpg/100x100bb.jpg",
+  "collectionId": 1425178671,
+  "discNumber": 1,
+  "durationMillis": 503933,
+  "era": "modal",
+  "name": "Nardis (Live At The Montreux Jazz Festival, 1968)",
+  "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/70/95/22/709522f6-940b-1eb2-a7fa-5fa988813276/mzaf_11581794776013863156.plus.aac.p.m4a",
+  "record": "Montreux",
+  "trackId": 1425178688,
+  "trackNumber": 4,
+  "url": "https://music.apple.com/us/album/nardis-live-at-the-montreux-jazz-festival-1968/1425178671",
+  "year": 1968
  },
  "Bill Evans|Night and Day|1958": {
   "album": null,
@@ -1384,6 +1469,23 @@
   "url": "https://music.apple.com/us/album/hat-and-beard/1455686798",
   "year": 1964
  },
+ "Bobby Hutcherson|Maiden Voyage|1966": {
+  "album": null,
+  "albumName": "Happenings",
+  "artistName": "Bobby Hutcherson",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/c8/fa/9a/c8fa9afc-1fd2-c8e8-87e9-60ba3b77ef31/13UMGIM57529.rgb.jpg/100x100bb.jpg",
+  "collectionId": 1443225700,
+  "discNumber": 1,
+  "durationMillis": 350508,
+  "era": "free",
+  "name": "Maiden Voyage",
+  "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/82/c5/c2/82c5c2d3-0c66-92a1-be71-74b978465a73/mzaf_5749369372350922159.plus.aac.p.m4a",
+  "record": "Happenings",
+  "trackId": 1443226270,
+  "trackNumber": 4,
+  "url": "https://music.apple.com/us/album/maiden-voyage/1443225700",
+  "year": 1966
+ },
  "Bobby Hutcherson|Out to Lunch": {
   "album": "out-to-lunch",
   "albumName": "Out to Lunch!",
@@ -1399,6 +1501,40 @@
   "trackNumber": 4,
   "url": "https://music.apple.com/us/album/out-to-lunch/1455686798",
   "year": 1964
+ },
+ "Bobby Sanabria|Manteca|2000": {
+  "album": null,
+  "albumName": "Afro-Cuban Dream: Live & in Clave!",
+  "artistName": "Bobby Sanabria Big Band",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music/ce/48/8c/mzi.rmulerra.jpg/100x100bb.jpg",
+  "collectionId": 124611499,
+  "discNumber": 1,
+  "durationMillis": 832667,
+  "era": null,
+  "name": "Manteca",
+  "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/8e/d0/12/8ed01233-5c19-e146-1b08-a4d555b07a09/mzaf_1173331250897929787.plus.aac.p.m4a",
+  "record": "Afro-Cuban Dream",
+  "trackId": 124611975,
+  "trackNumber": 9,
+  "url": "https://music.apple.com/us/album/manteca/124611499",
+  "year": 2000
+ },
+ "Bobby Timmons|Moanin'|1960": {
+  "album": null,
+  "albumName": "This Here Is Bobby Timmons (Remastered 2026)",
+  "artistName": "Bobby Timmons",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/0d/a3/45/0da3451f-3e13-36f1-18ff-bb7aa4115fcb/25CRGIM52010.rgb.jpg/100x100bb.jpg",
+  "collectionId": 6780567581,
+  "discNumber": 1,
+  "durationMillis": 307930,
+  "era": null,
+  "name": "Moanin' (Remastered 2026)",
+  "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/32/bb/2b/32bb2b6a-9fe7-3c6a-933e-e60ec09775cc/mzaf_10253757108033130986.plus.aac.p.m4a",
+  "record": "This Here Is Bobby Timmons",
+  "trackId": 6780567969,
+  "trackNumber": 2,
+  "url": "https://music.apple.com/us/album/moanin-remastered-2026/6780567581",
+  "year": 1960
  },
  "Brad Mehldau|Blackbird": {
   "album": "art-of-the-trio-vol-1",
@@ -1752,6 +1888,23 @@
   "trackNumber": 3,
   "url": "https://music.apple.com/us/album/mercy-mercy-mercy-live/723778170",
   "year": 1966
+ },
+ "Cannonball Adderley|Nardis|1958": {
+  "album": null,
+  "albumName": "Portrait of Cannonball",
+  "artistName": "Cannonball Adderley Quintet",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/1a/77/9e/1a779efb-be3d-05d8-93b4-464587b07791/00025218636124.rgb.jpg/100x100bb.jpg",
+  "collectionId": 1443005040,
+  "discNumber": 1,
+  "durationMillis": 330533,
+  "era": "hard-bop",
+  "name": "Nardis (Take 5)",
+  "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/d4/de/30/d4de30fe-9b52-9a9e-975e-c8772747ef77/mzaf_8499226017672266597.plus.aac.p.m4a",
+  "record": "Portrait of Cannonball",
+  "trackId": 1443005661,
+  "trackNumber": 8,
+  "url": "https://music.apple.com/us/album/nardis-take-5/1443005040",
+  "year": 1958
  },
  "Cannonball Adderley|One for Daddy-O": {
   "album": "somethin-else",
@@ -2282,6 +2435,23 @@
   "trackNumber": 18,
   "url": "https://music.apple.com/us/album/parkers-mood/1518879856",
   "year": 1945
+ },
+ "Charlie Parker|Stella by Starlight|1952": {
+  "album": null,
+  "albumName": "Big Band",
+  "artistName": "Charlie Parker",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/cf/88/1b/cf881bca-7ff9-394f-5f83-457cdd58a768/00602577176661.rgb.jpg/100x100bb.jpg",
+  "collectionId": 1445094992,
+  "discNumber": 1,
+  "durationMillis": 178667,
+  "era": "bebop",
+  "name": "Stella by Starlight",
+  "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/ce/61/75/ce61753c-942a-a454-3d8e-ce0199d2f11c/mzaf_16255135265500208087.plus.aac.p.m4a",
+  "record": "Big Band",
+  "trackId": 1445095218,
+  "trackNumber": 4,
+  "url": "https://music.apple.com/us/album/stella-by-starlight/1445094992",
+  "year": 1952
  },
  "Chet Baker|But Not for Me": {
   "album": "chet-baker-sings",
@@ -3183,6 +3353,23 @@
   "url": "https://music.apple.com/us/album/take-five/193085545",
   "year": 1959
  },
+ "Dee Dee Bridgewater|Song for My Father|1994": {
+  "album": null,
+  "albumName": "Love and Peace: A Tribute to Horace Silver",
+  "artistName": "Dee Dee Bridgewater",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/a8/e5/ac/a8e5ac36-bbc9-dbd3-8264-1ec38c015f90/115712.jpg/100x100bb.jpg",
+  "collectionId": 1828766738,
+  "discNumber": 1,
+  "durationMillis": 336453,
+  "era": null,
+  "name": "Song For My Father",
+  "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/db/90/bc/db90bc4b-d0d7-e2d3-a1e6-d2e92753b668/mzaf_14900390428921700190.plus.aac.p.m4a",
+  "record": "Love and Peace",
+  "trackId": 1828767432,
+  "trackNumber": 9,
+  "url": "https://music.apple.com/us/album/song-for-my-father/1828766738",
+  "year": 1994
+ },
  "Dexter Gordon|Cheese Cake": {
   "album": "go",
   "albumName": "Go",
@@ -3390,6 +3577,39 @@
   "trackNumber": 1,
   "url": "https://music.apple.com/us/album/manteca-theme/1434895578",
   "year": 1954
+ },
+ "Dizzy Gillespie|Manteca Theme|1954": {
+  "album": "afro",
+  "albumName": "Afro",
+  "artistName": "Dizzy Gillespie",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/dc/62/24/dc6224d5-a974-a8e6-f08a-cbeafb71a8fe/00602567828303.rgb.jpg/100x100bb.jpg",
+  "collectionId": 1434895578,
+  "discNumber": 1,
+  "durationMillis": 250933,
+  "era": "bebop",
+  "name": "Manteca Theme",
+  "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/8c/aa/2a/8caa2a57-d3d5-5c1d-fefb-a9d9243cb6e8/mzaf_9855954874348492991.plus.aac.p.m4a",
+  "trackId": 1434895582,
+  "trackNumber": 1,
+  "url": "https://music.apple.com/us/album/manteca-theme/1434895578",
+  "year": 1954
+ },
+ "Dizzy Gillespie|Manteca|1947": {
+  "album": null,
+  "albumName": "The Complete RCA Victor Recordings",
+  "artistName": "Dizzy Gillespie and His Orchestra",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music/1c/5a/5e/mzi.wklmiapu.jpg/100x100bb.jpg",
+  "collectionId": 298320892,
+  "discNumber": 1,
+  "durationMillis": 186467,
+  "era": "bebop",
+  "name": "Manteca",
+  "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a5/06/dd/a506ddf0-5f6a-4faa-6937-3853350c20d6/mzaf_17963130692201061456.plus.aac.p.m4a",
+  "record": "Complete RCA Victor",
+  "trackId": 298321100,
+  "trackNumber": 1,
+  "url": "https://music.apple.com/us/album/manteca/298320892",
+  "year": 1947
  },
  "Dizzy Gillespie|Salt Peanuts": {
   "album": "groovin-high",
@@ -3841,6 +4061,23 @@
   "url": "https://music.apple.com/us/album/west-end-blues/477023849",
   "year": 1925
  },
+ "Eddie Jefferson|So What|1968": {
+  "album": null,
+  "albumName": "Body and Soul",
+  "artistName": "Eddie Jefferson",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/24/3c/f3/243cf34f-de8d-d228-a3de-26d01edda8f3/00025218639620.rgb.jpg/100x100bb.jpg",
+  "collectionId": 1443922908,
+  "discNumber": 1,
+  "durationMillis": 265400,
+  "era": null,
+  "name": "So What",
+  "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/1d/2d/14/1d2d1415-af0c-d4b7-f1d2-3de31df3c0c3/mzaf_2632617987111411304.plus.aac.p.m4a",
+  "record": "Body and Soul",
+  "trackId": 1443922917,
+  "trackNumber": 5,
+  "url": "https://music.apple.com/us/album/so-what/1443922908",
+  "year": 1968
+ },
  "Elena Pinderhughes|Her Arrival": {
   "album": "ancestral-recall",
   "albumName": "Ancestral Recall",
@@ -4038,6 +4275,23 @@
   "url": "https://music.apple.com/us/album/mack-the-knife/1444125159",
   "year": 1978
  },
+ "Ella Fitzgerald|Misty|1960": {
+  "album": null,
+  "albumName": "The Complete Ella In Berlin: Mack the Knife (Live)",
+  "artistName": "Ella Fitzgerald",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/a7/6c/9a/a76c9a3b-e8db-0c97-489b-0be850d449ac/00602567833260.rgb.jpg/100x100bb.jpg",
+  "collectionId": 1434903678,
+  "discNumber": 1,
+  "durationMillis": 157933,
+  "era": "swing",
+  "name": "Misty (feat. The Paul Smith Quartet) [Live]",
+  "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/3a/34/cb/3a34cbe5-2298-f101-e76a-362cad2114c3/mzaf_3033460754549169811.plus.aac.p.m4a",
+  "record": "Ella in Berlin",
+  "trackId": 1434904008,
+  "trackNumber": 5,
+  "url": "https://music.apple.com/us/album/misty-feat-the-paul-smith-quartet-live/1434903678",
+  "year": 1960
+ },
  "Ella Fitzgerald|My Funny Valentine|1956": {
   "album": null,
   "albumName": "Ella Fitzgerald Sings the Rodgers & Hart Songbook",
@@ -4087,6 +4341,23 @@
   "trackNumber": 27,
   "url": "https://music.apple.com/us/album/night-and-day/6788191143",
   "year": 1956
+ },
+ "Ella Fitzgerald|Stella by Starlight|1961": {
+  "album": null,
+  "albumName": "Clap Hands, Here Comes Charlie! (Expanded Edition)",
+  "artistName": "Ella Fitzgerald",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/0d/c6/ff/0dc6ffc7-003d-87fa-9106-23c80ad74506/00602567832164.rgb.jpg/100x100bb.jpg",
+  "collectionId": 1434900018,
+  "discNumber": 1,
+  "durationMillis": 201093,
+  "era": "swing",
+  "name": "Stella By Starlight",
+  "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ab/e6/3c/abe63c28-5ce4-3b71-c522-e8a0cbf5ce2a/mzaf_2850158995459775203.plus.aac.p.m4a",
+  "record": "Clap Hands",
+  "trackId": 1434900031,
+  "trackNumber": 4,
+  "url": "https://music.apple.com/us/album/stella-by-starlight/1434900018",
+  "year": 1961
  },
  "Ella Fitzgerald|Take the \"A\" Train|1957": {
   "album": null,
@@ -4170,6 +4441,23 @@
   "url": "https://music.apple.com/us/album/hat-and-beard/1455686798",
   "year": 1964
  },
+ "Eric Dolphy|On Green Dolphin Street|1960": {
+  "album": null,
+  "albumName": "Outward Bound (Rudy Van Gelder Remaster) [feat. Freddie Hubbard]",
+  "artistName": "Eric Dolphy",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/a5/6f/57/a56f5739-c4ae-ca66-ce63-09141f07307f/00888072350939.rgb.jpg/100x100bb.jpg",
+  "collectionId": 1442267347,
+  "discNumber": 1,
+  "durationMillis": 345800,
+  "era": "free",
+  "name": "On Green Dolphin Street",
+  "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/22/74/df/2274df8c-4530-0c0c-bfd2-75ec234f4114/mzaf_14356376658867842527.plus.aac.p.m4a",
+  "record": "Outward Bound",
+  "trackId": 1442267542,
+  "trackNumber": 2,
+  "url": "https://music.apple.com/us/album/on-green-dolphin-street/1442267347",
+  "year": 1960
+ },
  "Eric Dolphy|Out to Lunch": {
   "album": "out-to-lunch",
   "albumName": "Out to Lunch!",
@@ -4185,6 +4473,23 @@
   "trackNumber": 4,
   "url": "https://music.apple.com/us/album/out-to-lunch/1455686798",
   "year": 1964
+ },
+ "Erroll Garner|Misty|1954": {
+  "album": null,
+  "albumName": "Contrasts",
+  "artistName": "Erroll Garner",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/bf/90/a6/bf90a665-0284-f4b9-2367-2c4fdbf79733/00731455807721.rgb.jpg/100x100bb.jpg",
+  "collectionId": 1442841269,
+  "discNumber": 1,
+  "durationMillis": 168933,
+  "era": null,
+  "name": "Misty (Instrumental)",
+  "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/89/bd/e5/89bde5f8-7d77-2450-5ae2-63dab86a97c4/mzaf_12942280863394370121.plus.aac.p.m4a",
+  "record": "Contrasts",
+  "trackId": 1442842391,
+  "trackNumber": 10,
+  "url": "https://music.apple.com/us/album/misty-instrumental/1442841269",
+  "year": 1954
  },
  "Esperanza Spalding|Black Gold": {
   "album": null,
@@ -4763,6 +5068,22 @@
   "url": "https://music.apple.com/us/album/maiden-voyage-remastered/1476739989",
   "year": 1965
  },
+ "Herbie Hancock|Maiden Voyage|1965": {
+  "album": "maiden-voyage",
+  "albumName": "Maiden Voyage",
+  "artistName": "Herbie Hancock",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/64/b6/04/64b6040c-a931-0a5c-6b7c-82e0dd5c3d4c/19UMGIM73745.rgb.jpg/100x100bb.jpg",
+  "collectionId": 1476739989,
+  "discNumber": 1,
+  "durationMillis": 475033,
+  "era": "fusion",
+  "name": "Maiden Voyage (Remastered)",
+  "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/91/66/1f/91661f17-3aeb-daa6-64e1-e9560e4468d2/mzaf_4598471433575455143.plus.aac.p.m4a",
+  "trackId": 1476740045,
+  "trackNumber": 1,
+  "url": "https://music.apple.com/us/album/maiden-voyage-remastered/1476739989",
+  "year": 1965
+ },
  "Herbie Hancock|Sly": {
   "album": "head-hunters",
   "albumName": "Head Hunters",
@@ -4908,6 +5229,22 @@
   "trackNumber": 1,
   "url": "https://music.apple.com/us/album/song-for-my-father/1471085186",
   "year": 1965
+ },
+ "Horace Silver|Song for My Father|1964": {
+  "album": "song-for-my-father",
+  "albumName": "Song for My Father",
+  "artistName": "Horace Silver",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/ba/d6/43/bad64364-1125-40b8-daa6-d49789f8b1a0/19UMGIM60341.rgb.jpg/100x100bb.jpg",
+  "collectionId": 1471085186,
+  "discNumber": 1,
+  "durationMillis": 437671,
+  "era": "hard-bop",
+  "name": "Song for My Father",
+  "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a5/87/fb/a587fb9f-63b6-2d56-8433-90c5fe900cdb/mzaf_16400786303059931186.plus.aac.p.m4a",
+  "trackId": 1471085189,
+  "trackNumber": 1,
+  "url": "https://music.apple.com/us/album/song-for-my-father/1471085186",
+  "year": 1964
  },
  "Horace Silver|The Natives Are Restless Tonight": {
   "album": "song-for-my-father",
@@ -5598,6 +5935,23 @@
   "url": "https://music.apple.com/us/album/mercy-mercy-mercy-live/723778170",
   "year": 1966
  },
+ "Joey Alexander|Giant Steps|2015": {
+  "album": null,
+  "albumName": "My Favorite Things (Deluxe Edition)",
+  "artistName": "Joey Alexander",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/8d/ab/4a/8dab4a7e-0c39-c045-34cb-f896701a9f3b/886446438030.jpg/100x100bb.jpg",
+  "collectionId": 1249045777,
+  "discNumber": 1,
+  "durationMillis": 615311,
+  "era": null,
+  "name": "Giant Steps",
+  "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/33/da/f6/33daf6b4-7dbc-d492-f9ec-20ca2f1d5101/mzaf_7764183181259957651.plus.aac.p.m4a",
+  "record": "My Favorite Things",
+  "trackId": 1249046249,
+  "trackNumber": 1,
+  "url": "https://music.apple.com/us/album/giant-steps/1249045777",
+  "year": 2015
+ },
  "John Coltrane & Johnny Hartman|Lush Life|1963": {
   "album": null,
   "albumName": "John Coltrane and Johnny Hartman",
@@ -5761,6 +6115,22 @@
   "url": "https://music.apple.com/us/album/giant-steps-2020-remaster/1531037502",
   "year": 1960
  },
+ "John Coltrane|Giant Steps|1959": {
+  "album": "giant-steps",
+  "albumName": "Giant Steps (2020 Remaster)",
+  "artistName": "John Coltrane",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/4e/2f/8b/4e2f8b1f-7e14-1ce4-1c76-4683b1b9173d/603497847549.jpg/100x100bb.jpg",
+  "collectionId": 1531037502,
+  "discNumber": 1,
+  "durationMillis": 287844,
+  "era": "modal",
+  "name": "Giant Steps (2020 Remaster)",
+  "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f1/d1/a1/f1d1a1c0-e639-49d1-02c0-5863655c6cce/mzaf_15497649076894232882.plus.aac.p.m4a",
+  "trackId": 1531037503,
+  "trackNumber": 1,
+  "url": "https://music.apple.com/us/album/giant-steps-2020-remaster/1531037502",
+  "year": 1959
+ },
  "John Coltrane|Impressions": {
   "album": null,
   "albumName": "Coltrane (Deluxe Edition)",
@@ -5906,6 +6276,39 @@
   "trackNumber": 6,
   "url": "https://music.apple.com/us/album/naima-2020-remaster/1531037502",
   "year": 1960
+ },
+ "John Coltrane|Naima|1959": {
+  "album": "giant-steps",
+  "albumName": "Giant Steps (2020 Remaster)",
+  "artistName": "John Coltrane",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/4e/2f/8b/4e2f8b1f-7e14-1ce4-1c76-4683b1b9173d/603497847549.jpg/100x100bb.jpg",
+  "collectionId": 1531037502,
+  "discNumber": 1,
+  "durationMillis": 265068,
+  "era": "modal",
+  "name": "Naima (2020 Remaster)",
+  "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/72/ab/26/72ab26d1-6659-4b8b-a75d-4816f85f99d0/mzaf_10677247939644149042.plus.aac.p.m4a",
+  "trackId": 1531037509,
+  "trackNumber": 6,
+  "url": "https://music.apple.com/us/album/naima-2020-remaster/1531037502",
+  "year": 1959
+ },
+ "John Coltrane|Naima|1966": {
+  "album": null,
+  "albumName": "Live At the Village Vanguard Again!",
+  "artistName": "John Coltrane",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/41/58/01/4158017c-88c8-a74f-bc10-957c72d7605e/00602547506108.rgb.jpg/100x100bb.jpg",
+  "collectionId": 1443142690,
+  "discNumber": 1,
+  "durationMillis": 908928,
+  "era": "modal",
+  "name": "Naima (Live From Village Vanguard/1966)",
+  "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/4e/87/ae/4e87ae08-8297-348f-bcb6-0c5d2e10bc11/mzaf_12194311623919044725.plus.aac.p.m4a",
+  "record": "Village Vanguard Again",
+  "trackId": 1443142995,
+  "trackNumber": 1,
+  "url": "https://music.apple.com/us/album/naima-live-from-village-vanguard-1966/1443142690",
+  "year": 1966
  },
  "John Coltrane|Summertime": {
   "album": "my-favorite-things",
@@ -6115,6 +6518,23 @@
   "trackNumber": 25,
   "url": "https://music.apple.com/us/album/warm-valley-take-3/164149672",
   "year": 1940
+ },
+ "Johnny Mathis|Misty|1959": {
+  "album": null,
+  "albumName": "Heavenly",
+  "artistName": "Johnny Mathis",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/90/47/23/904723ba-a813-3a9c-275c-1289e8921cb9/074640815225.jpg/100x100bb.jpg",
+  "collectionId": 217272399,
+  "discNumber": 1,
+  "durationMillis": 216577,
+  "era": null,
+  "name": "Misty",
+  "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d9/48/6a/d9486a71-d1ed-2bf8-9601-49ee0789b7f8/mzaf_6162177868026276486.plus.aac.p.m4a",
+  "record": "Heavenly",
+  "trackId": 217273839,
+  "trackNumber": 7,
+  "url": "https://music.apple.com/us/album/misty/217272399",
+  "year": 1959
  },
  "Joni Mitchell|Goodbye Pork Pie Hat|1979": {
   "album": null,
@@ -6422,6 +6842,23 @@
   "url": "https://music.apple.com/us/album/meaning-of-the-blues/1440839750",
   "year": 1983
  },
+ "Keith Jarrett, Gary Peacock & Jack DeJohnette|Stella by Starlight|1985": {
+  "album": null,
+  "albumName": "Standards Live",
+  "artistName": "Keith Jarrett, Gary Peacock & Jack DeJohnette",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/5f/19/fd/5f19fd6f-21a3-6e20-38e3-ad274ad85296/21UMGIM37902.rgb.jpg/100x100bb.jpg",
+  "collectionId": 1576456622,
+  "discNumber": 1,
+  "durationMillis": 680208,
+  "era": "post-bop",
+  "name": "Stella By Starlight",
+  "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/4d/bd/05/4dbd0594-a9a0-fd05-a0b6-40ee983690bd/mzaf_11645735707112336309.plus.aac.p.m4a",
+  "record": "Standards Live",
+  "trackId": 1576456720,
+  "trackNumber": 1,
+  "url": "https://music.apple.com/us/album/stella-by-starlight/1576456622",
+  "year": 1985
+ },
  "Keith Jarrett|All the Things You Are|1983": {
   "album": "standards-vol-1",
   "albumName": "Standards, Vol. 1",
@@ -6711,6 +7148,23 @@
   "trackNumber": 2,
   "url": "https://music.apple.com/us/album/snake-rag/1475524510",
   "year": 1925
+ },
+ "Lambert, Hendricks & Ross|Moanin'|1959": {
+  "album": null,
+  "albumName": "The Hottest New Group In Jazz",
+  "artistName": "Lambert, Hendricks & Ross",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/90/f4/56/90f45662-7169-e3e1-7594-41c37e7fb147/mzi.jcgbnkzw.jpg/100x100bb.jpg",
+  "collectionId": 170501347,
+  "discNumber": 1,
+  "durationMillis": 153773,
+  "era": null,
+  "name": "Moanin'",
+  "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/1b/0b/3c/1b0b3c01-210a-5030-5f92-bd1f6258c43e/mzaf_6405842946911290630.plus.aac.p.m4a",
+  "record": "The Hottest New Group in Jazz",
+  "trackId": 170501415,
+  "trackNumber": 2,
+  "url": "https://music.apple.com/us/album/moanin/170501347",
+  "year": 1959
  },
  "Lee Konitz|Boplicity": {
   "album": "birth-of-the-cool",
@@ -7178,6 +7632,23 @@
   "url": "https://music.apple.com/us/album/what-a-wonderful-world/1440787250",
   "year": 1967
  },
+ "Louis Hayes|Song for My Father|2017": {
+  "album": null,
+  "albumName": "Serenade for Horace",
+  "artistName": "Louis Hayes",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/e4/df/99/e4df9915-e07a-e62a-b75f-6800e8c01429/00602557617849.rgb.jpg/100x100bb.jpg",
+  "collectionId": 1442907864,
+  "discNumber": 1,
+  "durationMillis": 351371,
+  "era": null,
+  "name": "Song for My Father (feat. Gregory Porter)",
+  "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/00/38/15/00381523-7e81-f740-4032-13d3ba136f52/mzaf_14513746113846626571.plus.aac.p.m4a",
+  "record": "Serenade for Horace",
+  "trackId": 1442907873,
+  "trackNumber": 3,
+  "url": "https://music.apple.com/us/album/song-for-my-father-feat-gregory-porter/1442907864",
+  "year": 2017
+ },
  "Ma Rainey|Ma Rainey's Black Bottom": {
   "album": "ma-rainey",
   "albumName": "Ma Rainey",
@@ -7338,6 +7809,23 @@
   "url": "https://music.apple.com/us/album/wild-jungle-2000-remastered-version/696175088",
   "year": 1958
  },
+ "Madlib|Song for My Father|2003": {
+  "album": null,
+  "albumName": "Shades of Blue: Madlib Invades Blue Note",
+  "artistName": "Sound Directions & Madlib",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/0d/96/1d/0d961d09-8e54-e2f5-f5ce-b08690b1e797/00602537641079.rgb.jpg/100x100bb.jpg",
+  "collectionId": 1444093548,
+  "discNumber": 1,
+  "durationMillis": 346030,
+  "era": null,
+  "name": "Song For My Father",
+  "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f2/c2/e4/f2c2e4ad-0c23-b942-5182-81fb924360d4/mzaf_14248083409046892656.plus.aac.p.m4a",
+  "record": "Shades of Blue",
+  "trackId": 1444093832,
+  "trackNumber": 13,
+  "url": "https://music.apple.com/us/album/song-for-my-father/1444093548",
+  "year": 2003
+ },
  "Mahavishnu Orchestra|Dance of Maya": {
   "album": "the-inner-mounting-flame",
   "albumName": "Festival de Chateauvallon, 1972 (Live)",
@@ -7466,6 +7954,23 @@
   "url": "https://music.apple.com/us/album/crazy-blues/77031547",
   "year": 1920
  },
+ "Mark Murphy|On Green Dolphin Street|1961": {
+  "album": null,
+  "albumName": "Rah!",
+  "artistName": "Mark Murphy",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/72/d2/62/72d2622c-2a76-114a-d6de-55824b477e4c/00025218614122.rgb.jpg/100x100bb.jpg",
+  "collectionId": 1443854936,
+  "discNumber": 1,
+  "durationMillis": 221893,
+  "era": null,
+  "name": "On Green Dolphin Street",
+  "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview128/v4/37/7b/55/377b55b8-66a9-0108-e967-f401c37dd12b/mzaf_8084147151760718781.plus.aac.p.m4a",
+  "record": "Rah",
+  "trackId": 1443855205,
+  "trackNumber": 2,
+  "url": "https://music.apple.com/us/album/on-green-dolphin-street/1443854936",
+  "year": 1961
+ },
  "Mary Martin|My Favorite Things|1959": {
   "album": null,
   "albumName": "The Sound of Music (Original 1959 Broadway Cast Recording)",
@@ -7578,6 +8083,23 @@
   "url": "https://music.apple.com/us/album/fly-with-the-wind/1440926597",
   "year": 1976
  },
+ "McCoy Tyner|Naima|1972": {
+  "album": null,
+  "albumName": "Echoes of a Friend",
+  "artistName": "McCoy Tyner",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/54/67/47/54674710-fc2d-ac72-2ecd-f2be2f02b1f0/00025218665025.rgb.jpg/100x100bb.jpg",
+  "collectionId": 1442898651,
+  "discNumber": 1,
+  "durationMillis": 398093,
+  "era": "modal",
+  "name": "Naima",
+  "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/81/e5/74/81e57461-0d57-55b6-0bc4-245c61239670/mzaf_469553151226802554.plus.aac.p.m4a",
+  "record": "Echoes of a Friend",
+  "trackId": 1442898653,
+  "trackNumber": 1,
+  "url": "https://music.apple.com/us/album/naima/1442898651",
+  "year": 1972
+ },
  "McCoy Tyner|Passion Dance": {
   "album": "the-real-mccoy",
   "albumName": "The Real McCoy",
@@ -7641,6 +8163,23 @@
   "trackNumber": 3,
   "url": "https://music.apple.com/us/album/valley-of-life/1442370232",
   "year": 1972
+ },
+ "Miles Davis & John Coltrane|So What|1960": {
+  "album": null,
+  "albumName": "The Final Tour: The Bootleg Series, Vol. 6",
+  "artistName": "Miles Davis & John Coltrane",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/e1/d2/22/e1d2223c-e69a-fba2-498d-31a6abda9a73/886446656564.jpg/100x100bb.jpg",
+  "collectionId": 1314736283,
+  "discNumber": 1,
+  "durationMillis": 805728,
+  "era": "modal",
+  "name": "So What (Live from Olympia Theatre, Paris)",
+  "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/7b/51/bd/7b51bdbc-1853-c39d-f8a8-8521cc67416e/mzaf_15426686526034838369.plus.aac.p.m4a",
+  "record": "Final Tour",
+  "trackId": 1314736294,
+  "trackNumber": 2,
+  "url": "https://music.apple.com/us/album/so-what-live-from-olympia-theatre-paris/1314736283",
+  "year": 1960
  },
  "Miles Davis|'Round Midnight": {
   "album": null,
@@ -7901,6 +8440,23 @@
   "url": "https://music.apple.com/us/album/my-ship/200300007",
   "year": 1957
  },
+ "Miles Davis|On Green Dolphin Street|1958": {
+  "album": null,
+  "albumName": "1958 Miles",
+  "artistName": "Miles Davis",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/14/59/f4/1459f4c2-f1dd-e804-f97a-625a0125cf9c/884977518078.jpg/100x100bb.jpg",
+  "collectionId": 833073535,
+  "discNumber": 1,
+  "durationMillis": 589773,
+  "era": "modal",
+  "name": "On Green Dolphin Street (feat. John Coltrane, Cannonball Adderley & Bill Evans)",
+  "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/82/dc/32/82dc3239-224e-2cf7-bf29-d811cdf8f353/mzaf_2122838322623017975.plus.aac.p.m4a",
+  "record": "1958 Miles",
+  "trackId": 833073569,
+  "trackNumber": 1,
+  "url": "https://music.apple.com/us/album/on-green-dolphin-street-feat-john-coltrane-cannonball/833073535",
+  "year": 1958
+ },
  "Miles Davis|Orbits": {
   "album": "miles-smiles",
   "albumName": "Miles Smiles",
@@ -7949,6 +8505,39 @@
   "url": "https://music.apple.com/us/album/so-what/268443092",
   "year": 1959
  },
+ "Miles Davis|So What|1959": {
+  "album": "kind-of-blue",
+  "albumName": "Kind of Blue",
+  "artistName": "Miles Davis",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music/7f/9f/d6/mzi.vtnaewef.jpg/100x100bb.jpg",
+  "collectionId": 268443092,
+  "discNumber": 1,
+  "durationMillis": 547983,
+  "era": "modal",
+  "name": "So What",
+  "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/54/e8/0a/54e80a8b-1d60-6b59-e908-6fd65c4ff783/mzaf_2469862574651846302.plus.aac.p.m4a",
+  "trackId": 268443097,
+  "trackNumber": 1,
+  "url": "https://music.apple.com/us/album/so-what/268443092",
+  "year": 1959
+ },
+ "Miles Davis|So What|1964": {
+  "album": null,
+  "albumName": "\"Four\" & More (2022 Remaster)",
+  "artistName": "Miles Davis",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/68/e7/de/68e7de24-da78-5928-e27f-505d90d8014e/827969359525.jpg/100x100bb.jpg",
+  "collectionId": 159071729,
+  "discNumber": 1,
+  "durationMillis": 550125,
+  "era": "modal",
+  "name": "So What [2022 Remaster] [Live at Philharmonic Hall, New York, NY - February 1964]",
+  "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/35/5e/00/355e0092-0789-9b8a-6f97-ba60536a2e64/mzaf_9736679943603791880.plus.aac.p.m4a",
+  "record": "Four & More",
+  "trackId": 159071766,
+  "trackNumber": 1,
+  "url": "https://music.apple.com/us/album/so-what-2022-remaster-live-at-philharmonic-hall-new/159071729",
+  "year": 1964
+ },
  "Miles Davis|Springsville": {
   "album": "miles-ahead",
   "albumName": "Miles Ahead",
@@ -7964,6 +8553,23 @@
   "trackNumber": 1,
   "url": "https://music.apple.com/us/album/springsville/200300007",
   "year": 1957
+ },
+ "Miles Davis|Stella by Starlight|1958": {
+  "album": null,
+  "albumName": "1958 Miles",
+  "artistName": "Miles Davis",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/14/59/f4/1459f4c2-f1dd-e804-f97a-625a0125cf9c/884977518078.jpg/100x100bb.jpg",
+  "collectionId": 833073535,
+  "discNumber": 1,
+  "durationMillis": 285133,
+  "era": "modal",
+  "name": "Stella By Starlight (feat. John Coltrane & Bill Evans)",
+  "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/04/b8/51/04b85158-5912-08e6-82c3-cf163db7eefa/mzaf_3960195190078848504.plus.aac.p.m4a",
+  "record": "1958 Miles",
+  "trackId": 833073607,
+  "trackNumber": 3,
+  "url": "https://music.apple.com/us/album/stella-by-starlight-feat-john-coltrane-bill-evans/833073535",
+  "year": 1958
  },
  "Miles Davis|Straight, No Chaser|1958": {
   "album": null,
@@ -8786,6 +9392,23 @@
   "url": "https://music.apple.com/us/album/youve-got-to-have-freedom/631253415",
   "year": 1979
  },
+ "Quincy Jones|Birdland|1989": {
+  "album": null,
+  "albumName": "Back On The Block",
+  "artistName": "Quincy Jones",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/2d/d7/9f/2dd79f47-61e5-a40a-63ab-8fbcfc4bb02c/00602498837887_Cover.jpg/100x100bb.jpg",
+  "collectionId": 6827762072,
+  "discNumber": 1,
+  "durationMillis": 333533,
+  "era": null,
+  "name": "Birdland",
+  "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/75/16/ac/7516ac47-4d79-8039-3925-583ca4192fb8/mzaf_17328782028314585121.plus.aac.p.m4a",
+  "record": "Back on the Block",
+  "trackId": 6827762095,
+  "trackNumber": 9,
+  "url": "https://music.apple.com/us/album/birdland/6827762072",
+  "year": 1989
+ },
  "Ramsey Lewis Trio|The \"In\" Crowd": {
   "album": null,
   "albumName": "Priceless Jazz 18: Ramsey Lewis",
@@ -8801,6 +9424,23 @@
   "trackNumber": 1,
   "url": "https://music.apple.com/us/album/the-in-crowd-single-version/1434905918",
   "year": 1965
+ },
+ "Red Garland|Manteca|1958": {
+  "album": null,
+  "albumName": "Manteca (Remastered)",
+  "artistName": "The Red Garland Trio",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/92/3c/9a/923c9a61-7adf-c440-3fdc-bbb5418d3801/00025218642828.rgb.jpg/100x100bb.jpg",
+  "collectionId": 1442456832,
+  "discNumber": 1,
+  "durationMillis": 487627,
+  "era": null,
+  "name": "Manteca",
+  "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a4/d0/d6/a4d0d6a0-1c45-96c7-99e5-888b06a037d3/mzaf_15336065034808891302.plus.aac.p.m4a",
+  "record": "Manteca",
+  "trackId": 1442456833,
+  "trackNumber": 1,
+  "url": "https://music.apple.com/us/album/manteca/1442456832",
+  "year": 1958
  },
  "Richard Davis|Gazzelloni": {
   "album": "out-to-lunch",
@@ -8962,6 +9602,23 @@
   "trackNumber": 3,
   "url": "https://music.apple.com/us/album/cherish-the-day-feat-lalah-hathaway/716753527",
   "year": 2012
+ },
+ "Robert Glasper|Maiden Voyage / Everything In Its Right Place|2007": {
+  "album": null,
+  "albumName": "In My Element",
+  "artistName": "Robert Glasper",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/15/db/49/15db4998-c603-2596-1f3e-b234ac7e8d93/00094637811252.rgb.jpg/100x100bb.jpg",
+  "collectionId": 715791421,
+  "discNumber": 1,
+  "durationMillis": 523613,
+  "era": "contemporary",
+  "name": "Maiden Voyage / Everything In Its Right Place",
+  "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/87/23/4f/87234f59-ed2a-f1e8-9051-a3b240a8ca06/mzaf_17876503677546977997.plus.aac.p.m4a",
+  "record": "In My Element",
+  "trackId": 715793168,
+  "trackNumber": 7,
+  "url": "https://music.apple.com/us/album/maiden-voyage-everything-in-its-right-place/715791421",
+  "year": 2007
  },
  "Ron Carter|Footprints": {
   "album": "miles-smiles",
@@ -9203,6 +9860,23 @@
   "url": "https://music.apple.com/us/album/misty/1437194366",
   "year": 1958
  },
+ "Sarah Vaughan|Misty|1958": {
+  "album": null,
+  "albumName": "Vaughan And Violins",
+  "artistName": "Sarah Vaughan",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/0f/a2/4a/0fa24ac5-304f-1518-6178-0ed88fc5e22b/18UMGIM54390.rgb.jpg/100x100bb.jpg",
+  "collectionId": 1437194366,
+  "discNumber": 1,
+  "durationMillis": 182640,
+  "era": "bebop",
+  "name": "Misty",
+  "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/3a/54/7b/3a547bb1-a8c7-c034-8107-3ebb357c9fc1/mzaf_13901257464759221700.plus.aac.p.m4a",
+  "record": "Vaughan and Violins",
+  "trackId": 1437194539,
+  "trackNumber": 6,
+  "url": "https://music.apple.com/us/album/misty/1437194366",
+  "year": 1958
+ },
  "Sarah Vaughan|Send in the Clowns": {
   "album": null,
   "albumName": "Send In the Clowns",
@@ -9314,6 +9988,22 @@
   "trackNumber": 1,
   "url": "https://music.apple.com/us/album/end-of-innocence/1731422250",
   "year": 2024
+ },
+ "Shabaka Hutchings|My Queen Is Harriet Tubman": {
+  "album": null,
+  "albumName": "Your Queen Is A Reptile",
+  "artistName": "Sons Of Kemet",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/7d/e1/aa/7de1aa4c-ae28-f3ad-64da-90e2d00ab9a2/00602567383789.rgb.jpg/100x100bb.jpg",
+  "collectionId": 1440908967,
+  "discNumber": 1,
+  "durationMillis": 340053,
+  "era": "contemporary",
+  "name": "My Queen Is Harriet Tubman",
+  "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/31/98/6e/31986ea0-a09f-605e-959b-1b1ba1244e09/mzaf_1783895410955153834.plus.aac.p.m4a",
+  "trackId": 1440909216,
+  "trackNumber": 3,
+  "url": "https://music.apple.com/us/album/my-queen-is-harriet-tubman/1440908967",
+  "year": 2018
  },
  "Shabaka|End of Innocence": {
   "album": "perceive-its-beauty",
@@ -9892,6 +10582,23 @@
   "url": "https://music.apple.com/us/album/where-flamingos-fly/1442781667",
   "year": 1961
  },
+ "The Manhattan Transfer|Birdland|1979": {
+  "album": null,
+  "albumName": "Extensions",
+  "artistName": "The Manhattan Transfer",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/e2/2d/d9/e22dd9bf-cd4e-c8eb-d850-5917f75966bf/18CRGIM06059.rgb.jpg/100x100bb.jpg",
+  "collectionId": 1576791931,
+  "discNumber": 1,
+  "durationMillis": 361200,
+  "era": null,
+  "name": "Birdland",
+  "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/b8/0c/f8/b80cf895-d93f-8256-6703-b13478602d69/mzaf_3325569741922467811.plus.aac.p.m4a",
+  "record": "Extensions",
+  "trackId": 1576792244,
+  "trackNumber": 1,
+  "url": "https://music.apple.com/us/album/birdland/1576791931",
+  "year": 1979
+ },
  "The Modern Jazz Quartet|Django": {
   "album": null,
   "albumName": "The Complete Modern Jazz Quartet Prestige & Pablo Recordings",
@@ -10185,6 +10892,23 @@
   "url": "https://music.apple.com/us/album/blue-7-rudy-van-gelder-remaster-1956/1440737584",
   "year": 1957
  },
+ "Tommy Flanagan|Giant Steps|1982": {
+  "album": null,
+  "albumName": "Giant Steps",
+  "artistName": "Tommy Flanagan",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/e2/6a/89/e26a8983-f59a-5860-03cd-666c05063f0f/cover.jpg/100x100bb.jpg",
+  "collectionId": 1362012041,
+  "discNumber": 1,
+  "durationMillis": 374093,
+  "era": "hard-bop",
+  "name": "Giant Steps",
+  "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/42/08/c4/4208c4bc-5170-a977-f781-700451fc3f7d/mzaf_10621516146125395952.plus.aac.p.m4a",
+  "record": "In Memory of John Coltrane",
+  "trackId": 1362012057,
+  "trackNumber": 6,
+  "url": "https://music.apple.com/us/album/giant-steps/1362012041",
+  "year": 1982
+ },
  "Tommy Flanagan|Moritat": {
   "album": "saxophone-colossus",
   "albumName": "Saxophone Colossus",
@@ -10200,6 +10924,23 @@
   "trackNumber": 4,
   "url": "https://music.apple.com/us/album/moritat/1440737584",
   "year": 1957
+ },
+ "Tommy Flanagan|Naima|1982": {
+  "album": null,
+  "albumName": "Giant Steps",
+  "artistName": "Tommy Flanagan",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/e2/6a/89/e26a8983-f59a-5860-03cd-666c05063f0f/cover.jpg/100x100bb.jpg",
+  "collectionId": 1362012041,
+  "discNumber": 1,
+  "durationMillis": 302240,
+  "era": "hard-bop",
+  "name": "Naima",
+  "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/8e/af/56/8eaf560e-034c-21d1-da79-db7f32f5f384/mzaf_9717891496492305453.plus.aac.p.m4a",
+  "record": "In Memory of John Coltrane",
+  "trackId": 1362012056,
+  "trackNumber": 5,
+  "url": "https://music.apple.com/us/album/naima/1362012041",
+  "year": 1982
  },
  "Tommy Flanagan|St. Thomas": {
   "album": "saxophone-colossus",
@@ -10441,6 +11182,22 @@
   "url": "https://music.apple.com/us/album/birdland/170409940",
   "year": 1977
  },
+ "Weather Report|Birdland|1977": {
+  "album": "heavy-weather",
+  "albumName": "Heavy Weather",
+  "artistName": "Weather Report",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/93/6e/c2/936ec2d4-1cc1-f60a-ff6c-4ba6f9ffcdb5/074646510827.jpg/100x100bb.jpg",
+  "collectionId": 170409940,
+  "discNumber": 1,
+  "durationMillis": 358694,
+  "era": "fusion",
+  "name": "Birdland",
+  "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/63/9f/c3/639fc3ef-ae17-2bd5-2b1b-a6c94d176505/mzaf_8536814682074552002.plus.aac.p.m4a",
+  "trackId": 170409966,
+  "trackNumber": 1,
+  "url": "https://music.apple.com/us/album/birdland/170409940",
+  "year": 1977
+ },
  "Weather Report|Teen Town": {
   "album": "heavy-weather",
   "albumName": "Heavy Weather",
@@ -10473,6 +11230,23 @@
   "trackNumber": 1,
   "url": "https://music.apple.com/us/album/stardust/886949216",
   "year": 1978
+ },
+ "Woody Herman|Giant Steps|1973": {
+  "album": null,
+  "albumName": "Giant Steps",
+  "artistName": "Woody Herman",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/27/cd/0c/27cd0c4c-766f-2aa3-7f49-ed7689a7ca11/00025218634427.rgb.jpg/100x100bb.jpg",
+  "collectionId": 1443658948,
+  "discNumber": 1,
+  "durationMillis": 238533,
+  "era": null,
+  "name": "Giant Steps",
+  "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/63/54/aa/6354aa00-46c3-5840-080c-ea324197091d/mzaf_9137475946926248626.plus.aac.p.m4a",
+  "record": "Giant Steps",
+  "trackId": 1443659667,
+  "trackNumber": 7,
+  "url": "https://music.apple.com/us/album/giant-steps/1443658948",
+  "year": 1973
  },
  "Wynton Kelly|Freddie Freeloader": {
   "album": "kind-of-blue",
