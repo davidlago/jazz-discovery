@@ -243,9 +243,9 @@ if os.path.exists(gl_p):
     if len(tids) != len(set(tids)): errors.append("glossary.json: duplicate IDs")
     spellings = {}
     for t in g["terms"]:
-        for sp in [t["term"]] + t.get("also", []):
-            k = sp.lower()
-            if k in spellings and spellings[k] != t["id"]: errors.append(f"glossary: '{sp}' is used by {spellings[k]} and {t['id']}")
+        for spelling in [t["term"]] + t.get("also", []):
+            k = spelling.lower()
+            if k in spellings and spellings[k] != t["id"]: errors.append(f"glossary: '{spelling}' is used by {spellings[k]} and {t['id']}")
             spellings[k] = t["id"]
         if not t.get("short"): errors.append(f"glossary {t['id']}: no short definition")
         if not t.get("examples"): errors.append(f"glossary {t['id']}: no example")
@@ -255,6 +255,27 @@ if os.path.exists(gl_p):
     for s_ in g.get("howToListen", []):
         if s_["term"] not in tids: errors.append(f"how to listen: {s_['term']} isn't a term")
     print(f"glossary.json: {len(tids)} terms")
+
+# paths.json
+pa_p = os.path.join(res_dir, "paths.json")
+if os.path.exists(pa_p):
+    paths = json.load(open(pa_p))["paths"]
+    pids = {p["id"] for p in paths}
+    tunes_ids = {t["id"] for t in json.load(open(sp))["tunes"]} if os.path.exists(sp) else set()
+    term_ids = {t["id"] for t in json.load(open(gl_p))["terms"]} if os.path.exists(gl_p) else set()
+    place_ids = {p["id"] for p in json.load(open(pp))["places"]} if os.path.exists(pp) else set()
+    for p in paths:
+        w = f"path {p['id']}"
+        for n in p.get("next", []):
+            if n not in pids: errors.append(f"{w}: next {n} isn't a path")
+        if p["stops"] == "starters": continue
+        for st in p["stops"]:
+            k, r = st["kind"], st["ref"]
+            ok = {"album": r in albums, "track": r in tracks_all, "tune": r in tunes_ids, "term": r in term_ids,
+                  "era": r in eras, "artist": r in artists, "place": r in place_ids}.get(k)
+            if not ok: errors.append(f"{w}: {k} {r} doesn't resolve")
+            if st.get("track") and st["track"] not in tracks_all: errors.append(f"{w}: start track {st['track']} isn't resolved")
+    print(f"paths.json: {len(paths)} paths")
 
 if warnings:
     print("\n".join("warning: " + w for w in warnings))

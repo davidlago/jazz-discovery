@@ -5,6 +5,7 @@ import SwiftUI
 struct PassportView: View {
     @Environment(JazzLibrary.self) private var library
     @Environment(Passport.self) private var passport
+    @Environment(PhoneRouter.self) private var router
     @State private var confirmErase = false
     @State private var importing = false
     @Environment(PlayerController.self) private var player
@@ -46,6 +47,13 @@ struct PassportView: View {
                         .padding(.horizontal, Theme.gutter)
                     }
                 }
+                if library.paths.contains(where: { passport.isFinished($0, library: library) }) {
+                    VStack(alignment: .leading, spacing: 12) {
+                        SectionHeader(title: "Paths Finished")
+                        PathStamps { router.go(.journey($0)) }.padding(.horizontal, Theme.gutter)
+                    }
+                }
+
                 if !recent.isEmpty {
                     VStack(alignment: .leading, spacing: 4) {
                         SectionHeader(title: "Recently Heard")

@@ -28,6 +28,7 @@ struct RootView: View {
                         case .places: PlacesView()
                         case .labels: LabelsView()
                         case .lineages: LineagesView()
+                        case .paths: PathsView()
                         case .glossary: GlossaryView()
                         case .passport: PassportView()
                         case .radio: RadioView()
@@ -46,6 +47,7 @@ struct RootView: View {
                     case .label(let id): if let l = library.label(id) { LabelDetailView(label: l) }
                     case .lineage(let id): if let l = library.lineage(id) { LineageDetailView(lineage: l) }
                     case .term(let id): if let t = library.term(id) { TermDetailView(term: t) }
+                    case .journey(let id): if let p = library.journey(id) { PathDetailView(path: p) }
                     }
                 }
                 .background(Theme.ink)

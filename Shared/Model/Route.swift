@@ -12,13 +12,31 @@ enum Route: Hashable {
     case label(String)
     case lineage(String)
     case term(String)
+    case journey(String)
+}
+
+extension Route {
+    /// Where a path stop leads (a track stop leads to its record, when it's in the Crate).
+    init?(stop: PathStop, library: JazzLibrary) {
+        switch stop.kind {
+        case .album: self = .album(stop.ref)
+        case .track:
+            guard let album = library.tracks[stop.ref]?.album else { return nil }
+            self = .album(album)
+        case .tune: self = .tune(stop.ref)
+        case .term: self = .term(stop.ref)
+        case .era: self = .era(stop.ref)
+        case .artist: self = .artist(stop.ref)
+        case .place: self = .place(stop.ref)
+        }
+    }
 }
 
 /// A `jazzdiscovery://` link, parsed and checked against the library.
 ///
 ///     era/<id>  artist/<id>  album/<id>  decade/<1950>  decades  connections[/<artist id>]  between/<artist>/<artist>
 ///     tab/<timeline|eras|artists|crate|search>[?q=<search>]  now-playing  settings  passport  radio  blindfold  tune/<id>  songbook  place/<id>  map  label/<id>  labels
-///     lineage/<id>  lineages  term/<id>  glossary  how-to-listen
+///     lineage/<id>  lineages  term/<id>  glossary  how-to-listen  path/<id>  paths
 ///
 /// Links come from anywhere (a web page, another app, a widget), so a link only parses when the page it names exists.
 /// `play/album/<id>` parses as `.playAlbum`; it's the one link that starts music, and the apps honour it only from their
@@ -41,6 +59,8 @@ enum DeepLink: Equatable {
     /// Lineages' index, the glossary, and How to Listen (the glossary's first section).
     case lineages
     case glossary
+    /// The paths' index.
+    case paths
     /// Your listening passport.
     case passport
     /// The radio stations (a station's ID only opens the page: links don't start music).
@@ -92,6 +112,11 @@ enum DeepLink: Equatable {
             self = .page(.term(id))
         case "lineages":
             self = .lineages
+        case "path":
+            guard let id = arg, library.journey(id) != nil else { return nil }
+            self = .page(.journey(id))
+        case "paths":
+            self = .paths
         case "glossary", "how-to-listen":
             self = .glossary
         case "labels":

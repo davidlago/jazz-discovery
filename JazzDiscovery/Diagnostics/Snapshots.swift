@@ -45,6 +45,8 @@ enum Snapshots {
             ("19-lineage", { router.show(.lineage("saxophone")) }),
             ("20-glossary", { router.show(.glossary) }),
             ("21-term", { router.show(.term("rhythm-changes")) }),
+            ("22-path", { router.show(.journey("nineteen-fifty-nine")) }),
+            ("23-paths", { router.show(.paths) }),
         ]
         // A passport with something in it (in memory only: snapshots don't touch the real one).
         passport.fillWithDemo(library: library)

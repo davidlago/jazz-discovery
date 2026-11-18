@@ -31,6 +31,8 @@ final class JazzLibrary {
     /// Instrument family trees (lineages.json), the glossary (glossary.json), and the linker that finds its terms.
     let lineages: [Lineage]
     let glossary: GlossaryData
+    /// Journeys with a point of view (paths.json); Start Here's stops come from the starter picks.
+    let paths: [JourneyPath]
     let termLinker: TermLinker
     private let tuneByID: [String: Tune]
     /// Title key → tune, from titles and aliases.
@@ -38,7 +40,13 @@ final class JazzLibrary {
 
     init(data: JazzData, sessions: [String: Session] = [:], tracks: [String: StationTrack] = [:],
          tracklists: [String: [CatalogTrack]] = [:], tunes: [Tune] = [], places: [Place] = [], labels: [LabelInfo] = [],
-         lineages: [Lineage] = [], glossary: GlossaryData = GlossaryData(terms: [])) {
+         lineages: [Lineage] = [], glossary: GlossaryData = GlossaryData(terms: []), paths: [JourneyPath] = []) {
+        self.paths = paths.map { p in
+            guard p.id == "start-here", p.stops.isEmpty else { return p }
+            var filled = p
+            filled.stops = JazzLibrary.starterStops(data.albums.sorted { $0.year < $1.year })
+            return filled
+        }
         self.places = places
         self.labels = labels
         self.lineages = lineages
@@ -119,7 +127,8 @@ final class JazzLibrary {
                                places: optional(PlacesData.self, "places", in: bundle)?.places ?? [],
                                labels: optional(LabelsData.self, "labels", in: bundle)?.labels ?? [],
                                lineages: optional(LineagesData.self, "lineages", in: bundle)?.lineages ?? [],
-                               glossary: optional(GlossaryData.self, "glossary", in: bundle) ?? GlossaryData(terms: []))
+                               glossary: optional(GlossaryData.self, "glossary", in: bundle) ?? GlossaryData(terms: []),
+                               paths: optional(PathsData.self, "paths", in: bundle)?.paths ?? [])
         } catch {
             fatalError("Could not decode jazz.json: \(error)")
         }
