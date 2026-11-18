@@ -673,6 +673,14 @@
     "year": 1993
    }
   ],
+  "01-08": [
+   {
+    "kind": "milestone",
+    "line": "On this day in 2001, Ken Burns's Jazz began on PBS.",
+    "milestone": "Ken Burns's Jazz",
+    "year": 2001
+   }
+  ],
   "01-09": [
    {
     "artist": "kenny-clarke",
@@ -797,6 +805,13 @@
     "kind": "recorded",
     "place": "Grand Hall, Masonic Grand Lodge, New York",
     "year": 1995
+   },
+   {
+    "artist": "keith-jarrett",
+    "kind": "milestone",
+    "line": "On this day in 1975, Keith Jarrett played The Köln Concert at the opera house in Cologne.",
+    "milestone": "The Köln Concert",
+    "year": 1975
    }
   ],
   "01-25": [
@@ -902,6 +917,12 @@
     "kind": "recorded",
     "place": "Capitol Studios, Los Angeles",
     "year": 1956
+   },
+   {
+    "album": "the-movement-revisited",
+    "kind": "recorded",
+    "line": "On this day in 2020, Christian McBride released The Movement Revisited: A Musical Portrait of Four Icons on Mack Avenue.",
+    "year": 2020
    }
   ],
   "02-08": [
@@ -925,6 +946,12 @@
     "year": 1956
    },
    {
+    "album": "nublues",
+    "kind": "recorded",
+    "line": "On this day in 2024, Joel Ross released nublues on Blue Note.",
+    "year": 2024
+   },
+   {
     "artist": "walter-page",
     "kind": "born",
     "year": 1900
@@ -941,6 +968,19 @@
     "kind": "recorded",
     "place": "Capitol Studios, Hollywood",
     "year": 1986
+   },
+   {
+    "album": "black-radio",
+    "kind": "recorded",
+    "line": "On this day in 2013, the Robert Glasper Experiment's Black Radio won the Grammy for Best R&B Album.",
+    "year": 2013
+   },
+   {
+    "artist": "herbie-hancock",
+    "kind": "milestone",
+    "line": "On this day in 2008, Herbie Hancock's River: The Joni Letters won the Grammy for Album of the Year.",
+    "milestone": "Herbie's Album of the Year",
+    "year": 2008
    }
   ],
   "02-11": [
@@ -957,6 +997,13 @@
     "kind": "recorded",
     "place": "Capitol Studios, Hollywood",
     "year": 1986
+   },
+   {
+    "artist": "esperanza-spalding",
+    "kind": "milestone",
+    "line": "On this day in 2011, Esperanza Spalding won the Grammy for Best New Artist.",
+    "milestone": "Esperanza is Best New Artist",
+    "year": 2011
    }
   ],
   "02-14": [
@@ -1081,6 +1128,20 @@
     "kind": "recorded",
     "place": "Van Gelder Studio",
     "year": 1964
+   },
+   {
+    "album": "we-like-it-here",
+    "kind": "recorded",
+    "line": "On this day in 2014, Snarky Puppy released We Like It Here on GroundUP.",
+    "year": 2014
+   }
+  ],
+  "02-26": [
+   {
+    "kind": "milestone",
+    "line": "On this day in 1917, the Original Dixieland Jass Band recorded \"Livery Stable Blues\", the first jazz record.",
+    "milestone": "The first jazz record",
+    "year": 1917
    }
   ],
   "02-27": [
@@ -1090,7 +1151,28 @@
     "year": 1923
    }
   ],
+  "02-28": [
+   {
+    "album": "black-radio",
+    "kind": "recorded",
+    "line": "On this day in 2012, Robert Glasper Experiment released Black Radio on Blue Note.",
+    "year": 2012
+   },
+   {
+    "artist": "wynton-marsalis",
+    "kind": "milestone",
+    "line": "On this day in 1984, Wynton Marsalis won Grammys for both a jazz and a classical recording.",
+    "milestone": "Wynton's double Grammy",
+    "year": 1984
+   }
+  ],
   "03-01": [
+   {
+    "album": "in-the-key-of-the-universe",
+    "kind": "recorded",
+    "line": "On this day in 2019, Joey DeFrancesco released In the Key of the Universe on Mack Avenue.",
+    "year": 2019
+   },
    {
     "artist": "freddie-green",
     "kind": "died",
@@ -1112,6 +1194,18 @@
   ],
   "03-04": [
    {
+    "album": "emilys-d-evolution",
+    "kind": "recorded",
+    "line": "On this day in 2016, Esperanza Spalding released Emily's D+Evolution on Concord.",
+    "year": 2016
+   },
+   {
+    "album": "ghost-song",
+    "kind": "recorded",
+    "line": "On this day in 2022, Cécile McLorin Salvant released Ghost Song on Nonesuch.",
+    "year": 2022
+   },
+   {
     "artist": "jan-garbarek",
     "kind": "born",
     "year": 1947
@@ -1130,6 +1224,12 @@
     "kind": "recorded",
     "place": "Van Gelder Studio",
     "year": 1963
+   },
+   {
+    "album": "rabo-de-nube",
+    "kind": "recorded",
+    "line": "On this day in 2008, Charles Lloyd released Rabo de Nube on ECM.",
+    "year": 2008
    }
   ],
   "03-09": [
@@ -1165,6 +1265,12 @@
    }
   ],
   "03-11": [
+   {
+    "album": "soul-of-things",
+    "kind": "recorded",
+    "line": "On this day in 2002, Tomasz Stańko Quartet released Soul of Things on ECM.",
+    "year": 2002
+   },
    {
     "artist": "bobby-mcferrin",
     "kind": "born",
@@ -1240,6 +1346,14 @@
     "year": 1963
    }
   ],
+  "03-22": [
+   {
+    "album": "ancestral-recall",
+    "kind": "recorded",
+    "line": "On this day in 2019, Christian Scott aTunde Adjuah released Ancestral Recall on Ropeadope.",
+    "year": 2019
+   }
+  ],
   "03-25": [
    {
     "album": "billie-commodore",
@@ -1293,6 +1407,12 @@
    }
   ],
   "03-30": [
+   {
+    "album": "bitches-brew",
+    "kind": "recorded",
+    "line": "On this day in 1970, Miles Davis released Bitches Brew on Columbia.",
+    "year": 1970
+   },
    {
     "artist": "larry-young",
     "kind": "died",
@@ -1411,6 +1531,12 @@
   ],
   "04-12": [
    {
+    "album": "perceive-its-beauty",
+    "kind": "recorded",
+    "line": "On this day in 2024, Shabaka released Perceive Its Beauty, Acknowledge Its Grace on Impulse!",
+    "year": 2024
+   },
+   {
     "artist": "johnny-dodds",
     "kind": "born",
     "year": 1892
@@ -1427,6 +1553,12 @@
    }
   ],
   "04-13": [
+   {
+    "album": "getz-gilberto",
+    "kind": "recorded",
+    "line": "On this day in 1965, Getz/Gilberto won the Grammy for Album of the Year.",
+    "year": 1965
+   },
    {
     "artist": "dorothy-ashby",
     "kind": "died",
@@ -1475,6 +1607,18 @@
     "year": 1939
    },
    {
+    "album": "jazz-samba",
+    "kind": "recorded",
+    "line": "On this day in 1962, Stan Getz & Charlie Byrd released Jazz Samba on Verve.",
+    "year": 1962
+   },
+   {
+    "album": "backatown",
+    "kind": "recorded",
+    "line": "On this day in 2010, Trombone Shorty released Backatown on Verve Forecast.",
+    "year": 2010
+   },
+   {
     "artist": "lionel-hampton",
     "kind": "born",
     "year": 1908
@@ -1510,6 +1654,12 @@
     "kind": "recorded",
     "place": "CBS 30th Street Studio, New York",
     "year": 1959
+   },
+   {
+    "album": "another-mind",
+    "kind": "recorded",
+    "line": "On this day in 2003, Hiromi released Another Mind on Telarc.",
+    "year": 2003
    },
    {
     "artist": "candido",
@@ -1571,6 +1721,12 @@
   ],
   "04-29": [
    {
+    "album": "standart",
+    "kind": "recorded",
+    "line": "On this day in 2022, Tigran Hamasyan released StandArt on Nonesuch.",
+    "year": 2022
+   },
+   {
     "artist": "duke-ellington",
     "kind": "born",
     "year": 1899
@@ -1590,6 +1746,12 @@
    }
   ],
   "05-03": [
+   {
+    "album": "fearless-movement",
+    "kind": "recorded",
+    "line": "On this day in 2024, Kamasi Washington released Fearless Movement on Young.",
+    "year": 2024
+   },
    {
     "artist": "john-lewis",
     "kind": "born",
@@ -1626,6 +1788,12 @@
     "kind": "recorded",
     "place": "Columbia 30th Street Studio, New York",
     "year": 1959
+   },
+   {
+    "album": "the-epic",
+    "kind": "recorded",
+    "line": "On this day in 2015, Kamasi Washington released The Epic on Brainfeeder.",
+    "year": 2015
    },
    {
     "artist": "cal-tjader",
@@ -1745,6 +1913,12 @@
     "kind": "recorded",
     "place": "Massey Hall, Toronto",
     "year": 1953
+   },
+   {
+    "album": "ella-cole-porter",
+    "kind": "recorded",
+    "line": "On this day in 1956, Ella Fitzgerald released Ella Fitzgerald Sings the Cole Porter Song Book on Verve.",
+    "year": 1956
    }
   ],
   "05-16": [
@@ -1752,6 +1926,14 @@
     "artist": "django-reinhardt",
     "kind": "died",
     "year": 1953
+   }
+  ],
+  "05-17": [
+   {
+    "album": "maiden-voyage",
+    "kind": "recorded",
+    "line": "On this day in 1965, Herbie Hancock released Maiden Voyage on Blue Note.",
+    "year": 1965
    }
   ],
   "05-18": [
@@ -1989,6 +2171,14 @@
     "year": 1970
    }
   ],
+  "06-17": [
+   {
+    "album": "blood-on-the-fields",
+    "kind": "recorded",
+    "line": "On this day in 1997, Wynton Marsalis & Lincoln Center Jazz Orchestra released Blood on the Fields on Columbia.",
+    "year": 1997
+   }
+  ],
   "06-18": [
    {
     "artist": "horace-silver",
@@ -2019,6 +2209,14 @@
     "year": 1956
    }
   ],
+  "06-23": [
+   {
+    "album": "dedicated-to-you",
+    "kind": "recorded",
+    "line": "On this day in 2009, Kurt Elling released Dedicated to You: Kurt Elling Sings the Music of Coltrane and Hartman on Concord.",
+    "year": 2009
+   }
+  ],
   "06-25": [
    {
     "album": "time-out",
@@ -2038,6 +2236,14 @@
     "artist": "clifford-brown",
     "kind": "died",
     "year": 1956
+   }
+  ],
+  "06-28": [
+   {
+    "album": "hot-five-hot-seven",
+    "kind": "recorded",
+    "line": "On this day in 1928, Louis Armstrong and His Hot Five recorded West End Blues, opening cadenza and all.",
+    "year": 1928
    }
   ],
   "06-29": [
@@ -2123,6 +2329,12 @@
    }
   ],
   "07-10": [
+   {
+    "album": "chega-de-saudade",
+    "kind": "recorded",
+    "line": "On this day in 1958, João Gilberto recorded Chega de Saudade at Odeon in Rio, bossa nova's first record.",
+    "year": 1958
+   },
    {
     "album": "spiritual-unity",
     "kind": "recorded",
@@ -2250,6 +2462,12 @@
   ],
   "07-29": [
    {
+    "album": "not-tight",
+    "kind": "recorded",
+    "line": "On this day in 2022, DOMi & JD BECK released NOT TiGHT on Blue Note.",
+    "year": 2022
+   },
+   {
     "artist": "tomasz-stanko",
     "kind": "died",
     "year": 2018
@@ -2269,6 +2487,12 @@
    }
   ],
   "07-31": [
+   {
+    "album": "who-asked",
+    "kind": "recorded",
+    "line": "On this day in 2026, DOMi & JD BECK released WHO ASKED? on Blue Note.",
+    "year": 2026
+   },
    {
     "artist": "kenny-burrell",
     "kind": "born",
@@ -2305,6 +2529,12 @@
    }
   ],
   "08-07": [
+   {
+    "album": "omega",
+    "kind": "recorded",
+    "line": "On this day in 2020, Immanuel Wilkins released Omega on Blue Note.",
+    "year": 2020
+   },
    {
     "artist": "immanuel-wilkins",
     "kind": "born",
@@ -2348,6 +2578,14 @@
     "year": 1942
    }
   ],
+  "08-10": [
+   {
+    "kind": "milestone",
+    "line": "On this day in 1920, Mamie Smith and Her Jazz Hounds recorded \"Crazy Blues\", the hit that showed there was a market for records by Black artists.",
+    "milestone": "\"Crazy Blues\" sells big",
+    "year": 1920
+   }
+  ],
   "08-12": [
    {
     "artist": "pat-metheny",
@@ -2380,6 +2618,14 @@
     "artist": "max-roach",
     "kind": "died",
     "year": 2007
+   }
+  ],
+  "08-17": [
+   {
+    "album": "kind-of-blue",
+    "kind": "recorded",
+    "line": "On this day in 1959, Miles Davis released Kind of Blue on Columbia.",
+    "year": 1959
    }
   ],
   "08-18": [
@@ -2417,6 +2663,19 @@
     "kind": "recorded",
     "place": "Columbia Studio B, New York",
     "year": 1969
+   },
+   {
+    "album": "source",
+    "kind": "recorded",
+    "line": "On this day in 2020, Nubya Garcia released Source on Concord Jazz.",
+    "year": 2020
+   },
+   {
+    "artist": "benny-goodman",
+    "kind": "milestone",
+    "line": "On this day in 1935, Benny Goodman's band began its first engagement at the Palomar Ballroom in Los Angeles.",
+    "milestone": "Swing explodes at the Palomar",
+    "year": 1935
    },
    {
     "artist": "count-basie",
@@ -2583,6 +2842,12 @@
     "kind": "recorded",
     "place": "Van Gelder Studio",
     "year": 1991
+   },
+   {
+    "album": "black-classical-music",
+    "kind": "recorded",
+    "line": "On this day in 2023, Yussef Dayes released Black Classical Music on Brownswood.",
+    "year": 2023
    }
   ],
   "09-09": [
@@ -2590,6 +2855,14 @@
     "artist": "elvin-jones",
     "kind": "born",
     "year": 1927
+   }
+  ],
+  "09-10": [
+   {
+    "album": "dear-love",
+    "kind": "recorded",
+    "line": "On this day in 2021, Jazzmeia Horn and Her Noble Force released Dear Love on Empress Legacy.",
+    "year": 2021
    }
   ],
   "09-11": [
@@ -2600,6 +2873,12 @@
    }
   ],
   "09-12": [
+   {
+    "album": "sound-grammar",
+    "kind": "recorded",
+    "line": "On this day in 2006, Ornette Coleman released Sound Grammar on Sound Grammar.",
+    "year": 2006
+   },
    {
     "artist": "stanley-turrentine",
     "kind": "died",
@@ -2640,6 +2919,12 @@
     "kind": "recorded",
     "place": "Avatar Studios, New York",
     "year": 2002
+   },
+   {
+    "album": "linger-awhile",
+    "kind": "recorded",
+    "line": "On this day in 2022, Samara Joy released Linger Awhile on Verve.",
+    "year": 2022
    }
   ],
   "09-17": [
@@ -2673,12 +2958,24 @@
   ],
   "09-21": [
    {
+    "album": "wish",
+    "kind": "recorded",
+    "line": "On this day in 1993, Joshua Redman released Wish on Warner Bros.",
+    "year": 1993
+   },
+   {
     "artist": "jaco-pastorius",
     "kind": "died",
     "year": 1987
    }
   ],
   "09-23": [
+   {
+    "album": "in-these-times",
+    "kind": "recorded",
+    "line": "On this day in 2022, Makaya McCraven released In These Times on International Anthem.",
+    "year": 2022
+   },
    {
     "artist": "john-coltrane",
     "kind": "born",
@@ -2759,6 +3056,12 @@
   ],
   "10-04": [
    {
+    "album": "canvas",
+    "kind": "recorded",
+    "line": "On this day in 2005, Robert Glasper released Canvas on Blue Note.",
+    "year": 2005
+   },
+   {
     "artist": "leon-thomas",
     "kind": "born",
     "year": 1937
@@ -2772,6 +3075,12 @@
    }
   ],
   "10-07": [
+   {
+    "album": "quartetinho",
+    "kind": "recorded",
+    "line": "On this day in 2022, Anat Cohen released Quartetinho on Anzic.",
+    "year": 2022
+   },
    {
     "artist": "larry-young",
     "kind": "born",
@@ -2816,6 +3125,12 @@
   ],
   "10-11": [
    {
+    "album": "hawkins-body-and-soul",
+    "kind": "recorded",
+    "line": "On this day in 1939, Coleman Hawkins recorded Body and Soul, a ballad improvisation so bold it became an unlikely hit.",
+    "year": 1939
+   },
+   {
     "artist": "art-blakey",
     "kind": "born",
     "year": 1919
@@ -2856,6 +3171,12 @@
     "kind": "recorded",
     "place": "WOR Studios",
     "year": 1947
+   },
+   {
+    "album": "shack-man",
+    "kind": "recorded",
+    "line": "On this day in 1996, Medeski, Martin & Wood released Shack-Man on Gramavision.",
+    "year": 1996
    }
   ],
   "10-16": [
@@ -2920,6 +3241,12 @@
    }
   ],
   "10-21": [
+   {
+    "album": "miles-ahead",
+    "kind": "recorded",
+    "line": "On this day in 1957, Miles Davis released Miles Ahead on Columbia.",
+    "year": 1957
+   },
    {
     "album": "my-favorite-things",
     "kind": "recorded",
@@ -2986,6 +3313,12 @@
     "kind": "recorded",
     "place": "Van Gelder Studio",
     "year": 1964
+   },
+   {
+    "album": "universal-beings",
+    "kind": "recorded",
+    "line": "On this day in 2018, Makaya McCraven released Universal Beings on International Anthem.",
+    "year": 2018
    },
    {
     "artist": "vijay-iyer",
@@ -3120,6 +3453,12 @@
   ],
   "11-12": [
    {
+    "album": "hot-five-hot-seven",
+    "kind": "recorded",
+    "line": "On this day in 1925, Louis Armstrong cut his first Hot Five sides in Chicago, the records that made the improvising soloist jazz's main event.",
+    "year": 1925
+   },
+   {
     "artist": "buck-clayton",
     "kind": "born",
     "year": 1911
@@ -3224,6 +3563,14 @@
     "year": 1924
    }
   ],
+  "11-26": [
+   {
+    "album": "savoy-dial-master-takes",
+    "kind": "recorded",
+    "line": "On this day in 1945, Charlie Parker's first Savoy session as a leader gave the world Ko-Ko and Now's the Time.",
+    "year": 1945
+   }
+  ],
   "11-27": [
    {
     "album": "witchi-tai-to",
@@ -3262,6 +3609,12 @@
     "year": 1972
    },
    {
+    "album": "the-koln-concert",
+    "kind": "recorded",
+    "line": "On this day in 1975, Keith Jarrett released The Köln Concert on ECM.",
+    "year": 1975
+   },
+   {
     "album": "the-bandwagon",
     "kind": "recorded",
     "place": "Village Vanguard",
@@ -3289,6 +3642,13 @@
    }
   ],
   "12-04": [
+   {
+    "artist": "duke-ellington",
+    "kind": "milestone",
+    "line": "On this day in 1927, Duke Ellington's orchestra opened as the house band at the Cotton Club.",
+    "milestone": "Ellington at the Cotton Club",
+    "year": 1927
+   },
    {
     "artist": "cassandra-wilson",
     "kind": "born",
@@ -3372,6 +3732,12 @@
    }
   ],
   "12-14": [
+   {
+    "album": "time-out",
+    "kind": "recorded",
+    "line": "On this day in 1959, the Dave Brubeck Quartet released Time Out on Columbia.",
+    "year": 1959
+   },
    {
     "album": "song-x",
     "kind": "recorded",
