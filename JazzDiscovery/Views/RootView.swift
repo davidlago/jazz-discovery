@@ -24,6 +24,7 @@ struct RootView: View {
                         case .artists: ArtistsView()
                         case .albums: CrateView()
                         case .connections: ConnectionsView()
+                        case .passport: PassportView()
                         }
                     }
                 }
@@ -68,9 +69,12 @@ struct Sidebar: View {
                 .selectionDisabled()
 
                 Section("Explore") {
-                    ForEach(AppSection.allCases) { s in
+                    ForEach(AppSection.explore) { s in
                         Label(s.rawValue, systemImage: s.symbol).tag(s)
                     }
+                }
+                Section("You") {
+                    Label(AppSection.passport.rawValue, systemImage: AppSection.passport.symbol).tag(AppSection.passport)
                 }
                 Section("Eras") {
                     ForEach(library.eras) { era in

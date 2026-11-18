@@ -9,9 +9,9 @@ enum Snapshots {
     }
 
     @MainActor
-    static func run(library: JazzLibrary, player: PlayerController, to dir: String) async {
+    static func run(library: JazzLibrary, player: PlayerController, passport: Passport, to dir: String) async {
         let router = Router()
-        let root = RootView().environment(library).environment(router).environment(player)
+        let root = RootView().environment(library).environment(router).environment(player).environment(passport)
             .preferredColorScheme(.dark)
         let host = NSHostingView(rootView: root)
         let size = NSSize(width: 1440, height: 900)
@@ -34,7 +34,10 @@ enum Snapshots {
             ("08-crate", { router.show(.albums) }),
             ("09-album-detail", { router.show(.album(album.id)) }),
             ("10-connections", { router.show(.connections) }),
+            ("11-passport", { router.show(.passport) }),
         ]
+        // A passport with something in it (in memory only: snapshots don't touch the real one).
+        passport.fillWithDemo(library: library)
         try? FileManager.default.createDirectory(atPath: dir, withIntermediateDirectories: true)
         for (name, setup) in shots {
             setup()

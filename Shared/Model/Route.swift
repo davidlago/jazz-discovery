@@ -12,7 +12,7 @@ enum Route: Hashable {
 /// A `jazzdiscovery://` link, parsed and checked against the library.
 ///
 ///     era/<id>  artist/<id>  album/<id>  decade/<1950>  decades  connections[/<artist id>]  between/<artist>/<artist>
-///     tab/<timeline|eras|artists|crate|search>[?q=<search>]  now-playing  settings
+///     tab/<timeline|eras|artists|crate|search>[?q=<search>]  now-playing  settings  passport
 ///
 /// Links come from anywhere (a web page, another app, a widget), so a link only parses when the page it names exists.
 /// `play/album/<id>` parses as `.playAlbum`; it's the one link that starts music, and the apps honour it only from their
@@ -27,6 +27,8 @@ enum DeepLink: Equatable {
     case nowPlaying
     case settings
     case playAlbum(String)
+    /// Your listening passport.
+    case passport
 
     enum Tab: String, CaseIterable { case timeline, eras, artists, crate, search }
 
@@ -66,6 +68,8 @@ enum DeepLink: Equatable {
             self = .nowPlaying
         case "settings":
             self = .settings
+        case "passport":
+            self = .passport
         case "play":
             guard parts.count == 2, parts[0] == "album", library.album(parts[1]) != nil else { return nil }
             self = .playAlbum(parts[1])

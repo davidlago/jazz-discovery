@@ -26,6 +26,7 @@ SHOTS=(
     "06-now-playing|jazzdiscovery://play/album/a-love-supreme jazzdiscovery://now-playing|4"
     "07-crate|jazzdiscovery://tab/crate|0"
     "08-eras|jazzdiscovery://tab/eras|0"
+    "09-passport|jazzdiscovery://passport|0"
 )
 
 echo "Building for the simulator…"
@@ -42,7 +43,8 @@ device_for() {
 
 shoot() {  # udid, links…
     local udid="$1"; shift
-    local args=()
+    # A made-up passport, in memory only, so the stamps and the Continue row have something to show.
+    local args=(--demo-passport)
     for l in "$@"; do args+=(--open "$l"); done
     xcrun simctl launch --terminate-running-process "$udid" "$BUNDLE" "${args[@]}" > /dev/null
 }

@@ -197,6 +197,8 @@ struct NowPlayingBar: View {
 
     var body: some View {
         if let np = player.current {
+            VStack(spacing: 10) {
+            FinishedAlbumDoors { router.go(.album($0)) }
             HStack(spacing: 16) {
                 RemoteImage(url: np.artwork) { Theme.panelHi }
                     .frame(width: 48, height: 48).clipShape(RoundedRectangle(cornerRadius: 4))
@@ -254,6 +256,7 @@ struct NowPlayingBar: View {
                 .help(player.betterAvailable.map { "This song is in \($0.label) on Apple Music. The Music app plays it that way; apps on the Mac get the AAC stream." } ?? "")
                 Button(action: player.stop) { Image(systemName: "xmark") }
                     .buttonStyle(.plain).foregroundStyle(Theme.faint)
+            }
             }
             .padding(.horizontal, 20).padding(.vertical, 10)
             .background(.ultraThinMaterial)

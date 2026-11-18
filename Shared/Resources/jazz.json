@@ -3,6 +3,8 @@
     {
       "id": "roots",
       "name": "Roots: Ragtime & Blues",
+      "leadsTo": ["new-orleans"],
+      "stamp": "Ragtime & Blues",
       "start": 1895,
       "end": 1917,
       "color": "#A86A4B",
@@ -71,6 +73,8 @@
     {
       "id": "new-orleans",
       "name": "New Orleans & the Jazz Age",
+      "leadsTo": ["swing"],
+      "stamp": "New Orleans",
       "start": 1913,
       "end": 1932,
       "color": "#E8833A",
@@ -140,6 +144,8 @@
     {
       "id": "swing",
       "name": "The Swing Era",
+      "leadsTo": ["bebop"],
+      "stamp": "Swing",
       "start": 1930,
       "end": 1946,
       "color": "#EBC03F",
@@ -223,6 +229,7 @@
     {
       "id": "bebop",
       "name": "Bebop",
+      "leadsTo": ["cool", "hard-bop", "latin"],
       "start": 1942,
       "end": 1956,
       "color": "#E2373F",
@@ -299,6 +306,8 @@
     {
       "id": "cool",
       "name": "Cool & West Coast",
+      "leadsTo": ["hard-bop", "latin"],
+      "stamp": "Cool Jazz",
       "start": 1949,
       "end": 1960,
       "color": "#8EC5E8",
@@ -371,6 +380,7 @@
     {
       "id": "hard-bop",
       "name": "Hard Bop",
+      "leadsTo": ["soul-jazz", "modal"],
       "start": 1953,
       "end": 1967,
       "color": "#2D66D6",
@@ -455,6 +465,8 @@
     {
       "id": "latin",
       "name": "Latin Jazz & Bossa Nova",
+      "leadsTo": ["soul-jazz", "fusion"],
+      "stamp": "Latin & Bossa",
       "start": 1947,
       "end": 1970,
       "color": "#F0679E",
@@ -539,6 +551,8 @@
     {
       "id": "soul-jazz",
       "name": "Soul Jazz & the Organ Trio",
+      "leadsTo": ["fusion"],
+      "stamp": "Soul Jazz",
       "start": 1957,
       "end": 1972,
       "color": "#8DB43C",
@@ -615,6 +629,7 @@
     {
       "id": "modal",
       "name": "Modal Jazz",
+      "leadsTo": ["free", "spiritual", "fusion"],
       "start": 1958,
       "end": 1968,
       "color": "#7A5BD8",
@@ -693,6 +708,8 @@
     {
       "id": "free",
       "name": "Free Jazz & the Avant-Garde",
+      "leadsTo": ["spiritual", "contemporary"],
+      "stamp": "Free Jazz",
       "start": 1959,
       "end": 1976,
       "color": "#C04FD4",
@@ -771,6 +788,7 @@
     {
       "id": "spiritual",
       "name": "Spiritual Jazz",
+      "leadsTo": ["contemporary"],
       "start": 1965,
       "end": 1979,
       "color": "#34B58C",
@@ -848,6 +866,8 @@
     {
       "id": "fusion",
       "name": "Fusion & Jazz-Rock",
+      "leadsTo": ["post-bop", "contemporary"],
+      "stamp": "Fusion",
       "start": 1969,
       "end": 1985,
       "color": "#19D3C5",
@@ -932,6 +952,8 @@
     {
       "id": "post-bop",
       "name": "Neo-Bop & the Young Lions",
+      "leadsTo": ["contemporary"],
+      "stamp": "Young Lions",
       "start": 1980,
       "end": 2000,
       "color": "#B7C2CC",
@@ -1004,6 +1026,7 @@
     {
       "id": "contemporary",
       "name": "The New Jazz Renaissance",
+      "stamp": "New Renaissance",
       "start": 2000,
       "end": 2026,
       "color": "#D4F04A",

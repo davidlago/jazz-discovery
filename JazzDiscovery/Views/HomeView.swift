@@ -9,6 +9,8 @@ struct HomeView: View {
             VStack(alignment: .leading, spacing: 44) {
                 HomeHero()
 
+                ContinueSection()
+
                 VStack(alignment: .leading, spacing: 14) {
                     SectionHeader(title: "The River of Jazz",
                                   subtitle: "130 years of styles flowing, overlapping and splitting. Click a style to dive in; hover a dot for a turning point.")
@@ -326,5 +328,38 @@ struct EraBar: View {
         .opacity(dimmed ? 0.45 : 1)
         .contentShape(Capsule())
         .help("\(era.name) — \(era.tagline)")
+    }
+}
+
+/// Once anything is heard: the next stop on Start Here, and the doors out of the last record you heard.
+struct ContinueSection: View {
+    @Environment(JazzLibrary.self) private var library
+    @Environment(Passport.self) private var passport
+    @Environment(Router.self) private var router
+
+    var body: some View {
+        if passport.heardCount > 0 {
+            VStack(alignment: .leading, spacing: 16) {
+                SectionHeader(title: "Continue", subtitle: "\(passport.heardCount) of \(library.albums.count) records heard.")
+                HStack(alignment: .top, spacing: 28) {
+                    if let stop = passport.nextStop(library: library) {
+                        VStack(alignment: .leading, spacing: 8) {
+                            Text("START HERE · \(String(format: "%02d", stop.number))").font(Theme.label(10)).tracking(1.4)
+                                .foregroundStyle(library.color(forEra: stop.album.era))
+                            AlbumCard(album: stop.album, width: 170)
+                        }
+                    }
+                    if let last = passport.lastHeard(library: library) {
+                        VStack(alignment: .leading, spacing: 8) {
+                            Text("AFTER \(last.title.uppercased())").font(Theme.label(10)).tracking(1.4).foregroundStyle(Theme.muted)
+                                .lineLimit(1)
+                            DoorsList(album: last, stacked: true, compact: true) { router.go(.album($0)) }
+                                .frame(maxWidth: 560)
+                        }
+                    }
+                }
+            }
+            .padding(.horizontal, 40)
+        }
     }
 }

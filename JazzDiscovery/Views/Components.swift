@@ -112,6 +112,7 @@ struct AlbumCard: View {
             VStack(alignment: .leading, spacing: 8) {
                 AlbumCover(album: album, size: 400)
                     .frame(width: width, height: width)
+                    .heardBadge(album.id, tint: library.color(forEra: album.era), size: max(22, width * 0.15))
                     .hoverLift()
                 VStack(alignment: .leading, spacing: 2) {
                     Text(album.title).font(.system(size: 13, weight: .semibold)).foregroundStyle(Theme.cream).lineLimit(1)
@@ -125,6 +126,7 @@ struct AlbumCard: View {
             .contentShape(Rectangle())
         }
         .buttonStyle(.plain)
+        .contextMenu { PassportMenuItems(albumID: album.id) }
     }
 }
 

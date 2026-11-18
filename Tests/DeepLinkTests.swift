@@ -24,6 +24,7 @@ struct DeepLinkTests {
         #expect(link("jazzdiscovery://between/miles-davis") == nil)
         #expect(link("jazzdiscovery://now-playing") == .nowPlaying)
         #expect(link("jazzdiscovery://settings") == .settings)
+        #expect(link("jazzdiscovery://passport") == .passport)
     }
 
     @Test func tabs() {

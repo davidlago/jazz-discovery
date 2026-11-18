@@ -15,8 +15,13 @@ struct Era: Codable, Identifiable, Hashable {
     let keyAlbums: [String]
     let essentialTracks: [TrackRef]
     let documentaryQuery: String
+    /// A shorter name for its passport stamp, when the full one is long ("Latin & Bossa").
+    var stamp: String? = nil
+    /// The styles that answered this one: a reaction, a branch or an heir.
+    var leadsTo: [String]? = nil
 
     var tint: Color { Color(hex: color) }
+    var stampName: String { stamp ?? name }
     var years: String { end >= 2025 ? "\(start)–now" : "\(start)–\(end)" }
     func overlaps(decade: Int) -> Bool { start < decade + 10 && end >= decade }
 }

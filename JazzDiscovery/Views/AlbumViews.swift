@@ -4,12 +4,15 @@ struct CrateView: View {
     @Environment(JazzLibrary.self) private var library
     @State private var era: String? = nil
     @State private var startersOnly = false
+    @State private var heard = HeardFilter.all
+    @Environment(Passport.self) private var passport
     private let columns = [GridItem(.adaptive(minimum: 170, maximum: 210), spacing: 20)]
 
     var body: some View {
         let list = library.albums
             .filter { era == nil || $0.era == era }
             .filter { !startersOnly || $0.starter }
+            .filter { heard.includes($0, passport) }
         let decades = Array(Set(list.map(\.decade))).sorted()
 
         ScrollView {
@@ -21,6 +24,10 @@ struct CrateView: View {
                             .font(Theme.serif(18)).italic().foregroundStyle(Theme.muted)
                     }
                     Spacer()
+                    Picker("Show", selection: $heard) {
+                        ForEach(HeardFilter.allCases) { Text($0.rawValue).tag($0) }
+                    }
+                    .pickerStyle(.segmented).labelsHidden().fixedSize()
                     Toggle("Start Here picks only", isOn: $startersOnly).toggleStyle(.switch)
                 }
                 .padding(.top, 30)
@@ -70,7 +77,6 @@ struct AlbumDetailView: View {
         let artist = library.artist(album.artist)
         let session = library.session(for: album.id)
         let more = library.albums(by: album.artist).filter { $0.id != album.id }
-        let sameEra = library.albums(inEra: album.era).filter { $0.id != album.id && $0.artist != album.artist }
 
         ScrollView {
             VStack(alignment: .leading, spacing: 40) {
@@ -100,7 +106,11 @@ struct AlbumDetailView: View {
                             }
                             Text(album.why).font(Theme.serif(17)).foregroundStyle(Theme.cream.opacity(0.88))
                                 .frame(maxWidth: 620, alignment: .leading).fixedSize(horizontal: false, vertical: true)
-                            AlbumPlayControls(catalog: catalog, tracks: tracks, tint: tint).padding(.top, 6)
+                            HStack(spacing: 10) {
+                                AlbumPlayControls(catalog: catalog, tracks: tracks, tint: tint)
+                                AlbumPassportButtons(albumID: album.id, tint: tint)
+                            }
+                            .padding(.top, 6)
                         }
                         Spacer(minLength: 0)
                     }
@@ -140,12 +150,17 @@ struct AlbumDetailView: View {
                         HRow { ForEach(more) { AlbumCard(album: $0, showArtist: false) } }
                     }
                 }
-                if !sameEra.isEmpty {
-                    VStack(alignment: .leading, spacing: 4) {
-                        SectionHeader(title: "Also from \(era?.name ?? "this era")", tint: tint).padding(.horizontal, 40)
-                        HRow { ForEach(sameEra) { AlbumCard(album: $0) } }
+                VStack(alignment: .leading, spacing: 16) {
+                    SectionHeader(title: "Where Next", subtitle: "Three doors out of this record.", tint: tint)
+                    DoorsList(album: album) { router.go(.album($0)) }
+                    if let era {
+                        Button { router.go(.era(era.id)) } label: {
+                            Text("All of \(era.name) →").font(.system(size: 13, weight: .semibold)).foregroundStyle(tint)
+                        }
+                        .buttonStyle(.plain)
                     }
                 }
+                .padding(.horizontal, 40)
             }
             .padding(.bottom, 50)
         }

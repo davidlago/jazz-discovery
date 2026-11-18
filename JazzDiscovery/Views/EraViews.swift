@@ -76,7 +76,9 @@ struct EraDetailView: View {
         ScrollView {
             VStack(alignment: .leading, spacing: 40) {
                 HeroBanner(imageURL: heroImage, tint: era.tint,
-                           kicker: era.years, title: era.name, subtitle: era.tagline, height: 420)
+                           kicker: era.years, title: era.name, subtitle: era.tagline, height: 420) {
+                    EraProgressBadge(era: era)
+                }
 
                 HStack(alignment: .top, spacing: 40) {
                     VStack(alignment: .leading, spacing: 16) {
