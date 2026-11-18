@@ -5,6 +5,12 @@ struct JazzDiscoveryMobileApp: App {
     @State private var library = JazzLibrary.load()
     @State private var router = PhoneRouter()
     @State private var player = PlayerController()
+    @State private var passport = Passport()
+
+    init() {
+        let pp = passport
+        player.onListen = { pp.listened($0) }
+    }
 
     var body: some Scene {
         WindowGroup {
@@ -12,6 +18,7 @@ struct JazzDiscoveryMobileApp: App {
                 .environment(library)
                 .environment(router)
                 .environment(player)
+                .environment(passport)
                 .preferredColorScheme(.dark)
                 .onOpenURL { router.handle($0, library: library, player: player) }
                 .task { await openLaunchLinks() }
@@ -93,6 +100,7 @@ struct RouteView: View {
             }
         case .decades: DecadesPage()
         case .connections(let focus): ConnectionsMapView(focus: focus)
+        case .passport: PassportView()
         }
     }
 }

@@ -9,7 +9,10 @@ enum AppSection: String, CaseIterable, Identifiable {
     case artists = "Artists"
     case albums = "The Crate"
     case connections = "Connections"
+    case passport = "Passport"
     var id: String { rawValue }
+    /// The sections under Explore in the sidebar (Passport has its own, You).
+    static var explore: [AppSection] { allCases.filter { $0 != .passport } }
     var symbol: String {
         switch self {
         case .timeline: return "timeline.selection"
@@ -18,6 +21,7 @@ enum AppSection: String, CaseIterable, Identifiable {
         case .artists: return "person.2.fill"
         case .albums: return "square.grid.3x3.fill"
         case .connections: return "point.3.connected.trianglepath.dotted"
+        case .passport: return "checkmark.seal.fill"
         }
     }
 
@@ -78,6 +82,9 @@ final class Router {
             query = ""
             pathRequest = PathRequest(from: a, to: b)
             show(.connections)
+        case .passport:
+            query = ""
+            show(.passport)
         case .tab(let tab, let q):
             switch tab {
             case .timeline: query = ""; show(.timeline)

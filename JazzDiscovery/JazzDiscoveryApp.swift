@@ -5,15 +5,18 @@ struct JazzDiscoveryApp: App {
     @State private var library = JazzLibrary.load()
     @State private var router = Router()
     @State private var player = PlayerController()
+    @State private var passport = Passport(fileURL: Snapshots.outputDir == nil ? Passport.defaultFile : nil)
 
     init() {
+        let pp = passport
+        player.onListen = { pp.listened($0) }
         if SelfTest.requested {
             let lib = library
             Task { @MainActor in await SelfTest.run(lib) }
         }
         if let dir = Snapshots.outputDir {
-            let lib = library, p = player
-            Task { @MainActor in await Snapshots.run(library: lib, player: p, to: dir) }
+            let lib = library, p = player, pp = passport
+            Task { @MainActor in await Snapshots.run(library: lib, player: p, passport: pp, to: dir) }
         }
     }
 
@@ -23,6 +26,7 @@ struct JazzDiscoveryApp: App {
                 .environment(library)
                 .environment(router)
                 .environment(player)
+                .environment(passport)
                 .preferredColorScheme(.dark)
                 .frame(minWidth: 1100, minHeight: 720)
                 // jazzdiscovery:// links go to the open window instead of opening another one.

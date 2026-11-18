@@ -9,9 +9,9 @@ enum Snapshots {
     }
 
     @MainActor
-    static func run(library: JazzLibrary, player: PlayerController, to dir: String) async {
+    static func run(library: JazzLibrary, player: PlayerController, passport: Passport, to dir: String) async {
         let router = Router()
-        let root = RootView().environment(library).environment(router).environment(player)
+        let root = RootView().environment(library).environment(router).environment(player).environment(passport)
             .preferredColorScheme(.dark)
         let host = NSHostingView(rootView: root)
         let size = NSSize(width: 1440, height: 900)
@@ -34,7 +34,17 @@ enum Snapshots {
             ("08-crate", { router.show(.albums) }),
             ("09-album-detail", { router.show(.album(album.id)) }),
             ("10-connections", { router.show(.connections) }),
+            ("11-passport", { router.show(.passport) }),
         ]
+        // A passport with something in it (in memory only: snapshots don't touch the real one).
+        if passport.isEmpty {
+            for (i, a) in library.albums.enumerated() where i % 3 == 0 || library.album(a.id)?.era == "bebop" {
+                passport.setHeard(a.id, true, at: .now.addingTimeInterval(Double(-i * 3600)))
+            }
+            for id in ["kind-of-blue", "a-love-supreme", "mingus-ah-um"] { passport.setSaved(id, true) }
+            passport.toggleSaved(artist: "thelonious-monk")
+            passport.listened(ListenEvent(songID: "x", collectionId: nil, full: false))
+        }
         try? FileManager.default.createDirectory(atPath: dir, withIntermediateDirectories: true)
         for (name, setup) in shots {
             setup()

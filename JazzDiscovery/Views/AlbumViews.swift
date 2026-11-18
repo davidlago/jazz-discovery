@@ -4,12 +4,15 @@ struct CrateView: View {
     @Environment(JazzLibrary.self) private var library
     @State private var era: String? = nil
     @State private var startersOnly = false
+    @State private var heard = HeardFilter.all
+    @Environment(Passport.self) private var passport
     private let columns = [GridItem(.adaptive(minimum: 170, maximum: 210), spacing: 20)]
 
     var body: some View {
         let list = library.albums
             .filter { era == nil || $0.era == era }
             .filter { !startersOnly || $0.starter }
+            .filter { heard.includes($0, passport) }
         let decades = Array(Set(list.map(\.decade))).sorted()
 
         ScrollView {
@@ -21,6 +24,10 @@ struct CrateView: View {
                             .font(Theme.serif(18)).italic().foregroundStyle(Theme.muted)
                     }
                     Spacer()
+                    Picker("Show", selection: $heard) {
+                        ForEach(HeardFilter.allCases) { Text($0.rawValue).tag($0) }
+                    }
+                    .pickerStyle(.segmented).labelsHidden().fixedSize()
                     Toggle("Start Here picks only", isOn: $startersOnly).toggleStyle(.switch)
                 }
                 .padding(.top, 30)
@@ -100,7 +107,11 @@ struct AlbumDetailView: View {
                             }
                             Text(album.why).font(Theme.serif(17)).foregroundStyle(Theme.cream.opacity(0.88))
                                 .frame(maxWidth: 620, alignment: .leading).fixedSize(horizontal: false, vertical: true)
-                            AlbumPlayControls(catalog: catalog, tracks: tracks, tint: tint).padding(.top, 6)
+                            HStack(spacing: 10) {
+                                AlbumPlayControls(catalog: catalog, tracks: tracks, tint: tint)
+                                AlbumPassportButtons(albumID: album.id, tint: tint)
+                            }
+                            .padding(.top, 6)
                         }
                         Spacer(minLength: 0)
                     }

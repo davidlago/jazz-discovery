@@ -51,6 +51,12 @@ final class PlayerController {
     private(set) var output: AudioOutputInfo?
     /// Scrobbles full tracks to Last.fm. Previews aren't scrobbled.
     let scrobbler = Scrobbler()
+    /// Told when a preview starts and when a full track has been listened to (the passport marks records with it).
+    @ObservationIgnored var onListen: (@MainActor (ListenEvent) -> Void)?
+    @ObservationIgnored private var meter = ListenMeter()
+    /// The Apple Music album a queue was started from, or the album of each song in it.
+    @ObservationIgnored private var queueCollectionId: Int?
+    @ObservationIgnored private var songCollections: [String: Int] = [:]
 
     var preferFullTracks: Bool = UserDefaults.standard.object(forKey: "preferFullTracks") as? Bool ?? true {
         didSet { UserDefaults.standard.set(preferFullTracks, forKey: "preferFullTracks") }
@@ -319,6 +325,9 @@ final class PlayerController {
             let player = ApplicationMusicPlayer.shared
             player.queue = ApplicationMusicPlayer.Queue(for: songs, startingAt: start)
             queueAlbumTitle = nil
+            queueCollectionId = nil
+            songCollections = Dictionary(tracks.compactMap { t in t.collectionId.map { (String(t.trackId), $0) } },
+                                         uniquingKeysWith: { a, _ in a })
             #if os(macOS)
             await matchOutput()
             #endif
@@ -342,6 +351,8 @@ final class PlayerController {
             let player = ApplicationMusicPlayer.shared
             player.queue = [item]
             queueAlbumTitle = item.title
+            queueCollectionId = album.collectionId
+            songCollections = [:]
             #if os(macOS)
             await matchOutput()
             #endif
@@ -391,6 +402,7 @@ final class PlayerController {
         currentTrackID = t.trackId
         current = NowPlaying(title: t.name, artist: t.artistName, artwork: t.artwork(600),
                              appleMusicURL: t.url, isFullTrack: false)
+        onListen?(ListenEvent(songID: String(t.trackId), collectionId: t.collectionId, full: false))
         #if os(iOS)
         updateNowPlayingInfo()
         #endif
@@ -457,10 +469,23 @@ final class PlayerController {
             // a long gap between ticks (the app was held up) still counts what played meanwhile.
             let moved = sameEntry ? elapsed - (lastPlaybackTime ?? elapsed) : 0
             lastPlaybackTime = elapsed
-            if isPlaying || moved > 0 { scrobbler.played(max(0, min(moved, realGap + 0.5))) }
+            let listened = max(0, min(moved, realGap + 0.5))
+            if isPlaying || moved > 0 { scrobbler.played(listened) }
+            measureListening(p.queue.currentEntry, listened: listened)
         case .none: break
         }
         if mode != .none { refreshOutput() }
+    }
+
+    // MARK: Listening (for the passport)
+
+    /// Counts the current song's real listening time, and reports it once it passes the threshold.
+    private func measureListening(_ entry: ApplicationMusicPlayer.Queue.Entry?, listened: Double) {
+        guard let entry, case .song(let song)? = entry.item else { meter.track(nil, duration: nil); return }
+        meter.track(entry.id, duration: song.duration)
+        guard meter.add(listened) else { return }
+        let id = song.id.rawValue
+        onListen?(ListenEvent(songID: id, collectionId: queueCollectionId ?? songCollections[id], full: true))
     }
 
     // MARK: Audio quality and output

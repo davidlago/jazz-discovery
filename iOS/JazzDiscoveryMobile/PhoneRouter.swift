@@ -21,6 +21,7 @@ enum PhoneRoute: Hashable {
     case page(Route)
     case decades
     case connections(focus: String?)
+    case passport
 
     static func era(_ id: String) -> PhoneRoute { .page(.era(id)) }
     static func artist(_ id: String) -> PhoneRoute { .page(.artist(id)) }
@@ -92,6 +93,7 @@ final class PhoneRouter {
             show(PhoneTab(tab))
         case .nowPlaying: showSettings = false; showNowPlaying = player.current != nil
         case .settings: showNowPlaying = false; showSettings = true
+        case .passport: show(.crate, [.passport])
         case .playAlbum(let id):
             guard fromLaunchArguments, let album = library.album(id) else { return }
             Task {

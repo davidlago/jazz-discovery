@@ -101,6 +101,8 @@ struct EraDetailView: View {
             VStack(alignment: .leading, spacing: 36) {
                 HeroBanner(imageURL: heroImage, tint: era.tint, kicker: era.years, title: era.name, subtitle: era.tagline)
 
+                EraProgressRow(era: era)
+
                 VStack(alignment: .leading, spacing: 16) {
                     ForEach(era.summary.components(separatedBy: "\n\n"), id: \.self) { p in
                         Text(p).font(.system(.body, design: .serif)).lineSpacing(5)

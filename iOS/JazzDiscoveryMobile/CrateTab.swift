@@ -4,12 +4,15 @@ struct CrateTab: View {
     @Environment(JazzLibrary.self) private var library
     @State private var era: String? = nil
     @State private var startersOnly = false
+    @State private var heard = HeardFilter.all
+    @Environment(Passport.self) private var passport
     private let columns = [GridItem(.flexible(), spacing: 14), GridItem(.flexible(), spacing: 14)]
 
     var body: some View {
         let list = library.albums
             .filter { era == nil || $0.era == era }
             .filter { !startersOnly || $0.starter }
+            .filter { heard.includes($0, passport) }
         let decades = Array(Set(list.map(\.decade))).sorted()
 
         ScrollView {
@@ -20,6 +23,9 @@ struct CrateTab: View {
                     HStack(spacing: 8) {
                         FilterChip(text: "Start Here", tint: Theme.brass, selected: startersOnly, systemImage: "star.fill") {
                             startersOnly.toggle()
+                        }
+                        ForEach([HeardFilter.unheard, .heard, .saved]) { f in
+                            FilterChip(text: f.rawValue, tint: Theme.brass, selected: heard == f) { heard = heard == f ? .all : f }
                         }
                         Rectangle().fill(Theme.panelHi).frame(width: 1, height: 22)
                         FilterChip(text: "All Styles", selected: era == nil) { era = nil }
@@ -34,7 +40,8 @@ struct CrateTab: View {
 
                 if list.isEmpty {
                     ContentUnavailableView("No Records", systemImage: "opticaldisc",
-                                           description: Text("None of the Start Here picks are from this style."))
+                                           description: Text(heard == .all ? "None of the Start Here picks are from this style."
+                                                             : "No \(heard.rawValue.lowercased()) records here yet."))
                         .padding(.top, 30)
                 }
 
@@ -123,9 +130,12 @@ struct AlbumDetailView: View {
                         .clipped()
                 }
 
-                AlbumPlayControls(catalog: catalog, tracks: tracks, tint: tint)
-                    .padding(.horizontal, Theme.gutter)
-                    .padding(.top, -12)
+                VStack(spacing: 10) {
+                    AlbumPlayControls(catalog: catalog, tracks: tracks, tint: tint)
+                    AlbumPassportButtons(albumID: album.id, tint: tint)
+                }
+                .padding(.horizontal, Theme.gutter)
+                .padding(.top, -12)
 
                 Text(album.why).font(.system(.body, design: .serif)).lineSpacing(4)
                     .foregroundStyle(Theme.cream.opacity(0.9))

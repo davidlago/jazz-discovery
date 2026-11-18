@@ -85,8 +85,19 @@ extension View {
     /// The settings button at the top right of every tab's first page.
     func rootToolbar() -> some View {
         toolbar {
+            ToolbarItem(placement: .topBarTrailing) { PassportButton() }
             ToolbarItem(placement: .topBarTrailing) { SettingsButton() }
         }
+    }
+}
+
+/// Opens your passport on the current tab.
+struct PassportButton: View {
+    @Environment(PhoneRouter.self) private var router
+
+    var body: some View {
+        Button { router.go(.passport) } label: { Image(systemName: "checkmark.seal") }
+            .accessibilityLabel("Passport")
     }
 }
 
@@ -319,12 +330,14 @@ struct AlbumCard: View {
     let album: Album
     var width: CGFloat? = 150
     var showArtist = true
+    @Environment(JazzLibrary.self) private var library
 
     var body: some View {
         NavigationLink(value: PhoneRoute.album(album.id)) {
             VStack(alignment: .leading, spacing: 8) {
                 AlbumCover(album: album, size: 400, cornerRadius: 6)
                     .frame(width: width)
+                    .heardBadge(album.id, tint: library.color(forEra: album.era), size: 24)
                     .shadow(color: .black.opacity(0.35), radius: 8, y: 4)
                 VStack(alignment: .leading, spacing: 2) {
                     Text(album.title).font(.subheadline.weight(.semibold)).foregroundStyle(Theme.cream).lineLimit(1)
@@ -339,6 +352,7 @@ struct AlbumCard: View {
         }
         .buttonStyle(.pressable)
         .accessibilityElement(children: .combine)
+        .contextMenu { PassportMenuItems(albumID: album.id) }
     }
 }
 
