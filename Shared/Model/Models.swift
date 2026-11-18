@@ -89,6 +89,44 @@ struct JazzData: Codable {
     let artists: [Artist]
     let albums: [Album]
     let milestones: [Milestone]
+    /// Relationships no shared record shows: a mentor, a band with no record in the Crate, an influence, a duo.
+    var bonds: [Bond]? = nil
+}
+
+/// Two artists linked by more than a record in the Crate, with a note saying how.
+struct Bond: Codable, Hashable {
+    let a: String
+    let b: String
+    /// "band", "mentor", "influence" or "duo".
+    let kind: String
+    let note: String
+}
+
+/// Why two artists are connected: the records in the Crate they're both on, a bond, or a hand-picked connection.
+struct Tie: Hashable, Identifiable {
+    /// The two artists, in ID order.
+    let a: String
+    let b: String
+    let albums: [Album]
+    let bond: Bond?
+    /// Listed among the artists' connections in jazz.json.
+    let curated: Bool
+
+    var id: String { "\(a)|\(b)" }
+    /// Records together count one each; a bond counts one.
+    var weight: Int { albums.count + (bond == nil ? 0 : 1) }
+    /// Drawn on the Connections map before anyone is selected: hand-picked connections, bonds, and pairs with two or
+    /// more records together. (Everyone's other ties appear when they're selected.)
+    var prominent: Bool { curated || bond != nil || albums.count >= 2 }
+    func other(than id: String) -> String { id == a ? b : a }
+    func involves(_ id: String) -> Bool { a == id || b == id }
+}
+
+/// One link in a chain between two artists.
+struct PathStep: Hashable {
+    let from: String
+    let to: String
+    let tie: Tie
 }
 
 // MARK: - Sessions (sessions.json): who played on each album, when and where

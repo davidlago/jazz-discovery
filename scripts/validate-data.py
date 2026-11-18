@@ -43,6 +43,19 @@ for al in data["albums"]:
 years = [m["year"] for m in data["milestones"]]
 if years != sorted(years): errors.append("milestones aren't in chronological order")
 
+# bonds: relationships that aren't "played on the same record" (a mentor, a band with no record in the Crate, an
+# influence, a duo), each with a note saying what it was.
+bond_pairs = set()
+for b in data.get("bonds", []):
+    where = f"bond {b.get('a')}–{b.get('b')}"
+    if b.get("a") not in artists or b.get("b") not in artists: errors.append(f"{where}: unknown artist")
+    if b.get("a") == b.get("b"): errors.append(f"{where}: an artist bonded to themself")
+    if b.get("kind") not in ("band", "mentor", "influence", "duo"): errors.append(f"{where}: kind {b.get('kind')!r}")
+    if not b.get("note", "").strip(): errors.append(f"{where}: no note")
+    pair = tuple(sorted((b.get("a"), b.get("b"))))
+    if pair in bond_pairs: errors.append(f"{where}: listed twice")
+    bond_pairs.add(pair)
+
 # ids.json: Wikidata and MusicBrainz IDs and exact dates (scripts/build-ids.py).
 ids_path = os.path.join(RES, "ids.json")
 if os.path.exists(ids_path):
@@ -99,6 +112,17 @@ if os.path.exists(sessions_path):
             leader = next(a for a in data["albums"] if a["id"] == album_id)["artist"]
             if not any(c.get("artist") == leader for c in s.get("personnel", [])):
                 warnings.append(f"{where}: the leader ({leader}) isn't among the players")
+    # Every curated connection is explained: a reviewed record both are on, or a bond.
+    on = {}
+    for album_id, sess in sessions.items():
+        if not sess.get("reviewed") or album_id not in albums: continue
+        leader = next(a for a in data["albums"] if a["id"] == album_id)["artist"]
+        for who in {c.get("artist") for c in sess.get("personnel", []) if c.get("artist")} | {leader}:
+            on.setdefault(who, set()).add(album_id)
+    for a in data["artists"]:
+        for c in a["connections"]:
+            if a["id"] < c and not (on.get(a["id"], set()) & on.get(c, set())) and (a["id"], c) not in bond_pairs:
+                errors.append(f"connection {a['id']}–{c}: no shared record and no bond explains it")
     missing = len(albums) - len([k for k in sessions if k in albums])
     print(f"sessions.json: {reviewed} of {len(albums)} albums reviewed, {len(sessions) - reviewed} drafts, "
           f"{missing} not drafted")

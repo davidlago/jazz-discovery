@@ -18,6 +18,10 @@ struct DeepLinkTests {
         #expect(link("jazzdiscovery://decades") == .decades)
         #expect(link("jazzdiscovery://connections") == .connections(focus: nil))
         #expect(link("jazzdiscovery://connections/john-coltrane") == .connections(focus: "john-coltrane"))
+        #expect(link("jazzdiscovery://between/miles-davis/joao-gilberto") == .between("miles-davis", "joao-gilberto"))
+        #expect(link("jazzdiscovery://between/miles-davis/nobody") == nil)
+        #expect(link("jazzdiscovery://between/miles-davis/miles-davis") == nil)
+        #expect(link("jazzdiscovery://between/miles-davis") == nil)
         #expect(link("jazzdiscovery://now-playing") == .nowPlaying)
         #expect(link("jazzdiscovery://settings") == .settings)
     }

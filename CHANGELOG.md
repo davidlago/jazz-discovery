@@ -6,6 +6,13 @@ section for the tagged version at the top of the GitHub release notes (or **Unre
 
 ## Unreleased
 
+- **Connections** now come from the records: two artists are linked when they play on the same album, and the more
+  records they share, the thicker the line. Links that aren't on a record (a mentor, a band before the Crate's
+  records, an influence, a duo) each say what they were. Select a face, then another in their circle, to see what
+  ties them and the records they made together. *Played With* on artist pages lists the closest first.
+- **Find a Path** on the Connections map: the shortest chain of records and bonds between any two artists (Scott
+  Joplin to Nubya Garcia is nine links), drawn on the map and listed step by step, with *Play the Path*: one track
+  from each link, in order. Links like `jazzdiscovery://between/miles-davis/nubya-garcia` open it.
 - **Sidemen**: 41 more artists, the players all over the records in the Crate: Ron Carter, Paul Chambers, Billy Higgins,
   Tony Williams, Wynton Kelly, Joe Henderson, Johnny Hodges, Jimmy Blanton, Lil Hardin Armstrong and more, including
   the guide's first trombonists, vibraphonists, percussionists, a harpist and a flutist. Their pages show the records

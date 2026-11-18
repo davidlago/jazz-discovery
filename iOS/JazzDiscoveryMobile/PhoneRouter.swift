@@ -40,6 +40,8 @@ final class PhoneRouter {
     var showSettings = false
     var erasMode: ErasMode = .styles
     var query = ""
+    /// A chain for the Connections map to draw when it next shows (from a `between/<a>/<b>` link).
+    var pathRequest: PathRequest?
 
     func path(_ tab: PhoneTab) -> Binding<[PhoneRoute]> {
         Binding(get: { self.paths[tab] ?? [] }, set: { self.paths[tab] = $0 })
@@ -82,6 +84,9 @@ final class PhoneRouter {
             }
         case .decades: erasMode = .decades; show(.eras)
         case .connections(let focus): show(.artists, [.connections(focus: focus)])
+        case .between(let a, let b):
+            pathRequest = PathRequest(from: a, to: b)
+            show(.artists, [.connections(focus: nil)])
         case .tab(let tab, let q):
             if let q { query = q }
             show(PhoneTab(tab))

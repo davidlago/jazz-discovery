@@ -44,7 +44,9 @@ struct GraphLayout: Sendable {
     var decades: [Int] { Array(stride(from: firstYear / 10 * 10 + 10, through: 2020, by: 10)) }
     func x(forYear y: Int) -> CGFloat { leftPad + CGFloat(y - firstYear) * pxPerYear }
 
-    static func compute(artists: [Artist], edges: [(String, String)], eraStarts: [String: Int]) -> GraphLayout {
+    /// `weights` (one per edge, default 1) pull strongly tied artists closer: more records together, shorter springs.
+    static func compute(artists: [Artist], edges: [(String, String)], weights: [Int]? = nil,
+                        eraStarts: [String: Int]) -> GraphLayout {
         func comingOfAge(_ a: Artist) -> Double {
             if let b = a.born { return Double(b + 22) }
             return Double(eraStarts[a.primaryEra] ?? 1950)
@@ -68,9 +70,10 @@ struct GraphLayout: Sendable {
             for c in id.utf8 { h = (h ^ UInt64(c)) &* 1099511628211 }
             return top + CGFloat(h % 1000) / 1000 * height
         }
-        let links = edges.compactMap { e -> (Int, Int)? in
+        let links = edges.enumerated().compactMap { i, e -> (Int, Int, CGFloat)? in
             guard let a = index[e.0], let b = index[e.1] else { return nil }
-            return (a, b)
+            let w = CGFloat(weights.map { $0.indices.contains(i) ? max(1, $0[i]) : 1 } ?? 1)
+            return (a, b, min(1 + 0.35 * (w - 1), 2.2))
         }
         let centerY = top + height / 2
         for iter in 0..<500 {
@@ -87,10 +90,10 @@ struct GraphLayout: Sendable {
                     fx[j] -= f * dx / d; fy[j] -= f * dy / d
                 }
             }
-            for (a, b) in links {
+            for (a, b, strength) in links {
                 let dx = px[b] - px[a], dy = py[b] - py[a]
                 let d = max((dx * dx + dy * dy).squareRoot(), 1)
-                let f = (d - 110) * 0.03
+                let f = (d - 110 / strength) * 0.03 * strength
                 fx[a] += f * dx / d; fy[a] += f * dy / d
                 fx[b] -= f * dx / d; fy[b] -= f * dy / d
             }

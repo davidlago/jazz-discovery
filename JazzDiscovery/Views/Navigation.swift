@@ -41,6 +41,8 @@ final class Router {
     var query = ""
     /// An artist for Connections to select when it next shows (from a `connections/<id>` link).
     var connectionsFocus: String?
+    /// A chain for Connections to draw when it next shows (from a `between/<a>/<b>` link).
+    var pathRequest: PathRequest?
 
     func go(_ route: Route) { path.append(route) }
     func back() { if !path.isEmpty { path.removeLast() } }
@@ -71,6 +73,10 @@ final class Router {
         case .connections(let focus):
             query = ""
             connectionsFocus = focus
+            show(.connections)
+        case .between(let a, let b):
+            query = ""
+            pathRequest = PathRequest(from: a, to: b)
             show(.connections)
         case .tab(let tab, let q):
             switch tab {

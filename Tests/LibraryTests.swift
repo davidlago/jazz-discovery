@@ -7,8 +7,8 @@ struct LibraryTests {
 
     @Test("Connections count both ways, once, and skip artists who aren't in the library")
     func connections() {
-        #expect(library.neighbors(of: "miles-davis") == ["john-coltrane", "charlie-parker", "nobody"])
-        // Coltrane lists nobody, but Miles lists him.
+        // Miles lists Coltrane, Parker and "nobody"; Coltrane lists nobody, but Miles lists him.
+        #expect(library.neighbors(of: "miles-davis") == ["john-coltrane", "charlie-parker"])
         #expect(library.neighbors(of: "john-coltrane") == ["miles-davis"])
         #expect(library.neighbors(of: "joao-gilberto").isEmpty)
 

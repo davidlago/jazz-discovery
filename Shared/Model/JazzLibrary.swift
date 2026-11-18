@@ -15,6 +15,10 @@ final class JazzLibrary {
     private let albumByID: [String: Album]
     /// Artist ID → IDs of the albums they're credited on (as a player), led or not.
     private let creditedAlbums: [String: Set<String>]
+    /// Every connection between two artists in the guide, strongest first.
+    let ties: [Tie]
+    private let tieByPair: [String: Tie]
+    private let tiesByArtist: [String: [Tie]]
 
     init(data: JazzData, sessions: [String: Session] = [:]) {
         eras = data.eras.sorted { $0.start < $1.start }
@@ -32,6 +36,41 @@ final class JazzLibrary {
             for case let id? in session.personnel.map(\.artist) { credited[id, default: []].insert(albumID) }
         }
         creditedAlbums = credited
+
+        // Ties: records both are on (as leader or player), bonds, and hand-picked connections.
+        let known = Set(data.artists.map(\.id))
+        func pairKey(_ x: String, _ y: String) -> String { x < y ? "\(x)|\(y)" : "\(y)|\(x)" }
+        var shared: [String: [Album]] = [:]
+        for (albumID, session) in reviewed {
+            guard let album = albumByID[albumID] else { continue }
+            let people = Set(session.personnel.compactMap(\.artist) + [album.artist]).filter(known.contains).sorted()
+            for (i, x) in people.enumerated() {
+                for y in people[(i + 1)...] { shared[pairKey(x, y), default: []].append(album) }
+            }
+        }
+        var bonds: [String: Bond] = [:]
+        for bond in data.bonds ?? [] where known.contains(bond.a) && known.contains(bond.b) && bond.a != bond.b {
+            bonds[pairKey(bond.a, bond.b)] = bond
+        }
+        var curated = Set<String>()
+        for artist in data.artists {
+            for other in artist.connections where known.contains(other) && other != artist.id {
+                curated.insert(pairKey(artist.id, other))
+            }
+        }
+        var byPair: [String: Tie] = [:]
+        for key in Set(shared.keys).union(bonds.keys).union(curated) {
+            let ids = key.split(separator: "|").map(String.init)
+            byPair[key] = Tie(a: ids[0], b: ids[1],
+                              albums: (shared[key] ?? []).sorted { ($0.year, $0.title) < ($1.year, $1.title) },
+                              bond: bonds[key], curated: curated.contains(key))
+        }
+        let all = byPair.values.sorted { ($0.weight, $1.id) > ($1.weight, $0.id) }
+        ties = all
+        tieByPair = byPair
+        var byArtist: [String: [Tie]] = [:]
+        for tie in all { byArtist[tie.a, default: []].append(tie); byArtist[tie.b, default: []].append(tie) }
+        tiesByArtist = byArtist
     }
 
     static func load(from bundle: Bundle = .main) -> JazzLibrary {
@@ -113,9 +152,49 @@ final class JazzLibrary {
     /// as Scott Joplin or Art Tatum, count as leaders.)
     func isSideman(_ artistID: String) -> Bool { !leads(artistID) && !appearances(of: artistID).isEmpty }
 
-    /// Artists with at least one connection to another artist in the guide, for the Connections map.
-    var connectedArtists: [Artist] {
-        artists.filter { a in neighbors(of: a.id).contains { artistByID[$0] != nil } }
+    /// Artists with at least one tie to another artist in the guide, for the Connections map.
+    var connectedArtists: [Artist] { artists.filter { tiesByArtist[$0.id] != nil } }
+
+    // MARK: Ties and paths
+
+    /// Why two artists are connected, if they are.
+    func tie(_ x: String, _ y: String) -> Tie? { tieByPair[x < y ? "\(x)|\(y)" : "\(y)|\(x)"] }
+
+    /// An artist's ties, strongest first.
+    func ties(of id: String) -> [Tie] { tiesByArtist[id] ?? [] }
+
+    /// The shortest chain of ties from one artist to another: fewest links first, then links through more records
+    /// together rather than bonds. Nil when they aren't connected (or are the same artist).
+    func path(from start: String, to goal: String) -> [PathStep]? {
+        guard start != goal, tiesByArtist[start] != nil, tiesByArtist[goal] != nil else { return nil }
+        func cost(_ t: Tie) -> Double { t.albums.isEmpty ? 1.6 : 1 + 0.5 / Double(1 + t.albums.count) }
+        var best: [String: Double] = [start: 0]
+        var via: [String: (from: String, tie: Tie)] = [:]
+        var open: Set<String> = [start]
+        var done = Set<String>()
+        while let current = open.min(by: { (best[$0] ?? .infinity, $0) < (best[$1] ?? .infinity, $1) }) {
+            open.remove(current)
+            if current == goal { break }
+            done.insert(current)
+            for tie in tiesByArtist[current] ?? [] {
+                let next = tie.other(than: current)
+                guard !done.contains(next) else { continue }
+                let d = (best[current] ?? .infinity) + cost(tie)
+                if d < best[next] ?? .infinity {
+                    best[next] = d
+                    via[next] = (current, tie)
+                    open.insert(next)
+                }
+            }
+        }
+        guard via[goal] != nil else { return nil }
+        var steps: [PathStep] = []
+        var at = goal
+        while let step = via[at] {
+            steps.append(PathStep(from: step.from, to: at, tie: step.tie))
+            at = step.from
+        }
+        return steps.reversed()
     }
 
     /// The instruments an artist is credited with across the reviewed albums, most albums first.
@@ -135,24 +214,11 @@ final class JazzLibrary {
     }
     var starterPath: [Album] { albums.filter(\.starter) }
 
-    /// Symmetric connection graph.
-    var edges: [(String, String)] {
-        var seen = Set<String>()
-        var out: [(String, String)] = []
-        for a in artists {
-            for b in a.connections where artistByID[b] != nil {
-                let key = a.id < b ? "\(a.id)|\(b)" : "\(b)|\(a.id)"
-                if seen.insert(key).inserted { out.append((a.id, b)) }
-            }
-        }
-        return out
-    }
+    /// The connection graph's edges, one per tie.
+    var edges: [(String, String)] { ties.map { ($0.a, $0.b) } }
 
-    func neighbors(of id: String) -> Set<String> {
-        var s = Set(artistByID[id]?.connections ?? [])
-        for a in artists where a.connections.contains(id) { s.insert(a.id) }
-        return s
-    }
+    /// Everyone tied to an artist.
+    func neighbors(of id: String) -> Set<String> { Set(ties(of: id).map { $0.other(than: id) }) }
 
     /// Someone credited on the records who has no page of their own.
     struct Player: Identifiable, Hashable {

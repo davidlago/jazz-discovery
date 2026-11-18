@@ -152,7 +152,9 @@ struct ArtistDetailView: View {
         let tint = library.color(forEra: artist.primaryEra)
         let eras = library.eras.filter { artist.eras.contains($0.id) }
         let albums = library.albums(by: artist.id)
-        let connections = library.artists(Array(library.neighbors(of: artist.id))).sorted { ($0.born ?? 0) < ($1.born ?? 0) }
+        // Strongest ties first: the most records together, then bonds.
+        let ties = library.ties(of: artist.id)
+        let connections = ties.compactMap { library.artist($0.other(than: artist.id)) }
 
         ScrollView {
             VStack(alignment: .leading, spacing: 34) {
@@ -267,14 +269,21 @@ struct ArtistDetailView: View {
 
                 if !connections.isEmpty {
                     VStack(alignment: .leading, spacing: 4) {
-                        SectionHeader(title: "Played With", subtitle: "Bandmates, mentors and collaborators.", tint: tint) {
+                        SectionHeader(title: "Played With", subtitle: "Bandmates, mentors and influences, the closest first.", tint: tint) {
                             NavigationLink(value: PhoneRoute.connections(focus: artist.id)) {
                                 Label("Map", systemImage: "point.3.connected.trianglepath.dotted")
                                     .font(.subheadline.weight(.semibold)).foregroundStyle(tint)
                             }
                             .accessibilityLabel("Show \(artist.name) on the Connections map")
                         }
-                        HRow { ForEach(connections) { ArtistCard(artist: $0, width: 116) } }
+                        HRow {
+                            ForEach(Array(zip(connections, ties)), id: \.0.id) { other, tie in
+                                VStack(alignment: .leading, spacing: 3) {
+                                    ArtistCard(artist: other, width: 116)
+                                    Text(tie.shortText).font(.caption.weight(.medium)).foregroundStyle(tint)
+                                }
+                            }
+                        }
                     }
                 }
             }

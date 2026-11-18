@@ -19,7 +19,7 @@ How it gets to the App Store: [docs/app-store.md](docs/app-store.md).
 | **Decades** | 1890s–2020s, each with the styles in the air, turning points, records released and who was playing. |
 | **Artists** | Duotone portrait grid, filterable by era, instrument and leaders or sidemen. Artist pages have a Wikipedia bio, popular songs on Apple Music, their records, the records they play on, live videos and a "Played With" row. |
 | **The Crate** | A wall of album covers grouped by decade. Album pages have the personnel (who played what, when and where it was recorded, the producer and engineer), the tracklist (playable), why the album matters, YouTube clips, more by the artist and more from the era. |
-| **Connections** | A chronological network: left to right is when each artist came of age, and lines are collaborations. Hover or click a face to light up their circle; double-click to open the artist. |
+| **Connections** | A chronological network: left to right is when each artist came of age, and lines are the records two artists share (thicker for more) or a bond with a note (mentor, influence, duo). Click a face to light up their circle and a second to see what ties them; *Find a Path* draws the shortest chain between any two artists and plays one track from each link. |
 
 ## Sources
 
@@ -95,7 +95,7 @@ connected development iPhone, signed with your development profile (no Apple ID 
 ### Links
 
 Links like `jazzdiscovery://artist/miles-davis`, `era/bebop`, `album/kind-of-blue`, `decade/1950`, `decades`,
-`connections[/<artist>]`, `tab/search?q=…`, `now-playing` and `settings` open those screens, in both apps (`open …` on
+`connections[/<artist>]`, `between/<artist>/<artist>`, `tab/search?q=…`, `now-playing` and `settings` open those screens, in both apps (`open …` on
 the Mac, `xcrun simctl openurl <device> …` in the simulator). `Shared/Model/Route.swift` parses them, and only accepts
 pages that exist; a link never starts music.
 

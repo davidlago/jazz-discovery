@@ -11,7 +11,7 @@ enum Route: Hashable {
 
 /// A `jazzdiscovery://` link, parsed and checked against the library.
 ///
-///     era/<id>  artist/<id>  album/<id>  decade/<1950>  decades  connections[/<artist id>]
+///     era/<id>  artist/<id>  album/<id>  decade/<1950>  decades  connections[/<artist id>]  between/<artist>/<artist>
 ///     tab/<timeline|eras|artists|crate|search>[?q=<search>]  now-playing  settings
 ///
 /// Links come from anywhere (a web page, another app, a widget), so a link only parses when the page it names exists.
@@ -21,6 +21,8 @@ enum DeepLink: Equatable {
     case page(Route)
     case decades
     case connections(focus: String?)
+    /// The Connections map with the chain between two artists drawn on it.
+    case between(String, String)
     case tab(Tab, query: String?)
     case nowPlaying
     case settings
@@ -52,6 +54,10 @@ enum DeepLink: Equatable {
         case "connections":
             // An unknown artist still opens the map, just without one selected.
             self = .connections(focus: arg.flatMap { library.artist($0)?.id })
+        case "between":
+            guard parts.count == 2, parts[0] != parts[1], library.artist(parts[0]) != nil, library.artist(parts[1]) != nil
+            else { return nil }
+            self = .between(parts[0], parts[1])
         case "tab":
             guard let tab = arg.flatMap(Tab.init(rawValue:)) else { return nil }
             let q = URLComponents(url: url, resolvingAgainstBaseURL: false)?.queryItems?.first { $0.name == "q" }?.value
@@ -68,4 +74,10 @@ enum DeepLink: Equatable {
             return nil
         }
     }
+}
+
+/// A request to draw the chain between two artists on the Connections map.
+struct PathRequest: Equatable {
+    let from: String
+    let to: String
 }
