@@ -117,7 +117,10 @@ struct StationEntity: AppEntity {
 }
 
 struct StationQuery: EntityStringQuery {
-    @MainActor private var all: [Station] { Programmer.stations(library: AppContext.shared.lib, includeNewToYou: true) }
+    @MainActor private var all: [Station] {
+        Programmer.stations(library: AppContext.shared.lib, includeNewToYou: true)
+            + Programmer.placeAndLabelStations(library: AppContext.shared.lib)
+    }
     @MainActor func entities(for identifiers: [String]) async throws -> [StationEntity] {
         all.filter { identifiers.contains($0.id) }.map(StationEntity.init)
     }
