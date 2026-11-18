@@ -1194,6 +1194,82 @@
    }
   ]
  },
+ "backatown": {
+  "reviewed": false,
+  "source": "musicbrainz:release/2f392d85-0a01-4f71-b678-644ebad9c67e",
+  "mbReleaseGroup": "9578e2e2-2729-4391-b83b-7a5e39374dde",
+  "edition": "2010-04-20 None",
+  "tracks": [
+   "Hurricane Season",
+   "On Your Way Down",
+   "Quiet as Kept",
+   "Something Beautiful",
+   "Backatown",
+   "Right to Complain",
+   "Neph",
+   "Suburbia",
+   "In the 6th",
+   "One Night Only (The March)",
+   "Where Y’at",
+   "Fallin’",
+   "The Cure",
+   "928 Horn Jam"
+  ],
+  "personnel": [
+   {
+    "artist": null,
+    "name": "Dan Oestreicher",
+    "instruments": [
+     "baritone saxophone"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Pete Murano",
+    "instruments": [
+     "guitar"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Mike Ballard",
+    "instruments": [
+     "bass"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Joey Peebles",
+    "instruments": [
+     "drums"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Dwayne Williams",
+    "instruments": [
+     "percussion"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Clarence Slaughter",
+    "instruments": [
+     "woodwind"
+    ]
+   }
+  ],
+  "crew": [
+   {
+    "artist": null,
+    "name": "Ben Ellman",
+    "role": "producer"
+   }
+  ],
+  "draftNotes": [
+   "the leader (Trombone Shorty) isn't among the credited players"
+  ]
+ },
  "basie-complete-decca": {
   "reviewed": true,
   "source": "musicbrainz:release/c6732cba-f132-4796-848e-3eb099efb2c9",
@@ -2819,6 +2895,37 @@
    "The two versions of There's a Cradle in Caroline (Trumbauer, Aug 25, Seger Ellis singing; Broadway Bell-Hops, Sep 29, Irving Kaufman singing) share a title, and credits are matched by title, so each version's players show on both."
   ]
  },
+ "black-classical-music": {
+  "reviewed": false,
+  "source": "musicbrainz:release/43b8ff88-3348-412d-87d7-5438018850ec",
+  "mbReleaseGroup": "77dfcfc2-44b7-4265-9334-ddd6efc0d47f",
+  "edition": "2023-09-08 XE",
+  "tracks": [
+   "Black Classical Music",
+   "Afro Cubanism",
+   "Raisins Under the Sun",
+   "Rust",
+   "Turquoise Galaxy",
+   "The Light",
+   "Pon di Plaza",
+   "Magnolia Symphony",
+   "Early Dayes",
+   "Chasing the Drum",
+   "Birds of Paradise",
+   "Gelato",
+   "Marching Band",
+   "Crystal Palace Park",
+   "Presidential",
+   "Jukebox",
+   "Woman’s Touch",
+   "Tioga Pass",
+   "Cowrie Charms"
+  ],
+  "personnel": [],
+  "draftNotes": [
+   "no players credited on this edition"
+  ]
+ },
  "black-codes": {
   "reviewed": true,
   "source": "musicbrainz:release/0ae20169-fb03-4339-bf18-49323d55caed",
@@ -3705,6 +3812,102 @@
    "Recorded in the Grand Hall of the Masonic Grand Lodge, New York, January 22-25, 1995 (booklet). Todd Whitelock mixed; Mark Wilder recorded."
   ]
  },
+ "blue-clarinet-stomp": {
+  "reviewed": false,
+  "source": "musicbrainz:release/87ccf1bb-9676-47ea-b4fe-3af137cbe502",
+  "mbReleaseGroup": "9d150bdc-1675-4751-82b7-2163bdd035d4",
+  "edition": "1994 GB",
+  "kind": "compilation",
+  "recordedBetween": [
+   1928,
+   1929
+  ],
+  "tracks": [
+   "Blue Clarinet Stomp -1",
+   "Blue Clarinet Stomp -2",
+   "Blue Piano Stomp",
+   "Bucktown Stomp",
+   "Weary City",
+   "Bull Fiddle Blues",
+   "Blue Washboard Stomp",
+   "Pencil Papa -1",
+   "Too Tight -2",
+   "Sweet Lorraine -1",
+   "Sweet Lorraine -2",
+   "My Little Isabel -1",
+   "My Little Isabel -2",
+   "Pencil Papa -3",
+   "Heah Me Talkin’ -3",
+   "Heah Me Talkin’ -4",
+   "Goober Dance -3",
+   "Goober Dance -4",
+   "Too Tight -3",
+   "Too Tight -4",
+   "Indigo Stomp -1",
+   "Indigo Stomp -2",
+   "I’m a Mighty Tight Woman"
+  ],
+  "personnel": [
+   {
+    "artist": "johnny-dodds",
+    "name": "Johnny Dodds",
+    "instruments": [
+     "clarinet"
+    ],
+    "tracks": 23
+   },
+   {
+    "artist": null,
+    "name": "Natty Dominique",
+    "instruments": [
+     "cornet",
+     "trumpet"
+    ],
+    "tracks": 18
+   },
+   {
+    "artist": null,
+    "name": "Honoré Dutrey",
+    "instruments": [
+     "trombone"
+    ],
+    "tracks": 18
+   },
+   {
+    "artist": "lil-hardin-armstrong",
+    "name": "Lil Hardin Armstrong",
+    "instruments": [
+     "piano"
+    ],
+    "tracks": 15
+   },
+   {
+    "artist": null,
+    "name": "Charlie Alexander",
+    "instruments": [
+     "piano"
+    ],
+    "tracks": 7
+   },
+   {
+    "artist": null,
+    "name": "Bill Johnson",
+    "instruments": [
+     "bass"
+    ],
+    "tracks": 22
+   },
+   {
+    "artist": "baby-dodds",
+    "name": "Warren “Baby” Dodds",
+    "instruments": [
+     "washboard",
+     "drums"
+    ],
+    "tracks": 18
+   }
+  ]
+ },
  "blue-light-til-dawn": {
   "reviewed": true,
   "source": "musicbrainz:release/1029765e-a851-3a09-b3de-6cf1295ef242",
@@ -4052,6 +4255,70 @@
     "artist": null,
     "name": "Francis Wolff",
     "role": "photography"
+   }
+  ]
+ },
+ "blues-ette": {
+  "reviewed": false,
+  "source": "musicbrainz:release/587f5c62-621c-4189-9e1a-0bfb77752270",
+  "mbReleaseGroup": "2e298054-4642-3756-bc43-7ecac41da8e7",
+  "edition": "1959 US",
+  "recorded": [
+   {
+    "date": "1959-05-21",
+    "place": "Van Gelder Studio"
+   }
+  ],
+  "tracks": [
+   "Five Spot After Dark",
+   "Undecided",
+   "Blues-ette",
+   "Minor Vamp",
+   "Love Your Spell Is Everywhere",
+   "Twelve-Inch"
+  ],
+  "personnel": [
+   {
+    "artist": "curtis-fuller",
+    "name": "Curtis Fuller",
+    "instruments": [
+     "trombone"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Benny Golson",
+    "instruments": [
+     "tenor saxophone"
+    ]
+   },
+   {
+    "artist": "tommy-flanagan",
+    "name": "Tommy Flanagan",
+    "instruments": [
+     "piano"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Jimmy Garrison",
+    "instruments": [
+     "bass"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Al Harewood",
+    "instruments": [
+     "drums"
+    ]
+   }
+  ],
+  "crew": [
+   {
+    "artist": null,
+    "name": "Rudy van Gelder",
+    "role": "engineer"
    }
   ]
  },
@@ -4996,6 +5263,201 @@
    "Jazzdisco places \"I've Never Been in Love Before\" on 23 July 1956 and \"My Ideal\" on 30 July 1956."
   ]
  },
+ "classic-earl-hines-sessions": {
+  "reviewed": false,
+  "source": "musicbrainz:release/fd97b56f-8457-4bcf-ac2f-b50939a64c70",
+  "mbReleaseGroup": "bf24e307-582d-460c-a774-8fd548814324",
+  "edition": "2014-02-28 XW",
+  "kind": "compilation",
+  "recordedBetween": [
+   1928,
+   1933
+  ],
+  "tracks": [
+   "Caution Blues (Blues in Thirds)",
+   "A Monday Date",
+   "I Ain’t Got Nobody",
+   "57 Varieties",
+   "Sweet Ella May",
+   "Everybody Loves My Baby",
+   "Good Little, Bad Little You",
+   "Have You Ever Felt That Way?",
+   "Beau-Koo Jack",
+   "Sister Kate",
+   "Chicago Rhythm",
+   "Glad Rag Doll",
+   "Grand Piano Blues",
+   "Blue Nights",
+   "Blue Drag",
+   "Deep Forest",
+   "Sweet Ella May (Alt take 2)",
+   "Everybody Loves My Baby (Alt take)",
+   "Everybody Loves My Baby (Alt take 2)",
+   "Good Little, Bad Little You (Alt take 3)",
+   "Beau-Koo Jack (Alt take)",
+   "Sister Kate (Alt take)",
+   "Sister Kate (Alt take 2)",
+   "Chicago Rhythm (Alt take)",
+   "Glad Rag Doll (Alt take)",
+   "Oh! You Sweet Thing",
+   "Blue Drag (Alt take)",
+   "I Love You Because I Love You (take 1)",
+   "I Love You Because I Love You (take 2)",
+   "Sensational Mood",
+   "My One Ambition",
+   "Love Me Tonight",
+   "Down Among the Sheltering Palms",
+   "Rosetta (instrumental take)",
+   "Rosetta (78rpm version)",
+   "Why Must We Part?",
+   "Maybe I’m to Blame",
+   "Cavernism",
+   "Blue Drag (Alt take 2)",
+   "I Love You Because I Love You (take 3)",
+   "I Love You Because I Love You (take 4)",
+   "I Love You Because I Love You (take 5)",
+   "Sensational Mood (Alt take 2)",
+   "Love Me Tonight (Alt take 3)",
+   "Love Me Tonight (Alt take 4)",
+   "Down Among the Sheltering Palms (Alt take 2)",
+   "Rosetta (instrumental Alt take 3)",
+   "Rosetta (vocal Alt take 4)",
+   "Why Must We Part? (Alt take 2)",
+   "Maybe I’m to Blame (Alt take 2)",
+   "Cavernism (Alt take 2)"
+  ],
+  "personnel": [
+   {
+    "artist": "earl-hines",
+    "name": "Earl Hines",
+    "instruments": [
+     "piano",
+     "vocals"
+    ],
+    "tracks": 42
+   },
+   {
+    "artist": null,
+    "name": "Walter Fuller",
+    "instruments": [
+     "trumpet",
+     "vocals"
+    ],
+    "tracks": 18
+   },
+   {
+    "artist": null,
+    "name": "Shirley Clay",
+    "instruments": [
+     "cornet",
+     "trumpet"
+    ],
+    "tracks": 16
+   },
+   {
+    "artist": null,
+    "name": "George Mitchell",
+    "instruments": [
+     "cornet",
+     "trumpet"
+    ],
+    "tracks": 16
+   },
+   {
+    "artist": null,
+    "name": "Billy Franklin",
+    "instruments": [
+     "trombone"
+    ],
+    "tracks": 19
+   },
+   {
+    "artist": null,
+    "name": "Louis Taylor",
+    "instruments": [
+     "trombone"
+    ],
+    "tracks": 18
+   },
+   {
+    "artist": null,
+    "name": "William Franklin",
+    "instruments": [
+     "trombone",
+     "vocals"
+    ],
+    "tracks": 15
+   },
+   {
+    "artist": null,
+    "name": "Cecil Irwin",
+    "instruments": [
+     "reeds",
+     "tenor saxophone"
+    ],
+    "tracks": 34
+   },
+   {
+    "artist": null,
+    "name": "Omer Simeon",
+    "instruments": [
+     "reeds",
+     "saxophone"
+    ],
+    "tracks": 18
+   },
+   {
+    "artist": null,
+    "name": "Lawrence Dixon",
+    "instruments": [
+     "guitar"
+    ],
+    "tracks": 18
+   },
+   {
+    "artist": null,
+    "name": "Claude Roberts",
+    "instruments": [
+     "banjo"
+    ],
+    "tracks": 16
+   },
+   {
+    "artist": null,
+    "name": "Wallace Bishop",
+    "instruments": [
+     "drums"
+    ],
+    "tracks": 18
+   },
+   {
+    "artist": null,
+    "name": "Lester Boone",
+    "instruments": [
+     "reeds"
+    ],
+    "tracks": 16
+   },
+   {
+    "artist": null,
+    "name": "Toby Turner",
+    "instruments": [
+     "reeds"
+    ],
+    "tracks": 16
+   }
+  ],
+  "crew": [
+   {
+    "artist": null,
+    "name": "Alex Hill",
+    "role": "arranger"
+   }
+  ],
+  "draftNotes": [
+   "only 42 of 51 tracks have players credited"
+  ]
+ },
  "complete-communion": {
   "reviewed": true,
   "source": "musicbrainz:release/92be7b8b-f428-4d9a-a245-eae761823b1f",
@@ -5375,6 +5837,170 @@
    }
   ]
  },
+ "dance-of-the-octopus": {
+  "reviewed": false,
+  "source": "musicbrainz:release/c8a53c23-571e-4938-aece-d863f6a62b7c",
+  "mbReleaseGroup": "2c3b0763-8647-4b69-b572-56212db73087",
+  "edition": "1995 GB",
+  "kind": "compilation",
+  "recordedBetween": [
+   1933,
+   1936
+  ],
+  "tracks": [
+   "Knockin' on Wood",
+   "Hole in the Wall",
+   "In a Mist",
+   "Dance of the Octopus",
+   "Old Fashioned Love",
+   "I Surrender, Dear",
+   "Tomboy",
+   "The Night Is Blue",
+   "Honeysuckle Rose",
+   "With All My Heart and Soul",
+   "Bughouse",
+   "Blues in E Flat",
+   "Gramercy Square",
+   "Polly Wolly Doodle",
+   "Decca Stomp",
+   "The Music Goes 'round and 'round",
+   "The Broken Record",
+   "The Wedding of Jack and Jill",
+   "You Started Me Dreaming",
+   "Misty Islands of the Highlands",
+   "What's the Name of That Song",
+   "Let Yourself Go",
+   "Life Begins When You're in Love",
+   "If You Love Me",
+   "I Got Rhythm",
+   "Oh, Lady Be Good"
+  ],
+  "personnel": [
+   {
+    "artist": "red-norvo",
+    "name": "Red Norvo",
+    "instruments": [
+     "xylophone",
+     "piano"
+    ],
+    "tracks": 26
+   },
+   {
+    "artist": null,
+    "name": "Stew Pletcher",
+    "instruments": [
+     "trumpet"
+    ],
+    "tracks": 14
+   },
+   {
+    "artist": null,
+    "name": "Jack Jenney",
+    "instruments": [
+     "trombone"
+    ],
+    "tracks": 8
+   },
+   {
+    "artist": null,
+    "name": "Herbie Haymer",
+    "instruments": [
+     "tenor saxophone"
+    ],
+    "tracks": 14
+   },
+   {
+    "artist": null,
+    "name": "Don McCook",
+    "instruments": [
+     "clarinet"
+    ],
+    "tracks": 14
+   },
+   {
+    "artist": null,
+    "name": "Dave Barbour",
+    "instruments": [
+     "guitar"
+    ],
+    "tracks": 14
+   },
+   {
+    "artist": null,
+    "name": "Teddy Wilson",
+    "instruments": [
+     "piano"
+    ],
+    "tracks": 8
+   },
+   {
+    "artist": null,
+    "name": "Pete Peterson",
+    "instruments": [
+     "bass"
+    ],
+    "tracks": 14
+   },
+   {
+    "artist": null,
+    "name": "Artie Bernstein",
+    "instruments": [
+     "bass"
+    ],
+    "tracks": 6
+   },
+   {
+    "artist": null,
+    "name": "Maurice Purtill",
+    "instruments": [
+     "drums"
+    ],
+    "tracks": 8
+   },
+   {
+    "artist": null,
+    "name": "Bob White",
+    "instruments": [
+     "drums"
+    ],
+    "tracks": 6
+   },
+   {
+    "artist": null,
+    "name": "Eddie Sauter",
+    "instruments": [
+     "mellophone"
+    ],
+    "tracks": 12
+   }
+  ]
+ },
+ "dear-love": {
+  "reviewed": false,
+  "source": "musicbrainz:release/9b32bc24-d57f-41d2-a367-b537fbbb7335",
+  "mbReleaseGroup": "4cccab7c-e0da-4fe7-8acd-5ff831584a88",
+  "edition": "2021-09-10 XW",
+  "tracks": [
+   "I Feel You Near",
+   "Be Perfect",
+   "He Could Be Perfect",
+   "He’s My Guy",
+   "Let Us (Take Our Time)",
+   "Back to Me",
+   "Lover Come Back to Me",
+   "Money Can’t Buy Me, Love",
+   "Nia",
+   "Strive (vocal interlude)",
+   "Strive (to Be)",
+   "Where We Are",
+   "Judah Rise",
+   "Where Is Freedom!?"
+  ],
+  "personnel": [],
+  "draftNotes": [
+   "no players credited on this edition"
+  ]
+ },
  "dedicated-to-you": {
   "reviewed": true,
   "source": "musicbrainz:release/c5826476-6215-4a8d-aa8b-303bd4923a1d",
@@ -5498,6 +6124,281 @@
   ],
   "draftNotes": [
    "MusicBrainz draft checked against the album credits on Wikipedia; the string quartet ETHEL (all but 'They Say It's Wonderful') added from them."
+  ]
+ },
+ "dizzy-rca-victor": {
+  "reviewed": false,
+  "source": "musicbrainz:release/c707e21c-ce92-41ed-b98e-cb0d17730e2c",
+  "mbReleaseGroup": "f7e4cfff-a47e-3aae-8517-2bcb80bfafaf",
+  "edition": "1995-01-24 US",
+  "kind": "compilation",
+  "recordedBetween": [
+   1937,
+   1949
+  ],
+  "tracks": [
+   "Manteca",
+   "Anthropology (take 2)",
+   "King Porter Stomp",
+   "Yours and Mine",
+   "Blue Rhythm Fantasy",
+   "Hot Mallets",
+   "52nd Street Theme (take 1)",
+   "52nd Street Theme (take 2)",
+   "Night in Tunisia (take 1)",
+   "Night in Tunisia (incomplete take)",
+   "Ol' Man Rebop",
+   "Anthropology (take 1)",
+   "Ow!",
+   "Oop-Pop-A-Da",
+   "Two Bass Hit",
+   "Stay on It",
+   "Algo Bueno (Woody 'n You)",
+   "Cool Breeze",
+   "Cubana Be",
+   "Cubana Bop",
+   "Ool-Ya-Koo",
+   "Minor Walk",
+   "Good Bait",
+   "Guarachi Guaro",
+   "Duff Capers",
+   "Lover, Come Back to Me",
+   "I'm Be Boppin' Too (take 1)",
+   "Swedish Suite",
+   "St. Louis Blues",
+   "I Should Care",
+   "That Old Black Magic",
+   "You Go to My Head",
+   "Jump Did-Le Ba",
+   "Dizzier and Dizzier",
+   "I'm Be Boppin' Too (take 2)",
+   "Hey Pete! Let's Eat More Meat",
+   "Jumpin' With Symphony Sid",
+   "If Love Is Trouble",
+   "In the Land of Oo-Bla-Dee",
+   "Overtime (shorter take)",
+   "Overtime (longer take)",
+   "Victory Ball (shorter take)",
+   "Victory Ball (longer take)"
+  ],
+  "personnel": [
+   {
+    "artist": "dizzy-gillespie",
+    "name": "Dizzy Gillespie",
+    "instruments": [
+     "trumpet",
+     "vocals"
+    ],
+    "tracks": 43
+   },
+   {
+    "artist": null,
+    "name": "Elmon Wright",
+    "instruments": [
+     "trumpet",
+     "trombone"
+    ],
+    "tracks": 28
+   },
+   {
+    "artist": null,
+    "name": "Dave Burns",
+    "instruments": [
+     "trumpet"
+    ],
+    "tracks": 16
+   },
+   {
+    "artist": null,
+    "name": "Willie Cook",
+    "instruments": [
+     "trumpet",
+     "trombone"
+    ],
+    "tracks": 16
+   },
+   {
+    "artist": null,
+    "name": "Benny Harris",
+    "instruments": [
+     "trumpet"
+    ],
+    "tracks": 12
+   },
+   {
+    "artist": null,
+    "name": "Andy Duryea",
+    "instruments": [
+     "trombone"
+    ],
+    "tracks": 16
+   },
+   {
+    "artist": null,
+    "name": "William Shepherd",
+    "instruments": [
+     "trombone"
+    ],
+    "tracks": 12
+   },
+   {
+    "artist": null,
+    "name": "Sam Hurt",
+    "instruments": [
+     "trombone"
+    ],
+    "tracks": 12
+   },
+   {
+    "artist": null,
+    "name": "Jesse \"Rip\" Tarrant",
+    "instruments": [
+     "trombone"
+    ],
+    "tracks": 12
+   },
+   {
+    "artist": null,
+    "name": "John Brown",
+    "instruments": [
+     "alto saxophone"
+    ],
+    "tracks": 28
+   },
+   {
+    "artist": null,
+    "name": "Ernie Henry",
+    "instruments": [
+     "alto saxophone"
+    ],
+    "tracks": 16
+   },
+   {
+    "artist": null,
+    "name": "Howard Johnson",
+    "instruments": [
+     "alto saxophone"
+    ],
+    "tracks": 15
+   },
+   {
+    "artist": null,
+    "name": "Joe Gayles",
+    "instruments": [
+     "tenor saxophone"
+    ],
+    "tracks": 28
+   },
+   {
+    "artist": null,
+    "name": "Yusef Lateef",
+    "instruments": [
+     "tenor saxophone"
+    ],
+    "tracks": 12
+   },
+   {
+    "artist": null,
+    "name": "Cecil Payne",
+    "instruments": [
+     "baritone saxophone"
+    ],
+    "tracks": 16
+   },
+   {
+    "artist": null,
+    "name": "Al Gibson",
+    "instruments": [
+     "baritone saxophone"
+    ],
+    "tracks": 12
+   },
+   {
+    "artist": null,
+    "name": "James Forman Jr.",
+    "instruments": [
+     "piano",
+     "instruments"
+    ],
+    "tracks": 16
+   },
+   {
+    "artist": "john-lewis",
+    "name": "John Lewis",
+    "instruments": [
+     "piano"
+    ],
+    "tracks": 12
+   },
+   {
+    "artist": null,
+    "name": "Al McKibbon",
+    "instruments": [
+     "bass"
+    ],
+    "tracks": 25
+   },
+   {
+    "artist": null,
+    "name": "Ray Brown",
+    "instruments": [
+     "bass"
+    ],
+    "tracks": 11
+   },
+   {
+    "artist": null,
+    "name": "Teddy Stewart",
+    "instruments": [
+     "drums"
+    ],
+    "tracks": 16
+   },
+   {
+    "artist": null,
+    "name": "Vince Guerra",
+    "instruments": [
+     "congas"
+    ],
+    "tracks": 12
+   }
+  ],
+  "crew": [
+   {
+    "artist": null,
+    "name": "Sue Reilly",
+    "role": "design"
+   },
+   {
+    "artist": null,
+    "name": "Brian Bacchus",
+    "role": "producer"
+   },
+   {
+    "artist": null,
+    "name": "Orrin Keepnews",
+    "role": "producer"
+   },
+   {
+    "artist": null,
+    "name": "Walter “Gil” Fuller",
+    "role": "arranger"
+   },
+   {
+    "artist": null,
+    "name": "Pete Rugolo",
+    "role": "arranger"
+   },
+   {
+    "artist": null,
+    "name": "Billy Bauer",
+    "role": "arranger"
+   },
+   {
+    "artist": null,
+    "name": "Lennie Tristano",
+    "role": "arranger"
+   }
   ]
  },
  "djangology": {
@@ -5977,6 +6878,82 @@
    }
   ]
  },
+ "essential-artie-shaw": {
+  "reviewed": false,
+  "source": "musicbrainz:release/084470af-fb68-4021-916f-d4ea8e3dc5c9",
+  "mbReleaseGroup": "0562b5cc-d89c-33b4-95a8-77db28711530",
+  "edition": "2005-08-16 US",
+  "kind": "compilation",
+  "recordedBetween": [
+   1938,
+   1941
+  ],
+  "tracks": [
+   "Begin the Beguine",
+   "Special Delivery Stomp",
+   "Non Stop Flight",
+   "Deep Purple",
+   "Oh! Lady Be Good",
+   "Scuttlebutt",
+   "Shoot the Likker to Me, John Boy",
+   "St. James Infirmary Blues, Parts I & II",
+   "Georgia on My Mind",
+   "April in Paris",
+   "Any Old Time",
+   "All the Things You Are",
+   "Softly, as in a Morning Sunrise",
+   "Back Bay Shuffle",
+   "(When Your Heart's on Fire) Smoke Gets in Your Eyes",
+   "Tabu",
+   "Blues in the Night",
+   "Concerto for Clarinet, Parts I & II",
+   "Frenesi",
+   "Summit Ridge Drive",
+   "Take Your Shoes Off, Baby",
+   "It Had to Be You",
+   "Don't Take Your Love From Me",
+   "Indian Love Call",
+   "Dancing in the Dark",
+   "Deep in a Dream",
+   "I Can't Believe That You're in Love With Me",
+   "Star Dust",
+   "A Room With a View",
+   "Temptation",
+   "Streamline",
+   "Traffic Jam",
+   "What Is This Thing Called Love?",
+   "Yesterdays",
+   "You're a Lucky Guy",
+   "Alone Together",
+   "These Foolish Things (Remind Me of You)",
+   "Nightmare"
+  ],
+  "personnel": [
+   {
+    "artist": "artie-shaw",
+    "name": "Artie Shaw",
+    "instruments": [
+     "clarinet"
+    ],
+    "tracks": 8
+   }
+  ],
+  "crew": [
+   {
+    "artist": null,
+    "name": "Jerry Gray",
+    "role": "arranger"
+   },
+   {
+    "artist": "artie-shaw",
+    "name": "Artie Shaw",
+    "role": "conductor"
+   }
+  ],
+  "draftNotes": [
+   "only 8 of 38 tracks have players credited"
+  ]
+ },
  "essential-bessie-smith": {
   "reviewed": true,
   "source": "musicbrainz:release/ac1a49f2-caeb-4892-96de-bb67dc67e37c",
@@ -6093,6 +7070,572 @@
   ],
   "draftNotes": [
    "MusicBrainz credits only 26 of the 36 tracks, so her accompanists are listed without track counts."
+  ]
+ },
+ "fabulous-fats-navarro-1": {
+  "reviewed": false,
+  "source": "musicbrainz:release/9676f01a-6c6c-40a8-9994-85ec32bd9886",
+  "mbReleaseGroup": "0d37e500-22b8-4190-9a13-dd42e8c572e7",
+  "edition": "1957 None",
+  "kind": "compilation",
+  "recordedBetween": [
+   1947,
+   1949
+  ],
+  "tracks": [
+   "Our Delight (alternate master)",
+   "Our Delight",
+   "The Squirrel (alternate master)",
+   "The Squirrel",
+   "The Chase (alternate master)",
+   "The Chase",
+   "Wail (alternate master)",
+   "Bouncing With Bud (alternate master)",
+   "Double Talk",
+   "Dameronia (alternate master)",
+   "Dameronia"
+  ],
+  "personnel": [
+   {
+    "artist": "fats-navarro",
+    "name": "Fats Navarro",
+    "instruments": [
+     "trumpet"
+    ],
+    "tracks": 11
+   },
+   {
+    "artist": null,
+    "name": "Ernie Henry",
+    "instruments": [
+     "alto saxophone"
+    ],
+    "tracks": 11
+   },
+   {
+    "artist": null,
+    "name": "Charlie Rouse",
+    "instruments": [
+     "tenor saxophone"
+    ],
+    "tracks": 8
+   },
+   {
+    "artist": "sonny-rollins",
+    "name": "Sonny Rollins",
+    "instruments": [
+     "tenor saxophone"
+    ],
+    "tracks": 2
+   },
+   {
+    "artist": null,
+    "name": "Tadd Dameron",
+    "instruments": [
+     "piano"
+    ],
+    "tracks": 8
+   },
+   {
+    "artist": "bud-powell",
+    "name": "Bud Powell",
+    "instruments": [
+     "piano"
+    ],
+    "tracks": 2
+   },
+   {
+    "artist": null,
+    "name": "Nelson Boyd",
+    "instruments": [
+     "bass"
+    ],
+    "tracks": 8
+   },
+   {
+    "artist": null,
+    "name": "Tommy Potter",
+    "instruments": [
+     "bass"
+    ],
+    "tracks": 2
+   },
+   {
+    "artist": null,
+    "name": "Shadow Wilson",
+    "instruments": [
+     "drums"
+    ],
+    "tracks": 8
+   },
+   {
+    "artist": "roy-haynes",
+    "name": "Roy Haynes",
+    "instruments": [
+     "drums"
+    ],
+    "tracks": 2
+   }
+  ]
+ },
+ "fearless-movement": {
+  "reviewed": false,
+  "source": "musicbrainz:release/01f8b398-c380-4e63-a5ae-df0678bdbcc3",
+  "mbReleaseGroup": "50c425d0-6ed6-47d9-af12-bfa2b80cb628",
+  "edition": "2024-05-03 XW",
+  "tracks": [
+   "Lesanu",
+   "Asha the First",
+   "Computer Love",
+   "The Visionary",
+   "Get Lit",
+   "Dream State",
+   "Together",
+   "The Garden Path",
+   "Road to Self (KO)",
+   "Interstellar Peace (The Last Stance)",
+   "Lines in the Sand",
+   "Prologue"
+  ],
+  "personnel": [
+   {
+    "artist": "kamasi-washington",
+    "name": "Kamasi Washington",
+    "instruments": [
+     "tenor saxophone",
+     "alto saxophone"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Dontae Winslow",
+    "instruments": [
+     "trumpet"
+    ],
+    "except": [
+     "The Visionary",
+     "Dream State"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Ryan Porter",
+    "instruments": [
+     "trombone"
+    ],
+    "except": [
+     "The Visionary",
+     "Dream State"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Terrace Martin",
+    "instruments": [
+     "alto saxophone"
+    ],
+    "only": [
+     "The Visionary"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Rickey Washington",
+    "instruments": [
+     "flute"
+    ],
+    "only": [
+     "Get Lit",
+     "The Garden Path",
+     "Lines in the Sand"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "André 3000",
+    "instruments": [
+     "flute"
+    ],
+    "only": [
+     "Dream State"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Woody Aplanalp",
+    "instruments": [
+     "guitar"
+    ],
+    "only": [
+     "Lesanu",
+     "Computer Love",
+     "Road to Self (KO)"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Joel Whitley",
+    "instruments": [
+     "guitar"
+    ],
+    "only": [
+     "Get Lit"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Cameron Graves",
+    "instruments": [
+     "piano"
+    ],
+    "except": [
+     "Get Lit",
+     "Dream State"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Brandon Coleman",
+    "instruments": [
+     "keyboards",
+     "organ",
+     "vocoder",
+     "keyboard bass"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Mono/Poly",
+    "instruments": [
+     "synthesizer"
+    ],
+    "only": [
+     "Dream State"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Miles Mosley",
+    "instruments": [
+     "bass"
+    ],
+    "only": [
+     "Lesanu",
+     "Computer Love",
+     "The Garden Path",
+     "Road to Self (KO)",
+     "Lines in the Sand",
+     "Prologue"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Ben Williams",
+    "instruments": [
+     "bass"
+    ],
+    "only": [
+     "Interstellar Peace (The Last Stance)"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Thundercat",
+    "instruments": [
+     "electric bass",
+     "turntable",
+     "talkbox"
+    ],
+    "only": [
+     "Asha the First",
+     "Computer Love",
+     "Get Lit"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Tony Austin",
+    "instruments": [
+     "drums"
+    ],
+    "except": [
+     "The Visionary",
+     "Get Lit"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Ronald Bruner Jr.",
+    "instruments": [
+     "drums"
+    ],
+    "except": [
+     "Computer Love",
+     "The Visionary",
+     "Dream State"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Robert Miller",
+    "instruments": [
+     "drums"
+    ],
+    "only": [
+     "Computer Love"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Kahlil Cummings",
+    "instruments": [
+     "percussion"
+    ],
+    "except": [
+     "The Visionary",
+     "Get Lit",
+     "Dream State"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Allakoi Peete",
+    "instruments": [
+     "percussion"
+    ],
+    "except": [
+     "The Visionary",
+     "Get Lit",
+     "Dream State"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Carlos Niño",
+    "instruments": [
+     "percussion"
+    ],
+    "only": [
+     "Lesanu"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Patrice Quinn",
+    "instruments": [
+     "vocals"
+    ],
+    "only": [
+     "Lesanu",
+     "Asha the First",
+     "Computer Love",
+     "The Garden Path",
+     "Lines in the Sand"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Dwight Trible",
+    "instruments": [
+     "vocals"
+    ],
+    "only": [
+     "The Garden Path",
+     "Lines in the Sand"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Banchamlak Abegaze",
+    "instruments": [
+     "vocals"
+    ],
+    "only": [
+     "Lesanu"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Henok Elias",
+    "instruments": [
+     "vocals"
+    ],
+    "only": [
+     "Lesanu"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Taj Austin",
+    "instruments": [
+     "vocals"
+    ],
+    "only": [
+     "Asha the First"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Ras Austin",
+    "instruments": [
+     "vocals"
+    ],
+    "only": [
+     "Asha the First"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "George Clinton",
+    "instruments": [
+     "vocals"
+    ],
+    "only": [
+     "Get Lit"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "D Smoke",
+    "instruments": [
+     "vocals"
+    ],
+    "only": [
+     "Get Lit"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "BJ the Chicago Kid",
+    "instruments": [
+     "vocals"
+    ],
+    "only": [
+     "Together"
+    ]
+   }
+  ],
+  "crew": [
+   {
+    "artist": "kamasi-washington",
+    "name": "Kamasi Washington",
+    "role": "arranger"
+   },
+   {
+    "artist": "kamasi-washington",
+    "name": "Kamasi Washington",
+    "role": "producer"
+   },
+   {
+    "artist": null,
+    "name": "Brandon Coleman",
+    "role": "arranger"
+   },
+   {
+    "artist": null,
+    "name": "Cameron Graves",
+    "role": "arranger"
+   },
+   {
+    "artist": null,
+    "name": "Terrace Martin",
+    "role": "arranger"
+   },
+   {
+    "artist": null,
+    "name": "Brandon Coleman",
+    "role": "producer"
+   },
+   {
+    "artist": null,
+    "name": "Cameron Graves",
+    "role": "producer"
+   },
+   {
+    "artist": null,
+    "name": "Terrace Martin",
+    "role": "producer"
+   },
+   {
+    "artist": null,
+    "name": "Ronald Bruner Jr.",
+    "role": "arranger"
+   },
+   {
+    "artist": null,
+    "name": "George Clinton",
+    "role": "arranger"
+   },
+   {
+    "artist": null,
+    "name": "D Smoke",
+    "role": "arranger"
+   },
+   {
+    "artist": null,
+    "name": "Ronald Bruner Jr.",
+    "role": "producer"
+   },
+   {
+    "artist": null,
+    "name": "George Clinton",
+    "role": "producer"
+   },
+   {
+    "artist": null,
+    "name": "D Smoke",
+    "role": "producer"
+   },
+   {
+    "artist": null,
+    "name": "Tony Austin",
+    "role": "arranger"
+   },
+   {
+    "artist": null,
+    "name": "André Benjamin",
+    "role": "arranger"
+   },
+   {
+    "artist": null,
+    "name": "Tony Austin",
+    "role": "producer"
+   },
+   {
+    "artist": null,
+    "name": "André Benjamin",
+    "role": "producer"
+   },
+   {
+    "artist": null,
+    "name": "BJ the Chicago Kid",
+    "role": "arranger"
+   },
+   {
+    "artist": null,
+    "name": "Ryan Porter",
+    "role": "arranger"
+   },
+   {
+    "artist": null,
+    "name": "BJ the Chicago Kid",
+    "role": "producer"
+   },
+   {
+    "artist": null,
+    "name": "Ryan Porter",
+    "role": "producer"
+   },
+   {
+    "artist": null,
+    "name": "Miles Mosley",
+    "role": "arranger"
+   },
+   {
+    "artist": null,
+    "name": "Miles Mosley",
+    "role": "producer"
+   }
   ]
  },
  "fire-music": {
@@ -6520,6 +8063,87 @@
     "artist": null,
     "name": "Joel Dorn",
     "role": "producer"
+   }
+  ]
+ },
+ "fontessa": {
+  "reviewed": false,
+  "source": "musicbrainz:release/55023eda-4461-4dcd-9949-714f85b8adad",
+  "mbReleaseGroup": "59404ca7-e67f-3adc-8123-fc03b9777f15",
+  "edition": "1956 US",
+  "recorded": [
+   {
+    "date": "1956-01-22"
+   },
+   {
+    "date": "1956-02-14",
+    "place": "Van Gelder Studio"
+   }
+  ],
+  "tracks": [
+   "Versailles (Porte de Versailles)",
+   "Angel Eyes",
+   "Fontessa, Parts 1 & 2",
+   "Over the Rainbow",
+   "Bluesology",
+   "Willow Weep for Me",
+   "Woody 'n' You"
+  ],
+  "personnel": [
+   {
+    "artist": "john-lewis",
+    "name": "John Lewis",
+    "instruments": [
+     "piano"
+    ]
+   },
+   {
+    "artist": "milt-jackson",
+    "name": "Milt Jackson",
+    "instruments": [
+     "vibraphone"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Percy Heath",
+    "instruments": [
+     "bass"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Connie Kay",
+    "instruments": [
+     "drums"
+    ]
+   }
+  ],
+  "crew": [
+   {
+    "artist": null,
+    "name": "Robert Guidi",
+    "role": "design"
+   },
+   {
+    "artist": null,
+    "name": "William Claxton",
+    "role": "photography"
+   },
+   {
+    "artist": null,
+    "name": "Nesuhi Ertegun",
+    "role": "producer"
+   },
+   {
+    "artist": null,
+    "name": "John Kraus",
+    "role": "engineer"
+   },
+   {
+    "artist": null,
+    "name": "Rudy van Gelder",
+    "role": "engineer"
    }
   ]
  },
@@ -7162,6 +8786,30 @@
   ],
   "draftNotes": [
    "Bass: Sebastião Neto. Reissues (and MusicBrainz) credit Tommy Williams in error, per Wikipedia."
+  ]
+ },
+ "ghost-song": {
+  "reviewed": false,
+  "source": "musicbrainz:release/29fd4e9d-1ea7-4227-a91e-e0612e9ac89f",
+  "mbReleaseGroup": "fae3e024-cef1-4ba1-9654-02033dc684be",
+  "edition": "2022-03-04 XW",
+  "tracks": [
+   "Wuthering Heights",
+   "Optimistic Voices / No Love Dying",
+   "Ghost Song",
+   "Obligation",
+   "Until",
+   "I Lost My Mind",
+   "Moon Song",
+   "Trail Mix",
+   "The World Is Mean",
+   "Dead Poplar",
+   "Thunderclouds",
+   "Unquiet Grave"
+  ],
+  "personnel": [],
+  "draftNotes": [
+   "no players credited on this edition"
   ]
  },
  "giant-steps": {
@@ -7965,6 +9613,45 @@
    "\"Rumba Mamá\" was recorded live at Montreux (8 Jul 1976); the rest at Devonshire, Dec 1976–Jan 1977."
   ]
  },
+ "henderson-armstrong-1924": {
+  "reviewed": false,
+  "source": "musicbrainz:release/f8bbefeb-b901-48f3-9ffb-5beae134cb47",
+  "mbReleaseGroup": "a5b05213-c8d0-46d1-a5e0-d536c70e902b",
+  "edition": "1991 NL",
+  "kind": "compilation",
+  "tracks": [
+   "Money Blues",
+   "Why Couldn't It Be Poor Little Me?",
+   "I'll See You in My Dreams",
+   "Tell Me Dreamy Eyes",
+   "My Rose Marie",
+   "Poplar Street Blues",
+   "Shanghai Shuffle",
+   "Mandy, Make Up Your Mind",
+   "Go 'Long Mule",
+   "Memphis Bound",
+   "How Come You Do Me Like You Do",
+   "Alabamy Bound",
+   "Copenhagen",
+   "The Meanest Kind of Blues",
+   "I Miss My Swiss",
+   "Alone at Last",
+   "Shanghai Shuffle",
+   "When You Do What You Do",
+   "Words",
+   "Carolina Stomp",
+   "Bye and Bye",
+   "Naughty Man",
+   "Play Me Slow",
+   "T.N.T.",
+   "One of These Days",
+   "Sugar Foot Stomp"
+  ],
+  "personnel": [],
+  "draftNotes": [
+   "no players credited on this edition"
+  ]
+ },
  "historicity": {
   "reviewed": true,
   "source": "musicbrainz:release/4e169c6c-08d9-4112-abf2-55a07a77b5ff",
@@ -8350,6 +10037,365 @@
    {
     "artist": null,
     "name": "Alfred Lion",
+    "role": "producer"
+   }
+  ]
+ },
+ "if-you-got-to-ask": {
+  "reviewed": false,
+  "source": "musicbrainz:release/0edab671-fa6b-461c-b13d-4493cf3879f2",
+  "mbReleaseGroup": "2f846417-a47b-38f3-b1c4-d768a5f6c2ba",
+  "edition": "2006 US",
+  "kind": "compilation",
+  "recordedBetween": [
+   1926,
+   1943
+  ],
+  "tracks": [
+   "Honeysuckle Rose",
+   "How Can You Face Me",
+   "The Panic Is On",
+   "Sugar Rose",
+   "I'm Crazy 'Bout My Baby",
+   "Lost Love",
+   "Our Love Was Meant to Be",
+   "The Joint Is Jumpin'",
+   "A Hopeless Love Affair",
+   "Hold My Hand",
+   "Patty Cake, Patty Cake",
+   "Honey Hush",
+   "Anita",
+   "Squeeze Me",
+   "Old Grand Dad",
+   "All That Meat and No Potatoes",
+   "Ain't Nothing to It",
+   "Bessie, Bessie, Bessie",
+   "Cash for Your Trash",
+   "You Must Be Losing Your Mind",
+   "Up Jumped You With Love",
+   "Ain't Misbehavin'",
+   "St. Louis Blues",
+   "'Sippi",
+   "Thou Swell",
+   "Numb Fumblin'",
+   "Ain't Misbehavin'",
+   "Love Me or Leave Me",
+   "Smashin' Thirds",
+   "My Fate Is in Your Hands",
+   "African Ripples",
+   "Viper's Drag",
+   "Keepin' Out of Mischief Now",
+   "Stardust",
+   "Carolina Shout",
+   "Serenade for a Wealthy Widow",
+   "Rosetta",
+   "Functionizin'",
+   "Loungin' at the Waldorf",
+   "Blue Turnin' Grey Over You",
+   "In the Gloamin'",
+   "Mamacita",
+   "The Jitterbug Waltz",
+   "Honeysuckle Rose",
+   "I'll Be Glad When You're Dead, You Rascal You",
+   "You're Not the Only Oyster in the Stew",
+   "What's the Reason (I'm Not Pleasin' You)",
+   "Lulu's Back in Town",
+   "I'm Going to Sit Myself Right Down and Write Myself a Letter",
+   "Dinah",
+   "There'll Be Some Changes Made",
+   "Somebody Stole My Gal",
+   "Christopher Columbus",
+   "It's a Sin to Tell a Lie",
+   "She's Tall, She's Tan, She's Terrific",
+   "The Sheik of Araby",
+   "Two Sleepy People",
+   "A Good Man Is Hard to Find",
+   "Hold Tight (Want Some Seafood Mama)",
+   "'Tain't What You Do (It's the Way That You Do It)",
+   "Your Feet's Too Big",
+   "Darktown Strutters Ball",
+   "I Can't Give You Anything but Love",
+   "You Run Your Mouth, I'll Run My Business",
+   "Let's Get Away From It All",
+   "'Tain't Nobody's Bizness If I Do"
+  ],
+  "personnel": [
+   {
+    "artist": "fats-waller",
+    "name": "Fats Waller",
+    "instruments": [
+     "piano",
+     "vocals",
+     "celesta",
+     "organ"
+    ],
+    "tracks": 65
+   },
+   {
+    "artist": null,
+    "name": "Al Casey",
+    "instruments": [
+     "guitar",
+     "trumpet"
+    ],
+    "tracks": 35
+   },
+   {
+    "artist": null,
+    "name": "Herman Autrey",
+    "instruments": [
+     "trumpet"
+    ],
+    "tracks": 35
+   },
+   {
+    "artist": null,
+    "name": "John Hamilton",
+    "instruments": [
+     "trumpet"
+    ],
+    "tracks": 18
+   },
+   {
+    "artist": null,
+    "name": "Gene Sedric",
+    "instruments": [
+     "clarinet",
+     "reeds",
+     "tenor saxophone",
+     "saxophone"
+    ],
+    "tracks": 37
+   },
+   {
+    "artist": null,
+    "name": "Slick Jones",
+    "instruments": [
+     "drums",
+     "vibraphone"
+    ],
+    "tracks": 28
+   },
+   {
+    "artist": null,
+    "name": "Cedric Wallace",
+    "instruments": [
+     "bass"
+    ],
+    "tracks": 26
+   },
+   {
+    "artist": null,
+    "name": "Charles Turner",
+    "instruments": [
+     "bass"
+    ],
+    "tracks": 19
+   }
+  ],
+  "draftNotes": [
+   "only 65 of 66 tracks have players credited"
+  ]
+ },
+ "in-the-key-of-the-universe": {
+  "reviewed": false,
+  "source": "musicbrainz:release/15eb9a9a-85f9-44d2-b9e7-4b8198b077bb",
+  "mbReleaseGroup": "32089a73-3737-4466-8331-915f038be34c",
+  "edition": "2019-03-01 US",
+  "recorded": [
+   {
+    "place": "Tempest Recording"
+   }
+  ],
+  "tracks": [
+   "Inner Being",
+   "Vibrations in Blue",
+   "Awake and Blissed",
+   "It Swung Wide Open",
+   "In the Key of the Universe",
+   "The Creator Has a Master Plan",
+   "And so It Is",
+   "Soul Perspective",
+   "A Path Through the Noise",
+   "Easier to Be"
+  ],
+  "personnel": [
+   {
+    "artist": "joey-defrancesco",
+    "name": "Joey DeFrancesco",
+    "instruments": [
+     "organ",
+     "keyboards",
+     "trumpet"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Troy Roberts",
+    "instruments": [
+     "soprano saxophone",
+     "alto saxophone",
+     "tenor saxophone",
+     "bass"
+    ]
+   },
+   {
+    "artist": "pharoah-sanders",
+    "name": "Pharoah Sanders",
+    "instruments": [
+     "tenor saxophone"
+    ],
+    "only": [
+     "In the Key of the Universe",
+     "The Creator Has a Master Plan",
+     "And so It Is"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Billy Hart",
+    "instruments": [
+     "drums"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Sammy Figueroa",
+    "instruments": [
+     "percussion"
+    ],
+    "except": [
+     "Awake and Blissed",
+     "It Swung Wide Open",
+     "Soul Perspective"
+    ]
+   }
+  ],
+  "crew": [
+   {
+    "artist": null,
+    "name": "Gloria DeFrancesco",
+    "role": "producer"
+   },
+   {
+    "artist": "joey-defrancesco",
+    "name": "Joey DeFrancesco",
+    "role": "producer"
+   },
+   {
+    "artist": null,
+    "name": "Gretchen Valade",
+    "role": "producer"
+   },
+   {
+    "artist": null,
+    "name": "Clarke Rigsby",
+    "role": "engineer"
+   }
+  ]
+ },
+ "in-these-times": {
+  "reviewed": false,
+  "source": "musicbrainz:release/6e4b2397-c001-4d88-82cc-0af0ea432221",
+  "mbReleaseGroup": "3131f7d1-1086-4241-b1d9-97256531d0f5",
+  "edition": "2022-09-23 XW",
+  "tracks": [
+   "In These Times",
+   "The Fours",
+   "High Fives",
+   "Dream Another",
+   "Lullaby",
+   "This Place That Place",
+   "The Calling",
+   "Seventh String",
+   "So Ubuji",
+   "The Knew Untitled",
+   "The Title"
+  ],
+  "personnel": [
+   {
+    "artist": "makaya-mccraven",
+    "name": "Makaya McCraven",
+    "instruments": [
+     "drums",
+     "percussion",
+     "handclaps",
+     "mbira",
+     "organ",
+     "sampler",
+     "sitar",
+     "synthesizer",
+     "tambourine",
+     "vibraphone",
+     "electric piano"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Junius Paul",
+    "instruments": [
+     "bass",
+     "percussion"
+    ]
+   }
+  ],
+  "crew": [
+   {
+    "artist": "makaya-mccraven",
+    "name": "Makaya McCraven",
+    "role": "producer"
+   }
+  ]
+ },
+ "ive-got-a-woman": {
+  "reviewed": false,
+  "source": "musicbrainz:release/1ce050e4-00c3-476f-803c-6c6609bdef8c",
+  "mbReleaseGroup": "21436862-f43e-48c6-88e7-607581472154",
+  "edition": "1962 US",
+  "tracks": [
+   "I've Got a Woman",
+   "On the Street Where You Live",
+   "Satin Doll",
+   "'Round Midnight",
+   "All About My Girl",
+   "M.G. Blues",
+   "That's the Way I Feel",
+   "After Hours",
+   "Flying Home",
+   "Sermon"
+  ],
+  "personnel": [
+   {
+    "artist": "jimmy-mcgriff",
+    "name": "Jimmy McGriff",
+    "instruments": [
+     "organ"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Morris Dow",
+    "instruments": [
+     "guitar"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Jackie Mills",
+    "instruments": [
+     "drums"
+    ]
+   }
+  ],
+  "crew": [
+   {
+    "artist": null,
+    "name": "Irving Greenbaum",
+    "role": "engineer"
+   },
+   {
+    "artist": null,
+    "name": "Juggy Murray Jones",
     "role": "producer"
    }
   ]
@@ -8906,6 +10952,112 @@
    "MusicBrainz credited nobody and there's no Wikipedia page; the quartet from Mack Avenue's and Tower's listings. Regina Carter (violin) guests on \"Ochún\" and \"100 Años de Bebo\": add her once the track titles are confirmed."
   ]
  },
+ "jazz-samba": {
+  "reviewed": false,
+  "source": "musicbrainz:release/436fd4ba-81ad-422d-a266-8cda13ad799e",
+  "mbReleaseGroup": "ba062f3e-1d0c-37f2-b9f3-5a8e20c5ad45",
+  "edition": "1962-04-20 US",
+  "recorded": [
+   {
+    "date": "1962-02-13",
+    "place": "All Souls Church, Unitarian"
+   }
+  ],
+  "tracks": [
+   "Desafinado",
+   "Samba Dees Days",
+   "O pato",
+   "Samba triste",
+   "Samba de uma nota só",
+   "É luxo só",
+   "Baia"
+  ],
+  "personnel": [
+   {
+    "artist": "stan-getz",
+    "name": "Stan Getz",
+    "instruments": [
+     "tenor saxophone"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Charlie Byrd",
+    "instruments": [
+     "guitar"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Gene “Joe” Byrd",
+    "instruments": [
+     "bass",
+     "guitar",
+     "electric bass"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Keter Betts",
+    "instruments": [
+     "bass"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Buddy Deppenschmidt",
+    "instruments": [
+     "drums",
+     "percussion"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Bill Reichenbach",
+    "instruments": [
+     "percussion",
+     "drums"
+    ]
+   }
+  ],
+  "crew": [
+   {
+    "artist": null,
+    "name": "Norman Granz",
+    "role": "producer"
+   },
+   {
+    "artist": null,
+    "name": "Creed Taylor",
+    "role": "producer"
+   },
+   {
+    "artist": null,
+    "name": "Edward Green",
+    "role": "engineer"
+   },
+   {
+    "artist": null,
+    "name": "Billy Bianco",
+    "role": "arranger"
+   },
+   {
+    "artist": null,
+    "name": "Baden Powell",
+    "role": "arranger"
+   },
+   {
+    "artist": "antonio-carlos-jobim",
+    "name": "Antônio Carlos Jobim",
+    "role": "arranger"
+   },
+   {
+    "artist": null,
+    "name": "Newton Mendonça",
+    "role": "arranger"
+   }
+  ]
+ },
  "john-coltrane-and-johnny-hartman": {
   "reviewed": true,
   "source": "musicbrainz:release/bb094e8d-3bd2-3828-8ae1-9a232ca8916c",
@@ -9296,6 +11448,143 @@
   ],
   "draftNotes": [
    "MusicBrainz's per-track credits match Wikipedia's track numbers; dates and studios from Wikipedia ('Children of the Ghetto' at Power Plant)."
+  ]
+ },
+ "kansas-city-sessions": {
+  "reviewed": false,
+  "source": "musicbrainz:release/45adcd5a-50eb-4711-b29c-e350fdad7fa7",
+  "mbReleaseGroup": "9cd0a88f-80d3-3e7c-b91d-55d7547bfe6e",
+  "edition": "1997 US",
+  "kind": "compilation",
+  "recordedBetween": [
+   1938,
+   1944
+  ],
+  "tracks": [
+   "Way Down Yonder in New Orleans #2",
+   "Way Down Yonder in New Orleans",
+   "Countless Blues",
+   "Countless Blues #2",
+   "Them There Eyes #2",
+   "Them There Eyes",
+   "I Want a Little Girl",
+   "I Want a Little Girl #2",
+   "Pagin' the Devil",
+   "Pagin' the Devil #2",
+   "Three Little Words #2",
+   "Three Little Words",
+   "Jo Jo",
+   "I Got Rhythm #3",
+   "I Got Rhythm #2",
+   "I Got Rhythm",
+   "Four O'Clock Drag",
+   "Four O'Clock Drag #3",
+   "Laughing at Life",
+   "Good Mornin' Blues",
+   "I Know That You Know",
+   "Love Me or Leave Me"
+  ],
+  "personnel": [
+   {
+    "artist": "lester-young",
+    "name": "Lester Young",
+    "instruments": [
+     "clarinet",
+     "tenor saxophone"
+    ],
+    "tracks": 18
+   },
+   {
+    "artist": "buck-clayton",
+    "name": "Buck Clayton",
+    "instruments": [
+     "trumpet"
+    ],
+    "tracks": 14
+   },
+   {
+    "artist": null,
+    "name": "Bill Coleman",
+    "instruments": [
+     "trumpet"
+    ],
+    "tracks": 8
+   },
+   {
+    "artist": null,
+    "name": "Eddie Durham",
+    "instruments": [
+     "guitar",
+     "trombone"
+    ],
+    "tracks": 14
+   },
+   {
+    "artist": null,
+    "name": "Dicky Wells",
+    "instruments": [
+     "trombone"
+    ],
+    "tracks": 8
+   },
+   {
+    "artist": "freddie-green",
+    "name": "Freddie Green",
+    "instruments": [
+     "guitar",
+     "vocals"
+    ],
+    "tracks": 14
+   },
+   {
+    "artist": null,
+    "name": "Joe Bushkin",
+    "instruments": [
+     "piano"
+    ],
+    "tracks": 8
+   },
+   {
+    "artist": "walter-page",
+    "name": "Walter Page",
+    "instruments": [
+     "bass"
+    ],
+    "tracks": 14
+   },
+   {
+    "artist": null,
+    "name": "John Simmons",
+    "instruments": [
+     "bass"
+    ],
+    "tracks": 8
+   },
+   {
+    "artist": null,
+    "name": "Jo Jones",
+    "instruments": [
+     "drums"
+    ],
+    "tracks": 22
+   }
+  ],
+  "crew": [
+   {
+    "artist": null,
+    "name": "Orrin Keepnews",
+    "role": "producer"
+   },
+   {
+    "artist": null,
+    "name": "Milt Gabler",
+    "role": "producer"
+   },
+   {
+    "artist": null,
+    "name": "John Hammond",
+    "role": "producer"
+   }
   ]
  },
  "karma": {
@@ -9792,6 +12081,37 @@
    "MusicBrainz matches Wikipedia."
   ]
  },
+ "kid-ory-1944-45": {
+  "reviewed": false,
+  "source": "musicbrainz:release/2bab84f0-edaa-424b-9e21-46458db4c013",
+  "mbReleaseGroup": "0a0a62dc-ff65-4023-ac7c-9b225b4960cf",
+  "edition": "FR",
+  "kind": "compilation",
+  "tracks": [
+   "Perdido Street Blues",
+   "Gathemouth",
+   "Too Tight",
+   "Flat Foot",
+   "Dead Man Blues",
+   "New Wang Wang Blues",
+   "Every Tub",
+   "Get 'em Again Blues",
+   "Mahogany Hall Stomp",
+   "South",
+   "Free as a Bird",
+   "Do What Ory Say",
+   "Dippermouth Blues",
+   "High Society",
+   "Maryland, My Maryland",
+   "Eh! La Bas",
+   "My Gal Sal",
+   "Down Home Rag"
+  ],
+  "personnel": [],
+  "draftNotes": [
+   "no players credited on this edition"
+  ]
+ },
  "kind-of-blue": {
   "reviewed": true,
   "source": "musicbrainz:release/49234de2-790c-46e5-b780-3cd6be79a2db",
@@ -9888,6 +12208,270 @@
   ],
   "draftNotes": [
    "The full run had picked a 3-track edition; rebuilt for the five tracks, with Wynton Kelly on \"Freddie Freeloader\"."
+  ]
+ },
+ "king-of-the-country-blues": {
+  "reviewed": false,
+  "source": "musicbrainz:release/9d1982f6-5d1b-4e3b-bf6a-92617e35b01a",
+  "mbReleaseGroup": "b84cc337-db05-3ac7-b706-09c40fdbaa20",
+  "edition": "1990-10-08 US",
+  "kind": "compilation",
+  "recordedBetween": [
+   1926,
+   1929
+  ],
+  "tracks": [
+   "That Crawlin' Baby Blues",
+   "Bad Luck Blues",
+   "Matchbox Blues",
+   "Hot Dogs",
+   "One Dime Blues",
+   "Shuckin' Sugar",
+   "Rabbit Foot Blues",
+   "Corrina Blues",
+   "See That My Grave Is Kept Clean",
+   "Easy Rider Blues",
+   "Broke and Hungry",
+   "Black Horse Blues",
+   "Lonesome House Blues",
+   "Oil Well Blues",
+   "He Arose From the Dead",
+   "Beggin' Back",
+   "Prison Cell Blues",
+   "Rambler Blues",
+   "Gone Dead on You Blues",
+   "Wartime Blues",
+   "Booger Rooger Blues",
+   "Right of Way Blues",
+   "Big Night Blues"
+  ],
+  "personnel": [
+   {
+    "artist": "blind-lemon-jefferson",
+    "name": "Blind Lemon Jefferson",
+    "instruments": [
+     "guitar",
+     "vocals"
+    ],
+    "tracks": 23
+   }
+  ]
+ },
+ "lee-konitz-with-warne-marsh": {
+  "reviewed": false,
+  "source": "musicbrainz:release/631a7f25-31bd-4dbd-9428-0ffef8258960",
+  "mbReleaseGroup": "bdd1200f-ab65-4a93-ad79-725409a9a1bc",
+  "edition": "1955 GB",
+  "recorded": [
+   {
+    "date": "1955-06-14"
+   },
+   {
+    "date": "1955-06-15"
+   }
+  ],
+  "tracks": [
+   "Topsy",
+   "There Will Never Be Another You",
+   "I Can't Get Started",
+   "Donna Lee",
+   "Two Not One",
+   "Don't Squawk",
+   "Ronnie's Line",
+   "Background Music"
+  ],
+  "personnel": [
+   {
+    "artist": "lee-konitz",
+    "name": "Lee Konitz",
+    "instruments": [
+     "alto saxophone"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Warne Marsh",
+    "instruments": [
+     "tenor saxophone"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Billy Bauer",
+    "instruments": [
+     "guitar"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Sal Mosca",
+    "instruments": [
+     "piano"
+    ],
+    "only": [
+     "There Will Never Be Another You",
+     "Donna Lee",
+     "Don't Squawk",
+     "Background Music"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Ronnie Ball",
+    "instruments": [
+     "piano"
+    ],
+    "only": [
+     "Ronnie's Line"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Oscar Pettiford",
+    "instruments": [
+     "bass"
+    ]
+   },
+   {
+    "artist": "kenny-clarke",
+    "name": "Kenny Clarke",
+    "instruments": [
+     "drums"
+    ]
+   }
+  ]
+ },
+ "linger-awhile": {
+  "reviewed": false,
+  "source": "musicbrainz:release/07b4867f-64e7-4160-87f4-43a14bf33b1f",
+  "mbReleaseGroup": "9a513362-5439-40ae-a974-b509ddac3414",
+  "edition": "2022-09-16 US",
+  "recorded": [
+   {
+    "place": "Sear Sound"
+   }
+  ],
+  "tracks": [
+   "Can’t Get Out of This Mood",
+   "Guess Who I Saw Today",
+   "Nostalgia (The Day I Knew)",
+   "Sweet Pumpkin",
+   "Misty",
+   "Social Call",
+   "I’m Confessin’ (That I Love You)",
+   "Linger Awhile",
+   "Round Midnight",
+   "Someone to Watch Over Me"
+  ],
+  "personnel": [
+   {
+    "artist": "samara-joy",
+    "name": "Samara Joy",
+    "instruments": [
+     "vocals"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Terell Stafford",
+    "instruments": [
+     "flugelhorn",
+     "trumpet"
+    ],
+    "only": [
+     "Round Midnight"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Donovan Austin",
+    "instruments": [
+     "trombone"
+    ],
+    "only": [
+     "Round Midnight"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Kendric McCallister",
+    "instruments": [
+     "tenor saxophone"
+    ],
+    "only": [
+     "Round Midnight"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Pasquale Grasso",
+    "instruments": [
+     "guitar"
+    ],
+    "except": [
+     "Can’t Get Out of This Mood",
+     "Misty"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Ben Patterson",
+    "instruments": [
+     "piano"
+    ],
+    "except": [
+     "Nostalgia (The Day I Knew)",
+     "Sweet Pumpkin",
+     "Someone to Watch Over Me"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "David Wong",
+    "instruments": [
+     "bass"
+    ],
+    "except": [
+     "Someone to Watch Over Me"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Kenny Washington",
+    "instruments": [
+     "drums"
+    ],
+    "except": [
+     "Someone to Watch Over Me"
+    ]
+   }
+  ],
+  "crew": [
+   {
+    "artist": null,
+    "name": "Sampson Alvarado",
+    "role": "engineer"
+   },
+   {
+    "artist": null,
+    "name": "Will Bennett",
+    "role": "engineer"
+   },
+   {
+    "artist": null,
+    "name": "Matt Pierson",
+    "role": "producer"
+   },
+   {
+    "artist": null,
+    "name": "Chris Allen",
+    "role": "engineer"
+   },
+   {
+    "artist": null,
+    "name": "Kendric McCallister",
+    "role": "arranger"
+   }
   ]
  },
  "little-girl-blue": {
@@ -11116,6 +13700,503 @@
    "MusicBrainz's per-track credits match Wikipedia's track numbers one for one."
   ]
  },
+ "not-tight": {
+  "reviewed": false,
+  "source": "musicbrainz:release/12c75888-1977-415f-b9be-5f6e6d530e69",
+  "mbReleaseGroup": "11219c32-5deb-4cfa-bfc0-4669858721df",
+  "edition": "2022-07-29 XW",
+  "recorded": [
+   {
+    "place": "DOMi & JD BECK Headquarters"
+   }
+  ],
+  "tracks": [
+   "LOUNA’S iNTRO",
+   "WHATUP",
+   "SMiLE",
+   "BOWLiNG",
+   "NOT TiGHT",
+   "TWO SHRiMPS",
+   "U DON’T HAVE TO ROB ME",
+   "MOON",
+   "DUKE",
+   "TAKE A CHANCE",
+   "SPACE MOUNTAiN",
+   "PiLOT",
+   "WHOA",
+   "SNiFF",
+   "THANK U"
+  ],
+  "personnel": [
+   {
+    "artist": null,
+    "name": "Chloé Tallet",
+    "instruments": [
+     "flute",
+     "piccolo"
+    ],
+    "only": [
+     "LOUNA’S iNTRO",
+     "THANK U"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Leah Zeger",
+    "instruments": [
+     "viola",
+     "violin"
+    ],
+    "only": [
+     "LOUNA’S iNTRO",
+     "THANK U"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Kurt Rosenwinkel",
+    "instruments": [
+     "guitar"
+    ],
+    "only": [
+     "WHOA"
+    ]
+   },
+   {
+    "artist": "herbie-hancock",
+    "name": "Herbie Hancock",
+    "instruments": [
+     "piano",
+     "vocoder"
+    ],
+    "only": [
+     "MOON"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "DOMi",
+    "instruments": [
+     "keyboards",
+     "vocals"
+    ],
+    "except": [
+     "SNiFF"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Lara Somogyi",
+    "instruments": [
+     "harp"
+    ],
+    "only": [
+     "LOUNA’S iNTRO"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Stephen Pfeifer",
+    "instruments": [
+     "bass"
+    ],
+    "only": [
+     "LOUNA’S iNTRO",
+     "THANK U"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Thundercat",
+    "instruments": [
+     "bass",
+     "vocals"
+    ],
+    "only": [
+     "BOWLiNG",
+     "NOT TiGHT"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Isaiah Gage",
+    "instruments": [
+     "cello"
+    ],
+    "only": [
+     "LOUNA’S iNTRO",
+     "THANK U"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "JD BECK",
+    "instruments": [
+     "drums",
+     "vocals"
+    ],
+    "except": [
+     "LOUNA’S iNTRO",
+     "BOWLiNG",
+     "THANK U"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Anderson .Paak",
+    "instruments": [
+     "vocals"
+    ],
+    "only": [
+     "TAKE A CHANCE",
+     "PiLOT"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Mac DeMarco",
+    "instruments": [
+     "vocals"
+    ],
+    "only": [
+     "TWO SHRiMPS"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Busta Rhymes",
+    "instruments": [
+     "vocals"
+    ],
+    "only": [
+     "PiLOT"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Snoop Dogg",
+    "instruments": [
+     "vocals"
+    ],
+    "only": [
+     "PiLOT"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Miguel Atwood‐Ferguson",
+    "instruments": [
+     "strings"
+    ],
+    "only": [
+     "NOT TiGHT"
+    ]
+   }
+  ],
+  "crew": [
+   {
+    "artist": "domi-and-jd-beck",
+    "name": "DOMi & JD BECK",
+    "role": "producer"
+   },
+   {
+    "artist": "domi-and-jd-beck",
+    "name": "DOMi & JD BECK",
+    "role": "engineer"
+   },
+   {
+    "artist": null,
+    "name": "Jhair Lazo",
+    "role": "engineer"
+   },
+   {
+    "artist": null,
+    "name": "Miguel Atwood‐Ferguson",
+    "role": "arranger"
+   },
+   {
+    "artist": null,
+    "name": "Miguel Atwood‐Ferguson",
+    "role": "engineer"
+   },
+   {
+    "artist": null,
+    "name": "Delanie Leyden",
+    "role": "engineer"
+   },
+   {
+    "artist": null,
+    "name": "Julio Ulloa",
+    "role": "engineer"
+   }
+  ],
+  "draftNotes": [
+   "the leader (DOMi & JD BECK) isn't among the credited players"
+  ]
+ },
+ "nublues": {
+  "reviewed": false,
+  "source": "musicbrainz:release/92f5c4e0-4efe-429d-b951-ebcbf2f57395",
+  "mbReleaseGroup": "80bf36ec-d228-4bc3-8550-d523471024f6",
+  "edition": "2024-02-09 XW",
+  "tracks": [
+   "early",
+   "equinox",
+   "mellowdee",
+   "chant",
+   "what am i waiting for?",
+   "bach (God the Father in Eternity)",
+   "nublues",
+   "ya know?",
+   "evidence",
+   "central park west"
+  ],
+  "personnel": [
+   {
+    "artist": "joel-ross",
+    "name": "Joel Ross",
+    "instruments": [
+     "vibraphone"
+    ]
+   },
+   {
+    "artist": "immanuel-wilkins",
+    "name": "Immanuel Wilkins",
+    "instruments": [
+     "alto saxophone"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Gabrielle Garo",
+    "instruments": [
+     "flute"
+    ],
+    "only": [
+     "chant"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Jeremy Corren",
+    "instruments": [
+     "piano"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Kanoa Mendenhall",
+    "instruments": [
+     "bass"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Jeremy Dutton",
+    "instruments": [
+     "drums"
+    ]
+   }
+  ]
+ },
+ "odjb-75th-anniversary": {
+  "reviewed": false,
+  "source": "musicbrainz:release/5cc630ae-0c1e-4ca9-a94c-e3954395233c",
+  "mbReleaseGroup": "d3ffd015-13bf-4a85-baff-f7bd642ee6d3",
+  "edition": "1992 US",
+  "kind": "compilation",
+  "recordedBetween": [
+   1917,
+   1921
+  ],
+  "tracks": [
+   "Livery Stable Blues",
+   "Dixieland Jass Band One-Step",
+   "At The Jazz Band Ball",
+   "Ostrich Walk",
+   "Skeleton Jangle",
+   "Tiger Rag",
+   "Bluin' The Blues",
+   "Fidgety Feet",
+   "Sensation Rag",
+   "Mournin' Blues",
+   "Clarinet Marmalade Blues",
+   "Lazy Daddy",
+   "Margie",
+   "Palesteena",
+   "Broadway Rose",
+   "Sweet Mamma (Papa's Getting Mad)",
+   "Home Again Blues",
+   "Crazy Blues",
+   "Jazz Me Blues",
+   "St. Louis Blues",
+   "Royal Garden Blues",
+   "Dangerous Blues",
+   "Bow Wow Blues (My Mama Treats Me Like A Dog)"
+  ],
+  "personnel": [
+   {
+    "artist": null,
+    "name": "Nick LaRocca",
+    "instruments": [
+     "cornet"
+    ],
+    "tracks": 22
+   },
+   {
+    "artist": null,
+    "name": "Eddie Edwards",
+    "instruments": [
+     "trombone"
+    ],
+    "tracks": 22
+   },
+   {
+    "artist": null,
+    "name": "Benny Krueger",
+    "instruments": [
+     "alto saxophone"
+    ],
+    "tracks": 10
+   },
+   {
+    "artist": null,
+    "name": "Larry Shields",
+    "instruments": [
+     "clarinet"
+    ],
+    "tracks": 22
+   },
+   {
+    "artist": null,
+    "name": "Henry Ragas",
+    "instruments": [
+     "piano"
+    ],
+    "tracks": 12
+   },
+   {
+    "artist": null,
+    "name": "J. Russel Robinson",
+    "instruments": [
+     "piano"
+    ],
+    "tracks": 5
+   },
+   {
+    "artist": null,
+    "name": "Frank Signorelli",
+    "instruments": [
+     "piano"
+    ],
+    "tracks": 5
+   },
+   {
+    "artist": null,
+    "name": "Tony Sbarbaro",
+    "instruments": [
+     "drums",
+     "membranophone"
+    ],
+    "tracks": 21
+   }
+  ],
+  "draftNotes": [
+   "only 22 of 23 tracks have players credited",
+   "the leader (The Original Dixieland Jazz Band) isn't among the credited players"
+  ]
+ },
+ "omega": {
+  "reviewed": false,
+  "source": "musicbrainz:release/3fd11cb6-8c8f-4a18-8e5c-c8b46af45cce",
+  "mbReleaseGroup": "b68242d1-c48e-4579-9de2-02d4646f6784",
+  "edition": "2020-08-07 XW",
+  "recorded": [
+   {
+    "place": "Sear Sound"
+   }
+  ],
+  "tracks": [
+   "Warriors",
+   "Ferguson - An American Tradition",
+   "The Dreamer",
+   "Mary Turner - An American Tradition",
+   "Grace and Mercy",
+   "Part 1. The Key",
+   "Part 2. Saudade",
+   "Part 3. Eulogy",
+   "Part 4. Guarded Heart",
+   "Omega"
+  ],
+  "personnel": [
+   {
+    "artist": "immanuel-wilkins",
+    "name": "Immanuel Wilkins",
+    "instruments": [
+     "alto saxophone"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Micah Thomas",
+    "instruments": [
+     "piano"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Daryl Johns",
+    "instruments": [
+     "bass"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Kweku Sumbry",
+    "instruments": [
+     "drums"
+    ],
+    "except": [
+     "Part 1. The Key"
+    ]
+   }
+  ],
+  "crew": [
+   {
+    "artist": "jason-moran",
+    "name": "Jason Moran",
+    "role": "producer"
+   },
+   {
+    "artist": null,
+    "name": "Chris Allen",
+    "role": "engineer"
+   }
+  ]
+ },
+ "on-the-tender-spot": {
+  "reviewed": false,
+  "source": "musicbrainz:release/a35875e5-95b8-4465-9622-c0786c4d0601",
+  "mbReleaseGroup": "e379fe82-8512-42f4-a57c-915738106808",
+  "edition": "2020-06-05 US",
+  "tracks": [
+   "Tide of Hyacinth",
+   "Yessss",
+   "Cynical sideliners",
+   "Mr. Roscoe (Consider the Simultaneous)",
+   "An Interlude (That Get’ More Intense)",
+   "Reset (Quiet Victories & Celebrated Defeats)",
+   "Moon (The Return Amplifies the Unity)",
+   "4623",
+   "Roy",
+   "Blues (We Measure the Heart With a Fist)",
+   "Hooded Procession (Read the Names Outloud)"
+  ],
+  "personnel": [],
+  "draftNotes": [
+   "no players credited on this edition"
+  ]
+ },
  "out-of-the-cool": {
   "reviewed": true,
   "source": "musicbrainz:release/02f42674-50da-4bb4-988b-f7825ee065b9",
@@ -11678,6 +14759,42 @@
    }
   ]
  },
+ "piano-starts-here": {
+  "reviewed": false,
+  "source": "musicbrainz:release/8e60f7fa-86ca-4906-ba4b-9c157f2e5bac",
+  "mbReleaseGroup": "1e493068-b80b-30c5-85f2-38009dd6a6c0",
+  "edition": "1968 US",
+  "kind": "compilation",
+  "recordedBetween": [
+   1933,
+   1949
+  ],
+  "tracks": [
+   "Tea for Two",
+   "St. Louis Blues",
+   "Tiger Rag",
+   "Sophisticated Lady",
+   "How High the Moon",
+   "Humoresque",
+   "Someone to Watch Over Me",
+   "Yesterdays",
+   "I Know That You Know",
+   "Willow Weep for Me",
+   "Tatum Pole Boogie",
+   "The Kerry Dance",
+   "The Man I Love"
+  ],
+  "personnel": [
+   {
+    "artist": "art-tatum",
+    "name": "Art Tatum",
+    "instruments": [
+     "piano"
+    ],
+    "tracks": 13
+   }
+  ]
+ },
  "ptah-the-el-daoud": {
   "reviewed": true,
   "source": "musicbrainz:release/2680af96-0043-404b-8502-565194d55fed",
@@ -11755,6 +14872,29 @@
   ],
   "draftNotes": [
    "MusicBrainz matches Wikipedia: piano on 1, 2 and 4, harp on 'Blue Nile'; the two tenors play flutes on 'Blue Nile' and sit out 'Turiya and Ramakrishna'."
+  ]
+ },
+ "quartetinho": {
+  "reviewed": false,
+  "source": "musicbrainz:release/86ed8739-7864-473b-aa36-0f96db0f5365",
+  "mbReleaseGroup": "650fe811-0093-4f87-b7f6-e6af1c53600b",
+  "edition": "2022-10-07 XW",
+  "tracks": [
+   "Baroquen Spirit",
+   "Palhaço",
+   "Boa Tarde Povo",
+   "Birdie",
+   "Canon",
+   "O Boto",
+   "The Old Guitar",
+   "Frevo",
+   "Louisiana",
+   "Going Home",
+   "Vivi & Zaco"
+  ],
+  "personnel": [],
+  "draftNotes": [
+   "no players credited on this edition"
   ]
  },
  "queen-of-the-organ": {
@@ -12136,6 +15276,88 @@
    "MusicBrainz matches Wikipedia's credits. Prince, listed by MusicBrainz on 'Edith and the Kingpin', is uncredited and unconfirmed, so he's left out; the recording years are Wikipedia's."
   ]
  },
+ "robert-johnson-complete-recordings": {
+  "reviewed": false,
+  "source": "musicbrainz:release/15faf9b4-6143-3186-8cf3-9448b7e9502e",
+  "mbReleaseGroup": "200b18f9-789e-3875-90a1-a0c6ee1906a9",
+  "edition": "1990 US",
+  "kind": "compilation",
+  "recordedBetween": [
+   1936,
+   1937
+  ],
+  "tracks": [
+   "Kind Hearted Woman Blues (take 1)",
+   "Kind Hearted Woman Blues (take 2)",
+   "I Believe I'll Dust My Broom",
+   "Sweet Home Chicago",
+   "Ramblin' on My Mind (take 1)",
+   "Ramblin' on My Mind (take 2)",
+   "When You Got a Good Friend (take 1)",
+   "When You Got a Good Friend (take 2)",
+   "Come On In My Kitchen (take 1)",
+   "Come On In My Kitchen (take 2)",
+   "Terraplane Blues",
+   "Phonograph Blues (take 1)",
+   "Phonograph Blues (take 2)",
+   "32-20 Blues",
+   "They're Red Hot",
+   "Dead Shrimp Blues",
+   "Cross Road Blues (take 1)",
+   "Cross Road Blues (take 2)",
+   "Walkin' Blues",
+   "Last Fair Deal Gone Down",
+   "Preachin' Blues (Up Jumped the Devil)",
+   "If I Had Possession Over Judgement Day",
+   "Stones in My Passway",
+   "I'm a Steady Rollin' Man",
+   "From Four Until Late",
+   "Hell Hound on My Trail",
+   "Little Queen of Spades (take 1)",
+   "Little Queen of Spades (take 2)",
+   "Malted Milk",
+   "Drunken Hearted Man (take 1)",
+   "Drunken Hearted Man (take 2)",
+   "Me and the Devil Blues (take 1)",
+   "Me and the Devil Blues (take 2)",
+   "Stop Breakin' Down Blues (take 1)",
+   "Stop Breakin' Down Blues (take 2)",
+   "Traveling Riverside Blues",
+   "Honeymoon Blues",
+   "Love in Vain Blues (take 1)",
+   "Love in Vain Blues (take 2)",
+   "Milkcow's Calf Blues (take 1)",
+   "Milkcow's Calf Blues (take 2)"
+  ],
+  "personnel": [
+   {
+    "artist": "robert-johnson",
+    "name": "Robert Johnson",
+    "instruments": [
+     "guitar",
+     "vocals"
+    ],
+    "tracks": 41
+   }
+  ],
+  "crew": [
+   {
+    "artist": null,
+    "name": "Don Law",
+    "role": "producer"
+   },
+   {
+    "artist": null,
+    "name": "Art Satherly",
+    "role": "producer"
+   },
+   {
+    "artist": null,
+    "name": "Vincent Liebler",
+    "role": "engineer"
+   }
+  ]
+ },
  "sahara": {
   "reviewed": true,
   "source": "musicbrainz:release/f6216267-38ac-44e8-b9e8-0dc8902c61fa",
@@ -12302,6 +15524,51 @@
   ],
   "draftNotes": [
    "Jimmy Jones plays throughout (michaelminn.net's Vaughan discography lists one band for 16–18 Dec 1954); MusicBrainz's exception on \"April in Paris\" dropped."
+  ]
+ },
+ "satchmo-at-symphony-hall": {
+  "reviewed": false,
+  "source": "musicbrainz:release/d7eaedc0-71b7-4ae5-8cbb-b0eabed2701d",
+  "mbReleaseGroup": "92c73735-5409-367a-a0f8-636835e24a95",
+  "edition": "?",
+  "kind": "compilation",
+  "recordedBetween": [
+   1951,
+   1966
+  ],
+  "tracks": [
+   "On the Sunny Side of the Street",
+   "New Orleans Stomp",
+   "Tiger Rag",
+   "I Want a Big Butter and Egg Main",
+   "When the Saints Go Marching In",
+   "Way Down Yonder in New Orleans",
+   "Jeepers Creepers",
+   "Snake Rag",
+   "Muskrat Ramble",
+   "Mame"
+  ],
+  "personnel": [
+   {
+    "artist": "louis-armstrong",
+    "name": "Louis Armstrong",
+    "instruments": [
+     "trumpet",
+     "vocals"
+    ],
+    "tracks": 2
+   }
+  ],
+  "crew": [
+   {
+    "artist": null,
+    "name": "Gene Norman",
+    "role": "producer"
+   }
+  ],
+  "draftNotes": [
+   "only 2 of 10 tracks have players credited",
+   "this edition has 10 tracks; the Apple Music album has 15"
   ]
  },
  "savoy-dial-master-takes": {
@@ -13090,6 +16357,177 @@
    "MusicBrainz matches Wikipedia and ECM."
   ]
  },
+ "soul-sauce": {
+  "reviewed": false,
+  "source": "musicbrainz:release/bc9d9386-d7bd-4ae4-b7c2-f618ce009dfd",
+  "mbReleaseGroup": "9708e516-c74d-3c7a-88c5-df1382212c1a",
+  "edition": "1965 US",
+  "recorded": [
+   {
+    "date": "1964-11-19",
+    "place": "Van Gelder Studio"
+   },
+   {
+    "date": "1964-11-20",
+    "place": "A&R Recording Studio"
+   }
+  ],
+  "tracks": [
+   "Soul Sauce (Guachi Guaro)",
+   "Afro-Blue",
+   "Pantano",
+   "Somewhere in the Night",
+   "Maramor Mambo",
+   "Tanya",
+   "Leyte",
+   "Spring Is Here",
+   "Joao"
+  ],
+  "personnel": [
+   {
+    "artist": "cal-tjader",
+    "name": "Cal Tjader",
+    "instruments": [
+     "vibraphone"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Donald Byrd",
+    "instruments": [
+     "trumpet"
+    ],
+    "only": [
+     "Afro-Blue"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Jimmy Heath",
+    "instruments": [
+     "tenor saxophone"
+    ],
+    "only": [
+     "Afro-Blue"
+    ]
+   },
+   {
+    "artist": "kenny-burrell",
+    "name": "Kenny Burrell",
+    "instruments": [
+     "guitar"
+    ],
+    "only": [
+     "Afro-Blue"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Lonnie Hewitt",
+    "instruments": [
+     "piano"
+    ],
+    "except": [
+     "Afro-Blue"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "John Hilliard",
+    "instruments": [
+     "bass"
+    ],
+    "except": [
+     "Afro-Blue"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Bob Bushnell",
+    "instruments": [
+     "bass"
+    ],
+    "only": [
+     "Afro-Blue"
+    ]
+   },
+   {
+    "artist": "richard-davis",
+    "name": "Richard Davis",
+    "instruments": [
+     "bass"
+    ],
+    "only": [
+     "Afro-Blue"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Johnny Rae",
+    "instruments": [
+     "drums"
+    ],
+    "except": [
+     "Afro-Blue"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Grady Tate",
+    "instruments": [
+     "drums"
+    ],
+    "only": [
+     "Afro-Blue"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Armando Peraza",
+    "instruments": [
+     "percussion"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Alberto \"Virgilio\" Valdés",
+    "instruments": [
+     "percussion"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Willie Bobo",
+    "instruments": [
+     "percussion",
+     "vocals"
+    ],
+    "only": [
+     "Soul Sauce (Guachi Guaro)"
+    ]
+   }
+  ],
+  "crew": [
+   {
+    "artist": null,
+    "name": "Phil Ramone",
+    "role": "engineer"
+   },
+   {
+    "artist": null,
+    "name": "Creed Taylor",
+    "role": "producer"
+   },
+   {
+    "artist": null,
+    "name": "Rudy van Gelder",
+    "role": "engineer"
+   }
+  ],
+  "draftNotes": [
+   "this edition has 9 tracks; the Apple Music album has 13"
+  ]
+ },
  "sound-grammar": {
   "reviewed": true,
   "source": "musicbrainz:release/5cdfe1f4-b6ff-4dd5-80cf-fbfb710b87da",
@@ -13809,6 +17247,42 @@
    }
   ]
  },
+ "standart": {
+  "reviewed": false,
+  "source": "musicbrainz:release/0edf9281-2c89-436d-be00-f39315341398",
+  "mbReleaseGroup": "d29a7d39-59cb-46b8-97bd-d4b83b8c658a",
+  "edition": "2022 None",
+  "tracks": [
+   "De‐Dah",
+   "I Didn’t Know What Time It Was",
+   "All the Things You Are",
+   "Big Foot",
+   "When a Woman Loves a Man",
+   "Softly, as in a Morning Sunrise",
+   "I Should Care",
+   "Invasion During an Operetta",
+   "Laura"
+  ],
+  "personnel": [
+   {
+    "artist": null,
+    "name": "Matt Brewer",
+    "instruments": [
+     "instruments"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Justin Brown",
+    "instruments": [
+     "instruments"
+    ]
+   }
+  ],
+  "draftNotes": [
+   "the leader (Tigran Hamasyan) isn't among the credited players"
+  ]
+ },
  "state-of-the-tenor-vol-1": {
   "reviewed": true,
   "source": "jazzdisco.org: Joe Henderson discography",
@@ -13861,6 +17335,51 @@
   ],
   "draftNotes": [
    "Written from jazzdisco.org (sets of November 14–16, 1985); the tracks are Apple Music's edition."
+  ]
+ },
+ "steppin-on-the-blues": {
+  "reviewed": false,
+  "source": "musicbrainz:release/1aae9d91-27c8-449c-8732-db6d9471a49b",
+  "mbReleaseGroup": "fb51f244-1e6f-3895-9c22-daf36626d3e3",
+  "edition": "1990 US",
+  "kind": "compilation",
+  "recordedBetween": [
+   1927,
+   1927
+  ],
+  "tracks": [
+   "Mr. Johnson's Blues",
+   "Sweet Potato Blues",
+   "Steppin' on the Blues",
+   "I Done Told You",
+   "Mean Old Bedbug Blues",
+   "Toothache Blues - Part 1",
+   "Toothache Blues - Part 2",
+   "Have to Change Keys (To Play These Blues)",
+   "Guitar Blues",
+   "She's Making Whoopee in Hell Tonight",
+   "Playing With the Strings",
+   "No More Women Blues",
+   "Deep Blue Sea Blues",
+   "No More Troubles Now",
+   "Got the Blues for Murder Only",
+   "[untitled]",
+   "6/88 Glide",
+   "Racketeer's Blues",
+   "I'm Nuts About That Gal"
+  ],
+  "personnel": [
+   {
+    "artist": "lonnie-johnson",
+    "name": "Lonnie Johnson",
+    "instruments": [
+     "guitar"
+    ],
+    "tracks": 1
+   }
+  ],
+  "draftNotes": [
+   "only 1 of 19 tracks have players credited"
   ]
  },
  "study-in-brown": {
@@ -14979,6 +18498,66 @@
    }
   ]
  },
+ "the-jimmy-giuffre-3": {
+  "reviewed": false,
+  "source": "musicbrainz:release/d45c3e2d-04cd-46fb-8ff0-876d2204bab1",
+  "mbReleaseGroup": "2670912b-16f5-3e29-8413-1defaf645a43",
+  "edition": "1957 US",
+  "recorded": [
+   {
+    "date": "1956-12-03",
+    "place": "Capitol Tower"
+   },
+   {
+    "date": "1956-12-04",
+    "place": "Capitol Tower"
+   }
+  ],
+  "tracks": [
+   "Gotta Dance",
+   "Two Kinds of Blues",
+   "The Song Is You",
+   "Crazy She Calls Me",
+   "Voodoo",
+   "My All",
+   "That's the Way It Is",
+   "Crawdad Suite",
+   "The Train and the River"
+  ],
+  "personnel": [
+   {
+    "artist": "jimmy-giuffre",
+    "name": "Jimmy Giuffre",
+    "instruments": [
+     "reeds",
+     "baritone saxophone",
+     "clarinet",
+     "tenor saxophone"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Jim Hall",
+    "instruments": [
+     "guitar"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Ralph Peña",
+    "instruments": [
+     "bass"
+    ]
+   }
+  ],
+  "crew": [
+   {
+    "artist": null,
+    "name": "John Kraus",
+    "role": "engineer"
+   }
+  ]
+ },
  "the-koln-concert": {
   "reviewed": true,
   "source": "musicbrainz:release/f3a288bb-c303-4564-b194-a346e2655a12",
@@ -15019,6 +18598,31 @@
   ],
   "draftNotes": [
    "Solo piano; MusicBrainz matches Wikipedia."
+  ]
+ },
+ "the-movement-revisited": {
+  "reviewed": false,
+  "source": "musicbrainz:release/5ba101b9-3947-4861-86e7-a95a5314469a",
+  "mbReleaseGroup": "d8a78f33-e954-48b2-b064-54764c32c52d",
+  "edition": "2020-02-07 CA",
+  "tracks": [
+   "Overture / The Movement Revisited",
+   "Sister Rosa – Prologue",
+   "Sister Rosa",
+   "Rosa Introduces Malcolm",
+   "Brother Malcolm – Prologue",
+   "Brother Malcolm",
+   "Malcolm Introduces Ali",
+   "Ali Speaks",
+   "Rumble in the Jungle",
+   "Rosa Introduces MLK",
+   "Soldiers (I Have a Dream)",
+   "A View from the Mountaintop",
+   "Apotheosis: November 4th, 2008"
+  ],
+  "personnel": [],
+  "draftNotes": [
+   "no players credited on this edition"
   ]
  },
  "the-real-mccoy": {
@@ -15431,6 +19035,109 @@
    {
     "date": "1984-03",
     "place": "Bahnhof Ehrenfeld, Cologne"
+   }
+  ]
+ },
+ "think-lonnie-smith": {
+  "reviewed": false,
+  "source": "musicbrainz:release/cfed8758-7a62-48e9-97a2-32a4879adcbc",
+  "mbReleaseGroup": "71d47e70-77bd-3235-b3e9-9f7b86a4e32a",
+  "edition": "1968 US",
+  "recorded": [
+   {
+    "date": "1968-07-23"
+   }
+  ],
+  "tracks": [
+   "Son of Ice Bag",
+   "The Call of the Wild",
+   "Think",
+   "Three Blind Mice",
+   "Slouchin'"
+  ],
+  "personnel": [
+   {
+    "artist": "lonnie-smith",
+    "name": "Dr. Lonnie Smith",
+    "instruments": [
+     "organ"
+    ]
+   },
+   {
+    "artist": "lee-morgan",
+    "name": "Lee Morgan",
+    "instruments": [
+     "trumpet"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "David “Fathead” Newman",
+    "instruments": [
+     "flute",
+     "tenor saxophone"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Melvin Sparks",
+    "instruments": [
+     "guitar"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Norberto Apellaniz",
+    "instruments": [
+     "congas",
+     "percussion"
+    ],
+    "only": [
+     "The Call of the Wild",
+     "Slouchin'"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Willie Bivens",
+    "instruments": [
+     "congas",
+     "percussion"
+    ],
+    "only": [
+     "The Call of the Wild",
+     "Slouchin'"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Henry \"Pucho\" Brown",
+    "instruments": [
+     "timbales"
+    ],
+    "only": [
+     "The Call of the Wild",
+     "Slouchin'"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Marion Booker, Jr.",
+    "instruments": [
+     "membranophone"
+    ]
+   }
+  ],
+  "crew": [
+   {
+    "artist": null,
+    "name": "Francis Wolff",
+    "role": "producer"
+   },
+   {
+    "artist": null,
+    "name": "Dave Sanders",
+    "role": "engineer"
    }
   ]
  },
@@ -17064,6 +20771,34 @@
    "Snarky Puppy is the band, so no single leader appears among the players."
   ]
  },
+ "who-asked": {
+  "reviewed": false,
+  "source": "musicbrainz:release/99da4c01-4620-42b8-8132-2bf1a63cc55d",
+  "mbReleaseGroup": "434e92cd-9f07-45cb-b742-090c0e4e6f42",
+  "edition": "2026-07-31 None",
+  "tracks": [
+   "ÉPiPHANiE",
+   "HAD ENOUGH",
+   "EXiT",
+   "SiLHOUETTE",
+   "GROWiNG OLDER",
+   "SOME THiNGS NEVER CHANGE",
+   "RAiN",
+   "SMALL EYES",
+   "LOVELY MASQUERADE",
+   "PUZZLE PiECES",
+   "PHANTOM THREAD",
+   "OUT OF SYNC",
+   "CONCERTiNO (FOR PiANO, DRUMS & ORCHESTRA)",
+   "CLiMBiNG HiGH",
+   "ÉPiLOGUE",
+   "PUZZLE PiECES (Live from Los Angeles, CA / 2026)"
+  ],
+  "personnel": [],
+  "draftNotes": [
+   "no players credited on this edition"
+  ]
+ },
  "wish": {
   "reviewed": true,
   "source": "musicbrainz:release/23c798ce-6cc3-4fc7-9fdc-5614eba67921",
@@ -17287,6 +21022,446 @@
     "name": "Aaron Diehl",
     "role": "arranger"
    }
+  ]
+ },
+ "yellow": {
+  "reviewed": false,
+  "source": "musicbrainz:release/ebfa0529-6cac-4624-b57b-9c6d3bc9bcf3",
+  "mbReleaseGroup": "2cbe1324-865c-4709-a81a-2c0ab951538b",
+  "edition": "2021 US",
+  "tracks": [
+   "Mercury",
+   "Say Something",
+   "About That",
+   "Venus",
+   "Green Funk",
+   "Third Eye",
+   "May There Be Peace",
+   "Sun",
+   "Golden Green",
+   "Spectre",
+   "Rahu & Ketu",
+   "Yellow",
+   "Our People",
+   "Mercury (In Retrograde)"
+  ],
+  "personnel": [
+   {
+    "artist": "emma-jean-thackray",
+    "name": "Emma‐Jean Thackray",
+    "instruments": [
+     "synthesizer",
+     "vibraphone",
+     "trumpet",
+     "vocals",
+     "electric bass",
+     "guitar",
+     "bass clarinet",
+     "Pianet",
+     "percussion",
+     "organ"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Rosie Turton",
+    "instruments": [
+     "trombone"
+    ],
+    "only": [
+     "Say Something",
+     "Green Funk",
+     "Third Eye",
+     "Sun",
+     "Spectre"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Chelsea Carmichael",
+    "instruments": [
+     "tenor saxophone"
+    ],
+    "only": [
+     "Say Something",
+     "Green Funk",
+     "Third Eye",
+     "Sun",
+     "Spectre"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Tamar Osborn",
+    "instruments": [
+     "bass clarinet",
+     "flute",
+     "baritone saxophone"
+    ],
+    "only": [
+     "Mercury",
+     "Say Something",
+     "Green Funk",
+     "Sun",
+     "Spectre",
+     "Mercury (In Retrograde)"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Lyle Barton",
+    "instruments": [
+     "electric piano",
+     "organ"
+    ],
+    "except": [
+     "About That",
+     "Third Eye",
+     "May There Be Peace",
+     "Sun",
+     "Golden Green",
+     "Yellow"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Elliot Galvin",
+    "instruments": [
+     "synthesizer"
+    ],
+    "only": [
+     "Mercury"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Dougal Taylor",
+    "instruments": [
+     "drums"
+    ],
+    "except": [
+     "Green Funk",
+     "May There Be Peace",
+     "Yellow"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Sara Lima",
+    "instruments": [
+     "vocals"
+    ],
+    "except": [
+     "Venus",
+     "Green Funk",
+     "Golden Green",
+     "Rahu & Ketu"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Love Ssega",
+    "instruments": [
+     "vocals"
+    ],
+    "except": [
+     "Venus",
+     "Green Funk",
+     "Golden Green",
+     "Rahu & Ketu"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Ben Kelly",
+    "instruments": [
+     "sousaphone"
+    ],
+    "except": [
+     "About That",
+     "May There Be Peace",
+     "Golden Green",
+     "Yellow"
+    ]
+   }
+  ]
+ },
+ "zodiac-suite": {
+  "reviewed": false,
+  "source": "musicbrainz:release/95ac5741-35a7-4de8-8398-afb1da8b0f42",
+  "mbReleaseGroup": "aede66c0-cd3c-4115-a304-78e01d0bfbfb",
+  "edition": "2023-11-10 None",
+  "recorded": [
+   {
+    "date": "2023-05-24",
+    "place": "TANDEM Scène nationale, Théâtre d'Arras"
+   }
+  ],
+  "tracks": [
+   "Introduction",
+   "I. Aries",
+   "II. Taurus",
+   "III. Gemini",
+   "IV. Cancer",
+   "V. Leo",
+   "VI. Virgo",
+   "VII. Libra",
+   "VIII. Scorpio",
+   "IX. Sagittarius",
+   "X. Capricorn",
+   "XI. Aquarius",
+   "XII. Pisces"
+  ],
+  "personnel": [
+   {
+    "artist": null,
+    "name": "Brice Pichard",
+    "instruments": [
+     "trumpet"
+    ],
+    "except": [
+     "Introduction"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Michaël Ballue",
+    "instruments": [
+     "trombone"
+    ],
+    "except": [
+     "Introduction"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Harmonie Moreau",
+    "instruments": [
+     "French horn"
+    ],
+    "except": [
+     "Introduction"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Geoffroy Gesser",
+    "instruments": [
+     "reeds",
+     "bass clarinet",
+     "clarinet",
+     "tenor saxophone"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Chloé Tallet",
+    "instruments": [
+     "flute"
+    ],
+    "except": [
+     "Introduction"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Clémentine Bousquet",
+    "instruments": [
+     "violin"
+    ],
+    "except": [
+     "Introduction"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Raphael Coqblin",
+    "instruments": [
+     "violin"
+    ],
+    "except": [
+     "Introduction"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Emilie Duch-Sauzeau",
+    "instruments": [
+     "violin"
+    ],
+    "except": [
+     "Introduction"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Clara Jaszczyszyn",
+    "instruments": [
+     "violin"
+    ],
+    "except": [
+     "Introduction"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Stéphanie Padel",
+    "instruments": [
+     "violin"
+    ],
+    "except": [
+     "Introduction"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Florian Perret",
+    "instruments": [
+     "violin"
+    ],
+    "except": [
+     "Introduction"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Lucie Pierrard",
+    "instruments": [
+     "violin"
+    ],
+    "except": [
+     "Introduction"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Matthieu Naulleau",
+    "instruments": [
+     "piano"
+    ],
+    "except": [
+     "Introduction"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Sébastien Beliah",
+    "instruments": [
+     "bass"
+    ],
+    "except": [
+     "Introduction"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Myrtille Hetzel",
+    "instruments": [
+     "cello"
+    ],
+    "except": [
+     "Introduction"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Pablo Tognan",
+    "instruments": [
+     "cello"
+    ],
+    "except": [
+     "Introduction"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Antonin Gerbal",
+    "instruments": [
+     "drums"
+    ],
+    "except": [
+     "Introduction"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Agathe Peyrat",
+    "instruments": [
+     "vocals"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Pierre Fatus",
+    "instruments": [
+     "bassoon"
+    ],
+    "except": [
+     "Introduction"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Valentine Garilli",
+    "instruments": [
+     "viola"
+    ],
+    "except": [
+     "Introduction"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Guillaume Retail",
+    "instruments": [
+     "oboe"
+    ],
+    "except": [
+     "Introduction"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Elsa Seger",
+    "instruments": [
+     "viola"
+    ],
+    "except": [
+     "Introduction"
+    ]
+   }
+  ],
+  "crew": [
+   {
+    "artist": null,
+    "name": "Pierre-Antoine Badaroux",
+    "role": "conductor"
+   },
+   {
+    "artist": null,
+    "name": "Baptiste Chouquet",
+    "role": "engineer"
+   },
+   {
+    "artist": null,
+    "name": "Louis Delgrange",
+    "role": "engineer"
+   },
+   {
+    "artist": null,
+    "name": "Pierre-Antoine Badaroux",
+    "role": "producer"
+   },
+   {
+    "artist": null,
+    "name": "Nawel Benziane",
+    "role": "producer"
+   }
+  ],
+  "draftNotes": [
+   "the leader (Mary Lou Williams) isn't among the credited players",
+   "this edition has 13 tracks; the Apple Music album has 17",
+   "release group first issued 2023; jazz.json says 1945"
   ]
  }
 }

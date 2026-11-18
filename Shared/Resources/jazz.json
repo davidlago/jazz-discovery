@@ -1264,9 +1264,7 @@
         "duke-ellington",
         "bix-beiderbecke"
       ],
-      "albums": [
-        "hot-five-hot-seven"
-      ],
+      "albums": ["hot-five-hot-seven", "satchmo-at-symphony-hall"],
       "signatureTracks": [
         "West End Blues",
         "Potato Head Blues",
@@ -1291,7 +1289,7 @@
         "jelly-roll-morton",
         "louis-armstrong"
       ],
-      "albums": [],
+      "albums": ["creole-jazz-band-1923"],
       "signatureTracks": [
         "Dipper Mouth Blues",
         "Canal Street Blues",
@@ -1493,7 +1491,7 @@
         "benny-goodman",
         "billie-holiday"
       ],
-      "albums": [],
+      "albums": ["kansas-city-sessions"],
       "signatureTracks": [
         "Lester Leaps In",
         "Lady Be Good",
@@ -1604,7 +1602,7 @@
         "coleman-hawkins",
         "fats-waller"
       ],
-      "albums": [],
+      "albums": ["piano-starts-here"],
       "signatureTracks": [
         "Tiger Rag",
         "Tea for Two",
@@ -1630,7 +1628,7 @@
         "count-basie",
         "art-tatum"
       ],
-      "albums": [],
+      "albums": ["if-you-got-to-ask"],
       "signatureTracks": [
         "Ain't Misbehavin'",
         "Honeysuckle Rose",
@@ -1697,10 +1695,7 @@
         "arturo-sandoval",
         "johnny-hartman"
       ],
-      "albums": [
-        "groovin-high",
-        "afro"
-      ],
+      "albums": ["groovin-high", "afro", "dizzy-rca-victor"],
       "signatureTracks": [
         "Salt Peanuts",
         "A Night in Tunisia",
@@ -2003,9 +1998,7 @@
         "antonio-carlos-jobim",
         "chick-corea"
       ],
-      "albums": [
-        "getz-gilberto"
-      ],
+      "albums": ["getz-gilberto", "jazz-samba"],
       "signatureTracks": [
         "The Girl from Ipanema",
         "Desafinado",
@@ -2245,9 +2238,7 @@
         "bud-powell",
         "freddie-hubbard"
       ],
-      "albums": [
-        "go"
-      ],
+      "albums": ["go", "dexter-gordon-on-savoy"],
       "signatureTracks": [
         "Cheese Cake",
         "Soy Califa",
@@ -3344,9 +3335,7 @@
         "mccoy-tyner",
         "robert-glasper"
       ],
-      "albums": [
-        "the-epic"
-      ],
+      "albums": ["the-epic", "fearless-movement"],
       "signatureTracks": [
         "Change of the Guard",
         "Truth",
@@ -3443,9 +3432,7 @@
       "connections": [
         "wynton-marsalis"
       ],
-      "albums": [
-        "womanchild"
-      ],
+      "albums": ["womanchild", "ghost-song"],
       "signatureTracks": [
         "WomanChild",
         "St. Louis Gal",
@@ -3468,9 +3455,7 @@
         "shabaka-hutchings",
         "nubya-garcia"
       ],
-      "albums": [
-        "universal-beings"
-      ],
+      "albums": ["universal-beings", "in-these-times"],
       "signatureTracks": [
         "Holy Lands",
         "Young Genius",
@@ -3537,9 +3522,7 @@
       "wikipedia": "Ambrose_Akinmusire",
       "blurb": "An Oakland trumpeter with a vulnerable, searching sound whose Blue Note albums mix jazz with poetry, chamber strings and protest songs.",
       "connections": [],
-      "albums": [
-        "the-imagined-savior"
-      ],
+      "albums": ["the-imagined-savior", "on-the-tender-spot"],
       "signatureTracks": [
         "Confessions to My Unborn Daughter",
         "Rollcall for Those Absent",
@@ -3945,7 +3928,7 @@
       "wikipedia": "John_Lewis_(pianist)",
       "blurb": "Pianist in Dizzy Gillespie's big band and on Birth of the Cool, Lewis founded the Modern Jazz Quartet and blended bebop with Bach-like counterpoint, with an economy that made every note count.",
       "connections": [],
-      "albums": [],
+      "albums": ["fontessa"],
       "signatureTracks": [
         "Boplicity",
         "Moon Dreams",
@@ -3967,7 +3950,7 @@
       "wikipedia": "Earl_Hines",
       "blurb": "Hines's \"trumpet-style\" piano, its octave melodies punching through like a horn, transformed jazz piano on his 1928 records with Louis Armstrong; his big band later gave the young Charlie Parker and Dizzy Gillespie a home.",
       "connections": [],
-      "albums": [],
+      "albums": ["classic-earl-hines-sessions"],
       "signatureTracks": [
         "West End Blues",
         "Weather Bird",
@@ -4031,7 +4014,7 @@
       "wikipedia": "Kid_Ory",
       "blurb": "The New Orleans bandleader who gave the young King Oliver and Louis Armstrong work, Ory perfected the \"tailgate\" trombone, sliding glissandos under the melody, on Armstrong's Hot Five records.",
       "connections": [],
-      "albums": [],
+      "albums": ["kid-ory-1944-45"],
       "signatureTracks": [
         "Heebie Jeebies",
         "Struttin' with Some Barbecue",
@@ -4117,7 +4100,7 @@
       "wikipedia": "Lionel_Hampton",
       "blurb": "The first jazz star of the vibraphone, Hampton played in Benny Goodman's racially integrated quartet and then led a roaring big band whose \"Flying Home\" pointed the way to rhythm and blues.",
       "connections": [],
-      "albums": [],
+      "albums": ["hampton-victor-sessions-1"],
       "signatureTracks": [
         "Avalon",
         "The Man I Love",
@@ -4211,7 +4194,7 @@
       "wikipedia": "Lee_Konitz",
       "blurb": "A student of Lennie Tristano and the alto voice of Birth of the Cool, Konitz offered a dry, light alternative to Charlie Parker and kept improvising with rare freedom for seventy years.",
       "connections": [],
-      "albums": [],
+      "albums": ["lee-konitz-with-warne-marsh"],
       "signatureTracks": [
         "Boplicity",
         "Jeru",
@@ -4253,7 +4236,7 @@
       "wikipedia": "Johnny_Dodds",
       "blurb": "The bluesy, piercing clarinet of King Oliver's Creole Jazz Band and Louis Armstrong's Hot Five, Dodds was the model New Orleans clarinetist of the 1920s.",
       "connections": [],
-      "albums": [],
+      "albums": ["blue-clarinet-stomp"],
       "signatureTracks": [
         "Heebie Jeebies",
         "Potato Head Blues",
@@ -5127,6 +5110,400 @@
         "Think"
       ],
       "videoQuery": "Medeski Martin and Wood live"
+    },
+    {
+      "id": "original-dixieland-jass-band",
+      "name": "Original Dixieland Jass Band",
+      "group": true,
+      "born": 1916,
+      "instrument": "Bandleader",
+      "eras": ["roots", "new-orleans"],
+      "primaryEra": "roots",
+      "wikipedia": "Original_Dixieland_Jass_Band",
+      "blurb": "A quintet of New Orleans players, several from Papa Jack Laine's bands, who made the first jazz record ever issued, \"Livery Stable Blues\", for Victor in 1917. Their brash, tightly drilled ensemble sold widely, and their \"Tiger Rag\" became one of the most covered tunes in early jazz.",
+      "connections": ["bix-beiderbecke"],
+      "albums": ["odjb-75th-anniversary"],
+      "signatureTracks": ["Livery Stable Blues", "Tiger Rag", "At the Jazz Band Ball"],
+      "videoQuery": "Original Dixieland Jazz Band Livery Stable Blues 1917"
+    },
+    {
+      "id": "james-reese-europe",
+      "name": "James Reese Europe",
+      "born": 1880,
+      "died": 1919,
+      "instrument": "Bandleader",
+      "eras": ["roots"],
+      "primaryEra": "roots",
+      "wikipedia": "James_Reese_Europe",
+      "blurb": "Founder of Harlem's Clef Club and bandleader to the dancers Vernon and Irene Castle, Europe took the 369th Infantry \"Hellfighters\" band across France in 1918. The records it made in 1919, weeks before he was killed, catch ragtime and the blues on their way to becoming jazz.",
+      "connections": [],
+      "albums": ["hell-fighters-band"],
+      "signatureTracks": ["Memphis Blues", "St. Louis Blues", "That Moaning Trombone"],
+      "videoQuery": "James Reese Europe Hellfighters band 1919"
+    },
+    {
+      "id": "blind-lemon-jefferson",
+      "name": "Blind Lemon Jefferson",
+      "born": 1893,
+      "died": 1929,
+      "instrument": "Guitar",
+      "eras": ["roots"],
+      "primaryEra": "roots",
+      "wikipedia": "Blind_Lemon_Jefferson",
+      "blurb": "The \"Father of the Texas blues\" sang in a high, carrying voice over fast guitar lines that changed shape from verse to verse. His Paramount records of 1926 to 1929 made him one of the best-selling blues artists of the decade, and one of the first men to succeed on record as a solo singer-guitarist.",
+      "connections": [],
+      "albums": ["king-of-the-country-blues"],
+      "signatureTracks": ["Matchbox Blues", "See That My Grave Is Kept Clean", "Black Snake Moan"],
+      "videoQuery": "Blind Lemon Jefferson Matchbox Blues"
+    },
+    {
+      "id": "lonnie-johnson",
+      "name": "Lonnie Johnson",
+      "born": 1899,
+      "died": 1970,
+      "instrument": "Guitar",
+      "eras": ["roots", "new-orleans"],
+      "primaryEra": "roots",
+      "wikipedia": "Lonnie_Johnson_(musician)",
+      "blurb": "A New Orleans-born singer and guitarist whose single-note solos of the late 1920s, on his own OKeh records and as a guest with Louis Armstrong's Hot Five and Duke Ellington, helped set the pattern for jazz and blues guitar. Two decades later he had a million-selling ballad, \"Tomorrow Night\".",
+      "connections": ["louis-armstrong", "duke-ellington"],
+      "albums": ["steppin-on-the-blues"],
+      "signatureTracks": ["6/88 Glide", "Mr. Johnson's Blues", "Tomorrow Night"],
+      "videoQuery": "Lonnie Johnson blues guitar"
+    },
+    {
+      "id": "robert-johnson",
+      "name": "Robert Johnson",
+      "born": 1911,
+      "died": 1938,
+      "instrument": "Guitar",
+      "eras": ["roots"],
+      "primaryEra": "roots",
+      "wikipedia": "Robert_Johnson",
+      "blurb": "A Mississippi Delta singer and guitarist who left 29 songs from two sessions in 1936 and 1937, sung over guitar parts so full they can sound like two players. Barely known in his lifetime, he became the most studied name in country blues once rock musicians took up his songs.",
+      "connections": [],
+      "albums": ["robert-johnson-complete-recordings"],
+      "signatureTracks": ["Cross Road Blues", "Hellhound On My Trail", "Sweet Home Chicago"],
+      "videoQuery": "Robert Johnson Cross Road Blues"
+    },
+    {
+      "id": "fletcher-henderson",
+      "name": "Fletcher Henderson",
+      "born": 1897,
+      "died": 1952,
+      "instrument": "Bandleader",
+      "eras": ["new-orleans", "swing"],
+      "primaryEra": "swing",
+      "wikipedia": "Fletcher_Henderson",
+      "blurb": "Henderson's New York orchestra, with Louis Armstrong in 1924 and 1925, Coleman Hawkins on tenor and Don Redman's arrangements, worked out how a big band could swing. When it broke up in 1934 he sold arrangements to Benny Goodman, and later joined him as pianist and arranger.",
+      "connections": ["louis-armstrong", "coleman-hawkins", "benny-goodman"],
+      "albums": ["henderson-armstrong-1924"],
+      "signatureTracks": ["Sugar Foot Stomp", "King Porter Stomp", "Christopher Columbus"],
+      "videoQuery": "Fletcher Henderson Orchestra"
+    },
+    {
+      "id": "artie-shaw",
+      "name": "Artie Shaw",
+      "born": 1910,
+      "died": 2004,
+      "instrument": "Clarinet",
+      "eras": ["swing"],
+      "primaryEra": "swing",
+      "wikipedia": "Artie_Shaw",
+      "blurb": "Shaw's clarinet rose clean and high over his band, and his 1938 \"Begin the Beguine\" made him one of the biggest stars of the swing era. He hired Billie Holiday as his singer that year, added strings and a harpsichord-led small group, the Gramercy Five, and quit music for good in 1954.",
+      "connections": ["billie-holiday", "benny-goodman"],
+      "albums": ["essential-artie-shaw"],
+      "signatureTracks": ["Begin the Beguine", "Frenesi", "Concerto for Clarinet"],
+      "videoQuery": "Artie Shaw Begin the Beguine"
+    },
+    {
+      "id": "red-norvo",
+      "name": "Red Norvo",
+      "born": 1908,
+      "died": 1999,
+      "instrument": "Vibraphone",
+      "eras": ["swing", "bebop"],
+      "primaryEra": "swing",
+      "wikipedia": "Red_Norvo",
+      "blurb": "Norvo brought the xylophone and marimba into jazz in the 1930s, when he and his wife, singer Mildred Bailey, were billed as \"Mr. and Mrs. Swing\". On vibraphone he kept moving: a 1945 session with Charlie Parker and Dizzy Gillespie, then a drummerless trio with Tal Farlow and Charles Mingus.",
+      "connections": ["benny-goodman", "charles-mingus", "charlie-parker", "dizzy-gillespie"],
+      "albums": ["dance-of-the-octopus"],
+      "signatureTracks": ["Dance of the Octopus", "Knockin' On Wood", "Congo Blues"],
+      "videoQuery": "Red Norvo vibraphone"
+    },
+    {
+      "id": "fats-navarro",
+      "name": "Fats Navarro",
+      "born": 1923,
+      "died": 1950,
+      "instrument": "Trumpet",
+      "eras": ["bebop"],
+      "primaryEra": "bebop",
+      "wikipedia": "Fats_Navarro",
+      "blurb": "Navarro played bebop trumpet with a full, round tone and long, evenly placed lines, above all in Tadd Dameron's band of the late 1940s. He died of tuberculosis at 26, but Clifford Brown, Miles Davis and Lee Morgan all took something from him.",
+      "connections": ["bud-powell", "clifford-brown"],
+      "albums": ["fabulous-fats-navarro-1"],
+      "signatureTracks": ["The Squirrel", "Our Delight", "Nostalgia"],
+      "videoQuery": "Fats Navarro trumpet"
+    },
+    {
+      "id": "mary-lou-williams",
+      "name": "Mary Lou Williams",
+      "born": 1910,
+      "died": 1981,
+      "instrument": "Piano",
+      "eras": ["swing", "bebop"],
+      "primaryEra": "swing",
+      "wikipedia": "Mary_Lou_Williams",
+      "blurb": "Pianist and chief arranger for Andy Kirk's Clouds of Joy, Williams also wrote for Benny Goodman and Duke Ellington. In 1940s New York she was a friend and teacher to the young beboppers, Thelonious Monk and Bud Powell among them, and composed the twelve-part Zodiac Suite.",
+      "connections": ["thelonious-monk", "bud-powell", "benny-goodman", "duke-ellington"],
+      "albums": ["zodiac-suite"],
+      "signatureTracks": ["Froggy Bottom", "Roll 'Em", "Night Life"],
+      "videoQuery": "Mary Lou Williams piano"
+    },
+    {
+      "id": "joel-ross",
+      "name": "Joel Ross",
+      "born": 1995,
+      "instrument": "Vibraphone",
+      "eras": ["contemporary"],
+      "primaryEra": "contemporary",
+      "wikipedia": "Joel_Ross_(vibraphonist)",
+      "blurb": "A Chicago vibraphonist who started out on drums in his father's church, Ross leads the band Good Vibes, has recorded for Blue Note since his 2019 debut KingMaker, and plays on Makaya McCraven's records.",
+      "connections": ["makaya-mccraven", "bobby-hutcherson"],
+      "albums": ["nublues"],
+      "signatureTracks": ["Touched by an Angel", "Prince Lynn's Twin", "nublues"],
+      "videoQuery": "Joel Ross Good Vibes live"
+    },
+    {
+      "id": "immanuel-wilkins",
+      "name": "Immanuel Wilkins",
+      "born": 1997,
+      "instrument": "Saxophone",
+      "eras": ["contemporary"],
+      "primaryEra": "contemporary",
+      "wikipedia": "Immanuel_Wilkins",
+      "blurb": "A Philadelphia-raised alto saxophonist trained at Juilliard, Wilkins writes long, searching pieces that face American history head-on; his Blue Note debut, produced by Jason Moran, came out when he was 22, and in 2026 he received a MacArthur fellowship.",
+      "connections": ["jason-moran"],
+      "albums": ["omega"],
+      "signatureTracks": ["Warriors", "Ferguson - An American Tradition", "Fugitive Ritual, Selah"],
+      "videoQuery": "Immanuel Wilkins quartet live"
+    },
+    {
+      "id": "samara-joy",
+      "name": "Samara Joy",
+      "born": 1999,
+      "instrument": "Vocals",
+      "eras": ["contemporary"],
+      "primaryEra": "contemporary",
+      "wikipedia": "Samara_Joy",
+      "blurb": "A Bronx singer from a gospel family, Joy won the Sarah Vaughan vocal competition in 2019 and, with a warm, unhurried voice rooted in the standards, became in 2023 a rare jazz singer to win the Grammy for Best New Artist.",
+      "connections": ["sarah-vaughan"],
+      "albums": ["linger-awhile"],
+      "signatureTracks": ["Can't Get Out of This Mood", "Guess Who I Saw Today", "Tight"],
+      "videoQuery": "Samara Joy live"
+    },
+    {
+      "id": "anat-cohen",
+      "name": "Anat Cohen",
+      "born": 1975,
+      "instrument": "Clarinet",
+      "eras": ["contemporary", "latin"],
+      "primaryEra": "contemporary",
+      "wikipedia": "Anat_Cohen",
+      "blurb": "Born in Tel Aviv and based in New York, Cohen put the clarinet back at the front of modern jazz, moving between swing, Brazilian choro and chamber music; the Jazz Journalists Association named her clarinetist of the year every year from 2007 to 2023.",
+      "connections": ["antonio-carlos-jobim", "egberto-gismonti", "benny-goodman"],
+      "albums": ["quartetinho"],
+      "signatureTracks": ["Happy Song", "Anat's Dance", "Baroquen Spirit"],
+      "videoQuery": "Anat Cohen clarinet live"
+    },
+    {
+      "id": "jimmy-giuffre",
+      "name": "Jimmy Giuffre",
+      "born": 1921,
+      "died": 2008,
+      "instrument": "Clarinet",
+      "eras": ["cool", "free"],
+      "primaryEra": "cool",
+      "wikipedia": "Jimmy_Giuffre",
+      "blurb": "A Texas-born clarinetist and saxophonist who wrote 'Four Brothers' for Woody Herman, Giuffre became a quiet radical of West Coast jazz: his trio with Jim Hall played soft, folk-tinged chamber music, and his 1961 trio with Paul Bley and Steve Swallow moved toward free improvisation.",
+      "connections": ["stan-getz", "lee-konitz"],
+      "albums": ["the-jimmy-giuffre-3"],
+      "signatureTracks": ["The Train and the River", "Emphasis", "Crawdad Suite"],
+      "videoQuery": "Jimmy Giuffre The Train and the River"
+    },
+    {
+      "id": "cal-tjader",
+      "name": "Cal Tjader",
+      "born": 1925,
+      "died": 1982,
+      "instrument": "Vibraphone",
+      "eras": ["latin", "cool"],
+      "primaryEra": "latin",
+      "wikipedia": "Cal_Tjader",
+      "blurb": "Tjader drummed with Dave Brubeck before Afro-Cuban music took hold of him; his bands set cool, airy vibraphone over mambo and cha-cha rhythms, made him one of the most successful non-Latino musicians in Latin jazz, and won him a Grammy for La Onda Va Bien in 1980.",
+      "connections": ["dave-brubeck", "mongo-santamaria", "tito-puente"],
+      "albums": ["soul-sauce"],
+      "signatureTracks": ["Soul Sauce (Guachi Guara)", "Afro Blue", "Black Orchid"],
+      "videoQuery": "Cal Tjader vibraphone live"
+    },
+    {
+      "id": "curtis-fuller",
+      "name": "Curtis Fuller",
+      "born": 1932,
+      "died": 2021,
+      "instrument": "Trombone",
+      "eras": ["hard-bop"],
+      "primaryEra": "hard-bop",
+      "wikipedia": "Curtis_Fuller",
+      "blurb": "A Detroit trombonist with a warm, rounded tone and bebop fluency, Fuller played on Coltrane's Blue Train, was the Jazztet's first trombonist and spent 1961 to 1965 in Art Blakey's Jazz Messengers.",
+      "connections": ["john-coltrane", "art-blakey", "tommy-flanagan"],
+      "albums": ["blues-ette"],
+      "signatureTracks": ["Five Spot After Dark", "Blues-Ette", "Arabia"],
+      "videoQuery": "Curtis Fuller trombone Jazz Messengers"
+    },
+    {
+      "id": "trombone-shorty",
+      "name": "Trombone Shorty",
+      "born": 1986,
+      "instrument": "Trombone",
+      "eras": ["contemporary"],
+      "primaryEra": "contemporary",
+      "wikipedia": "Trombone_Shorty",
+      "blurb": "Troy Andrews grew up in New Orleans' Tremé neighbourhood and was leading a band by age six; with Orleans Avenue he folds the city's brass-band and second-line rhythms into funk, rock and hip-hop.",
+      "connections": [],
+      "albums": ["backatown"],
+      "signatureTracks": ["Hurricane Season", "Backatown", "Buckjump"],
+      "videoQuery": "Trombone Shorty Orleans Avenue live"
+    },
+    {
+      "id": "jimmy-mcgriff",
+      "name": "Jimmy McGriff",
+      "born": 1936,
+      "died": 2008,
+      "instrument": "Organ",
+      "eras": ["soul-jazz"],
+      "primaryEra": "soul-jazz",
+      "wikipedia": "Jimmy_McGriff",
+      "blurb": "A Philadelphia policeman turned organist who learned from Richard 'Groove' Holmes and Jimmy Smith, McGriff played a gritty, blues-heavy Hammond B-3; his 1962 instrumental of Ray Charles's 'I've Got a Woman' made the pop top 20.",
+      "connections": ["jimmy-smith"],
+      "albums": ["ive-got-a-woman"],
+      "signatureTracks": ["I've Got A Woman", "All About My Girl", "The Worm"],
+      "videoQuery": "Jimmy McGriff Hammond organ"
+    },
+    {
+      "id": "lonnie-smith",
+      "name": "Dr. Lonnie Smith",
+      "born": 1942,
+      "died": 2021,
+      "instrument": "Organ",
+      "eras": ["soul-jazz"],
+      "primaryEra": "soul-jazz",
+      "wikipedia": "Dr._Lonnie_Smith",
+      "blurb": "Raised near Buffalo in a family that sang gospel, Smith came to New York in 1965, played in George Benson's quartet and on Lou Donaldson's Blue Note dates, then led funky, groove-heavy organ records of his own; turbaned and styled Dr. Lonnie Smith, he kept recording until 2021.",
+      "connections": ["lou-donaldson", "lee-morgan"],
+      "albums": ["think-lonnie-smith"],
+      "signatureTracks": ["Move Your Hand", "Think", "Spinning Wheel"],
+      "videoQuery": "Dr. Lonnie Smith Hammond B3 live"
+    },
+    {
+      "id": "joey-defrancesco",
+      "name": "Joey DeFrancesco",
+      "born": 1971,
+      "died": 2022,
+      "instrument": "Organ",
+      "eras": ["post-bop", "soul-jazz"],
+      "primaryEra": "post-bop",
+      "wikipedia": "Joey_DeFrancesco",
+      "blurb": "The son and grandson of jazz musicians from the Philadelphia area, DeFrancesco signed with Columbia at 16, toured Europe with Miles Davis and brought the Hammond B-3 to a new generation, playing bebop at speed on top of Jimmy Smith's blues.",
+      "connections": ["jimmy-smith", "miles-davis", "john-mclaughlin", "pharoah-sanders"],
+      "albums": ["in-the-key-of-the-universe"],
+      "signatureTracks": ["All of Me", "The Creator Has a Master Plan", "In the Key of the Universe"],
+      "videoQuery": "Joey DeFrancesco organ live"
+    },
+    {
+      "id": "domi-and-jd-beck",
+      "name": "DOMi & JD BECK",
+      "group": true,
+      "born": 2018,
+      "instrument": "Bandleader",
+      "eras": ["contemporary"],
+      "primaryEra": "contemporary",
+      "wikipedia": "Domi_and_JD_Beck",
+      "blurb": "Keyboardist Domi Louna (born Domitille Degalle) from France and drummer JD Beck from the Dallas area met in 2018 and write tightly packed, harmonically dense music for the two of them; their debut drew Herbie Hancock and Thundercat in as guests and earned a Best New Artist Grammy nomination.",
+      "connections": ["herbie-hancock"],
+      "albums": ["not-tight", "who-asked"],
+      "signatureTracks": ["SMiLE", "NOT TiGHT", "WHATUP"],
+      "videoQuery": "DOMi and JD Beck live"
+    },
+    {
+      "id": "christian-mcbride",
+      "name": "Christian McBride",
+      "born": 1972,
+      "instrument": "Bass",
+      "eras": ["contemporary", "post-bop"],
+      "primaryEra": "contemporary",
+      "wikipedia": "Christian_McBride",
+      "blurb": "A Philadelphia bassist who toured with Bobby Watson at 17 and played with Freddie Hubbard in his early twenties, McBride has appeared on more than 400 records, leads a big band and several small groups, and was the Newport Jazz Festival's artistic director from 2016 to 2025.",
+      "connections": ["freddie-hubbard", "joshua-redman", "brad-mehldau"],
+      "albums": ["the-movement-revisited"],
+      "signatureTracks": ["Used 'Ta Could", "Brother Malcolm", "Sister Rosa"],
+      "videoQuery": "Christian McBride bass live"
+    },
+    {
+      "id": "yussef-dayes",
+      "name": "Yussef Dayes",
+      "born": 1992,
+      "instrument": "Drums",
+      "eras": ["contemporary"],
+      "primaryEra": "contemporary",
+      "wikipedia": "Yussef_Dayes",
+      "blurb": "A South London drummer whose playing draws on reggae, jungle and grime as much as jazz, Dayes came up in the Afrobeat-leaning United Vibrations, made Black Focus with keyboardist Kamaal Williams in 2016 and reached the UK top five with Tom Misch.",
+      "connections": ["shabaka-hutchings"],
+      "albums": ["black-classical-music"],
+      "signatureTracks": ["Black Classical Music", "Rust", "Tidal Wave"],
+      "videoQuery": "Yussef Dayes live drums"
+    },
+    {
+      "id": "emma-jean-thackray",
+      "name": "Emma-Jean Thackray",
+      "instrument": "Trumpet",
+      "eras": ["contemporary"],
+      "primaryEra": "contemporary",
+      "wikipedia": "Emma-Jean_Thackray",
+      "blurb": "A Leeds trumpeter who started on cornet in Yorkshire brass bands, Thackray writes, sings, plays and produces her own records, mixing spiritual jazz with funk and dance music.",
+      "connections": ["makaya-mccraven"],
+      "albums": ["yellow"],
+      "signatureTracks": ["Say Something", "Venus", "Too Shy"],
+      "videoQuery": "Emma-Jean Thackray live"
+    },
+    {
+      "id": "tigran-hamasyan",
+      "name": "Tigran Hamasyan",
+      "born": 1987,
+      "instrument": "Piano",
+      "eras": ["contemporary"],
+      "primaryEra": "contemporary",
+      "wikipedia": "Tigran_Hamasyan",
+      "blurb": "Born in Gyumri, Armenia, Hamasyan won the Thelonious Monk piano competition in 2006 and built a style on Armenian folk melodies and modes, odd meters and, at times, the weight of progressive rock.",
+      "connections": ["ambrose-akinmusire", "joshua-redman"],
+      "albums": ["standart"],
+      "signatureTracks": ["Markos and Markos", "Kars 1", "De-Dah"],
+      "videoQuery": "Tigran Hamasyan piano live"
+    },
+    {
+      "id": "jazzmeia-horn",
+      "name": "Jazzmeia Horn",
+      "born": 1991,
+      "instrument": "Vocals",
+      "eras": ["contemporary"],
+      "primaryEra": "contemporary",
+      "wikipedia": "Jazzmeia_Horn",
+      "blurb": "A Dallas-born singer who won the Sarah Vaughan competition in 2013 and the Thelonious Monk competition in 2015, Horn sings standards and her own socially minded songs, and is often compared to Betty Carter and Sarah Vaughan.",
+      "connections": ["sarah-vaughan"],
+      "albums": ["dear-love"],
+      "signatureTracks": ["Tight", "Free Your Mind", "Where Is Freedom!?"],
+      "videoQuery": "Jazzmeia Horn live"
     }
   ],
   "albums": [
@@ -7205,6 +7582,562 @@
         "Köln, January 24, 1975, Pt. II C"
       ],
       "starter": true
+    },
+    {
+      "id": "odjb-75th-anniversary",
+      "title": "The 75th Anniversary",
+      "artist": "original-dixieland-jass-band",
+      "artistName": "The Original Dixieland Jazz Band",
+      "year": 1917,
+      "label": "Victor",
+      "era": "roots",
+      "why": "The band's Victor sides of 1917 to 1921, opening with \"Livery Stable Blues\", the first jazz record issued: cornet, clarinet and trombone locked in a loud, busy ensemble, with farmyard effects for novelty. Its own \"Tiger Rag\" and \"Fidgety Feet\" became Dixieland standards.",
+      "highlights": ["Livery Stable Blues", "Tiger Rag", "At the Jazz Band Ball"],
+      "starter": false
+    },
+    {
+      "id": "hell-fighters-band",
+      "title": "James Reese Europe's 369th U.S. Infantry \"Hell Fighters\" Band (Remastered)",
+      "artist": "james-reese-europe",
+      "artistName": "James Reese Europe",
+      "year": 1919,
+      "label": "Pathé",
+      "era": "roots",
+      "why": "The 24 sides Europe's army band recorded for Pathé in the spring of 1919, just back from France: a big brass-and-reed band playing W.C. Handy's blues and syncopated show tunes with a looseness that points toward jazz.",
+      "highlights": ["Memphis Blues", "St. Louis Blues", "That Moaning Trombone"],
+      "starter": false
+    },
+    {
+      "id": "king-of-the-country-blues",
+      "title": "King of the Country Blues",
+      "artist": "blind-lemon-jefferson",
+      "artistName": "Blind Lemon Jefferson",
+      "year": 1926,
+      "label": "Yazoo",
+      "era": "roots",
+      "why": "Yazoo's single-disc selection from Jefferson's 1926–29 records: a high, piercing voice over guitar that runs, stops and restarts at will, on songs like \"Matchbox Blues\" and \"See That My Grave Is Kept Clean\" that later blues and rock players kept returning to.",
+      "highlights": ["Matchbox Blues", "See That My Grave Is Kept Clean", "That Crawlin' Baby Blues"],
+      "starter": false
+    },
+    {
+      "id": "steppin-on-the-blues",
+      "title": "Steppin' On the Blues",
+      "artist": "lonnie-johnson",
+      "artistName": "Lonnie Johnson",
+      "year": 1927,
+      "label": "Columbia",
+      "era": "roots",
+      "why": "Nineteen OKeh sides from 1925 to 1932: low-down blues and risqué hokum, a duet with Victoria Spivey, and guitar showpieces like \"6/88 Glide\" whose clean single-note runs gave jazz guitarists a model.",
+      "highlights": ["6/88 Glide", "Mr. Johnson's Blues", "Guitar Blues"],
+      "starter": false
+    },
+    {
+      "id": "robert-johnson-complete-recordings",
+      "title": "The Complete Recordings",
+      "artist": "robert-johnson",
+      "artistName": "Robert Johnson",
+      "year": 1936,
+      "label": "Columbia",
+      "era": "roots",
+      "why": "Johnson's 29 songs from San Antonio in 1936 and Dallas in 1937, with a dozen alternate takes. Released in 1990, this set sold more than a million copies and won a Grammy, bringing Delta blues to listeners who knew it only through the Rolling Stones and Eric Clapton.",
+      "highlights": ["Cross Road Blues", "Hellhound On My Trail", "Come On In My Kitchen"],
+      "starter": false
+    },
+    {
+      "id": "creole-jazz-band-1923",
+      "title": "Editio Princeps",
+      "artist": "king-oliver",
+      "artistName": "King Oliver's Creole Jazz Band",
+      "year": 1923,
+      "label": "Gennett",
+      "era": "new-orleans",
+      "why": "The 1923 sessions that put New Orleans collective improvisation on record: Oliver's muted solo on \"Dipper Mouth Blues\", the young Louis Armstrong on second cornet, and Johnny and Baby Dodds and Lil Hardin in a band that moves as one.",
+      "highlights": ["Dipper Mouth Blues", "Canal Street Blues", "Snake Rag"],
+      "starter": false
+    },
+    {
+      "id": "henderson-armstrong-1924",
+      "title": "Fletcher Henderson and Louis Armstrong 1924-1925",
+      "artist": "fletcher-henderson",
+      "artistName": "Fletcher Henderson",
+      "year": 1924,
+      "label": "Timeless",
+      "era": "new-orleans",
+      "why": "Louis Armstrong's year in Henderson's New York dance orchestra. His hot, swinging breaks cut through the arrangements, and Don Redman's \"Sugar Foot Stomp\", built on King Oliver's \"Dipper Mouth Blues\", shows New Orleans jazz being turned into big-band writing.",
+      "highlights": ["Shanghai Shuffle", "Copenhagen", "T.N.T."],
+      "starter": false
+    },
+    {
+      "id": "blue-clarinet-stomp",
+      "title": "Blue Clarinet Stomp - Complete Sessions 1928 & 1929",
+      "artist": "johnny-dodds",
+      "artistName": "Johnny Dodds",
+      "year": 1928,
+      "label": "Frog",
+      "era": "new-orleans",
+      "why": "Dodds's Victor sessions of 1928 and 1929, in trio, washboard-band and small-band settings, with his brother Baby Dodds in the rhythm: the clarinet that drove King Oliver's and Armstrong's groups, heard as a leader with a thick, bluesy tone.",
+      "highlights": ["Bucktown Stomp", "Bull Fiddle Blues", "Weary City"],
+      "starter": false
+    },
+    {
+      "id": "classic-earl-hines-sessions",
+      "title": "Classic Earl Hines Sessions (1928-1945), Vol. 1 & 2",
+      "artist": "earl-hines",
+      "artistName": "Earl Hines",
+      "year": 1928,
+      "label": "Mosaic",
+      "era": "new-orleans",
+      "why": "Mosaic's survey opens with Hines's four OKeh piano solos of December 1928, \"57 Varieties\" and \"Caution Blues\" among them, and goes on to the first records of the big band he led at Chicago's Grand Terrace.",
+      "highlights": ["57 Varieties", "Caution Blues", "Beau-Koo Jack"],
+      "starter": false
+    },
+    {
+      "id": "kid-ory-1944-45",
+      "title": "Kid Ory's Creole Jazz Band 1944/45",
+      "artist": "kid-ory",
+      "artistName": "Kid Ory's Creole Jazz Band",
+      "year": 1944,
+      "label": "Good Time Jazz",
+      "era": "new-orleans",
+      "why": "The band put together around Ory for Orson Welles's 1944 radio show, with Mutt Carey on trumpet, recorded these sides for Nesuhi Ertegun's Crescent label: New Orleans ensemble jazz from one of its first players, with Ory's trombone sliding under the lead.",
+      "highlights": ["Ory's Creole Trombone", "Creole Song", "Get Out Of Here"],
+      "starter": false
+    },
+    {
+      "id": "satchmo-at-symphony-hall",
+      "title": "Satchmo at Symphony Hall (Live)",
+      "artist": "louis-armstrong",
+      "artistName": "Louis Armstrong",
+      "year": 1947,
+      "label": "Decca",
+      "era": "new-orleans",
+      "why": "Armstrong's new All Stars in Boston on 30 November 1947, months after he gave up his big band: Jack Teagarden's trombone and singing, Barney Bigard's clarinet and Sid Catlett's drums, in the small-band format he kept for the rest of his life.",
+      "highlights": ["Mahogany Hall Stomp", "Royal Garden Blues", "Steak Face"],
+      "starter": false
+    },
+    {
+      "id": "dance-of-the-octopus",
+      "title": "Dance Of The Octopus",
+      "artist": "red-norvo",
+      "artistName": "Red Norvo",
+      "year": 1933,
+      "label": "Hep",
+      "era": "swing",
+      "why": "The first 26 sides Norvo led, from 1933 to 1936: the hushed chamber jazz of \"Dance of the Octopus\" and Bix Beiderbecke's \"In a Mist\", with Benny Goodman on bass clarinet, then swing dates where his xylophone sits among players like Artie Shaw and Bunny Berigan.",
+      "highlights": ["Dance Of The Octopus", "Knockin' On Wood", "Bughouse"],
+      "starter": false
+    },
+    {
+      "id": "piano-starts-here",
+      "title": "Piano Starts Here",
+      "artist": "art-tatum",
+      "artistName": "Art Tatum",
+      "year": 1933,
+      "label": "Columbia",
+      "era": "swing",
+      "why": "Tatum's first solo records, made in March 1933, beside a 1949 concert at the Shrine Auditorium in Los Angeles: sixteen years apart, the same torrential runs, sudden key changes and stride left hand.",
+      "highlights": ["Tiger Rag", "Tea For Two", "Willow Weep For Me"],
+      "starter": false
+    },
+    {
+      "id": "if-you-got-to-ask",
+      "title": "If You Got to Ask, You Ain't Got It!",
+      "artist": "fats-waller",
+      "artistName": "Fats Waller and His Rhythm",
+      "year": 1935,
+      "label": "Bluebird",
+      "era": "swing",
+      "why": "Three discs that show both sides of Waller: the singer who sent up pop songs with His Rhythm, and the stride pianist and organist of \"Viper's Drag\", \"Smashin' Thirds\" and \"The Jitterbug Waltz\".",
+      "highlights": ["The Joint Is Jumpin'", "Viper's Drag", "Your Feet's Too Big"],
+      "starter": false
+    },
+    {
+      "id": "hampton-victor-sessions-1",
+      "title": "The Complete Victor Lionel Hampton Sessions, Vol. 1",
+      "artist": "lionel-hampton",
+      "artistName": "Lionel Hampton and His Orchestra",
+      "year": 1937,
+      "label": "Victor",
+      "era": "swing",
+      "why": "From 1937, while still in Benny Goodman's quartet, Hampton led Victor pickup sessions with players borrowed from the big bands, Ellington's men among them, and put the vibraphone out front as a lead jazz voice.",
+      "highlights": ["Jivin' the Vibres", "Hampton Stomp", "Ring Dem Bells"],
+      "starter": false
+    },
+    {
+      "id": "essential-artie-shaw",
+      "title": "The Essential Artie Shaw",
+      "artist": "artie-shaw",
+      "artistName": "Artie Shaw",
+      "year": 1938,
+      "label": "Bluebird",
+      "era": "swing",
+      "why": "Two discs from Shaw's peak: \"Begin the Beguine\", the 1938 hit that made him a star, \"Any Old Time\" with Billie Holiday, the string-lined \"Frenesi\" and \"Star Dust\", and the Gramercy Five's harpsichord-flecked \"Summit Ridge Drive\".",
+      "highlights": ["Begin the Beguine", "Frenesi", "Summit Ridge Drive"],
+      "starter": false
+    },
+    {
+      "id": "kansas-city-sessions",
+      "title": "The \"Kansas City\" Sessions",
+      "artist": "lester-young",
+      "artistName": "Lester Young",
+      "year": 1938,
+      "label": "Commodore",
+      "era": "swing",
+      "why": "Commodore's Kansas City Five and Six dates of 1938 and 1944 gather Count Basie's men, Buck Clayton, Freddie Green and Walter Page among them, with Eddie Durham on early electric guitar; on \"Pagin' the Devil\" Young plays his rarely heard clarinet.",
+      "highlights": ["Pagin' the Devil", "Way Down Yonder in New Orleans", "I Want a Little Girl"],
+      "starter": false
+    },
+    {
+      "id": "zodiac-suite",
+      "title": "Zodiac Suite",
+      "artist": "mary-lou-williams",
+      "artistName": "Mary Lou Williams",
+      "year": 1945,
+      "label": "Asch",
+      "era": "swing",
+      "why": "Twelve short pieces, one for each sign and each dedicated to musician friends, recorded for Asch in 1945: stride, blues and impressionist harmony in a suite that looks from swing toward modern jazz.",
+      "highlights": ["Aries", "Virgo", "Aquarius"],
+      "starter": false
+    },
+    {
+      "id": "dexter-gordon-on-savoy",
+      "title": "On Savoy: Dexter Gordon",
+      "artist": "dexter-gordon",
+      "artistName": "Dexter Gordon",
+      "year": 1946,
+      "label": "Savoy",
+      "era": "bebop",
+      "why": "Gordon's Savoy sessions of 1945 to 1947, made as bebop took hold: a big, unhurried tenor sound out front on \"Long Tall Dexter\" and \"Dexter Rides Again\", with Bud Powell and Max Roach in the 1946 band and Tadd Dameron and Art Blakey in the 1947 one.",
+      "highlights": ["Long Tall Dexter", "Dexter Rides Again", "Dexter's Deck"],
+      "starter": false
+    },
+    {
+      "id": "dizzy-rca-victor",
+      "title": "The Complete RCA Victor Recordings",
+      "artist": "dizzy-gillespie",
+      "artistName": "Dizzy Gillespie",
+      "year": 1947,
+      "label": "RCA Victor",
+      "era": "bebop",
+      "why": "Gillespie's RCA Victor years, centred on his 1947–49 big band. With the Cuban percussionist Chano Pozo it recorded \"Cubana Be\"/\"Cubana Bop\" and \"Manteca\", landmarks in joining bebop to Afro-Cuban rhythm.",
+      "highlights": ["Manteca", "Cubana Be", "Two Bass Hit"],
+      "starter": false
+    },
+    {
+      "id": "fabulous-fats-navarro-1",
+      "title": "The Fabulous Fats Navarro, Vol. 1",
+      "artist": "fats-navarro",
+      "artistName": "Fats Navarro",
+      "year": 1947,
+      "label": "Blue Note",
+      "era": "bebop",
+      "why": "Blue Note sides from 1947 to 1949, led by Tadd Dameron's sextet: Navarro's full tone and long, even lines on \"The Squirrel\", \"The Chase\" and \"Our Delight\", bebop at its most melodic.",
+      "highlights": ["The Squirrel", "The Chase", "Dameronia"],
+      "starter": false
+    },
+    {
+      "id": "in-these-times",
+      "title": "In These Times",
+      "artist": "makaya-mccraven",
+      "artistName": "Makaya McCraven",
+      "year": 2022,
+      "label": "International Anthem",
+      "era": "contemporary",
+      "why": "Pieced together over seven years from sessions in five studios and four live rooms, McCraven's suite edits a chamber band, with Brandee Younger's harp and Jeff Parker's guitar, into odd-metered, softly driving music that sounds composed and improvised at once.",
+      "highlights": ["In These Times", "Dream Another", "The Calling"],
+      "starter": false
+    },
+    {
+      "id": "fearless-movement",
+      "title": "Fearless Movement",
+      "artist": "kamasi-washington",
+      "artistName": "Kamasi Washington",
+      "year": 2024,
+      "label": "Young",
+      "era": "contemporary",
+      "why": "Washington called it his dance album, meaning movement rather than the club; made after he became a father, it trades cosmic sprawl for earthbound grooves, with guests from Thundercat and George Clinton to André 3000.",
+      "highlights": ["Lesanu", "Asha the First (feat. Thundercat, Taj Austin & Ras Austin)", "Dream State"],
+      "starter": false
+    },
+    {
+      "id": "ghost-song",
+      "title": "Ghost Song",
+      "artist": "cecile-mclorin-salvant",
+      "artistName": "Cécile McLorin Salvant",
+      "year": 2022,
+      "label": "Nonesuch",
+      "era": "contemporary",
+      "why": "Salvant's first album for Nonesuch sets seven of her own songs beside Kate Bush's 'Wuthering Heights', a Sting ballad, Weill and Brecht, and a traditional ballad, moving between theatre song, folk and jazz with a singer's command of character.",
+      "highlights": ["Wuthering Heights", "Optimistic Voices / No Love Dying", "Ghost Song"],
+      "starter": false
+    },
+    {
+      "id": "on-the-tender-spot",
+      "title": "on the tender spot of every calloused moment",
+      "artist": "ambrose-akinmusire",
+      "artistName": "Ambrose Akinmusire",
+      "year": 2020,
+      "label": "Blue Note",
+      "era": "contemporary",
+      "why": "A spacious, searching quartet record with pianist Sam Harris, bassist Harish Raghavan and drummer Justin Brown; its bluesiest track, 'Roy', mourns Akinmusire's friend Roy Hargrove.",
+      "highlights": ["Tide of Hyacinth", "Roy", "Blues (We measure the heart with a fist)"],
+      "starter": false
+    },
+    {
+      "id": "nublues",
+      "title": "nublues",
+      "artist": "joel-ross",
+      "artistName": "Joel Ross",
+      "year": 2024,
+      "label": "Blue Note",
+      "era": "contemporary",
+      "why": "Ross's fourth Blue Note album turns to melody, ballads and the blues, with Immanuel Wilkins on alto, seven originals, and versions of Coltrane's 'Equinox' and 'Central Park West' and Monk's 'Evidence'.",
+      "highlights": ["equinox", "nublues", "evidence"],
+      "starter": false
+    },
+    {
+      "id": "omega",
+      "title": "Omega",
+      "artist": "immanuel-wilkins",
+      "artistName": "Immanuel Wilkins",
+      "year": 2020,
+      "label": "Blue Note",
+      "era": "contemporary",
+      "why": "Wilkins's debut, produced by Jason Moran, points an alto-led quartet at America's racial violence in pieces like 'Ferguson' and 'Mary Turner' and ends with a four-part suite; NPR's critics poll voted it the year's best debut.",
+      "highlights": ["Warriors", "Ferguson - An American Tradition", "Part 1. The Key"],
+      "starter": false
+    },
+    {
+      "id": "linger-awhile",
+      "title": "Linger Awhile",
+      "artist": "samara-joy",
+      "artistName": "Samara Joy",
+      "year": 2022,
+      "label": "Verve",
+      "era": "contemporary",
+      "why": "Standards and bebop tunes sung with guitarist Pasquale Grasso and a small band, including 'Nostalgia', for which she wrote words to Fats Navarro's line; it won the Grammy for Best Jazz Vocal Album in the year she was named Best New Artist.",
+      "highlights": ["Can't Get Out of This Mood", "Guess Who I Saw Today", "Nostalgia (The Day I Knew)"],
+      "starter": false
+    },
+    {
+      "id": "quartetinho",
+      "title": "Quartetinho",
+      "artist": "anat-cohen",
+      "artistName": "Anat Cohen",
+      "year": 2022,
+      "label": "Anzic",
+      "era": "contemporary",
+      "why": "Cohen's chamber quartet with Vitor Gonçalves on piano and accordion, James Shipp on vibraphone and Tal Mashiach on bass and guitar plays originals and pieces by Jobim and Gismonti in soft, many-coloured textures, her clarinet at the centre.",
+      "highlights": ["Baroquen Spirit", "Palhaço", "O Boto"],
+      "starter": false
+    },
+    {
+      "id": "not-tight",
+      "title": "NOT TiGHT",
+      "artist": "domi-and-jd-beck",
+      "artistName": "DOMi & JD BECK",
+      "year": 2022,
+      "label": "Blue Note",
+      "era": "contemporary",
+      "why": "The duo's debut, released through Anderson .Paak's label with Blue Note, packs dense harmony and fast-shifting drum patterns into short tracks, with guests including Herbie Hancock, Thundercat, Snoop Dogg and Kurt Rosenwinkel; it was nominated for the Grammy for contemporary instrumental album.",
+      "highlights": ["SMiLE", "NOT TiGHT", "MOON"],
+      "starter": false
+    },
+    {
+      "id": "who-asked",
+      "title": "WHO ASKED?",
+      "artist": "domi-and-jd-beck",
+      "artistName": "DOMi & JD BECK",
+      "year": 2026,
+      "label": "Blue Note",
+      "era": "contemporary",
+      "why": "Their second album grew out of orchestrating their music for concerts with the Metropole Orkest: written out in full before a note was played, it adds a small classical ensemble and the duo's own singing to Domi's piano and Beck's drums.",
+      "highlights": ["ÉPiPHANiE", "HAD ENOUGH", "CONCERTiNO (FOR PiANO, DRUMS & ORCHESTRA)"],
+      "starter": false
+    },
+    {
+      "id": "the-movement-revisited",
+      "title": "The Movement Revisited: A Musical Portrait of Four Icons",
+      "artist": "christian-mcbride",
+      "artistName": "Christian McBride",
+      "year": 2020,
+      "label": "Mack Avenue",
+      "era": "contemporary",
+      "why": "A suite for big band, gospel choir and narrators portraying Rosa Parks, Malcolm X, Muhammad Ali and Martin Luther King Jr.; first written in 1998, expanded with a finale on Barack Obama's election, and recorded in 2013.",
+      "highlights": ["Sister Rosa", "Brother Malcolm", "Rumble in the Jungle"],
+      "starter": false
+    },
+    {
+      "id": "black-classical-music",
+      "title": "Black Classical Music",
+      "artist": "yussef-dayes",
+      "artistName": "Yussef Dayes",
+      "year": 2023,
+      "label": "Brownswood",
+      "era": "contemporary",
+      "why": "Dayes's first solo album runs across 19 tracks of jazz-funk, reggae, Afro-Cuban grooves and ballads, with guests including Shabaka Hutchings, Tom Misch and Chronixx; it won the Ivor Novello award for best album.",
+      "highlights": [
+        "Black Classical Music (feat. Venna & Charlie Stacey)",
+        "Raisins Under the Sun (feat. Shabaka Hutchings)",
+        "Rust (feat. Tom Misch)"
+      ],
+      "starter": false
+    },
+    {
+      "id": "yellow",
+      "title": "Yellow",
+      "artist": "emma-jean-thackray",
+      "artistName": "Emma-Jean Thackray",
+      "year": 2021,
+      "label": "Movementt",
+      "era": "contemporary",
+      "why": "Thackray's self-released debut, which she wrote, produced and mixed herself, blends spiritual jazz, funk and dance music, her trumpet and voice set among choir and band; it topped the UK jazz chart and won Jazz FM's album of the year.",
+      "highlights": ["Mercury", "Say Something", "Venus"],
+      "starter": false
+    },
+    {
+      "id": "standart",
+      "title": "StandArt",
+      "artist": "tigran-hamasyan",
+      "artistName": "Tigran Hamasyan",
+      "year": 2022,
+      "label": "Nonesuch",
+      "era": "contemporary",
+      "why": "Hamasyan's first album of standards, recorded in Los Angeles with bassist Matt Brewer and drummer Justin Brown, bends tunes like 'All the Things You Are' and Charlie Parker's 'Big Foot' through his own rhythmic sense, with Mark Turner, Joshua Redman and Ambrose Akinmusire as guests.",
+      "highlights": ["De-Dah", "All the Things You Are (feat. Mark Turner)", "Big Foot (feat. Joshua Redman)"],
+      "starter": false
+    },
+    {
+      "id": "dear-love",
+      "title": "Dear Love",
+      "artist": "jazzmeia-horn",
+      "artistName": "Jazzmeia Horn and Her Noble Force",
+      "year": 2021,
+      "label": "Empress Legacy",
+      "era": "contemporary",
+      "why": "Horn's first big-band album, with her 15-piece Noble Force, on her own label; its Grammy nomination for large jazz ensemble album made her the first African-American woman vocalist nominated in that category.",
+      "highlights": ["Lover Come Back To Me", "He's My Guy", "Where Is Freedom!?"],
+      "starter": false
+    },
+    {
+      "id": "fontessa",
+      "title": "Fontessa",
+      "artist": "john-lewis",
+      "artistName": "The Modern Jazz Quartet",
+      "year": 1956,
+      "label": "Atlantic",
+      "era": "cool",
+      "why": "The Modern Jazz Quartet's first Atlantic album sets Milt Jackson's blues-rich vibes inside John Lewis's formal designs, above all the eleven-minute title suite modelled on the characters of the commedia dell'arte.",
+      "highlights": ["Versailles (Porte de Versailles)", "Fontessa", "Bluesology"],
+      "starter": false
+    },
+    {
+      "id": "the-jimmy-giuffre-3",
+      "title": "The Jimmy Giuffre 3",
+      "artist": "jimmy-giuffre",
+      "artistName": "Jimmy Giuffre",
+      "year": 1957,
+      "label": "Atlantic",
+      "era": "cool",
+      "why": "Clarinet and saxophones, Jim Hall's guitar and Ralph Peña's bass, with no drummer: the trio plays what Giuffre called blues-based folk jazz, and its closer, 'The Train and the River', turns up in the Newport film Jazz on a Summer's Day.",
+      "highlights": ["Gotta Dance", "Crawdad Suite", "The Train and the River"],
+      "starter": false
+    },
+    {
+      "id": "lee-konitz-with-warne-marsh",
+      "title": "Lee Konitz With Warne Marsh",
+      "artist": "lee-konitz",
+      "artistName": "Lee Konitz",
+      "year": 1955,
+      "label": "Atlantic",
+      "era": "cool",
+      "why": "Two of Lennie Tristano's students, on alto and tenor, weave long, cool lines around each other over Oscar Pettiford's bass and Kenny Clarke's drums, on standards, Parker's 'Donna Lee' and Tristano's 'Two Not One'.",
+      "highlights": ["Topsy", "Donna Lee", "Two Not One"],
+      "starter": false
+    },
+    {
+      "id": "jazz-samba",
+      "title": "Jazz Samba",
+      "artist": "stan-getz",
+      "artistName": "Stan Getz & Charlie Byrd",
+      "year": 1962,
+      "label": "Verve",
+      "era": "latin",
+      "why": "Recorded in a Washington church hall after Charlie Byrd heard bossa nova on a 1961 tour of Brazil, this set of Brazilian tunes, with Getz's tenor floating over soft guitars, reached No. 1 on the Billboard album chart and started the American bossa nova craze.",
+      "highlights": ["Desafinado", "Samba Dees Days", "Samba De Uma Nota So"],
+      "starter": false
+    },
+    {
+      "id": "soul-sauce",
+      "title": "Soul Sauce",
+      "artist": "cal-tjader",
+      "artistName": "Cal Tjader",
+      "year": 1965,
+      "label": "Verve",
+      "era": "latin",
+      "why": "Tjader's vibes over Willie Bobo's and Armando Peraza's percussion, with Kenny Burrell and Donald Byrd sitting in; the title track, Gillespie and Chano Pozo's 'Guachi Guaro', got radio play and the album sold over 100,000 copies.",
+      "highlights": ["Soul Sauce (Guachi Guara)", "Afro Blue", "Maramoor Mambo"],
+      "starter": false
+    },
+    {
+      "id": "blues-ette",
+      "title": "Blues-ette",
+      "artist": "curtis-fuller",
+      "artistName": "Curtis Fuller Quintet",
+      "year": 1960,
+      "label": "Savoy",
+      "era": "hard-bop",
+      "why": "A relaxed hard-bop quintet date where Fuller's trombone and Benny Golson's tenor sing in close harmony over Tommy Flanagan's piano, opening with Golson's 'Five Spot After Dark'.",
+      "highlights": ["Five Spot After Dark", "Blues-Ette", "Minor Vamp"],
+      "starter": false
+    },
+    {
+      "id": "backatown",
+      "title": "Backatown",
+      "artist": "trombone-shorty",
+      "artistName": "Trombone Shorty",
+      "year": 2010,
+      "label": "Verve Forecast",
+      "era": "contemporary",
+      "why": "Andrews's major-label debut, produced by Galactic's Ben Ellman, sets New Orleans brass and second-line beats inside funk and rock, with Allen Toussaint and Lenny Kravitz as guests; it was nominated for the Grammy for contemporary jazz album.",
+      "highlights": ["Hurricane Season", "On Your Way Down (feat. Allen Toussaint)", "Backatown"],
+      "starter": false
+    },
+    {
+      "id": "ive-got-a-woman",
+      "title": "I've Got A Woman",
+      "artist": "jimmy-mcgriff",
+      "artistName": "Jimmy McGriff",
+      "year": 1962,
+      "label": "Sue",
+      "era": "soul-jazz",
+      "why": "Organ trio soul jazz built around McGriff's instrumental of Ray Charles's 'I've Got a Woman', a single that reached No. 20 on the pop chart and No. 5 R&B in 1962, with blues and standards played on a churchy, gritty Hammond.",
+      "highlights": ["I've Got A Woman", "All About My Girl", "M.G. Blues"],
+      "starter": false
+    },
+    {
+      "id": "think-lonnie-smith",
+      "title": "Think!",
+      "artist": "lonnie-smith",
+      "artistName": "Lonnie Smith",
+      "year": 1968,
+      "label": "Blue Note",
+      "era": "soul-jazz",
+      "why": "Smith's second album as a leader, cut for Blue Note in 1968 with Lee Morgan, David 'Fathead' Newman, guitarist Melvin Sparks and extra Latin percussion, turns Hugh Masekela's 'Son of Ice Bag' and Aretha Franklin's 'Think' into long organ grooves.",
+      "highlights": ["Son of Ice Bag", "Think", "Slouchin'"],
+      "starter": false
+    },
+    {
+      "id": "in-the-key-of-the-universe",
+      "title": "In the Key of the Universe",
+      "artist": "joey-defrancesco",
+      "artistName": "Joey DeFrancesco",
+      "year": 2019,
+      "label": "Mack Avenue",
+      "era": "spiritual",
+      "why": "DeFrancesco's turn to spiritual jazz, with Pharoah Sanders on three tracks including his own 'The Creator Has a Master Plan', came almost fifty years after Sanders's Karma and was nominated for the Grammy for jazz instrumental album.",
+      "highlights": ["Inner Being", "The Creator Has a Master Plan", "In the Key of the Universe"],
+      "starter": false
     }
   ],
   "milestones": [
@@ -8153,6 +9086,126 @@
       "b": "thelonious-monk",
       "kind": "band",
       "note": "Rollins played on Monk's Brilliant Corners (1956) and earlier Monk sessions."
+    },
+    {
+      "a": "bix-beiderbecke",
+      "b": "original-dixieland-jass-band",
+      "kind": "influence",
+      "note": "Beiderbecke taught himself the cornet by playing along with the ODJB's records, Nick LaRocca's lines especially."
+    },
+    {
+      "a": "lonnie-johnson",
+      "b": "robert-johnson",
+      "kind": "influence",
+      "note": "Robert Johnson's \"Malted Milk\" and \"Drunken Hearted Man\" follow the arrangement of Lonnie Johnson's \"Life Saver Blues\"."
+    },
+    {
+      "a": "duke-ellington",
+      "b": "lonnie-johnson",
+      "kind": "band",
+      "note": "Johnson recorded \"The Mooche\", \"Hot and Bothered\" and \"Move Over\" with Ellington's orchestra for OKeh in 1928."
+    },
+    {
+      "a": "benny-goodman",
+      "b": "fletcher-henderson",
+      "kind": "band",
+      "note": "Henderson sold arrangements to Goodman when his own band broke up in 1934, and in 1939 joined Goodman's band as pianist and arranger."
+    },
+    {
+      "a": "charles-mingus",
+      "b": "red-norvo",
+      "kind": "band",
+      "note": "Mingus played bass in Norvo's trio with guitarist Tal Farlow, formed in 1949, until 1951."
+    },
+    {
+      "a": "charlie-parker",
+      "b": "red-norvo",
+      "kind": "band",
+      "note": "Parker played on Norvo's June 1945 session for Comet, with Dizzy Gillespie."
+    },
+    {
+      "a": "dizzy-gillespie",
+      "b": "red-norvo",
+      "kind": "band",
+      "note": "Gillespie played on Norvo's June 1945 session for Comet, with Charlie Parker."
+    },
+    {
+      "a": "clifford-brown",
+      "b": "fats-navarro",
+      "kind": "influence",
+      "note": "Navarro's full-toned bebop trumpet was a strong influence on Brown."
+    },
+    {
+      "a": "mary-lou-williams",
+      "b": "thelonious-monk",
+      "kind": "mentor",
+      "note": "Williams was a friend, mentor and teacher to the first beboppers in 1940s New York, Monk among them."
+    },
+    {
+      "a": "bud-powell",
+      "b": "mary-lou-williams",
+      "kind": "mentor",
+      "note": "Williams was a friend, mentor and teacher to the young Bud Powell in 1940s New York."
+    },
+    {
+      "a": "joey-defrancesco",
+      "b": "jimmy-smith",
+      "kind": "mentor",
+      "note": "Smith was DeFrancesco's idol and mentor; they shared the 1999 live album Incredible! and in 2004 recorded Legacy, Smith's last record."
+    },
+    {
+      "a": "joey-defrancesco",
+      "b": "miles-davis",
+      "kind": "band",
+      "note": "As a teenager DeFrancesco toured Europe with Davis for five weeks and later played keyboards on Amandla."
+    },
+    {
+      "a": "joey-defrancesco",
+      "b": "john-mclaughlin",
+      "kind": "band",
+      "note": "At 22 DeFrancesco became a founding member of McLaughlin's organ trio The Free Spirits with Dennis Chambers, touring with it for four years."
+    },
+    {
+      "a": "jimmy-mcgriff",
+      "b": "jimmy-smith",
+      "kind": "mentor",
+      "note": "McGriff took private organ lessons from Smith, a childhood friend, after buying his first Hammond B-3 in 1956."
+    },
+    {
+      "a": "cal-tjader",
+      "b": "dave-brubeck",
+      "kind": "band",
+      "note": "Tjader was the drummer in the Dave Brubeck Octet and the Dave Brubeck Trio before leading his own groups."
+    },
+    {
+      "a": "curtis-fuller",
+      "b": "art-blakey",
+      "kind": "band",
+      "note": "Fuller played trombone in Art Blakey's Jazz Messengers from 1961 to 1965."
+    },
+    {
+      "a": "christian-mcbride",
+      "b": "joshua-redman",
+      "kind": "band",
+      "note": "McBride was the bassist in Redman's 1994 quartet with Brad Mehldau and Brian Blade (MoodSwing), which reunited for RoundAgain (2020) and LongGone (2022)."
+    },
+    {
+      "a": "christian-mcbride",
+      "b": "brad-mehldau",
+      "kind": "band",
+      "note": "Bandmates in Joshua Redman's 1994 quartet (MoodSwing), reunited on RoundAgain (2020) and LongGone (2022)."
+    },
+    {
+      "a": "christian-mcbride",
+      "b": "freddie-hubbard",
+      "kind": "band",
+      "note": "McBride played with Hubbard in his early twenties, after touring with Bobby Watson's Horizon."
+    },
+    {
+      "a": "emma-jean-thackray",
+      "b": "makaya-mccraven",
+      "kind": "band",
+      "note": "Thackray's 'Too Shy' first appeared on McCraven's 2018 mixtape Where We Come From (CHICAGOxLONDON), and the 2019 12-inch credits production by both."
     }
   ]
 }
