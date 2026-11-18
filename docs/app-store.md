@@ -181,7 +181,10 @@ on a real iPhone, which the simulator can't:
 In App Store Connect, the app ▸ **iOS App** ▸ the version (**+** to add one after the first release):
 
 1. **Screenshots** (Media Manager): drag in `docs/app-store/iphone-6.9/*` for the 6.9-inch display and
-   `docs/app-store/iphone-6.3/*` for 6.3-inch, in file order. Make new ones with `scripts/app-store-screenshots.sh`.
+   `docs/app-store/iphone-6.3/*` for 6.3-inch, in file order (ten each, the most App Store Connect takes). They're the
+   screens in `docs/app-store/screens/`, framed with a headline: make new screens with `scripts/app-store-screenshots.sh`,
+   then `swift scripts/app-store-art.swift` (headlines and colours are at its top). `10-widgets.png` is drawn by the Mac
+   app (`--snapshots <dir> --widgets-only`).
 2. **Promotional text**, **description**, **keywords**, **support URL**, **marketing URL** (below). After the first
    version, only **What's New** is needed (from `CHANGELOG.md`).
 3. **Build**: select the one CI uploaded in step 1.
@@ -222,13 +225,15 @@ reason" API the app uses (UserDefaults, CA92.1).
 
 ### Version text
 
-This text is for 1.11 (152 artists, 130 records, personnel, Find a Path, Passport, Radio, the Blindfold Test, the Songbook, Places and Labels, Lineages and the Glossary, Paths, listening guides, Today in Jazz, widgets, Siri). If 1.0.1 is submitted on its own first, say
-"86 artists" and leave out the *Who played on what* and *Your passport* paragraphs and the path-finding sentence.
+This text is for 1.11 (152 artists, 130 records, personnel, Find a Path, Passport, Radio, the Blindfold Test, the
+Songbook, Places and Labels, Lineages and the Glossary, Paths, listening guides, Today in Jazz, widgets, Siri). App
+Store Connect's limits: description 4,000 characters, promotional text 170, keywords 100, and ten screenshots per
+size.
 
 **Promotional text** (170 characters, can change any time without review):
 
 ```
-152 artists and 130 essential records, from ragtime to today, with who played on every one. Find the path between any two players, and listen as you go.
+152 artists and 130 essential records, from ragtime to today. Follow a recording as it plays with listening guides, and find the path between any two players.
 ```
 
 **Keywords** (100 characters):
@@ -240,61 +245,46 @@ jazz,history,bebop,swing,coltrane,miles davis,blue note,albums,artists,timeline,
 **Description**:
 
 ```
-Jazz Discovery is a visual guide to 130 years of jazz, from ragtime and the blues to the new jazz renaissance. Follow the music as it flows, splits and comes back together, meet the people who made it, and listen to the records that changed everything.
+Jazz Discovery is a visual guide to 130 years of jazz, from ragtime and the blues to today's new scenes. Follow the music as it flows, splits and comes back together, meet the people who made it, and listen to the records that changed everything.
 
 The River of Jazz
-Fourteen styles flow across a timeline like river channels, overlapping where they really did, with forty turning points along the way. Tap a style to dive in, or a dot to read what happened that year.
+Fourteen styles flow across a timeline like river channels, overlapping where they really did, with forty turning points along the way. Tap a style to dive in.
 
 Eras and decades
-Each era has its story, its sound, the places it happened, its key artists and essential records, tracks to play, documentaries and performances, and a picture archive. Or travel by decade, from the 1890s to the 2020s: the styles in the air, the turning points, the records and who was playing.
+Each era has its story, its sound, the places it happened, its key artists and essential records, with tracks to play, performances and a picture archive. Or travel by decade, from the 1890s to the 2020s.
 
-152 artists
-Leaders and the sidemen all over their records, in Blue Note–style duotone portraits, filterable by era and instrument, each with a biography, their most popular songs, their records, the records they play on, live videos and the people they played with.
-
-The Crate
-130 essential albums, by decade, with why each one matters, its tracklist and the tracks to start with. New to jazz? Follow the Start Here path, one record at a time.
-
-Who played on what
-Every album lists its band like the back of an LP: who played what, who sat out which track, when and where it was recorded, and who produced it, checked against the liner notes and discographies.
+152 artists, 130 records
+Leaders and the sidemen all over their records, in Blue Note–style duotone portraits, each with a biography, their records and the people they played with. Every album lists its band like the back of an LP: who played what, and when and where it was recorded. New to jazz? Follow Start Here, one record at a time.
 
 Connections
-A map of who played with whom across the whole century, drawn from the records they share: tap a face to light up their circle, and another to see what ties them. Find the shortest path between any two artists, from Scott Joplin to Nubya Garcia, and play one track from each link.
-
-The Songbook
-Forty standards and jazz originals, each a page with its story and the versions that made it matter, from the first recording to last decade's, with what to listen for in each. Play them in order and hear the same song travel.
-
-Today in jazz
-Whose birthday it is, what was recorded on this date, and a calendar for the whole year. Every day has a reason to open the app, and a widget for your Home Screen and Lock Screen; another keeps your next path stop in view.
-
-Ask Siri
-"Play bebop radio", "What happened in jazz today" or "Play my next stop", and find any artist, record or tune from Spotlight.
-
-Paths
-Journeys with a point of view, from Start Here to 1959, Late Night and The Latin Tinge: a few stops each, every one with something to listen for, and your place kept.
+A map of who played with whom across the century, drawn from the records they share. Find the shortest path between any two artists, from Scott Joplin to Nubya Garcia, and hear one track from each link.
 
 Listening guides
-Follow a whole recording as it plays, from So What to The Girl from Ipanema: its form drawn as a bar, the head, each solo and the way out, and a note on what to hear in each section, moving with the music. Tap a section to jump to it. (Guides follow full tracks, with Apple Music.)
+Follow a recording as it plays, from So What to The Girl from Ipanema: its form drawn as a bar (the head, each solo, the way out) and a note on what to hear in each section, moving with the music. Tap a section to jump to it. Guides follow full tracks, with Apple Music.
+
+Paths
+Journeys with a point of view, from 1959 to Late Night and The Latin Tinge: a few stops each, every one with something to listen for, and your place kept.
+
+The Songbook
+Forty standards and jazz originals, each with its story and the versions that made it matter. Play them in order and hear one song travel through the decades.
 
 Lineages and the glossary
-Family trees for the trumpet, the saxophone, the piano, the drums and the voice, showing who learned from whom, and a glossary of the words jazz uses, from swing to sheets of sound, each with a recording to hear it in. New to jazz? How to Listen walks you through one record in five steps.
+Family trees for the trumpet, saxophone, piano, bass, guitar, drums and voice, showing who learned from whom, and a glossary of the words jazz uses, each with a recording to hear it in. How to Listen walks you through one record in five steps.
 
 Places and labels
-A map of jazz with a time slider, from New Orleans in 1895 to South London today, with a page for every city, club and studio, and the records made there. And the labels, from Blue Note to ECM, with their sound, their look and a wall of their covers.
+A map of jazz with a time slider, from New Orleans in 1895 to South London today, with a page for every city, club and studio. And the labels, from Blue Note to ECM, with a wall of their covers.
 
-Radio
-Stations for every era, decade and instrument, plus The Long Way through 130 years in order. They keep playing, and the player tells you why each track is there.
+Radio and the Blindfold Test
+Stations for every era, decade, instrument, city and label, that tell you why each track is there. Then test your ears: ten clips, covers hidden.
 
-The Blindfold Test
-Ten clips, covers hidden: name the era, the player, the lead instrument, or which came first. Easy or hard, every era or just one.
+Today in jazz
+Whose birthday it is and what was recorded on this date, with widgets for your Home Screen and Lock Screen and an optional morning note. Ask Siri to "play bebop radio", or find any record in Spotlight.
 
 Your passport
-Mark the records you've heard (or let the app notice when you play one through) and save the ones to come back to. Every era has a stamp that inks in as you hear its records, and every record opens three doors: the record that shares the most players with it, the style that came next, and an echo of it playing today. It syncs between your iPhone and Mac through your own iCloud, and can start from your Last.fm history.
+Mark the records you've heard and save the ones to come back to. Every era has a stamp that inks in as you listen, and every record opens three doors to what to hear next. It syncs through your own iCloud and can start from your Last.fm history.
 
-Listen and watch
-Connect Apple Music to play every song and album in full; without a subscription you hear 30-second previews, and everything opens in the Music app with one tap. Playback continues on the lock screen and works with AirPlay. Videos play right in the app.
-
-Scrobble to Last.fm
-Connect your Last.fm account and the full tracks you play are added to your profile, even when you're offline: they're sent when you're back.
+Listen and scrobble
+Connect Apple Music to play everything in full; without a subscription you hear 30-second previews. Connect Last.fm and the full tracks you play are added to your profile.
 
 No account, no ads, no tracking. Text and photos from Wikipedia and Wikimedia Commons; artwork and previews from Apple Music.
 
@@ -314,5 +304,9 @@ Last.fm (optional): Settings > Last.fm connects the user's own Last.fm account, 
 
 Background audio is used only to keep music playing while the phone is locked.
 
-Suggested path: Discover (scroll the River of Jazz sideways and tap a style), an era page, an artist (Artists tab), the Explore tab (eras, decades, the Songbook, the Places map with its time slider, Labels, Lineages, the Glossary), an album (Crate tab) with its Personnel, Play, Mark as Heard and Save buttons and its three doors at the bottom, the Radio row and the Blindfold Test card on the Discover tab, the Passport (the seal button at the top right), Artists > Connections (pinch and tap faces, then the path button at the top to find a path between two artists), and Search.
+Listening guides (Discover > Listening Guides) follow a recording section by section while it plays in full with Apple Music. Without Apple Music the guide is still readable and says it can't follow a 30-second preview.
+
+Notifications are off unless the user turns on the morning note (Settings > Today in Jazz); it is scheduled on the device, and permission is asked only then. Widgets: Today in Jazz and Continue, for the Home Screen and Lock Screen. Siri and Shortcuts: "Play bebop radio on Jazz Discovery", "What happened in jazz today in Jazz Discovery".
+
+Suggested path: Discover (Today in Jazz at the top, then scroll the River of Jazz sideways and tap a style; the Paths, Listening Guides and Radio rows; the Blindfold Test card), an era page, an artist (Artists tab), an album (Crate tab) with its Personnel, Play, Mark as Heard and Save buttons and its three doors at the bottom, the Explore tab (eras, decades, the Songbook, the Places map with its time slider, Labels, Lineages, the Glossary), the Passport (the seal button at the top right), Artists > Connections (pinch and tap faces, then the path button at the top to find a path between two artists), and Search.
 ```
