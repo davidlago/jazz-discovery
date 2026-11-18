@@ -1195,32 +1195,57 @@
   ]
  },
  "backatown": {
-  "reviewed": false,
-  "source": "musicbrainz:release/2f392d85-0a01-4f71-b678-644ebad9c67e",
+  "reviewed": true,
+  "source": "Wikipedia: Backatown (Personnel, from the liner notes), checked against Apple Music's per-track credits and MusicBrainz",
   "mbReleaseGroup": "9578e2e2-2729-4391-b83b-7a5e39374dde",
-  "edition": "2010-04-20 None",
+  "edition": "2010 Verve Forecast CD",
+  "recorded": [
+   {
+    "place": "The Gumbo Room, New Orleans"
+   }
+  ],
   "tracks": [
    "Hurricane Season",
-   "On Your Way Down",
-   "Quiet as Kept",
-   "Something Beautiful",
+   "On Your Way Down (feat. Allen Toussaint)",
+   "Quiet As Kept",
+   "Something Beautiful (feat. Lenny Kravitz)",
    "Backatown",
-   "Right to Complain",
+   "Right to Complain (feat. Marc Broussard)",
    "Neph",
    "Suburbia",
-   "In the 6th",
+   "In the 6Th",
    "One Night Only (The March)",
-   "Where Y’at",
-   "Fallin’",
+   "Where Y'At",
+   "Fallin'",
    "The Cure",
    "928 Horn Jam"
   ],
   "personnel": [
    {
+    "artist": "trombone-shorty",
+    "name": "Trombone Shorty",
+    "instruments": [
+     "trombone",
+     "trumpet",
+     "drums",
+     "percussion",
+     "keyboards",
+     "vocals"
+    ]
+   },
+   {
     "artist": null,
     "name": "Dan Oestreicher",
     "instruments": [
      "baritone saxophone"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Clarence Slaughter",
+    "instruments": [
+     "saxophone",
+     "flute"
     ]
    },
    {
@@ -1232,9 +1257,41 @@
    },
    {
     "artist": null,
+    "name": "Lenny Kravitz",
+    "instruments": [
+     "guitar",
+     "vocals"
+    ],
+    "only": [
+     "Something Beautiful (feat. Lenny Kravitz)"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Allen Toussaint",
+    "instruments": [
+     "piano"
+    ],
+    "only": [
+     "On Your Way Down (feat. Allen Toussaint)"
+    ]
+   },
+   {
+    "artist": null,
     "name": "Mike Ballard",
     "instruments": [
-     "bass"
+     "electric bass"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Charles Smith",
+    "instruments": [
+     "bass synthesizer"
+    ],
+    "only": [
+     "Quiet As Kept",
+     "Backatown"
     ]
    },
    {
@@ -1253,9 +1310,12 @@
    },
    {
     "artist": null,
-    "name": "Clarence Slaughter",
+    "name": "Marc Broussard",
     "instruments": [
-     "woodwind"
+     "vocals"
+    ],
+    "only": [
+     "Right to Complain (feat. Marc Broussard)"
     ]
    }
   ],
@@ -1264,10 +1324,27 @@
     "artist": null,
     "name": "Ben Ellman",
     "role": "producer"
+   },
+   {
+    "artist": null,
+    "name": "Ben Ellman",
+    "role": "engineer"
+   },
+   {
+    "artist": null,
+    "name": "Alexander Alvarez",
+    "role": "engineer"
+   },
+   {
+    "artist": null,
+    "name": "Kyle Lamy",
+    "role": "engineer"
    }
   ],
   "draftNotes": [
-   "the leader (Trombone Shorty) isn't among the credited players"
+   "The draft left out the leader and the guests. Wikipedia's personnel and Apple Music's per-track credits agree: Allen Toussaint on piano on On Your Way Down, Lenny Kravitz (guitar solo, backing vocals) on Something Beautiful, Marc Broussard singing on Right to Complain, Charles Smith on bass synthesizer on Quiet As Kept and Backatown. Neither source splits the band by track, so Orleans Avenue is on all of them.",
+   "Trombone Shorty is Troy Andrews. Clarence Slaughter's instruments are flute and saxophone (Wikipedia; Apple says saxophone; MusicBrainz said 'woodwind').",
+   "Recorded at The Gumbo Room, New Orleans (Wikipedia); no dates documented. Ben Ellman produced and engineered, with Alexander Alvarez and Kyle Lamy."
   ]
  },
  "basie-complete-decca": {
@@ -2896,34 +2973,459 @@
   ]
  },
  "black-classical-music": {
-  "reviewed": false,
-  "source": "musicbrainz:release/43b8ff88-3348-412d-87d7-5438018850ec",
+  "reviewed": true,
+  "source": "Discogs release 28208644 (Brownswood 5054197622212 CD, per-track booklet credits), checked against Apple Music's per-track credits",
   "mbReleaseGroup": "77dfcfc2-44b7-4265-9334-ddd6efc0d47f",
-  "edition": "2023-09-08 XE",
+  "edition": "2023 Brownswood / Nonesuch CD 5054197622212",
+  "recorded": [
+   {
+    "place": "Konk Studios, London"
+   },
+   {
+    "place": "Quartermass Sound Lab"
+   },
+   {
+    "place": "Unwound Studios"
+   },
+   {
+    "place": "Oakside Studios"
+   },
+   {
+    "place": "Echo Zoo Studios"
+   },
+   {
+    "place": "Skyline Levels Recording Studios"
+   },
+   {
+    "place": "TrapHouseJazz"
+   },
+   {
+    "place": "The Village Studios, Los Angeles"
+   }
+  ],
   "tracks": [
-   "Black Classical Music",
+   "Black Classical Music (feat. Venna & Charlie Stacey)",
    "Afro Cubanism",
-   "Raisins Under the Sun",
-   "Rust",
+   "Raisins Under the Sun (feat. Shabaka Hutchings)",
+   "Rust (feat. Tom Misch)",
    "Turquoise Galaxy",
-   "The Light",
-   "Pon di Plaza",
+   "The Light (feat. Bahia Dayes)",
+   "Pon di Plaza (feat. Chronixx)",
    "Magnolia Symphony",
    "Early Dayes",
    "Chasing the Drum",
    "Birds of Paradise",
    "Gelato",
-   "Marching Band",
-   "Crystal Palace Park",
-   "Presidential",
+   "Marching Band (feat. Masego)",
+   "Crystal Palace Park (feat. Elijah Fox)",
+   "Presidential (feat. Jahaan Sweet)",
    "Jukebox",
-   "Woman’s Touch",
-   "Tioga Pass",
-   "Cowrie Charms"
+   "Woman's Touch (feat. Jamilah Barry)",
+   "Tioga Pass (feat. Rocco Palladino)",
+   "Cowrie Charms (feat. Leon Thomas and Barbara Hicks)"
   ],
-  "personnel": [],
+  "personnel": [
+   {
+    "artist": "yussef-dayes",
+    "name": "Yussef Dayes",
+    "instruments": [
+     "drums",
+     "percussion",
+     "synthesizer",
+     "vocals"
+    ],
+    "except": [
+     "Magnolia Symphony",
+     "Crystal Palace Park (feat. Elijah Fox)"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Sheila Maurice-Grey",
+    "instruments": [
+     "trumpet"
+    ],
+    "only": [
+     "Raisins Under the Sun (feat. Shabaka Hutchings)"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Nathaniel Cross",
+    "instruments": [
+     "trombone"
+    ],
+    "only": [
+     "Raisins Under the Sun (feat. Shabaka Hutchings)"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Theon Cross",
+    "instruments": [
+     "tuba"
+    ],
+    "only": [
+     "Raisins Under the Sun (feat. Shabaka Hutchings)"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Venna",
+    "instruments": [
+     "saxophone",
+     "vocals"
+    ],
+    "only": [
+     "Black Classical Music (feat. Venna & Charlie Stacey)",
+     "Afro Cubanism",
+     "Turquoise Galaxy",
+     "Chasing the Drum",
+     "Gelato",
+     "Marching Band (feat. Masego)",
+     "Tioga Pass (feat. Rocco Palladino)"
+    ]
+   },
+   {
+    "artist": "shabaka-hutchings",
+    "name": "Shabaka Hutchings",
+    "instruments": [
+     "bass clarinet"
+    ],
+    "only": [
+     "Raisins Under the Sun (feat. Shabaka Hutchings)"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Miles James",
+    "instruments": [
+     "guitar",
+     "synthesizer"
+    ],
+    "only": [
+     "Raisins Under the Sun (feat. Shabaka Hutchings)",
+     "The Light (feat. Bahia Dayes)",
+     "Pon di Plaza (feat. Chronixx)",
+     "Gelato",
+     "Jukebox",
+     "Woman's Touch (feat. Jamilah Barry)",
+     "Cowrie Charms (feat. Leon Thomas and Barbara Hicks)"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Tom Misch",
+    "instruments": [
+     "guitar",
+     "electric bass",
+     "keyboards",
+     "vocals"
+    ],
+    "only": [
+     "Rust (feat. Tom Misch)"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Chronixx",
+    "instruments": [
+     "vocals",
+     "guitar",
+     "electric bass"
+    ],
+    "only": [
+     "Pon di Plaza (feat. Chronixx)"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Charlie Stacey",
+    "instruments": [
+     "piano",
+     "electric piano",
+     "keyboards",
+     "synthesizer"
+    ],
+    "only": [
+     "Black Classical Music (feat. Venna & Charlie Stacey)",
+     "Afro Cubanism",
+     "Raisins Under the Sun (feat. Shabaka Hutchings)",
+     "Turquoise Galaxy",
+     "The Light (feat. Bahia Dayes)",
+     "Chasing the Drum",
+     "Birds of Paradise",
+     "Gelato",
+     "Woman's Touch (feat. Jamilah Barry)",
+     "Tioga Pass (feat. Rocco Palladino)",
+     "Cowrie Charms (feat. Leon Thomas and Barbara Hicks)"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Elijah Fox",
+    "instruments": [
+     "keyboards",
+     "synthesizer"
+    ],
+    "only": [
+     "Marching Band (feat. Masego)",
+     "Crystal Palace Park (feat. Elijah Fox)"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Jahaan Sweet",
+    "instruments": [
+     "keyboards",
+     "vocals"
+    ],
+    "only": [
+     "Presidential (feat. Jahaan Sweet)"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Laurie Blundell",
+    "instruments": [
+     "keyboards",
+     "synthesizer"
+    ],
+    "only": [
+     "Jukebox"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Rocco Palladino",
+    "instruments": [
+     "electric bass"
+    ],
+    "only": [
+     "Black Classical Music (feat. Venna & Charlie Stacey)",
+     "Afro Cubanism",
+     "Raisins Under the Sun (feat. Shabaka Hutchings)",
+     "Turquoise Galaxy",
+     "The Light (feat. Bahia Dayes)",
+     "Chasing the Drum",
+     "Birds of Paradise",
+     "Gelato",
+     "Woman's Touch (feat. Jamilah Barry)",
+     "Tioga Pass (feat. Rocco Palladino)"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Adrian Henry",
+    "instruments": [
+     "electric bass"
+    ],
+    "only": [
+     "Pon di Plaza (feat. Chronixx)"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Maxwell Hunter",
+    "instruments": [
+     "electric bass"
+    ],
+    "only": [
+     "Marching Band (feat. Masego)"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Alex Bonfanti",
+    "instruments": [
+     "electric bass"
+    ],
+    "only": [
+     "Jukebox"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Chineke! Orchestra",
+    "instruments": [
+     "strings"
+    ],
+    "only": [
+     "Magnolia Symphony",
+     "Tioga Pass (feat. Rocco Palladino)"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Tito Oliveira",
+    "instruments": [
+     "drums"
+    ],
+    "only": [
+     "Chasing the Drum"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Alexander Bourt",
+    "instruments": [
+     "percussion",
+     "congas"
+    ],
+    "only": [
+     "Black Classical Music (feat. Venna & Charlie Stacey)",
+     "Afro Cubanism",
+     "Raisins Under the Sun (feat. Shabaka Hutchings)",
+     "Chasing the Drum",
+     "Birds of Paradise",
+     "Gelato",
+     "Jukebox",
+     "Woman's Touch (feat. Jamilah Barry)",
+     "Tioga Pass (feat. Rocco Palladino)"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Luizinho do Jêje",
+    "instruments": [
+     "percussion",
+     "vocals"
+    ],
+    "only": [
+     "Chasing the Drum"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Rory Pagan",
+    "instruments": [
+     "effects"
+    ],
+    "only": [
+     "Afro Cubanism",
+     "Chasing the Drum",
+     "Gelato"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Bahia Dayes",
+    "instruments": [
+     "vocals"
+    ],
+    "only": [
+     "The Light (feat. Bahia Dayes)"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Paris Fabienne",
+    "instruments": [
+     "vocals"
+    ],
+    "only": [
+     "The Light (feat. Bahia Dayes)"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Dave Dayes",
+    "instruments": [
+     "vocals"
+    ],
+    "only": [
+     "Early Dayes"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Masego",
+    "instruments": [
+     "vocals"
+    ],
+    "only": [
+     "Marching Band (feat. Masego)"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Jamilah Barry",
+    "instruments": [
+     "vocals"
+    ],
+    "only": [
+     "Woman's Touch (feat. Jamilah Barry)"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Leon Thomas",
+    "instruments": [
+     "vocals"
+    ],
+    "only": [
+     "Cowrie Charms (feat. Leon Thomas and Barbara Hicks)"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Barbara Hicks",
+    "instruments": [
+     "spoken word"
+    ],
+    "only": [
+     "Cowrie Charms (feat. Leon Thomas and Barbara Hicks)"
+    ]
+   }
+  ],
+  "crew": [
+   {
+    "artist": "yussef-dayes",
+    "name": "Yussef Dayes",
+    "role": "producer"
+   },
+   {
+    "artist": null,
+    "name": "Miles James",
+    "role": "producer"
+   },
+   {
+    "artist": null,
+    "name": "Rory Pagan",
+    "role": "producer"
+   },
+   {
+    "artist": null,
+    "name": "Miles James",
+    "role": "engineer"
+   },
+   {
+    "artist": null,
+    "name": "Rory Pagan",
+    "role": "engineer"
+   },
+   {
+    "artist": null,
+    "name": "Russell Elevado",
+    "role": "engineer"
+   },
+   {
+    "artist": null,
+    "name": "Malcolm Catto",
+    "role": "engineer"
+   },
+   {
+    "artist": null,
+    "name": "Izzi Dunn",
+    "role": "arranger"
+   }
+  ],
   "draftNotes": [
-   "no players credited on this edition"
+   "The draft had no players. Per-track credits from the CD booklet (Discogs); Apple Music's per-track credits match them closely. Yussef Dayes drums on every track except Magnolia Symphony (strings alone) and Crystal Palace Park (Elijah Fox alone; Apple also credits a speaker, 'LA Gyaldem', not on the sleeve, left out).",
+   "Venna is saxophonist Malik Venner. Leon Thomas on Cowrie Charms is the singer Leon Thomas III, not the jazz singer Leon Thomas who has a page in the app, so artist is null. Shabaka Hutchings links to his page.",
+   "Chineke! Orchestra (Magnolia Symphony and Tioga Pass, strings arranged by Izzi Dunn): Elodie Chousmer-Howelles and Laure Chan, first violins; Betania Johnny and Raye Harvey, second violins; Blaize Henry and Natalia Senior-Brown, violas; Elliot Bailey, cello. Apple misspells the orchestra 'Chinoke'.",
+   "Dave Dayes (Yussef's father) speaks on Early Dayes; Rory Pagan plays live effects on Afro Cubanism, Chasing the Drum and Gelato; Tito Oliveira (extra drums) and Luizinho do Jêje (percussion, voice) are on Chasing the Drum's outro.",
+   "Studios from the booklet; no dates documented. Co-producers Miles James and Rory Pagan on several tracks (also Malcolm Catto, and the featured guests on their own tracks); mixing by Pagan, Elevado, Dayes and others per track."
   ]
  },
  "black-codes": {
@@ -4259,10 +4761,10 @@
   ]
  },
  "blues-ette": {
-  "reviewed": false,
-  "source": "musicbrainz:release/587f5c62-621c-4189-9e1a-0bfb77752270",
+  "reviewed": true,
+  "source": "Discogs release 7986908 (Savoy MG 12141 mono LP sleeve credits), checked against Wikipedia: Blues-ette and MusicBrainz",
   "mbReleaseGroup": "2e298054-4642-3756-bc43-7ecac41da8e7",
-  "edition": "1959 US",
+  "edition": "1959 US Savoy MG 12141 (mono)",
   "recorded": [
    {
     "date": "1959-05-21",
@@ -4272,9 +4774,9 @@
   "tracks": [
    "Five Spot After Dark",
    "Undecided",
-   "Blues-ette",
+   "Blues-Ette",
    "Minor Vamp",
-   "Love Your Spell Is Everywhere",
+   "Love, Your Spell Is Everywhere",
    "Twelve-Inch"
   ],
   "personnel": [
@@ -4317,9 +4819,17 @@
   "crew": [
    {
     "artist": null,
-    "name": "Rudy van Gelder",
+    "name": "Ozzie Cadena",
+    "role": "producer"
+   },
+   {
+    "artist": null,
+    "name": "Rudy Van Gelder",
     "role": "engineer"
    }
+  ],
+  "draftNotes": [
+   "Quintet on every track; sleeve, Wikipedia and MusicBrainz agree. Recorded May 21, 1959 by Rudy Van Gelder in Hackensack (before his move to Englewood Cliffs that July); Ozzie Cadena supervised."
   ]
  },
  "bright-size-life": {
@@ -5977,28 +6487,366 @@
  },
  "dear-love": {
   "reviewed": false,
-  "source": "musicbrainz:release/9b32bc24-d57f-41d2-a367-b537fbbb7335",
+  "source": "Discogs release 32113359 (Empress Legacy CD, per-track booklet credits), checked against Apple Music, the label's announcement (BroadwayWorld) and JazzTrail",
   "mbReleaseGroup": "4cccab7c-e0da-4fe7-8acd-5ff831584a88",
-  "edition": "2021-09-10 XW",
+  "edition": "2021 Empress Legacy CD",
+  "recorded": [
+   {
+    "date": "2021-05-28",
+    "place": "Sound on Sound, Montclair"
+   },
+   {
+    "date": "2021-05-29",
+    "place": "Sound on Sound, Montclair"
+   },
+   {
+    "date": "2021-05-30",
+    "place": "Sound on Sound, Montclair"
+   }
+  ],
   "tracks": [
    "I Feel You Near",
    "Be Perfect",
    "He Could Be Perfect",
-   "He’s My Guy",
-   "Let Us (Take Our Time)",
-   "Back to Me",
-   "Lover Come Back to Me",
-   "Money Can’t Buy Me, Love",
+   "He's My Guy",
+   "Let Us (Take Our TIme)",
+   "Back To Me",
+   "Lover Come Back To Me",
+   "Money Can't Buy Me, Love",
    "Nia",
-   "Strive (vocal interlude)",
-   "Strive (to Be)",
+   "Strive (Vocal Interlude)",
+   "Strive (To Be)",
    "Where We Are",
    "Judah Rise",
    "Where Is Freedom!?"
   ],
-  "personnel": [],
+  "personnel": [
+   {
+    "artist": "jazzmeia-horn",
+    "name": "Jazzmeia Horn",
+    "instruments": [
+     "vocals"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Bruce Harris",
+    "instruments": [
+     "trumpet"
+    ],
+    "only": [
+     "I Feel You Near",
+     "He Could Be Perfect",
+     "He's My Guy",
+     "Let Us (Take Our TIme)",
+     "Lover Come Back To Me",
+     "Nia",
+     "Strive (To Be)",
+     "Judah Rise",
+     "Where Is Freedom!?"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Freddie Hendrix",
+    "instruments": [
+     "trumpet"
+    ],
+    "only": [
+     "I Feel You Near",
+     "He Could Be Perfect",
+     "He's My Guy",
+     "Let Us (Take Our TIme)",
+     "Lover Come Back To Me",
+     "Nia",
+     "Strive (To Be)",
+     "Judah Rise",
+     "Where Is Freedom!?"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Josh Evans",
+    "instruments": [
+     "trumpet"
+    ],
+    "only": [
+     "I Feel You Near",
+     "He Could Be Perfect",
+     "He's My Guy",
+     "Let Us (Take Our TIme)",
+     "Lover Come Back To Me",
+     "Nia",
+     "Strive (To Be)",
+     "Judah Rise",
+     "Where Is Freedom!?"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Cory Wileox",
+    "instruments": [
+     "trombone"
+    ],
+    "only": [
+     "I Feel You Near",
+     "He Could Be Perfect",
+     "He's My Guy",
+     "Let Us (Take Our TIme)",
+     "Lover Come Back To Me",
+     "Nia",
+     "Strive (To Be)",
+     "Judah Rise",
+     "Where Is Freedom!?"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Dion Tucker",
+    "instruments": [
+     "trombone"
+    ],
+    "only": [
+     "I Feel You Near",
+     "He Could Be Perfect",
+     "He's My Guy",
+     "Let Us (Take Our TIme)",
+     "Lover Come Back To Me",
+     "Nia",
+     "Strive (To Be)",
+     "Judah Rise",
+     "Where Is Freedom!?"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Max Seigel",
+    "instruments": [
+     "bass trombone"
+    ],
+    "only": [
+     "I Feel You Near",
+     "He Could Be Perfect",
+     "He's My Guy",
+     "Let Us (Take Our TIme)",
+     "Lover Come Back To Me",
+     "Nia",
+     "Strive (To Be)",
+     "Judah Rise",
+     "Where Is Freedom!?"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Bruce Williams",
+    "instruments": [
+     "alto saxophone"
+    ],
+    "only": [
+     "I Feel You Near",
+     "He Could Be Perfect",
+     "He's My Guy",
+     "Let Us (Take Our TIme)",
+     "Lover Come Back To Me",
+     "Nia",
+     "Strive (To Be)",
+     "Judah Rise",
+     "Where Is Freedom!?"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Anthony Ware",
+    "instruments": [
+     "tenor saxophone"
+    ],
+    "only": [
+     "I Feel You Near",
+     "He Could Be Perfect",
+     "He's My Guy",
+     "Let Us (Take Our TIme)",
+     "Lover Come Back To Me",
+     "Nia",
+     "Strive (To Be)",
+     "Judah Rise",
+     "Where Is Freedom!?"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Keith Loftis",
+    "instruments": [
+     "tenor saxophone"
+    ],
+    "only": [
+     "I Feel You Near",
+     "He Could Be Perfect",
+     "He's My Guy",
+     "Let Us (Take Our TIme)",
+     "Lover Come Back To Me",
+     "Nia",
+     "Strive (To Be)",
+     "Judah Rise",
+     "Where Is Freedom!?"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Jason Marshall",
+    "instruments": [
+     "baritone saxophone"
+    ],
+    "only": [
+     "I Feel You Near",
+     "He Could Be Perfect",
+     "He's My Guy",
+     "Let Us (Take Our TIme)",
+     "Lover Come Back To Me",
+     "Nia",
+     "Strive (To Be)",
+     "Judah Rise",
+     "Where Is Freedom!?"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Chiara Fasi",
+    "instruments": [
+     "violin"
+    ],
+    "only": [
+     "Money Can't Buy Me, Love",
+     "Where We Are"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Eddie Findeisen",
+    "instruments": [
+     "violin"
+    ],
+    "only": [
+     "Money Can't Buy Me, Love",
+     "Where We Are"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Tia Allen",
+    "instruments": [
+     "viola"
+    ],
+    "only": [
+     "Money Can't Buy Me, Love",
+     "Where We Are"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Dara Hankins",
+    "instruments": [
+     "cello"
+    ],
+    "only": [
+     "Money Can't Buy Me, Love",
+     "Where We Are"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Sullivan Fortner",
+    "instruments": [
+     "organ"
+    ],
+    "only": [
+     "Where Is Freedom!?"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Keith Brown",
+    "instruments": [
+     "piano"
+    ],
+    "only": [
+     "He Could Be Perfect",
+     "He's My Guy",
+     "Let Us (Take Our TIme)",
+     "Lover Come Back To Me",
+     "Money Can't Buy Me, Love",
+     "Nia",
+     "Strive (To Be)",
+     "Where We Are",
+     "Where Is Freedom!?"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Eric Wheeler",
+    "instruments": [
+     "bass"
+    ],
+    "only": [
+     "He Could Be Perfect",
+     "He's My Guy",
+     "Let Us (Take Our TIme)",
+     "Lover Come Back To Me",
+     "Money Can't Buy Me, Love",
+     "Nia",
+     "Strive (To Be)",
+     "Where We Are",
+     "Where Is Freedom!?"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Anwar Marshall",
+    "instruments": [
+     "drums"
+    ],
+    "only": [
+     "He Could Be Perfect",
+     "He's My Guy",
+     "Let Us (Take Our TIme)",
+     "Lover Come Back To Me",
+     "Money Can't Buy Me, Love",
+     "Nia",
+     "Strive (To Be)",
+     "Where We Are",
+     "Where Is Freedom!?"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Kahlil Kwame Bell",
+    "instruments": [
+     "percussion"
+    ],
+    "only": [
+     "I Feel You Near",
+     "Strive (To Be)",
+     "Judah Rise",
+     "Where Is Freedom!?"
+    ]
+   }
+  ],
+  "crew": [
+   {
+    "artist": "jazzmeia-horn",
+    "name": "Jazzmeia Horn",
+    "role": "producer"
+   },
+   {
+    "artist": null,
+    "name": "Sullivan Fortner",
+    "role": "music director"
+   }
+  ],
   "draftNotes": [
-   "no players credited on this edition"
+   "Not approved yet, for spelling only. The draft had no players; the per-track credits above come from the one Discogs transcription of the CD booklet (a small entry), which has visible typos: the trombonist 'Cory Wileox' and the bass trombonist 'Max Seigel' (perhaps Wilcox and Siegel) couldn't be confirmed anywhere else, and neither could the engineer, 'Christoper Gold' (left out). Check the booklet and approve.",
+   "Confirmed elsewhere: Keith Brown, Eric Wheeler and Anwar Marshall as the rhythm section, Bruce Williams leading the altos, Freddie Hendrix, and Sullivan Fortner as music director (label announcement; JazzTrail spells Williams 'Williamson' and calls Fortner the organist, which the booklet gives on Where Is Freedom!? only).",
+   "Layout per the booklet: horns on 1, 3-5, 7, 9, 11, 13, 14; rhythm section on 3-5, 7-9, 11, 12, 14; string quartet on Money Can't Buy Me, Love and Where We Are; the three vocal interludes (Be Perfect, Back to Me, Strive) are Horn alone. Horn is executive producer, composer and arranger; Roger Boykin arranged Where We Are.",
+   "Recorded May 28-30, 2021 at Sound on Sound Studio, Montclair, New Jersey (booklet)."
   ]
  },
  "dedicated-to-you": {
@@ -8067,13 +8915,14 @@
   ]
  },
  "fontessa": {
-  "reviewed": false,
-  "source": "musicbrainz:release/55023eda-4461-4dcd-9949-714f85b8adad",
+  "reviewed": true,
+  "source": "Discogs release 3231910 (Atlantic 1231 mono LP sleeve credits and notes), checked against Jazzdisco (Atlantic 1200 series), Wikipedia: Fontessa and Apple Music's credits",
   "mbReleaseGroup": "59404ca7-e67f-3adc-8123-fc03b9777f15",
-  "edition": "1956 US",
+  "edition": "1956 US Atlantic 1231 (mono)",
   "recorded": [
    {
-    "date": "1956-01-22"
+    "date": "1956-01-22",
+    "place": "New York"
    },
    {
     "date": "1956-02-14",
@@ -8083,25 +8932,25 @@
   "tracks": [
    "Versailles (Porte de Versailles)",
    "Angel Eyes",
-   "Fontessa, Parts 1 & 2",
+   "Fontessa",
    "Over the Rainbow",
    "Bluesology",
    "Willow Weep for Me",
-   "Woody 'n' You"
+   "Woodyn You"
   ],
   "personnel": [
-   {
-    "artist": "john-lewis",
-    "name": "John Lewis",
-    "instruments": [
-     "piano"
-    ]
-   },
    {
     "artist": "milt-jackson",
     "name": "Milt Jackson",
     "instruments": [
      "vibraphone"
+    ]
+   },
+   {
+    "artist": "john-lewis",
+    "name": "John Lewis",
+    "instruments": [
+     "piano"
     ]
    },
    {
@@ -8122,16 +8971,6 @@
   "crew": [
    {
     "artist": null,
-    "name": "Robert Guidi",
-    "role": "design"
-   },
-   {
-    "artist": null,
-    "name": "William Claxton",
-    "role": "photography"
-   },
-   {
-    "artist": null,
     "name": "Nesuhi Ertegun",
     "role": "producer"
    },
@@ -8142,9 +8981,23 @@
    },
    {
     "artist": null,
-    "name": "Rudy van Gelder",
+    "name": "Rudy Van Gelder",
     "role": "engineer"
+   },
+   {
+    "artist": null,
+    "name": "Robert Guidi",
+    "role": "design"
+   },
+   {
+    "artist": null,
+    "name": "William Claxton",
+    "role": "photography"
    }
+  ],
+  "draftNotes": [
+   "The Modern Jazz Quartet is the leader (album artist john-lewis). The quartet plays every track.",
+   "Sleeve and Jazzdisco: everything but Bluesology recorded in New York, January 22, 1956 (John Kraus); Bluesology at Van Gelder Studio, Hackensack, February 14, 1956 (Rudy Van Gelder). Wikipedia notes the mono and stereo issues use different takes of Bluesology. Nesuhi Ertegun supervised."
   ]
  },
  "footprints-live": {
@@ -8789,10 +9642,18 @@
   ]
  },
  "ghost-song": {
-  "reviewed": false,
-  "source": "musicbrainz:release/29fd4e9d-1ea7-4227-a91e-e0612e9ac89f",
+  "reviewed": true,
+  "source": "Discogs release 22519043 (Nonesuch 075597914672 CD, per-track sleeve credits), checked against Apple Music's per-track credits and Wikipedia: Ghost Song (album)",
   "mbReleaseGroup": "fae3e024-cef1-4ba1-9654-02033dc684be",
-  "edition": "2022-03-04 XW",
+  "edition": "2022 Nonesuch CD 075597914672",
+  "recorded": [
+   {
+    "place": "The Bunker Studio, Brooklyn"
+   },
+   {
+    "place": "St. Malachy's Church, New York"
+   }
+  ],
   "tracks": [
    "Wuthering Heights",
    "Optimistic Voices / No Love Dying",
@@ -8807,9 +9668,201 @@
    "Thunderclouds",
    "Unquiet Grave"
   ],
-  "personnel": [],
+  "personnel": [
+   {
+    "artist": "cecile-mclorin-salvant",
+    "name": "Cécile McLorin Salvant",
+    "instruments": [
+     "vocals",
+     "piano"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Sullivan Fortner",
+    "instruments": [
+     "piano",
+     "electric piano",
+     "vocals"
+    ],
+    "only": [
+     "Optimistic Voices / No Love Dying",
+     "Ghost Song",
+     "Obligation",
+     "Until",
+     "The World Is Mean",
+     "Thunderclouds"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Aaron Diehl",
+    "instruments": [
+     "piano",
+     "pipe organ"
+    ],
+    "only": [
+     "I Lost My Mind",
+     "Moon Song",
+     "Dead Poplar"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "James Chirillo",
+    "instruments": [
+     "banjo"
+    ],
+    "only": [
+     "Optimistic Voices / No Love Dying",
+     "Until",
+     "The World Is Mean"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Alexa Tarantino",
+    "instruments": [
+     "flute"
+    ],
+    "only": [
+     "Optimistic Voices / No Love Dying",
+     "Until",
+     "The World Is Mean"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Marvin Sewell",
+    "instruments": [
+     "guitar"
+    ],
+    "only": [
+     "Ghost Song",
+     "Thunderclouds"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Daniel Swenberg",
+    "instruments": [
+     "theorbo",
+     "lute"
+    ],
+    "only": [
+     "Dead Poplar"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Paul Sikivie",
+    "instruments": [
+     "bass",
+     "electric bass",
+     "synthesizer"
+    ],
+    "only": [
+     "Wuthering Heights",
+     "Obligation",
+     "Moon Song",
+     "Dead Poplar"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Burniss Travis",
+    "instruments": [
+     "bass"
+    ],
+    "only": [
+     "Ghost Song",
+     "Thunderclouds"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Kyle Poole",
+    "instruments": [
+     "drums"
+    ],
+    "only": [
+     "Obligation",
+     "Moon Song",
+     "Dead Poplar"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Keita Ogawa",
+    "instruments": [
+     "percussion"
+    ],
+    "only": [
+     "Optimistic Voices / No Love Dying",
+     "Ghost Song",
+     "Until",
+     "The World Is Mean",
+     "Thunderclouds"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Brooklyn Youth Chorus",
+    "instruments": [
+     "choir"
+    ],
+    "only": [
+     "Ghost Song"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Iris McLorin Picot",
+    "instruments": [
+     "vocals"
+    ],
+    "only": [
+     "Thunderclouds"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Violette McLorin Picot",
+    "instruments": [
+     "vocals"
+    ],
+    "only": [
+     "Thunderclouds"
+    ]
+   }
+  ],
+  "crew": [
+   {
+    "artist": "cecile-mclorin-salvant",
+    "name": "Cécile McLorin Salvant",
+    "role": "producer"
+   },
+   {
+    "artist": null,
+    "name": "Sullivan Fortner",
+    "role": "producer"
+   },
+   {
+    "artist": null,
+    "name": "Todd Whitelock",
+    "role": "engineer"
+   },
+   {
+    "artist": null,
+    "name": "Patrick Dillett",
+    "role": "engineer"
+   }
+  ],
   "draftNotes": [
-   "no players credited on this edition"
+   "Per-track credits from the CD sleeve (Discogs); Apple Music's credits agree except that they also put Marvin Sewell on Ghost Song (the sleeve has him on Thunderclouds only) and Fortner on Rhodes there. Sewell is kept on both.",
+   "Salvant sings on every track but Trail Mix per the sleeve (Apple credits her voice there too); she also plays piano on I Lost My Mind, Trail Mix and Thunderclouds. Diehl plays pipe organ on I Lost My Mind (recorded at St. Malachy's Church) and piano on Moon Song and Dead Poplar. Unquiet Grave is Salvant alone in both sources.",
+   "Wuthering Heights is Salvant with Paul Sikivie (electric bass, Korg Mono/Poly synthesizer), who also produced that track. Sullivan Fortner is co-producer of the album; Todd Whitelock recorded most of it and mixed it, Patrick Dillett recorded Optimistic Voices, Ghost Song, Until and The World Is Mean.",
+   "Wikipedia's infobox gives one recording date (October 7, 2020) without a source, for an album made at two places over several sessions, so no date is given."
   ]
  },
  "giant-steps": {
@@ -10198,13 +11251,13 @@
   ]
  },
  "in-the-key-of-the-universe": {
-  "reviewed": false,
-  "source": "musicbrainz:release/15eb9a9a-85f9-44d2-b9e7-4b8198b077bb",
+  "reviewed": true,
+  "source": "Discogs release 13350894 (Mack Avenue MAC1147 CD, per-track credits), checked against Wikipedia: In the Key of the Universe and Apple Music's per-track credits",
   "mbReleaseGroup": "32089a73-3737-4466-8331-915f038be34c",
-  "edition": "2019-03-01 US",
+  "edition": "2019 Mack Avenue CD MAC1147",
   "recorded": [
    {
-    "place": "Tempest Recording"
+    "place": "Tempest Recording, Tempe"
    }
   ],
   "tracks": [
@@ -10214,7 +11267,7 @@
    "It Swung Wide Open",
    "In the Key of the Universe",
    "The Creator Has a Master Plan",
-   "And so It Is",
+   "And So It Is",
    "Soul Perspective",
    "A Path Through the Noise",
    "Easier to Be"
@@ -10230,6 +11283,19 @@
     ]
    },
    {
+    "artist": "pharoah-sanders",
+    "name": "Pharoah Sanders",
+    "instruments": [
+     "tenor saxophone",
+     "vocals"
+    ],
+    "only": [
+     "In the Key of the Universe",
+     "The Creator Has a Master Plan",
+     "And So It Is"
+    ]
+   },
+   {
     "artist": null,
     "name": "Troy Roberts",
     "instruments": [
@@ -10237,18 +11303,6 @@
      "alto saxophone",
      "tenor saxophone",
      "bass"
-    ]
-   },
-   {
-    "artist": "pharoah-sanders",
-    "name": "Pharoah Sanders",
-    "instruments": [
-     "tenor saxophone"
-    ],
-    "only": [
-     "In the Key of the Universe",
-     "The Creator Has a Master Plan",
-     "And so It Is"
     ]
    },
    {
@@ -10264,19 +11318,18 @@
     "instruments": [
      "percussion"
     ],
-    "except": [
-     "Awake and Blissed",
-     "It Swung Wide Open",
-     "Soul Perspective"
+    "only": [
+     "Inner Being",
+     "Vibrations in Blue",
+     "In the Key of the Universe",
+     "The Creator Has a Master Plan",
+     "And So It Is",
+     "A Path Through the Noise",
+     "Easier to Be"
     ]
    }
   ],
   "crew": [
-   {
-    "artist": null,
-    "name": "Gloria DeFrancesco",
-    "role": "producer"
-   },
    {
     "artist": "joey-defrancesco",
     "name": "Joey DeFrancesco",
@@ -10284,7 +11337,7 @@
    },
    {
     "artist": null,
-    "name": "Gretchen Valade",
+    "name": "Gloria DeFrancesco",
     "role": "producer"
    },
    {
@@ -10292,6 +11345,11 @@
     "name": "Clarke Rigsby",
     "role": "engineer"
    }
+  ],
+  "draftNotes": [
+   "CD credits and Wikipedia agree track by track: Pharoah Sanders on the title track, The Creator Has a Master Plan (tenor and voice) and And So It Is; Sammy Figueroa on 1, 2, 5-7, 9 and 10; Troy Roberts on saxophones everywhere except The Creator Has a Master Plan and And So It Is, where he plays acoustic bass; DeFrancesco's trumpet on And So It Is and Easier to Be.",
+   "Apple Music differs slightly (no Billy Hart on Easier to Be, trumpet also on A Path Through the Noise); the CD and Wikipedia were followed. The draft's 'except' for Figueroa matched.",
+   "Recorded, mixed and mastered at Tempest Recording, Tempe, Arizona by Clarke Rigsby; no dates documented. Gretchen Valade was executive producer."
   ]
  },
  "in-these-times": {
@@ -10348,18 +11406,18 @@
   ]
  },
  "ive-got-a-woman": {
-  "reviewed": false,
-  "source": "musicbrainz:release/1ce050e4-00c3-476f-803c-6c6609bdef8c",
+  "reviewed": true,
+  "source": "Discogs releases 3045456 (Sue STLP 1012 stereo LP sleeve credits) and 2261046 (mono), checked against Wikipedia and Apple Music's per-track credits",
   "mbReleaseGroup": "21436862-f43e-48c6-88e7-607581472154",
-  "edition": "1962 US",
+  "edition": "1962 US Sue LP 1012",
   "tracks": [
-   "I've Got a Woman",
-   "On the Street Where You Live",
+   "I've Got A Woman",
+   "On The Street Where You Live",
    "Satin Doll",
    "'Round Midnight",
    "All About My Girl",
    "M.G. Blues",
-   "That's the Way I Feel",
+   "That's The Way I Feel",
    "After Hours",
    "Flying Home",
    "Sermon"
@@ -10390,14 +11448,18 @@
   "crew": [
    {
     "artist": null,
-    "name": "Irving Greenbaum",
-    "role": "engineer"
+    "name": "Juggy Murray",
+    "role": "producer"
    },
    {
     "artist": null,
-    "name": "Juggy Murray Jones",
-    "role": "producer"
+    "name": "Irving Greenbaum",
+    "role": "engineer"
    }
+  ],
+  "draftNotes": [
+   "Organ trio on every track; sleeve, Wikipedia and Apple Music agree (Apple's 'vocals' for McGriff on every track is a template, left out). No bassist; McGriff plays the bass lines.",
+   "Recording place and dates aren't documented: Wikipedia says 1962, New York, unsourced, and the title track first came out as a single on Joe Lederman's Jell label before Sue picked it up (Apple credits Lederman as a producer on M.G. Blues). Left empty. The draft's 'Juggy Murray Jones' is Juggy Murray."
   ]
  },
  "jaco-pastorius-album": {
@@ -10953,24 +12015,25 @@
   ]
  },
  "jazz-samba": {
-  "reviewed": false,
-  "source": "musicbrainz:release/436fd4ba-81ad-422d-a266-8cda13ad799e",
+  "reviewed": true,
+  "source": "Discogs releases 2241296 and 1367389 (Verve 521 413-2 CD reissue with the 45 rpm Desafinado), checked against Wikipedia: Jazz Samba and Apple Music's credits",
   "mbReleaseGroup": "ba062f3e-1d0c-37f2-b9f3-5a8e20c5ad45",
-  "edition": "1962-04-20 US",
+  "edition": "1997 Verve CD 314 521 413-2 (1962 LP V6-8432 plus the 45 rpm Desafinado)",
   "recorded": [
    {
     "date": "1962-02-13",
-    "place": "All Souls Church, Unitarian"
+    "place": "Pierce Hall, All Souls Unitarian Church, Washington"
    }
   ],
   "tracks": [
    "Desafinado",
    "Samba Dees Days",
-   "O pato",
-   "Samba triste",
-   "Samba de uma nota só",
-   "É luxo só",
-   "Baia"
+   "O Pato",
+   "Samba Triste",
+   "Samba De Uma Nota So",
+   "E Luxo So",
+   "Bahia",
+   "Desafinado (Bonus Track)"
   ],
   "personnel": [
    {
@@ -10989,11 +12052,10 @@
    },
    {
     "artist": null,
-    "name": "Gene “Joe” Byrd",
+    "name": "Gene Byrd",
     "instruments": [
-     "bass",
      "guitar",
-     "electric bass"
+     "bass"
     ]
    },
    {
@@ -11015,17 +12077,12 @@
     "artist": null,
     "name": "Bill Reichenbach",
     "instruments": [
-     "percussion",
-     "drums"
+     "drums",
+     "percussion"
     ]
    }
   ],
   "crew": [
-   {
-    "artist": null,
-    "name": "Norman Granz",
-    "role": "producer"
-   },
    {
     "artist": null,
     "name": "Creed Taylor",
@@ -11033,29 +12090,13 @@
    },
    {
     "artist": null,
-    "name": "Edward Green",
+    "name": "Ed Green",
     "role": "engineer"
-   },
-   {
-    "artist": null,
-    "name": "Billy Bianco",
-    "role": "arranger"
-   },
-   {
-    "artist": null,
-    "name": "Baden Powell",
-    "role": "arranger"
-   },
-   {
-    "artist": "antonio-carlos-jobim",
-    "name": "Antônio Carlos Jobim",
-    "role": "arranger"
-   },
-   {
-    "artist": null,
-    "name": "Newton Mendonça",
-    "role": "arranger"
    }
+  ],
+  "draftNotes": [
+   "The draft's crew was wrong: Norman Granz didn't produce it (Creed Taylor did), and Billy Blanco, Baden Powell, Jobim and Newton Mendonça are the songs' composers, not arrangers; all removed.",
+   "One session, February 13, 1962, at Pierce Hall, All Souls Unitarian Church, Washington, D.C. The bonus Desafinado (Bonus Track) is the 45 rpm issue (Verve 10260) from the same session. Sources list the sextet without per-track detail, so everyone is on every track; Gene Byrd plays rhythm guitar and bass, and Deppenschmidt and Reichenbach split drums and percussion."
   ]
  },
  "john-coltrane-and-johnny-hartman": {
@@ -12258,16 +13299,18 @@
   ]
  },
  "lee-konitz-with-warne-marsh": {
-  "reviewed": false,
-  "source": "musicbrainz:release/631a7f25-31bd-4dbd-9428-0ffef8258960",
+  "reviewed": true,
+  "source": "Discogs release 3701091 (Atlantic 1217 mono LP sleeve credits), checked against Jazzdisco (Atlantic 1200 series), Wikipedia and Apple Music's per-track credits",
   "mbReleaseGroup": "bdd1200f-ab65-4a93-ad79-725409a9a1bc",
-  "edition": "1955 GB",
+  "edition": "1955 US Atlantic 1217 (mono)",
   "recorded": [
    {
-    "date": "1955-06-14"
+    "date": "1955-06-14",
+    "place": "New York"
    },
    {
-    "date": "1955-06-15"
+    "date": "1955-06-15",
+    "place": "New York"
    }
   ],
   "tracks": [
@@ -12311,6 +13354,7 @@
     "only": [
      "There Will Never Be Another You",
      "Donna Lee",
+     "Two Not One",
      "Don't Squawk",
      "Background Music"
     ]
@@ -12339,29 +13383,50 @@
      "drums"
     ]
    }
+  ],
+  "crew": [
+   {
+    "artist": null,
+    "name": "Nesuhi Ertegun",
+    "role": "producer"
+   },
+   {
+    "artist": null,
+    "name": "Tom Dowd",
+    "role": "engineer"
+   },
+   {
+    "artist": null,
+    "name": "William Claxton",
+    "role": "photography"
+   }
+  ],
+  "draftNotes": [
+   "The draft left Sal Mosca off Two Not One. Sleeve, Jazzdisco, Wikipedia and Apple Music agree: Mosca on There Will Never Be Another You, Donna Lee, Two Not One, Don't Squawk and Background Music; no piano on Topsy and I Can't Get Started; Ronnie Ball on Ronnie's Line.",
+   "Jazzdisco: everything but Ronnie's Line recorded June 14, 1955 in New York; Ronnie's Line June 15. Background Music is a line on All of Me. Tom Dowd engineered; Nesuhi Ertegun supervised."
   ]
  },
  "linger-awhile": {
-  "reviewed": false,
-  "source": "musicbrainz:release/07b4867f-64e7-4160-87f4-43a14bf33b1f",
+  "reviewed": true,
+  "source": "Discogs releases 24673283 (Verve B0036471-02 CD) and 25206094 (LP, per-track inner-sleeve credits), checked against Apple Music's per-track credits and Wikipedia: Linger Awhile",
   "mbReleaseGroup": "9a513362-5439-40ae-a974-b509ddac3414",
-  "edition": "2022-09-16 US",
+  "edition": "2022 Verve CD B0036471-02",
   "recorded": [
    {
     "place": "Sear Sound"
    }
   ],
   "tracks": [
-   "Can’t Get Out of This Mood",
+   "Can't Get Out of This Mood",
    "Guess Who I Saw Today",
    "Nostalgia (The Day I Knew)",
-   "Sweet Pumpkin",
+   "Sweet Pumpkin (feat. Pasquale Grasso)",
    "Misty",
    "Social Call",
-   "I’m Confessin’ (That I Love You)",
-   "Linger Awhile",
-   "Round Midnight",
-   "Someone to Watch Over Me"
+   "I'm Confessin' (That I Love You)",
+   "Linger Awhile (feat. Pasquale Grasso)",
+   "'Round Midnight",
+   "Someone To Watch Over Me (feat. Pasquale Grasso)"
   ],
   "personnel": [
    {
@@ -12375,21 +13440,21 @@
     "artist": null,
     "name": "Terell Stafford",
     "instruments": [
-     "flugelhorn",
-     "trumpet"
+     "trumpet",
+     "flugelhorn"
     ],
     "only": [
-     "Round Midnight"
+     "'Round Midnight"
     ]
    },
    {
     "artist": null,
-    "name": "Donovan Austin",
+    "name": "Donavan Austin",
     "instruments": [
      "trombone"
     ],
     "only": [
-     "Round Midnight"
+     "'Round Midnight"
     ]
    },
    {
@@ -12399,7 +13464,7 @@
      "tenor saxophone"
     ],
     "only": [
-     "Round Midnight"
+     "'Round Midnight"
     ]
    },
    {
@@ -12409,20 +13474,20 @@
      "guitar"
     ],
     "except": [
-     "Can’t Get Out of This Mood",
+     "Can't Get Out of This Mood",
      "Misty"
     ]
    },
    {
     "artist": null,
-    "name": "Ben Patterson",
+    "name": "Ben Paterson",
     "instruments": [
      "piano"
     ],
     "except": [
      "Nostalgia (The Day I Knew)",
-     "Sweet Pumpkin",
-     "Someone to Watch Over Me"
+     "Sweet Pumpkin (feat. Pasquale Grasso)",
+     "Someone To Watch Over Me (feat. Pasquale Grasso)"
     ]
    },
    {
@@ -12432,7 +13497,7 @@
      "bass"
     ],
     "except": [
-     "Someone to Watch Over Me"
+     "Someone To Watch Over Me (feat. Pasquale Grasso)"
     ]
    },
    {
@@ -12442,21 +13507,11 @@
      "drums"
     ],
     "except": [
-     "Someone to Watch Over Me"
+     "Someone To Watch Over Me (feat. Pasquale Grasso)"
     ]
    }
   ],
   "crew": [
-   {
-    "artist": null,
-    "name": "Sampson Alvarado",
-    "role": "engineer"
-   },
-   {
-    "artist": null,
-    "name": "Will Bennett",
-    "role": "engineer"
-   },
    {
     "artist": null,
     "name": "Matt Pierson",
@@ -12472,6 +13527,11 @@
     "name": "Kendric McCallister",
     "role": "arranger"
    }
+  ],
+  "draftNotes": [
+   "CD, LP and Apple Music agree track by track: Grasso on all but Can't Get Out of This Mood and Misty; Paterson on all but Nostalgia, Sweet Pumpkin and Someone to Watch Over Me; the horns only on 'Round Midnight (McCallister's arrangement); Someone to Watch Over Me is voice and guitar.",
+   "The pianist is Ben Paterson (Apple, Wikipedia); Discogs spells him Patterson. The trombonist is Donavan Austin on the LP and Apple (the CD and Wikipedia have Donovan).",
+   "Recorded and mixed at Sear Sound by Chris Allen, with Sampson Alvarado and Will Bennett assisting. No dates documented."
   ]
  },
  "little-girl-blue": {
@@ -13701,23 +14761,26 @@
   ]
  },
  "not-tight": {
-  "reviewed": false,
-  "source": "musicbrainz:release/12c75888-1977-415f-b9be-5f6e6d530e69",
+  "reviewed": true,
+  "source": "Discogs release 24157916 (Blue Note 00602445908363 CD, per-track booklet credits), checked against Apple Music's per-track credits and Wikipedia: Not Tight",
   "mbReleaseGroup": "11219c32-5deb-4cfa-bfc0-4669858721df",
-  "edition": "2022-07-29 XW",
+  "edition": "2022 Blue Note / APESHIT CD 00602445908363",
   "recorded": [
    {
     "place": "DOMi & JD BECK Headquarters"
+   },
+   {
+    "place": "Larrabee Sound Studios, North Hollywood"
    }
   ],
   "tracks": [
-   "LOUNA’S iNTRO",
+   "LOUNA'S iNTRO",
    "WHATUP",
    "SMiLE",
    "BOWLiNG",
    "NOT TiGHT",
    "TWO SHRiMPS",
-   "U DON’T HAVE TO ROB ME",
+   "U DON'T HAVE TO ROB ME",
    "MOON",
    "DUKE",
    "TAKE A CHANCE",
@@ -13730,13 +14793,33 @@
   "personnel": [
    {
     "artist": null,
+    "name": "Domi Louna",
+    "instruments": [
+     "keyboards",
+     "vocals"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "JD Beck",
+    "instruments": [
+     "drums",
+     "vocals"
+    ],
+    "except": [
+     "LOUNA'S iNTRO",
+     "THANK U"
+    ]
+   },
+   {
+    "artist": null,
     "name": "Chloé Tallet",
     "instruments": [
      "flute",
      "piccolo"
     ],
     "only": [
-     "LOUNA’S iNTRO",
+     "LOUNA'S iNTRO",
      "THANK U"
     ]
    },
@@ -13744,22 +14827,76 @@
     "artist": null,
     "name": "Leah Zeger",
     "instruments": [
-     "viola",
-     "violin"
+     "violin",
+     "viola"
     ],
     "only": [
-     "LOUNA’S iNTRO",
+     "LOUNA'S iNTRO",
      "THANK U"
     ]
    },
    {
     "artist": null,
-    "name": "Kurt Rosenwinkel",
+    "name": "Lara Somogyi",
     "instruments": [
-     "guitar"
+     "harp"
     ],
     "only": [
-     "WHOA"
+     "LOUNA'S iNTRO"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Isaiah Gage",
+    "instruments": [
+     "cello"
+    ],
+    "only": [
+     "LOUNA'S iNTRO",
+     "THANK U"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Stephen Pfeifer",
+    "instruments": [
+     "bass"
+    ],
+    "only": [
+     "LOUNA'S iNTRO",
+     "THANK U"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Miguel Atwood-Ferguson",
+    "instruments": [
+     "strings"
+    ],
+    "only": [
+     "NOT TiGHT"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Thundercat",
+    "instruments": [
+     "electric bass",
+     "vocals"
+    ],
+    "only": [
+     "BOWLiNG",
+     "NOT TiGHT"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Mac DeMarco",
+    "instruments": [
+     "vocals"
+    ],
+    "only": [
+     "TWO SHRiMPS"
     ]
    },
    {
@@ -13775,74 +14912,6 @@
    },
    {
     "artist": null,
-    "name": "DOMi",
-    "instruments": [
-     "keyboards",
-     "vocals"
-    ],
-    "except": [
-     "SNiFF"
-    ]
-   },
-   {
-    "artist": null,
-    "name": "Lara Somogyi",
-    "instruments": [
-     "harp"
-    ],
-    "only": [
-     "LOUNA’S iNTRO"
-    ]
-   },
-   {
-    "artist": null,
-    "name": "Stephen Pfeifer",
-    "instruments": [
-     "bass"
-    ],
-    "only": [
-     "LOUNA’S iNTRO",
-     "THANK U"
-    ]
-   },
-   {
-    "artist": null,
-    "name": "Thundercat",
-    "instruments": [
-     "bass",
-     "vocals"
-    ],
-    "only": [
-     "BOWLiNG",
-     "NOT TiGHT"
-    ]
-   },
-   {
-    "artist": null,
-    "name": "Isaiah Gage",
-    "instruments": [
-     "cello"
-    ],
-    "only": [
-     "LOUNA’S iNTRO",
-     "THANK U"
-    ]
-   },
-   {
-    "artist": null,
-    "name": "JD BECK",
-    "instruments": [
-     "drums",
-     "vocals"
-    ],
-    "except": [
-     "LOUNA’S iNTRO",
-     "BOWLiNG",
-     "THANK U"
-    ]
-   },
-   {
-    "artist": null,
     "name": "Anderson .Paak",
     "instruments": [
      "vocals"
@@ -13850,16 +14919,6 @@
     "only": [
      "TAKE A CHANCE",
      "PiLOT"
-    ]
-   },
-   {
-    "artist": null,
-    "name": "Mac DeMarco",
-    "instruments": [
-     "vocals"
-    ],
-    "only": [
-     "TWO SHRiMPS"
     ]
    },
    {
@@ -13884,12 +14943,12 @@
    },
    {
     "artist": null,
-    "name": "Miguel Atwood‐Ferguson",
+    "name": "Kurt Rosenwinkel",
     "instruments": [
-     "strings"
+     "guitar"
     ],
     "only": [
-     "NOT TiGHT"
+     "WHOA"
     ]
    }
   ],
@@ -13900,23 +14959,13 @@
     "role": "producer"
    },
    {
-    "artist": "domi-and-jd-beck",
-    "name": "DOMi & JD BECK",
-    "role": "engineer"
-   },
-   {
     "artist": null,
     "name": "Jhair Lazo",
     "role": "engineer"
    },
    {
     "artist": null,
-    "name": "Miguel Atwood‐Ferguson",
-    "role": "arranger"
-   },
-   {
-    "artist": null,
-    "name": "Miguel Atwood‐Ferguson",
+    "name": "Julio Ulloa",
     "role": "engineer"
    },
    {
@@ -13926,24 +14975,32 @@
    },
    {
     "artist": null,
-    "name": "Julio Ulloa",
-    "role": "engineer"
+    "name": "Miguel Atwood-Ferguson",
+    "role": "arranger"
    }
   ],
   "draftNotes": [
-   "the leader (DOMi & JD BECK) isn't among the credited players"
+   "DOMi & JD BECK is the duo, so the leader's page is the group's; both members are listed as players. Domi Louna is Domitille Degalle's stage name (credited 'DOMi Louna'). She plays keyboards on every track and sings on Bowling, U Don't Have to Rob Me and Take a Chance (backing vocals on Not Tight, Two Shrimps and Moon); JD Beck drums on tracks 2-14 and sings on U Don't Have to Rob Me and Take a Chance.",
+   "LOUNA'S iNTRO and THANK U are Domi with a chamber group (flute and piccolo, violin and viola, cello, contrabass); the harp is on the intro only per the booklet and Apple (Wikipedia puts it on both). The cellist is Isaiah Gage (booklet, Apple); Wikipedia has Cage.",
+   "Thundercat plays bass on Bowling and Not Tight and sings on Bowling; Miguel Atwood-Ferguson arranged, played and recorded the strings on Not Tight. The draft's 'except SNiFF' for Domi and JD Beck's missing drums on BOWLiNG were MusicBrainz gaps.",
+   "Recorded by the duo and Jhair Lazo, who mixed (Julio Ulloa assisting; Delanie Leyden and Ulloa also recorded Pilot); at their headquarters and Larrabee Sound Studios. No dates documented."
   ]
  },
  "nublues": {
-  "reviewed": false,
-  "source": "musicbrainz:release/92f5c4e0-4efe-429d-b951-ebcbf2f57395",
+  "reviewed": true,
+  "source": "Discogs release 29869387 (Blue Note 00602458376623 CD, per-track credits), checked against Apple Music's per-track credits and Wikipedia: Nublues",
   "mbReleaseGroup": "80bf36ec-d228-4bc3-8550-d523471024f6",
-  "edition": "2024-02-09 XW",
+  "edition": "2024 Blue Note CD 00602458376623",
+  "recorded": [
+   {
+    "place": "The Bunker Studio, Brooklyn"
+   }
+  ],
   "tracks": [
    "early",
    "equinox",
    "mellowdee",
-   "chant",
+   "chant (feat. Gabrielle Garo)",
    "what am i waiting for?",
    "bach (God the Father in Eternity)",
    "nublues",
@@ -13956,7 +15013,8 @@
     "artist": "joel-ross",
     "name": "Joel Ross",
     "instruments": [
-     "vibraphone"
+     "vibraphone",
+     "piano"
     ]
    },
    {
@@ -13964,6 +15022,9 @@
     "name": "Immanuel Wilkins",
     "instruments": [
      "alto saxophone"
+    ],
+    "except": [
+     "chant (feat. Gabrielle Garo)"
     ]
    },
    {
@@ -13973,7 +15034,9 @@
      "flute"
     ],
     "only": [
-     "chant"
+     "chant (feat. Gabrielle Garo)",
+     "what am i waiting for?",
+     "bach (God the Father in Eternity)"
     ]
    },
    {
@@ -13981,6 +15044,9 @@
     "name": "Jeremy Corren",
     "instruments": [
      "piano"
+    ],
+    "except": [
+     "chant (feat. Gabrielle Garo)"
     ]
    },
    {
@@ -13988,6 +15054,9 @@
     "name": "Kanoa Mendenhall",
     "instruments": [
      "bass"
+    ],
+    "except": [
+     "chant (feat. Gabrielle Garo)"
     ]
    },
    {
@@ -13995,8 +15064,32 @@
     "name": "Jeremy Dutton",
     "instruments": [
      "drums"
+    ],
+    "except": [
+     "chant (feat. Gabrielle Garo)"
     ]
    }
+  ],
+  "crew": [
+   {
+    "artist": "joel-ross",
+    "name": "Joel Ross",
+    "role": "producer"
+   },
+   {
+    "artist": null,
+    "name": "Walter Smith III",
+    "role": "producer"
+   },
+   {
+    "artist": null,
+    "name": "Jason Rostkowski",
+    "role": "engineer"
+   }
+  ],
+  "draftNotes": [
+   "The draft had Gabrielle Garo on chant only and the quintet on every track. The CD sleeve, Apple Music and Wikipedia all put Garo on chant, what am i waiting for? and bach, and chant is a duo: Garo's flute with Ross on piano (Apple also credits his vibraphone there).",
+   "Recorded and mixed by Jason Rostkowski (Alex Conroy assisting) at The Bunker, Brooklyn; no dates documented."
   ]
  },
  "odjb-75th-anniversary": {
@@ -14107,10 +15200,10 @@
   ]
  },
  "omega": {
-  "reviewed": false,
-  "source": "musicbrainz:release/3fd11cb6-8c8f-4a18-8e5c-c8b46af45cce",
+  "reviewed": true,
+  "source": "Discogs releases 19107016 (Blue Note B003221502 CD) and 18760351 (LP), checked against Apple Music's per-track credits and MusicBrainz",
   "mbReleaseGroup": "b68242d1-c48e-4579-9de2-02d4646f6784",
-  "edition": "2020-08-07 XW",
+  "edition": "2020 Blue Note CD B003221502",
   "recorded": [
    {
     "place": "Sear Sound"
@@ -14155,9 +15248,6 @@
     "name": "Kweku Sumbry",
     "instruments": [
      "drums"
-    ],
-    "except": [
-     "Part 1. The Key"
     ]
    }
   ],
@@ -14172,29 +15262,123 @@
     "name": "Chris Allen",
     "role": "engineer"
    }
+  ],
+  "draftNotes": [
+   "The draft (MusicBrainz) left Kweku Sumbry off Part 1. The Key. Neither sleeve says so and Apple Music credits the whole quartet on every track, so he is kept there; worth a listen to confirm.",
+   "Studio from MusicBrainz (Sear Sound); the sleeves name only the engineer, Chris Allen, who recorded and mixed. A retailer gives January 10, 2019 as the date but nothing primary backs it, so no date."
   ]
  },
  "on-the-tender-spot": {
-  "reviewed": false,
-  "source": "musicbrainz:release/a35875e5-95b8-4465-9622-c0786c4d0601",
+  "reviewed": true,
+  "source": "Discogs releases 15833043 (Blue Note B003224601 LP, per-track sleeve credits) and 15426750 (CD), checked against Apple Music's per-track credits and Wikipedia",
   "mbReleaseGroup": "e379fe82-8512-42f4-a57c-915738106808",
-  "edition": "2020-06-05 US",
+  "edition": "2020 Blue Note CD / LP B003224601",
+  "recorded": [
+   {
+    "place": "Brooklyn Recording, Brooklyn"
+   }
+  ],
   "tracks": [
    "Tide of Hyacinth",
    "Yessss",
    "Cynical sideliners",
-   "Mr. Roscoe (Consider the Simultaneous)",
-   "An Interlude (That Get’ More Intense)",
-   "Reset (Quiet Victories & Celebrated Defeats)",
-   "Moon (The Return Amplifies the Unity)",
+   "Mr. Roscoe (consider the simultaneous)",
+   "An Interlude (that get' more intense)",
+   "reset (quiet victories&celebrated defeats)",
+   "Moon (the return amplifies  the unity)",
    "4623",
    "Roy",
-   "Blues (We Measure the Heart With a Fist)",
-   "Hooded Procession (Read the Names Outloud)"
+   "Blues (We measure the heart with a fist)",
+   "Hooded procession (read the names outloud)"
   ],
-  "personnel": [],
+  "personnel": [
+   {
+    "artist": "ambrose-akinmusire",
+    "name": "Ambrose Akinmusire",
+    "instruments": [
+     "trumpet",
+     "electric piano"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Sam Harris",
+    "instruments": [
+     "piano",
+     "synthesizer"
+    ],
+    "except": [
+     "Cynical sideliners",
+     "Hooded procession (read the names outloud)"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Harish Raghavan",
+    "instruments": [
+     "bass"
+    ],
+    "except": [
+     "Cynical sideliners",
+     "4623",
+     "Hooded procession (read the names outloud)"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Justin Brown",
+    "instruments": [
+     "drums"
+    ],
+    "except": [
+     "Cynical sideliners",
+     "4623",
+     "Hooded procession (read the names outloud)"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Jesús Díaz",
+    "instruments": [
+     "vocals",
+     "percussion"
+    ],
+    "only": [
+     "Tide of Hyacinth"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Genevieve Artadi",
+    "instruments": [
+     "vocals"
+    ],
+    "only": [
+     "Cynical sideliners"
+    ]
+   }
+  ],
+  "crew": [
+   {
+    "artist": "ambrose-akinmusire",
+    "name": "Ambrose Akinmusire",
+    "role": "producer"
+   },
+   {
+    "artist": null,
+    "name": "Andy Taub",
+    "role": "engineer"
+   },
+   {
+    "artist": null,
+    "name": "David Darlington",
+    "role": "engineer"
+   }
+  ],
   "draftNotes": [
-   "no players credited on this edition"
+   "Quartet throughout except Cynical sideliners (Akinmusire on Rhodes with Genevieve Artadi singing) and Hooded procession (Akinmusire alone on Rhodes). Jesús Díaz sings and plays percussion on Tide of Hyacinth.",
+   "4623 (31 seconds) is trumpet and piano only per Apple Music; the LP sleeve has trumpet without the rhythm section there. The CD sleeve lists the full band on tracks 1, 2 and 4-10, which would include it; Apple and the LP agree, so bass and drums are left off it.",
+   "Sam Harris's synthesizer: the LP credits it on Moon, Apple on Yessss. Recorded at Brooklyn Recording by Andy Taub (Samuel Wahl assisting); mixed and mastered by David Darlington at Bass Hit. No dates are documented."
   ]
  },
  "out-of-the-cool": {
@@ -14875,10 +16059,16 @@
   ]
  },
  "quartetinho": {
-  "reviewed": false,
-  "source": "musicbrainz:release/86ed8739-7864-473b-aa36-0f96db0f5365",
+  "reviewed": true,
+  "source": "Discogs release 26017396 (Anzic ANZ-0082 CD sleeve credits), checked against Apple Music's credits",
   "mbReleaseGroup": "650fe811-0093-4f87-b7f6-e6af1c53600b",
-  "edition": "2022-10-07 XW",
+  "edition": "2022 Anzic CD ANZ-0082",
+  "recorded": [
+   {
+    "date": "2021-10",
+    "place": "Sear Sound"
+   }
+  ],
   "tracks": [
    "Baroquen Spirit",
    "Palhaço",
@@ -14892,9 +16082,68 @@
    "Going Home",
    "Vivi & Zaco"
   ],
-  "personnel": [],
+  "personnel": [
+   {
+    "artist": "anat-cohen",
+    "name": "Anat Cohen",
+    "instruments": [
+     "clarinet",
+     "bass clarinet"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "James Shipp",
+    "instruments": [
+     "vibraphone",
+     "percussion",
+     "glockenspiel",
+     "analog synthesizer"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Vitor Gonçalves",
+    "instruments": [
+     "piano",
+     "accordion",
+     "electric piano"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Tal Mashiach",
+    "instruments": [
+     "bass",
+     "guitar"
+    ]
+   }
+  ],
+  "crew": [
+   {
+    "artist": "anat-cohen",
+    "name": "Anat Cohen",
+    "role": "producer"
+   },
+   {
+    "artist": null,
+    "name": "Oded Lev-Ari",
+    "role": "producer"
+   },
+   {
+    "artist": null,
+    "name": "James Farber",
+    "role": "engineer"
+   },
+   {
+    "artist": null,
+    "name": "Quartetinho",
+    "role": "arranger"
+   }
+  ],
   "draftNotes": [
-   "no players credited on this edition"
+   "The draft had no players. Quartetinho is the four of them on every track (sleeve and Apple Music); the sleeve lists the doubling instruments without saying on which tracks.",
+   "Sleeve: recorded October 2021 at Sear Sound, by James Farber, who also mixed; arrangements by the band."
   ]
  },
  "queen-of-the-organ": {
@@ -16358,30 +17607,38 @@
   ]
  },
  "soul-sauce": {
-  "reviewed": false,
-  "source": "musicbrainz:release/bc9d9386-d7bd-4ae4-b7c2-f618ce009dfd",
+  "reviewed": true,
+  "source": "Discogs release 1082188 (Verve 314 521 668-2 CD reissue, the 13-track edition, per-track credits and session notes), checked against the original LP (Discogs 4859307), Wikipedia: Soul Sauce and Apple Music",
   "mbReleaseGroup": "9708e516-c74d-3c7a-88c5-df1382212c1a",
-  "edition": "1965 US",
+  "edition": "1994 Verve CD 314 521 668-2 (1965 LP V6-8614 plus four tracks)",
   "recorded": [
    {
     "date": "1964-11-19",
-    "place": "Van Gelder Studio"
+    "place": "Van Gelder Studio, Englewood Cliffs"
    },
    {
     "date": "1964-11-20",
-    "place": "A&R Recording Studio"
+    "place": "A&R Studios, New York"
+   },
+   {
+    "date": "1964-11-23",
+    "place": "New York"
    }
   ],
   "tracks": [
-   "Soul Sauce (Guachi Guaro)",
-   "Afro-Blue",
+   "Soul Sauce (Guachi Guara)",
+   "Afro Blue",
    "Pantano",
    "Somewhere in the Night",
-   "Maramor Mambo",
+   "Maramoor Mambo",
    "Tanya",
    "Leyte",
    "Spring Is Here",
-   "Joao"
+   "Joao",
+   "Soul Sauce (Guachi Guara) [Rough Mix]",
+   "Monkey Beams",
+   "Ming",
+   "Mamblues"
   ],
   "personnel": [
    {
@@ -16398,7 +17655,9 @@
      "trumpet"
     ],
     "only": [
-     "Afro-Blue"
+     "Afro Blue",
+     "Monkey Beams",
+     "Ming"
     ]
    },
    {
@@ -16408,7 +17667,9 @@
      "tenor saxophone"
     ],
     "only": [
-     "Afro-Blue"
+     "Afro Blue",
+     "Monkey Beams",
+     "Ming"
     ]
    },
    {
@@ -16418,7 +17679,9 @@
      "guitar"
     ],
     "only": [
-     "Afro-Blue"
+     "Afro Blue",
+     "Monkey Beams",
+     "Ming"
     ]
    },
    {
@@ -16428,7 +17691,9 @@
      "piano"
     ],
     "except": [
-     "Afro-Blue"
+     "Afro Blue",
+     "Monkey Beams",
+     "Ming"
     ]
    },
    {
@@ -16438,17 +17703,9 @@
      "bass"
     ],
     "except": [
-     "Afro-Blue"
-    ]
-   },
-   {
-    "artist": null,
-    "name": "Bob Bushnell",
-    "instruments": [
-     "bass"
-    ],
-    "only": [
-     "Afro-Blue"
+     "Afro Blue",
+     "Monkey Beams",
+     "Ming"
     ]
    },
    {
@@ -16458,7 +17715,20 @@
      "bass"
     ],
     "only": [
-     "Afro-Blue"
+     "Afro Blue"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Bob Bushnell",
+    "instruments": [
+     "bass",
+     "electric bass"
+    ],
+    "only": [
+     "Afro Blue",
+     "Monkey Beams",
+     "Ming"
     ]
    },
    {
@@ -16468,7 +17738,9 @@
      "drums"
     ],
     "except": [
-     "Afro-Blue"
+     "Afro Blue",
+     "Monkey Beams",
+     "Ming"
     ]
    },
    {
@@ -16478,7 +17750,9 @@
      "drums"
     ],
     "only": [
-     "Afro-Blue"
+     "Afro Blue",
+     "Monkey Beams",
+     "Ming"
     ]
    },
    {
@@ -16490,7 +17764,7 @@
    },
    {
     "artist": null,
-    "name": "Alberto \"Virgilio\" Valdés",
+    "name": "Alberto Valdés",
     "instruments": [
      "percussion"
     ]
@@ -16503,16 +17777,12 @@
      "vocals"
     ],
     "only": [
-     "Soul Sauce (Guachi Guaro)"
+     "Soul Sauce (Guachi Guara)",
+     "Soul Sauce (Guachi Guara) [Rough Mix]"
     ]
    }
   ],
   "crew": [
-   {
-    "artist": null,
-    "name": "Phil Ramone",
-    "role": "engineer"
-   },
    {
     "artist": null,
     "name": "Creed Taylor",
@@ -16520,12 +17790,19 @@
    },
    {
     "artist": null,
-    "name": "Rudy van Gelder",
+    "name": "Phil Ramone",
+    "role": "engineer"
+   },
+   {
+    "artist": null,
+    "name": "Rudy Van Gelder",
     "role": "engineer"
    }
   ],
   "draftNotes": [
-   "this edition has 9 tracks; the Apple Music album has 13"
+   "The Apple edition is the 1994 CD with four bonus tracks; its sleeve credits the bonus tracks, so they're included. Soul Sauce (Guachi Guara) [Rough Mix] is the title track's session (November 20, with the quintet); Mamblues is from the same day and band; Monkey Beams and Ming are from November 23, 1964 in New York with the Afro Blue horns and rhythm section (Byrd, Heath, Burrell, Bushnell on electric bass, Grady Tate), not Hewitt, Hilliard or Rae.",
+   "Afro Blue: Van Gelder Studio, November 19, with Richard Davis and Bob Bushnell on bass (both on the LP and CD; Wikipedia gives Davis alone there). The rest: A&R Studios, November 20, 1964, engineered by Phil Ramone; Van Gelder engineered Afro Blue and re-recorded the A&R tracks.",
+   "Willie Bobo plays percussion and sings on the title track and its rough mix (CD); Wikipedia credits June Magruder with the vocals on the title track, citing the LP's back cover, which the CD doesn't repeat. Peraza and Valdés are listed without tracks on both LP and CD, so they're on all."
   ]
  },
  "sound-grammar": {
@@ -17248,39 +18525,112 @@
   ]
  },
  "standart": {
-  "reviewed": false,
-  "source": "musicbrainz:release/0edf9281-2c89-436d-be00-f39315341398",
+  "reviewed": true,
+  "source": "Discogs releases 23054987 (Nonesuch 075597911466 LP, per-track credits and notes) and 23187419 (CD), checked against Apple Music's per-track credits and Wikipedia: StandArt",
   "mbReleaseGroup": "d29a7d39-59cb-46b8-97bd-d4b83b8c658a",
-  "edition": "2022 None",
+  "edition": "2022 Nonesuch LP 075597911466",
+  "recorded": [
+   {
+    "date": "2021-04-11",
+    "place": "Stagg Street Studio, Los Angeles"
+   },
+   {
+    "date": "2021-04-12",
+    "place": "Stagg Street Studio, Los Angeles"
+   },
+   {
+    "date": "2021-04-13",
+    "place": "Stagg Street Studio, Los Angeles"
+   }
+  ],
   "tracks": [
-   "De‐Dah",
-   "I Didn’t Know What Time It Was",
-   "All the Things You Are",
-   "Big Foot",
+   "De-Dah",
+   "I Didn't Know What Time It Was",
+   "All the Things You Are (feat. Mark Turner)",
+   "Big Foot (feat. Joshua Redman)",
    "When a Woman Loves a Man",
    "Softly, as in a Morning Sunrise",
-   "I Should Care",
-   "Invasion During an Operetta",
+   "I Should Care (feat. Ambrose Akinmusire)",
+   "Invasion During an Operetta (feat. Ambrose Akinmusire)",
    "Laura"
   ],
   "personnel": [
    {
+    "artist": "tigran-hamasyan",
+    "name": "Tigran Hamasyan",
+    "instruments": [
+     "piano"
+    ]
+   },
+   {
+    "artist": "ambrose-akinmusire",
+    "name": "Ambrose Akinmusire",
+    "instruments": [
+     "trumpet"
+    ],
+    "only": [
+     "I Should Care (feat. Ambrose Akinmusire)",
+     "Invasion During an Operetta (feat. Ambrose Akinmusire)"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Mark Turner",
+    "instruments": [
+     "tenor saxophone"
+    ],
+    "only": [
+     "All the Things You Are (feat. Mark Turner)"
+    ]
+   },
+   {
+    "artist": "joshua-redman",
+    "name": "Joshua Redman",
+    "instruments": [
+     "tenor saxophone"
+    ],
+    "only": [
+     "Big Foot (feat. Joshua Redman)"
+    ]
+   },
+   {
     "artist": null,
     "name": "Matt Brewer",
     "instruments": [
-     "instruments"
+     "bass"
+    ],
+    "except": [
+     "All the Things You Are (feat. Mark Turner)",
+     "I Should Care (feat. Ambrose Akinmusire)"
     ]
    },
    {
     "artist": null,
     "name": "Justin Brown",
     "instruments": [
-     "instruments"
+     "drums"
+    ],
+    "except": [
+     "All the Things You Are (feat. Mark Turner)",
+     "I Should Care (feat. Ambrose Akinmusire)"
     ]
    }
   ],
+  "crew": [
+   {
+    "artist": "tigran-hamasyan",
+    "name": "Tigran Hamasyan",
+    "role": "producer"
+   },
+   {
+    "artist": null,
+    "name": "Pete Min",
+    "role": "engineer"
+   }
+  ],
   "draftNotes": [
-   "the leader (Tigran Hamasyan) isn't among the credited players"
+   "The draft left out the leader and the guests. All the Things You Are (with Mark Turner) and I Should Care (with Ambrose Akinmusire) are duos with Hamasyan, without bass and drums: the LP's per-track credits and Apple Music agree. Joshua Redman and Ambrose Akinmusire link to their pages.",
+   "LP notes: recorded April 11-13, 2021 at Stagg Street Studio, Los Angeles; engineered and mixed by Pete Min (Trent Slatton assisting); produced and arranged by Hamasyan."
   ]
  },
  "state-of-the-tenor-vol-1": {
@@ -18499,18 +19849,22 @@
   ]
  },
  "the-jimmy-giuffre-3": {
-  "reviewed": false,
-  "source": "musicbrainz:release/d45c3e2d-04cd-46fb-8ff0-876d2204bab1",
+  "reviewed": true,
+  "source": "Discogs release 6887644 (Atlantic Jazz 7 90981-2 CD, per-track credits for the 11-track edition), checked against Jazzdisco (Atlantic 1200 series and Jimmy Giuffre discography) and Wikipedia",
   "mbReleaseGroup": "2670912b-16f5-3e29-8413-1defaf645a43",
-  "edition": "1957 US",
+  "edition": "1988 US Atlantic Jazz 7 90981-2 CD (1957 LP Atlantic 1254 plus two tracks)",
   "recorded": [
    {
     "date": "1956-12-03",
-    "place": "Capitol Tower"
+    "place": "Capitol Studios, Los Angeles"
    },
    {
     "date": "1956-12-04",
-    "place": "Capitol Tower"
+    "place": "Capitol Studios, Los Angeles"
+   },
+   {
+    "date": "1957-12-02",
+    "place": "Coastal Recording Studios, New York"
    }
   ],
   "tracks": [
@@ -18522,17 +19876,18 @@
    "My All",
    "That's the Way It Is",
    "Crawdad Suite",
-   "The Train and the River"
+   "The Train and the River",
+   "The Green Country (New England Mood)",
+   "Forty-Second Street"
   ],
   "personnel": [
    {
     "artist": "jimmy-giuffre",
     "name": "Jimmy Giuffre",
     "instruments": [
-     "reeds",
-     "baritone saxophone",
      "clarinet",
-     "tenor saxophone"
+     "tenor saxophone",
+     "baritone saxophone"
     ]
    },
    {
@@ -18547,15 +19902,45 @@
     "name": "Ralph Peña",
     "instruments": [
      "bass"
+    ],
+    "except": [
+     "The Green Country (New England Mood)",
+     "Forty-Second Street"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Jim Atlas",
+    "instruments": [
+     "bass"
+    ],
+    "only": [
+     "The Green Country (New England Mood)",
+     "Forty-Second Street"
     ]
    }
   ],
   "crew": [
    {
     "artist": null,
+    "name": "Nesuhi Ertegun",
+    "role": "producer"
+   },
+   {
+    "artist": null,
     "name": "John Kraus",
     "role": "engineer"
+   },
+   {
+    "artist": null,
+    "name": "Tom Dowd",
+    "role": "engineer"
    }
+  ],
+  "draftNotes": [
+   "The Apple Music edition is the 1988 CD, with The Green Country (New England Mood) and Forty-Second Street added. Both are from a December 2, 1957 trio session at Coastal Recording Studios, New York, with Jim Atlas on bass instead of Ralph Peña (Jazzdisco, which lists that CD as their first issue; the CD credits Atlas and engineer Tom Dowd on them).",
+   "The original nine: Capitol Tower, Los Angeles (Capitol's studios), December 3 (Gotta Dance, The Train and the River, The Song Is You, That's the Way It Is) and December 4, 1956 (the rest; Voodoo is a remake of a rejected December 3 take), engineered by John Kraus per the CD.",
+   "Giuffre's instruments per the CD: baritone on Gotta Dance, Voodoo, The Train and the River and Forty-Second Street; tenor on The Song Is You, That's the Way It Is, The Train and the River and Forty-Second Street; clarinet on the rest. Nesuhi Ertegun produced."
   ]
  },
  "the-koln-concert": {
@@ -18602,9 +19987,27 @@
  },
  "the-movement-revisited": {
   "reviewed": false,
-  "source": "musicbrainz:release/5ba101b9-3947-4861-86e7-a95a5314469a",
+  "source": "Discogs releases 14847863 (Mack Avenue MAC 1082 CD) and 25812094 (LP), checked against Apple Music's credits and Wikipedia: The Movement Revisited",
   "mbReleaseGroup": "d8a78f33-e954-48b2-b064-54764c32c52d",
-  "edition": "2020-02-07 CA",
+  "edition": "2020 Mack Avenue CD MAC 1082",
+  "recorded": [
+   {
+    "date": "2013-09-08",
+    "place": "Avatar Studios, New York"
+   },
+   {
+    "date": "2013-09-09",
+    "place": "Avatar Studios, New York"
+   },
+   {
+    "date": "2013-09-10",
+    "place": "Avatar Studios, New York"
+   },
+   {
+    "date": "2013-09-11",
+    "place": "Avatar Studios, New York"
+   }
+  ],
   "tracks": [
    "Overture / The Movement Revisited",
    "Sister Rosa – Prologue",
@@ -18620,9 +20023,206 @@
    "A View from the Mountaintop",
    "Apotheosis: November 4th, 2008"
   ],
-  "personnel": [],
+  "personnel": [
+   {
+    "artist": "christian-mcbride",
+    "name": "Christian McBride",
+    "instruments": [
+     "bass"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Lew Soloff",
+    "instruments": [
+     "trumpet"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Ron Tooley",
+    "instruments": [
+     "trumpet"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Frank Greene",
+    "instruments": [
+     "trumpet"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Freddie Hendrix",
+    "instruments": [
+     "trumpet"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Darryl Shaw",
+    "instruments": [
+     "trumpet"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Michael Dease",
+    "instruments": [
+     "trombone"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Steve Davis",
+    "instruments": [
+     "trombone"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "James Burton",
+    "instruments": [
+     "trombone"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Doug Purviance",
+    "instruments": [
+     "bass trombone"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Steve Wilson",
+    "instruments": [
+     "alto saxophone",
+     "flute"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Todd Bashore",
+    "instruments": [
+     "alto saxophone"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Ron Blake",
+    "instruments": [
+     "tenor saxophone",
+     "soprano saxophone"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Loren Schoenberg",
+    "instruments": [
+     "tenor saxophone"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Carl Maraghi",
+    "instruments": [
+     "baritone saxophone"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Warren Wolf",
+    "instruments": [
+     "vibraphone",
+     "timpani",
+     "tambourine"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Geoffrey Keezer",
+    "instruments": [
+     "piano"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Terreon Gully",
+    "instruments": [
+     "drums"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Alicia Olatuja",
+    "instruments": [
+     "vocals"
+    ],
+    "only": [
+     "Brother Malcolm"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "J.D. Steele",
+    "instruments": [
+     "vocals"
+    ],
+    "only": [
+     "Rumble in the Jungle",
+     "A View from the Mountaintop"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Voices of the Flame",
+    "instruments": [
+     "choir"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Sonia Sanchez",
+    "instruments": [
+     "narration"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Vondie Curtis-Hall",
+    "instruments": [
+     "narration"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Dion Graham",
+    "instruments": [
+     "narration"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Wendell Pierce",
+    "instruments": [
+     "narration"
+    ]
+   }
+  ],
+  "crew": [
+   {
+    "artist": "christian-mcbride",
+    "name": "Christian McBride",
+    "role": "producer"
+   }
+  ],
   "draftNotes": [
-   "no players credited on this edition"
+   "Not approved: who is on which track can't be established. The sleeve (Discogs) lists the big band, the singers (Alicia Olatuja on Brother Malcolm, J.D. Steele on Rumble in the Jungle and A View from the Mountaintop), the Voices of the Flame choir and four narrators without tracks; Apple Music gives the whole band only on the Overture and Sister Rosa and McBride alone on the rest.",
+   "What is documented: Sonia Sanchez reads Rosa Parks, Vondie Curtis-Hall Malcolm X, Dion Graham Muhammad Ali and Wendell Pierce Martin Luther King (All About Jazz swaps Curtis-Hall and Graham); Sister Rosa - Prologue is Sanchez over McBride's bass and Steve Wilson's flute, and Ali Speaks is Graham with Terreon Gully's drums (Jerry Jazz Musician). The spoken interludes are not full-band tracks, so listing everyone on every track would be wrong.",
+   "Voices of the Flame (on the Overture, Sister Rosa and Rumble in the Jungle at least): Marvel Allen, Shani P. Baker, Jeffrey S. Bolding, Jeff Hamer, Susann Miles, Deborah Newallo, Eunice Newkirk, Claudine Rucker, Trevor Smith, Melissa Walker.",
+   "Recorded at Avatar Studios, New York, September 8-11, 2013 (CD notes, Wikipedia), mixed at MSR; released 2020. To approve: per-track personnel from the booklet."
   ]
  },
  "the-real-mccoy": {
@@ -19039,10 +20639,10 @@
   ]
  },
  "think-lonnie-smith": {
-  "reviewed": false,
-  "source": "musicbrainz:release/cfed8758-7a62-48e9-97a2-32a4879adcbc",
+  "reviewed": true,
+  "source": "Discogs release 1802935 (Blue Note BST 84290 LP sleeve credits), checked against Jazzdisco (Blue Note 4200 series) and Wikipedia: Think! (Lonnie Smith album)",
   "mbReleaseGroup": "71d47e70-77bd-3235-b3e9-9f7b86a4e32a",
-  "edition": "1968 US",
+  "edition": "1968 US Blue Note BST 84290",
   "recorded": [
    {
     "date": "1968-07-23"
@@ -19058,7 +20658,7 @@
   "personnel": [
    {
     "artist": "lonnie-smith",
-    "name": "Dr. Lonnie Smith",
+    "name": "Lonnie Smith",
     "instruments": [
      "organ"
     ]
@@ -19072,10 +20672,10 @@
    },
    {
     "artist": null,
-    "name": "David “Fathead” Newman",
+    "name": "David \"Fathead\" Newman",
     "instruments": [
-     "flute",
-     "tenor saxophone"
+     "tenor saxophone",
+     "flute"
     ]
    },
    {
@@ -19087,10 +20687,16 @@
    },
    {
     "artist": null,
+    "name": "Marion Booker Jr.",
+    "instruments": [
+     "drums"
+    ]
+   },
+   {
+    "artist": null,
     "name": "Norberto Apellaniz",
     "instruments": [
-     "congas",
-     "percussion"
+     "congas"
     ],
     "only": [
      "The Call of the Wild",
@@ -19101,8 +20707,7 @@
     "artist": null,
     "name": "Willie Bivens",
     "instruments": [
-     "congas",
-     "percussion"
+     "congas"
     ],
     "only": [
      "The Call of the Wild",
@@ -19119,13 +20724,6 @@
      "The Call of the Wild",
      "Slouchin'"
     ]
-   },
-   {
-    "artist": null,
-    "name": "Marion Booker, Jr.",
-    "instruments": [
-     "membranophone"
-    ]
    }
   ],
   "crew": [
@@ -19139,6 +20737,10 @@
     "name": "Dave Sanders",
     "role": "engineer"
    }
+  ],
+  "draftNotes": [
+   "Sleeve, Jazzdisco and Wikipedia agree on the band and on the Latin percussion being on The Call of the Wild and Slouchin' only. Jazzdisco adds a second guitarist, Herman Henry; the sleeve, Wikipedia and AllMusic have only Melvin Sparks, so Henry is left out. Marion Booker Jr. plays drums (the draft had 'membranophone').",
+   "July 23, 1968 is agreed, but the place isn't: Jazzdisco says Van Gelder Studio, Englewood Cliffs; Wikipedia says A&R Recording, New York, and the sleeve credits Dave Sanders (an A&R engineer) with the recording. So the date only. Apple Music credits Rudy Van Gelder, probably for its remaster."
   ]
  },
  "time-out": {
@@ -20772,10 +22374,21 @@
   ]
  },
  "who-asked": {
-  "reviewed": false,
-  "source": "musicbrainz:release/99da4c01-4620-42b8-8132-2bf1a63cc55d",
+  "reviewed": true,
+  "source": "Apple Music's per-track credits for the edition the app plays, checked against Discogs releases 38107449 (Blue Note 00199957633864 CD) and 38016294 (LP)",
   "mbReleaseGroup": "434e92cd-9f07-45cb-b742-090c0e4e6f42",
-  "edition": "2026-07-31 None",
+  "edition": "2026 Blue Note / APESHIT CD 00199957633864",
+  "recorded": [
+   {
+    "place": "DOMi & JD BECK's home studio, Dallas"
+   },
+   {
+    "place": "Lucy's Meat Market, Los Angeles"
+   },
+   {
+    "place": "DSS, Los Angeles"
+   }
+  ],
   "tracks": [
    "ÉPiPHANiE",
    "HAD ENOUGH",
@@ -20791,12 +22404,166 @@
    "OUT OF SYNC",
    "CONCERTiNO (FOR PiANO, DRUMS & ORCHESTRA)",
    "CLiMBiNG HiGH",
-   "ÉPiLOGUE",
-   "PUZZLE PiECES (Live from Los Angeles, CA / 2026)"
+   "ÉPiLOGUE"
   ],
-  "personnel": [],
+  "personnel": [
+   {
+    "artist": null,
+    "name": "Domi Louna",
+    "instruments": [
+     "keyboards",
+     "synthesizer",
+     "celesta",
+     "piano",
+     "vocals"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "JD Beck",
+    "instruments": [
+     "drums",
+     "vocals"
+    ],
+    "except": [
+     "ÉPiPHANiE",
+     "ÉPiLOGUE"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Sierra Schmeltzer",
+    "instruments": [
+     "flute",
+     "piccolo",
+     "bass flute"
+    ],
+    "except": [
+     "PUZZLE PiECES"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Luca Ortolani",
+    "instruments": [
+     "oboe",
+     "English horn"
+    ],
+    "only": [
+     "ÉPiPHANiE",
+     "GROWiNG OLDER",
+     "SOME THiNGS NEVER CHANGE",
+     "PHANTOM THREAD",
+     "OUT OF SYNC",
+     "CONCERTiNO (FOR PiANO, DRUMS & ORCHESTRA)",
+     "ÉPiLOGUE"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Andrea Caputo",
+    "instruments": [
+     "clarinet"
+    ],
+    "except": [
+     "EXiT",
+     "LOVELY MASQUERADE",
+     "PUZZLE PiECES"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Bence Bubreg",
+    "instruments": [
+     "bass clarinet"
+    ],
+    "only": [
+     "PHANTOM THREAD",
+     "CONCERTiNO (FOR PiANO, DRUMS & ORCHESTRA)",
+     "ÉPiLOGUE"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Alex Rosales Garcia",
+    "instruments": [
+     "bassoon",
+     "contrabassoon"
+    ],
+    "only": [
+     "ÉPiPHANiE",
+     "SOME THiNGS NEVER CHANGE",
+     "SMALL EYES",
+     "PHANTOM THREAD",
+     "CONCERTiNO (FOR PiANO, DRUMS & ORCHESTRA)",
+     "ÉPiLOGUE"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Dylan Skye Hart",
+    "instruments": [
+     "French horn"
+    ],
+    "only": [
+     "ÉPiPHANiE",
+     "SMALL EYES",
+     "PUZZLE PiECES",
+     "PHANTOM THREAD",
+     "CONCERTiNO (FOR PiANO, DRUMS & ORCHESTRA)",
+     "ÉPiLOGUE"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Leah Zeger",
+    "instruments": [
+     "violin"
+    ],
+    "only": [
+     "ÉPiPHANiE",
+     "SiLHOUETTE"
+    ]
+   }
+  ],
+  "crew": [
+   {
+    "artist": "domi-and-jd-beck",
+    "name": "DOMi & JD BECK",
+    "role": "producer"
+   },
+   {
+    "artist": null,
+    "name": "Noé Degalle",
+    "role": "arranger"
+   },
+   {
+    "artist": null,
+    "name": "Jhair Lazo",
+    "role": "engineer"
+   },
+   {
+    "artist": null,
+    "name": "Daniel McNeill",
+    "role": "engineer"
+   },
+   {
+    "artist": null,
+    "name": "Pete Min",
+    "role": "engineer"
+   },
+   {
+    "artist": null,
+    "name": "Samuel Porter",
+    "role": "engineer"
+   }
+  ],
   "draftNotes": [
-   "no players credited on this edition"
+   "The draft had no players, and listed a live bonus track (PUZZLE PiECES, Los Angeles 2026) that isn't on the Apple edition; tracks are now the 15 Apple titles.",
+   "Per-track players are from Apple Music's credits; the CD and LP sleeves (Discogs) name the same seven guests as 'additional instruments' without tracks, and the LP gives their instruments (Rosales Garcia bassoon, Caputo and Bubreg clarinet, Schmeltzer flute, Hart horn, Ortolani oboe and English horn, Zeger violin), which agree with Apple's.",
+   "Domi Louna plays on every track (keyboards and synthesizers, celesta on most, piano on the Concertino) and sings on all but ÉPiPHANiE, the Concertino and ÉPiLOGUE. JD Beck drums and sings on tracks 2-14 (no vocals on the Concertino); on ÉPiPHANiE and ÉPiLOGUE, orchestral pieces, both are credited only as conductors.",
+   "The flutist is Sierra Schmeltzer (Apple, and her own listings); Discogs spells it Schmelzer. Discogs spells the violinist Zeager; she is Leah Zeger, as on Not Tight. Noé Degalle composed and co-arranged the Concertino and ÉPiLOGUE and co-arranged SMALL EYES (Apple credits him with 'Orchestra' on the first two), so he is under crew.",
+   "Sleeve: vocals, drums and keyboards recorded at the duo's home studio in Dallas, celesta at Lucy's Meat Market and the orchestra at DSS in Los Angeles; mixed by Jhair Lazo; additional recording by Daniel McNeill, Pete Min and Samuel Porter; sound design by Zach Hill (tracks 2-10 and 12). No dates documented."
   ]
  },
  "wish": {
@@ -21025,10 +22792,24 @@
   ]
  },
  "yellow": {
-  "reviewed": false,
-  "source": "musicbrainz:release/ebfa0529-6cac-4624-b57b-9c6d3bc9bcf3",
+  "reviewed": true,
+  "source": "Discogs release 19408558 (Movementt MVMTT04CD, per-track booklet credits), checked against MusicBrainz and Apple Music's credits",
   "mbReleaseGroup": "2cbe1324-865c-4709-a81a-2c0ab951538b",
-  "edition": "2021 US",
+  "edition": "2021 Movementt CD MVMTT04CD",
+  "recorded": [
+   {
+    "place": "Red Bull Studios, London"
+   },
+   {
+    "place": "Soup Studios"
+   },
+   {
+    "place": "Movementt Studios"
+   },
+   {
+    "place": "PRAH Studios"
+   }
+  ],
   "tracks": [
    "Mercury",
    "Say Something",
@@ -21048,18 +22829,19 @@
   "personnel": [
    {
     "artist": "emma-jean-thackray",
-    "name": "Emma‐Jean Thackray",
+    "name": "Emma-Jean Thackray",
     "instruments": [
-     "synthesizer",
-     "vibraphone",
      "trumpet",
      "vocals",
+     "synthesizer",
+     "vibraphone",
      "electric bass",
      "guitar",
      "bass clarinet",
-     "Pianet",
+     "electric piano",
+     "organ",
      "percussion",
-     "organ"
+     "timpani"
     ]
    },
    {
@@ -21094,17 +22876,63 @@
     "artist": null,
     "name": "Tamar Osborn",
     "instruments": [
+     "baritone saxophone",
      "bass clarinet",
-     "flute",
-     "baritone saxophone"
+     "flute"
     ],
     "only": [
      "Mercury",
      "Say Something",
      "Green Funk",
+     "Third Eye",
      "Sun",
      "Spectre",
      "Mercury (In Retrograde)"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Rebekah Reid",
+    "instruments": [
+     "violin"
+    ],
+    "only": [
+     "Mercury",
+     "Say Something",
+     "Venus",
+     "Third Eye",
+     "Sun",
+     "Spectre"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Jamie-Lee Glinsman",
+    "instruments": [
+     "viola"
+    ],
+    "only": [
+     "Mercury",
+     "Say Something",
+     "Venus",
+     "Third Eye",
+     "Sun",
+     "Spectre"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Zara Hudson-Kozdoj",
+    "instruments": [
+     "cello"
+    ],
+    "only": [
+     "Mercury",
+     "Say Something",
+     "Venus",
+     "Third Eye",
+     "Sun",
+     "Spectre"
     ]
    },
    {
@@ -21116,10 +22944,7 @@
     ],
     "except": [
      "About That",
-     "Third Eye",
      "May There Be Peace",
-     "Sun",
-     "Golden Green",
      "Yellow"
     ]
    },
@@ -21130,45 +22955,8 @@
      "synthesizer"
     ],
     "only": [
-     "Mercury"
-    ]
-   },
-   {
-    "artist": null,
-    "name": "Dougal Taylor",
-    "instruments": [
-     "drums"
-    ],
-    "except": [
-     "Green Funk",
-     "May There Be Peace",
-     "Yellow"
-    ]
-   },
-   {
-    "artist": null,
-    "name": "Sara Lima",
-    "instruments": [
-     "vocals"
-    ],
-    "except": [
-     "Venus",
-     "Green Funk",
-     "Golden Green",
-     "Rahu & Ketu"
-    ]
-   },
-   {
-    "artist": null,
-    "name": "Love Ssega",
-    "instruments": [
-     "vocals"
-    ],
-    "except": [
-     "Venus",
-     "Green Funk",
-     "Golden Green",
-     "Rahu & Ketu"
+     "Mercury",
+     "Mercury (In Retrograde)"
     ]
    },
    {
@@ -21183,7 +22971,109 @@
      "Golden Green",
      "Yellow"
     ]
+   },
+   {
+    "artist": null,
+    "name": "Dougal Taylor",
+    "instruments": [
+     "drums"
+    ],
+    "except": [
+     "May There Be Peace",
+     "Yellow"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Crispin Robinson",
+    "instruments": [
+     "congas",
+     "percussion"
+    ],
+    "only": [
+     "Venus",
+     "Sun",
+     "Rahu & Ketu",
+     "Our People"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Sara Lima",
+    "instruments": [
+     "vocals"
+    ],
+    "except": [
+     "About That",
+     "Green Funk",
+     "Golden Green",
+     "Rahu & Ketu"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Love Ssega",
+    "instruments": [
+     "vocals"
+    ],
+    "except": [
+     "About That",
+     "Green Funk",
+     "Golden Green",
+     "Rahu & Ketu"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "And Is Phi",
+    "instruments": [
+     "vocals"
+    ],
+    "except": [
+     "About That",
+     "Green Funk",
+     "Golden Green",
+     "Rahu & Ketu"
+    ]
    }
+  ],
+  "crew": [
+   {
+    "artist": "emma-jean-thackray",
+    "name": "Emma-Jean Thackray",
+    "role": "producer"
+   },
+   {
+    "artist": "emma-jean-thackray",
+    "name": "Emma-Jean Thackray",
+    "role": "engineer"
+   },
+   {
+    "artist": null,
+    "name": "Simon Trought",
+    "role": "engineer"
+   },
+   {
+    "artist": null,
+    "name": "Mike Collins",
+    "role": "engineer"
+   },
+   {
+    "artist": null,
+    "name": "David Holmes",
+    "role": "engineer"
+   },
+   {
+    "artist": null,
+    "name": "Fiona Roberts",
+    "role": "engineer"
+   }
+  ],
+  "draftNotes": [
+   "Per-track credits from the CD booklet (Discogs). They correct the draft in several places: the strings (Rebekah Reid, Jamie-Lee Glinsman, Zara Hudson-Kozdoj) and Crispin 'Spry' Robinson on congas were missing, the voices are on May There Be Peace and Yellow but not Green Funk, Dougal Taylor drums on Green Funk, Lyle Barton plays on Golden Green, and Ben Kelly is on Rahu & Ketu and Our People.",
+   "Apple Music's credits look templated (the same strings, voices and sousaphone on most tracks, no horn section, no drums on most tracks) and disagree with the booklet, so they weren't followed.",
+   "Thackray plays and sings on every track (trumpet, vocals, synths, bass, guitar, vibraphone; bass clarinet and Pianet on About That, timpani on Spectre); About That is her with Dougal Taylor, May There Be Peace and Yellow her with the three singers. Rebekah Reid is credited as Beka Reid.",
+   "Recorded at Red Bull Studios London, Soup, Movementt and PRAH Studios by Simon Trought, Mike Collins, David Holmes and Fiona Roberts (per track) and Thackray, who mixed and produced. No dates documented."
   ]
  },
  "zodiac-suite": {
