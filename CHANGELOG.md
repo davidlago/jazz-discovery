@@ -6,6 +6,8 @@ section for the tagged version at the top of the GitHub release notes (or **Unre
 
 ## Unreleased
 
+## 1.9.0
+
 - **Widgets** on the iPhone (Home Screen, Lock Screen, StandBy) and the Mac (desktop, Notification Center):
   - **Today in Jazz**: the day's calendar page, the record's cover or the artist's portrait, and whose birthday it is
     or what was recorded on this date. Tap it to open that page. Small, medium and large, and on the Lock Screen.

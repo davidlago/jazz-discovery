@@ -222,7 +222,7 @@ reason" API the app uses (UserDefaults, CA92.1).
 
 ### Version text
 
-This text is for 1.8 (127 artists, personnel, Find a Path, Passport, Radio, the Blindfold Test, the Songbook, Places and Labels, Lineages and the Glossary, Paths, Today in Jazz). If 1.0.1 is submitted on its own first, say
+This text is for 1.9 (127 artists, personnel, Find a Path, Passport, Radio, the Blindfold Test, the Songbook, Places and Labels, Lineages and the Glossary, Paths, Today in Jazz, widgets). If 1.0.1 is submitted on its own first, say
 "86 artists" and leave out the *Who played on what* and *Your passport* paragraphs and the path-finding sentence.
 
 **Promotional text** (170 characters, can change any time without review):
@@ -264,7 +264,7 @@ The Songbook
 Twenty-eight standards and jazz originals, each a page with its story and the versions that made it matter, from the first recording to last decade's, with what to listen for in each. Play them in order and hear the same song travel.
 
 Today in jazz
-Whose birthday it is, what was recorded on this date, and a calendar for the whole year. Every day has a reason to open the app.
+Whose birthday it is, what was recorded on this date, and a calendar for the whole year. Every day has a reason to open the app, and a widget for your Home Screen and Lock Screen; another keeps your next path stop in view.
 
 Paths
 Journeys with a point of view, from Start Here to 1959, Late Night and The Latin Tinge: a few stops each, every one with something to listen for, and your place kept.
