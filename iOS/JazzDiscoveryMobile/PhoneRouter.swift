@@ -27,6 +27,7 @@ enum PhoneRoute: Hashable {
     case labels
     case lineages
     case glossary
+    case paths
     case radio
     case blindfold
 
@@ -39,6 +40,7 @@ enum PhoneRoute: Hashable {
     static func label(_ id: String) -> PhoneRoute { .page(.label(id)) }
     static func lineage(_ id: String) -> PhoneRoute { .page(.lineage(id)) }
     static func term(_ id: String) -> PhoneRoute { .page(.term(id)) }
+    static func journey(_ id: String) -> PhoneRoute { .page(.journey(id)) }
 }
 
 /// Tabs, each with its own navigation stack, and the sheets shown over them.
@@ -99,12 +101,14 @@ final class PhoneRouter {
             case .label: show(.eras, [.labels, .page(route)])
             case .lineage: show(.eras, [.lineages, .page(route)])
             case .term: show(.eras, [.glossary, .page(route)])
+            case .journey: show(.timeline, [.paths, .page(route)])
             }
         case .decades: show(.eras, [.decades])
         case .songbook: show(.eras, [.songbook])
         case .map: show(.eras, [.places])
         case .labels: show(.eras, [.labels])
         case .lineages: show(.eras, [.lineages])
+        case .paths: show(.timeline, [.paths])
         case .glossary: show(.eras, [.glossary])
         case .connections(let focus): show(.artists, [.connections(focus: focus)])
         case .between(let a, let b):

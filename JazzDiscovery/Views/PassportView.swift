@@ -60,6 +60,14 @@ struct PassportView: View {
                     .padding(.horizontal, 40)
                 }
 
+                if library.paths.contains(where: { passport.isFinished($0, library: library) }) {
+                    VStack(alignment: .leading, spacing: 12) {
+                        SectionHeader(title: "Paths Finished")
+                        PathStamps { router.go(.journey($0)) }
+                    }
+                    .padding(.horizontal, 40)
+                }
+
                 if !recent.isEmpty {
                     VStack(alignment: .leading, spacing: 4) {
                         SectionHeader(title: "Recently Heard").padding(.horizontal, 40)

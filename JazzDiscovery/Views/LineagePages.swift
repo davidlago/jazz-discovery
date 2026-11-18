@@ -77,3 +77,44 @@ struct TermDetailView: View {
         .navigationTitle(term.term)
     }
 }
+
+struct PathsView: View {
+    @Environment(JazzLibrary.self) private var library
+    @Environment(Router.self) private var router
+
+    var body: some View {
+        ScrollView {
+            VStack(alignment: .leading, spacing: 22) {
+                VStack(alignment: .leading, spacing: 6) {
+                    Text("PATHS").font(Theme.display(64)).foregroundStyle(Theme.cream)
+                    Text("Journeys with a point of view: a handful of stops, each with something to listen for. Your place is kept.")
+                        .font(Theme.serif(18)).italic().foregroundStyle(Theme.muted)
+                }
+                .padding(.top, 30)
+                LazyVGrid(columns: [GridItem(.adaptive(minimum: 240, maximum: 300), spacing: 18)], alignment: .leading, spacing: 18) {
+                    PathsRow(cardWidth: 260) { router.go(.journey($0)) }
+                }
+            }
+            .padding(.horizontal, 40).padding(.bottom, 50)
+        }
+        .background(Theme.ink)
+        .navigationTitle("Paths")
+    }
+}
+
+struct PathDetailView: View {
+    let path: JourneyPath
+    @Environment(Router.self) private var router
+    @Environment(JazzLibrary.self) private var library
+
+    var body: some View {
+        ScrollView {
+            PathDetailContent(path: path, open: { stop in if let r = Route(stop: stop, library: library) { router.go(r) } },
+                              openPath: { router.go(.journey($0)) })
+                .padding(.top, 40).padding(.horizontal, 40).padding(.bottom, 50)
+                .frame(maxWidth: .infinity, alignment: .leading)
+        }
+        .background(Theme.ink)
+        .navigationTitle(path.title)
+    }
+}

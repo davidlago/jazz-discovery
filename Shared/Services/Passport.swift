@@ -58,6 +58,10 @@ struct PassportData: Codable, Equatable {
     var artists: [String: PassportMark] = [:]
     /// Blindfold Test results by era (added in 1.3).
     var ears: [String: EarScore]? = nil
+    /// Path stops ticked off, by path then stop key, and when (added in 1.7).
+    var paths: [String: [String: Date]]? = nil
+    /// Songs (Apple Music IDs) heard in full, from any record, and when first (added in 1.7, for path stops).
+    var songsHeard: [String: Date]? = nil
 
     /// Both orders give the same result.
     static func merged(_ a: PassportData, _ b: PassportData) -> PassportData {
@@ -68,8 +72,12 @@ struct PassportData: Codable, Equatable {
         let ears = (a.ears ?? [:]).merging(b.ears ?? [:]) { x, y in
             x.at != y.at ? (x.at > y.at ? x : y) : (x.total >= y.total ? x : y)
         }
+        var paths: [String: [String: Date]] = a.paths ?? [:]
+        for (id, stops) in b.paths ?? [:] { paths[id] = (paths[id] ?? [:]).merging(stops) { min($0, $1) } }
+        let songs = (a.songsHeard ?? [:]).merging(b.songsHeard ?? [:]) { min($0, $1) }
         return PassportData(albums: merge(a.albums, b.albums), artists: merge(a.artists, b.artists),
-                            ears: ears.isEmpty ? nil : ears)
+                            ears: ears.isEmpty ? nil : ears, paths: paths.isEmpty ? nil : paths,
+                            songsHeard: songs.isEmpty ? nil : songs)
     }
 }
 
@@ -214,6 +222,14 @@ final class Passport {
     /// From the player: a preview marks its record sampled; a full track counts toward Heard.
     func listened(_ e: ListenEvent) {
         let at = Self.stamp(e.at)
+        if e.full, data.songsHeard?[e.songID] == nil {
+            var songs = data.songsHeard ?? [:]
+            songs[e.songID] = at
+            // The most recent 2,000 are enough for path stops.
+            if songs.count > 2000, let oldest = songs.min(by: { $0.value < $1.value })?.key { songs[oldest] = nil }
+            data.songsHeard = songs
+            if e.collectionId.flatMap({ albumByCollection[$0] }) == nil { save() }
+        }
         guard let c = e.collectionId, let albumID = albumByCollection[c] else { return }
         if !e.full {
             guard data.albums[albumID]?.sampled == nil else { return }
@@ -241,6 +257,18 @@ final class Passport {
         data = m
         save()
     }
+
+    /// Ticks a path stop off (by hand, or by opening it from the path), or un-ticks it.
+    func setStop(_ key: String, of pathID: String, done: Bool, at: Date = .now) {
+        var paths = data.paths ?? [:]
+        var stops = paths[pathID] ?? [:]
+        stops[key] = done ? Self.stamp(at) : nil
+        paths[pathID] = stops.isEmpty ? nil : stops
+        data.paths = paths.isEmpty ? nil : paths
+        save()
+    }
+
+    func isTicked(_ key: String, of pathID: String) -> Bool { data.paths?[pathID]?[key] != nil }
 
     fileprivate func replaceEars(_ ears: [String: EarScore]) {
         data.ears = ears

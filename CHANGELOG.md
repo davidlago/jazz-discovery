@@ -6,6 +6,17 @@ section for the tagged version at the top of the GitHub release notes (or **Unre
 
 ## Unreleased
 
+## 1.7.0
+
+- **Paths**: journeys with a point of view, a few stops each, every stop with something to listen for. Start Here
+  is now a path, and six more join it: *Jazz for People Who Think They Hate Jazz*, *1959*, *Late Night*, *The Latin
+  Tinge*, *One Tune, Five Decades* and *The Piano Trio*. Stops can be records, tracks, tunes, glossary terms or places.
+- Your place is kept: a stop is done when its record is heard, its track has played through, or you've read it (a
+  term, a tune, a place), and you can tick any stop yourself. *Continue* picks up at the next stop; finished paths get
+  a stamp on the Passport page. Progress syncs with the rest of your passport.
+- A **Paths** row on the home screen, led by the path you're on; Paths in the Mac sidebar under Listen.
+  `jazzdiscovery://path/<id>` and `paths` links.
+
 ## 1.6.0
 
 - **Lineages**: family trees for the trumpet, the saxophone, the piano, the drums and the voice. Faces placed by when

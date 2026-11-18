@@ -14,13 +14,14 @@ enum AppSection: String, CaseIterable, Identifiable {
     case labels = "Labels"
     case lineages = "Lineages"
     case glossary = "Glossary"
+    case paths = "Paths"
     case radio = "Radio"
     case blindfold = "Blindfold Test"
     case passport = "Passport"
     var id: String { rawValue }
     /// The sections under Explore in the sidebar (Listen and You have their own).
-    static var explore: [AppSection] { allCases.filter { ![.passport, .radio, .blindfold].contains($0) } }
-    static var listen: [AppSection] { [.radio, .blindfold] }
+    static var explore: [AppSection] { allCases.filter { ![.passport, .paths, .radio, .blindfold].contains($0) } }
+    static var listen: [AppSection] { [.paths, .radio, .blindfold] }
     var symbol: String {
         switch self {
         case .timeline: return "timeline.selection"
@@ -36,6 +37,7 @@ enum AppSection: String, CaseIterable, Identifiable {
         case .glossary: return "character.book.closed.fill"
         case .passport: return "checkmark.seal.fill"
         case .radio: return "dot.radiowaves.left.and.right"
+        case .paths: return "point.topright.arrow.triangle.backward.to.point.bottomleft.scurvepath.fill"
         case .blindfold: return "eyes"
         }
     }
@@ -52,6 +54,7 @@ enum AppSection: String, CaseIterable, Identifiable {
         case .label: self = .labels
         case .lineage: self = .lineages
         case .term: self = .glossary
+        case .journey: self = .paths
         }
     }
 }
@@ -117,6 +120,9 @@ final class Router {
         case .lineages:
             query = ""
             show(.lineages)
+        case .paths:
+            query = ""
+            show(.paths)
         case .glossary:
             query = ""
             show(.glossary)

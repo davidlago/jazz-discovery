@@ -15,6 +15,17 @@ struct HomeView: View {
 
                 VStack(alignment: .leading, spacing: 6) {
                     HStack(alignment: .firstTextBaseline) {
+                        SectionHeader(title: "Paths", subtitle: "Journeys with a point of view, a few stops each.")
+                        Spacer()
+                        Button("All Paths →") { router.show(.paths) }.buttonStyle(.plain)
+                            .font(.system(size: 13, weight: .semibold)).foregroundStyle(Theme.brass)
+                    }
+                    .padding(.horizontal, 40)
+                    HRow(spacing: 16) { PathsRow { router.go(.journey($0)) } }
+                }
+
+                VStack(alignment: .leading, spacing: 6) {
+                    HStack(alignment: .firstTextBaseline) {
                         SectionHeader(title: "Radio", subtitle: "Stations that keep playing, and say why each track is there.")
                         Spacer()
                         Button("All Stations →") { router.show(.radio) }.buttonStyle(.plain)

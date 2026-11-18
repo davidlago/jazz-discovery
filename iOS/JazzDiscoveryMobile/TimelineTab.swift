@@ -2,6 +2,7 @@ import SwiftUI
 
 struct TimelineTab: View {
     @Environment(JazzLibrary.self) private var library
+    @Environment(PhoneRouter.self) private var router
 
     var body: some View {
         ScrollView {
@@ -11,6 +12,11 @@ struct TimelineTab: View {
                 ContinueSection()
 
                 NewListenerCard()
+
+                VStack(alignment: .leading, spacing: 6) {
+                    SectionHeader(title: "Paths", subtitle: "Journeys with a point of view, a few stops each.") { SeeAllLink(route: .paths) }
+                    HRow(spacing: 12) { PathsRow(cardWidth: 200) { router.go(.journey($0)) } }
+                }
 
                 VStack(alignment: .leading, spacing: 6) {
                     SectionHeader(title: "Radio", subtitle: "Stations that keep playing, and say why each track is there.") {

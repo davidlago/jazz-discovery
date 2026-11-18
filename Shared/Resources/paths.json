@@ -1,0 +1,321 @@
+{
+ "paths": [
+  {
+   "id": "start-here",
+   "title": "Start Here",
+   "subtitle": "The essentials, one record at a time, in order",
+   "tint": "#E9B949",
+   "intro": "Fourteen records, one from each turn the music took, in the order it took them. Play each one through before moving on; by the end you'll have heard the whole story, from the blues queens to last decade.",
+   "stops": "starters",
+   "outro": "From here, follow whatever caught your ear: every record's page has three doors out of it.",
+   "next": [
+    "nineteen-fifty-nine",
+    "late-night"
+   ]
+  },
+  {
+   "id": "people-who-hate-jazz",
+   "title": "Jazz for People Who Think They Hate Jazz",
+   "subtitle": "Melody, groove and short tracks first",
+   "tint": "#E07B39",
+   "intro": "If jazz has ever sounded to you like noodling, start here: tunes you can hum, grooves you can move to, nothing over seven minutes. Every one of them was a hit with people who didn't think they liked jazz either.",
+   "stops": [
+    {
+     "kind": "track",
+     "ref": "Dave Brubeck|Take Five",
+     "note": "Five beats to the bar, but it never feels odd: a piano vamp that won't let go and a saxophone melody that floats over it. It sold a million copies."
+    },
+    {
+     "kind": "album",
+     "ref": "the-sidewinder",
+     "track": "Lee Morgan|The Sidewinder",
+     "note": "A boogaloo groove and a trumpet line you'll be humming tomorrow. Listen to how the drums and bass lock in before the horns arrive."
+    },
+    {
+     "kind": "track",
+     "ref": "Herbie Hancock|Cantaloupe Island",
+     "note": "Four chords, round and round. The fun is hearing each soloist find something new to say over the same few bars."
+    },
+    {
+     "kind": "album",
+     "ref": "getz-gilberto",
+     "track": "Stan Getz & João Gilberto|The Girl from Ipanema|1963",
+     "note": "Bossa nova: a soft guitar rhythm, a whispered voice, a saxophone that never raises itself. Jazz at its gentlest."
+    },
+    {
+     "kind": "track",
+     "ref": "Horace Silver|Song for My Father",
+     "note": "A Brazilian-tinged bass line under a melody built from one simple phrase. Steely Dan borrowed the opening for Rikki Don't Lose That Number."
+    },
+    {
+     "kind": "track",
+     "ref": "Cannonball Adderley|Mercy, Mercy, Mercy",
+     "note": "Joe Zawinul's slow gospel groove, recorded live: listen to the crowd. It reached the pop charts in 1967."
+    },
+    {
+     "kind": "album",
+     "ref": "head-hunters",
+     "track": "Herbie Hancock|Chameleon",
+     "note": "Funk, synthesizers and a bass line that walks into the room: the best-selling jazz album of its time."
+    },
+    {
+     "kind": "album",
+     "ref": "black-radio",
+     "track": "Robert Glasper Experiment|Afro Blue",
+     "note": "Jazz musicians playing R&B and hip-hop as if there were no line between them, with Erykah Badu singing a 1959 jazz standard."
+    }
+   ],
+   "outro": "If one of these grabbed you, its album page has three more doors. If you liked the grooves, try The Latin Tinge.",
+   "next": [
+    "latin-tinge",
+    "start-here"
+   ]
+  },
+  {
+   "id": "nineteen-fifty-nine",
+   "title": "1959",
+   "subtitle": "The year jazz went five directions at once",
+   "tint": "#7A5CD6",
+   "intro": "In a single year, five records pointed jazz down five different roads: toward modes, odd meters, freedom from chords, harmonic speed and the church. All five are still argued about, and still played.",
+   "stops": [
+    {
+     "kind": "album",
+     "ref": "kind-of-blue",
+     "track": "Miles Davis|So What",
+     "note": "Modes: instead of chords changing every bar or two, a whole section on one scale. Listen to how much room that leaves Miles, Coltrane and Cannonball."
+    },
+    {
+     "kind": "term",
+     "ref": "modal",
+     "note": "What modal jazz means, and why it felt like a release after bebop's racing chords."
+    },
+    {
+     "kind": "album",
+     "ref": "time-out",
+     "track": "Dave Brubeck|Take Five",
+     "note": "Odd meters: five and nine beats to the bar, played so smoothly that the record became a pop hit."
+    },
+    {
+     "kind": "album",
+     "ref": "the-shape-of-jazz-to-come",
+     "track": "Ornette Coleman|Lonely Woman",
+     "note": "Freedom from chords: no piano, no fixed harmony, just melody and the players listening to one another. When the quartet opened at the Five Spot that November, musicians argued over it for weeks."
+    },
+    {
+     "kind": "album",
+     "ref": "giant-steps",
+     "track": "John Coltrane|Giant Steps",
+     "note": "Harmonic speed: recorded in 1959, the title track moves through three keys every few bars. Coltrane runs every change at full speed; the pianist, Tommy Flanagan, barely gets through his solo."
+    },
+    {
+     "kind": "album",
+     "ref": "mingus-ah-um",
+     "track": "Charles Mingus|Better Git It in Your Soul",
+     "note": "The church: Mingus brings gospel shouts, hand claps and a revival-meeting energy into a jazz workshop band."
+    }
+   ],
+   "outro": "Each road has its own era in the app: Modal Jazz, Free Jazz, and Soul Jazz for the church. Pick one.",
+   "next": [
+    "late-night",
+    "piano-trio"
+   ]
+  },
+  {
+   "id": "late-night",
+   "title": "Late Night",
+   "subtitle": "Ballads for after midnight",
+   "tint": "#3E5C9A",
+   "intro": "Slow music for the end of the evening. A ballad is where you hear what a player really sounds like: every note exposed, and the art in how long to hold it.",
+   "stops": [
+    {
+     "kind": "track",
+     "ref": "Coleman Hawkins|Body and Soul|1939",
+     "note": "The ballad that every saxophonist is measured against, improvised almost entirely away from the melody."
+    },
+    {
+     "kind": "track",
+     "ref": "Billie Holiday|I'll Be Seeing You",
+     "note": "Holiday sings a wartime song of missing someone, slightly behind the beat, as if talking to herself."
+    },
+    {
+     "kind": "track",
+     "ref": "Chet Baker|My Funny Valentine",
+     "note": "Barely above a whisper, almost without vibrato."
+    },
+    {
+     "kind": "track",
+     "ref": "Bill Evans|Peace Piece",
+     "note": "Two chords repeated in the left hand for six minutes, and the right hand drifting free over them."
+    },
+    {
+     "kind": "track",
+     "ref": "Duke Ellington & John Coltrane|In a Sentimental Mood|1962",
+     "note": "Ellington's piano introduction, then Coltrane's tenor at its calmest."
+    },
+    {
+     "kind": "track",
+     "ref": "John Coltrane & Johnny Hartman|Lush Life|1963",
+     "note": "A baritone voice as deep as the hour, and Strayhorn's world-weary song."
+    },
+    {
+     "kind": "track",
+     "ref": "John Coltrane|Naima",
+     "note": "Coltrane's ballad for his wife, over a held bass note."
+    },
+    {
+     "kind": "track",
+     "ref": "Keith Jarrett|My Song",
+     "note": "A simple, folk-like melody with Jan Garbarek's saxophone, from Jarrett's European quartet."
+    }
+   ],
+   "outro": "For more slow music, the Songbook's ballads (Body and Soul, Lush Life, In a Sentimental Mood) each have several versions to compare.",
+   "next": [
+    "piano-trio",
+    "one-tune"
+   ]
+  },
+  {
+   "id": "latin-tinge",
+   "title": "The Latin Tinge",
+   "subtitle": "Havana, New York and Rio in the music",
+   "tint": "#D04E8C",
+   "intro": "Jelly Roll Morton said jazz needed a 'Spanish tinge'. From Afro-Cuban percussion in 1940s New York to bossa nova from Rio, Latin rhythm has run through jazz from the beginning.",
+   "stops": [
+    {
+     "kind": "place",
+     "ref": "havana",
+     "note": "Where the son, the mambo and the rhythms behind Latin jazz came from."
+    },
+    {
+     "kind": "term",
+     "ref": "clave",
+     "note": "The two-bar rhythmic key that everything in Afro-Cuban music lines up with."
+    },
+    {
+     "kind": "track",
+     "ref": "Machito|Tanga",
+     "note": "Machito's Afro-Cubans, led musically by Mario Bauzá, mix big-band jazz with Cuban rhythm: Tanga is often called the first Latin jazz piece."
+    },
+    {
+     "kind": "track",
+     "ref": "Dizzy Gillespie|Manteca",
+     "note": "Gillespie's big band with the Cuban drummer Chano Pozo: bebop and Afro-Cuban percussion, at full strength."
+    },
+    {
+     "kind": "album",
+     "ref": "dance-mania",
+     "track": "Tito Puente|Ran Kan Kan",
+     "note": "The mambo at the Palladium: Tito Puente's band, built for dancers, with brass that swings as hard as any jazz band."
+    },
+    {
+     "kind": "album",
+     "ref": "chega-de-saudade",
+     "track": "João Gilberto|Chega de Saudade",
+     "note": "Bossa nova begins: João Gilberto's guitar and quiet voice, and a new, softer way to swing."
+    },
+    {
+     "kind": "album",
+     "ref": "watermelon-man",
+     "track": "Mongo Santamaría|Watermelon Man",
+     "note": "Mongo Santamaría takes a young Herbie Hancock's tune and turns it into a Latin pop hit."
+    },
+    {
+     "kind": "album",
+     "ref": "jazz-bata-2",
+     "note": "Chucho Valdés returns to his early piano trio with batá drums, the sacred drums of Afro-Cuban religion."
+    }
+   ],
+   "outro": "The Latin Jazz & Bossa Nova era has the rest of the story, and Afro Blue in the Songbook shows a Latin tune becoming a jazz standard.",
+   "next": [
+    "people-who-hate-jazz",
+    "one-tune"
+   ]
+  },
+  {
+   "id": "one-tune",
+   "title": "One Tune, Five Decades",
+   "subtitle": "Body and Soul, from 1939 to now",
+   "tint": "#B8860B",
+   "intro": "Jazz is the art of playing the same song differently. Here is one song, a 1930 Broadway ballad, heard in four landmark versions. Listen for the bridge, the section where the chords move to a faraway key, and how each player gets through it.",
+   "stops": [
+    {
+     "kind": "tune",
+     "ref": "body-and-soul",
+     "note": "Where the song came from, and why it became a test piece."
+    },
+    {
+     "kind": "track",
+     "ref": "Coleman Hawkins|Body and Soul|1939",
+     "note": "Two choruses that leave the melody behind almost at once: a hit record made of pure improvisation."
+    },
+    {
+     "kind": "track",
+     "ref": "Billie Holiday|Body and Soul|1940",
+     "note": "The words Hawkins left out, sung as if confiding them."
+    },
+    {
+     "kind": "track",
+     "ref": "John Coltrane|Body and Soul|1960",
+     "note": "Coltrane slows it down and adds his own moving chords underneath."
+    },
+    {
+     "kind": "track",
+     "ref": "Thelonious Monk|Body and Soul|1962",
+     "note": "Solo piano: the melody stated plainly, then knocked off balance with Monk's dissonances."
+    }
+   ],
+   "outro": "The Songbook has 27 more tunes, each with versions across the decades.",
+   "next": [
+    "late-night",
+    "nineteen-fifty-nine"
+   ]
+  },
+  {
+   "id": "piano-trio",
+   "title": "The Piano Trio",
+   "subtitle": "Three people, sixty years of rethinking it",
+   "tint": "#2F8F83",
+   "intro": "Piano, bass and drums: the smallest jazz band that can do everything. Each of these trios changed what the other two players were for.",
+   "stops": [
+    {
+     "kind": "album",
+     "ref": "amazing-bud-powell-1",
+     "track": "Bud Powell|Un Poco Loco",
+     "note": "Bebop piano: the right hand plays like a horn, the left drops sparse chords, and Max Roach's cowbell drives the Latin rhythm."
+    },
+    {
+     "kind": "track",
+     "ref": "Duke Ellington|Caravan|1962",
+     "note": "Ellington, Charles Mingus and Max Roach on Money Jungle: three leaders in one room, pushing each other hard."
+    },
+    {
+     "kind": "album",
+     "ref": "sunday-at-the-village-vanguard",
+     "track": "Bill Evans Trio|Gloria's Step",
+     "note": "Bill Evans, Scott LaFaro and Paul Motian, live in 1961: Gloria's Step is LaFaro's tune, and the bass is no longer just keeping time but a second melodic voice."
+    },
+    {
+     "kind": "term",
+     "ref": "comping",
+     "note": "In a trio the comping, the chords behind a soloist, becomes a conversation."
+    },
+    {
+     "kind": "album",
+     "ref": "standards-vol-1",
+     "note": "Keith Jarrett, Gary Peacock and Jack DeJohnette take old standards and stretch them into long, singing improvisations."
+    },
+    {
+     "kind": "album",
+     "ref": "art-of-the-trio-vol-1",
+     "track": "Brad Mehldau|Blame It on My Youth",
+     "note": "Mehldau's trio brings in counterpoint between the hands and, on later records, pop songs as standards."
+    }
+   ],
+   "outro": "The piano lineage traces where each of these pianists came from.",
+   "next": [
+    "late-night",
+    "nineteen-fifty-nine"
+   ]
+  }
+ ]
+}
