@@ -1372,7 +1372,8 @@
         "charles-mingus",
         "coleman-hawkins",
         "django-reinhardt",
-        "abdullah-ibrahim"
+        "abdullah-ibrahim",
+        "mulatu-astatke"
       ],
       "albums": [
         "blanton-webster-band"
@@ -4616,8 +4617,8 @@
       ],
       "signatureTracks": [
         "Just in Time",
-        "In the Kitchen",
-        "Rapid Shave"
+        "Rapid Shave",
+        "That's for Me"
       ],
       "videoQuery": "Shirley Scott Hammond organ"
     },
@@ -4710,8 +4711,7 @@
       ],
       "signatureTracks": [
         "Sugar",
-        "Sunshine Alley",
-        "Pieces of Dreams"
+        "Sunshine Alley"
       ],
       "videoQuery": "Stanley Turrentine tenor saxophone live"
     },
@@ -4817,7 +4817,7 @@
         "water-from-an-ancient-well"
       ],
       "signatureTracks": [
-        "Mannenberg",
+        "Mandela",
         "The Wedding",
         "Water from an Ancient Well"
       ],
@@ -4835,7 +4835,9 @@
       "primaryEra": "fusion",
       "wikipedia": "Mulatu_Astatke",
       "blurb": "The father of Ethio-jazz set Ethiopian modes over jazz and Latin rhythms on vibraphone and congas, instruments he brought into Ethiopian popular music. Berklee's first African student, he found a new audience when Jim Jarmusch used his music in Broken Flowers.",
-      "connections": [],
+      "connections": [
+        "duke-ellington"
+      ],
       "albums": [
         "mulatu-of-ethiopia"
       ],
@@ -4893,7 +4895,7 @@
       "signatureTracks": [
         "Witchi-Tai-To",
         "Hasta Siempre",
-        "Parce mihi domine"
+        "Desireless"
       ],
       "videoQuery": "Jan Garbarek saxophone live"
     },
@@ -4991,8 +4993,7 @@
       ],
       "signatureTracks": [
         "Dança Das Cabeças, Pt. 1",
-        "Frevo",
-        "Loro"
+        "Dança Das Cabeças, Pt. 2"
       ],
       "videoQuery": "Egberto Gismonti guitar live"
     },
@@ -5032,7 +5033,7 @@
         "free",
         "post-bop"
       ],
-      "primaryEra": "post-bop",
+      "primaryEra": "free",
       "wikipedia": "Dave_Holland_(bassist)",
       "blurb": "An English bassist whom Miles Davis heard at Ronnie Scott's in 1968 and hired for In a Silent Way and Bitches Brew, Holland went on to Circle, his own Conference of the Birds and, from the 1980s, bands built on supple, grooving counterpoint.",
       "connections": [
@@ -5106,7 +5107,7 @@
       "id": "medeski-martin-wood",
       "name": "Medeski Martin & Wood",
       "born": 1991,
-      "instrument": "Organ",
+      "instrument": "Bandleader",
       "eras": [
         "post-bop",
         "contemporary"
@@ -7868,6 +7869,12 @@
       "b": "louis-armstrong",
       "kind": "band",
       "note": "Together for the First Time (1961)."
+    },
+    {
+      "a": "duke-ellington",
+      "b": "mulatu-astatke",
+      "kind": "band",
+      "note": "Mulatu appeared as a special guest with Ellington's orchestra on its 1973 tour of Ethiopia."
     },
     {
       "a": "duke-ellington",
