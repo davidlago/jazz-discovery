@@ -38,6 +38,8 @@ struct TrackRow: View {
     var hoverChanged: ((Bool) -> Void)? = nil
     var action: () -> Void
     @Environment(PlayerController.self) private var player
+    @Environment(JazzLibrary.self) private var library
+    @Environment(Router.self) private var router
     @State private var hovering = false
 
     var body: some View {
@@ -64,6 +66,11 @@ struct TrackRow: View {
                     Text(track.name).font(.system(size: 13, weight: isCurrent ? .bold : .medium))
                         .foregroundStyle(isCurrent ? tint : Theme.cream).lineLimit(1)
                     if highlighted { Image(systemName: "star.fill").font(.system(size: 9)).foregroundStyle(tint) }
+                    if let tune = library.tune(forTrackTitle: track.name) {
+                        Button { router.go(.tune(tune.id)) } label: { Image(systemName: "music.quarternote.3") }
+                            .buttonStyle(.plain).font(.system(size: 10)).foregroundStyle(Theme.muted)
+                            .help("\(tune.title) in the Songbook")
+                    }
                 }
                 if showArtist {
                     Text([track.artistName, track.albumName].compactMap { $0 }.joined(separator: " — "))

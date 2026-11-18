@@ -7,7 +7,7 @@ enum PhoneTab: String, Hashable, CaseIterable {
     init(_ tab: DeepLink.Tab) {
         switch tab {
         case .timeline, .discover: self = .timeline
-        case .eras: self = .eras
+        case .eras, .explore: self = .eras
         case .artists: self = .artists
         case .crate: self = .crate
         case .search: self = .search
@@ -22,6 +22,7 @@ enum PhoneRoute: Hashable {
     case decades
     case connections(focus: String?)
     case passport
+    case songbook
     case radio
     case blindfold
 
@@ -29,6 +30,7 @@ enum PhoneRoute: Hashable {
     static func artist(_ id: String) -> PhoneRoute { .page(.artist(id)) }
     static func album(_ id: String) -> PhoneRoute { .page(.album(id)) }
     static func decade(_ decade: Int) -> PhoneRoute { .page(.decade(decade)) }
+    static func tune(_ id: String) -> PhoneRoute { .page(.tune(id)) }
 }
 
 /// Tabs, each with its own navigation stack, and the sheets shown over them.
@@ -83,9 +85,11 @@ final class PhoneRouter {
             case .era: erasMode = .styles; show(.eras, [.page(route)])
             case .artist: show(.artists, [.page(route)])
             case .album: show(.crate, [.page(route)])
-            case .decade: erasMode = .decades; show(.eras, [.page(route)])
+            case .decade: show(.eras, [.page(route)])
+            case .tune: show(.eras, [.songbook, .page(route)])
             }
-        case .decades: erasMode = .decades; show(.eras)
+        case .decades: show(.eras, [.decades])
+        case .songbook: show(.eras, [.songbook])
         case .connections(let focus): show(.artists, [.connections(focus: focus)])
         case .between(let a, let b):
             pathRequest = PathRequest(from: a, to: b)

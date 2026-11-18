@@ -103,6 +103,17 @@ struct SearchTab: View {
                         }
                     }
                 }
+                if !r.tunes.isEmpty {
+                    resultSection("Songbook") {
+                        ForEach(r.tunes) { t in
+                            ResultRow(route: .tune(t.id), title: t.title,
+                                      subtitle: "\(Session.joinedList(t.composers.map(library.composerName))) · \(String(t.year)) · \(t.versions.count) versions") {
+                                Image(systemName: "music.quarternote.3").font(.title3).foregroundStyle(Theme.brass)
+                                    .frame(maxWidth: .infinity, maxHeight: .infinity).background(Theme.panelHi)
+                            }
+                        }
+                    }
+                }
                 if !r.players.isEmpty {
                     resultSection("On the Records") {
                         ForEach(r.players) { p in

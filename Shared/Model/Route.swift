@@ -7,12 +7,13 @@ enum Route: Hashable {
     case artist(String)
     case album(String)
     case decade(Int)
+    case tune(String)
 }
 
 /// A `jazzdiscovery://` link, parsed and checked against the library.
 ///
 ///     era/<id>  artist/<id>  album/<id>  decade/<1950>  decades  connections[/<artist id>]  between/<artist>/<artist>
-///     tab/<timeline|eras|artists|crate|search>[?q=<search>]  now-playing  settings  passport  radio  blindfold
+///     tab/<timeline|eras|artists|crate|search>[?q=<search>]  now-playing  settings  passport  radio  blindfold  tune/<id>  songbook
 ///
 /// Links come from anywhere (a web page, another app, a widget), so a link only parses when the page it names exists.
 /// `play/album/<id>` parses as `.playAlbum`; it's the one link that starts music, and the apps honour it only from their
@@ -27,6 +28,8 @@ enum DeepLink: Equatable {
     case nowPlaying
     case settings
     case playAlbum(String)
+    /// The Songbook's index.
+    case songbook
     /// Your listening passport.
     case passport
     /// The radio stations (a station's ID only opens the page: links don't start music).
@@ -34,7 +37,7 @@ enum DeepLink: Equatable {
     case blindfold
 
     /// `discover` is the first tab's name since 1.3; `timeline` still works.
-    enum Tab: String, CaseIterable { case timeline, discover, eras, artists, crate, search }
+    enum Tab: String, CaseIterable { case timeline, discover, eras, explore, artists, crate, search }
 
     static let scheme = "jazzdiscovery"
 
@@ -57,6 +60,11 @@ enum DeepLink: Equatable {
             self = .page(.decade(d))
         case "decades":
             self = .decades
+        case "tune":
+            guard let id = arg, library.tune(id) != nil else { return nil }
+            self = .page(.tune(id))
+        case "songbook":
+            self = .songbook
         case "connections":
             // An unknown artist still opens the map, just without one selected.
             self = .connections(focus: arg.flatMap { library.artist($0)?.id })

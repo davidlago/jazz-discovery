@@ -37,6 +37,8 @@ enum Snapshots {
             ("11-passport", { router.show(.passport) }),
             ("12-radio", { router.show(.radio) }),
             ("13-blindfold", { router.show(.blindfold) }),
+            ("14-songbook", { router.show(.songbook) }),
+            ("15-tune", { router.show(.tune("body-and-soul")) }),
         ]
         // A passport with something in it (in memory only: snapshots don't touch the real one).
         passport.fillWithDemo(library: library)

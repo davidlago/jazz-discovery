@@ -244,6 +244,30 @@ struct ArtistDetailView: View {
                     }
                 }
 
+                let written = library.tunes(writtenBy: artist.id)
+                let played = library.versions(by: artist.id).filter { v in !written.contains(v.tune) }
+                if !written.isEmpty || !played.isEmpty {
+                    VStack(alignment: .leading, spacing: 4) {
+                        SectionHeader(title: "Songbook", subtitle: written.isEmpty ? "Their versions of the standards." : "Tunes they wrote, then their versions of others.", tint: tint)
+                        HRow {
+                            ForEach(written) { t in
+                                NavigationLink(value: PhoneRoute.tune(t.id)) { TuneCard(tune: t, width: 190) }.buttonStyle(.pressable)
+                            }
+                            ForEach(Array(played.enumerated()), id: \.offset) { _, p in
+                                NavigationLink(value: PhoneRoute.tune(p.tune.id)) {
+                                    VStack(alignment: .leading, spacing: 5) {
+                                        TuneCard(tune: p.tune, width: 190)
+                                        Text("Their \(p.tune.title), \(String(p.version.year))").font(.caption.weight(.medium))
+                                            .foregroundStyle(tint).lineLimit(1)
+                                    }
+                                    .frame(width: 190, alignment: .leading)
+                                }
+                                .buttonStyle(.pressable)
+                            }
+                        }
+                    }
+                }
+
                 let appearances = library.appearances(of: artist.id)
                 if !appearances.isEmpty {
                     VStack(alignment: .leading, spacing: 4) {

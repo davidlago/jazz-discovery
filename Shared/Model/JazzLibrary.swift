@@ -23,11 +23,21 @@ final class JazzLibrary {
     let tracks: [String: StationTrack]
     /// Each Crate album's Apple Music tracks (tracklists.json), by album ID.
     let tracklists: [String: [CatalogTrack]]
+    /// The Songbook's tunes, A–Z (songbook.json).
+    let tunes: [Tune]
+    private let tuneByID: [String: Tune]
+    /// Title key → tune, from titles and aliases.
+    private let tuneByKey: [String: Tune]
 
     init(data: JazzData, sessions: [String: Session] = [:], tracks: [String: StationTrack] = [:],
-         tracklists: [String: [CatalogTrack]] = [:]) {
+         tracklists: [String: [CatalogTrack]] = [:], tunes: [Tune] = []) {
         self.tracks = StationTrack.load(tracks)
         self.tracklists = tracklists
+        self.tunes = tunes.sorted { Tune.key($0.title) < Tune.key($1.title) }
+        tuneByID = Dictionary(tunes.map { ($0.id, $0) }, uniquingKeysWith: { a, _ in a })
+        var byKey: [String: Tune] = [:]
+        for t in tunes { for k in t.keys { byKey[k] = t } }
+        tuneByKey = byKey
         eras = data.eras.sorted { $0.start < $1.start }
         artists = data.artists
         albums = data.albums.sorted { $0.year < $1.year }
@@ -89,7 +99,8 @@ final class JazzLibrary {
             return JazzLibrary(data: try JSONDecoder().decode(JazzData.self, from: data),
                                sessions: optional([String: Session].self, "sessions", in: bundle) ?? [:],
                                tracks: optional([String: StationTrack].self, "tracks", in: bundle) ?? [:],
-                               tracklists: optional([String: [CatalogTrack]].self, "tracklists", in: bundle) ?? [:])
+                               tracklists: optional([String: [CatalogTrack]].self, "tracklists", in: bundle) ?? [:],
+                               tunes: optional(SongbookData.self, "songbook", in: bundle)?.tunes ?? [])
         } catch {
             fatalError("Could not decode jazz.json: \(error)")
         }
@@ -116,6 +127,9 @@ final class JazzLibrary {
         return artists.first { $0.name == name } ?? t.album.flatMap { album($0) }.flatMap { artist($0.artist) }
             ?? artist(named: name)
     }
+
+    /// The tune with this title key, if any.
+    func tunesByKey(_ key: String) -> Tune? { tuneByKey[key] }
 
     /// A named track, resolved ahead of time.
     func track(_ ref: TrackRef) -> StationTrack? { tracks[ref.id] }
@@ -250,7 +264,8 @@ final class JazzLibrary {
 
     struct SearchResults { var eras: [Era] = []; var artists: [Artist] = []; var albums: [Album] = []
         var players: [Player] = []
-        var isEmpty: Bool { eras.isEmpty && artists.isEmpty && albums.isEmpty && players.isEmpty } }
+        var tunes: [Tune] = []
+        var isEmpty: Bool { eras.isEmpty && artists.isEmpty && albums.isEmpty && players.isEmpty && tunes.isEmpty } }
 
     func search(_ q: String) -> SearchResults {
         let q = q.trimmingCharacters(in: .whitespaces).lowercased()
@@ -274,7 +289,8 @@ final class JazzLibrary {
             eras: eras.filter { m($0.name) || m($0.tagline) },
             artists: artists.filter { m($0.name) || m($0.instrument) },
             albums: albums.filter { m($0.title) || m($0.artistName) || m($0.label) || String($0.year) == q },
-            players: Array(players.prefix(20))
+            players: Array(players.prefix(20)),
+            tunes: tunes.filter { t in m(t.title) || (t.aliases ?? []).contains(where: m) || t.composers.map(composerName).contains(where: m) }
         )
     }
 }

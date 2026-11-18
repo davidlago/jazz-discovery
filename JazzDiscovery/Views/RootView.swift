@@ -24,6 +24,7 @@ struct RootView: View {
                         case .artists: ArtistsView()
                         case .albums: CrateView()
                         case .connections: ConnectionsView()
+                        case .songbook: SongbookView()
                         case .passport: PassportView()
                         case .radio: RadioView()
                         case .blindfold: BlindfoldPage()
@@ -36,6 +37,7 @@ struct RootView: View {
                     case .artist(let id): if let a = library.artist(id) { ArtistDetailView(artist: a) }
                     case .album(let id): if let a = library.album(id) { AlbumDetailView(album: a) }
                     case .decade(let d): DecadeDetailView(decade: d)
+                    case .tune(let id): if let t = library.tune(id) { TuneDetailView(tune: t) }
                     }
                 }
                 .background(Theme.ink)
@@ -177,6 +179,10 @@ struct SearchResultsView: View {
                 if !r.albums.isEmpty {
                     SectionHeader(title: "Albums").padding(.horizontal, 40)
                     HRow { ForEach(r.albums) { AlbumCard(album: $0) } }
+                }
+                if !r.tunes.isEmpty {
+                    SectionHeader(title: "Songbook").padding(.horizontal, 40)
+                    HRow { ForEach(r.tunes) { t in Button { router.go(.tune(t.id)) } label: { TuneCard(tune: t) }.buttonStyle(.plain) } }
                 }
                 if !r.players.isEmpty {
                     SectionHeader(title: "On the Records", subtitle: "Players credited on the albums who don't have a page yet.")

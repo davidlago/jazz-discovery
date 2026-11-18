@@ -1,42 +1,68 @@
 import SwiftUI
 
+/// Explore: the eras first, as a carousel of posters, then Decades, the Songbook and Connections, each a row with
+/// *See all*.
 struct ErasTab: View {
     @Environment(JazzLibrary.self) private var library
-    @Environment(PhoneRouter.self) private var router
 
     var body: some View {
-        @Bindable var router = router
         ScrollView {
-            VStack(alignment: .leading, spacing: 18) {
-                PageHeader(title: router.erasMode == .styles ? "Eras & Styles" : "Decades",
-                           subtitle: router.erasMode == .styles
-                           ? "Every movement in jazz was an argument with the one before it. Here's the whole conversation."
-                           : "Pick a decade to see what was in the air: the styles, the turning points, the records.")
-                    .contentTransition(.opacity)
+            VStack(alignment: .leading, spacing: 30) {
+                PageHeader(title: "Explore",
+                           subtitle: "Every movement in jazz was an argument with the one before it. Start with the eras.")
 
-                Picker("Show", selection: $router.erasMode) {
-                    ForEach(PhoneRouter.ErasMode.allCases, id: \.self) { Text($0.rawValue).tag($0) }
-                }
-                .pickerStyle(.segmented)
-                .padding(.horizontal, Theme.gutter)
-                .sensoryFeedback(.selection, trigger: router.erasMode)
-
-                switch router.erasMode {
-                case .styles:
-                    LazyVStack(spacing: 14) {
-                        ForEach(library.eras) { EraPosterCard(era: $0) }
+                VStack(alignment: .leading, spacing: 6) {
+                    SectionHeader(title: "Eras & Styles")
+                    ScrollView(.horizontal) {
+                        LazyHStack(spacing: 12) {
+                            ForEach(library.eras) { EraPosterCard(era: $0, height: 180).frame(width: 290) }
+                        }
+                        .scrollTargetLayout()
+                        .padding(.vertical, 6)
                     }
+                    .scrollIndicators(.hidden)
+                    .contentMargins(.horizontal, Theme.gutter, for: .scrollContent)
+                    .scrollTargetBehavior(.viewAligned)
+                }
+
+                VStack(alignment: .leading, spacing: 6) {
+                    SectionHeader(title: "Decades") { SeeAllLink(route: .decades) }
+                    HRow(spacing: 12) { ForEach(library.decades, id: \.self) { DecadeTile(decade: $0) } }
+                }
+
+                if !library.tunes.isEmpty {
+                    VStack(alignment: .leading, spacing: 6) {
+                        SectionHeader(title: "The Songbook", subtitle: "\(library.tunes.count) tunes, and the versions that made them.") {
+                            SeeAllLink(route: .songbook)
+                        }
+                        HRow(spacing: 12) {
+                            ForEach(library.tunes.prefix(10)) { t in
+                                NavigationLink(value: PhoneRoute.tune(t.id)) { TuneCard(tune: t, width: 200) }.buttonStyle(.pressable)
+                            }
+                        }
+                    }
+                }
+
+                VStack(alignment: .leading, spacing: 10) {
+                    SectionHeader(title: "Connections", subtitle: "Who played with whom, across the century.")
+                    NavigationLink(value: PhoneRoute.connections(focus: nil)) {
+                        HStack {
+                            Label("Open the map", systemImage: "point.3.connected.trianglepath.dotted")
+                                .font(.subheadline.weight(.semibold)).foregroundStyle(Theme.cream)
+                            Spacer()
+                            Image(systemName: "chevron.right").font(.caption.weight(.bold)).foregroundStyle(Theme.faint)
+                        }
+                        .padding(14)
+                        .background(RoundedRectangle(cornerRadius: 12).fill(Theme.panel))
+                    }
+                    .buttonStyle(.pressable)
                     .padding(.horizontal, Theme.gutter)
-                    .transition(.opacity)
-                case .decades:
-                    DecadeList().transition(.opacity)
                 }
             }
             .padding(.top, 8).padding(.bottom, 32)
-            .animation(.easeInOut(duration: 0.2), value: router.erasMode)
         }
         .background(Theme.ink)
-        .revealedTitle(router.erasMode == .styles ? "Eras & Styles" : "Decades", after: 60)
+        .revealedTitle("Explore", after: 60)
         .rootToolbar()
     }
 }
