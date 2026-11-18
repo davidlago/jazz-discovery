@@ -4,7 +4,18 @@ Every feature in the roadmap is only as good as the data under it. A radio stati
 lineage with three bassists isn't one; a calendar with 170 dates is empty half the year. This thread grows the content
 alongside the features. It isn't a release of its own: each release takes a batch.
 
-## Where it stands (2026-11-17)
+## Where it stands (2026-11-18, after the first batch)
+
+152 artists and 130 records (was 86 and 88 when this was written; 127 after 1.1's sidemen). The first batch (25 artists,
+42 records) filled the 1980s–2010s (each now 10 or more records), soul jazz, spiritual jazz, the organ, the first male
+singers, and Europe/ECM, South Africa, Ethiopia, Japan, Brazil and Cuba after the 1960s. Still under the floors: the
+1920s–40s and 2020s, roots (3 artists, 3 records), and the New Orleans, swing, bebop, cool and Latin eras' records.
+
+Two hand fixes in tracks.json that a `build-tracks.py` run would undo, since it re-searches tracks with no Crate album:
+Ornette Coleman's "Turnaround" (keep the 1959 original, not the 2005 Sound Grammar version) and Wayne Shorter's
+"Nefertiti" (left unresolved rather than matched to Herbie Hancock's 2007 version). Check them after any rerun.
+
+## Where it stood (2026-11-17)
 
 | | Count | Notes |
 |---|---|---|

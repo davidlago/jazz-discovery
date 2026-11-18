@@ -222,13 +222,13 @@ reason" API the app uses (UserDefaults, CA92.1).
 
 ### Version text
 
-This text is for 1.9 (127 artists, personnel, Find a Path, Passport, Radio, the Blindfold Test, the Songbook, Places and Labels, Lineages and the Glossary, Paths, Today in Jazz, widgets). If 1.0.1 is submitted on its own first, say
+This text is for the release after 1.9 (152 artists, 130 records, personnel, Find a Path, Passport, Radio, the Blindfold Test, the Songbook, Places and Labels, Lineages and the Glossary, Paths, Today in Jazz, widgets, Siri). If 1.0.1 is submitted on its own first, say
 "86 artists" and leave out the *Who played on what* and *Your passport* paragraphs and the path-finding sentence.
 
 **Promotional text** (170 characters, can change any time without review):
 
 ```
-127 artists and 88 essential records, from ragtime to today, with who played on every one. Find the path between any two players, and listen as you go.
+152 artists and 130 essential records, from ragtime to today, with who played on every one. Find the path between any two players, and listen as you go.
 ```
 
 **Keywords** (100 characters):
@@ -248,11 +248,11 @@ Fourteen styles flow across a timeline like river channels, overlapping where th
 Eras and decades
 Each era has its story, its sound, the places it happened, its key artists and essential records, tracks to play, documentaries and performances, and a picture archive. Or travel by decade, from the 1890s to the 2020s: the styles in the air, the turning points, the records and who was playing.
 
-127 artists
+152 artists
 Leaders and the sidemen all over their records, in Blue Note–style duotone portraits, filterable by era and instrument, each with a biography, their most popular songs, their records, the records they play on, live videos and the people they played with.
 
 The Crate
-88 essential albums, by decade, with why each one matters, its tracklist and the tracks to start with. New to jazz? Follow the Start Here path, one record at a time.
+130 essential albums, by decade, with why each one matters, its tracklist and the tracks to start with. New to jazz? Follow the Start Here path, one record at a time.
 
 Who played on what
 Every album lists its band like the back of an LP: who played what, who sat out which track, when and where it was recorded, and who produced it, checked against the liner notes and discographies.
@@ -265,6 +265,9 @@ Twenty-eight standards and jazz originals, each a page with its story and the ve
 
 Today in jazz
 Whose birthday it is, what was recorded on this date, and a calendar for the whole year. Every day has a reason to open the app, and a widget for your Home Screen and Lock Screen; another keeps your next path stop in view.
+
+Ask Siri
+"Play bebop radio", "What happened in jazz today" or "Play my next stop", and find any artist, record or tune from Spotlight.
 
 Paths
 Journeys with a point of view, from Start Here to 1959, Late Night and The Latin Tinge: a few stops each, every one with something to listen for, and your place kept.

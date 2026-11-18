@@ -24,6 +24,10 @@ struct JazzDiscoveryMobileApp: App {
         _passport = State(initialValue: passport)
         _sync = State(initialValue: demo ? nil : PassportSync(passport: passport))
         _widgets = State(initialValue: demo ? nil : WidgetPublisher(passport: passport, library: library))
+        AppContext.shared.library = library
+        AppContext.shared.passport = passport
+        AppContext.shared.player = player
+        MorningNote.shared.start(library: library)
     }
 
     var body: some Scene {
@@ -35,6 +39,10 @@ struct JazzDiscoveryMobileApp: App {
                 .environment(passport)
                 .preferredColorScheme(.dark)
                 .onOpenURL { router.handle($0, library: library, player: player) }
+                .onAppear {
+                    AppContext.shared.navigate = { [router, library, player] in router.handle($0, library: library, player: player) }
+                    SpotlightIndex.update(library: library)
+                }
                 .task { await openLaunchLinks() }
         }
     }

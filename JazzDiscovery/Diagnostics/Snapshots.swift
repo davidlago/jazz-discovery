@@ -118,6 +118,49 @@ enum Snapshots {
                 save(TodayWidgetView(content: content, familyOverride: family), size: size, "w-today-\(label)-\(family)")
             }
         }
+        // The App Store screenshot of the widgets, at each size: a Home Screen page with Today in Jazz (large, on
+        // Miles Davis's hundredth birthday) and, under it, Continue and a small Today.
+        if let may26 = Calendar.current.date(from: DateComponents(year: 2026, month: 5, day: 26, hour: 12)),
+           var big = library.todayWidget(on: may26, snapshot: snapshot),
+           let nov18 = Calendar.current.date(from: DateComponents(year: 2026, month: 11, day: 18, hour: 12)),
+           var small = library.todayWidget(on: nov18, snapshot: snapshot) {
+            big.image = await WidgetImages.picture(for: big, library: library)
+            small.image = await WidgetImages.picture(for: small, library: library)
+            for (size, points, scale) in [("6.9", CGSize(width: 440, height: 956), 3.0), ("6.3", CGSize(width: 402, height: 874), 3.0)] {
+                let widgetWidth = points.width - 48, smallSide = (widgetWidth - 22) / 2
+                func tile<V: View>(_ v: V, _ w: CGFloat, _ h: CGFloat) -> some View {
+                    v.padding(16).frame(width: w, height: h).background(Theme.ink)
+                        .clipShape(RoundedRectangle(cornerRadius: 24, style: .continuous))
+                        .shadow(color: .black.opacity(0.35), radius: 12, y: 6)
+                }
+                let page = VStack(spacing: 30) {
+                    Spacer(minLength: 0)
+                    VStack(spacing: 10) {
+                        Text("WIDGETS").font(Theme.label(13)).tracking(2.4).foregroundStyle(Theme.brass)
+                        Text("Today in jazz,\non your Home Screen").font(Theme.display(40)).multilineTextAlignment(.center)
+                            .foregroundStyle(Theme.cream)
+                    }
+                    tile(TodayWidgetView(content: big, familyOverride: .systemLarge), widgetWidth, widgetWidth * 382 / 364)
+                    HStack(spacing: 22) {
+                        tile(ContinueWidgetView(snapshot: snapshot, familyOverride: .systemSmall), smallSide, smallSide)
+                        tile(TodayWidgetView(content: small, familyOverride: .systemSmall), smallSide, smallSide)
+                    }
+                    Spacer(minLength: 0)
+                }
+                .frame(width: points.width, height: points.height)
+                .background(LinearGradient(colors: [Color(hex: "#2B2340"), Color(hex: "#16121C"), Color(hex: "#0F0E0D")],
+                                           startPoint: .top, endPoint: .bottom))
+                .environment(\.colorScheme, .dark)
+                let r = ImageRenderer(content: page)
+                r.scale = scale
+                if let cg = r.cgImage {
+                    let rep = NSBitmapImageRep(cgImage: cg)
+                    try? rep.representation(using: .png, properties: [:])?
+                        .write(to: URL(fileURLWithPath: "\(dir)/appstore-widgets-\(size).png"))
+                    print("saved appstore-widgets-\(size) (\(cg.width) × \(cg.height))"); fflush(stdout)
+                }
+            }
+        }
         let states: [(String, WidgetSnapshot?)] = [
             ("path", snapshot),
             ("stamp", { var s = snapshot; s.path = nil; return s }()),

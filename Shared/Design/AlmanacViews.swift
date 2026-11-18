@@ -4,7 +4,7 @@ import SwiftUI
 /// (the caller shows the spotlight instead).
 struct TodayCard: View {
     var compact = false
-    var date: Date = .now
+    var date: Date = Today.date
     var open: (Route) -> Void
     var openAlmanac: () -> Void
     @Environment(JazzLibrary.self) private var library
@@ -93,7 +93,7 @@ struct TodayCard: View {
 
 /// The next seven days, one line each.
 struct ThisWeekStrip: View {
-    var date: Date = .now
+    var date: Date = Today.date
     var open: (Route) -> Void
     @Environment(JazzLibrary.self) private var library
 
@@ -169,7 +169,7 @@ struct AlmanacDayList: View {
     @Environment(JazzLibrary.self) private var library
 
     var body: some View {
-        let date = Calendar(identifier: .gregorian).date(from: DateComponents(year: Calendar.current.component(.year, from: .now), month: month, day: day)) ?? .now
+        let date = Calendar(identifier: .gregorian).date(from: DateComponents(year: Calendar.current.component(.year, from: Today.date), month: month, day: day)) ?? Today.date
         let events = library.calendar.rank(library.calendar.events(month: month, day: day), on: date)
         VStack(alignment: .leading, spacing: 10) {
             Text(date.formatted(.dateTime.month(.wide).day()).uppercased()).font(Theme.display(28)).foregroundStyle(Theme.cream)
@@ -179,7 +179,7 @@ struct AlmanacDayList: View {
             ForEach(Array(events.enumerated()), id: \.offset) { _, e in
                 Button { if let r = library.route(for: e) { open(r) } } label: {
                     HStack(alignment: .top, spacing: 10) {
-                        Image(systemName: e.kind == .recorded ? "opticaldisc" : e.kind == .born ? "birthday.cake" : "leaf")
+                        Image(systemName: e.kind == .recorded ? "opticaldisc" : e.kind == .born ? "birthday.cake" : e.kind == .milestone ? "star" : "leaf")
                             .foregroundStyle(Theme.brass).frame(width: 20)
                         Text(library.line(for: e, on: date, today: false)).font(.system(size: 15, design: .serif))
                             .foregroundStyle(Theme.cream).multilineTextAlignment(.leading)

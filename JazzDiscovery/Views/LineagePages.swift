@@ -122,7 +122,7 @@ struct PathDetailView: View {
 /// The year at a glance, and what happened on any day.
 struct AlmanacView: View {
     @Environment(Router.self) private var router
-    @State private var selected = Calendar.current.dateComponents([.month, .day], from: .now)
+    @State private var selected = Calendar.current.dateComponents([.month, .day], from: Today.date)
 
     var body: some View {
         ScrollView {

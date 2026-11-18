@@ -492,6 +492,126 @@
    ]
   },
   {
+   "id": "bass",
+   "family": "Bass",
+   "title": "The Bass",
+   "intro": "The bass began as the band's floor: Walter Page's even walking four in the Basie band was the pulse everyone stood on. Jimmy Blanton, in two years with Ellington, showed it could also be a solo voice, and nearly every modern bassist traces back to him. After that the question was how far it could lead: Mingus ran bands from it, Paul Chambers and Ron Carter made the time elastic, Charlie Haden set it free, and Jaco Pastorius made the electric bass sing.\n\nListen under the soloist: the walking line is a melody of its own, choosing the notes that steer the harmony.",
+   "players": [
+    {
+     "artist": "walter-page",
+     "idea": "The walking four of the Basie rhythm section: even, light and unstoppable.",
+     "track": "Walter Page|Jumpin' at the Woodside"
+    },
+    {
+     "artist": "jimmy-blanton",
+     "idea": "The bass as a solo voice: horn-like lines, a huge tone, and the bow.",
+     "track": "Jimmy Blanton|Jack the Bear"
+    },
+    {
+     "artist": "charles-mingus",
+     "idea": "Led the band from the bass, driving, shouting and composing as he played.",
+     "track": "Charles Mingus|Haitian Fight Song"
+    },
+    {
+     "artist": "richard-davis",
+     "idea": "A classical player's range and an unpredictable swing for the avant-garde.",
+     "track": "Richard Davis|Out to Lunch"
+    },
+    {
+     "artist": "paul-chambers",
+     "idea": "The hard-bop pulse: buoyant walking lines and bowed solos taken seriously.",
+     "track": "Paul Chambers|So What"
+    },
+    {
+     "artist": "gary-peacock",
+     "idea": "Elastic, conversational time, from Albert Ayler's free jazz to Jarrett's standards.",
+     "track": "Gary Peacock|Ghosts: First Variation"
+    },
+    {
+     "artist": "ron-carter",
+     "idea": "A deep, singing tone and harmonic choices that let the bass steer the band.",
+     "track": "Ron Carter|Footprints"
+    },
+    {
+     "artist": "charlie-haden",
+     "idea": "Few notes, each one chosen: a folk-deep bass that moved with the soloist.",
+     "track": "Charlie Haden|Lonely Woman"
+    },
+    {
+     "artist": "jaco-pastorius",
+     "idea": "The fretless electric bass as a lead voice: melodies, chords and harmonics.",
+     "track": "Jaco Pastorius|Donna Lee"
+    },
+    {
+     "artist": "esperanza-spalding",
+     "idea": "Sings over her own bass lines, in songs that range from jazz to art-pop.",
+     "track": "Esperanza Spalding|Black Gold"
+    }
+   ],
+   "links": [
+    {
+     "from": "jimmy-blanton",
+     "to": "charles-mingus",
+     "kind": "influence",
+     "note": "Blanton's solos with Ellington inspired Mingus to raise the bass up from the rhythm section into the lead."
+    },
+    {
+     "from": "jimmy-blanton",
+     "to": "paul-chambers",
+     "kind": "influence",
+     "note": "Blanton was Chambers's all-time favourite bassist, Leonard Feather wrote; his bowed solos carry Blanton's arco on."
+    },
+    {
+     "from": "charles-mingus",
+     "to": "paul-chambers",
+     "kind": "influence",
+     "note": "Chambers admired Mingus for broadening the scope of jazz bass, and drew on him alongside Pettiford and Heath."
+    },
+    {
+     "from": "jimmy-blanton",
+     "to": "richard-davis",
+     "kind": "influence",
+     "note": "Davis says it was Blanton's sound on Ellington's records that drew him to the bass."
+    },
+    {
+     "from": "jimmy-blanton",
+     "to": "charlie-haden",
+     "kind": "influence",
+     "note": "Haden said he loved Blanton, one of the first bass players he remembered listening to."
+    },
+    {
+     "from": "paul-chambers",
+     "to": "charlie-haden",
+     "kind": "influence",
+     "note": "Haden called Chambers the first bassist who was really distinctive to him: the chromatic lines, the sound, the time."
+    },
+    {
+     "from": "paul-chambers",
+     "to": "gary-peacock",
+     "kind": "influence",
+     "note": "Peacock's playing came out of Paul Chambers, with Ray Brown and Scott LaFaro."
+    },
+    {
+     "from": "ron-carter",
+     "to": "jaco-pastorius",
+     "kind": "influence",
+     "note": "Jaco named Carter among the bassists he dug coming up, with Jerry Jemmott and Gary Peacock."
+    },
+    {
+     "from": "gary-peacock",
+     "to": "jaco-pastorius",
+     "kind": "influence",
+     "note": "Peacock was on Jaco's own list of the players he dug coming up, next to Ron Carter."
+    },
+    {
+     "from": "ron-carter",
+     "to": "esperanza-spalding",
+     "kind": "influence",
+     "note": "Spalding has named Carter, with Dave Holland, as an important influence on her music."
+    }
+   ]
+  },
+  {
    "id": "drums",
    "family": "Drums",
    "title": "The Drums",
@@ -566,6 +686,69 @@
      "to": "jack-dejohnette",
      "kind": "influence",
      "note": "DeJohnette names Jones as a major influence; the rolling, polyrhythmic feel carries straight over."
+    }
+   ]
+  },
+  {
+   "id": "guitar",
+   "family": "Guitar",
+   "title": "The Guitar",
+   "intro": "The guitar came into jazz as a rhythm instrument, strumming four to the bar and too quiet to solo over a band; Freddie Green kept it that way in the Basie band for fifty years. Django Reinhardt made it a solo voice in Paris, amplification let it stand up to the horns, and from there it went into the organ trios, bossa nova and fusion's volume.\n\nListen for single lines played like a horn, and for the chords underneath when the guitar comps.",
+   "players": [
+    {
+     "artist": "django-reinhardt",
+     "idea": "Gypsy jazz: blazing runs from a burned hand, and Europe's first great jazz voice.",
+     "track": "Django Reinhardt|Minor Swing"
+    },
+    {
+     "artist": "freddie-green",
+     "idea": "Rhythm guitar as the band's heartbeat: even, chunky chords, four to the bar.",
+     "track": "Freddie Green|Jumpin' at the Woodside"
+    },
+    {
+     "artist": "kenny-burrell",
+     "idea": "Warm, blues-soaked and unhurried: the sound of soul-jazz guitar.",
+     "track": "Kenny Burrell|Back at the Chicken Shack"
+    },
+    {
+     "artist": "joao-gilberto",
+     "idea": "The bossa nova guitar: samba distilled into a soft, offbeat pulse under the voice.",
+     "track": "João Gilberto|Chega de Saudade"
+    },
+    {
+     "artist": "grant-green",
+     "idea": "Clean, horn-like single lines steeped in the blues, from organ grooves to modal dates.",
+     "track": "Grant Green|Idle Moments"
+    },
+    {
+     "artist": "john-mclaughlin",
+     "idea": "Fusion's lightning: rock volume, Indian rhythm and jazz harmony at full speed.",
+     "track": "John McLaughlin|Meeting of the Spirits"
+    },
+    {
+     "artist": "pat-metheny",
+     "idea": "A warm, singing tone and wide-open melodies, from trio to cinematic group music.",
+     "track": "Pat Metheny|Bright Size Life"
+    }
+   ],
+   "links": [
+    {
+     "from": "django-reinhardt",
+     "to": "kenny-burrell",
+     "kind": "influence",
+     "note": "Burrell said Django showed him that you could find your own individuality on the instrument."
+    },
+    {
+     "from": "django-reinhardt",
+     "to": "john-mclaughlin",
+     "kind": "influence",
+     "note": "McLaughlin heard Django at about fourteen; he and Tal Farlow were his heroes on guitar, he said, and still are."
+    },
+    {
+     "from": "kenny-burrell",
+     "to": "pat-metheny",
+     "kind": "influence",
+     "note": "Metheny calls Burrell one of his main heroes, for his sound, his touch and his natural blues phrasing."
     }
    ]
   },

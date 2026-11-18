@@ -40,7 +40,8 @@ struct StationTrack: Decodable, Hashable, Identifiable {
 
 /// A station: an endless, explained mix from part of the guide.
 struct Station: Identifiable, Hashable {
-    enum Kind: Hashable { case era(String), decade(Int), instrument(String), longWay, newToYou, tune(String), songbook, lineage(String) }
+    enum Kind: Hashable { case era(String), decade(Int), instrument(String), longWay, newToYou, tune(String), songbook, lineage(String),
+                          place(String), label(String) }
     let kind: Kind
     let title: String
     let subtitle: String
@@ -57,6 +58,8 @@ struct Station: Identifiable, Hashable {
         case .tune(let t): return "tune-\(t)"
         case .songbook: return "songbook"
         case .lineage(let l): return "lineage-\(l)"
+        case .place(let p): return "place-\(p)"
+        case .label(let l): return "label-\(l)"
         }
     }
 }
@@ -100,8 +103,31 @@ enum Programmer {
     }
 
     static func station(id: String, library: JazzLibrary, includeNewToYou: Bool = true) -> Station? {
-        stations(library: library, includeNewToYou: includeNewToYou).first { $0.id == id }
+        // A place's or label's station is worked out alone: pages ask for theirs each time they draw.
+        if id.hasPrefix("place-") { return placeStation(String(id.dropFirst(6)), library: library) }
+        if id.hasPrefix("label-") { return labelStation(String(id.dropFirst(6)), library: library) }
+        return stations(library: library, includeNewToYou: includeNewToYou).first { $0.id == id }
     }
+
+    /// A station for a city, club or studio (what was recorded there, and who played there) or a label, played from
+    /// its page; not on the Radio page, which would get long. Needs fewer tracks than the main stations.
+    static func placeAndLabelStations(library: JazzLibrary) -> [Station] {
+        library.places.compactMap { placeStation($0.id, library: library) } + library.labels.compactMap { labelStation($0.id, library: library) }
+    }
+
+    static func placeStation(_ id: String, library: JazzLibrary) -> Station? {
+        guard let p = library.place(id) else { return nil }
+        let s = Station(kind: .place(p.id), title: "\(p.name) Radio", subtitle: p.years,
+                        color: p.eras.first.flatMap { library.era($0)?.color } ?? "#E9B949")
+        return pool(for: s, library: library, isHeard: { _ in false }).count >= minimumPlaceTracks ? s : nil
+    }
+
+    static func labelStation(_ id: String, library: JazzLibrary) -> Station? {
+        guard let l = library.label(id) else { return nil }
+        let s = Station(kind: .label(l.id), title: "\(l.name) Radio", subtitle: "Since \(String(l.founded))", color: l.color)
+        return pool(for: s, library: library, isHeard: { _ in false }).count >= minimumPlaceTracks ? s : nil
+    }
+    static let minimumPlaceTracks = 8
 
     /// The year a track counts as: its own, its record's, or (for a signature tune with neither) nil.
     static func year(_ t: StationTrack, library: JazzLibrary) -> Int? {
@@ -138,6 +164,16 @@ enum Programmer {
             return library.tunes.flatMap { t in t.versions.compactMap { library.track(for: $0, of: t) } }
         case .lineage(let id):
             return library.lineage(id)?.players.compactMap { $0.track.flatMap { library.tracks[$0] } } ?? []
+        case .place(let id):
+            let made = Set(library.albums(recordedAt: id).map(\.id))
+            let people = Set(library.artists(at: id).map(\.id))
+            return all.filter { t in
+                if let a = t.album, made.contains(a) { return true }
+                return library.artist(ofTrack: t).map { people.contains($0.id) } ?? false
+            }
+        case .label(let id):
+            let records = Set(library.albums(onLabel: id).map(\.id))
+            return all.filter { $0.album.map { records.contains($0) } ?? false }
         }
     }
 

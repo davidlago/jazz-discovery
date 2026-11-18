@@ -1,5 +1,9 @@
 {
  "artists": {
+  "abdullah-ibrahim": {
+   "born": "1934-10-09",
+   "died": "2026-06-15"
+  },
   "albert-ayler": {
    "born": "1936-07-13"
   },
@@ -24,6 +28,9 @@
   "art-tatum": {
    "born": "1909-10-13",
    "died": "1956-11-05"
+  },
+  "arturo-sandoval": {
+   "born": "1949-11-06"
   },
   "baby-dodds": {
    "born": "1898-12-24",
@@ -63,6 +70,9 @@
   "bobby-hutcherson": {
    "died": "2016-08-15"
   },
+  "bobby-mcferrin": {
+   "born": "1950-03-11"
+  },
   "brad-mehldau": {
    "born": "1970-08-23"
   },
@@ -95,6 +105,9 @@
   },
   "cecile-mclorin-salvant": {
    "born": "1989-08-28"
+  },
+  "charles-lloyd": {
+   "born": "1938-03-15"
   },
   "charles-mingus": {
    "born": "1922-04-22",
@@ -138,9 +151,15 @@
    "born": "1904-08-21",
    "died": "1984-04-26"
   },
+  "courtney-pine": {
+   "born": "1964-03-18"
+  },
   "dave-brubeck": {
    "born": "1920-12-06",
    "died": "2012-12-05"
+  },
+  "dave-holland": {
+   "born": "1946-10-01"
   },
   "dexter-gordon": {
    "born": "1923-02-27"
@@ -161,6 +180,10 @@
    "born": "1936-11-18",
    "died": "1995-10-19"
   },
+  "dorothy-ashby": {
+   "born": "1932-08-06",
+   "died": "1986-04-13"
+  },
   "duke-ellington": {
    "born": "1899-04-29",
    "died": "1974-05-24"
@@ -180,6 +203,10 @@
   "eric-dolphy": {
    "born": "1928-06-20",
    "died": "1964-06-29"
+  },
+  "esbjorn-svensson": {
+   "born": "1964-04-16",
+   "died": "2008-06-14"
   },
   "esperanza-spalding": {
    "born": "1984-10-18"
@@ -220,6 +247,9 @@
   "herbie-hancock": {
    "born": "1940-04-12"
   },
+  "hiromi": {
+   "born": "1979-03-26"
+  },
   "horace-silver": {
    "born": "1928-09-02",
    "died": "2014-06-18"
@@ -239,6 +269,12 @@
   "james-p-johnson": {
    "born": "1894-02-01",
    "died": "1955-11-17"
+  },
+  "jan-garbarek": {
+   "born": "1947-03-04"
+  },
+  "jason-moran": {
+   "born": "1975-01-21"
   },
   "jelly-roll-morton": {
    "born": "1890-10-20",
@@ -286,6 +322,9 @@
    "born": "1892-04-12",
    "died": "1940-08-08"
   },
+  "johnny-hartman": {
+   "died": "1983-09-15"
+  },
   "johnny-hodges": {
    "died": "1970-05-11"
   },
@@ -313,6 +352,13 @@
    "born": "1881-12-19",
    "died": "1938-04-10"
   },
+  "kurt-elling": {
+   "born": "1967-11-02"
+  },
+  "larry-young": {
+   "born": "1940-10-07",
+   "died": "1978-03-30"
+  },
   "lee-konitz": {
    "born": "1927-10-13",
    "died": "2020-04-15"
@@ -320,6 +366,14 @@
   "lee-morgan": {
    "born": "1938-07-10",
    "died": "1972-02-19"
+  },
+  "leon-thomas": {
+   "born": "1937-10-04",
+   "died": "1999-05-08"
+  },
+  "les-mccann": {
+   "born": "1935-09-23",
+   "died": "2023-12-29"
   },
   "lester-young": {
    "born": "1909-08-27",
@@ -332,6 +386,13 @@
   "lionel-hampton": {
    "born": "1908-04-20",
    "died": "2002-08-31"
+  },
+  "lonnie-liston-smith": {
+   "born": "1940-12-28"
+  },
+  "lou-donaldson": {
+   "born": "1926-11-01",
+   "died": "2024-11-09"
   },
   "louis-armstrong": {
    "born": "1901-08-04",
@@ -365,6 +426,9 @@
   },
   "mongo-santamaria": {
    "died": "2003-02-01"
+  },
+  "mulatu-astatke": {
+   "born": "1943-12-19"
   },
   "nina-simone": {
    "born": "1933-02-21",
@@ -410,6 +474,10 @@
    "born": "1924-03-27",
    "died": "1990-04-03"
   },
+  "shirley-scott": {
+   "born": "1934-03-14",
+   "died": "2002-03-10"
+  },
   "sidney-bechet": {
    "born": "1897-05-14",
    "died": "1959-05-14"
@@ -422,6 +490,9 @@
    "born": "1927-02-02",
    "died": "1991-06-06"
   },
+  "stanley-turrentine": {
+   "died": "2000-09-12"
+  },
   "sun-ra": {
    "born": "1914-05-22",
    "died": "1993-05-30"
@@ -433,6 +504,10 @@
   "tito-puente": {
    "born": "1923-04-20"
   },
+  "tomasz-stanko": {
+   "born": "1942-07-11",
+   "died": "2018-07-29"
+  },
   "tommy-flanagan": {
    "born": "1930-03-16",
    "died": "2001-11-16"
@@ -440,6 +515,9 @@
   "tony-williams": {
    "born": "1945-12-12",
    "died": "1997-02-23"
+  },
+  "vijay-iyer": {
+   "born": "1971-10-26"
   },
   "walter-page": {
    "born": "1900-02-09",
@@ -501,6 +579,14 @@
     "year": 1993
    }
   ],
+  "01-08": [
+   {
+    "kind": "milestone",
+    "line": "On this day in 2001, Ken Burns's Jazz began on PBS.",
+    "milestone": "Ken Burns's Jazz",
+    "year": 2001
+   }
+  ],
   "01-09": [
    {
     "artist": "kenny-clarke",
@@ -557,6 +643,17 @@
     "kind": "recorded",
     "place": "WOR Studios, New York",
     "year": 1949
+   },
+   {
+    "album": "dedicated-to-you",
+    "kind": "recorded",
+    "place": "The Allen Room, Jazz at Lincoln Center, New York",
+    "year": 2009
+   },
+   {
+    "artist": "jason-moran",
+    "kind": "born",
+    "year": 1975
    }
   ],
   "01-22": [
@@ -578,6 +675,21 @@
     "year": 1973
    }
   ],
+  "01-24": [
+   {
+    "album": "the-koln-concert",
+    "kind": "recorded",
+    "place": "Cologne Opera House",
+    "year": 1975
+   },
+   {
+    "artist": "keith-jarrett",
+    "kind": "milestone",
+    "line": "On this day in 1975, Keith Jarrett played The Köln Concert at the opera house in Cologne.",
+    "milestone": "The Köln Concert",
+    "year": 1975
+   }
+  ],
   "01-25": [
    {
     "artist": "antonio-carlos-jobim",
@@ -586,6 +698,12 @@
    }
   ],
   "01-26": [
+   {
+    "album": "ptah-the-el-daoud",
+    "kind": "recorded",
+    "place": "The Coltrane Home Studio",
+    "year": 1970
+   },
    {
     "artist": "kenny-clarke",
     "kind": "died",
@@ -644,6 +762,12 @@
   ],
   "02-04": [
    {
+    "album": "bix-singin-the-blues",
+    "kind": "recorded",
+    "place": "OKeh's New York studio, Union Square",
+    "year": 1927
+   },
+   {
     "artist": "j-j-johnson",
     "kind": "died",
     "year": 2001
@@ -688,6 +812,30 @@
     "year": 2021
    }
   ],
+  "02-10": [
+   {
+    "album": "black-radio",
+    "kind": "recorded",
+    "line": "On this day in 2013, the Robert Glasper Experiment's Black Radio won the Grammy for Best R&B Album.",
+    "year": 2013
+   },
+   {
+    "artist": "herbie-hancock",
+    "kind": "milestone",
+    "line": "On this day in 2008, Herbie Hancock's River: The Joni Letters won the Grammy for Album of the Year.",
+    "milestone": "Herbie's Album of the Year",
+    "year": 2008
+   }
+  ],
+  "02-13": [
+   {
+    "artist": "esperanza-spalding",
+    "kind": "milestone",
+    "line": "On this day in 2011, Esperanza Spalding won the Grammy for Best New Artist.",
+    "milestone": "Esperanza is Best New Artist",
+    "year": 2011
+   }
+  ],
   "02-14": [
    {
     "album": "karma",
@@ -725,6 +873,12 @@
   ],
   "02-18": [
    {
+    "album": "watermelon-man",
+    "kind": "recorded",
+    "place": "Plaza Sound Studios, New York",
+    "year": 1963
+   },
+   {
     "artist": "kamasi-washington",
     "kind": "born",
     "year": 1981
@@ -741,6 +895,14 @@
     "artist": "lee-morgan",
     "kind": "died",
     "year": 1972
+   }
+  ],
+  "02-20": [
+   {
+    "album": "watermelon-man",
+    "kind": "recorded",
+    "place": "Plaza Sound Studios, New York",
+    "year": 1963
    }
   ],
   "02-21": [
@@ -789,6 +951,20 @@
     "kind": "recorded",
     "place": "Van Gelder Studio",
     "year": 1964
+   },
+   {
+    "album": "we-like-it-here",
+    "kind": "recorded",
+    "line": "On this day in 2014, Snarky Puppy released We Like It Here on GroundUP.",
+    "year": 2014
+   }
+  ],
+  "02-26": [
+   {
+    "kind": "milestone",
+    "line": "On this day in 1917, the Original Dixieland Jass Band recorded \"Livery Stable Blues\", the first jazz record.",
+    "milestone": "The first jazz record",
+    "year": 1917
    }
   ],
   "02-27": [
@@ -796,6 +972,21 @@
     "artist": "dexter-gordon",
     "kind": "born",
     "year": 1923
+   }
+  ],
+  "02-28": [
+   {
+    "album": "black-radio",
+    "kind": "recorded",
+    "line": "On this day in 2012, Robert Glasper Experiment released Black Radio on Blue Note.",
+    "year": 2012
+   },
+   {
+    "artist": "wynton-marsalis",
+    "kind": "milestone",
+    "line": "On this day in 1984, Wynton Marsalis won Grammys for both a jazz and a classical recording.",
+    "milestone": "Wynton's double Grammy",
+    "year": 1984
    }
   ],
   "03-01": [
@@ -818,11 +1009,32 @@
     "year": 2023
    }
   ],
+  "03-04": [
+   {
+    "album": "emilys-d-evolution",
+    "kind": "recorded",
+    "line": "On this day in 2016, Esperanza Spalding released Emily's D+Evolution on Concord.",
+    "year": 2016
+   },
+   {
+    "artist": "jan-garbarek",
+    "kind": "born",
+    "year": 1947
+   }
+  ],
   "03-06": [
    {
     "artist": "mccoy-tyner",
     "kind": "died",
     "year": 2020
+   }
+  ],
+  "03-07": [
+   {
+    "album": "john-coltrane-and-johnny-hartman",
+    "kind": "recorded",
+    "place": "Van Gelder Studio",
+    "year": 1963
    }
   ],
   "03-09": [
@@ -850,6 +1062,18 @@
     "artist": "bix-beiderbecke",
     "kind": "born",
     "year": 1903
+   },
+   {
+    "artist": "shirley-scott",
+    "kind": "died",
+    "year": 2002
+   }
+  ],
+  "03-11": [
+   {
+    "artist": "bobby-mcferrin",
+    "kind": "born",
+    "year": 1950
    }
   ],
   "03-12": [
@@ -866,7 +1090,19 @@
     "year": 1925
    }
   ],
+  "03-14": [
+   {
+    "artist": "shirley-scott",
+    "kind": "born",
+    "year": 1934
+   }
+  ],
   "03-15": [
+   {
+    "artist": "charles-lloyd",
+    "kind": "born",
+    "year": 1938
+   },
    {
     "artist": "lester-young",
     "kind": "died",
@@ -894,6 +1130,11 @@
     "kind": "recorded",
     "place": "A&R Recording, New York",
     "year": 1963
+   },
+   {
+    "artist": "courtney-pine",
+    "kind": "born",
+    "year": 1964
    }
   ],
   "03-19": [
@@ -915,6 +1156,13 @@
     "artist": "cecil-taylor",
     "kind": "born",
     "year": 1929
+   }
+  ],
+  "03-26": [
+   {
+    "artist": "hiromi",
+    "kind": "born",
+    "year": 1979
    }
   ],
   "03-27": [
@@ -949,7 +1197,26 @@
     "year": 2001
    }
   ],
+  "03-30": [
+   {
+    "album": "bitches-brew",
+    "kind": "recorded",
+    "line": "On this day in 1970, Miles Davis released Bitches Brew on Columbia.",
+    "year": 1970
+   },
+   {
+    "artist": "larry-young",
+    "kind": "died",
+    "year": 1978
+   }
+  ],
   "03-31": [
+   {
+    "album": "historicity",
+    "kind": "recorded",
+    "place": "Systems Two, Brooklyn",
+    "year": 2009
+   },
    {
     "artist": "freddie-green",
     "kind": "born",
@@ -1002,6 +1269,12 @@
   ],
   "04-07": [
    {
+    "album": "alligator-bogaloo",
+    "kind": "recorded",
+    "place": "Van Gelder Studio",
+    "year": 1967
+   },
+   {
     "artist": "billie-holiday",
     "kind": "born",
     "year": 1915
@@ -1029,6 +1302,12 @@
   ],
   "04-12": [
    {
+    "album": "perceive-its-beauty",
+    "kind": "recorded",
+    "line": "On this day in 2024, Shabaka released Perceive Its Beauty, Acknowledge Its Grace on Impulse!",
+    "year": 2024
+   },
+   {
     "artist": "johnny-dodds",
     "kind": "born",
     "year": 1892
@@ -1042,6 +1321,19 @@
     "artist": "wynton-kelly",
     "kind": "died",
     "year": 1971
+   }
+  ],
+  "04-13": [
+   {
+    "album": "getz-gilberto",
+    "kind": "recorded",
+    "line": "On this day in 1965, Getz/Gilberto won the Grammy for Album of the Year.",
+    "year": 1965
+   },
+   {
+    "artist": "dorothy-ashby",
+    "kind": "died",
+    "year": 1986
    }
   ],
   "04-15": [
@@ -1064,6 +1356,13 @@
     "artist": "lee-konitz",
     "kind": "died",
     "year": 2020
+   }
+  ],
+  "04-16": [
+   {
+    "artist": "esbjorn-svensson",
+    "kind": "born",
+    "year": 1964
    }
   ],
   "04-20": [
@@ -1220,6 +1519,12 @@
     "kind": "recorded",
     "place": "Columbia 30th Street Studio, New York",
     "year": 1959
+   },
+   {
+    "album": "the-epic",
+    "kind": "recorded",
+    "line": "On this day in 2015, Kamasi Washington released The Epic on Brainfeeder.",
+    "year": 2015
    }
   ],
   "05-06": [
@@ -1235,6 +1540,19 @@
     "artist": "keith-jarrett",
     "kind": "born",
     "year": 1945
+   },
+   {
+    "artist": "leon-thomas",
+    "kind": "died",
+    "year": 1999
+   }
+  ],
+  "05-09": [
+   {
+    "album": "bix-singin-the-blues",
+    "kind": "recorded",
+    "place": "OKeh's New York studio",
+    "year": 1927
    }
   ],
   "05-10": [
@@ -1267,6 +1585,12 @@
   ],
   "05-13": [
    {
+    "album": "bix-singin-the-blues",
+    "kind": "recorded",
+    "place": "OKeh's New York studio",
+    "year": 1927
+   },
+   {
     "artist": "gil-evans",
     "kind": "born",
     "year": 1912
@@ -1295,6 +1619,12 @@
     "kind": "recorded",
     "place": "Massey Hall, Toronto",
     "year": 1953
+   },
+   {
+    "album": "ella-cole-porter",
+    "kind": "recorded",
+    "line": "On this day in 1956, Ella Fitzgerald released Ella Fitzgerald Sings the Cole Porter Song Book on Verve.",
+    "year": 1956
    }
   ],
   "05-16": [
@@ -1302,6 +1632,14 @@
     "artist": "django-reinhardt",
     "kind": "died",
     "year": 1953
+   }
+  ],
+  "05-17": [
+   {
+    "album": "maiden-voyage",
+    "kind": "recorded",
+    "line": "On this day in 1965, Herbie Hancock released Maiden Voyage on Blue Note.",
+    "year": 1965
    }
   ],
   "05-18": [
@@ -1478,6 +1816,11 @@
     "artist": "jimmy-knepper",
     "kind": "died",
     "year": 2003
+   },
+   {
+    "artist": "esbjorn-svensson",
+    "kind": "died",
+    "year": 2008
    }
   ],
   "06-15": [
@@ -1491,6 +1834,11 @@
     "artist": "ella-fitzgerald",
     "kind": "died",
     "year": 1996
+   },
+   {
+    "artist": "abdullah-ibrahim",
+    "kind": "died",
+    "year": 2026
    }
   ],
   "06-18": [
@@ -1505,6 +1853,14 @@
     "artist": "eric-dolphy",
     "kind": "born",
     "year": 1928
+   }
+  ],
+  "06-21": [
+   {
+    "album": "swiss-movement",
+    "kind": "recorded",
+    "place": "Montreux Jazz Festival",
+    "year": 1969
    }
   ],
   "06-22": [
@@ -1534,6 +1890,14 @@
     "artist": "clifford-brown",
     "kind": "died",
     "year": 1956
+   }
+  ],
+  "06-28": [
+   {
+    "album": "hot-five-hot-seven",
+    "kind": "recorded",
+    "line": "On this day in 1928, Louis Armstrong and His Hot Five recorded West End Blues, opening cadenza and all.",
+    "year": 1928
    }
   ],
   "06-29": [
@@ -1608,6 +1972,12 @@
   ],
   "07-10": [
    {
+    "album": "chega-de-saudade",
+    "kind": "recorded",
+    "line": "On this day in 1958, João Gilberto recorded Chega de Saudade at Odeon in Rio, bossa nova's first record.",
+    "year": 1958
+   },
+   {
     "album": "spiritual-unity",
     "kind": "recorded",
     "year": 1964
@@ -1630,6 +2000,11 @@
   ],
   "07-11": [
    {
+    "artist": "tomasz-stanko",
+    "kind": "born",
+    "year": 1942
+   },
+   {
     "artist": "charlie-haden",
     "kind": "died",
     "year": 2014
@@ -1640,6 +2015,14 @@
     "artist": "albert-ayler",
     "kind": "born",
     "year": 1936
+   }
+  ],
+  "07-14": [
+   {
+    "album": "footprints-live",
+    "kind": "recorded",
+    "place": "Umbria Jazz Festival, Perugia",
+    "year": 2001
    }
   ],
   "07-17": [
@@ -1654,12 +2037,50 @@
     "year": 1967
    }
   ],
+  "07-20": [
+   {
+    "album": "footprints-live",
+    "kind": "recorded",
+    "place": "Festival de Jazz de Vitoria-Gasteiz",
+    "year": 2001
+   }
+  ],
+  "07-21": [
+   {
+    "album": "journey-to-the-urge-within",
+    "kind": "recorded",
+    "place": "Angel Studios, London",
+    "year": 1986
+   }
+  ],
+  "07-22": [
+   {
+    "album": "journey-to-the-urge-within",
+    "kind": "recorded",
+    "place": "Angel Studios, London",
+    "year": 1986
+   }
+  ],
   "07-23": [
    {
     "album": "chet-baker-sings",
     "kind": "recorded",
     "place": "Forum Theatre, Los Angeles",
     "year": 1956
+   },
+   {
+    "album": "journey-to-the-urge-within",
+    "kind": "recorded",
+    "place": "Angel Studios, London",
+    "year": 1986
+   }
+  ],
+  "07-24": [
+   {
+    "album": "footprints-live",
+    "kind": "recorded",
+    "place": "Jardins du Palais Longchamp, Marseille",
+    "year": 2001
    }
   ],
   "07-27": [
@@ -1667,6 +2088,13 @@
     "artist": "harry-edison",
     "kind": "died",
     "year": 1999
+   }
+  ],
+  "07-29": [
+   {
+    "artist": "tomasz-stanko",
+    "kind": "died",
+    "year": 2018
    }
   ],
   "07-30": [
@@ -1703,6 +2131,11 @@
   ],
   "08-06": [
    {
+    "artist": "dorothy-ashby",
+    "kind": "born",
+    "year": 1932
+   },
+   {
     "artist": "charlie-haden",
     "kind": "born",
     "year": 1937
@@ -1721,6 +2154,12 @@
     "year": 1949
    },
    {
+    "album": "accelerando",
+    "kind": "recorded",
+    "place": "Sear Sound",
+    "year": 2011
+   },
+   {
     "artist": "johnny-dodds",
     "kind": "died",
     "year": 1940
@@ -1733,9 +2172,23 @@
   ],
   "08-09": [
    {
+    "album": "accelerando",
+    "kind": "recorded",
+    "place": "Sear Sound",
+    "year": 2011
+   },
+   {
     "artist": "jack-dejohnette",
     "kind": "born",
     "year": 1942
+   }
+  ],
+  "08-10": [
+   {
+    "kind": "milestone",
+    "line": "On this day in 1920, Mamie Smith and Her Jazz Hounds recorded \"Crazy Blues\", the hit that showed there was a market for records by Black artists.",
+    "milestone": "\"Crazy Blues\" sells big",
+    "year": 1920
    }
   ],
   "08-12": [
@@ -1772,6 +2225,14 @@
     "year": 2007
    }
   ],
+  "08-17": [
+   {
+    "album": "kind-of-blue",
+    "kind": "recorded",
+    "line": "On this day in 1959, Miles Davis released Kind of Blue on Columbia.",
+    "year": 1959
+   }
+  ],
   "08-18": [
    {
     "album": "time-out",
@@ -1804,6 +2265,19 @@
     "year": 1969
    },
    {
+    "album": "source",
+    "kind": "recorded",
+    "line": "On this day in 2020, Nubya Garcia released Source on Concord Jazz.",
+    "year": 2020
+   },
+   {
+    "artist": "benny-goodman",
+    "kind": "milestone",
+    "line": "On this day in 1935, Benny Goodman's band began its first engagement at the Palomar Ballroom in Los Angeles.",
+    "milestone": "Swing explodes at the Palomar",
+    "year": 1935
+   },
+   {
     "artist": "count-basie",
     "kind": "born",
     "year": 1904
@@ -1817,6 +2291,12 @@
    }
   ],
   "08-25": [
+   {
+    "album": "bix-singin-the-blues",
+    "kind": "recorded",
+    "place": "OKeh's New York studio",
+    "year": 1927
+   },
    {
     "album": "the-sermon",
     "kind": "recorded",
@@ -1835,6 +2315,12 @@
     "kind": "recorded",
     "place": "Van Gelder Studio",
     "year": 1962
+   },
+   {
+    "album": "journey-to-the-urge-within",
+    "kind": "recorded",
+    "place": "Power Plant, London",
+    "year": 1986
    },
    {
     "artist": "lester-young",
@@ -1896,6 +2382,14 @@
     "year": 2026
    }
   ],
+  "09-03": [
+   {
+    "album": "lush-life",
+    "kind": "recorded",
+    "place": "Van Gelder Studio",
+    "year": 1991
+   }
+  ],
   "09-04": [
    {
     "album": "art-of-the-trio-vol-1",
@@ -1919,6 +2413,12 @@
   ],
   "09-06": [
    {
+    "album": "lush-life",
+    "kind": "recorded",
+    "place": "Van Gelder Studio",
+    "year": 1991
+   },
+   {
     "artist": "richard-davis",
     "kind": "died",
     "year": 2023
@@ -1929,6 +2429,14 @@
     "artist": "sonny-rollins",
     "kind": "born",
     "year": 1930
+   }
+  ],
+  "09-08": [
+   {
+    "album": "lush-life",
+    "kind": "recorded",
+    "place": "Van Gelder Studio",
+    "year": 1991
    }
   ],
   "09-09": [
@@ -1943,6 +2451,13 @@
     "artist": "joe-zawinul",
     "kind": "died",
     "year": 2007
+   }
+  ],
+  "09-12": [
+   {
+    "artist": "stanley-turrentine",
+    "kind": "died",
+    "year": 2000
    }
   ],
   "09-15": [
@@ -1963,9 +2478,44 @@
     "year": 1980
    },
    {
+    "artist": "johnny-hartman",
+    "kind": "died",
+    "year": 1983
+   },
+   {
     "artist": "cootie-williams",
     "kind": "died",
     "year": 1985
+   }
+  ],
+  "09-16": [
+   {
+    "album": "another-mind",
+    "kind": "recorded",
+    "place": "Avatar Studios, New York",
+    "year": 2002
+   }
+  ],
+  "09-17": [
+   {
+    "album": "bix-singin-the-blues",
+    "kind": "recorded",
+    "place": "OKeh's New York studio",
+    "year": 1927
+   },
+   {
+    "album": "another-mind",
+    "kind": "recorded",
+    "place": "Avatar Studios, New York",
+    "year": 2002
+   }
+  ],
+  "09-18": [
+   {
+    "album": "another-mind",
+    "kind": "recorded",
+    "place": "Avatar Studios, New York",
+    "year": 2002
    }
   ],
   "09-20": [
@@ -1977,6 +2527,12 @@
   ],
   "09-21": [
    {
+    "album": "wish",
+    "kind": "recorded",
+    "line": "On this day in 1993, Joshua Redman released Wish on Warner Bros.",
+    "year": 1993
+   },
+   {
     "artist": "jaco-pastorius",
     "kind": "died",
     "year": 1987
@@ -1987,6 +2543,11 @@
     "artist": "john-coltrane",
     "kind": "born",
     "year": 1926
+   },
+   {
+    "artist": "les-mccann",
+    "kind": "born",
+    "year": 1935
    }
   ],
   "09-24": [
@@ -2012,9 +2573,45 @@
   ],
   "09-28": [
    {
+    "album": "bix-singin-the-blues",
+    "kind": "recorded",
+    "place": "OKeh's New York studio",
+    "year": 1927
+   },
+   {
     "artist": "miles-davis",
     "kind": "died",
     "year": 1991
+   }
+  ],
+  "09-29": [
+   {
+    "album": "bix-singin-the-blues",
+    "kind": "recorded",
+    "place": "Columbia's New York studio, 1819 Broadway",
+    "year": 1927
+   }
+  ],
+  "09-30": [
+   {
+    "album": "bix-singin-the-blues",
+    "kind": "recorded",
+    "place": "OKeh's New York studio",
+    "year": 1927
+   }
+  ],
+  "10-01": [
+   {
+    "artist": "dave-holland",
+    "kind": "born",
+    "year": 1946
+   }
+  ],
+  "10-04": [
+   {
+    "artist": "leon-thomas",
+    "kind": "born",
+    "year": 1937
    }
   ],
   "10-05": [
@@ -2022,6 +2619,13 @@
     "artist": "jimmy-blanton",
     "kind": "born",
     "year": 1918
+   }
+  ],
+  "10-07": [
+   {
+    "artist": "larry-young",
+    "kind": "born",
+    "year": 1940
    }
   ],
   "10-08": [
@@ -2032,6 +2636,11 @@
    }
   ],
   "10-09": [
+   {
+    "artist": "abdullah-ibrahim",
+    "kind": "born",
+    "year": 1934
+   },
    {
     "artist": "chucho-valdes",
     "kind": "born",
@@ -2056,6 +2665,12 @@
    }
   ],
   "10-11": [
+   {
+    "album": "hawkins-body-and-soul",
+    "kind": "recorded",
+    "line": "On this day in 1939, Coleman Hawkins recorded Body and Soul, a ballad improvisation so bold it became an unlikely hit.",
+    "year": 1939
+   },
    {
     "artist": "art-blakey",
     "kind": "born",
@@ -2082,6 +2697,13 @@
     "artist": "pharoah-sanders",
     "kind": "born",
     "year": 1940
+   }
+  ],
+  "10-14": [
+   {
+    "album": "sound-grammar",
+    "kind": "recorded",
+    "year": 2005
    }
   ],
   "10-15": [
@@ -2155,6 +2777,12 @@
   ],
   "10-21": [
    {
+    "album": "miles-ahead",
+    "kind": "recorded",
+    "line": "On this day in 1957, Miles Davis released Miles Ahead on Columbia.",
+    "year": 1957
+   },
+   {
     "album": "my-favorite-things",
     "kind": "recorded",
     "place": "Atlantic Studios",
@@ -2208,6 +2836,17 @@
     "year": 1964
    },
    {
+    "album": "universal-beings",
+    "kind": "recorded",
+    "line": "On this day in 2018, Makaya McCraven released Universal Beings on International Anthem.",
+    "year": 2018
+   },
+   {
+    "artist": "vijay-iyer",
+    "kind": "born",
+    "year": 1971
+   },
+   {
     "artist": "jack-dejohnette",
     "kind": "died",
     "year": 2025
@@ -2242,11 +2881,31 @@
     "year": 1963
    }
   ],
+  "11-01": [
+   {
+    "artist": "lou-donaldson",
+    "kind": "born",
+    "year": 1926
+   }
+  ],
   "11-02": [
+   {
+    "artist": "kurt-elling",
+    "kind": "born",
+    "year": 1967
+   },
    {
     "artist": "roy-hargrove",
     "kind": "died",
     "year": 2018
+   }
+  ],
+  "11-03": [
+   {
+    "album": "historicity",
+    "kind": "recorded",
+    "place": "Systems Two, Brooklyn",
+    "year": 2008
    }
   ],
   "11-04": [
@@ -2264,6 +2923,13 @@
     "year": 1956
    }
   ],
+  "11-06": [
+   {
+    "artist": "arturo-sandoval",
+    "kind": "born",
+    "year": 1949
+   }
+  ],
   "11-07": [
    {
     "artist": "candido",
@@ -2279,7 +2945,28 @@
     "year": 1970
    }
   ],
+  "11-09": [
+   {
+    "artist": "lou-donaldson",
+    "kind": "died",
+    "year": 2024
+   }
+  ],
+  "11-10": [
+   {
+    "album": "unity",
+    "kind": "recorded",
+    "place": "Van Gelder Studio",
+    "year": 1965
+   }
+  ],
   "11-12": [
+   {
+    "album": "hot-five-hot-seven",
+    "kind": "recorded",
+    "line": "On this day in 1925, Louis Armstrong cut his first Hot Five sides in Chicago, the records that made the improvising soloist jazz's main event.",
+    "year": 1925
+   },
    {
     "artist": "buck-clayton",
     "kind": "born",
@@ -2291,15 +2978,35 @@
     "year": 2024
    }
   ],
+  "11-14": [
+   {
+    "album": "state-of-the-tenor-vol-1",
+    "kind": "recorded",
+    "place": "Village Vanguard",
+    "year": 1985
+   }
+  ],
   "11-15": [
    {
     "album": "idle-moments",
     "kind": "recorded",
     "place": "Van Gelder Studio",
     "year": 1963
+   },
+   {
+    "album": "state-of-the-tenor-vol-1",
+    "kind": "recorded",
+    "place": "Village Vanguard",
+    "year": 1985
    }
   ],
   "11-16": [
+   {
+    "album": "state-of-the-tenor-vol-1",
+    "kind": "recorded",
+    "place": "Village Vanguard",
+    "year": 1985
+   },
    {
     "artist": "tommy-flanagan",
     "kind": "died",
@@ -2353,12 +3060,56 @@
     "year": 1924
    }
   ],
+  "11-26": [
+   {
+    "album": "savoy-dial-master-takes",
+    "kind": "recorded",
+    "line": "On this day in 1945, Charlie Parker's first Savoy session as a leader gave the world Ko-Ko and Now's the Time.",
+    "year": 1945
+   }
+  ],
+  "11-27": [
+   {
+    "album": "witchi-tai-to",
+    "kind": "recorded",
+    "place": "Arne Bendiksen Studio, Oslo",
+    "year": 1973
+   }
+  ],
+  "11-28": [
+   {
+    "album": "witchi-tai-to",
+    "kind": "recorded",
+    "place": "Arne Bendiksen Studio, Oslo",
+    "year": 1973
+   }
+  ],
+  "11-29": [
+   {
+    "album": "the-bandwagon",
+    "kind": "recorded",
+    "place": "Village Vanguard",
+    "year": 2002
+   }
+  ],
   "11-30": [
    {
     "album": "out-of-the-cool",
     "kind": "recorded",
     "place": "Van Gelder Studio, Englewood Cliffs",
     "year": 1960
+   },
+   {
+    "album": "conference-of-the-birds",
+    "kind": "recorded",
+    "place": "Allegro Sound Studios, New York",
+    "year": 1972
+   },
+   {
+    "album": "the-bandwagon",
+    "kind": "recorded",
+    "place": "Village Vanguard",
+    "year": 2002
    }
   ],
   "12-01": [
@@ -2383,12 +3134,25 @@
   ],
   "12-04": [
    {
+    "artist": "duke-ellington",
+    "kind": "milestone",
+    "line": "On this day in 1927, Duke Ellington's orchestra opened as the house band at the Cotton Club.",
+    "milestone": "Ellington at the Cotton Club",
+    "year": 1927
+   },
+   {
     "artist": "cassandra-wilson",
     "kind": "born",
     "year": 1955
    }
   ],
   "12-05": [
+   {
+    "album": "queen-of-the-organ",
+    "kind": "recorded",
+    "place": "The Front Room, Newark",
+    "year": 1964
+   },
    {
     "artist": "dave-brubeck",
     "kind": "died",
@@ -2439,9 +3203,37 @@
   ],
   "12-12": [
    {
+    "album": "song-x",
+    "kind": "recorded",
+    "place": "Power Station, New York",
+    "year": 1985
+   },
+   {
     "artist": "tony-williams",
     "kind": "born",
     "year": 1945
+   }
+  ],
+  "12-13": [
+   {
+    "album": "song-x",
+    "kind": "recorded",
+    "place": "Power Station, New York",
+    "year": 1985
+   }
+  ],
+  "12-14": [
+   {
+    "album": "time-out",
+    "kind": "recorded",
+    "line": "On this day in 1959, the Dave Brubeck Quartet released Time Out on Columbia.",
+    "year": 1959
+   },
+   {
+    "album": "song-x",
+    "kind": "recorded",
+    "place": "Power Station, New York",
+    "year": 1985
    }
   ],
   "12-15": [
@@ -2471,6 +3263,12 @@
     "kind": "recorded",
     "place": "Metropolitan Studios",
     "year": 1957
+   },
+   {
+    "album": "watermelon-man",
+    "kind": "recorded",
+    "place": "Plaza Sound Studios, New York",
+    "year": 1962
    }
   ],
   "12-18": [
@@ -2492,6 +3290,11 @@
     "artist": "king-oliver",
     "kind": "born",
     "year": 1881
+   },
+   {
+    "artist": "mulatu-astatke",
+    "kind": "born",
+    "year": 1943
    }
   ],
   "12-20": [
@@ -2502,6 +3305,12 @@
    }
   ],
   "12-21": [
+   {
+    "album": "free-jazz",
+    "kind": "recorded",
+    "place": "A&R Studios, New York",
+    "year": 1960
+   },
    {
     "album": "the-sidewinder",
     "kind": "recorded",
@@ -2565,6 +3374,11 @@
     "artist": "earl-hines",
     "kind": "born",
     "year": 1903
+   },
+   {
+    "artist": "lonnie-liston-smith",
+    "kind": "born",
+    "year": 1940
    }
   ],
   "12-29": [
@@ -2572,6 +3386,11 @@
     "artist": "freddie-hubbard",
     "kind": "died",
     "year": 2008
+   },
+   {
+    "artist": "les-mccann",
+    "kind": "died",
+    "year": 2023
    }
   ]
  }

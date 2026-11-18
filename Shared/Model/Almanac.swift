@@ -2,11 +2,13 @@ import Foundation
 
 /// Something that happened on a day of the year (almanac.json, built by scripts/build-almanac.py).
 struct DayEvent: Codable, Hashable {
-    enum Kind: String, Codable { case born, died, recorded }
+    enum Kind: String, Codable { case born, died, recorded, milestone }
     let kind: Kind
     let year: Int
     var artist: String? = nil
     var album: String? = nil
+    /// A milestone's title (jazz.json), for one that isn't a record in the Crate.
+    var milestone: String? = nil
     /// Where a session was recorded.
     var place: String? = nil
     /// A hand-written line that replaces the template.
@@ -68,7 +70,7 @@ struct Almanac {
 
     func rank(_ events: [DayEvent], on date: Date, isSaved: (DayEvent) -> Bool = { _ in false },
               isHeard: (DayEvent) -> Bool = { _ in false }, calendar: Calendar = .current) -> [DayEvent] {
-        let kindOrder: [DayEvent.Kind: Int] = [.recorded: 0, .born: 1, .died: 2]
+        let kindOrder: [DayEvent.Kind: Int] = [.recorded: 0, .milestone: 1, .born: 2, .died: 3]
         return events.sorted { a, b in
             let ra = Self.isRound(years(a, on: date, calendar: calendar)), rb = Self.isRound(years(b, on: date, calendar: calendar))
             if ra != rb { return ra }
@@ -114,6 +116,8 @@ extension JazzLibrary {
         case .died:
             let name = e.artist.flatMap { artist($0)?.name } ?? "Someone"
             return "Remembering \(name), who died on this day in \(String(e.year))."
+        case .milestone:
+            return "\(e.milestone ?? "A turning point") happened on this day in \(String(e.year))."
         case .recorded:
             guard let a = e.album.flatMap({ album($0) }) else { return "A session on this day in \(String(e.year))." }
             let place = e.place.map { " at \($0.components(separatedBy: ",").first ?? $0)" } ?? ""
@@ -144,10 +148,25 @@ extension JazzLibrary {
         return d["died"].map { "\(f(born)) – \(f($0))" } ?? "Born \(f(born))"
     }
 
-    /// The page an event belongs to.
+    /// The page an event belongs to: its record, its artist, or (a milestone with neither) its decade.
     func route(for e: DayEvent) -> Route? {
         if let a = e.album { return .album(a) }
         if let a = e.artist { return .artist(a) }
+        if e.kind == .milestone { return .decade(e.year / 10 * 10) }
         return nil
     }
+}
+
+/// Today's date, as the app shows it. Normally the real one; `--today 2026-05-26` (a launch argument, for scripted
+/// screenshots) pins it to another day, so the Today card shows a chosen event.
+enum Today {
+    static let date: Date = {
+        let args = CommandLine.arguments
+        guard let i = args.firstIndex(of: "--today"), i + 1 < args.count else { return .now }
+        let parts = args[i + 1].split(separator: "-").compactMap { Int($0) }
+        guard parts.count == 3,
+              let d = Calendar.current.date(from: DateComponents(year: parts[0], month: parts[1], day: parts[2], hour: 12))
+        else { return .now }
+        return d
+    }()
 }

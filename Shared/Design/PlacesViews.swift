@@ -24,28 +24,84 @@ struct PlacePin: View {
     }
 }
 
-/// The map of jazz: pins for the places active in the chosen year (or all of them), cities only when zoomed out.
+/// Several places in one spot at this zoom: a disc with how many.
+struct GroupPin: View {
+    let count: Int
+    let tint: Color
+
+    var body: some View {
+        Text("\(count)").font(.system(size: 12, weight: .heavy)).foregroundStyle(Theme.ink)
+            .frame(width: 28, height: 28)
+            .background(Circle().fill(tint))
+            .overlay(Circle().strokeBorder(Theme.ink, lineWidth: 2))
+            .overlay(Circle().strokeBorder(tint.opacity(0.5), lineWidth: 2).padding(-4))
+            .shadow(color: .black.opacity(0.5), radius: 3)
+    }
+}
+
+/// The map of jazz: pins for the places active in the chosen year (or all of them), cities only when zoomed out, and
+/// pins that would overlap at the current zoom grouped into one numbered pin (tap it to zoom in).
 struct JazzMap: View {
     let places: [Place]
     @Environment(JazzLibrary.self) private var library
     @Binding var selection: String?
     @Binding var position: MapCameraPosition
-    @State private var zoomedOut = true
+    @State private var distance: Double = 6_500_000
 
     var body: some View {
+        let zoomedOut = distance > 400_000
+        let groups = Self.groups(places.filter { !zoomedOut || $0.isCity || $0.city == nil }, distance: distance)
         Map(position: $position, selection: $selection) {
-            ForEach(places.filter { !zoomedOut || $0.isCity || $0.city == nil }) { p in
-                Annotation(p.name, coordinate: p.coordinate, anchor: .center) {
-                    PlacePin(place: p, tint: library.tint(for: p), selected: selection == p.id)
+            ForEach(groups) { g in
+                if g.places.count == 1, let p = g.places.first {
+                    Annotation(p.name, coordinate: p.coordinate, anchor: .center) {
+                        PlacePin(place: p, tint: library.tint(for: p), selected: selection == p.id)
+                    }
+                    .tag(p.id)
+                    .annotationTitles(zoomedOut && !p.isCity ? .hidden : .automatic)
+                } else {
+                    Annotation("\(g.places.count) places", coordinate: g.center, anchor: .center) {
+                        Button {
+                            withAnimation { position = Self.camera(g.center, distance: max(1_500, distance / 4)) }
+                        } label: {
+                            GroupPin(count: g.places.count, tint: library.tint(for: g.places[0]))
+                        }
+                        .buttonStyle(.plain)
+                        .accessibilityLabel("\(g.places.count) places: \(g.places.map(\.name).joined(separator: ", ")). Zoom in.")
+                    }
+                    .annotationTitles(.hidden)
                 }
-                .tag(p.id)
-                .annotationTitles(zoomedOut && !p.isCity ? .hidden : .automatic)
             }
         }
         .mapStyle(.standard(elevation: .flat, emphasis: .muted, pointsOfInterest: .excludingAll))
         .preferredColorScheme(.dark)
         .onMapCameraChange(frequency: .onEnd) { ctx in
-            zoomedOut = ctx.camera.distance > 400_000
+            distance = ctx.camera.distance
+        }
+    }
+
+    /// Places whose pins would overlap, at a camera this far away: a grid about a fourteenth of the view wide.
+    struct PlaceGroup: Identifiable {
+        let id: String
+        let places: [Place]
+        var center: CLLocationCoordinate2D {
+            CLLocationCoordinate2D(latitude: places.map(\.coordinate.latitude).reduce(0, +) / Double(places.count),
+                                   longitude: places.map(\.coordinate.longitude).reduce(0, +) / Double(places.count))
+        }
+    }
+
+    static func groups(_ places: [Place], distance: Double) -> [PlaceGroup] {
+        let cell = max(0.0004, distance / 111_000 / 14)   // degrees
+        var cells: [String: [Place]] = [:]
+        var order: [String] = []
+        for p in places {
+            let key = "\(Int((p.coordinate.latitude / cell).rounded(.down)))|\(Int((p.coordinate.longitude / cell).rounded(.down)))"
+            if cells[key] == nil { order.append(key) }
+            cells[key, default: []].append(p)
+        }
+        return order.map { k in
+            let ps = cells[k]!
+            return PlaceGroup(id: ps.count == 1 ? ps[0].id : "group-" + ps.map(\.id).sorted().joined(separator: "+"), places: ps)
         }
     }
 
@@ -195,6 +251,7 @@ struct PlaceDetailContent: View {
             Text(place.summary).font(.system(size: compact ? 16 : 17, design: .serif)).lineSpacing(4)
                 .foregroundStyle(Theme.cream.opacity(0.9)).fixedSize(horizontal: false, vertical: true)
                 .frame(maxWidth: 700, alignment: .leading)
+            if let station = Programmer.station(id: "place-\(place.id)", library: library) { PlayRadioButton(station: station) }
             FlowLayout(spacing: 8) {
                 ForEach(place.eras.compactMap { library.era($0) }) { e in
                     Button { openEra(e.id) } label: {
@@ -323,6 +380,7 @@ struct LabelDetailContent: View {
             .frame(maxWidth: .infinity, alignment: .leading)
             .background(RoundedRectangle(cornerRadius: 14).fill(label.tint.gradient))
 
+            if let station = Programmer.station(id: "label-\(label.id)", library: library) { PlayRadioButton(station: station) }
             ForEach(label.summary.components(separatedBy: "\n\n"), id: \.self) { p in
                 Text(p).font(.system(size: compact ? 16 : 17, design: .serif)).lineSpacing(4)
                     .foregroundStyle(Theme.cream.opacity(0.9)).fixedSize(horizontal: false, vertical: true)

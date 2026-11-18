@@ -42,6 +42,10 @@ your iPhone and Mac stay in step. The developer can't read it. Erase it any time
 from Last.fm, the app reads your most played albums from Last.fm, on your device, to find the Crate's records among
 them; nothing is sent back.
 
+The widgets read a small summary of your passport (the path you're on, what you've heard and saved) that the app
+leaves for them on your device. The morning note, if you turn it on, is scheduled on your device by the app; no server
+sends it. Spotlight indexes the guide's artists, records and tunes on your device, not anything about you.
+
 ## Children
 
 The app doesn't knowingly collect information from anyone, including children.

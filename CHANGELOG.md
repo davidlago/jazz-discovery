@@ -6,6 +6,29 @@ section for the tagged version at the top of the GitHub release notes (or **Unre
 
 ## Unreleased
 
+- **Siri and Shortcuts**: "Play bebop radio on Jazz Discovery", "What happened in jazz today", "Continue my path",
+  "Play my next stop", and opening any artist, record or tune.
+- **Spotlight**: search the system for "Kind of Blue" or "Body and Soul" and open its page in the app.
+- **Next stop**: when a path's track is playing, the player offers the next stop you haven't done; the Continue
+  widget has a play button for it.
+- **Morning note** (off unless you turn it on, in Settings ▸ Today in Jazz): the day's birthday or session at a time
+  you pick. It's scheduled on your device; nothing is sent anywhere.
+- **Radio for places and labels**: Play Radio on a city's, club's, studio's or label's page plays what was recorded
+  there or on that label, and who played there.
+- **The map** groups places that would overlap into one numbered pin; tap it to zoom in.
+- The large Today in Jazz widget lists the next days with something when the day has only one event.
+- **The Songbook** has all forty of its first list: Manteca, Misty, So What, Giant Steps, Naima, Moanin', Song for My
+  Father, Maiden Voyage, Nardis, Stella by Starlight, On Green Dolphin Street and Birdland join, with 45 more versions.
+- **25 more artists and 42 more records** (152 and 130 in all): the 1980s, 1990s and 2000s (which had none), soul and
+  spiritual jazz, the organ, the first male singers (Johnny Hartman, Kurt Elling, Bobby McFerrin, Leon Thomas), and
+  jazz from Norway, Sweden, Poland, Britain, South Africa, Ethiopia, Japan, Brazil and Cuba.
+- **Three new paths**: From Hip-Hop Back to Jazz, The Protest Tradition and London Now.
+- **Lineages** for the bass (from Jimmy Blanton to Esperanza Spalding) and the guitar.
+- **Who played on what** is complete: Bix Beiderbecke's Singin' the Blues and Mongo Santamaría's Watermelon Man! now
+  list their bands, session by session.
+- **On This Day** covers 258 days, up from 207: release days, milestones like the first jazz record and Ellington's
+  first night at the Cotton Club, and the two records above.
+
 ## 1.9.0
 
 - **Widgets** on the iPhone (Home Screen, Lock Screen, StandBy) and the Mac (desktop, Notification Center):

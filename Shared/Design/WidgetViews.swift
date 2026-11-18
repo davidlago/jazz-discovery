@@ -22,6 +22,8 @@ struct TodayWidgetContent {
     let artistID: String?
     /// For a record: what its typographic cover says until the artwork is in.
     var cover: (title: String, artist: String, year: Int)? = nil
+    /// The next days with something, for the large widget's empty space.
+    var upcoming: [(day: Date, line: String)] = []
     let link: URL
     /// The cover or portrait, small and already fetched (widgets can't load images as they draw).
     var image: Data? = nil
@@ -52,11 +54,13 @@ extension JazzLibrary {
         case .born: short = "\(artist?.name ?? "Someone") · born \(String(lead.year))"
         case .died: short = "Remembering \(artist?.name ?? "someone")"
         case .recorded: short = album.map { "\($0.title) · \(String(lead.year))" } ?? "A session in \(String(lead.year))"
+        case .milestone: short = "\(lead.milestone ?? "A turning point") · \(String(lead.year))"
         }
         let link = route(for: lead).flatMap { r -> URL? in
             switch r {
             case .album(let id): return URL(string: "\(DeepLink.scheme)://album/\(id)")
             case .artist(let id): return URL(string: "\(DeepLink.scheme)://artist/\(id)")
+            case .decade(let d): return URL(string: "\(DeepLink.scheme)://decade/\(d)")
             default: return nil
             }
         } ?? URL(string: "\(DeepLink.scheme)://today")!
@@ -65,7 +69,10 @@ extension JazzLibrary {
             line: line(for: lead, on: day, today: near == nil, calendar: calendar), short: short,
             more: events.dropFirst().prefix(3).map { line(for: $0, on: day, today: near == nil, calendar: calendar) },
             tint: tint, initials: album.map { String($0.title.prefix(1)) } ?? artist?.initials ?? "J",
-            albumID: album?.id, artistID: artist?.id, cover: album.map { ($0.title, $0.artistName, $0.year) }, link: link)
+            albumID: album?.id, artistID: artist?.id, cover: album.map { ($0.title, $0.artistName, $0.year) },
+            upcoming: cal.upcoming(from: day, days: 7, calendar: calendar).prefix(3)
+                .map { ($0.date, line(for: $0.event, on: $0.date, today: false, calendar: calendar)) },
+            link: link)
     }
 }
 
@@ -103,15 +110,27 @@ struct TodayWidgetView: View {
                 case .systemLarge:
                     VStack(alignment: .leading, spacing: 10) {
                         ZStack(alignment: .bottomLeading) {
-                            WidgetPicture(content: c).frame(maxWidth: .infinity).frame(height: 148)
-                            DateBadge(date: c.day, size: 84, tint: c.tint).offset(x: 12, y: 44)
+                            WidgetPicture(content: c).frame(maxWidth: .infinity).frame(height: 124)
+                            DateBadge(date: c.day, size: 76, tint: c.tint).offset(x: 12, y: 40)
                         }
-                        .padding(.bottom, 40)
+                        .padding(.bottom, 36)
                         Text(c.label).font(Theme.label(10)).tracking(1.4).foregroundStyle(c.tint).widgetAccentable()
-                        Text(c.line).font(.system(size: 20, weight: .semibold, design: .serif)).foregroundStyle(Theme.cream)
-                            .lineLimit(4).minimumScaleFactor(0.8)
+                        Text(c.line).font(.system(size: 19, weight: .semibold, design: .serif)).foregroundStyle(Theme.cream)
+                            .lineLimit(4).fixedSize(horizontal: false, vertical: true).layoutPriority(2)
                         ForEach(Array(c.more.prefix(2).enumerated()), id: \.offset) { _, line in
                             Text(line).font(.system(size: 13, design: .serif)).foregroundStyle(Theme.cream.opacity(0.7)).lineLimit(2)
+                        }
+                        // Room left: the days ahead.
+                        if c.more.count < 2, !c.upcoming.isEmpty {
+                            Text("COMING UP").font(Theme.label(9)).tracking(1.3).foregroundStyle(Theme.muted).padding(.top, 4)
+                            ForEach(Array(c.upcoming.prefix(2 - c.more.count).enumerated()), id: \.offset) { _, u in
+                                HStack(alignment: .firstTextBaseline, spacing: 8) {
+                                    Text(u.day.formatted(.dateTime.month(.abbreviated).day()).uppercased()).font(Theme.label(9))
+                                        .foregroundStyle(c.tint).widgetAccentable().frame(width: 46, alignment: .leading)
+                                    Text(u.line).font(.system(size: 12, design: .serif)).foregroundStyle(Theme.cream.opacity(0.75))
+                                        .lineLimit(2).fixedSize(horizontal: false, vertical: true)
+                                }
+                            }
                         }
                         Spacer(minLength: 0)
                     }
@@ -197,6 +216,17 @@ struct ContinueWidgetView: View {
             if let p = snapshot?.path {
                 card(label: "ON YOUR PATH", title: p.title, tint: Color(hex: p.tint), done: p.done, total: p.total,
                      count: "Stop \(min(p.done + 1, p.total)) of \(p.total)", next: p.nextTitle, nextLine: p.nextSubtitle)
+                    .overlay(alignment: .bottomTrailing) {
+                        // Plays the next stop in the app, when it's a record or a track.
+                        if p.nextPlayable, family == .systemSmall || family == .systemMedium {
+                            Button(intent: PlayNextStopIntent()) {
+                                Image(systemName: "play.fill").font(.system(size: 13, weight: .bold)).foregroundStyle(Theme.ink)
+                                    .frame(width: 30, height: 30).background(Circle().fill(Color(hex: p.tint))).widgetAccentable()
+                            }
+                            .buttonStyle(.plain)
+                            .accessibilityLabel("Play the next stop")
+                        }
+                    }
             } else if let e = snapshot?.era {
                 card(label: "NEXT STAMP", title: e.name, tint: Color(hex: e.tint), done: e.heard, total: e.total,
                      count: "\(e.heard) of \(e.total) records heard", next: nil, nextLine: "Hear the rest to ink the stamp.")
@@ -233,7 +263,7 @@ struct ContinueWidgetView: View {
                 if let next {
                     Text("NEXT").font(Theme.label(8)).tracking(1.2).foregroundStyle(tint).widgetAccentable()
                     Text(next).font(.system(size: family == .systemSmall ? 13 : 15, weight: .semibold, design: .serif))
-                        .foregroundStyle(Theme.cream).lineLimit(2)
+                        .foregroundStyle(Theme.cream).lineLimit(2).padding(.trailing, snapshot?.path?.nextPlayable == true ? 34 : 0)
                     if family != .systemSmall { Text(nextLine).font(.system(size: 12)).foregroundStyle(Theme.muted).lineLimit(1) }
                 } else {
                     Text(nextLine).font(.system(size: 12, design: .serif)).foregroundStyle(Theme.cream.opacity(0.8))

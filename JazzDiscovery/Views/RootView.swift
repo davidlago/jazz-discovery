@@ -62,6 +62,12 @@ struct RootView: View {
             guard let link = DeepLink(url, library: library) else { return }
             if link == .settings { openSettings() } else { router.open(link) }
         }
+        .onAppear {
+            AppContext.shared.navigate = { [router, library] url in
+                if let link = DeepLink(url, library: library) { router.open(link) }
+            }
+            SpotlightIndex.update(library: library)
+        }
         .overlay(alignment: .top) { ErrorToast() }
     }
 }
@@ -231,6 +237,7 @@ struct SettingsView: View {
         TabView {
             AppleMusicSettings().tabItem { Label("Apple Music", systemImage: "applelogo") }
             LastFMSettings(scrobbler: player.scrobbler).tabItem { Label("Last.fm", systemImage: "dot.radiowaves.left.and.right") }
+            Form { MorningNoteSettings() }.formStyle(.grouped).tabItem { Label("Today in Jazz", systemImage: "calendar") }
         }
         .frame(width: 560)
     }

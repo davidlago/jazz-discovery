@@ -105,7 +105,7 @@ struct AlmanacPage: View {
     var month: Int?
     var day: Int?
     @Environment(PhoneRouter.self) private var router
-    @State private var selected = Calendar.current.dateComponents([.month, .day], from: .now)
+    @State private var selected = Calendar.current.dateComponents([.month, .day], from: Today.date)
 
     var body: some View {
         ScrollView {
