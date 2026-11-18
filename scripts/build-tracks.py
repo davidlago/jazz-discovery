@@ -137,12 +137,16 @@ def main():
         found, album = None, p["album"]
         if album:
             found = on_album(album, p["title"])
+        # A Songbook version names its year and record: only a Crate album that is that record will do.
+        versioned = k.count("|") == 2
+        def wanted(a):
+            return not versioned or (p.get("record") and norm(p["record"]) in norm(a["title"]))
         if not found:
             # On one of the artist's Crate records (earliest first)?
             leader = by_name.get(p["artist"])
             cands = sorted((a for a in data["albums"] if (leader and a["artist"] == leader["id"]) or a["artistName"] == p["artist"]),
                            key=lambda a: a["year"])
-            for a in cands:
+            for a in [a for a in cands if wanted(a)]:
                 found = on_album(a["id"], p["title"])
                 if found:
                     album = a["id"]; break
@@ -150,7 +154,7 @@ def main():
             # A sideman's tune: on a Crate record they're credited on (sessions.json).
             for a in sorted(data["albums"], key=lambda a: a["year"]):
                 people = {c.get("artist") for c in sessions.get(a["id"], {}).get("personnel", [])}
-                if leader["id"] in people:
+                if leader["id"] in people and wanted(a):
                     found = on_album(a["id"], p["title"])
                     if found:
                         album = a["id"]; break

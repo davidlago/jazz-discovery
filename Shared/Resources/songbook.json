@@ -17,7 +17,8 @@
      "artistName": "Bessie Smith",
      "year": 1925,
      "note": "Just voice, Louis Armstrong's cornet and a reed organ: Armstrong answers each line as if he were a second singer.",
-     "landmark": true
+     "landmark": true,
+     "album": "essential-bessie-smith"
     },
     {
      "artist": "louis-armstrong",
@@ -64,7 +65,8 @@
      "year": 1939,
      "note": "Two choruses of improvisation that hint at the melody only in the first bars, then build to a climax: a hit record made of pure invention.",
      "landmark": true,
-     "record": "Body and Soul"
+     "record": "Body and Soul",
+     "album": "hawkins-body-and-soul"
     },
     {
      "artist": "billie-holiday",
@@ -222,7 +224,8 @@
      "artistName": "John Coltrane",
      "year": 1960,
      "note": "Fast and modal, with Coltrane's sheets of sound pouring over a single chord: the lullaby barely survives, on purpose.",
-     "record": "My Favorite Things"
+     "record": "My Favorite Things",
+     "album": "my-favorite-things"
     }
    ]
   },
@@ -295,14 +298,16 @@
      "title": "Ko Ko",
      "year": 1945,
      "note": "Parker's new tune over Cherokee's chords at a breakneck tempo, with Max Roach and Dizzy Gillespie on trumpet: a manifesto for bebop.",
-     "landmark": true
+     "landmark": true,
+     "album": "savoy-dial-master-takes"
     },
     {
      "artist": "clifford-brown",
      "artistName": "Clifford Brown & Max Roach",
      "year": 1955,
      "note": "From Study in Brown: Brown's trumpet runs through the bridge with a clarity and warmth that made it look easy.",
-     "record": "Study in Brown"
+     "record": "Study in Brown",
+     "album": "study-in-brown"
     }
    ]
   },
@@ -339,7 +344,8 @@
      "artistName": "Keith Jarrett",
      "year": 1983,
      "note": "The trio with Gary Peacock and Jack DeJohnette that took standards seriously again: long, singing lines and constant interplay.",
-     "record": "Standards"
+     "record": "Standards",
+     "album": "standards-vol-1"
     }
    ]
   },
@@ -399,7 +405,8 @@
      "artistName": "Duke Ellington",
      "year": 1941,
      "note": "The original, with Ray Nance's trumpet solo, first muted, then open: compact and perfectly paced.",
-     "landmark": true
+     "landmark": true,
+     "album": "blanton-webster-band"
     },
     {
      "artist": "ella-fitzgerald",
@@ -444,7 +451,8 @@
      "artist": "charlie-parker",
      "artistName": "Charlie Parker",
      "year": 1946,
-     "note": "On the famous Dial take, Parker's four-bar alto break is so dense the label issued it on its own as 'The Famous Alto Break'."
+     "note": "On the famous Dial take, Parker's four-bar alto break is so dense the label issued it on its own as 'The Famous Alto Break'.",
+     "album": "savoy-dial-master-takes"
     },
     {
      "artist": "art-blakey",
@@ -494,7 +502,8 @@
      "year": 1947,
      "note": "Monk's own first recording, for Blue Note: the melody with his wrong-sounding right notes, exactly as he meant it.",
      "landmark": true,
-     "record": "Genius of Modern Music"
+     "record": "Genius of Modern Music",
+     "album": "genius-of-modern-music-1"
     },
     {
      "artist": "miles-davis",
@@ -532,7 +541,8 @@
      "year": 1958,
      "note": "From Somethin' Else: a long, brooding vamp introduction, then Miles Davis's muted trumpet on the melody.",
      "landmark": true,
-     "record": "Somethin' Else"
+     "record": "Somethin' Else",
+     "album": "somethin-else"
     },
     {
      "artist": "bill-evans",
@@ -570,7 +580,8 @@
      "year": 1954,
      "note": "Sung softly and almost without vibrato, the trumpet's tone in his voice: the version that made him a star.",
      "landmark": true,
-     "record": "Chet Baker Sings"
+     "record": "Chet Baker Sings",
+     "album": "chet-baker-sings"
     },
     {
      "artist": "ella-fitzgerald",
@@ -614,7 +625,8 @@
      "year": 1960,
      "note": "Fourteen minutes on soprano saxophone over McCoy Tyner's rocking chords and Elvin Jones's waltz.",
      "landmark": true,
-     "record": "My Favorite Things"
+     "record": "My Favorite Things",
+     "album": "my-favorite-things"
     },
     {
      "artist": "john-coltrane",
@@ -650,7 +662,8 @@
      "year": 1959,
      "note": "Desmond's dry, light alto over Brubeck's two-chord vamp, and Morello's drum solo in five.",
      "landmark": true,
-     "record": "Time Out"
+     "record": "Time Out",
+     "album": "time-out"
     },
     {
      "artist": null,
@@ -691,7 +704,8 @@
      "year": 1963,
      "note": "João sings in Portuguese, Astrud in English, Getz's tenor floats over the guitar's bossa rhythm.",
      "landmark": true,
-     "record": "Getz/Gilberto"
+     "record": "Getz/Gilberto",
+     "album": "getz-gilberto"
     },
     {
      "artist": null,
@@ -734,7 +748,8 @@
      "year": 1966,
      "note": "From Miles Smiles: Tony Williams pulls the 6/4 into four and back, the time breathing under the solos.",
      "landmark": true,
-     "record": "Miles Smiles"
+     "record": "Miles Smiles",
+     "album": "miles-smiles"
     },
     {
      "artist": "wayne-shorter",
@@ -839,7 +854,8 @@
      "year": 1959,
      "note": "Alto and Don Cherry's cornet in a slightly ragged unison, over Billy Higgins's brisk drums and Charlie Haden's bass drone.",
      "landmark": true,
-     "record": "The Shape of Jazz to Come"
+     "record": "The Shape of Jazz to Come",
+     "album": "the-shape-of-jazz-to-come"
     },
     {
      "artist": null,
@@ -897,7 +913,8 @@
      "artistName": "Robert Glasper Experiment",
      "year": 2012,
      "note": "From Black Radio, with Erykah Badu singing over a slow, hip-hop-tinged groove.",
-     "record": "Black Radio"
+     "record": "Black Radio",
+     "album": "black-radio"
     }
    ]
   },
@@ -925,14 +942,16 @@
      "artist": "mongo-santamaria",
      "artistName": "Mongo Santamaría",
      "year": 1963,
-     "note": "Congas and a cha-cha-style groove: the version that reached the pop charts."
+     "note": "Congas and a cha-cha-style groove: the version that reached the pop charts.",
+     "album": "watermelon-man"
     },
     {
      "artist": "herbie-hancock",
      "artistName": "Herbie Hancock",
      "year": 1973,
      "note": "From Head Hunters: Bill Summers blowing into a beer bottle, then a slow funk groove with synthesizers.",
-     "record": "Head Hunters"
+     "record": "Head Hunters",
+     "album": "head-hunters"
     }
    ]
   },
@@ -1007,7 +1026,8 @@
      "artist": "charlie-parker",
      "artistName": "Charlie Parker",
      "year": 1946,
-     "note": "The Dial session recorded the night he collapsed: unsteady and painfully moving."
+     "note": "The Dial session recorded the night he collapsed: unsteady and painfully moving.",
+     "album": "savoy-dial-master-takes"
     }
    ]
   },
@@ -1031,7 +1051,8 @@
      "year": 1959,
      "note": "From Mingus Ah Um: John Handy's tenor carries the lament over the band's slow, dragging beat.",
      "landmark": true,
-     "record": "Mingus Ah Um"
+     "record": "Mingus Ah Um",
+     "album": "mingus-ah-um"
     },
     {
      "artist": null,
@@ -1081,7 +1102,8 @@
      "year": 1956,
      "note": "From her Cole Porter Songbook: the verse and the refrain, sung with perfect diction.",
      "landmark": true,
-     "record": "Cole Porter Song Book"
+     "record": "Cole Porter Song Book",
+     "album": "ella-cole-porter"
     },
     {
      "artist": "bill-evans",
