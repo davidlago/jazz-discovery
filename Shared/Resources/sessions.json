@@ -1931,20 +1931,404 @@
   ]
  },
  "bix-singin-the-blues": {
-  "reviewed": false,
-  "source": "musicbrainz:release/633c8e14-a2f0-4b79-a6c7-2a4d0195bf59",
+  "reviewed": true,
+  "source": "bixbeiderbecke.com: Bix discography 1927 (sessions 16-28), checked against the CK 45450 booklet credits (Discogs release 1443226)",
   "mbReleaseGroup": "b48a1c77-dd24-349f-ab19-038fa3199e55",
-  "edition": "?",
-  "tracks": [
-   "I Need Some Pettin'",
-   "Royal Garden Blues",
-   "Tiger Rag",
-   "Sensation (Rag)",
-   "Lazy Daddy (Take A)"
+  "edition": "1990 Columbia Jazz Masterpieces CK 45450",
+  "recorded": [
+   {
+    "date": "1927-02-04",
+    "place": "OKeh's New York studio, Union Square"
+   },
+   {
+    "date": "1927-05-09",
+    "place": "OKeh's New York studio"
+   },
+   {
+    "date": "1927-05-13",
+    "place": "OKeh's New York studio"
+   },
+   {
+    "date": "1927-08-25",
+    "place": "OKeh's New York studio"
+   },
+   {
+    "date": "1927-09",
+    "place": "OKeh's New York studio"
+   },
+   {
+    "date": "1927-09-17",
+    "place": "OKeh's New York studio"
+   },
+   {
+    "date": "1927-09-28",
+    "place": "OKeh's New York studio"
+   },
+   {
+    "date": "1927-09-29",
+    "place": "Columbia's New York studio, 1819 Broadway"
+   },
+   {
+    "date": "1927-09-30",
+    "place": "OKeh's New York studio"
+   }
   ],
-  "personnel": [],
+  "tracks": [
+   "Trumbology",
+   "Clarinet Marmalade",
+   "Singin' the Blues",
+   "Ostrich Walk",
+   "Riverboat Shuffle",
+   "I'm Coming Virginia",
+   "Way Down Yonder In New Orleans",
+   "For No Reason at All In C",
+   "Three Blind Mice (Rhythmic Theme In Advanced Harmony)",
+   "Blue River",
+   "There's a Cradle In Caroline!",
+   "In a Mist",
+   "Wringin' and Twistin'",
+   "Humpty Dumpty",
+   "Krazy Kat",
+   "(The) Baltimore",
+   "There Ain't No Land Like Dixieland to Me",
+   "There's a Cradle In Caroline!",
+   "Just an Hour of Love",
+   "I'm Wonderin' Who"
+  ],
+  "personnel": [
+   {
+    "artist": "bix-beiderbecke",
+    "name": "Bix Beiderbecke",
+    "instruments": [
+     "cornet",
+     "piano"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Hymie Farberman",
+    "instruments": [
+     "trumpet"
+    ],
+    "only": [
+     "There Ain't No Land Like Dixieland to Me",
+     "There's a Cradle In Caroline!"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Bill Rank",
+    "instruments": [
+     "trombone"
+    ],
+    "except": [
+     "Singin' the Blues",
+     "For No Reason at All In C",
+     "In a Mist",
+     "Wringin' and Twistin'"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Miff Mole",
+    "instruments": [
+     "trombone"
+    ],
+    "only": [
+     "Singin' the Blues"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Joe Tarto",
+    "instruments": [
+     "tuba"
+    ],
+    "only": [
+     "There Ain't No Land Like Dixieland to Me",
+     "There's a Cradle In Caroline!"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Frank Trumbauer",
+    "instruments": [
+     "C-melody saxophone",
+     "alto saxophone"
+    ],
+    "except": [
+     "In a Mist"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Jimmy Dorsey",
+    "instruments": [
+     "clarinet",
+     "alto saxophone"
+    ],
+    "only": [
+     "Trumbology",
+     "Clarinet Marmalade",
+     "Singin' the Blues"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Doc Ryker",
+    "instruments": [
+     "alto saxophone"
+    ],
+    "only": [
+     "Ostrich Walk",
+     "Riverboat Shuffle",
+     "I'm Coming Virginia",
+     "Way Down Yonder In New Orleans",
+     "Three Blind Mice (Rhythmic Theme In Advanced Harmony)",
+     "Blue River",
+     "There's a Cradle In Caroline!"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Bobby Davis",
+    "instruments": [
+     "alto saxophone"
+    ],
+    "only": [
+     "Humpty Dumpty",
+     "Krazy Kat",
+     "(The) Baltimore",
+     "There Ain't No Land Like Dixieland to Me",
+     "There's a Cradle In Caroline!",
+     "Just an Hour of Love",
+     "I'm Wonderin' Who"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Don Murray",
+    "instruments": [
+     "clarinet",
+     "tenor saxophone",
+     "baritone saxophone"
+    ],
+    "only": [
+     "Ostrich Walk",
+     "Riverboat Shuffle",
+     "I'm Coming Virginia",
+     "Way Down Yonder In New Orleans",
+     "Three Blind Mice (Rhythmic Theme In Advanced Harmony)",
+     "Blue River",
+     "There's a Cradle In Caroline!",
+     "Humpty Dumpty",
+     "Krazy Kat",
+     "(The) Baltimore",
+     "There Ain't No Land Like Dixieland to Me",
+     "There's a Cradle In Caroline!",
+     "Just an Hour of Love",
+     "I'm Wonderin' Who"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Adrian Rollini",
+    "instruments": [
+     "bass saxophone"
+    ],
+    "only": [
+     "Three Blind Mice (Rhythmic Theme In Advanced Harmony)",
+     "Blue River",
+     "There's a Cradle In Caroline!",
+     "Humpty Dumpty",
+     "Krazy Kat",
+     "(The) Baltimore",
+     "Just an Hour of Love",
+     "I'm Wonderin' Who"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Joe Venuti",
+    "instruments": [
+     "violin"
+    ],
+    "only": [
+     "Humpty Dumpty",
+     "Krazy Kat",
+     "(The) Baltimore",
+     "There Ain't No Land Like Dixieland to Me",
+     "There's a Cradle In Caroline!",
+     "Just an Hour of Love",
+     "I'm Wonderin' Who"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Eddie Lang",
+    "instruments": [
+     "guitar",
+     "banjo"
+    ],
+    "only": [
+     "Singin' the Blues",
+     "Ostrich Walk",
+     "Riverboat Shuffle",
+     "I'm Coming Virginia",
+     "Way Down Yonder In New Orleans",
+     "For No Reason at All In C",
+     "Three Blind Mice (Rhythmic Theme In Advanced Harmony)",
+     "Blue River",
+     "There's a Cradle In Caroline!",
+     "Wringin' and Twistin'",
+     "Humpty Dumpty",
+     "Krazy Kat",
+     "(The) Baltimore"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Paul Mertz",
+    "instruments": [
+     "piano"
+    ],
+    "only": [
+     "Trumbology",
+     "Clarinet Marmalade",
+     "Singin' the Blues"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Irving Riskin",
+    "instruments": [
+     "piano"
+    ],
+    "only": [
+     "Ostrich Walk",
+     "Riverboat Shuffle",
+     "I'm Coming Virginia",
+     "Way Down Yonder In New Orleans",
+     "Three Blind Mice (Rhythmic Theme In Advanced Harmony)",
+     "Blue River",
+     "There's a Cradle In Caroline!"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Frank Signorelli",
+    "instruments": [
+     "piano"
+    ],
+    "only": [
+     "Humpty Dumpty",
+     "Krazy Kat",
+     "(The) Baltimore",
+     "There Ain't No Land Like Dixieland to Me",
+     "There's a Cradle In Caroline!",
+     "Just an Hour of Love",
+     "I'm Wonderin' Who"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Howdy Quicksell",
+    "instruments": [
+     "banjo"
+    ],
+    "only": [
+     "Trumbology",
+     "Clarinet Marmalade"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "John Cali",
+    "instruments": [
+     "banjo"
+    ],
+    "only": [
+     "There Ain't No Land Like Dixieland to Me",
+     "There's a Cradle In Caroline!"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Chauncey Morehouse",
+    "instruments": [
+     "drums"
+    ],
+    "only": [
+     "Trumbology",
+     "Clarinet Marmalade",
+     "Singin' the Blues",
+     "Ostrich Walk",
+     "Riverboat Shuffle",
+     "I'm Coming Virginia",
+     "Way Down Yonder In New Orleans",
+     "Three Blind Mice (Rhythmic Theme In Advanced Harmony)",
+     "Blue River",
+     "There's a Cradle In Caroline!",
+     "Humpty Dumpty",
+     "Krazy Kat",
+     "(The) Baltimore",
+     "Just an Hour of Love",
+     "I'm Wonderin' Who"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Vic Berton",
+    "instruments": [
+     "drums"
+    ],
+    "only": [
+     "There Ain't No Land Like Dixieland to Me",
+     "There's a Cradle In Caroline!"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Sam Lanin",
+    "instruments": [
+     "cymbal"
+    ],
+    "only": [
+     "There Ain't No Land Like Dixieland to Me",
+     "There's a Cradle In Caroline!"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Seger Ellis",
+    "instruments": [
+     "vocals"
+    ],
+    "only": [
+     "Blue River",
+     "There's a Cradle In Caroline!"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Irving Kaufman",
+    "instruments": [
+     "vocals"
+    ],
+    "only": [
+     "There Ain't No Land Like Dixieland to Me",
+     "There's a Cradle In Caroline!",
+     "Just an Hour of Love",
+     "I'm Wonderin' Who"
+    ]
+   }
+  ],
   "draftNotes": [
-   "MusicBrainz matched a 5-track record; no source found yet for the 20 OKeh sides on Apple Music's edition."
+   "Hand-written from bixbeiderbecke.com's 1927 sessionography (matrix numbers, studios, solo orders), checked against the CD booklet as transcribed on Discogs. Nine sessions, all in New York: Frank Trumbauer and His Orchestra (Feb 4, May 9, May 13, Aug 25, Sep 28), Tram, Bix and Eddie / Lang (May 13, Sep 17), In a Mist (Bix alone, September), the Broadway Bell-Hops for Harmony (Sep 29), and Trumbauer's band issued on OKeh 40912 as \"Benny Meroff and His Orchestra\" (Sep 30).",
+   "Trumbology has Bix (short breaks) and Howdy Quicksell on banjo, not Eddie Lang, whatever the Apple credit says. On Singin' the Blues Lang replaces Quicksell and Miff Mole replaces Bill Rank (Melody Maker 1934, Trumbauer in Rhythm 1939).",
+   "Left out as unconfirmed: Doc Ryker on the February sides (the booklet has him, the sessionography doesn't); Howdy Quicksell on the May sides (the booklet has him, the sessionography has Lang on guitar and banjo and documents his breaks); the second trumpet (Sylvester Ahola or Frank Cush) and the banjo (Lang, who Ahola's diary says was ill from Sep 30) on Just an Hour of Love and I'm Wonderin' Who.",
+   "In a Mist is dated September 8 by the sessionography and September 9 by the booklet and Wikipedia, so only the month is kept.",
+   "The two versions of There's a Cradle in Caroline (Trumbauer, Aug 25, Seger Ellis singing; Broadway Bell-Hops, Sep 29, Irving Kaufman singing) share a title, and credits are matched by title, so each version's players show on both."
   ]
  },
  "black-codes": {
@@ -11659,27 +12043,310 @@
   ]
  },
  "watermelon-man": {
-  "reviewed": false,
-  "source": "musicbrainz:release/224a0cfa-6341-4ec9-a8b6-affdcdc332ac",
+  "reviewed": true,
+  "source": "Jazzdisco: Riverside/Battle discography 1962 (current and 2013 versions), checked against the Milestone MCD-47075-2 credits (Discogs releases 3091977, 5539596)",
   "mbReleaseGroup": "ff9b84e9-6586-4fd4-869d-3fba2bda3878",
-  "edition": "1963 US",
+  "edition": "1998 Milestone MCD-47075-2",
+  "recorded": [
+   {
+    "date": "1962-12-17",
+    "place": "Plaza Sound Studios, New York"
+   },
+   {
+    "date": "1963-02-18",
+    "place": "Plaza Sound Studios, New York"
+   },
+   {
+    "date": "1963-02-20",
+    "place": "Plaza Sound Studios, New York"
+   },
+   {
+    "date": "1962",
+    "place": "The Blackhawk, San Francisco"
+   }
+  ],
   "tracks": [
    "Watermelon Man",
    "Funny Money",
-   "Cut That Cane!",
-   "Get the Monkey",
-   "The Boogie Cha Cha Blues",
-   "Don’t Bother Me No More",
+   "Cut That Cane",
+   "Get the Money",
+   "The Boogie Cha-Cha Blues",
+   "Don't Bother Me No More",
    "Love, Oh Love",
-   "Yeh-Yeh!",
+   "Yeh-Yeh",
    "The Peanut Vendor",
-   "Go Git It!",
+   "Go Git It !",
    "Bayou Roots",
-   "Suavito"
+   "Suavito",
+   "Guaguancó Mania (Live)",
+   "A Little Dab'll Do Ya (Live)",
+   "Que Maravillosa (Live)",
+   "I'll Remember April (Live)",
+   "Afro Blue (Live)",
+   "Mazacôté (Live)"
   ],
-  "personnel": [],
+  "personnel": [
+   {
+    "artist": "mongo-santamaria",
+    "name": "Mongo Santamaría",
+    "instruments": [
+     "congas",
+     "bongos"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Marty Sheller",
+    "instruments": [
+     "trumpet"
+    ],
+    "except": [
+     "Guaguancó Mania (Live)",
+     "A Little Dab'll Do Ya (Live)",
+     "Que Maravillosa (Live)",
+     "I'll Remember April (Live)",
+     "Afro Blue (Live)",
+     "Mazacôté (Live)"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Pat Patrick",
+    "instruments": [
+     "alto saxophone",
+     "flute"
+    ],
+    "except": [
+     "Guaguancó Mania (Live)",
+     "A Little Dab'll Do Ya (Live)",
+     "Que Maravillosa (Live)",
+     "I'll Remember April (Live)",
+     "Afro Blue (Live)",
+     "Mazacôté (Live)"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Bobby Capers",
+    "instruments": [
+     "tenor saxophone",
+     "flute"
+    ],
+    "except": [
+     "Guaguancó Mania (Live)",
+     "A Little Dab'll Do Ya (Live)",
+     "Que Maravillosa (Live)",
+     "I'll Remember April (Live)",
+     "Afro Blue (Live)",
+     "Mazacôté (Live)"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "José \"Chombo\" Silva",
+    "instruments": [
+     "tenor saxophone"
+    ],
+    "only": [
+     "Guaguancó Mania (Live)",
+     "A Little Dab'll Do Ya (Live)",
+     "Que Maravillosa (Live)",
+     "I'll Remember April (Live)",
+     "Afro Blue (Live)",
+     "Mazacôté (Live)"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Mauricio Smith",
+    "instruments": [
+     "flute"
+    ],
+    "only": [
+     "The Boogie Cha-Cha Blues",
+     "Suavito"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Rolando Lozano",
+    "instruments": [
+     "flute"
+    ],
+    "only": [
+     "Guaguancó Mania (Live)",
+     "A Little Dab'll Do Ya (Live)",
+     "Que Maravillosa (Live)",
+     "I'll Remember April (Live)",
+     "Afro Blue (Live)",
+     "Mazacôté (Live)"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Félix \"Pupi\" Legarreta",
+    "instruments": [
+     "violin"
+    ],
+    "only": [
+     "Guaguancó Mania (Live)",
+     "A Little Dab'll Do Ya (Live)",
+     "Que Maravillosa (Live)",
+     "I'll Remember April (Live)",
+     "Afro Blue (Live)",
+     "Mazacôté (Live)"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Rodgers Grant",
+    "instruments": [
+     "piano"
+    ],
+    "except": [
+     "Guaguancó Mania (Live)",
+     "A Little Dab'll Do Ya (Live)",
+     "Que Maravillosa (Live)",
+     "I'll Remember April (Live)",
+     "Afro Blue (Live)",
+     "Mazacôté (Live)"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "René \"El Látigo\" Hernández",
+    "instruments": [
+     "piano"
+    ],
+    "only": [
+     "Guaguancó Mania (Live)",
+     "A Little Dab'll Do Ya (Live)",
+     "Que Maravillosa (Live)",
+     "I'll Remember April (Live)",
+     "Afro Blue (Live)",
+     "Mazacôté (Live)"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Victor Venegas",
+    "instruments": [
+     "bass"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Ray Lucas",
+    "instruments": [
+     "drums"
+    ],
+    "except": [
+     "Watermelon Man",
+     "Don't Bother Me No More",
+     "Guaguancó Mania (Live)",
+     "A Little Dab'll Do Ya (Live)",
+     "Que Maravillosa (Live)",
+     "I'll Remember April (Live)",
+     "Afro Blue (Live)",
+     "Mazacôté (Live)"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Willie Bobo",
+    "instruments": [
+     "timbales"
+    ],
+    "only": [
+     "Guaguancó Mania (Live)",
+     "A Little Dab'll Do Ya (Live)",
+     "Que Maravillosa (Live)",
+     "I'll Remember April (Live)",
+     "Afro Blue (Live)",
+     "Mazacôté (Live)"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Joseph Gorgas",
+    "instruments": [
+     "percussion"
+    ],
+    "except": [
+     "Guaguancó Mania (Live)",
+     "A Little Dab'll Do Ya (Live)",
+     "Que Maravillosa (Live)",
+     "I'll Remember April (Live)",
+     "Afro Blue (Live)",
+     "Mazacôté (Live)"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Francisco \"Kako\" Bastar",
+    "instruments": [
+     "percussion"
+    ],
+    "except": [
+     "Guaguancó Mania (Live)",
+     "A Little Dab'll Do Ya (Live)",
+     "Que Maravillosa (Live)",
+     "I'll Remember April (Live)",
+     "Afro Blue (Live)",
+     "Mazacôté (Live)"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Osvaldo \"Chihuahua\" Martínez",
+    "instruments": [
+     "percussion",
+     "vocals"
+    ],
+    "except": [
+     "Guaguancó Mania (Live)",
+     "A Little Dab'll Do Ya (Live)",
+     "Que Maravillosa (Live)",
+     "I'll Remember April (Live)",
+     "Afro Blue (Live)",
+     "Mazacôté (Live)"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Nicholas \"Cuco\" Martínez",
+    "instruments": [
+     "percussion"
+    ],
+    "only": [
+     "Guaguancó Mania (Live)",
+     "A Little Dab'll Do Ya (Live)",
+     "Que Maravillosa (Live)",
+     "I'll Remember April (Live)",
+     "Afro Blue (Live)",
+     "Mazacôté (Live)"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Rudy Calzado",
+    "instruments": [
+     "vocals"
+    ],
+    "only": [
+     "Guaguancó Mania (Live)",
+     "A Little Dab'll Do Ya (Live)",
+     "Que Maravillosa (Live)",
+     "I'll Remember April (Live)",
+     "Afro Blue (Live)",
+     "Mazacôté (Live)"
+    ]
+   }
+  ],
   "draftNotes": [
-   "No source found yet for the studio band (liner notes needed)."
+   "Hand-written from jazzdisco.org's Battle listing and the Milestone CD credits. The single, Watermelon Man and Don't Bother Me No More (Battle 45909), is from December 17, 1962; the other ten studio tracks from February 18 and 20, 1963, all at Plaza Sound. Mauricio Smith's flute is on The Boogie Cha-Cha Blues and Suavito; Mongo plays bongo on Yeh-Yeh.",
+   "The drummer on the single is disputed: the CD credits and jazzdisco's older listing have Frank Hernandez and Kalil Madi, the current jazzdisco listing and Gerard's Music from Cuba have Ray Lucas, so nobody is credited on drums for those two tracks. La Lupe's vocal effects on Watermelon Man are on the CD credits only and are left out.",
+   "The six live bonus tracks are Mongo's earlier band at the Blackhawk, San Francisco, dated 1962 by both sources with no day."
   ]
  },
  "wave": {

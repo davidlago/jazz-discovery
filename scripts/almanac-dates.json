@@ -1,0 +1,37 @@
+{
+ "about": "Hand-gathered exact dates for scripts/build-almanac.py, each with its source. Releases: the first release of a Crate album, kept only when the day is documented (Wikidata publication date with day precision, or two agreeing sources such as the label, the Wikipedia infobox and MusicBrainz); month-only and conflicting dates are left out, as are the release dates of later compilations and reissues. Milestones: jazz.json milestones (by title) with a documented day; one with a Crate album becomes a 'recorded' event on that album with its hand-written line, one without an album is 'held' until the app has a milestone kind.",
+ "releases": [
+  {"album": "ella-cole-porter", "date": "1956-05-15", "source": "Wikidata Q1317668 publication date (day precision); Wikipedia infobox agrees (MusicBrainz has only 1956-09)"},
+  {"album": "miles-ahead", "date": "1957-10-21", "source": "Wikidata Q953618 publication date (day precision); Wikipedia infobox, citing milesdavis.com"},
+  {"album": "kind-of-blue", "date": "1959-08-17", "source": "Wikidata Q283221 publication date (day precision); Wikipedia infobox and MusicBrainz agree"},
+  {"album": "time-out", "date": "1959-12-14", "source": "Wikidata Q498089 publication date (day precision); Wikipedia infobox agrees"},
+  {"album": "maiden-voyage", "date": "1965-05-17", "source": "Wikidata Q908746 publication date (day precision); Wikipedia infobox and MusicBrainz agree"},
+  {"album": "bitches-brew", "date": "1970-03-30", "source": "Wikidata Q804096 publication date (day precision)"},
+  {"album": "wish", "date": "1993-09-21", "source": "Wikipedia infobox and MusicBrainz release group 8e14116f-2f6a-3ed0-8903-ea261716f007 agree"},
+  {"album": "black-radio", "date": "2012-02-28", "source": "Blue Note's release announcement (Nov 2011) and AllMusic; Wikipedia infobox agrees (MusicBrainz has 2012-02-22)"},
+  {"album": "we-like-it-here", "date": "2014-02-25", "source": "Wikipedia infobox and MusicBrainz release group fcf368c7-9ce7-487e-bd95-14543f6764cd agree"},
+  {"album": "the-epic", "date": "2015-05-05", "source": "Wikipedia infobox and MusicBrainz release group fffaa737-94cb-42b9-b1f1-44698110ea8a agree (some UK retailers list May 4)"},
+  {"album": "emilys-d-evolution", "date": "2016-03-04", "source": "Wikidata Q23647067 publication date (day precision)"},
+  {"album": "universal-beings", "date": "2018-10-26", "source": "Wikipedia infobox and MusicBrainz release group 02bc86ec-e917-4cda-bd15-ffe65e10511a agree (Wikidata has 2018-10-24)"},
+  {"album": "source", "date": "2020-08-21", "source": "Wikidata Q99292197 publication date (day precision); Wikipedia infobox and MusicBrainz agree"},
+  {"album": "perceive-its-beauty", "date": "2024-04-12", "source": "Wikidata Q124739762 publication date (day precision); Wikipedia infobox and MusicBrainz agree"}
+ ],
+ "milestones": [
+  {"milestone": "The first jazz record", "date": "1917-02-26", "held": true, "source": "Wikipedia, Livery Stable Blues: recorded by the Original Dixieland Jass Band on February 26, 1917"},
+  {"milestone": "\"Crazy Blues\" sells big", "date": "1920-08-10", "held": true, "source": "Wikipedia, Crazy Blues: Mamie Smith and Her Jazz Hounds recorded it on August 10, 1920"},
+  {"milestone": "The Hot Five's first session", "date": "1925-11-12", "album": "hot-five-hot-seven", "line": "On this day in 1925, Louis Armstrong cut his first Hot Five sides in Chicago, the records that made the improvising soloist jazz's main event.", "source": "Wikipedia, Louis Armstrong and His Hot Five: the first sides were recorded on November 12, 1925, at OKeh's Chicago studio"},
+  {"milestone": "Ellington at the Cotton Club", "date": "1927-12-04", "held": true, "source": "Wikipedia, Cotton Club: Ellington's orchestra was the house band from December 4, 1927"},
+  {"milestone": "\"West End Blues\"", "date": "1928-06-28", "album": "hot-five-hot-seven", "line": "On this day in 1928, Louis Armstrong and His Hot Five recorded West End Blues, opening cadenza and all.", "source": "Wikipedia, West End Blues: made by Louis Armstrong and His Hot Five on June 28, 1928"},
+  {"milestone": "Swing explodes at the Palomar", "date": "1935-08-21", "held": true, "source": "Wikipedia, Palomar Ballroom: Benny Goodman began his first Palomar engagement on August 21, 1935"},
+  {"milestone": "\"Body and Soul\"", "date": "1939-10-11", "album": "hawkins-body-and-soul", "line": "On this day in 1939, Coleman Hawkins recorded Body and Soul, a ballad improvisation so bold it became an unlikely hit.", "source": "Wikipedia, Body and Soul (1930 song): recorded by Coleman Hawkins and His Orchestra on October 11, 1939"},
+  {"milestone": "Bebop on record", "date": "1945-11-26", "album": "savoy-dial-master-takes", "line": "On this day in 1945, Charlie Parker's first Savoy session as a leader gave the world Ko-Ko and Now's the Time.", "source": "Wikipedia, Ko-Ko: recorded November 26, 1945, at WOR Studios, New York"},
+  {"milestone": "Bossa nova's first record", "date": "1958-07-10", "album": "chega-de-saudade", "line": "On this day in 1958, João Gilberto recorded Chega de Saudade at Odeon in Rio, bossa nova's first record.", "source": "Estado de Minas/UAI, 'Primeira gravação da Bossa Nova completa 60 anos' (July 10, 2018); Milenio, 'La bossa nova cumple 60 años'"},
+  {"milestone": "Bossa nova conquers the world", "date": "1965-04-13", "album": "getz-gilberto", "line": "On this day in 1965, Getz/Gilberto won the Grammy for Album of the Year.", "source": "Wikipedia, 7th Annual Grammy Awards: held April 13, 1965; Album of the Year, Getz/Gilberto"},
+  {"milestone": "The Köln Concert", "date": "1975-01-24", "held": true, "source": "Wikipedia, The Köln Concert: recorded at the Opera House in Cologne on 24 January 1975"},
+  {"milestone": "Wynton's double Grammy", "date": "1984-02-28", "held": true, "source": "Wikipedia, 26th Annual Grammy Awards: held February 28, 1984; Marsalis won jazz and classical soloist awards"},
+  {"milestone": "Ken Burns's Jazz", "date": "2001-01-08", "held": true, "source": "Wikipedia, Jazz (miniseries): first aired on PBS on January 8, 2001"},
+  {"milestone": "Herbie's Album of the Year", "date": "2008-02-10", "held": true, "source": "Wikipedia, 50th Annual Grammy Awards: held February 10, 2008; Album of the Year, River: The Joni Letters"},
+  {"milestone": "Esperanza is Best New Artist", "date": "2011-02-13", "held": true, "source": "Wikipedia, 53rd Annual Grammy Awards: held February 13, 2011; Best New Artist, Esperanza Spalding"},
+  {"milestone": "Black Radio wins R&B Grammy", "date": "2013-02-10", "album": "black-radio", "line": "On this day in 2013, the Robert Glasper Experiment's Black Radio won the Grammy for Best R&B Album.", "source": "Wikipedia, 55th Annual Grammy Awards: held February 10, 2013; Best R&B Album, Black Radio"}
+ ]
+}

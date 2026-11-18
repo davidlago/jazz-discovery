@@ -644,6 +644,12 @@
   ],
   "02-04": [
    {
+    "album": "bix-singin-the-blues",
+    "kind": "recorded",
+    "place": "OKeh's New York studio, Union Square",
+    "year": 1927
+   },
+   {
     "artist": "j-j-johnson",
     "kind": "died",
     "year": 2001
@@ -688,6 +694,14 @@
     "year": 2021
    }
   ],
+  "02-10": [
+   {
+    "album": "black-radio",
+    "kind": "recorded",
+    "line": "On this day in 2013, the Robert Glasper Experiment's Black Radio won the Grammy for Best R&B Album.",
+    "year": 2013
+   }
+  ],
   "02-14": [
    {
     "album": "karma",
@@ -725,6 +739,12 @@
   ],
   "02-18": [
    {
+    "album": "watermelon-man",
+    "kind": "recorded",
+    "place": "Plaza Sound Studios, New York",
+    "year": 1963
+   },
+   {
     "artist": "kamasi-washington",
     "kind": "born",
     "year": 1981
@@ -741,6 +761,14 @@
     "artist": "lee-morgan",
     "kind": "died",
     "year": 1972
+   }
+  ],
+  "02-20": [
+   {
+    "album": "watermelon-man",
+    "kind": "recorded",
+    "place": "Plaza Sound Studios, New York",
+    "year": 1963
    }
   ],
   "02-21": [
@@ -789,6 +817,12 @@
     "kind": "recorded",
     "place": "Van Gelder Studio",
     "year": 1964
+   },
+   {
+    "album": "we-like-it-here",
+    "kind": "recorded",
+    "line": "On this day in 2014, Snarky Puppy released We Like It Here on GroundUP.",
+    "year": 2014
    }
   ],
   "02-27": [
@@ -796,6 +830,14 @@
     "artist": "dexter-gordon",
     "kind": "born",
     "year": 1923
+   }
+  ],
+  "02-28": [
+   {
+    "album": "black-radio",
+    "kind": "recorded",
+    "line": "On this day in 2012, Robert Glasper Experiment released Black Radio on Blue Note.",
+    "year": 2012
    }
   ],
   "03-01": [
@@ -816,6 +858,14 @@
     "artist": "wayne-shorter",
     "kind": "died",
     "year": 2023
+   }
+  ],
+  "03-04": [
+   {
+    "album": "emilys-d-evolution",
+    "kind": "recorded",
+    "line": "On this day in 2016, Esperanza Spalding released Emily's D+Evolution on Concord.",
+    "year": 2016
    }
   ],
   "03-06": [
@@ -949,6 +999,14 @@
     "year": 2001
    }
   ],
+  "03-30": [
+   {
+    "album": "bitches-brew",
+    "kind": "recorded",
+    "line": "On this day in 1970, Miles Davis released Bitches Brew on Columbia.",
+    "year": 1970
+   }
+  ],
   "03-31": [
    {
     "artist": "freddie-green",
@@ -1029,6 +1087,12 @@
   ],
   "04-12": [
    {
+    "album": "perceive-its-beauty",
+    "kind": "recorded",
+    "line": "On this day in 2024, Shabaka released Perceive Its Beauty, Acknowledge Its Grace on Impulse!",
+    "year": 2024
+   },
+   {
     "artist": "johnny-dodds",
     "kind": "born",
     "year": 1892
@@ -1042,6 +1106,14 @@
     "artist": "wynton-kelly",
     "kind": "died",
     "year": 1971
+   }
+  ],
+  "04-13": [
+   {
+    "album": "getz-gilberto",
+    "kind": "recorded",
+    "line": "On this day in 1965, Getz/Gilberto won the Grammy for Album of the Year.",
+    "year": 1965
    }
   ],
   "04-15": [
@@ -1220,6 +1292,12 @@
     "kind": "recorded",
     "place": "Columbia 30th Street Studio, New York",
     "year": 1959
+   },
+   {
+    "album": "the-epic",
+    "kind": "recorded",
+    "line": "On this day in 2015, Kamasi Washington released The Epic on Brainfeeder.",
+    "year": 2015
    }
   ],
   "05-06": [
@@ -1235,6 +1313,14 @@
     "artist": "keith-jarrett",
     "kind": "born",
     "year": 1945
+   }
+  ],
+  "05-09": [
+   {
+    "album": "bix-singin-the-blues",
+    "kind": "recorded",
+    "place": "OKeh's New York studio",
+    "year": 1927
    }
   ],
   "05-10": [
@@ -1267,6 +1353,12 @@
   ],
   "05-13": [
    {
+    "album": "bix-singin-the-blues",
+    "kind": "recorded",
+    "place": "OKeh's New York studio",
+    "year": 1927
+   },
+   {
     "artist": "gil-evans",
     "kind": "born",
     "year": 1912
@@ -1295,6 +1387,12 @@
     "kind": "recorded",
     "place": "Massey Hall, Toronto",
     "year": 1953
+   },
+   {
+    "album": "ella-cole-porter",
+    "kind": "recorded",
+    "line": "On this day in 1956, Ella Fitzgerald released Ella Fitzgerald Sings the Cole Porter Song Book on Verve.",
+    "year": 1956
    }
   ],
   "05-16": [
@@ -1302,6 +1400,14 @@
     "artist": "django-reinhardt",
     "kind": "died",
     "year": 1953
+   }
+  ],
+  "05-17": [
+   {
+    "album": "maiden-voyage",
+    "kind": "recorded",
+    "line": "On this day in 1965, Herbie Hancock released Maiden Voyage on Blue Note.",
+    "year": 1965
    }
   ],
   "05-18": [
@@ -1536,6 +1642,14 @@
     "year": 1956
    }
   ],
+  "06-28": [
+   {
+    "album": "hot-five-hot-seven",
+    "kind": "recorded",
+    "line": "On this day in 1928, Louis Armstrong and His Hot Five recorded West End Blues, opening cadenza and all.",
+    "year": 1928
+   }
+  ],
   "06-29": [
    {
     "artist": "eric-dolphy",
@@ -1607,6 +1721,12 @@
    }
   ],
   "07-10": [
+   {
+    "album": "chega-de-saudade",
+    "kind": "recorded",
+    "line": "On this day in 1958, João Gilberto recorded Chega de Saudade at Odeon in Rio, bossa nova's first record.",
+    "year": 1958
+   },
    {
     "album": "spiritual-unity",
     "kind": "recorded",
@@ -1772,6 +1892,14 @@
     "year": 2007
    }
   ],
+  "08-17": [
+   {
+    "album": "kind-of-blue",
+    "kind": "recorded",
+    "line": "On this day in 1959, Miles Davis released Kind of Blue on Columbia.",
+    "year": 1959
+   }
+  ],
   "08-18": [
    {
     "album": "time-out",
@@ -1804,6 +1932,12 @@
     "year": 1969
    },
    {
+    "album": "source",
+    "kind": "recorded",
+    "line": "On this day in 2020, Nubya Garcia released Source on Concord Jazz.",
+    "year": 2020
+   },
+   {
     "artist": "count-basie",
     "kind": "born",
     "year": 1904
@@ -1817,6 +1951,12 @@
    }
   ],
   "08-25": [
+   {
+    "album": "bix-singin-the-blues",
+    "kind": "recorded",
+    "place": "OKeh's New York studio",
+    "year": 1927
+   },
    {
     "album": "the-sermon",
     "kind": "recorded",
@@ -1968,6 +2108,14 @@
     "year": 1985
    }
   ],
+  "09-17": [
+   {
+    "album": "bix-singin-the-blues",
+    "kind": "recorded",
+    "place": "OKeh's New York studio",
+    "year": 1927
+   }
+  ],
   "09-20": [
    {
     "artist": "ben-webster",
@@ -1976,6 +2124,12 @@
    }
   ],
   "09-21": [
+   {
+    "album": "wish",
+    "kind": "recorded",
+    "line": "On this day in 1993, Joshua Redman released Wish on Warner Bros.",
+    "year": 1993
+   },
    {
     "artist": "jaco-pastorius",
     "kind": "died",
@@ -2012,9 +2166,31 @@
   ],
   "09-28": [
    {
+    "album": "bix-singin-the-blues",
+    "kind": "recorded",
+    "place": "OKeh's New York studio",
+    "year": 1927
+   },
+   {
     "artist": "miles-davis",
     "kind": "died",
     "year": 1991
+   }
+  ],
+  "09-29": [
+   {
+    "album": "bix-singin-the-blues",
+    "kind": "recorded",
+    "place": "Columbia's New York studio, 1819 Broadway",
+    "year": 1927
+   }
+  ],
+  "09-30": [
+   {
+    "album": "bix-singin-the-blues",
+    "kind": "recorded",
+    "place": "OKeh's New York studio",
+    "year": 1927
    }
   ],
   "10-05": [
@@ -2056,6 +2232,12 @@
    }
   ],
   "10-11": [
+   {
+    "album": "hawkins-body-and-soul",
+    "kind": "recorded",
+    "line": "On this day in 1939, Coleman Hawkins recorded Body and Soul, a ballad improvisation so bold it became an unlikely hit.",
+    "year": 1939
+   },
    {
     "artist": "art-blakey",
     "kind": "born",
@@ -2155,6 +2337,12 @@
   ],
   "10-21": [
    {
+    "album": "miles-ahead",
+    "kind": "recorded",
+    "line": "On this day in 1957, Miles Davis released Miles Ahead on Columbia.",
+    "year": 1957
+   },
+   {
     "album": "my-favorite-things",
     "kind": "recorded",
     "place": "Atlantic Studios",
@@ -2206,6 +2394,12 @@
     "kind": "recorded",
     "place": "Van Gelder Studio",
     "year": 1964
+   },
+   {
+    "album": "universal-beings",
+    "kind": "recorded",
+    "line": "On this day in 2018, Makaya McCraven released Universal Beings on International Anthem.",
+    "year": 2018
    },
    {
     "artist": "jack-dejohnette",
@@ -2281,6 +2475,12 @@
   ],
   "11-12": [
    {
+    "album": "hot-five-hot-seven",
+    "kind": "recorded",
+    "line": "On this day in 1925, Louis Armstrong cut his first Hot Five sides in Chicago, the records that made the improvising soloist jazz's main event.",
+    "year": 1925
+   },
+   {
     "artist": "buck-clayton",
     "kind": "born",
     "year": 1911
@@ -2351,6 +2551,14 @@
     "artist": "paul-desmond",
     "kind": "born",
     "year": 1924
+   }
+  ],
+  "11-26": [
+   {
+    "album": "savoy-dial-master-takes",
+    "kind": "recorded",
+    "line": "On this day in 1945, Charlie Parker's first Savoy session as a leader gave the world Ko-Ko and Now's the Time.",
+    "year": 1945
    }
   ],
   "11-30": [
@@ -2444,6 +2652,14 @@
     "year": 1945
    }
   ],
+  "12-14": [
+   {
+    "album": "time-out",
+    "kind": "recorded",
+    "line": "On this day in 1959, the Dave Brubeck Quartet released Time Out on Columbia.",
+    "year": 1959
+   }
+  ],
   "12-15": [
    {
     "album": "out-of-the-cool",
@@ -2471,6 +2687,12 @@
     "kind": "recorded",
     "place": "Metropolitan Studios",
     "year": 1957
+   },
+   {
+    "album": "watermelon-man",
+    "kind": "recorded",
+    "place": "Plaza Sound Studios, New York",
+    "year": 1962
    }
   ],
   "12-18": [
