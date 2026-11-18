@@ -69,7 +69,7 @@ fi
 # No profile, no iCloud: Developer ID apps need none otherwise.
 if [[ -n "${SIGN_IDENTITY:-}" ]]; then args+=(PROVISIONING_PROFILE_SPECIFIER="${uuid:-}"); fi
 
-echo "Building Jazz Discovery $VERSION ($BUILD)$ICLOUD…"
+echo "Building Jazz Discovery $VERSION ($BUILD)${ICLOUD}…"
 xcodebuild "${args[@]}" -quiet clean build
 
 rm -rf "$APP"
@@ -81,4 +81,4 @@ if [[ -n "$ICLOUD" ]]; then
         || { echo "error: the app isn't signed with iCloud key-value storage" >&2; exit 1; }
 fi
 lipo -archs "$APP/Contents/MacOS/Jazz Discovery"
-echo "Built $APP$ICLOUD"
+echo "Built $APP${ICLOUD}"
