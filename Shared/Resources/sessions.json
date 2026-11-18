@@ -781,7 +781,7 @@
   ]
  },
  "basie-complete-decca": {
-  "reviewed": false,
+  "reviewed": true,
   "source": "musicbrainz:release/c6732cba-f132-4796-848e-3eb099efb2c9",
   "mbReleaseGroup": "e56f0a31-ffab-370d-a866-f2056661634c",
   "edition": "1992-03-17 US",
@@ -1062,11 +1062,10 @@
     "name": "Harry “Sweets” Edison",
     "role": "arranger"
    }
-  ],
-  "edited": true
+  ]
  },
  "billie-commodore": {
-  "reviewed": false,
+  "reviewed": true,
   "source": "Jazzdisco: Billie Holiday discography",
   "tracks": [
    "Strange Fruit",
@@ -1328,7 +1327,6 @@
     "role": "producer"
    }
   ],
-  "edited": true,
   "draftNotes": [
    "MusicBrainz had nothing; four sessions from Jazzdisco: \"Strange Fruit\" (1939) with Frankie Newton's band, then three 1944 dates with Eddie Heywood."
   ]
@@ -1595,7 +1593,7 @@
   ]
  },
  "birth-of-the-hot": {
-  "reviewed": false,
+  "reviewed": true,
   "source": "musicbrainz:release/a5b309b2-90c1-4877-84c1-4e9fcc645ffd",
   "mbReleaseGroup": "046a81bc-528c-3137-94d3-1ad5d6b6751c",
   "edition": "1995 US",
@@ -1754,7 +1752,6 @@
     "role": "arranger"
    }
   ],
-  "edited": true,
   "draftNotes": [
    "The 1995 reissue's producers removed from the crew."
   ]
@@ -2342,7 +2339,7 @@
   ]
  },
  "blanton-webster-band": {
-  "reviewed": false,
+  "reviewed": true,
   "source": "musicbrainz:release/b96731f9-6961-4963-b2f1-aee0e1354e1d",
   "mbReleaseGroup": "7f11a8e0-84d5-354a-867f-925573840966",
   "edition": "2003-04-01 XW",
@@ -2602,8 +2599,7 @@
   ],
   "draftNotes": [
    "The orchestra of 1940–42 from Wikipedia. MusicBrainz credits only 21 of 75 tracks, so no track counts; the band changed over the period (Ray Nance replaced Cootie Williams late in 1940)."
-  ],
-  "edited": true
+  ]
  },
  "blue-light-til-dawn": {
   "reviewed": true,
@@ -3023,7 +3019,7 @@
   ]
  },
  "carnegie-hall-1938": {
-  "reviewed": false,
+  "reviewed": true,
   "source": "musicbrainz:release/13aa3c3b-b0bc-43fd-87ff-f416d35b9b8f",
   "mbReleaseGroup": "d986aa1d-42d2-308a-a54b-d0339339ae01",
   "edition": "1999 US",
@@ -3594,8 +3590,7 @@
   ],
   "draftNotes": [
    "Per-track credits from MusicBrainz; an \"[unknown]\" entry removed and instruments tidied. Guests from the Basie and Ellington bands appear only on their numbers."
-  ],
-  "edited": true
+  ]
  },
  "chega-de-saudade": {
   "reviewed": true,
@@ -4062,7 +4057,7 @@
   ]
  },
  "djangology": {
-  "reviewed": false,
+  "reviewed": true,
   "source": "Wikipedia: Djangology",
   "mbReleaseGroup": "670d7864-6d23-37bc-84ea-75b01d76d702",
   "edition": "2004 None",
@@ -4136,11 +4131,10 @@
     "date": "1949",
     "place": "Rome"
    }
-  ],
-  "edited": true
+  ]
  },
  "ella-cole-porter": {
-  "reviewed": false,
+  "reviewed": true,
   "source": "musicbrainz:release/1778c80c-9335-4c5b-8450-5cce087c7082",
   "mbReleaseGroup": "dcc0d723-e27f-36e8-8438-dbbde7eb9a67",
   "edition": "1956-09 GB",
@@ -4378,8 +4372,7 @@
   ],
   "draftNotes": [
    "Who plays on which of the 32 songs varies (strings and horns on some, the rhythm section alone on others), and the sources disagree, so it isn't shown per song."
-  ],
-  "edited": true
+  ]
  },
  "emilys-d-evolution": {
   "reviewed": true,
@@ -4541,7 +4534,7 @@
   ]
  },
  "essential-bessie-smith": {
-  "reviewed": false,
+  "reviewed": true,
   "source": "musicbrainz:release/ac1a49f2-caeb-4892-96de-bb67dc67e37c",
   "mbReleaseGroup": "d8c3eec2-f73d-33f0-881b-09a5346a0a4e",
   "edition": "1997-09-23 US",
@@ -4656,8 +4649,7 @@
   ],
   "draftNotes": [
    "MusicBrainz credits only 26 of the 36 tracks, so her accompanists are listed without track counts."
-  ],
-  "edited": true
+  ]
  },
  "fire-music": {
   "reviewed": true,
@@ -5491,7 +5483,7 @@
   ]
  },
  "hawkins-body-and-soul": {
-  "reviewed": false,
+  "reviewed": true,
   "source": "Wikipedia: Body and Soul (Coleman Hawkins album)",
   "mbReleaseGroup": "434b2e03-c60b-48e9-96eb-4040276976c8",
   "edition": "GB",
@@ -5605,8 +5597,7 @@
   "recordedBetween": [
    1939,
    1956
-  ],
-  "edited": true
+  ]
  },
  "head-hunters": {
   "reviewed": true,
@@ -5851,7 +5842,7 @@
   ]
  },
  "hot-five-hot-seven": {
-  "reviewed": false,
+  "reviewed": true,
   "source": "musicbrainz:release/0b255446-20d8-3a8a-86ac-e8df5678b72e",
   "mbReleaseGroup": "78b00b36-8cb8-3ae5-86f9-04ed4bae3029",
   "edition": "2000-08-22 US",
@@ -6083,8 +6074,7 @@
   ],
   "draftNotes": [
    "Track counts from MusicBrainz, which credits 85 of the 93 tracks; players on 11 or more listed (the Hot Five, the Hot Seven and the 1928 band)."
-  ],
-  "edited": true
+  ]
  },
  "idle-moments": {
   "reviewed": true,
@@ -7392,7 +7382,7 @@
   ]
  },
  "ma-rainey": {
-  "reviewed": false,
+  "reviewed": true,
   "source": "musicbrainz:release/ff02bd6e-a54c-43a3-96b3-52f1e4469eaa",
   "mbReleaseGroup": "ef2dee18-3025-3713-bd72-6aab138ea2e4",
   "edition": "1992 DE",
@@ -7453,8 +7443,7 @@
   ],
   "draftNotes": [
    "MusicBrainz credits only 9 of the 24 tracks; her other accompanists (the Paramount sessions of 1923–28) aren't listed."
-  ],
-  "edited": true
+  ]
  },
  "maiden-voyage": {
   "reviewed": true,
@@ -9190,7 +9179,7 @@
   ]
  },
  "snowy-morning-blues": {
-  "reviewed": false,
+  "reviewed": true,
   "source": "musicbrainz:release/918673ec-5cdd-4b47-bb6f-2d25ada5eaa0",
   "mbReleaseGroup": "279822f7-6339-3a14-a78d-4b01bbed12f2",
   "edition": "1991-10-08 US",
@@ -9239,7 +9228,6 @@
     "tracks": 16
    }
   ],
-  "edited": true,
   "draftNotes": [
    "The reissue's producers removed from the crew."
   ]
