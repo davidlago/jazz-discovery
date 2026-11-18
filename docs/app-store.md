@@ -184,7 +184,8 @@ In App Store Connect, the app ▸ **iOS App** ▸ the version (**+** to add one 
    `docs/app-store/iphone-6.3/*` for 6.3-inch, in file order (ten each, the most App Store Connect takes). They're the
    screens in `docs/app-store/screens/`, framed with a headline: make new screens with `scripts/app-store-screenshots.sh`,
    then `swift scripts/app-store-art.swift` (headlines and colours are at its top). `10-widgets.png` is drawn by the Mac
-   app (`--snapshots <dir> --widgets-only`).
+   app (`--snapshots <dir> --widgets-only`). The product page's **header** (optional, above the screenshots) is
+   `docs/app-store/header-3840x1646.png` (or the 5244 × 2950 one), drawn by `swift scripts/app-store-header.swift`.
 2. **Promotional text**, **description**, **keywords**, **support URL**, **marketing URL** (below). After the first
    version, only **What's New** is needed (from `CHANGELOG.md`).
 3. **Build**: select the one CI uploaded in step 1.
