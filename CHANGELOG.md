@@ -6,6 +6,12 @@ section for the tagged version at the top of the GitHub release notes (or **Unre
 
 ## Unreleased
 
+## 1.8.1
+
+- **Your passport syncs** between your Mac and iPhone through your own iCloud: the records you've heard and saved,
+  your era stamps and where you are on each path. There's nothing to set up when you're signed in to iCloud on both;
+  the Passport page says whether it's on.
+
 ## 1.8.0
 
 - **Today in Jazz** at the top of the home screen: a tear-off calendar page with whose birthday it is and what was
