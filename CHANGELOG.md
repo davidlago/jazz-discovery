@@ -6,6 +6,18 @@ section for the tagged version at the top of the GitHub release notes (or **Unre
 
 ## Unreleased
 
+- **Siri and Shortcuts**: "Play bebop radio on Jazz Discovery", "What happened in jazz today", "Continue my path",
+  "Play my next stop", and opening any artist, record or tune.
+- **Spotlight**: search the system for "Kind of Blue" or "Body and Soul" and open its page in the app.
+- **Next stop**: when a path's track is playing, the player offers the next stop you haven't done; the Continue
+  widget has a play button for it.
+- **Morning note** (off unless you turn it on, in Settings ▸ Today in Jazz): the day's birthday or session at a time
+  you pick. It's scheduled on your device; nothing is sent anywhere.
+- **Radio for places and labels**: Play Radio on a city's, club's, studio's or label's page plays what was recorded
+  there or on that label, and who played there.
+- **The map** groups places that would overlap into one numbered pin; tap it to zoom in.
+- The large Today in Jazz widget lists the next days with something when the day has only one event.
+
 ## 1.9.0
 
 - **Widgets** on the iPhone (Home Screen, Lock Screen, StandBy) and the Mac (desktop, Notification Center):
