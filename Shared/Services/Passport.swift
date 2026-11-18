@@ -107,7 +107,11 @@ final class Passport {
     static let heardShare = 0.6
 
     private(set) var data = PassportData()
-    @ObservationIgnored private let fileURL: URL?
+    /// Told after every change, to send it to iCloud.
+    @ObservationIgnored var onChange: (() -> Void)?
+    /// Whether the passport syncs through iCloud (the build has the entitlement and an account is signed in).
+    var syncsWithICloud = false
+    @ObservationIgnored let fileURL: URL?
     /// Apple Music album ID → Crate album ID, and how many tracks each has (catalog.json).
     @ObservationIgnored private let albumByCollection: [Int: String]
     @ObservationIgnored private let trackCounts: [String: Int]
@@ -136,6 +140,9 @@ final class Passport {
     }
 
     // MARK: Reading
+
+    /// The Crate record an Apple Music album ID belongs to.
+    func albumID(forCollection id: Int) -> String? { albumByCollection[id] }
 
     func mark(_ albumID: String) -> PassportMark? { data.albums[albumID] }
     func isHeard(_ albumID: String) -> Bool { data.albums[albumID]?.isHeard == true }
@@ -254,7 +261,21 @@ final class Passport {
     static func decode(_ d: Data) -> PassportData? { try? decoder.decode(PassportData.self, from: d) }
 
     private func save() {
+        onChange?()
         guard let fileURL, let d = encoded() else { return }
         try? d.write(to: fileURL, options: .atomic)
+    }
+}
+
+extension Passport {
+    /// Fills an in-memory passport with a believable history, for snapshots and App Store screenshots
+    /// (`--demo-passport`). Never used on a real one.
+    func fillWithDemo(library: JazzLibrary) {
+        guard fileURL == nil, isEmpty else { return }
+        for (i, a) in library.albums.enumerated() where i % 3 == 0 || a.era == "bebop" || a.era == "modal" {
+            setHeard(a.id, true, how: i % 2 == 0 ? .listening : .hand, at: .now.addingTimeInterval(Double(-i * 5400)))
+        }
+        for (i, a) in library.albums.enumerated() where i % 7 == 1 { setSaved(a.id, true) }
+        for id in ["thelonious-monk", "mary-lou-williams", "nubya-garcia"] where library.artist(id) != nil { toggleSaved(artist: id) }
     }
 }

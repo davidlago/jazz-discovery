@@ -6,6 +6,8 @@ struct PassportView: View {
     @Environment(JazzLibrary.self) private var library
     @Environment(Passport.self) private var passport
     @Environment(Router.self) private var router
+    @Environment(PlayerController.self) private var player
+    @State private var importing = false
 
     var body: some View {
         let heard = passport.heardCount
@@ -16,12 +18,18 @@ struct PassportView: View {
 
         ScrollView {
             VStack(alignment: .leading, spacing: 40) {
+                HStack(alignment: .bottom) {
                 VStack(alignment: .leading, spacing: 6) {
                     Text("PASSPORT").font(Theme.display(64)).foregroundStyle(Theme.cream)
                     Text(heard == 0
                          ? "A stamp for every era, inked as you hear its records. Play a record through, or mark one you know."
                          : "\(heard) of \(library.albums.count) records heard.")
                         .font(Theme.serif(18)).italic().foregroundStyle(Theme.muted)
+                }
+                Spacer()
+                if case .connected = player.scrobbler.status {
+                    Button { importing = true } label: { Label("Import from Last.fm…", systemImage: "square.and.arrow.down") }
+                }
                 }
                 .padding(.top, 30).padding(.horizontal, 40)
 
@@ -76,6 +84,7 @@ struct PassportView: View {
         }
         .background(Theme.ink)
         .navigationTitle("Passport")
+        .sheet(isPresented: $importing) { LastFMImportView(scrobbler: player.scrobbler) }
     }
 }
 
@@ -121,7 +130,7 @@ struct PassportFooter: View {
 
     var body: some View {
         HStack(alignment: .firstTextBaseline, spacing: 14) {
-            Text("Your passport stays on this Mac. Records count as heard when most of their tracks have played in full; you can unmark any of them.")
+            Text("\(passport.syncsWithICloud ? "Your passport syncs with your iPhone through your iCloud." : "Your passport stays on this Mac.") Records count as heard when most of their tracks have played in full; you can unmark any of them.")
                 .font(.system(size: 12)).foregroundStyle(Theme.faint)
             Spacer()
             if !passport.isEmpty {

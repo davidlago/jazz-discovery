@@ -8,6 +8,8 @@ struct TimelineTab: View {
             VStack(alignment: .leading, spacing: 44) {
                 HomeHero()
 
+                ContinueSection()
+
                 VStack(alignment: .leading, spacing: 14) {
                     SectionHeader(title: "The River of Jazz",
                                   subtitle: "130 years of styles flowing, overlapping and splitting. Tap a style to dive in, or a dot for a turning point.")
@@ -376,5 +378,46 @@ private struct RiverBar: View {
         }
         .clipShape(Capsule())
         .contentShape(Capsule())
+    }
+}
+
+/// Once anything is heard: the next stop on Start Here, and the doors out of the last record you heard.
+struct ContinueSection: View {
+    @Environment(JazzLibrary.self) private var library
+    @Environment(Passport.self) private var passport
+    @Environment(PhoneRouter.self) private var router
+
+    var body: some View {
+        if passport.heardCount > 0 {
+            VStack(alignment: .leading, spacing: 12) {
+                SectionHeader(title: "Continue", subtitle: "\(passport.heardCount) of \(library.albums.count) records heard.") {
+                    SeeAllLink(route: .passport)
+                }
+                VStack(alignment: .leading, spacing: 10) {
+                    if let stop = passport.nextStop(library: library) {
+                        NavigationLink(value: PhoneRoute.album(stop.album.id)) {
+                            HStack(spacing: 12) {
+                                AlbumCover(album: stop.album, size: 200, cornerRadius: 4).frame(width: 56, height: 56)
+                                VStack(alignment: .leading, spacing: 2) {
+                                    Text("START HERE · \(String(format: "%02d", stop.number))").font(Theme.label(10)).tracking(1.2)
+                                        .foregroundStyle(library.color(forEra: stop.album.era))
+                                    Text(stop.album.title).font(.subheadline.weight(.semibold)).foregroundStyle(Theme.cream)
+                                    Text(stop.album.artistName).font(.caption).foregroundStyle(Theme.muted)
+                                }
+                                Spacer()
+                                Image(systemName: "chevron.right").font(.caption.weight(.bold)).foregroundStyle(Theme.faint)
+                            }
+                        }
+                        .buttonStyle(.pressable)
+                    }
+                    if let last = passport.lastHeard(library: library) {
+                        Text("AFTER \(last.title.uppercased())").font(Theme.label(10)).tracking(1.2).foregroundStyle(Theme.muted)
+                            .lineLimit(1).padding(.top, 6)
+                        DoorsList(album: last, stacked: true, compact: true) { router.go(.album($0)) }
+                    }
+                }
+                .padding(.horizontal, Theme.gutter)
+            }
+        }
     }
 }

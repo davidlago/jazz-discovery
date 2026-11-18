@@ -37,14 +37,7 @@ enum Snapshots {
             ("11-passport", { router.show(.passport) }),
         ]
         // A passport with something in it (in memory only: snapshots don't touch the real one).
-        if passport.isEmpty {
-            for (i, a) in library.albums.enumerated() where i % 3 == 0 || library.album(a.id)?.era == "bebop" {
-                passport.setHeard(a.id, true, at: .now.addingTimeInterval(Double(-i * 3600)))
-            }
-            for id in ["kind-of-blue", "a-love-supreme", "mingus-ah-um"] { passport.setSaved(id, true) }
-            passport.toggleSaved(artist: "thelonious-monk")
-            passport.listened(ListenEvent(songID: "x", collectionId: nil, full: false))
-        }
+        passport.fillWithDemo(library: library)
         try? FileManager.default.createDirectory(atPath: dir, withIntermediateDirectories: true)
         for (name, setup) in shots {
             setup()

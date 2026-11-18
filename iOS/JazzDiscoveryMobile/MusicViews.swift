@@ -388,7 +388,10 @@ struct NowPlayingView: View {
             .padding(.horizontal, 28)
             .padding(.bottom, 20)
 
-            if !player.upNext.isEmpty {
+            if player.finishedCollectionId != nil {
+                FinishedAlbumDoors { router.go(.album($0)) }
+                    .padding(.horizontal, 28).padding(.bottom, 16)
+            } else if !player.upNext.isEmpty {
                 UpNextStrip()
             }
         }

@@ -77,7 +77,6 @@ struct AlbumDetailView: View {
         let artist = library.artist(album.artist)
         let session = library.session(for: album.id)
         let more = library.albums(by: album.artist).filter { $0.id != album.id }
-        let sameEra = library.albums(inEra: album.era).filter { $0.id != album.id && $0.artist != album.artist }
 
         ScrollView {
             VStack(alignment: .leading, spacing: 40) {
@@ -151,12 +150,17 @@ struct AlbumDetailView: View {
                         HRow { ForEach(more) { AlbumCard(album: $0, showArtist: false) } }
                     }
                 }
-                if !sameEra.isEmpty {
-                    VStack(alignment: .leading, spacing: 4) {
-                        SectionHeader(title: "Also from \(era?.name ?? "this era")", tint: tint).padding(.horizontal, 40)
-                        HRow { ForEach(sameEra) { AlbumCard(album: $0) } }
+                VStack(alignment: .leading, spacing: 16) {
+                    SectionHeader(title: "Where Next", subtitle: "Three doors out of this record.", tint: tint)
+                    DoorsList(album: album) { router.go(.album($0)) }
+                    if let era {
+                        Button { router.go(.era(era.id)) } label: {
+                            Text("All of \(era.name) →").font(.system(size: 13, weight: .semibold)).foregroundStyle(tint)
+                        }
+                        .buttonStyle(.plain)
                     }
                 }
+                .padding(.horizontal, 40)
             }
             .padding(.bottom, 50)
         }

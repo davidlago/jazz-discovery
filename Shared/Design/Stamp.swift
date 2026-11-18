@@ -139,7 +139,7 @@ extension Passport {
     }
 
     /// "tenor saxophone" and "alto saxophone" both count as saxophone; "piano" stays piano.
-    static func family(_ instrument: String) -> String {
+    nonisolated static func family(_ instrument: String) -> String {
         let i = instrument.lowercased()
         for f in ["saxophone", "trumpet", "trombone", "clarinet", "flute", "guitar", "piano", "organ", "bass", "drums",
                   "vibraphone", "vocal", "percussion", "cornet", "violin", "harp"] where i.contains(f) {

@@ -6,6 +6,8 @@ struct PassportView: View {
     @Environment(JazzLibrary.self) private var library
     @Environment(Passport.self) private var passport
     @State private var confirmErase = false
+    @State private var importing = false
+    @Environment(PlayerController.self) private var player
     private let columns = [GridItem(.flexible(), spacing: 10), GridItem(.flexible(), spacing: 10), GridItem(.flexible(), spacing: 10)]
 
     var body: some View {
@@ -62,7 +64,7 @@ struct PassportView: View {
                         HRow { ForEach(savedArtists) { ArtistCard(artist: $0) } }
                     }
                 }
-                Text("Your passport stays on this iPhone. Records count as heard when most of their tracks have played in full; you can unmark any of them from the record's page.")
+                Text("\(passport.syncsWithICloud ? "Your passport syncs with your Mac through your iCloud." : "Your passport stays on this iPhone.") Records count as heard when most of their tracks have played in full; you can unmark any of them from the record's page.")
                     .font(.footnote).foregroundStyle(Theme.faint)
                     .padding(.horizontal, Theme.gutter)
             }
@@ -71,14 +73,18 @@ struct PassportView: View {
         .background(Theme.ink)
         .revealedTitle("Passport", after: 60)
         .toolbar {
-            if !passport.isEmpty {
-                ToolbarItem(placement: .topBarTrailing) {
-                    Menu {
+            ToolbarItem(placement: .topBarTrailing) {
+                Menu {
+                    if case .connected = player.scrobbler.status {
+                        Button("Import from Last.fm…", systemImage: "square.and.arrow.down") { importing = true }
+                    }
+                    if !passport.isEmpty {
                         Button("Erase Passport…", systemImage: "trash", role: .destructive) { confirmErase = true }
-                    } label: { Image(systemName: "ellipsis") }
-                }
+                    }
+                } label: { Image(systemName: "ellipsis") }
             }
         }
+        .sheet(isPresented: $importing) { LastFMImportView(scrobbler: player.scrobbler).presentationDetents([.large]) }
         .confirmationDialog("Erase your passport?", isPresented: $confirmErase, titleVisibility: .visible) {
             Button("Erase", role: .destructive) { passport.erase() }
         } message: {

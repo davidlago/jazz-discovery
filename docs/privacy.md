@@ -1,6 +1,6 @@
 # Jazz Discovery privacy policy
 
-*Last updated: November 17, 2026*
+*Last updated: November 18, 2026*
 
 Jazz Discovery (for iPhone and Mac) doesn't collect any data about you. It has no accounts, no analytics, no ads and no
 tracking, and the developer has no server that receives anything from the app.
@@ -33,6 +33,13 @@ in your device's keychain. Last.fm's privacy policy applies to what it receives:
 
 The app keeps a cache of what it has looked up, your playback and Last.fm preferences, and songs waiting to be sent to
 Last.fm while you're offline. All of it stays on your device and is removed when you delete the app.
+
+## Your passport
+
+What you've heard and saved is kept on your device and, if you're signed in to iCloud, in your own iCloud account so
+your iPhone and Mac stay in step. The developer can't read it. Erase it any time from the Passport page. If you import
+from Last.fm, the app reads your most played albums from Last.fm, on your device, to find the Crate's records among
+them; nothing is sent back.
 
 ## Children
 

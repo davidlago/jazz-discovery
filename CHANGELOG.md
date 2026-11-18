@@ -6,6 +6,25 @@ section for the tagged version at the top of the GitHub release notes (or **Unre
 
 ## Unreleased
 
+## 1.2.0
+
+- **Passport**: mark the records you've heard and save the ones to come back to (on every album page, and in any
+  cover's menu). Records you play through in the app are marked for you once most of their tracks have played in full;
+  previews mark a record as sampled. Heard covers get a small stamp, and anything can be unmarked.
+- **Stamps**: every era has a passport stamp, inked in its colour as you hear its records, dated when you've heard them
+  all. The Passport page (in the Mac's sidebar, and the seal button on iPhone) shows them with where you've been
+  decade by decade, the instruments you've heard most, what you've heard lately and what you've saved. Era pages show
+  their stamp and how many records you've heard.
+- **Three doors** out of every record, at the bottom of its page and in the player when an album ends: the record that
+  shares the most players with it, one from the style that came next, and an echo of it playing today, each with a
+  sentence saying why, and records you haven't heard first.
+- **Continue** on the home screen: the next stop on Start Here and the doors out of the last record you heard.
+- The Crate filters by Unheard, Heard and Saved.
+- **Import from Last.fm**: mark the Crate records among your most played albums as heard (Passport ▸ Import).
+- The passport is ready to sync between your Mac and iPhone through iCloud; sync turns on once iCloud is enabled for
+  the app.
+- `jazzdiscovery://passport` opens the Passport.
+
 ## 1.1.0
 
 - **Personnel**: album pages list who played on the record, set like the credits on an LP's back cover, with when and

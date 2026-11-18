@@ -24,6 +24,10 @@ albums = unique("album", data["albums"])
 by_artist = {a["id"]: a for a in data["artists"]}
 
 for e in data["eras"]:
+    for nxt in e.get("leadsTo", []):
+        if nxt not in eras: errors.append(f"era {e['id']}: leadsTo unknown era {nxt}")
+        if nxt == e["id"]: errors.append(f"era {e['id']}: leads to itself")
+for e in data["eras"]:
     errors += [f"era {e['id']}: unknown artist {a}" for a in e["keyArtists"] if a not in artists]
     errors += [f"era {e['id']}: unknown album {a}" for a in e["keyAlbums"] if a not in albums]
 for a in data["artists"]:

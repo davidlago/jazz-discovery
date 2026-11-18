@@ -57,6 +57,10 @@ final class PlayerController {
     /// The Apple Music album a queue was started from, or the album of each song in it.
     @ObservationIgnored private var queueCollectionId: Int?
     @ObservationIgnored private var songCollections: [String: Int] = [:]
+    /// The Apple Music album that just played to its end (for the three doors), until something else plays.
+    private(set) var finishedCollectionId: Int?
+    /// The last track of an album queue is about to end.
+    @ObservationIgnored private var nearEndOfAlbum = false
 
     var preferFullTracks: Bool = UserDefaults.standard.object(forKey: "preferFullTracks") as? Bool ?? true {
         didSet { UserDefaults.standard.set(preferFullTracks, forKey: "preferFullTracks") }
@@ -190,6 +194,7 @@ final class PlayerController {
 
     func play(_ tracks: [CatalogTrack], startAt index: Int = 0, key: String? = nil) {
         guard tracks.indices.contains(index) else { return }
+        finishedCollectionId = nil; nearEndOfAlbum = false
         let k = key ?? "track-\(tracks[index].trackId)"
         loadingKey = k
         currentTrackID = tracks[index].trackId
@@ -203,6 +208,7 @@ final class PlayerController {
     func play(_ track: CatalogTrack) { play([track], startAt: 0) }
 
     func playAlbum(_ album: CatalogAlbum, tracks: [CatalogTrack]) {
+        finishedCollectionId = nil; nearEndOfAlbum = false
         let k = "album-\(album.collectionId)"
         loadingKey = k
         Task {
@@ -413,6 +419,9 @@ final class PlayerController {
         if previewIndex + 1 < previewQueue.count { startPreview(at: previewIndex + 1) }
         else {
             isPlaying = false; elapsed = duration
+            // A whole album's previews, played to the end.
+            let albums = Set(previewQueue.map(\.collectionId))
+            if previewQueue.count > 1, albums.count == 1, let c = albums.first { finishedCollectionId = c }
             #if os(iOS)
             updateNowPlayingInfo()
             #endif
@@ -472,6 +481,7 @@ final class PlayerController {
             let listened = max(0, min(moved, realGap + 0.5))
             if isPlaying || moved > 0 { scrobbler.played(listened) }
             measureListening(p.queue.currentEntry, listened: listened)
+            noticeAlbumEnd(p)
         case .none: break
         }
         if mode != .none { refreshOutput() }
@@ -486,6 +496,18 @@ final class PlayerController {
         guard meter.add(listened) else { return }
         let id = song.id.rawValue
         onListen?(ListenEvent(songID: id, collectionId: queueCollectionId ?? songCollections[id], full: true))
+    }
+
+    /// An album queue that reached the end of its last track: MusicKit stops (or pauses) there.
+    private func noticeAlbumEnd(_ p: ApplicationMusicPlayer) {
+        guard let album = queueCollectionId else { nearEndOfAlbum = false; return }
+        if let entry = p.queue.currentEntry, entry.id == p.queue.entries.last?.id, duration > 0 {
+            if isPlaying { nearEndOfAlbum = duration - elapsed < 3 }
+        }
+        if nearEndOfAlbum && !isPlaying {
+            nearEndOfAlbum = false
+            finishedCollectionId = album
+        }
     }
 
     // MARK: Audio quality and output

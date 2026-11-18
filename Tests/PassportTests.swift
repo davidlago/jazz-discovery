@@ -126,3 +126,21 @@ struct PassportMergeTests {
         #expect(PassportData.merged(cleared, again).albums["x"]?.isHeard == true)
     }
 }
+
+@Suite("Last.fm import")
+struct LastFMImportTests {
+    let library = JazzLibrary.load(from: TestBundle.bundle)
+
+    @Test("Matches the Crate by title and artist, ignoring editions")
+    func matches() {
+        let top = [
+            LastFMImport.TopAlbum(artist: "Miles Davis", title: "Kind Of Blue (Legacy Edition)", plays: 40),
+            LastFMImport.TopAlbum(artist: "John Coltrane", title: "A Love Supreme", plays: 12),
+            LastFMImport.TopAlbum(artist: "Somebody Else", title: "Kind of Blue", plays: 99),
+            LastFMImport.TopAlbum(artist: "Radiohead", title: "OK Computer", plays: 500),
+        ]
+        let m = LastFMImport.matches(top, library: library)
+        #expect(m.map(\.album.id) == ["kind-of-blue", "a-love-supreme"])
+        #expect(m[0].plays == 40)
+    }
+}

@@ -2,14 +2,26 @@ import SwiftUI
 
 @main
 struct JazzDiscoveryMobileApp: App {
-    @State private var library = JazzLibrary.load()
+    @State private var library: JazzLibrary
     @State private var router = PhoneRouter()
-    @State private var player = PlayerController()
-    @State private var passport = Passport()
+    @State private var player: PlayerController
+    @State private var passport: Passport
+    @State private var sync: PassportSync?
 
+    // The objects are made here and handed to @State as they are: @State makes an Observable object lazily, so one
+    // read from it in init would be a different object from the one the app ends up with.
     init() {
-        let pp = passport
-        player.onListen = { pp.listened($0) }
+        let library = JazzLibrary.load()
+        let player = PlayerController()
+        /// `--demo-passport` (App Store screenshots) uses a made-up passport kept in memory only.
+        let demo = CommandLine.arguments.contains("--demo-passport")
+        let passport = Passport(fileURL: demo ? nil : Passport.defaultFile)
+        player.onListen = { passport.listened($0) }
+        if demo { passport.fillWithDemo(library: library) }
+        _library = State(initialValue: library)
+        _player = State(initialValue: player)
+        _passport = State(initialValue: passport)
+        _sync = State(initialValue: demo ? nil : PassportSync(passport: passport))
     }
 
     var body: some Scene {
