@@ -27,6 +27,8 @@ struct RootView: View {
                         case .songbook: SongbookView()
                         case .places: PlacesView()
                         case .labels: LabelsView()
+                        case .lineages: LineagesView()
+                        case .glossary: GlossaryView()
                         case .passport: PassportView()
                         case .radio: RadioView()
                         case .blindfold: BlindfoldPage()
@@ -42,6 +44,8 @@ struct RootView: View {
                     case .tune(let id): if let t = library.tune(id) { TuneDetailView(tune: t) }
                     case .place(let id): if let p = library.place(id) { PlaceDetailView(place: p) }
                     case .label(let id): if let l = library.label(id) { LabelDetailView(label: l) }
+                    case .lineage(let id): if let l = library.lineage(id) { LineageDetailView(lineage: l) }
+                    case .term(let id): if let t = library.term(id) { TermDetailView(term: t) }
                     }
                 }
                 .background(Theme.ink)

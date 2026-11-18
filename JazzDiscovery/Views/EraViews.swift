@@ -86,7 +86,8 @@ struct EraDetailView: View {
                 HStack(alignment: .top, spacing: 40) {
                     VStack(alignment: .leading, spacing: 16) {
                         ForEach(era.summary.components(separatedBy: "\n\n"), id: \.self) { p in
-                            Text(p).font(Theme.serif(17)).lineSpacing(5).foregroundStyle(Theme.cream.opacity(0.92))
+                            TermText(text: p, font: Theme.serif(17), color: Theme.cream.opacity(0.92)) { router.go(.term($0)) }
+                                .lineSpacing(5)
                                 .fixedSize(horizontal: false, vertical: true)
                         }
                     }

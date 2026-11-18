@@ -220,6 +220,42 @@ if os.path.exists(lp):
             if person.get("place") and os.path.exists(pp) and person["place"] not in pids: errors.append(f"label {l['id']}: unknown place {person['place']}")
     print(f"labels.json: {len(labels)} labels")
 
+# lineages.json and glossary.json
+lin_p = os.path.join(res_dir, "lineages.json")
+tracks_all = json.load(open(tp)) if os.path.exists(tp) else {}
+if os.path.exists(lin_p):
+    lins = json.load(open(lin_p))["lineages"]
+    for l in lins:
+        ids = {p["artist"] for p in l["players"]}
+        for p in l["players"]:
+            if p["artist"] not in artists: errors.append(f"lineage {l['id']}: unknown artist {p['artist']}")
+            if p.get("track") and p["track"] not in tracks_all: warnings.append(f"lineage {l['id']}: {p['track']} isn't resolved")
+        for k in l["links"]:
+            if k["from"] not in ids or k["to"] not in ids: errors.append(f"lineage {l['id']}: link {k['from']}>{k['to']} has an end outside the lineage")
+            if k["from"] == k["to"]: errors.append(f"lineage {l['id']}: a link to itself")
+            if not k.get("note"): errors.append(f"lineage {l['id']}: link {k['from']}>{k['to']} has no note")
+            if k["kind"] not in ("influence", "teacher", "bandmate", "reaction"): errors.append(f"lineage {l['id']}: unknown kind {k['kind']}")
+    print(f"lineages.json: {len(lins)} lineages, {sum(len(l['links']) for l in lins)} lines")
+gl_p = os.path.join(res_dir, "glossary.json")
+if os.path.exists(gl_p):
+    g = json.load(open(gl_p))
+    tids = [t["id"] for t in g["terms"]]
+    if len(tids) != len(set(tids)): errors.append("glossary.json: duplicate IDs")
+    spellings = {}
+    for t in g["terms"]:
+        for sp in [t["term"]] + t.get("also", []):
+            k = sp.lower()
+            if k in spellings and spellings[k] != t["id"]: errors.append(f"glossary: '{sp}' is used by {spellings[k]} and {t['id']}")
+            spellings[k] = t["id"]
+        if not t.get("short"): errors.append(f"glossary {t['id']}: no short definition")
+        if not t.get("examples"): errors.append(f"glossary {t['id']}: no example")
+        for e in t.get("examples", []):
+            if e["track"] not in tracks_all: errors.append(f"glossary {t['id']}: example {e['track']} isn't resolved")
+        errors += [f"glossary {t['id']}: related {r} isn't a term" for r in t.get("related", []) if r not in tids]
+    for s_ in g.get("howToListen", []):
+        if s_["term"] not in tids: errors.append(f"how to listen: {s_['term']} isn't a term")
+    print(f"glossary.json: {len(tids)} terms")
+
 if warnings:
     print("\n".join("warning: " + w for w in warnings))
 if errors:

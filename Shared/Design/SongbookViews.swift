@@ -122,6 +122,7 @@ struct TuneDetailContent: View {
     var openArtist: (String) -> Void
     var openAlbum: (String) -> Void
     var openTune: (String) -> Void
+    var openTerm: (String) -> Void = { _ in }
     @Environment(JazzLibrary.self) private var library
     @Environment(PlayerController.self) private var player
     @Environment(Passport.self) private var passport
@@ -154,8 +155,8 @@ struct TuneDetailContent: View {
                     .font(.system(size: 12)).foregroundStyle(Theme.muted)
             }
             ForEach(tune.summary.components(separatedBy: "\n\n"), id: \.self) { p in
-                Text(p).font(.system(size: compact ? 16 : 17, design: .serif)).lineSpacing(4)
-                    .foregroundStyle(Theme.cream.opacity(0.9)).fixedSize(horizontal: false, vertical: true)
+                TermText(text: p, font: .system(size: compact ? 16 : 17, design: .serif), openTerm: openTerm).lineSpacing(4)
+                    .fixedSize(horizontal: false, vertical: true)
                     .frame(maxWidth: 680, alignment: .leading)
             }
 

@@ -10,12 +10,15 @@ enum Route: Hashable {
     case tune(String)
     case place(String)
     case label(String)
+    case lineage(String)
+    case term(String)
 }
 
 /// A `jazzdiscovery://` link, parsed and checked against the library.
 ///
 ///     era/<id>  artist/<id>  album/<id>  decade/<1950>  decades  connections[/<artist id>]  between/<artist>/<artist>
 ///     tab/<timeline|eras|artists|crate|search>[?q=<search>]  now-playing  settings  passport  radio  blindfold  tune/<id>  songbook  place/<id>  map  label/<id>  labels
+///     lineage/<id>  lineages  term/<id>  glossary  how-to-listen
 ///
 /// Links come from anywhere (a web page, another app, a widget), so a link only parses when the page it names exists.
 /// `play/album/<id>` parses as `.playAlbum`; it's the one link that starts music, and the apps honour it only from their
@@ -35,6 +38,9 @@ enum DeepLink: Equatable {
     /// The map of places, and the labels' index.
     case map
     case labels
+    /// Lineages' index, the glossary, and How to Listen (the glossary's first section).
+    case lineages
+    case glossary
     /// Your listening passport.
     case passport
     /// The radio stations (a station's ID only opens the page: links don't start music).
@@ -78,6 +84,16 @@ enum DeepLink: Equatable {
             self = .page(.label(id))
         case "map":
             self = .map
+        case "lineage":
+            guard let id = arg, library.lineage(id) != nil else { return nil }
+            self = .page(.lineage(id))
+        case "term":
+            guard let id = arg, library.term(id) != nil else { return nil }
+            self = .page(.term(id))
+        case "lineages":
+            self = .lineages
+        case "glossary", "how-to-listen":
+            self = .glossary
         case "labels":
             self = .labels
         case "connections":

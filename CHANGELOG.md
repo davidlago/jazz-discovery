@@ -6,6 +6,20 @@ section for the tagged version at the top of the GitHub release notes (or **Unre
 
 ## Unreleased
 
+## 1.6.0
+
+- **Lineages**: family trees for the trumpet, the saxophone, the piano, the drums and the voice. Faces placed by when
+  each player came of age, lines for who learned from whom, and every line says why (and who said so). Select a face
+  to light up its roots and heirs; *Play the Lineage* plays one track per player, in order, and the tree follows.
+- Artist pages have a **Lineage** strip: who they came from and who came from them.
+- **Glossary**: 35 terms, from *swing* and *the head* to *rhythm changes*, *clave* and *sheets of sound*, each with a
+  definition, a paragraph and a recording to hear it in.
+- Glossary terms are links wherever the app tells a story: era histories, why each record matters, tune stories.
+- **How to Listen**: five steps through *So What*, on the Glossary and, until you've heard your first record, on the
+  home screen.
+- iPhone: Lineages and Glossary rows on Explore; Mac: in the sidebar. `lineage/<id>`, `lineages`, `term/<id>`,
+  `glossary` and `how-to-listen` links.
+
 ## 1.5.0
 
 - **Places**: a map of jazz, with 47 cities, neighbourhoods, clubs, studios and festivals as pins in their era's

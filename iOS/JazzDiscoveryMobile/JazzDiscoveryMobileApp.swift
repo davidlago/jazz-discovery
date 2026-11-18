@@ -112,6 +112,8 @@ struct RouteView: View {
             case .tune(let id): if let t = library.tune(id) { TuneDetailView(tune: t) }
             case .place(let id): if let p = library.place(id) { PlaceDetailView(place: p) }
             case .label(let id): if let l = library.label(id) { LabelDetailView(label: l) }
+            case .lineage(let id): if let l = library.lineage(id) { LineageDetailView(lineage: l) }
+            case .term(let id): if let t = library.term(id) { TermDetailView(term: t) }
             }
         case .decades: DecadesPage()
         case .connections(let focus): ConnectionsMapView(focus: focus)
@@ -119,6 +121,8 @@ struct RouteView: View {
         case .songbook: SongbookPage()
         case .places: PlacesPage()
         case .labels: LabelsPage()
+        case .lineages: LineagesPage()
+        case .glossary: GlossaryPage()
         case .radio: RadioPage()
         case .blindfold: BlindfoldPage()
         }

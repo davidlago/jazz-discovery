@@ -28,14 +28,24 @@ final class JazzLibrary {
     /// Cities, rooms, studios and festivals (places.json), and labels with pages (labels.json).
     let places: [Place]
     let labels: [LabelInfo]
+    /// Instrument family trees (lineages.json), the glossary (glossary.json), and the linker that finds its terms.
+    let lineages: [Lineage]
+    let glossary: GlossaryData
+    let termLinker: TermLinker
     private let tuneByID: [String: Tune]
     /// Title key → tune, from titles and aliases.
     private let tuneByKey: [String: Tune]
 
     init(data: JazzData, sessions: [String: Session] = [:], tracks: [String: StationTrack] = [:],
-         tracklists: [String: [CatalogTrack]] = [:], tunes: [Tune] = [], places: [Place] = [], labels: [LabelInfo] = []) {
+         tracklists: [String: [CatalogTrack]] = [:], tunes: [Tune] = [], places: [Place] = [], labels: [LabelInfo] = [],
+         lineages: [Lineage] = [], glossary: GlossaryData = GlossaryData(terms: [])) {
         self.places = places
         self.labels = labels
+        self.lineages = lineages
+        self.glossary = glossary
+        termLinker = TermLinker(terms: glossary.terms,
+                                protectedNames: data.artists.map(\.name) + data.albums.map(\.title) + tunes.map(\.title)
+                                    + data.eras.flatMap { [$0.name, $0.stamp ?? ""] })
         self.tracks = StationTrack.load(tracks)
         self.tracklists = tracklists
         self.tunes = tunes.sorted { Tune.key($0.title) < Tune.key($1.title) }
@@ -107,7 +117,9 @@ final class JazzLibrary {
                                tracklists: optional([String: [CatalogTrack]].self, "tracklists", in: bundle) ?? [:],
                                tunes: optional(SongbookData.self, "songbook", in: bundle)?.tunes ?? [],
                                places: optional(PlacesData.self, "places", in: bundle)?.places ?? [],
-                               labels: optional(LabelsData.self, "labels", in: bundle)?.labels ?? [])
+                               labels: optional(LabelsData.self, "labels", in: bundle)?.labels ?? [],
+                               lineages: optional(LineagesData.self, "lineages", in: bundle)?.lineages ?? [],
+                               glossary: optional(GlossaryData.self, "glossary", in: bundle) ?? GlossaryData(terms: []))
         } catch {
             fatalError("Could not decode jazz.json: \(error)")
         }
