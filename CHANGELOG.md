@@ -6,6 +6,8 @@ section for the tagged version at the top of the GitHub release notes (or **Unre
 
 ## Unreleased
 
+## 1.10.0
+
 - **Siri and Shortcuts**: "Play bebop radio on Jazz Discovery", "What happened in jazz today", "Continue my path",
   "Play my next stop", and opening any artist, record or tune.
 - **Spotlight**: search the system for "Kind of Blue" or "Body and Soul" and open its page in the app.
