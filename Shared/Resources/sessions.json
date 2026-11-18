@@ -1,6 +1,6 @@
 {
  "a-love-supreme": {
-  "reviewed": false,
+  "reviewed": true,
   "source": "musicbrainz:release/77d06b99-117a-3ba3-8230-69361ad7be91",
   "mbReleaseGroup": "77cf47ba-58cd-3f3d-a5f9-79bf89860421",
   "edition": "1965-01 US",
@@ -58,11 +58,10 @@
     "name": "Rudy Van Gelder",
     "role": "engineer"
    }
-  ],
-  "edited": true
+  ]
  },
  "afro": {
-  "reviewed": false,
+  "reviewed": true,
   "source": "musicbrainz:release/63a61333-9bfc-45a7-9afd-c39964b774b8",
   "mbReleaseGroup": "30c0d7cb-789f-3e21-a07c-eba2de2d03ac",
   "edition": "1954 US",
@@ -371,8 +370,7 @@
     "name": "Dizzy Gillespie",
     "role": "arranger"
    }
-  ],
-  "edited": true
+  ]
  },
  "amazing-bud-powell-1": {
   "reviewed": true,
@@ -659,29 +657,69 @@
     "name": "Louis H. Marks",
     "role": "producer"
    }
-  ]
+  ],
+  "edited": true
  },
  "art-of-the-trio-vol-1": {
   "reviewed": false,
-  "source": "musicbrainz:release/d9bbe80f-dfca-4a58-9ef9-1ac233d31aba",
+  "source": "Wikipedia: The Art of the Trio Volume One",
   "mbReleaseGroup": "08a932f2-ab57-39b9-a154-c2f96b5d1321",
   "edition": "1997 None",
   "tracks": [
-   "Intro: Entrance 666",
-   "My Lament",
-   "Prince of Many Faces",
-   "The Art",
-   "When Winter Came",
-   "Lifeplague",
-   "Labyrinth of the Mind",
-   "The Halls Have Eyes",
-   "Into the Dawn",
-   "Outro: The Return"
+   "Blame It on My Youth",
+   "I Didn't Know What Time It Was",
+   "Ron's Place",
+   "Blackbird",
+   "Lament for Linus",
+   "Mignon's Song",
+   "I Fall in Love Too Easily",
+   "Lucid",
+   "Nobody Else but Me"
   ],
-  "personnel": [],
+  "personnel": [
+   {
+    "artist": "brad-mehldau",
+    "name": "Brad Mehldau",
+    "instruments": [
+     "piano"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Larry Grenadier",
+    "instruments": [
+     "bass"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Jorge Rossy",
+    "instruments": [
+     "drums"
+    ]
+   }
+  ],
   "draftNotes": [
-   "no players credited on this edition"
-  ]
+   "MusicBrainz had matched an unrelated record; written from Wikipedia."
+  ],
+  "recorded": [
+   {
+    "date": "1996-09-04",
+    "place": "Mad Hatter Studios, Los Angeles"
+   },
+   {
+    "date": "1996-09-05",
+    "place": "Mad Hatter Studios, Los Angeles"
+   }
+  ],
+  "crew": [
+   {
+    "artist": null,
+    "name": "Matt Pierson",
+    "role": "producer"
+   }
+  ],
+  "edited": true
  },
  "back-at-the-chicken-shack": {
   "reviewed": true,
@@ -1469,14 +1507,15 @@
   "recorded": [
    {
     "date": "1969-08-19",
-    "place": "Columbia (CBS) Studio ‘B’"
+    "place": "Columbia Studio B, New York"
    },
    {
-    "date": "1969-08-20"
+    "date": "1969-08-20",
+    "place": "Columbia Studio B, New York"
    },
    {
     "date": "1969-08-21",
-    "place": "Columbia (CBS) Studio ‘B’"
+    "place": "Columbia Studio B, New York"
    }
   ],
   "tracks": [
@@ -1601,35 +1640,38 @@
     "artist": null,
     "name": "Juma Santos",
     "instruments": [
-     "percussion"
-    ],
-    "only": [
-     "Pharaoh’s Dance"
-    ]
-   },
-   {
-    "artist": null,
-    "name": "Jim Riley",
-    "instruments": [
      "congas",
-     "shakers"
-    ],
-    "except": [
-     "Pharaoh’s Dance"
+     "shakers",
+     "percussion"
     ]
    }
   ],
   "crew": [
    {
     "artist": null,
-    "name": "Stanley Tonkell",
-    "role": "engineer"
+    "name": "Teo Macero",
+    "role": "producer"
    },
    {
     "artist": null,
     "name": "Frank Laico",
     "role": "engineer"
+   },
+   {
+    "artist": null,
+    "name": "Stan Tonkel",
+    "role": "engineer"
+   },
+   {
+    "artist": null,
+    "name": "Mati Klarwein",
+    "role": "design"
    }
+  ],
+  "edited": true,
+  "draftNotes": [
+   "Juma Santos was credited on the LP as \"Jim Riley\": one player, on all six tracks.",
+   "Apple Music's seventh track, \"Feio\", is from a 1970 session not covered here."
   ]
  },
  "bix-singin-the-blues": {
@@ -1713,12 +1755,25 @@
    },
    {
     "artist": null,
-    "name": "Jeffrey “Tain” Watts",
+    "name": "Jeff “Tain” Watts",
     "instruments": [
      "drums"
     ]
    }
-  ]
+  ],
+  "crew": [
+   {
+    "artist": null,
+    "name": "Steven Epstein",
+    "role": "producer"
+   },
+   {
+    "artist": null,
+    "name": "Tim Geelan",
+    "role": "engineer"
+   }
+  ],
+  "edited": true
  },
  "black-radio": {
   "reviewed": false,
@@ -1796,7 +1851,7 @@
    },
    {
     "artist": null,
-    "name": "Stokley",
+    "name": "Stokley Williams",
     "instruments": [
      "percussion",
      "vocals"
@@ -2024,6 +2079,10 @@
     "name": "Mickaël Galvaire",
     "role": "engineer"
    }
+  ],
+  "edited": true,
+  "draftNotes": [
+   "The app's Apple Music match was Black Radio 2 (2013); corrected to Black Radio (2012) in catalog.json."
   ]
  },
  "blanton-webster-band": {
@@ -2256,18 +2315,18 @@
    }
   ],
   "tracks": [
-   "You Don’t Know What Love Is",
+   "You Don't Know What Love Is",
    "Come On In My Kitchen",
-   "Tell Me You’ll Wait for Me",
+   "Tell Me You'll Wait for Me",
    "Children of the Night",
    "Hellhound on My Trail",
    "Black Crow",
    "Sankofa",
    "Estrellas",
    "Redbone",
-   "Tupelo Honey",
-   "Blue Light ’Til Dawn",
-   "I Can’t Stand the Rain"
+   "Tupelo Honey/Angel",
+   "Blue Light 'Til Dawn",
+   "I Can't Stand the Rain"
   ],
   "personnel": [
    {
@@ -2306,7 +2365,7 @@
     ],
     "only": [
      "You Don’t Know What Love Is",
-     "Tupelo Honey",
+     "Tupelo Honey/Angel",
      "Blue Light ’Til Dawn"
     ]
    },
@@ -2321,7 +2380,7 @@
      "Come On In My Kitchen",
      "Children of the Night",
      "Hellhound on My Trail",
-     "Tupelo Honey"
+     "Tupelo Honey/Angel"
     ]
    },
    {
@@ -2343,7 +2402,7 @@
      "bass"
     ],
     "only": [
-     "Tupelo Honey"
+     "Tupelo Honey/Angel"
     ]
    },
    {
@@ -2358,7 +2417,7 @@
      "Come On In My Kitchen",
      "Children of the Night",
      "Black Crow",
-     "Tupelo Honey"
+     "Tupelo Honey/Angel"
     ]
    },
    {
@@ -2372,7 +2431,7 @@
      "Tell Me You’ll Wait for Me",
      "Children of the Night",
      "Black Crow",
-     "Tupelo Honey"
+     "Tupelo Honey/Angel"
     ]
    },
    {
@@ -2466,11 +2525,6 @@
    },
    {
     "artist": null,
-    "name": "Brandon Ross",
-    "role": "arranger"
-   },
-   {
-    "artist": null,
     "name": "Peter Beekerman",
     "role": "engineer"
    },
@@ -2508,46 +2562,12 @@
     "artist": null,
     "name": "Danny Kopelson",
     "role": "engineer"
-   },
-   {
-    "artist": null,
-    "name": "Kenny Davis",
-    "role": "arranger"
-   },
-   {
-    "artist": null,
-    "name": "Cyro Baptista",
-    "role": "arranger"
-   },
-   {
-    "artist": "cassandra-wilson",
-    "name": "Cassandra Wilson",
-    "role": "arranger"
-   },
-   {
-    "artist": null,
-    "name": "Jeff Haynes",
-    "role": "arranger"
-   },
-   {
-    "artist": null,
-    "name": "Gib Wharton",
-    "role": "arranger"
-   },
-   {
-    "artist": null,
-    "name": "Charles Burnham",
-    "role": "arranger"
-   },
-   {
-    "artist": null,
-    "name": "Chris Whitley",
-    "role": "arranger"
    }
   ],
   "draftNotes": [
-   "this edition has 12 tracks; the Apple Music album has 16"
-  ]
+   "Apple Music adds three live 1994 tracks, not covered. Per-track arranging credits left out."
+  ],
+  "edited": true
  },
  "blue-train": {
   "reviewed": true,
@@ -2642,7 +2662,7 @@
   "recorded": [
    {
     "date": "1975-12",
-    "place": "Bauer Studios"
+    "place": "Tonstudio Bauer, Ludwigsburg"
    }
   ],
   "tracks": [
@@ -2674,8 +2694,7 @@
     "artist": null,
     "name": "Bob Moses",
     "instruments": [
-     "drums",
-     "membranophone"
+     "drums"
     ]
    }
   ],
@@ -2700,7 +2719,8 @@
     "name": "Manfred Eicher",
     "role": "producer"
    }
-  ]
+  ],
+  "edited": true
  },
  "carnegie-hall-1938": {
   "reviewed": false,
@@ -3292,7 +3312,7 @@
   ]
  },
  "chega-de-saudade": {
-  "reviewed": false,
+  "reviewed": true,
   "source": "musicbrainz:release/7eef0e8a-483c-49b5-883d-b828541d7cfc",
   "mbReleaseGroup": "9e4072b4-11c3-3fe6-be4f-4a607bbb94f9",
   "edition": "1963 US",
@@ -3335,8 +3355,7 @@
   ],
   "draftNotes": [
    "Gathers Gilberto's 1958–59 Odeon sessions; the original LP doesn't credit the orchestra's players, so only Gilberto and arranger Jobim are listed. MusicBrainz had matched a 1962 US reissue's date."
-  ],
-  "edited": true
+  ]
  },
  "chet-baker-sings": {
   "reviewed": true,
@@ -3503,7 +3522,7 @@
   ]
  },
  "complete-communion": {
-  "reviewed": false,
+  "reviewed": true,
   "source": "musicbrainz:release/92be7b8b-f428-4d9a-a245-eae761823b1f",
   "mbReleaseGroup": "c60ca1d0-366c-315b-a15d-62100981795b",
   "edition": "1966 US",
@@ -3558,11 +3577,10 @@
     "name": "Rudy Van Gelder",
     "role": "engineer"
    }
-  ],
-  "edited": true
+  ]
  },
  "dance-mania": {
-  "reviewed": false,
+  "reviewed": true,
   "source": "musicbrainz:release/1538df3a-89b1-487a-8fe2-887e3a5501ea",
   "mbReleaseGroup": "522f179f-7c31-3a7c-95ed-c22218eba84f",
   "edition": "1958 US",
@@ -3755,8 +3773,7 @@
    {
     "date": "1957-12"
    }
-  ],
-  "edited": true
+  ]
  },
  "djangology": {
   "reviewed": false,
@@ -4347,7 +4364,8 @@
     "name": "Tony Visconti",
     "role": "producer"
    }
-  ]
+  ],
+  "edited": true
  },
  "essential-bessie-smith": {
   "reviewed": false,
@@ -4420,7 +4438,7 @@
   ]
  },
  "fire-music": {
-  "reviewed": false,
+  "reviewed": true,
   "source": "musicbrainz:release/0c801d46-afea-3610-b466-a9e5b813b275",
   "mbReleaseGroup": "31674ca5-3f86-36f5-a5e0-73c1ba037cda",
   "edition": "1965 US",
@@ -4525,8 +4543,7 @@
   ],
   "draftNotes": [
    "Apple Music's sixth track, a live \"Hambone\" (Village Gate, 28 Mar 1965), isn't part of these sessions; it matches the studio \"Hambone\" by title."
-  ],
-  "edited": true
+  ]
  },
  "genius-of-modern-music-1": {
   "reviewed": true,
@@ -4719,7 +4736,7 @@
   ]
  },
  "getz-gilberto": {
-  "reviewed": false,
+  "reviewed": true,
   "source": "musicbrainz:release/3dbe8250-a4e4-4bc4-a32c-db0e3a88375d",
   "mbReleaseGroup": "b248d212-aace-3c3e-a23d-e13aaac1f87a",
   "edition": "1964-03 US",
@@ -4807,8 +4824,7 @@
   ],
   "draftNotes": [
    "Bass: Sebastião Neto. Reissues (and MusicBrainz) credit Tommy Williams in error, per Wikipedia."
-  ],
-  "edited": true
+  ]
  },
  "giant-steps": {
   "reviewed": true,
@@ -5111,7 +5127,10 @@
   "edition": "1997-06-03 US",
   "recorded": [
    {
-    "date": "1997-01"
+    "date": "1997-01-05"
+   },
+   {
+    "date": "1997-01-06"
    }
   ],
   "tracks": [
@@ -5225,7 +5244,7 @@
    },
    {
     "artist": null,
-    "name": "José Quintana",
+    "name": "José Luis “Changuito” Quintana",
     "instruments": [
      "timbales"
     ]
@@ -5241,8 +5260,14 @@
     "artist": "roy-hargrove",
     "name": "Roy Hargrove",
     "role": "producer"
+   },
+   {
+    "artist": null,
+    "name": "Adam Blackburn",
+    "role": "engineer"
    }
-  ]
+  ],
+  "edited": true
  },
  "hawkins-body-and-soul": {
   "reviewed": false,
@@ -5360,8 +5385,14 @@
     "artist": null,
     "name": "Harvey Mason",
     "role": "arranger"
+   },
+   {
+    "artist": null,
+    "name": "Fred Catero",
+    "role": "engineer"
    }
-  ]
+  ],
+  "edited": true
  },
  "heavy-weather": {
   "reviewed": false,
@@ -5370,8 +5401,16 @@
   "edition": "1977 JP",
   "recorded": [
    {
-    "date": "1976",
-    "place": "Devonshire Studios"
+    "date": "1976-07-08",
+    "place": "Montreux Jazz Festival"
+   },
+   {
+    "date": "1976-12",
+    "place": "Devonshire Studios, North Hollywood"
+   },
+   {
+    "date": "1977-01",
+    "place": "Devonshire Studios, North Hollywood"
    }
   ],
   "tracks": [
@@ -5488,7 +5527,21 @@
     "artist": "joe-zawinul",
     "name": "Joe Zawinul",
     "role": "producer"
+   },
+   {
+    "artist": null,
+    "name": "Nancy Donald",
+    "role": "design"
+   },
+   {
+    "artist": null,
+    "name": "Lou Beach",
+    "role": "design"
    }
+  ],
+  "edited": true,
+  "draftNotes": [
+   "\"Rumba Mamá\" was recorded live at Montreux (8 Jul 1976); the rest at Devonshire, Dec 1976–Jan 1977."
   ]
  },
  "hot-five-hot-seven": {
@@ -5860,9 +5913,8 @@
     "artist": "herbie-hancock",
     "name": "Herbie Hancock",
     "instruments": [
-     "clarinet",
-     "electric piano",
-     "piano"
+     "piano",
+     "electric piano"
     ],
     "except": [
      "Donna Lee",
@@ -6184,6 +6236,11 @@
     "name": "Jaco Pastorius",
     "role": "arranger"
    }
+  ],
+  "edited": true,
+  "draftNotes": [
+   "No Wikipedia personnel; credits from MusicBrainz (\"clarinet\" for Herbie Hancock removed as an error).",
+   "Apple Music adds an alternate \"(Used to Be a) Cha-Cha\" and \"6/4 Jam\", not covered."
   ]
  },
  "jazz-at-massey-hall": {
@@ -6255,7 +6312,7 @@
  },
  "jazz-bata-2": {
   "reviewed": false,
-  "source": "musicbrainz:release/ef5d196d-819a-4422-b691-f9ba6e4b9bea",
+  "source": "Mack Avenue / Tower Records listings",
   "mbReleaseGroup": "f15650c8-2c26-4136-a95a-5da5d50554e2",
   "edition": "2018 None",
   "tracks": [
@@ -6268,13 +6325,44 @@
    "El Guije",
    "The Clown"
   ],
-  "personnel": [],
+  "personnel": [
+   {
+    "artist": "chucho-valdes",
+    "name": "Chucho Valdés",
+    "instruments": [
+     "piano"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Yelsy Heredia",
+    "instruments": [
+     "bass"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Dreiser Durruthy Bombalé",
+    "instruments": [
+     "batá",
+     "vocals"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Yaroldy Abreu Robles",
+    "instruments": [
+     "percussion"
+    ]
+   }
+  ],
   "draftNotes": [
-   "no players credited on this edition"
-  ]
+   "MusicBrainz credited nobody and there's no Wikipedia page; the quartet from Mack Avenue's and Tower's listings. Regina Carter (violin) guests on \"Ochún\" and \"100 Años de Bebo\": add her once the track titles are confirmed."
+  ],
+  "edited": true
  },
  "journey-in-satchidananda": {
-  "reviewed": false,
+  "reviewed": true,
   "source": "musicbrainz:release/2efc9b51-ab8a-3b10-883d-5821a6da989e",
   "mbReleaseGroup": "cf154081-2678-3778-95cf-cd31c4ea5dfe",
   "edition": "1971 US",
@@ -6397,11 +6485,10 @@
     "name": "Orville O'Brien",
     "role": "engineer"
    }
-  ],
-  "edited": true
+  ]
  },
  "karma": {
-  "reviewed": false,
+  "reviewed": true,
   "source": "musicbrainz:release/df151c91-79cf-49a6-9bab-374dec6a1812",
   "mbReleaseGroup": "22f978cb-26e6-3757-a13a-347970574eec",
   "edition": "1969 US",
@@ -6530,11 +6617,10 @@
     "name": "Bob Thiele",
     "role": "producer"
    }
-  ],
-  "edited": true
+  ]
  },
  "kenya": {
-  "reviewed": false,
+  "reviewed": true,
   "source": "musicbrainz:release/481dbbbc-7147-4b2a-b4fe-085f53c8b323",
   "mbReleaseGroup": "2b5535ee-adbe-33a5-8986-74eace9dd169",
   "edition": "1958 None",
@@ -6796,8 +6882,7 @@
   ],
   "draftNotes": [
    "No album page on Wikipedia; credits from MusicBrainz (apparently the liner notes). Machito is credited as conductor, not as a player. Cannonball Adderley's appearance is confirmed by his discography."
-  ],
-  "edited": true
+  ]
  },
  "kind-of-blue": {
   "reviewed": true,
@@ -7882,7 +7967,7 @@
   ]
  },
  "out-to-lunch": {
-  "reviewed": false,
+  "reviewed": true,
   "source": "musicbrainz:release/a1d0a17b-0d3d-4d34-bd02-ea48cada4fe4",
   "mbReleaseGroup": "bc6c2573-bc7d-346a-8880-0e34b8fb7e50",
   "edition": "1964-08 US",
@@ -7959,8 +8044,7 @@
     "name": "Rudy Van Gelder",
     "role": "engineer"
    }
-  ],
-  "edited": true
+  ]
  },
  "perceive-its-beauty": {
   "reviewed": false,
@@ -8279,18 +8363,14 @@
     "name": "Floating Points",
     "role": "producer"
    }
-  ]
+  ],
+  "edited": true
  },
  "return-to-forever": {
   "reviewed": false,
   "source": "musicbrainz:release/2f0ff863-0713-4925-a4eb-73216c612e71",
   "mbReleaseGroup": "46fa76ea-8bed-3f13-808b-ac313db502b8",
   "edition": "1972 US",
-  "kind": "compilation",
-  "recordedBetween": [
-   1772,
-   1972
-  ],
   "tracks": [
    "Return to Forever",
    "Crystal Silence",
@@ -8303,27 +8383,23 @@
     "name": "Chick Corea",
     "instruments": [
      "electric piano"
-    ],
-    "tracks": 4
+    ]
    },
    {
     "artist": null,
     "name": "Joe Farrell",
     "instruments": [
      "flute",
-     "soprano saxophone",
-     "saxophone"
-    ],
-    "tracks": 4
+     "soprano saxophone"
+    ]
    },
    {
     "artist": null,
     "name": "Stanley Clarke",
     "instruments": [
-     "electric bass",
-     "bass"
-    ],
-    "tracks": 4
+     "bass",
+     "electric bass"
+    ]
    },
    {
     "artist": null,
@@ -8331,28 +8407,51 @@
     "instruments": [
      "vocals",
      "percussion"
-    ],
-    "tracks": 4
+    ]
    },
    {
     "artist": null,
     "name": "Airto Moreira",
     "instruments": [
-     "membranophone"
-    ],
-    "tracks": 4
+     "drums",
+     "percussion"
+    ]
    }
   ],
   "crew": [
    {
     "artist": null,
+    "name": "Manfred Eicher",
+    "role": "producer"
+   },
+   {
+    "artist": null,
     "name": "Tony May",
     "role": "engineer"
+   },
+   {
+    "artist": null,
+    "name": "Michael Manoogian",
+    "role": "photography"
    }
+  ],
+  "recorded": [
+   {
+    "date": "1972-02-02",
+    "place": "A&R Studios, New York"
+   },
+   {
+    "date": "1972-02-03",
+    "place": "A&R Studios, New York"
+   }
+  ],
+  "edited": true,
+  "draftNotes": [
+   "MusicBrainz had a bogus \"1772\" date, so the script took it for a compilation."
   ]
  },
  "sahara": {
-  "reviewed": false,
+  "reviewed": true,
   "source": "musicbrainz:release/f6216267-38ac-44e8-b9e8-0dc8902c61fa",
   "mbReleaseGroup": "93052b69-747d-3ccd-ad10-8630e7b1ad7f",
   "edition": "1972 US",
@@ -8424,8 +8523,7 @@
     "name": "Orrin Keepnews",
     "role": "producer"
    }
-  ],
-  "edited": true
+  ]
  },
  "sarah-vaughan-1955": {
   "reviewed": true,
@@ -9004,7 +9102,7 @@
  },
  "source": {
   "reviewed": false,
-  "source": "musicbrainz:release/22acfba8-665f-4605-b4a6-d5fcee194b6f",
+  "source": "Wikipedia: Source (album), credits from Tidal",
   "mbReleaseGroup": "11a8e523-e4b0-4c7b-a425-54b5e10c5569",
   "edition": "2020-08-21 XW",
   "tracks": [
@@ -9012,7 +9110,7 @@
    "The Message Continues",
    "Source",
    "Together Is a Beautiful Place to Be",
-   "Stand With Each Other",
+   "Stand with Each Other",
    "Inner Game",
    "La cumbia me está llamando",
    "Before Us: In Demerara & Caura",
@@ -9024,20 +9122,14 @@
     "name": "Nubya Garcia",
     "instruments": [
      "tenor saxophone"
-    ],
-    "only": [
-     "Pace"
     ]
    },
    {
     "artist": null,
-    "name": "Joe Armon‐Jones",
+    "name": "Joe Armon-Jones",
     "instruments": [
      "piano",
      "keyboards"
-    ],
-    "only": [
-     "Pace"
     ]
    },
    {
@@ -9045,9 +9137,6 @@
     "name": "Daniel Casimir",
     "instruments": [
      "bass"
-    ],
-    "only": [
-     "Pace"
     ]
    },
    {
@@ -9055,9 +9144,63 @@
     "name": "Sam Jones",
     "instruments": [
      "drums"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Cassie Kinoshi",
+    "instruments": [
+     "tenor saxophone",
+     "vocals"
     ],
     "only": [
-     "Pace"
+     "Source",
+     "Stand with Each Other"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Sheila Maurice-Grey",
+    "instruments": [
+     "trumpet",
+     "vocals"
+    ],
+    "only": [
+     "Source",
+     "Together Is a Beautiful Place to Be",
+     "Stand with Each Other"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Richie Seivwright",
+    "instruments": [
+     "vocals"
+    ],
+    "only": [
+     "Source",
+     "Stand with Each Other"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "La Perla",
+    "instruments": [
+     "vocals",
+     "percussion"
+    ],
+    "only": [
+     "La cumbia me está llamando"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Akenya",
+    "instruments": [
+     "vocals"
+    ],
+    "only": [
+     "Boundless Beings"
     ]
    }
   ],
@@ -9069,7 +9212,7 @@
    },
    {
     "artist": null,
-    "name": "Kwes.",
+    "name": "Kwes",
     "role": "producer"
    },
    {
@@ -9079,11 +9222,12 @@
    }
   ],
   "draftNotes": [
-   "only 1 of 9 tracks have players credited"
-  ]
+   "MusicBrainz credited one track; written from Wikipedia. La Perla (a group) stands for its three singers on track 7."
+  ],
+  "edited": true
  },
  "space-is-the-place": {
-  "reviewed": false,
+  "reviewed": true,
   "source": "musicbrainz:release/87e49acf-c2f5-427c-a699-d3df4ac149f0",
   "mbReleaseGroup": "d12aff28-a9e3-3be8-a36a-71e2f11bf575",
   "edition": "1973 US",
@@ -9302,8 +9446,7 @@
     "name": "Baker Bigsby",
     "role": "engineer"
    }
-  ],
-  "edited": true
+  ]
  },
  "speak-no-evil": {
   "reviewed": true,
@@ -9385,7 +9528,7 @@
   ]
  },
  "spiritual-unity": {
-  "reviewed": false,
+  "reviewed": true,
   "source": "musicbrainz:release/05c9bbed-8586-4ef0-9d53-73483688db87",
   "mbReleaseGroup": "0299b455-5537-3b27-ba6e-396882bf3ef2",
   "edition": "1965 US",
@@ -9430,8 +9573,7 @@
     "name": "Bernard Stollman",
     "role": "producer"
    }
-  ],
-  "edited": true
+  ]
  },
  "standards-vol-1": {
   "reviewed": false,
@@ -9440,8 +9582,12 @@
   "edition": "1983 DE",
   "recorded": [
    {
-    "date": "1983-01",
-    "place": "Power Station at BerkleeNYC"
+    "date": "1983-01-11",
+    "place": "Power Station, New York"
+   },
+   {
+    "date": "1983-01-12",
+    "place": "Power Station, New York"
    }
   ],
   "tracks": [
@@ -9490,7 +9636,8 @@
     "name": "Manfred Eicher",
     "role": "producer"
    }
-  ]
+  ],
+  "edited": true
  },
  "study-in-brown": {
   "reviewed": true,
@@ -9689,7 +9836,7 @@
    },
    {
     "artist": null,
-    "name": "Tylana Enomoto",
+    "name": "Tylana Renga Enomoto",
     "instruments": [
      "violin"
     ],
@@ -9955,6 +10102,61 @@
     "only": [
      "Change of the Guard"
     ]
+   },
+   {
+    "artist": null,
+    "name": "Igmar Thomas",
+    "instruments": [
+     "trumpet"
+    ],
+    "only": [
+     "Change of the Guard",
+     "Askim",
+     "The Next Step",
+     "The Rhythm Changes",
+     "Miss Understanding",
+     "Re Run",
+     "The Magnificent 7",
+     "Re Run Home",
+     "The Message"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Todd Simon",
+    "instruments": [
+     "trumpet"
+    ],
+    "only": [
+     "Henrietta Our Hero"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Shaunte Palmer",
+    "instruments": [
+     "trombone"
+    ],
+    "only": [
+     "Henrietta Our Hero"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Robert Miller",
+    "instruments": [
+     "drums"
+    ],
+    "only": [
+     "Cherokee"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Patrice Quinn",
+    "instruments": [
+     "vocals"
+    ]
    }
   ],
   "crew": [
@@ -10003,6 +10205,10 @@
     "name": "Kamasi Washington",
     "role": "producer"
    }
+  ],
+  "edited": true,
+  "draftNotes": [
+   "Wikipedia's per-track credits added for four missing players. The 20-voice choir and some of the strings aren't listed one by one."
   ]
  },
  "the-imagined-savior": {
@@ -10240,9 +10446,7 @@
     "role": "engineer"
    }
   ],
-  "draftNotes": [
-   "only 12 of 13 tracks have players credited"
-  ]
+  "edited": true
  },
  "the-inner-mounting-flame": {
   "reviewed": false,
@@ -10308,7 +10512,14 @@
     "name": "John McLaughlin",
     "role": "producer"
    }
-  ]
+  ],
+  "recorded": [
+   {
+    "date": "1971-08-14",
+    "place": "Columbia Studios, New York"
+   }
+  ],
+  "edited": true
  },
  "the-real-mccoy": {
   "reviewed": true,
@@ -10504,7 +10715,7 @@
   ]
  },
  "the-shape-of-jazz-to-come": {
-  "reviewed": false,
+  "reviewed": true,
   "source": "musicbrainz:release/46e6cbc5-3275-4302-9632-2a49f3798765",
   "mbReleaseGroup": "5879cfca-e1d0-3ef4-8014-3b284832ed18",
   "edition": "1959 US",
@@ -10563,8 +10774,7 @@
     "name": "Bones Howe",
     "role": "engineer"
    }
-  ],
-  "edited": true
+  ]
  },
  "the-sidewinder": {
   "reviewed": true,
@@ -10726,7 +10936,7 @@
   ]
  },
  "unit-structures": {
-  "reviewed": false,
+  "reviewed": true,
   "source": "musicbrainz:release/71a5fdcf-1274-499e-a483-bbefde613590",
   "mbReleaseGroup": "370d6fb7-8a0b-3e3e-a5f4-d0fcdf2869a1",
   "edition": "1966 US",
@@ -10817,42 +11027,294 @@
     "name": "Reid Miles",
     "role": "design"
    }
-  ],
-  "edited": true
+  ]
  },
  "universal-beings": {
   "reviewed": false,
-  "source": "musicbrainz:release/dc84075b-5a1f-4085-8889-731a3d7df202",
+  "source": "Wikipedia: Universal Beings (liner notes)",
   "mbReleaseGroup": "02bc86ec-e917-4cda-bd15-ffe65e10511a",
   "edition": "2018-10-26 XW",
   "tracks": [
-   "A Queen’s Intro",
+   "A Queen's Intro",
    "Holy Lands",
    "Young Genius",
    "Black Lion",
    "Tall Tales",
    "Mantra",
-   "Pharaoh’s Intro",
+   "Pharaoh's Intro",
    "Atlantic Black",
    "Inner Flight",
    "Wise Man, Wiser Woman",
-   "Prosperity’s Fear",
+   "Prosperity's Fear",
    "Flipped Out",
    "Voila",
    "Suite Haus",
    "The Newbies Lift Off",
    "The Royal Outro",
    "The Count Off",
-   "Butterss’s",
+   "Butterss's",
    "Turtle Tricks",
    "The Fifth Monk",
    "Brighter Days Beginning",
    "Universal Beings"
   ],
-  "personnel": [],
+  "personnel": [
+   {
+    "artist": "makaya-mccraven",
+    "name": "Makaya McCraven",
+    "instruments": [
+     "drums"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Brandee Younger",
+    "instruments": [
+     "harp"
+    ],
+    "only": [
+     "A Queen's Intro",
+     "Holy Lands",
+     "Young Genius",
+     "Black Lion",
+     "Tall Tales",
+     "Mantra"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Joel Ross",
+    "instruments": [
+     "vibraphone"
+    ],
+    "only": [
+     "A Queen's Intro",
+     "Holy Lands",
+     "Young Genius",
+     "Black Lion",
+     "Tall Tales",
+     "Mantra"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Dezron Douglas",
+    "instruments": [
+     "bass"
+    ],
+    "only": [
+     "A Queen's Intro",
+     "Holy Lands",
+     "Young Genius",
+     "Black Lion",
+     "Tall Tales",
+     "Mantra"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Tomeka Reid",
+    "instruments": [
+     "cello"
+    ],
+    "only": [
+     "A Queen's Intro",
+     "Holy Lands",
+     "Young Genius",
+     "Black Lion",
+     "Tall Tales",
+     "Mantra",
+     "Pharaoh's Intro",
+     "Atlantic Black",
+     "Inner Flight",
+     "Wise Man, Wiser Woman",
+     "Prosperity's Fear"
+    ]
+   },
+   {
+    "artist": "shabaka-hutchings",
+    "name": "Shabaka Hutchings",
+    "instruments": [
+     "tenor saxophone"
+    ],
+    "only": [
+     "Pharaoh's Intro",
+     "Atlantic Black",
+     "Inner Flight",
+     "Wise Man, Wiser Woman",
+     "Prosperity's Fear"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Junius Paul",
+    "instruments": [
+     "bass",
+     "percussion"
+    ],
+    "only": [
+     "Pharaoh's Intro",
+     "Atlantic Black",
+     "Inner Flight",
+     "Wise Man, Wiser Woman",
+     "Prosperity's Fear"
+    ]
+   },
+   {
+    "artist": "nubya-garcia",
+    "name": "Nubya Garcia",
+    "instruments": [
+     "tenor saxophone"
+    ],
+    "only": [
+     "Flipped Out",
+     "Voila",
+     "Suite Haus",
+     "The Newbies Lift Off",
+     "The Royal Outro"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Ashley Henry",
+    "instruments": [
+     "electric piano"
+    ],
+    "only": [
+     "Flipped Out",
+     "Voila",
+     "Suite Haus",
+     "The Newbies Lift Off",
+     "The Royal Outro"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Daniel Casimir",
+    "instruments": [
+     "bass"
+    ],
+    "only": [
+     "Flipped Out",
+     "Voila",
+     "Suite Haus",
+     "The Newbies Lift Off",
+     "The Royal Outro"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Josh Johnson",
+    "instruments": [
+     "alto saxophone"
+    ],
+    "only": [
+     "The Count Off",
+     "Butterss's",
+     "Turtle Tricks",
+     "The Fifth Monk",
+     "Brighter Days Beginning",
+     "Universal Beings"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Miguel Atwood-Ferguson",
+    "instruments": [
+     "violin"
+    ],
+    "only": [
+     "The Count Off",
+     "Butterss's",
+     "Turtle Tricks",
+     "The Fifth Monk",
+     "Brighter Days Beginning",
+     "Universal Beings"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Jeff Parker",
+    "instruments": [
+     "guitar"
+    ],
+    "only": [
+     "The Count Off",
+     "Butterss's",
+     "Turtle Tricks",
+     "The Fifth Monk",
+     "Brighter Days Beginning",
+     "Universal Beings"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Anna Butterss",
+    "instruments": [
+     "bass"
+    ],
+    "only": [
+     "The Count Off",
+     "Butterss's",
+     "Turtle Tricks",
+     "The Fifth Monk",
+     "Brighter Days Beginning",
+     "Universal Beings"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Carlos Niño",
+    "instruments": [
+     "percussion"
+    ],
+    "only": [
+     "The Count Off",
+     "Butterss's",
+     "Turtle Tricks",
+     "The Fifth Monk",
+     "Brighter Days Beginning",
+     "Universal Beings"
+    ]
+   }
+  ],
   "draftNotes": [
-   "no players credited on this edition"
-  ]
+   "Four \"sides\" recorded in New York, Chicago, London and Los Angeles; only the New York date is given on Wikipedia."
+  ],
+  "recorded": [
+   {
+    "date": "2017-08-29",
+    "place": "H0l0, Ridgewood, New York"
+   }
+  ],
+  "crew": [
+   {
+    "artist": "makaya-mccraven",
+    "name": "Makaya McCraven",
+    "role": "producer"
+   },
+   {
+    "artist": null,
+    "name": "David Allen",
+    "role": "engineer"
+   },
+   {
+    "artist": null,
+    "name": "Dave Vettraino",
+    "role": "engineer"
+   },
+   {
+    "artist": null,
+    "name": "Damon Locks",
+    "role": "design"
+   },
+   {
+    "artist": null,
+    "name": "Aaron Lowell Denton",
+    "role": "design"
+   }
+  ],
+  "edited": true
  },
  "watermelon-man": {
   "reviewed": false,
@@ -10880,7 +11342,7 @@
   ]
  },
  "wave": {
-  "reviewed": false,
+  "reviewed": true,
   "source": "musicbrainz:release/864fa8ff-892b-430b-b5ed-e31bcf5be576",
   "mbReleaseGroup": "935fccc4-064a-339c-ba4c-b0acee6ff5eb",
   "edition": "1967 US",
@@ -11155,8 +11617,7 @@
   ],
   "draftNotes": [
    "From the liner notes via Wikipedia. Who plays on which track isn't documented, so everyone is shown on all tracks."
-  ],
-  "edited": true
+  ]
  },
  "we-like-it-here": {
   "reviewed": false,
@@ -11166,18 +11627,10 @@
   "recorded": [
    {
     "date": "2013-10",
-    "place": "Kytopia Studios"
+    "place": "Kytopia Studios, Utrecht"
    }
   ],
   "tracks": [
-   "Shofukan",
-   "What About Me?",
-   "Sleeper",
-   "Jambone",
-   "Kite",
-   "Outlier",
-   "Tio Macaco",
-   "Lingus",
    "Shofukan",
    "What About Me?",
    "Sleeper",
@@ -11324,8 +11777,6 @@
     ],
     "only": [
      "Jambone",
-     "Tio Macaco",
-     "Jambone",
      "Tio Macaco"
     ]
    },
@@ -11336,8 +11787,6 @@
      "percussion"
     ],
     "only": [
-     "Jambone",
-     "Tio Macaco",
      "Jambone",
      "Tio Macaco"
     ]
@@ -11378,9 +11827,9 @@
    }
   ],
   "draftNotes": [
-   "the leader (Snarky Puppy) isn't among the credited players",
-   "this edition has 16 tracks; the Apple Music album has 8"
-  ]
+   "Snarky Puppy is the band, so no single leader appears among the players."
+  ],
+  "edited": true
  },
  "wish": {
   "reviewed": false,
@@ -11435,7 +11884,8 @@
     "name": "Matt Pierson",
     "role": "producer"
    }
-  ]
+  ],
+  "edited": true
  },
  "womanchild": {
   "reviewed": false,
@@ -11444,7 +11894,7 @@
   "edition": "2013 FR",
   "recorded": [
    {
-    "place": "Power Station at BerkleeNYC"
+    "place": "Avatar Studios, New York"
    }
   ],
   "tracks": [
@@ -11496,7 +11946,7 @@
     "artist": null,
     "name": "Aaron Diehl",
     "instruments": [
-     "grand piano"
+     "piano"
     ]
    }
   ],
@@ -11526,6 +11976,7 @@
     "name": "Aaron Diehl",
     "role": "arranger"
    }
-  ]
+  ],
+  "edited": true
  }
 }
