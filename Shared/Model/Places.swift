@@ -63,6 +63,14 @@ struct LabelInfo: Codable, Identifiable, Hashable {
     let sound: String
     let look: String
     var people: [Person] = []
+    /// The label's logo on Wikimedia Commons (a free file: public domain or a free licence), by file name.
+    var logo: String? = nil
+
+    /// The logo at about 500 pixels wide, from Commons.
+    var logoURL: URL? {
+        guard let logo, let name = logo.addingPercentEncoding(withAllowedCharacters: .urlPathAllowed) else { return nil }
+        return URL(string: "https://commons.wikimedia.org/wiki/Special:FilePath/\(name)?width=500")
+    }
     let eras: [String]
 
     var tint: Color { Color(hex: color) }

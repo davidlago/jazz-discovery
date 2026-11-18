@@ -49,10 +49,11 @@ struct BundledSidemenTests {
         }
     }
 
-    @Test("The sidemen are the 41 added with their credits, and each has signature tunes")
+    @Test("The sidemen added with their credits are still there (some now lead records of their own), each with signature tunes")
     func sidemen() {
         let sidemen = library.artists.filter { library.isSideman($0.id) }
-        #expect(sidemen.count >= 41)
+        #expect(sidemen.count >= 30)
+        #expect(library.leads("kid-ory") && !library.appearances(of: "kid-ory").isEmpty)
         for a in sidemen { #expect(!a.signatureTracks.isEmpty, "\(a.id)") }
         #expect(!library.isSideman("scott-joplin"))
         #expect(library.isSideman("paul-chambers"))

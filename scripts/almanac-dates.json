@@ -22,6 +22,11 @@
    "source": "Wikidata Q498089 publication date (day precision); Wikipedia infobox agrees"
   },
   {
+   "album": "jazz-samba",
+   "date": "1962-04-20",
+   "source": "Wikipedia infobox and MusicBrainz release group ba062f3e-1d0c-37f2-b9f3-5a8e20c5ad45 agree (Wikidata has only 1962)"
+  },
+  {
    "album": "maiden-voyage",
    "date": "1965-05-17",
    "source": "Wikidata Q908746 publication date (day precision); Wikipedia infobox and MusicBrainz agree"
@@ -32,9 +37,59 @@
    "source": "Wikidata Q804096 publication date (day precision)"
   },
   {
+   "album": "the-koln-concert",
+   "date": "1975-11-30",
+   "source": "ECM's catalogue page (original release date 30.11.1975), the Wikipedia infobox citing it, and MusicBrainz's German ECM releases agree (Wikidata has 1975-12-12)"
+  },
+  {
    "album": "wish",
    "date": "1993-09-21",
    "source": "Wikipedia infobox and MusicBrainz release group 8e14116f-2f6a-3ed0-8903-ea261716f007 agree"
+  },
+  {
+   "album": "shack-man",
+   "date": "1996-10-15",
+   "source": "Wikipedia infobox and MusicBrainz (Gramavision US release) agree"
+  },
+  {
+   "album": "blood-on-the-fields",
+   "date": "1997-06-17",
+   "source": "Wikipedia infobox and MusicBrainz (Columbia US release) agree (Wikidata has only 1995, the recording year)"
+  },
+  {
+   "album": "soul-of-things",
+   "date": "2002-03-11",
+   "source": "Wikidata Q7564403 publication date (day precision); ECM's catalogue page (original release date 11.03.2002) and the Wikipedia infobox agree (MusicBrainz has 2002-01-06)"
+  },
+  {
+   "album": "another-mind",
+   "date": "2003-04-22",
+   "source": "Wikipedia infobox and MusicBrainz (Telarc US release) agree; Japanese Wikipedia gives the US release as April 22, 2003 and the Japanese one as June 25"
+  },
+  {
+   "album": "canvas",
+   "date": "2005-10-04",
+   "source": "Wikipedia infobox and MusicBrainz (Blue Note US release) agree"
+  },
+  {
+   "album": "sound-grammar",
+   "date": "2006-09-12",
+   "source": "Wikipedia infobox and MusicBrainz (Sound Grammar US release) agree"
+  },
+  {
+   "album": "rabo-de-nube",
+   "date": "2008-03-07",
+   "source": "ECM's catalogue page (original release date 07.03.2008) and MusicBrainz's German ECM releases agree (Wikidata and the Wikipedia infobox have 2008-03-11, the US release)"
+  },
+  {
+   "album": "dedicated-to-you",
+   "date": "2009-06-23",
+   "source": "Wikidata Q5249804 publication date (day precision); Wikipedia infobox and MusicBrainz agree"
+  },
+  {
+   "album": "backatown",
+   "date": "2010-04-20",
+   "source": "Wikipedia infobox and MusicBrainz release group 9578e2e2-2729-4391-b83b-7a5e39374dde (Verve Forecast US release) agree"
   },
   {
    "album": "black-radio",
@@ -62,14 +117,89 @@
    "source": "Wikipedia infobox and MusicBrainz release group 02bc86ec-e917-4cda-bd15-ffe65e10511a agree (Wikidata has 2018-10-24)"
   },
   {
+   "album": "in-the-key-of-the-universe",
+   "date": "2019-03-01",
+   "source": "Wikipedia infobox and MusicBrainz release group 32089a73-3737-4466-8331-915f038be34c (US release) agree (Wikidata has only 2019)"
+  },
+  {
+   "album": "ancestral-recall",
+   "date": "2019-03-22",
+   "source": "Wikipedia infobox and MusicBrainz (Ropeadope worldwide and US releases) agree (Wikidata has only 2019)"
+  },
+  {
+   "album": "the-movement-revisited",
+   "date": "2020-02-07",
+   "source": "Wikipedia infobox and MusicBrainz release group d8a78f33-e954-48b2-b064-54764c32c52d agree"
+  },
+  {
+   "album": "omega",
+   "date": "2020-08-07",
+   "source": "Blue Note's announcement (\"Immanuel Wilkins to release debut album Omega ... on Aug. 7\", June 2020) and MusicBrainz release group b68242d1-c48e-4579-9de2-02d4646f6784 agree"
+  },
+  {
    "album": "source",
    "date": "2020-08-21",
    "source": "Wikidata Q99292197 publication date (day precision); Wikipedia infobox and MusicBrainz agree"
   },
   {
+   "album": "dear-love",
+   "date": "2021-09-10",
+   "source": "BroadwayWorld's July 2021 announcement (\"Dear Love Out September 10\", Empress Legacy) and MusicBrainz release group 4cccab7c-e0da-4fe7-8acd-5ff831584a88 agree"
+  },
+  {
+   "album": "ghost-song",
+   "date": "2022-03-04",
+   "source": "Wikidata Q112031221 publication date (day precision); Wikipedia infobox and MusicBrainz release group fae3e024-cef1-4ba1-9654-02033dc684be agree"
+  },
+  {
+   "album": "standart",
+   "date": "2022-04-29",
+   "source": "Wikipedia infobox (citing Jazzwise) and MusicBrainz release group d29a7d39-59cb-46b8-97bd-d4b83b8c658a agree (Wikidata has only 2022)"
+  },
+  {
+   "album": "not-tight",
+   "date": "2022-07-29",
+   "source": "Wikidata Q116147155 publication date (day precision); Wikipedia infobox and MusicBrainz release group 11219c32-5deb-4cfa-bfc0-4669858721df agree"
+  },
+  {
+   "album": "linger-awhile",
+   "date": "2022-09-16",
+   "source": "Wikidata Q115280778 publication date (day precision); Wikipedia infobox and MusicBrainz release group 9a513362-5439-40ae-a974-b509ddac3414 agree"
+  },
+  {
+   "album": "in-these-times",
+   "date": "2022-09-23",
+   "source": "Wikidata Q114800354 publication date (day precision); Wikipedia infobox and MusicBrainz release group 3131f7d1-1086-4241-b1d9-97256531d0f5 agree"
+  },
+  {
+   "album": "quartetinho",
+   "date": "2022-10-07",
+   "source": "Jazz in Europe's review (release date 7 October 2022, Anzic Records) and MusicBrainz release group 650fe811-0093-4f87-b7f6-e6af1c53600b agree (anatcohen.com says October 2022)"
+  },
+  {
+   "album": "black-classical-music",
+   "date": "2023-09-08",
+   "source": "Wikipedia infobox and MusicBrainz release group 77dfcfc2-44b7-4265-9334-ddd6efc0d47f agree"
+  },
+  {
+   "album": "nublues",
+   "date": "2024-02-09",
+   "source": "Wikipedia infobox and MusicBrainz release group 80bf36ec-d228-4bc3-8550-d523471024f6 agree (Wikidata has only 2024)"
+  },
+  {
    "album": "perceive-its-beauty",
    "date": "2024-04-12",
    "source": "Wikidata Q124739762 publication date (day precision); Wikipedia infobox and MusicBrainz agree"
+  },
+  {
+   "album": "fearless-movement",
+   "date": "2024-05-03",
+   "source": "Wikipedia infobox and MusicBrainz release group 50c425d0-6ed6-47d9-af12-bfa2b80cb628 agree (Wikidata has only 2024)"
+  },
+  {
+   "album": "who-asked",
+   "date": "2026-07-31",
+   "source": "Blue Note's announcement (new album \"out July 31\"), Universal Music Canada's out-now post of 2026-07-31 and MusicBrainz release group 434e92cd-9f07-45cb-b742-090c0e4e6f42 agree"
   }
  ],
  "milestones": [

@@ -98,6 +98,15 @@
   "trackCount": 5,
   "url": "https://music.apple.com/us/album/back-at-the-chicken-shack/724622238"
  },
+ "backatown": {
+  "artistName": "Trombone Shorty",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/15/28/82/1528821f-8e96-3c4c-dbfa-54090665d3a2/00602527364131.rgb.jpg/100x100bb.jpg",
+  "collectionId": 1440764815,
+  "name": "Backatown",
+  "releaseYear": 2010,
+  "trackCount": 14,
+  "url": "https://music.apple.com/us/album/backatown/1440764815"
+ },
  "basie-complete-decca": {
   "artistName": "Count Basie",
   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/63/b9/76/63b97602-12cd-d565-ac06-6a8101d90733/00602567850182.rgb.jpg/100x100bb.jpg",
@@ -161,6 +170,15 @@
   "trackCount": 20,
   "url": "https://music.apple.com/us/album/bix-beiderbecke-vol-i-singin-the-blues/193147812"
  },
+ "black-classical-music": {
+  "artistName": "Yussef Dayes",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/d4/21/b3/d421b356-6a90-dbad-de33-cfe591eb32e6/075597903331.jpg/100x100bb.jpg",
+  "collectionId": 1683439010,
+  "name": "Black Classical Music",
+  "releaseYear": 2023,
+  "trackCount": 19,
+  "url": "https://music.apple.com/us/album/black-classical-music/1683439010"
+ },
  "black-codes": {
   "artistName": "Wynton Marsalis",
   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/ff/41/8c/ff418c45-78eb-3225-dfc3-a7bc9c1974d2/074644000924.jpg/100x100bb.jpg",
@@ -197,6 +215,15 @@
   "trackCount": 27,
   "url": "https://music.apple.com/us/album/blood-on-the-fields/215594380"
  },
+ "blue-clarinet-stomp": {
+  "artistName": "Johnny Dodds",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music6/v4/69/0c/d8/690cd84b-def9-55df-0394-24665dc59d36/888003974548.jpg/100x100bb.jpg",
+  "collectionId": 780633694,
+  "name": "Blue Clarinet Stomp - Complete Sessions 1928 & 1929",
+  "releaseYear": 1990,
+  "trackCount": 23,
+  "url": "https://music.apple.com/us/album/blue-clarinet-stomp-complete-sessions-1928-1929/780633694"
+ },
  "blue-light-til-dawn": {
   "artistName": "Cassandra Wilson",
   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/a8/ef/9c/a8ef9c5a-f979-d922-33b0-a5e57cd43364/00602537829095.rgb.jpg/100x100bb.jpg",
@@ -214,6 +241,15 @@
   "releaseYear": 1957,
   "trackCount": 6,
   "url": "https://music.apple.com/us/album/blue-train/1468202477"
+ },
+ "blues-ette": {
+  "artistName": "Curtis Fuller Quintet",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/91/c5/58/91c558d5-4799-9e2d-57c3-991aa4cecda2/00888072059177.rgb.jpg/100x100bb.jpg",
+  "collectionId": 1433694962,
+  "name": "Blues-ette",
+  "releaseYear": 1959,
+  "trackCount": 6,
+  "url": "https://music.apple.com/us/album/blues-ette/1433694962"
  },
  "bright-size-life": {
   "artistName": "Pat Metheny",
@@ -260,6 +296,15 @@
   "trackCount": 14,
   "url": "https://music.apple.com/us/album/chet-baker-sings/1440864756"
  },
+ "classic-earl-hines-sessions": {
+  "artistName": "Earl \"Fatha\" Hines",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/f0/9b/a6/f09ba643-6222-b2b8-8fde-e50147508b22/886444358927.jpg/100x100bb.jpg",
+  "collectionId": 826804888,
+  "name": "Classic Earl Hines Sessions (1928-1945), Vol. 1 & 2",
+  "releaseYear": 2014,
+  "trackCount": 51,
+  "url": "https://music.apple.com/us/album/classic-earl-hines-sessions-1928-1945-vol-1-2/826804888"
+ },
  "complete-communion": {
   "artistName": "Don Cherry",
   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/cd/25/e0/cd25e029-fab1-0838-bf4f-4e81362910c0/00602547148957.rgb.jpg/100x100bb.jpg",
@@ -277,6 +322,15 @@
   "releaseYear": 1972,
   "trackCount": 7,
   "url": "https://music.apple.com/us/album/conference-of-the-birds/1442845534"
+ },
+ "creole-jazz-band-1923": {
+  "artistName": "King Oliver's Creole Jazz Band",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music/cf/40/87/mzi.kzsoibsx.jpg/100x100bb.jpg",
+  "collectionId": 405529503,
+  "name": "Editio Princeps",
+  "releaseYear": 2010,
+  "trackCount": 39,
+  "url": "https://music.apple.com/us/album/editio-princeps/405529503"
  },
  "danca-das-cabecas": {
   "artistName": "EGBERTO GISMONTI",
@@ -296,6 +350,24 @@
   "trackCount": 12,
   "url": "https://music.apple.com/us/album/dance-mania-vol-1-remastered/252742319"
  },
+ "dance-of-the-octopus": {
+  "artistName": "Red Norvo",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/ca/b7/2d/cab72dfa-d6a1-3754-d20d-cedde85b7104/197188962265.jpg/100x100bb.jpg",
+  "collectionId": 1700732264,
+  "name": "Dance Of The Octopus",
+  "releaseYear": 1995,
+  "trackCount": 26,
+  "url": "https://music.apple.com/us/album/dance-of-the-octopus/1700732264"
+ },
+ "dear-love": {
+  "artistName": "Jazzmeia Horn and Her Noble Force",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/b6/43/84/b643840a-ac70-efbd-bc88-e9cecc8cf981/artwork.jpg/100x100bb.jpg",
+  "collectionId": 1583812282,
+  "name": "Dear Love",
+  "releaseYear": 2021,
+  "trackCount": 14,
+  "url": "https://music.apple.com/us/album/dear-love/1583812282"
+ },
  "dedicated-to-you": {
   "artistName": "Kurt Elling",
   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/93/da/69/93da6959-9643-4e25-70c5-68a4abc9e8a5/00888072313149.rgb.jpg/100x100bb.jpg",
@@ -304,6 +376,24 @@
   "releaseYear": 2009,
   "trackCount": 12,
   "url": "https://music.apple.com/us/album/dedicated-to-you-kurt-elling-sings-the-music-of/1442907830"
+ },
+ "dexter-gordon-on-savoy": {
+  "artistName": "Dexter Gordon",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/72/f5/b1/72f5b16a-ab99-816b-4383-70091fe050ce/22CRGIM34405.rgb.jpg/100x100bb.jpg",
+  "collectionId": 1645444895,
+  "name": "On Savoy: Dexter Gordon",
+  "releaseYear": 2022,
+  "trackCount": 15,
+  "url": "https://music.apple.com/us/album/on-savoy-dexter-gordon/1645444895"
+ },
+ "dizzy-rca-victor": {
+  "artistName": "Dizzy Gillespie",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music/1c/5a/5e/mzi.wklmiapu.jpg/100x100bb.jpg",
+  "collectionId": 298320892,
+  "name": "The Complete RCA Victor Recordings",
+  "releaseYear": 1995,
+  "trackCount": 43,
+  "url": "https://music.apple.com/us/album/the-complete-rca-victor-recordings/298320892"
  },
  "djangology": {
   "artistName": "Django Reinhardt",
@@ -332,6 +422,15 @@
   "trackCount": 12,
   "url": "https://music.apple.com/us/album/emilys-d-evolution/1443285598"
  },
+ "essential-artie-shaw": {
+  "artistName": "Artie Shaw",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/e0/0a/c6/e00ac66a-e082-5204-364b-2d7e6d56f19f/828766923926.jpg/100x100bb.jpg",
+  "collectionId": 304819612,
+  "name": "The Essential Artie Shaw",
+  "releaseYear": 2005,
+  "trackCount": 38,
+  "url": "https://music.apple.com/us/album/the-essential-artie-shaw/304819612"
+ },
  "essential-bessie-smith": {
   "artistName": "Bessie Smith",
   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/12/42/d1/1242d169-4eb6-450b-f68c-f49355cc6306/886444234061.jpg/100x100bb.jpg",
@@ -340,6 +439,24 @@
   "releaseYear": 1997,
   "trackCount": 36,
   "url": "https://music.apple.com/us/album/the-essential-bessie-smith/740001646"
+ },
+ "fabulous-fats-navarro-1": {
+  "artistName": "Fats Navarro",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/7e/c7/bf/7ec7bf5b-d54e-a67f-6b16-153c1aa6e494/00602557524949.rgb.jpg/100x100bb.jpg",
+  "collectionId": 1443895585,
+  "name": "The Fabulous Fats Navarro, Vol. 1",
+  "releaseYear": 1957,
+  "trackCount": 11,
+  "url": "https://music.apple.com/us/album/the-fabulous-fats-navarro-vol-1/1443895585"
+ },
+ "fearless-movement": {
+  "artistName": "Kamasi Washington",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/ca/ca/e5/cacae55c-a673-17d0-c54d-b261bbf4bf15/889030035059.png/100x100bb.jpg",
+  "collectionId": 1729582490,
+  "name": "Fearless Movement",
+  "releaseYear": 2024,
+  "trackCount": 12,
+  "url": "https://music.apple.com/us/album/fearless-movement/1729582490"
  },
  "fire-music": {
   "artistName": "Archie Shepp",
@@ -358,6 +475,15 @@
   "releaseYear": 1991,
   "trackCount": 10,
   "url": "https://music.apple.com/us/album/flight-to-freedom/1444171554"
+ },
+ "fontessa": {
+  "artistName": "The Modern Jazz Quartet",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music/y2005/m10/d05/h02/mzi.jynghsbq.jpg/100x100bb.jpg",
+  "collectionId": 81898862,
+  "name": "Fontessa",
+  "releaseYear": 1956,
+  "trackCount": 7,
+  "url": "https://music.apple.com/us/album/fontessa/81898862"
  },
  "footprints-live": {
   "artistName": "Wayne Shorter",
@@ -404,6 +530,15 @@
   "trackCount": 8,
   "url": "https://music.apple.com/us/album/getz-gilberto/1422655717"
  },
+ "ghost-song": {
+  "artistName": "C\u00e9cile McLorin Salvant",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/04/ff/1a/04ff1abd-6039-742b-3c7b-a783b6a15ef1/075597914689.jpg/100x100bb.jpg",
+  "collectionId": 1592614847,
+  "name": "Ghost Song",
+  "releaseYear": 2022,
+  "trackCount": 12,
+  "url": "https://music.apple.com/us/album/ghost-song/1592614847"
+ },
  "giant-steps": {
   "artistName": "John Coltrane",
   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/4e/2f/8b/4e2f8b1f-7e14-1ce4-1c76-4683b1b9173d/603497847549.jpg/100x100bb.jpg",
@@ -440,6 +575,15 @@
   "trackCount": 10,
   "url": "https://music.apple.com/us/album/habana/1443262362"
  },
+ "hampton-victor-sessions-1": {
+  "artistName": "Lionel Hampton and His Orchestra",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/b9/72/40/b9724022-a6f0-b228-52f4-88aa34e367ad/886446388953.jpg/100x100bb.jpg",
+  "collectionId": 1221180970,
+  "name": "The Complete Victor Lionel Hampton Sessions, Vol. 1",
+  "releaseYear": 2017,
+  "trackCount": 40,
+  "url": "https://music.apple.com/us/album/the-complete-victor-lionel-hampton-sessions-vol-1/1221180970"
+ },
  "hawkins-body-and-soul": {
   "artistName": "Coleman Hawkins",
   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music/cc/c8/92/mzi.bmfudpbr.jpg/100x100bb.jpg",
@@ -466,6 +610,24 @@
   "releaseYear": 1977,
   "trackCount": 8,
   "url": "https://music.apple.com/us/album/heavy-weather/170409940"
+ },
+ "hell-fighters-band": {
+  "artistName": "James Reese Europe",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music/y2005/m08/d24/h01/mzi.icuncqqa.jpg/100x100bb.jpg",
+  "collectionId": 79312254,
+  "name": "James Reese Europe's 369th U.S. Infantry \"Hell Fighters\" Band (Remastered)",
+  "releaseYear": 1996,
+  "trackCount": 24,
+  "url": "https://music.apple.com/us/album/james-reese-europes-369th-u-s-infantry-hell-fighters/79312254"
+ },
+ "henderson-armstrong-1924": {
+  "artistName": "Louis Armstrong & Fletcher Henderson",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/5c/e1/81/5ce181ee-31e5-8d38-7959-559d27d28329/194491160777.jpg/100x100bb.jpg",
+  "collectionId": 1532441659,
+  "name": "Fletcher Henderson and Louis Armstrong 1924-1925",
+  "releaseYear": 1991,
+  "trackCount": 26,
+  "url": "https://music.apple.com/us/album/fletcher-henderson-and-louis-armstrong-1924-1925/1532441659"
  },
  "historicity": {
   "artistName": "Vijay Iyer Trio",
@@ -494,6 +656,42 @@
   "trackCount": 4,
   "url": "https://music.apple.com/us/album/idle-moments/1443768982"
  },
+ "if-you-got-to-ask": {
+  "artistName": "Fats Waller and His Rhythm",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/c8/30/04/c830048c-ced7-d15c-6c74-1a1d5806573b/mzi.ijuxefpr.jpg/100x100bb.jpg",
+  "collectionId": 304826649,
+  "name": "If You Got to Ask, You Ain't Got It!",
+  "releaseYear": 2006,
+  "trackCount": 66,
+  "url": "https://music.apple.com/us/album/if-you-got-to-ask-you-aint-got-it/304826649"
+ },
+ "in-the-key-of-the-universe": {
+  "artistName": "Joey DeFrancesco",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/80/2b/45/802b45a2-2359-7c4a-be72-2631a584d8a6/118090.jpg/100x100bb.jpg",
+  "collectionId": 1850044420,
+  "name": "In the Key of the Universe",
+  "releaseYear": 2019,
+  "trackCount": 10,
+  "url": "https://music.apple.com/us/album/in-the-key-of-the-universe/1850044420"
+ },
+ "in-these-times": {
+  "artistName": "Makaya McCraven",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/e8/e0/90/e8e090fb-10ba-a0f8-c719-ce347b658bbc/075597908541.jpg/100x100bb.jpg",
+  "collectionId": 1627338395,
+  "name": "In These Times",
+  "releaseYear": 2022,
+  "trackCount": 11,
+  "url": "https://music.apple.com/us/album/in-these-times/1627338395"
+ },
+ "ive-got-a-woman": {
+  "artistName": "Jimmy McGriff",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/86/be/78/86be78d9-f3b4-34fa-5334-0115782513b0/00602577596674.rgb.jpg/100x100bb.jpg",
+  "collectionId": 1456319185,
+  "name": "I've Got A Woman",
+  "releaseYear": 1962,
+  "trackCount": 10,
+  "url": "https://music.apple.com/us/album/ive-got-a-woman/1456319185"
+ },
  "jaco-pastorius-album": {
   "artistName": "Jaco Pastorius",
   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/9b/d7/2a/9bd72a7f-5f17-1a39-1492-e957185a4c73/886971276121.jpg/100x100bb.jpg",
@@ -520,6 +718,15 @@
   "releaseYear": 2018,
   "trackCount": 8,
   "url": "https://music.apple.com/us/album/jazz-bat%C3%A1-2/1850044271"
+ },
+ "jazz-samba": {
+  "artistName": "Stan Getz & Charlie Byrd",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/9c/32/22/9c32222d-0faa-90ce-f761-146be72a7bc9/14UMGIM17170.rgb.jpg/100x100bb.jpg",
+  "collectionId": 1469580375,
+  "name": "Jazz Samba",
+  "releaseYear": 1962,
+  "trackCount": 8,
+  "url": "https://music.apple.com/us/album/jazz-samba/1469580375"
  },
  "john-coltrane-and-johnny-hartman": {
   "artistName": "John Coltrane & Johnny Hartman",
@@ -548,6 +755,15 @@
   "trackCount": 12,
   "url": "https://music.apple.com/us/album/journey-to-the-urge-within/1443404374"
  },
+ "kansas-city-sessions": {
+  "artistName": "Lester Young",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/de/fa/e9/defae9ab-eac8-acf4-7f3d-bcbe14f3864c/00011105040228.rgb.jpg/100x100bb.jpg",
+  "collectionId": 1444218104,
+  "name": "The \"Kansas City\" Sessions",
+  "releaseYear": 1997,
+  "trackCount": 22,
+  "url": "https://music.apple.com/us/album/the-kansas-city-sessions/1444218104"
+ },
  "karma": {
   "artistName": "Pharoah Sanders",
   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/01/36/a6/0136a666-36d2-caf1-efb1-da77a646d104/06UMGIM03764.rgb.jpg/100x100bb.jpg",
@@ -575,6 +791,15 @@
   "trackCount": 5,
   "url": "https://music.apple.com/us/album/keystone-3-live/1442432733"
  },
+ "kid-ory-1944-45": {
+  "artistName": "Kid Ory's Creole Jazz Band",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/14/d5/fd/14d5fdf5-c8e8-7429-dcb4-97097fd914e6/24CRGIM43400.rgb.jpg/100x100bb.jpg",
+  "collectionId": 1771679731,
+  "name": "Kid Ory's Creole Jazz Band 1944/45",
+  "releaseYear": 1957,
+  "trackCount": 16,
+  "url": "https://music.apple.com/us/album/kid-orys-creole-jazz-band-1944-45/1771679731"
+ },
  "kind-of-blue": {
   "artistName": "Miles Davis",
   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music/7f/9f/d6/mzi.vtnaewef.jpg/100x100bb.jpg",
@@ -583,6 +808,33 @@
   "releaseYear": 1959,
   "trackCount": 5,
   "url": "https://music.apple.com/us/album/kind-of-blue/268443092"
+ },
+ "king-of-the-country-blues": {
+  "artistName": "Blind Lemon Jefferson",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/49/2c/18/492c1801-c235-3fd6-9271-ac4b5969531d/00016351016928_Cover.jpg/100x100bb.jpg",
+  "collectionId": 1569131061,
+  "name": "King of the Country Blues",
+  "releaseYear": 1985,
+  "trackCount": 23,
+  "url": "https://music.apple.com/us/album/king-of-the-country-blues/1569131061"
+ },
+ "lee-konitz-with-warne-marsh": {
+  "artistName": "Lee Konitz",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music/y2005/m10/d04/h20/mzi.kcodhmwx.jpg/100x100bb.jpg",
+  "collectionId": 81873177,
+  "name": "Lee Konitz With Warne Marsh",
+  "releaseYear": 1955,
+  "trackCount": 8,
+  "url": "https://music.apple.com/us/album/lee-konitz-with-warne-marsh/81873177"
+ },
+ "linger-awhile": {
+  "artistName": "Samara Joy",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/3c/1f/b8/3c1fb8bc-0b20-19c0-0993-250b8091b7d9/22UMGIM80456.rgb.jpg/100x100bb.jpg",
+  "collectionId": 1637144888,
+  "name": "Linger Awhile",
+  "releaseYear": 2022,
+  "trackCount": 10,
+  "url": "https://music.apple.com/us/album/linger-awhile/1637144888"
  },
  "little-girl-blue": {
   "artistName": "Nina Simone",
@@ -692,6 +944,51 @@
   "trackCount": 12,
   "url": "https://music.apple.com/us/album/new-moon-daughter/1443111209"
  },
+ "not-tight": {
+  "artistName": "DOMi & JD BECK",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/e6/6f/28/e66f28c5-8c48-5997-5848-6e75991f9f2d/22UMGIM45497.rgb.jpg/100x100bb.jpg",
+  "collectionId": 1629562125,
+  "name": "NOT TiGHT",
+  "releaseYear": 2022,
+  "trackCount": 15,
+  "url": "https://music.apple.com/us/album/not-tight/1629562125"
+ },
+ "nublues": {
+  "artistName": "Joel Ross",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/2c/c9/bb/2cc9bbc0-f463-1a17-d237-09262ca94886/23UMGIM89267.rgb.jpg/100x100bb.jpg",
+  "collectionId": 1718894439,
+  "name": "nublues",
+  "releaseYear": 2024,
+  "trackCount": 10,
+  "url": "https://music.apple.com/us/album/nublues/1718894439"
+ },
+ "odjb-75th-anniversary": {
+  "artistName": "The Original Dixieland Jazz Band",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music/e2/84/0b/mzi.ogvdtsso.jpg/100x100bb.jpg",
+  "collectionId": 299723925,
+  "name": "The 75th Anniversary",
+  "releaseYear": 1992,
+  "trackCount": 23,
+  "url": "https://music.apple.com/us/album/the-75th-anniversary/299723925"
+ },
+ "omega": {
+  "artistName": "Immanuel Wilkins",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/b0/41/3d/b0413de4-7c73-4383-2299-9bf5fd71c896/20UMGIM46699.rgb.jpg/100x100bb.jpg",
+  "collectionId": 1519119832,
+  "name": "Omega",
+  "releaseYear": 2020,
+  "trackCount": 10,
+  "url": "https://music.apple.com/us/album/omega/1519119832"
+ },
+ "on-the-tender-spot": {
+  "artistName": "Ambrose Akinmusire",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/40/c8/5b/40c85b17-b8c1-a61b-eb62-a830a643254f/20UMGIM21491.rgb.jpg/100x100bb.jpg",
+  "collectionId": 1510620567,
+  "name": "on the tender spot of every calloused moment",
+  "releaseYear": 2020,
+  "trackCount": 11,
+  "url": "https://music.apple.com/us/album/on-the-tender-spot-of-every-calloused-moment/1510620567"
+ },
  "out-of-the-cool": {
   "artistName": "Gil Evans",
   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/91/38/9b/91389bfd-322f-7a54-8ef1-37fc98bf36f8/07UMGIM13408.rgb.jpg/100x100bb.jpg",
@@ -719,6 +1016,15 @@
   "trackCount": 11,
   "url": "https://music.apple.com/us/album/perceive-its-beauty-acknowledge-its-grace/1731422250"
  },
+ "piano-starts-here": {
+  "artistName": "Art Tatum",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music/92/62/42/mzi.dmbqmteb.jpg/100x100bb.jpg",
+  "collectionId": 157401507,
+  "name": "Piano Starts Here",
+  "releaseYear": 1968,
+  "trackCount": 13,
+  "url": "https://music.apple.com/us/album/piano-starts-here/157401507"
+ },
  "ptah-the-el-daoud": {
   "artistName": "Alice Coltrane",
   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/71/c5/2a/71c52a48-cd92-fb2b-f74e-c1edf51a25f1/06UMGIM04794.rgb.jpg/100x100bb.jpg",
@@ -727,6 +1033,15 @@
   "releaseYear": 1970,
   "trackCount": 4,
   "url": "https://music.apple.com/us/album/ptah-the-el-daoud/1440756392"
+ },
+ "quartetinho": {
+  "artistName": "Anat Cohen",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/e7/70/36/e77036fc-d905-1fb4-83a9-c4e14b9236d6/658580047177_cover.jpg/100x100bb.jpg",
+  "collectionId": 6817880069,
+  "name": "Quartetinho",
+  "releaseYear": 2022,
+  "trackCount": 11,
+  "url": "https://music.apple.com/us/album/quartetinho/6817880069"
  },
  "queen-of-the-organ": {
   "artistName": "Shirley Scott",
@@ -764,6 +1079,15 @@
   "trackCount": 10,
   "url": "https://music.apple.com/us/album/river-the-joni-letters/1442831171"
  },
+ "robert-johnson-complete-recordings": {
+  "artistName": "Robert Johnson",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/01/f1/b4/01f1b41a-cb41-8f51-7a97-adf7a2954759/886443584365.jpg/100x100bb.jpg",
+  "collectionId": 546817591,
+  "name": "The Complete Recordings",
+  "releaseYear": 1990,
+  "trackCount": 41,
+  "url": "https://music.apple.com/us/album/the-complete-recordings/546817591"
+ },
  "sahara": {
   "artistName": "McCoy Tyner",
   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/d3/7e/42/d37e42e9-d777-d544-431c-108a4f84d6e6/00025218631129.rgb.jpg/100x100bb.jpg",
@@ -781,6 +1105,15 @@
   "releaseYear": 1954,
   "trackCount": 10,
   "url": "https://music.apple.com/us/album/sarah-vaughan/1434889193"
+ },
+ "satchmo-at-symphony-hall": {
+  "artistName": "Louis Armstrong",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/9b/51/97/9b519762-f6bc-39a3-5936-7aa49f5bf015/00011105066129.rgb.jpg/100x100bb.jpg",
+  "collectionId": 1443198374,
+  "name": "Satchmo at Symphony Hall (Live)",
+  "releaseYear": 1954,
+  "trackCount": 15,
+  "url": "https://music.apple.com/us/album/satchmo-at-symphony-hall-live/1443198374"
  },
  "savoy-dial-master-takes": {
   "artistName": "Charlie Parker",
@@ -863,6 +1196,15 @@
   "trackCount": 13,
   "url": "https://music.apple.com/us/album/soul-of-things/1444125007"
  },
+ "soul-sauce": {
+  "artistName": "Cal Tjader",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/11/3d/e1/113de1bc-ab13-bccf-d3b0-e5f2af7de2c6/00731452166821.rgb.jpg/100x100bb.jpg",
+  "collectionId": 1444045190,
+  "name": "Soul Sauce",
+  "releaseYear": 1964,
+  "trackCount": 13,
+  "url": "https://music.apple.com/us/album/soul-sauce/1444045190"
+ },
  "sound-grammar": {
   "artistName": "Ornette Coleman",
   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music/6e/f2/d3/mzi.vdyyjywu.tif/100x100bb.jpg",
@@ -926,6 +1268,15 @@
   "trackCount": 6,
   "url": "https://music.apple.com/us/album/standards-vol-1/1440839750"
  },
+ "standart": {
+  "artistName": "Tigran Hamasyan",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/20/83/07/208307f4-b31a-4811-1370-2cd4659b455b/075597911480.jpg/100x100bb.jpg",
+  "collectionId": 1606805140,
+  "name": "StandArt",
+  "releaseYear": 2022,
+  "trackCount": 9,
+  "url": "https://music.apple.com/us/album/standart/1606805140"
+ },
  "state-of-the-tenor-vol-1": {
   "artistName": "Joe Henderson",
   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/0a/88/af/0a88afe0-5350-ba18-8d32-3369550d943c/21UM1IM28532.rgb.jpg/100x100bb.jpg",
@@ -934,6 +1285,15 @@
   "releaseYear": 1985,
   "trackCount": 7,
   "url": "https://music.apple.com/us/album/the-state-of-the-tenor-vol-1-live-at-the-village-vanguard-1985/1591645161"
+ },
+ "steppin-on-the-blues": {
+  "artistName": "Lonnie Johnson",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Features/v4/fc/50/c3/fc50c3e4-7545-fd34-0eaf-da30d099346a/dj.hdylzrwj.jpg/100x100bb.jpg",
+  "collectionId": 193591352,
+  "name": "Steppin' On the Blues",
+  "releaseYear": 1990,
+  "trackCount": 19,
+  "url": "https://music.apple.com/us/album/steppin-on-the-blues/193591352"
  },
  "study-in-brown": {
   "artistName": "Clifford Brown & Max Roach",
@@ -1007,6 +1367,15 @@
   "trackCount": 9,
   "url": "https://music.apple.com/us/album/the-inner-mounting-flame-with-john-mclaughlin/511075517"
  },
+ "the-jimmy-giuffre-3": {
+  "artistName": "Jimmy Giuffre",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music/y2005/m03/d14/h23/s06.ayawyhfm.jpg/100x100bb.jpg",
+  "collectionId": 50268852,
+  "name": "The Jimmy Giuffre 3",
+  "releaseYear": 1957,
+  "trackCount": 11,
+  "url": "https://music.apple.com/us/album/the-jimmy-giuffre-3/50268852"
+ },
  "the-koln-concert": {
   "artistName": "Keith Jarrett",
   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/88/a5/ac/88a5ac07-7eac-6e07-a970-8073f48c0ad6/00602547299819.rgb.jpg/100x100bb.jpg",
@@ -1015,6 +1384,15 @@
   "releaseYear": 1975,
   "trackCount": 5,
   "url": "https://music.apple.com/us/album/the-k%C3%B6ln-concert-live/1440840566"
+ },
+ "the-movement-revisited": {
+  "artistName": "Christian McBride",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/92/6c/61/926c61e8-99e1-e209-1d06-dc9688483903/125093.jpg/100x100bb.jpg",
+  "collectionId": 1886572375,
+  "name": "The Movement Revisited: A Musical Portrait of Four Icons",
+  "releaseYear": 2020,
+  "trackCount": 13,
+  "url": "https://music.apple.com/us/album/the-movement-revisited-a-musical-portrait-of-four-icons/1886572375"
  },
  "the-real-mccoy": {
   "artistName": "McCoy Tyner",
@@ -1060,6 +1438,15 @@
   "releaseYear": 1984,
   "trackCount": 10,
   "url": "https://music.apple.com/us/album/the-voice/41228101"
+ },
+ "think-lonnie-smith": {
+  "artistName": "Lonnie Smith",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music4/v4/9f/4e/22/9f4e229e-4f31-c078-ce9e-c5b35a7869a7/00724356384354.jpg/100x100bb.jpg",
+  "collectionId": 715851023,
+  "name": "Think!",
+  "releaseYear": 1968,
+  "trackCount": 5,
+  "url": "https://music.apple.com/us/album/think/715851023"
  },
  "time-out": {
   "artistName": "The Dave Brubeck Quartet",
@@ -1142,6 +1529,15 @@
   "trackCount": 8,
   "url": "https://music.apple.com/us/album/we-like-it-here/1322208932"
  },
+ "who-asked": {
+  "artistName": "DOMi & JD BECK",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/01/fc/e1/01fce13b-51f9-1384-52ad-18b0fae2319d/26UMGIM30915.rgb.jpg/100x100bb.jpg",
+  "collectionId": 6783171570,
+  "name": "WHO ASKED?",
+  "releaseYear": 2026,
+  "trackCount": 16,
+  "url": "https://music.apple.com/us/album/who-asked/6783171570"
+ },
  "wish": {
   "artistName": "Joshua Redman",
   "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/ab/87/9a/ab879a6f-d941-e1b0-d3a9-e912a722c765/mzi.ltvdkbxi.jpg/100x100bb.jpg",
@@ -1168,5 +1564,23 @@
   "releaseYear": 2013,
   "trackCount": 12,
   "url": "https://music.apple.com/us/album/womanchild/1886552182"
+ },
+ "yellow": {
+  "artistName": "Emma-Jean Thackray",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/06/f4/15/06f4159c-ebf1-7e93-5887-01b197fca792/5060263723424.jpg/100x100bb.jpg",
+  "collectionId": 1556894279,
+  "name": "Yellow",
+  "releaseYear": 2021,
+  "trackCount": 14,
+  "url": "https://music.apple.com/us/album/yellow/1556894279"
+ },
+ "zodiac-suite": {
+  "artistName": "Mary Lou Williams",
+  "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music/a2/46/8d/mzi.fphflmju.jpg/100x100bb.jpg",
+  "collectionId": 261233781,
+  "name": "Zodiac Suite",
+  "releaseYear": 1945,
+  "trackCount": 17,
+  "url": "https://music.apple.com/us/album/zodiac-suite/261233781"
  }
 }
