@@ -18,6 +18,8 @@
 #                        development certificate and an App Manager API key can't use cloud signing
 #   LASTFM_API_KEY=… LASTFM_SHARED_SECRET=…
 #                        build in the app's own Last.fm API account (see iOS/Signing.xcconfig)
+#   ICLOUD=1             sign the app with iCloud key-value storage (iOS/JazzDiscoveryMobile.entitlements, see
+#                        iOS/Signing.xcconfig), once its App ID has iCloud (docs/app-store.md)
 set -euo pipefail
 
 cd "$(dirname "$0")/.."
@@ -32,6 +34,7 @@ if [[ -n "${DEVELOPMENT_TEAM:-}" ]]; then SETTINGS+=(DEVELOPMENT_TEAM="$DEVELOPM
 if [[ -n "${LASTFM_API_KEY:-}" && -n "${LASTFM_SHARED_SECRET:-}" ]]; then
     SETTINGS+=(LASTFM_API_KEY="$LASTFM_API_KEY" LASTFM_SHARED_SECRET="$LASTFM_SHARED_SECRET")
 fi
+if [[ "${ICLOUD:-0}" == "1" ]]; then SETTINGS+=(APP_ENTITLEMENTS=iOS/JazzDiscoveryMobile.entitlements); fi
 
 AUTH=()
 if [[ -n "${ASC_KEY:-}" ]]; then

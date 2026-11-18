@@ -1,11 +1,16 @@
 // Makes sure each bundle ID has an App Store provisioning profile that includes the Apple Distribution certificate in
 // the keychain, creating or replacing them through the App Store Connect API, and installs them for Xcode.
 //
-//   swift scripts/provisioning-profiles.swift <key.p8> <key ID> <issuer ID> <bundle ID>...
+//   swift scripts/provisioning-profiles.swift [--developer-id] [--replace] <key.p8> <key ID> <issuer ID> <bundle ID>...
 //
 // Each profile is named "<bundle ID> App Store (CI)" (`profileName` below; scripts/testflight.sh uses the same names).
 // Used by scripts/testflight.sh with DISTRIBUTION_CERTIFICATE=1 (CI), where an App Manager API key can't use Xcode's
 // cloud-managed signing.
+//
+// --developer-id makes the Mac app's Developer ID profile instead ("<bundle ID> Developer ID", for the Developer ID
+// Application certificate in the keychain), which iCloud needs (scripts/build-app.sh PROVISIONING_PROFILE=…), and also
+// saves it as build/profiles/<bundle ID>.provisionprofile for the MAC_PROVISIONING_PROFILE secret (docs/app-store.md).
+// --replace makes new profiles even when valid ones exist, after the App ID's capabilities change.
 import CryptoKit
 import Foundation
 import Security
@@ -15,12 +20,30 @@ func fail(_ message: String) -> Never {
     exit(1)
 }
 
-let args = CommandLine.arguments.dropFirst()
-guard args.count >= 4 else { fail("usage: provisioning-profiles.swift <key.p8> <key ID> <issuer ID> <bundle ID>...") }
-let keyPath = args[args.startIndex], keyID = args[args.startIndex + 1], issuer = args[args.startIndex + 2]
+var args = Array(CommandLine.arguments.dropFirst())
+let developerID = args.contains("--developer-id"), replace = args.contains("--replace")
+args.removeAll { $0 == "--developer-id" || $0 == "--replace" }
+guard args.count >= 4, !args.contains(where: { $0.hasPrefix("--") }) else {
+    fail("usage: provisioning-profiles.swift [--developer-id] [--replace] <key.p8> <key ID> <issuer ID> <bundle ID>...")
+}
+let keyPath = args[0], keyID = args[1], issuer = args[2]
 let bundleIDs = Array(args.dropFirst(3))
 
-func profileName(_ bundleID: String) -> String { "\(bundleID) App Store (CI)" }
+/// What kind of profile, for which certificate.
+struct Kind {
+    let certificatePrefix: String     // the keychain identity's name
+    let certificateTypes: String      // the API's certificateType filter
+    let profileType: String
+    let suffix: String                // of the profile's name
+    let fileExtension: String         // how Xcode names installed profiles of the platform
+}
+let kind = developerID
+    ? Kind(certificatePrefix: "Developer ID Application:", certificateTypes: "DEVELOPER_ID_APPLICATION,DEVELOPER_ID_APPLICATION_G2",
+           profileType: "MAC_APP_DIRECT", suffix: "Developer ID", fileExtension: "provisionprofile")
+    : Kind(certificatePrefix: "Apple Distribution:", certificateTypes: "DISTRIBUTION",
+           profileType: "IOS_APP_STORE", suffix: "App Store (CI)", fileExtension: "mobileprovision")
+
+func profileName(_ bundleID: String) -> String { "\(bundleID) \(kind.suffix)" }
 
 // MARK: App Store Connect API
 
@@ -66,9 +89,9 @@ func attributes(_ item: [String: Any]) -> [String: Any] { item["attributes"] as?
 
 // MARK: The certificate
 
-/// Serial numbers of the valid "Apple Distribution" signing identities in the keychain, as uppercase hex without
-/// leading zeros (how the API lists them).
-func keychainDistributionSerials() -> Set<String> {
+/// Serial numbers of the valid signing identities of `kind` in the keychain ("Apple Distribution: …" or "Developer ID
+/// Application: …"), as uppercase hex without leading zeros (how the API lists them).
+func keychainSerials() -> Set<String> {
     let query: [String: Any] = [kSecClass as String: kSecClassIdentity, kSecMatchLimit as String: kSecMatchLimitAll,
                                 kSecReturnRef as String: true]
     var result: CFTypeRef?
@@ -77,7 +100,7 @@ func keychainDistributionSerials() -> Set<String> {
     for identity in identities {
         var certificate: SecCertificate?
         guard SecIdentityCopyCertificate(identity, &certificate) == errSecSuccess, let certificate,
-              let summary = SecCertificateCopySubjectSummary(certificate) as String?, summary.hasPrefix("Apple Distribution:"),
+              let summary = SecCertificateCopySubjectSummary(certificate) as String?, summary.hasPrefix(kind.certificatePrefix),
               let serial = SecCertificateCopySerialNumberData(certificate, nil) as Data? else { continue }
         serials.insert(normalizedSerial(serial.map { String(format: "%02X", $0) }.joined()))
     }
@@ -91,13 +114,14 @@ func normalizedSerial(_ hex: String) -> String {
 
 // MARK: Main
 
-let serials = keychainDistributionSerials()
-guard !serials.isEmpty else { fail("no Apple Distribution identity in the keychain") }
-let certificates = items(await api("GET", "certificates", query: ["filter[certificateType]": "DISTRIBUTION", "limit": "200"]))
+let certificateName = kind.certificatePrefix.dropLast()
+let serials = keychainSerials()
+guard !serials.isEmpty else { fail("no \(certificateName) identity in the keychain") }
+let certificates = items(await api("GET", "certificates", query: ["filter[certificateType]": kind.certificateTypes, "limit": "200"]))
 guard let certificate = certificates.first(where: {
     serials.contains(normalizedSerial(attributes($0)["serialNumber"] as? String ?? ""))
 }), let certificateID = certificate["id"] as? String else {
-    fail("the keychain's Apple Distribution certificate isn't one of the team's (revoked or from another team?)")
+    fail("the keychain's \(certificateName) certificate isn't one of the team's (revoked or from another team?)")
 }
 
 let home = FileManager.default.homeDirectoryForCurrentUser
@@ -117,17 +141,17 @@ for bundleID in bundleIDs {
     for profile in items(existing) where attributes(profile)["name"] as? String == name {
         let certificateIDs = (((profile["relationships"] as? [String: Any])?["certificates"] as? [String: Any])?["data"] as? [[String: Any]] ?? [])
             .compactMap { $0["id"] as? String }
-        if content == nil, attributes(profile)["profileState"] as? String == "ACTIVE", certificateIDs.contains(certificateID) {
+        if content == nil, !replace, attributes(profile)["profileState"] as? String == "ACTIVE", certificateIDs.contains(certificateID) {
             content = attributes(profile)["profileContent"] as? String
             uuid = attributes(profile)["uuid"] as? String
         } else if let id = profile["id"] as? String {
-            await api("DELETE", "profiles/\(id)")   // expired, or made for another certificate
+            await api("DELETE", "profiles/\(id)")   // expired, made for another certificate, or being replaced
         }
     }
     if content == nil {
         let created = await api("POST", "profiles", body: ["data": [
             "type": "profiles",
-            "attributes": ["name": name, "profileType": "IOS_APP_STORE"],
+            "attributes": ["name": name, "profileType": kind.profileType],
             "relationships": [
                 "bundleId": ["data": ["type": "bundleIds", "id": bundleResourceID]],
                 "certificates": ["data": [["type": "certificates", "id": certificateID]]],
@@ -140,11 +164,18 @@ for bundleID in bundleIDs {
         print("Using \(name)")
     }
     guard let content, let uuid, let data = Data(base64Encoded: content) else { fail("no content for \(name)") }
-    // Xcode finds installed profiles by file name: <UUID>.mobileprovision.
+    // Xcode finds installed profiles by file name: <UUID>.mobileprovision (iOS) or .provisionprofile (macOS).
     for dir in installDirs {
         try? FileManager.default.createDirectory(at: dir, withIntermediateDirectories: true)
-        guard (try? data.write(to: dir.appendingPathComponent("\(uuid).mobileprovision"))) != nil else {
+        guard (try? data.write(to: dir.appendingPathComponent("\(uuid).\(kind.fileExtension)"))) != nil else {
             fail("can't install \(name) in \(dir.path)")
         }
+    }
+    if developerID {
+        let saved = URL(fileURLWithPath: "build/profiles", isDirectory: true)
+        try? FileManager.default.createDirectory(at: saved, withIntermediateDirectories: true)
+        let file = saved.appendingPathComponent("\(bundleID).provisionprofile")
+        guard (try? data.write(to: file)) != nil else { fail("can't save \(file.path)") }
+        print("Saved \(file.path)")
     }
 }
