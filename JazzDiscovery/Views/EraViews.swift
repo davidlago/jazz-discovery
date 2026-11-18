@@ -101,8 +101,18 @@ struct EraDetailView: View {
                         }
                         VStack(alignment: .leading, spacing: 8) {
                             Text("WHERE IT HAPPENED").font(Theme.label(11)).tracking(2).foregroundStyle(era.tint)
-                            ForEach(era.places, id: \.self) { place in
-                                Label(place, systemImage: "mappin.and.ellipse").font(.system(size: 13)).foregroundStyle(Theme.cream)
+                            let linked = library.places(inEra: era.id)
+                            if linked.isEmpty {
+                                ForEach(era.places, id: \.self) { place in
+                                    Label(place, systemImage: "mappin.and.ellipse").font(.system(size: 13)).foregroundStyle(Theme.cream)
+                                }
+                            } else {
+                                ForEach(linked) { p in
+                                    Button { router.go(.place(p.id)) } label: {
+                                        Label(p.name, systemImage: p.symbol).font(.system(size: 13)).foregroundStyle(Theme.cream)
+                                    }
+                                    .buttonStyle(.plain)
+                                }
                             }
                         }
                         if let i = library.eras.firstIndex(of: era) {

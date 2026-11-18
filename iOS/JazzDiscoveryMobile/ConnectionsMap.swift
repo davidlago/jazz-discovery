@@ -14,7 +14,7 @@ struct ConnectionsMapView: View {
     @State private var path: [PathStep]?
     @State private var showFinder = false
     @State private var loadingPath = false
-    @State private var camera = MapCamera()
+    @State private var camera = GraphCamera()
     /// The whole screen (the map runs under the bars) and the bars' insets.
     @State private var viewport: CGSize = .zero
     @State private var insets = EdgeInsets()
@@ -133,7 +133,7 @@ struct ConnectionsMapView: View {
         guard !placed, let layout, viewport.width > 0 else { return }
         placed = true
         let b = GraphMap.bounds(layout)
-        var z = min(1, max(MapCamera.minZoom, (viewport.height - insets.top - insets.bottom - 60) / b.height))
+        var z = min(1, max(GraphCamera.minZoom, (viewport.height - insets.top - insets.bottom - 60) / b.height))
         if let focus, let p = layout.positions[focus] {
             // Close enough to read the names around them, centered above the artist's card.
             z = max(z, 0.85)
@@ -164,7 +164,7 @@ struct ConnectionsMapView: View {
         let card: CGFloat = 400
         // Names are centred under the faces, so the ends need room for half a name each side.
         let usable = CGSize(width: viewport.width - 160, height: viewport.height - insets.top - card - 40)
-        let z = max(MapCamera.minZoom, min(1, usable.width / max(x1 - x0, 1), usable.height / max(y1 - y0, 1)))
+        let z = max(GraphCamera.minZoom, min(1, usable.width / max(x1 - x0, 1), usable.height / max(y1 - y0, 1)))
         camera.zoom = z
         camera.offset = CGPoint(x: viewport.width / 2 - (x0 + x1) / 2 * z,
                                 y: insets.top + 20 + usable.height / 2 - (y0 + y1) / 2 * z)
@@ -174,14 +174,14 @@ struct ConnectionsMapView: View {
         guard let layout else { return }
         let b = GraphMap.bounds(layout)
         let usable = viewport.height - insets.top - insets.bottom
-        let z = max(MapCamera.minZoom, min((viewport.width - 40) / b.width, (usable - 40) / b.height))
+        let z = max(GraphCamera.minZoom, min((viewport.width - 40) / b.width, (usable - 40) / b.height))
         camera.zoom = z
         camera.offset = CGPoint(x: (viewport.width - b.width * z) / 2 - b.minX * z,
                                 y: insets.top + (usable - b.height * z) / 2 - b.minY * z)
     }
 }
 
-struct MapCamera: Equatable {
+struct GraphCamera: Equatable {
     static let minZoom: CGFloat = 0.14
     static let maxZoom: CGFloat = 1.5
     var zoom: CGFloat = 0.6
@@ -196,7 +196,7 @@ private struct GraphMap: View {
     @Binding var selected: String?
     @Binding var pair: String?
     @Binding var path: [PathStep]?
-    @Binding var camera: MapCamera
+    @Binding var camera: GraphCamera
     let viewport: CGSize
     let topInset: CGFloat
     @Environment(JazzLibrary.self) private var library
@@ -215,9 +215,9 @@ private struct GraphMap: View {
     }
 
     /// Keeps the map on screen: it can't be pushed past its edges, and a map smaller than the screen stays centered.
-    static func clamped(_ c: MapCamera, layout: GraphLayout, viewport: CGSize) -> MapCamera {
+    static func clamped(_ c: GraphCamera, layout: GraphLayout, viewport: CGSize) -> GraphCamera {
         var c = c
-        c.zoom = min(MapCamera.maxZoom, max(MapCamera.minZoom, c.zoom))
+        c.zoom = min(GraphCamera.maxZoom, max(GraphCamera.minZoom, c.zoom))
         let b = bounds(layout)
         func axis(_ off: CGFloat, _ lo: CGFloat, _ len: CGFloat, _ view: CGFloat) -> CGFloat {
             let size = len * c.zoom
@@ -231,10 +231,10 @@ private struct GraphMap: View {
     }
 
     /// The camera with the gestures in progress applied.
-    private var live: MapCamera {
+    private var live: GraphCamera {
         var c = camera
         if let pinch {
-            c.zoom = min(MapCamera.maxZoom * 1.15, max(MapCamera.minZoom * 0.85, camera.zoom * pinch.scale))
+            c.zoom = min(GraphCamera.maxZoom * 1.15, max(GraphCamera.minZoom * 0.85, camera.zoom * pinch.scale))
             let k = c.zoom / camera.zoom
             c.offset = CGPoint(x: pinch.anchor.x - (pinch.anchor.x - camera.offset.x) * k,
                                y: pinch.anchor.y - (pinch.anchor.y - camera.offset.y) * k)
@@ -313,7 +313,7 @@ private struct GraphMap: View {
                     .onEnded { v in
                         var c = camera
                         let anchor = CGPoint(x: v.startAnchor.x * viewport.width, y: v.startAnchor.y * viewport.height)
-                        let z = min(MapCamera.maxZoom, max(MapCamera.minZoom, camera.zoom * v.magnification))
+                        let z = min(GraphCamera.maxZoom, max(GraphCamera.minZoom, camera.zoom * v.magnification))
                         let k = z / camera.zoom
                         c.zoom = z
                         c.offset = CGPoint(x: anchor.x - (anchor.x - camera.offset.x) * k,
@@ -340,7 +340,7 @@ private struct GraphMap: View {
     }
 
     /// Decade labels pinned under the navigation bar, so you always know when you are, and the eras as a ribbon.
-    private func drawRuler(in ctx: inout GraphicsContext, size: CGSize, cam: MapCamera) {
+    private func drawRuler(in ctx: inout GraphicsContext, size: CGSize, cam: GraphCamera) {
         // Zoomed out, the decades crowd together: skip any label that would run into the one before it.
         var lastLabel = -CGFloat.infinity
         for d in layout.decades {
@@ -358,7 +358,7 @@ private struct GraphMap: View {
         }
     }
 
-    private func draw(in ctx: inout GraphicsContext, size: CGSize, cam: MapCamera) {
+    private func draw(in ctx: inout GraphicsContext, size: CGSize, cam: GraphCamera) {
         // Decades: lines down the map.
         for d in layout.decades {
             let x = layout.x(forYear: d) * cam.zoom + cam.offset.x

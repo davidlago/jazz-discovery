@@ -1,4 +1,5 @@
 import SwiftUI
+import MapKit
 
 /// Explore: the eras first, as a carousel of posters, then Decades, the Songbook and Connections, each a row with
 /// *See all*.
@@ -38,6 +39,37 @@ struct ErasTab: View {
                         HRow(spacing: 12) {
                             ForEach(library.tunes.prefix(10)) { t in
                                 NavigationLink(value: PhoneRoute.tune(t.id)) { TuneCard(tune: t, width: 200) }.buttonStyle(.pressable)
+                            }
+                        }
+                    }
+                }
+
+                if !library.places.isEmpty {
+                    VStack(alignment: .leading, spacing: 10) {
+                        SectionHeader(title: "Places", subtitle: "Where it happened, on a map with a time slider.") { SeeAllLink(route: .places) }
+                        NavigationLink(value: PhoneRoute.places) {
+                            Map(initialPosition: JazzMap.start, interactionModes: []) {
+                                ForEach(library.places.filter(\.isCity)) { p in
+                                    Annotation(p.name, coordinate: p.coordinate) { PlacePin(place: p, tint: library.tint(for: p)) }
+                                }
+                            }
+                            .mapStyle(.standard(elevation: .flat, emphasis: .muted, pointsOfInterest: .excludingAll))
+                            .preferredColorScheme(.dark)
+                            .frame(height: 170)
+                            .clipShape(RoundedRectangle(cornerRadius: 14))
+                            .allowsHitTesting(false)
+                        }
+                        .buttonStyle(.pressable)
+                        .padding(.horizontal, Theme.gutter)
+                    }
+                }
+
+                if !library.labels.isEmpty {
+                    VStack(alignment: .leading, spacing: 6) {
+                        SectionHeader(title: "Labels", subtitle: "Who put the music out.") { SeeAllLink(route: .labels) }
+                        HRow(spacing: 12) {
+                            ForEach(library.labels) { l in
+                                NavigationLink(value: PhoneRoute.label(l.id)) { LabelCard(label: l, width: 130) }.buttonStyle(.pressable)
                             }
                         }
                     }
@@ -151,8 +183,18 @@ struct EraDetailView: View {
                     }
                     VStack(alignment: .leading, spacing: 8) {
                         Kicker(text: "Where It Happened", tint: era.tint)
-                        ForEach(era.places, id: \.self) { place in
-                            Label(place, systemImage: "mappin.and.ellipse").font(.subheadline).foregroundStyle(Theme.cream)
+                        let linked = library.places(inEra: era.id)
+                        if linked.isEmpty {
+                            ForEach(era.places, id: \.self) { place in
+                                Label(place, systemImage: "mappin.and.ellipse").font(.subheadline).foregroundStyle(Theme.cream)
+                            }
+                        } else {
+                            ForEach(linked) { p in
+                                NavigationLink(value: PhoneRoute.place(p.id)) {
+                                    Label(p.name, systemImage: p.symbol).font(.subheadline).foregroundStyle(Theme.cream)
+                                }
+                                .buttonStyle(.plain)
+                            }
                         }
                     }
                     if !family.isEmpty {

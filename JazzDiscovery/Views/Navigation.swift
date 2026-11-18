@@ -10,6 +10,8 @@ enum AppSection: String, CaseIterable, Identifiable {
     case albums = "The Crate"
     case connections = "Connections"
     case songbook = "Songbook"
+    case places = "Places"
+    case labels = "Labels"
     case radio = "Radio"
     case blindfold = "Blindfold Test"
     case passport = "Passport"
@@ -26,6 +28,8 @@ enum AppSection: String, CaseIterable, Identifiable {
         case .albums: return "square.grid.3x3.fill"
         case .connections: return "point.3.connected.trianglepath.dotted"
         case .songbook: return "music.quarternote.3"
+        case .places: return "map.fill"
+        case .labels: return "opticaldisc.fill"
         case .passport: return "checkmark.seal.fill"
         case .radio: return "dot.radiowaves.left.and.right"
         case .blindfold: return "eyes"
@@ -40,6 +44,8 @@ enum AppSection: String, CaseIterable, Identifiable {
         case .album: self = .albums
         case .decade: self = .decades
         case .tune: self = .songbook
+        case .place: self = .places
+        case .label: self = .labels
         }
     }
 }
@@ -96,6 +102,12 @@ final class Router {
         case .songbook:
             query = ""
             show(.songbook)
+        case .map:
+            query = ""
+            show(.places)
+        case .labels:
+            query = ""
+            show(.labels)
         case .radio:
             query = ""
             show(.radio)

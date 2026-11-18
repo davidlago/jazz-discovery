@@ -185,6 +185,41 @@ if os.path.exists(sp):
     print(f"songbook.json: {len(book)} tunes, {sum(len(t['versions']) for t in book)} versions, {len(unresolved)} not resolved"
           + (": " + "; ".join(unresolved) if unresolved else ""))
 
+# places.json and labels.json
+res_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "Shared", "Resources")
+pp = os.path.join(res_dir, "places.json")
+if os.path.exists(pp):
+    places = json.load(open(pp))["places"]
+    pids = {p["id"]: p for p in places}
+    if len(pids) != len(places): errors.append("places.json: duplicate IDs")
+    session_names = {r.get("place", "").lower() for s in sessions.values() for r in s.get("recorded", []) if r.get("place")} if "sessions" in dir() else set()
+    for p in places:
+        w = f"place {p['id']}"
+        if p.get("city") and (p["city"] not in pids or pids[p["city"]]["kind"] != "city"): errors.append(f"{w}: city {p['city']} isn't a city")
+        if not (-90 <= p["lat"] <= 90 and -180 <= p["lon"] <= 180) or (p["lat"] == 0 and p["lon"] == 0): errors.append(f"{w}: bad coordinates")
+        if p.get("to") is not None and p["to"] < p["from"]: errors.append(f"{w}: to is before from")
+        errors += [f"{w}: unknown era {e}" for e in p["eras"] if e not in eras]
+        errors += [f"{w}: unknown artist {a}" for a in p.get("artists", []) if a not in artists]
+        if not p["eras"]: errors.append(f"{w}: no era")
+        for n in p.get("sessionNames", []):
+            if session_names and n.lower() not in session_names: warnings.append(f"{w}: no session is recorded at '{n}'")
+    print(f"places.json: {len(places)} places")
+lp = os.path.join(res_dir, "labels.json")
+if os.path.exists(lp):
+    labels = json.load(open(lp))["labels"]
+    seen = {}
+    for l in labels:
+        for m in l["matches"]:
+            if m in seen: errors.append(f"label {l['id']}: '{m}' also matches {seen[m]}")
+            seen[m] = l["id"]
+        n = sum(1 for a in data["albums"] if a["label"] in l["matches"])
+        if n < 2: errors.append(f"label {l['id']}: only {n} record(s) in the Crate")
+        errors += [f"label {l['id']}: unknown era {e}" for e in l["eras"] if e not in eras]
+        if l.get("city") and os.path.exists(pp) and l["city"] not in pids: errors.append(f"label {l['id']}: unknown city {l['city']}")
+        for person in l.get("people", []):
+            if person.get("place") and os.path.exists(pp) and person["place"] not in pids: errors.append(f"label {l['id']}: unknown place {person['place']}")
+    print(f"labels.json: {len(labels)} labels")
+
 if warnings:
     print("\n".join("warning: " + w for w in warnings))
 if errors:

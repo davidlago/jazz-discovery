@@ -8,12 +8,14 @@ enum Route: Hashable {
     case album(String)
     case decade(Int)
     case tune(String)
+    case place(String)
+    case label(String)
 }
 
 /// A `jazzdiscovery://` link, parsed and checked against the library.
 ///
 ///     era/<id>  artist/<id>  album/<id>  decade/<1950>  decades  connections[/<artist id>]  between/<artist>/<artist>
-///     tab/<timeline|eras|artists|crate|search>[?q=<search>]  now-playing  settings  passport  radio  blindfold  tune/<id>  songbook
+///     tab/<timeline|eras|artists|crate|search>[?q=<search>]  now-playing  settings  passport  radio  blindfold  tune/<id>  songbook  place/<id>  map  label/<id>  labels
 ///
 /// Links come from anywhere (a web page, another app, a widget), so a link only parses when the page it names exists.
 /// `play/album/<id>` parses as `.playAlbum`; it's the one link that starts music, and the apps honour it only from their
@@ -30,6 +32,9 @@ enum DeepLink: Equatable {
     case playAlbum(String)
     /// The Songbook's index.
     case songbook
+    /// The map of places, and the labels' index.
+    case map
+    case labels
     /// Your listening passport.
     case passport
     /// The radio stations (a station's ID only opens the page: links don't start music).
@@ -65,6 +70,16 @@ enum DeepLink: Equatable {
             self = .page(.tune(id))
         case "songbook":
             self = .songbook
+        case "place":
+            guard let id = arg, library.place(id) != nil else { return nil }
+            self = .page(.place(id))
+        case "label":
+            guard let id = arg, library.label(id) != nil else { return nil }
+            self = .page(.label(id))
+        case "map":
+            self = .map
+        case "labels":
+            self = .labels
         case "connections":
             // An unknown artist still opens the map, just without one selected.
             self = .connections(focus: arg.flatMap { library.artist($0)?.id })

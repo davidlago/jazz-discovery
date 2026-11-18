@@ -24,7 +24,7 @@ SHOTS=(
     "04-album|jazzdiscovery://album/kind-of-blue|0"
     "05-connections|jazzdiscovery://between/louis-armstrong/herbie-hancock|4"
     "06-now-playing|jazzdiscovery://play/album/a-love-supreme jazzdiscovery://now-playing|4"
-    "07-crate|jazzdiscovery://tab/crate|0"
+    "07-places|jazzdiscovery://map|6"
     "08-songbook|jazzdiscovery://tune/body-and-soul|0"
     "09-passport|jazzdiscovery://passport|0"
     "10-radio|jazzdiscovery://radio|0"

@@ -23,6 +23,8 @@ enum PhoneRoute: Hashable {
     case connections(focus: String?)
     case passport
     case songbook
+    case places
+    case labels
     case radio
     case blindfold
 
@@ -31,6 +33,8 @@ enum PhoneRoute: Hashable {
     static func album(_ id: String) -> PhoneRoute { .page(.album(id)) }
     static func decade(_ decade: Int) -> PhoneRoute { .page(.decade(decade)) }
     static func tune(_ id: String) -> PhoneRoute { .page(.tune(id)) }
+    static func place(_ id: String) -> PhoneRoute { .page(.place(id)) }
+    static func label(_ id: String) -> PhoneRoute { .page(.label(id)) }
 }
 
 /// Tabs, each with its own navigation stack, and the sheets shown over them.
@@ -87,9 +91,13 @@ final class PhoneRouter {
             case .album: show(.crate, [.page(route)])
             case .decade: show(.eras, [.page(route)])
             case .tune: show(.eras, [.songbook, .page(route)])
+            case .place: show(.eras, [.places, .page(route)])
+            case .label: show(.eras, [.labels, .page(route)])
             }
         case .decades: show(.eras, [.decades])
         case .songbook: show(.eras, [.songbook])
+        case .map: show(.eras, [.places])
+        case .labels: show(.eras, [.labels])
         case .connections(let focus): show(.artists, [.connections(focus: focus)])
         case .between(let a, let b):
             pathRequest = PathRequest(from: a, to: b)

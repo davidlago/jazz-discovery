@@ -99,7 +99,15 @@ struct AlbumDetailView: View {
                         .padding(.bottom, 8)
                     HStack(spacing: 8) {
                         if let era { EraChip(era: era) }
-                        Text("\(String(album.year)) · \(album.label)").font(Theme.label(11)).foregroundStyle(Theme.muted)
+                        Text(String(album.year)).font(Theme.label(11)).foregroundStyle(Theme.muted)
+                        if let label = library.label(for: album) {
+                            NavigationLink(value: PhoneRoute.label(label.id)) {
+                                Text("· \(album.label)").font(Theme.label(11)).foregroundStyle(label.tint).underline(color: label.tint.opacity(0.5))
+                            }
+                            .buttonStyle(.plain)
+                        } else {
+                            Text("· \(album.label)").font(Theme.label(11)).foregroundStyle(Theme.muted)
+                        }
                     }
                     Text(album.title.uppercased()).font(Theme.display(40)).foregroundStyle(Theme.cream)
                         .multilineTextAlignment(.center)
