@@ -1,14 +1,16 @@
 #!/usr/bin/env bash
-# Takes the iPhone App Store screenshots in the simulator: docs/app-store/iphone-6.9 (iPhone 18 Pro Max,
-# 1320 × 2868) and docs/app-store/iphone-6.3 (iPhone 18 Pro, 1206 × 2622). Each size gets its own simulator, made
+# Takes the iPhone App Store screens in the simulator: docs/app-store/screens/iphone-6.9 (iPhone 18 Pro Max,
+# 1320 × 2868) and docs/app-store/screens/iphone-6.3 (iPhone 18 Pro, 1206 × 2622). `swift scripts/app-store-art.swift`
+# then frames them with their headlines into docs/app-store/iphone-<size>, the ones to upload. Each size gets its own simulator, made
 # the first time, so the run doesn't disturb your others. The status bar shows 9:41 with full bars, and each screen is
 # opened with the app's --open launch argument (a jazzdiscovery:// link; see iOS/JazzDiscoveryMobile/PhoneRouter.swift).
 #
 #   SIZES="6.3"     only some sizes (default: "6.9 6.3")
 #   WAIT=10         seconds to let each screen's pictures load (default: 10)
 #
-# The widgets' screenshot (11-widgets.png) isn't taken here: the Mac app draws it from the widgets' own views
-# (Jazz Discovery --snapshots <dir> --widgets-only, see JazzDiscovery/Diagnostics/Snapshots.swift).
+# App Store Connect takes ten per size: these nine, and the widgets' (10-widgets.png), which isn't taken here: the Mac
+# app draws it from the widgets' own views (Jazz Discovery --snapshots <dir> --widgets-only, see
+# JazzDiscovery/Diagnostics/Snapshots.swift).
 set -euo pipefail
 
 cd "$(dirname "$0")/.."
@@ -26,11 +28,10 @@ SHOTS=(
     "03-artist|jazzdiscovery://artist/miles-davis|0"
     "04-album|jazzdiscovery://album/kind-of-blue|0"
     "05-connections|jazzdiscovery://between/louis-armstrong/herbie-hancock|4"
-    "06-now-playing|jazzdiscovery://play/album/a-love-supreme jazzdiscovery://now-playing|4"
+    "06-guide|jazzdiscovery://guide/so-what|0"
     "07-places|jazzdiscovery://map|6"
     "08-songbook|jazzdiscovery://tune/body-and-soul|0"
     "09-passport|jazzdiscovery://passport|0"
-    "10-radio|jazzdiscovery://radio|0"
 )
 
 echo "Building for the simulator…"
@@ -61,7 +62,7 @@ for size in $SIZES; do
         *) echo "error: unknown size $size (6.9 or 6.3)" >&2; exit 1 ;;
     esac
     udid="$(device_for "$model")"
-    out="docs/app-store/iphone-$size"
+    out="docs/app-store/screens/iphone-$size"
     mkdir -p "$out"
     echo "$model ($udid) → $out"
     xcrun simctl boot "$udid" 2> /dev/null || true
