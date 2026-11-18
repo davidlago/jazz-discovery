@@ -101,7 +101,12 @@ enum Programmer {
         t.year ?? t.album.flatMap { library.album($0)?.year }
     }
 
+    /// A station's tracks, in a fixed order (so a seed always gives the same sequence).
     static func pool(for station: Station, library: JazzLibrary, isHeard: (String) -> Bool) -> [StationTrack] {
+        unsortedPool(for: station, library: library, isHeard: isHeard).sorted { $0.ref < $1.ref }
+    }
+
+    private static func unsortedPool(for station: Station, library: JazzLibrary, isHeard: (String) -> Bool) -> [StationTrack] {
         let all = library.tracks.values.filter { $0.track.preview != nil || $0.track.url != nil }
         switch station.kind {
         case .era(let e):
@@ -134,7 +139,7 @@ enum Programmer {
                 picks.sort { (year($0, library: library) ?? 0) < (year($1, library: library) ?? 0) }
                 out += picks
             }
-            return spaced(out)
+            return spaced(out, library: library)
         }
         var bag = pool.shuffled(using: &rng)
         // Open with something unmistakable: an essential track of the station's era, or of the first track's.
@@ -172,11 +177,14 @@ enum Programmer {
         return out
     }
 
-    /// The Long Way keeps its order, but moves a track along when it would repeat the artist before it.
-    private static func spaced(_ list: [StationTrack]) -> [StationTrack] {
+    /// The Long Way keeps its order, but moves a track along (within its era) when it would repeat the artist before it.
+    private static func spaced(_ list: [StationTrack], library: JazzLibrary) -> [StationTrack] {
         var out = list
+        let era = { (t: StationTrack) in t.era ?? t.album.flatMap { library.album($0)?.era } }
         for i in out.indices.dropFirst() where artistKey(out[i]) == artistKey(out[i - 1]) {
-            if let j = out.indices.dropFirst(i + 1).first(where: { artistKey(out[$0]) != artistKey(out[i - 1]) }) {
+            if let j = out.indices.dropFirst(i + 1).first(where: {
+                era(out[$0]) == era(out[i]) && artistKey(out[$0]) != artistKey(out[i - 1])
+            }) {
                 out.swapAt(i, j)
             }
         }
