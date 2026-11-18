@@ -83,17 +83,23 @@ struct BlindfoldView: View {
             Text("Ten clips. The cover stays hidden until you answer: which era, who's playing, which instrument leads, which came first. No timer.")
                 .font(.system(size: compact ? 15 : 17, design: .serif)).italic().foregroundStyle(Theme.muted)
                 .fixedSize(horizontal: false, vertical: true)
-            Picker("Level", selection: $game.level) {
-                ForEach(BlindLevel.allCases) { Text($0.rawValue).tag($0) }
-            }
-            .pickerStyle(.segmented).frame(maxWidth: 320)
-            Picker("Era", selection: $game.focus) {
-                Text("Every era").tag(String?.none)
-                ForEach(library.eras.filter { RoundMaker.clips(library: library, focus: $0.id).count >= 14 }) { e in
-                    Text(e.name).tag(Optional(e.id))
+            VStack(alignment: .leading, spacing: 6) {
+                Text("LEVEL").font(Theme.label(10)).tracking(1.4).foregroundStyle(Theme.muted)
+                Picker("Level", selection: $game.level) {
+                    ForEach(BlindLevel.allCases) { Text($0.rawValue).tag($0) }
                 }
+                .pickerStyle(.segmented).labelsHidden().frame(maxWidth: 240)
             }
-            .frame(maxWidth: 320)
+            VStack(alignment: .leading, spacing: 6) {
+                Text("ERAS").font(Theme.label(10)).tracking(1.4).foregroundStyle(Theme.muted)
+                Picker("Eras", selection: $game.focus) {
+                    Text("Every era").tag(String?.none)
+                    ForEach(library.eras.filter { RoundMaker.clips(library: library, focus: $0.id).count >= 14 }) { e in
+                        Text(e.name).tag(Optional(e.id))
+                    }
+                }
+                .labelsHidden().fixedSize()
+            }
             Button { game.start(library: library, player: player) } label: {
                 Label("Start", systemImage: "play.fill").font(.system(size: 16, weight: .bold))
                     .padding(.horizontal, 26).padding(.vertical, 12)

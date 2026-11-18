@@ -32,6 +32,7 @@ struct BlindfoldPage: View {
             }
             .padding(.top, 30).padding(.horizontal, 40).padding(.bottom, 50)
             .frame(maxWidth: 760, alignment: .leading)
+            .frame(maxWidth: .infinity, alignment: .leading)
         }
         .background(Theme.ink)
         .navigationTitle("Blindfold Test")
