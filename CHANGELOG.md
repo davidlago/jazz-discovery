@@ -6,6 +6,8 @@ section for the tagged version at the top of the GitHub release notes (or **Unre
 
 ## Unreleased
 
+## 1.11.0
+
 - **Listening guides**: So What, West End Blues, Body and Soul, Take Five, Moanin' and The Girl from Ipanema, section
   by section. A guide shows the recording's form as a bar (the head, each solo in the soloist's colour, the way out),
   and with Apple Music it follows the full track as it plays: the section playing is highlighted and its note says

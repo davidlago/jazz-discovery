@@ -222,7 +222,7 @@ reason" API the app uses (UserDefaults, CA92.1).
 
 ### Version text
 
-This text is for 1.10 (152 artists, 130 records, personnel, Find a Path, Passport, Radio, the Blindfold Test, the Songbook, Places and Labels, Lineages and the Glossary, Paths, Today in Jazz, widgets, Siri). If 1.0.1 is submitted on its own first, say
+This text is for 1.11 (152 artists, 130 records, personnel, Find a Path, Passport, Radio, the Blindfold Test, the Songbook, Places and Labels, Lineages and the Glossary, Paths, listening guides, Today in Jazz, widgets, Siri). If 1.0.1 is submitted on its own first, say
 "86 artists" and leave out the *Who played on what* and *Your passport* paragraphs and the path-finding sentence.
 
 **Promotional text** (170 characters, can change any time without review):
@@ -261,7 +261,7 @@ Connections
 A map of who played with whom across the whole century, drawn from the records they share: tap a face to light up their circle, and another to see what ties them. Find the shortest path between any two artists, from Scott Joplin to Nubya Garcia, and play one track from each link.
 
 The Songbook
-Twenty-eight standards and jazz originals, each a page with its story and the versions that made it matter, from the first recording to last decade's, with what to listen for in each. Play them in order and hear the same song travel.
+Forty standards and jazz originals, each a page with its story and the versions that made it matter, from the first recording to last decade's, with what to listen for in each. Play them in order and hear the same song travel.
 
 Today in jazz
 Whose birthday it is, what was recorded on this date, and a calendar for the whole year. Every day has a reason to open the app, and a widget for your Home Screen and Lock Screen; another keeps your next path stop in view.
@@ -271,6 +271,9 @@ Ask Siri
 
 Paths
 Journeys with a point of view, from Start Here to 1959, Late Night and The Latin Tinge: a few stops each, every one with something to listen for, and your place kept.
+
+Listening guides
+Follow a whole recording as it plays, from So What to The Girl from Ipanema: its form drawn as a bar, the head, each solo and the way out, and a note on what to hear in each section, moving with the music. Tap a section to jump to it. (Guides follow full tracks, with Apple Music.)
 
 Lineages and the glossary
 Family trees for the trumpet, the saxophone, the piano, the drums and the voice, showing who learned from whom, and a glossary of the words jazz uses, from swing to sheets of sound, each with a recording to hear it in. New to jazz? How to Listen walks you through one record in five steps.
