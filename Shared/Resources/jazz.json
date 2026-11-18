@@ -2349,7 +2349,7 @@
     {
       "id": "machito",
       "name": "Machito",
-      "born": 1909,
+      "born": 1908,
       "died": 1984,
       "instrument": "Bandleader",
       "eras": [
@@ -3503,6 +3503,7 @@
     {
       "id": "snarky-puppy",
       "name": "Snarky Puppy",
+      "group": true,
       "born": 2004,
       "instrument": "Bandleader",
       "eras": [
@@ -5106,6 +5107,7 @@
     {
       "id": "medeski-martin-wood",
       "name": "Medeski Martin & Wood",
+      "group": true,
       "born": 1991,
       "instrument": "Bandleader",
       "eras": [

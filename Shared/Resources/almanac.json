@@ -658,12 +658,24 @@
   ],
   "01-22": [
    {
+    "album": "blood-on-the-fields",
+    "kind": "recorded",
+    "place": "Grand Hall, Masonic Grand Lodge, New York",
+    "year": 1995
+   },
+   {
     "artist": "j-j-johnson",
     "kind": "born",
     "year": 1924
    }
   ],
   "01-23": [
+   {
+    "album": "blood-on-the-fields",
+    "kind": "recorded",
+    "place": "Grand Hall, Masonic Grand Lodge, New York",
+    "year": 1995
+   },
    {
     "artist": "django-reinhardt",
     "kind": "born",
@@ -683,6 +695,12 @@
     "year": 1975
    },
    {
+    "album": "blood-on-the-fields",
+    "kind": "recorded",
+    "place": "Grand Hall, Masonic Grand Lodge, New York",
+    "year": 1995
+   },
+   {
     "artist": "keith-jarrett",
     "kind": "milestone",
     "line": "On this day in 1975, Keith Jarrett played The Köln Concert at the opera house in Cologne.",
@@ -691,6 +709,12 @@
    }
   ],
   "01-25": [
+   {
+    "album": "blood-on-the-fields",
+    "kind": "recorded",
+    "place": "Grand Hall, Masonic Grand Lodge, New York",
+    "year": 1995
+   },
    {
     "artist": "antonio-carlos-jobim",
     "kind": "born",
@@ -773,6 +797,14 @@
     "year": 2001
    }
   ],
+  "02-06": [
+   {
+    "album": "tutu",
+    "kind": "recorded",
+    "place": "Le Gonks, West Hollywood",
+    "year": 1986
+   }
+  ],
   "02-07": [
    {
     "album": "ella-cole-porter",
@@ -814,6 +846,12 @@
   ],
   "02-10": [
    {
+    "album": "tutu",
+    "kind": "recorded",
+    "place": "Capitol Studios, Hollywood",
+    "year": 1986
+   },
+   {
     "album": "black-radio",
     "kind": "recorded",
     "line": "On this day in 2013, the Robert Glasper Experiment's Black Radio won the Grammy for Best R&B Album.",
@@ -827,7 +865,21 @@
     "year": 2008
    }
   ],
+  "02-11": [
+   {
+    "album": "tutu",
+    "kind": "recorded",
+    "place": "Capitol Studios, Hollywood",
+    "year": 1986
+   }
+  ],
   "02-13": [
+   {
+    "album": "tutu",
+    "kind": "recorded",
+    "place": "Capitol Studios, Hollywood",
+    "year": 1986
+   },
    {
     "artist": "esperanza-spalding",
     "kind": "milestone",
@@ -2789,9 +2841,23 @@
     "year": 1960
    },
    {
+    "album": "spirits-known-and-unknown",
+    "kind": "recorded",
+    "place": "New York",
+    "year": 1969
+   },
+   {
     "artist": "dizzy-gillespie",
     "kind": "born",
     "year": 1917
+   }
+  ],
+  "10-22": [
+   {
+    "album": "spirits-known-and-unknown",
+    "kind": "recorded",
+    "place": "New York",
+    "year": 1969
    }
   ],
   "10-24": [

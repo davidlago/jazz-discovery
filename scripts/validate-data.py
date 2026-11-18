@@ -114,7 +114,9 @@ if os.path.exists(sessions_path):
             if not s.get("personnel"):
                 errors.append(f"{where}: reviewed, but nobody is credited")
             leader = next(a for a in data["albums"] if a["id"] == album_id)["artist"]
-            if not any(c.get("artist") == leader for c in s.get("personnel", [])):
+            # A band (an artist marked "group") is its players, so it's never credited as one of them.
+            is_group = any(a["id"] == leader and a.get("group") for a in data["artists"])
+            if not is_group and not any(c.get("artist") == leader for c in s.get("personnel", [])):
                 warnings.append(f"{where}: the leader ({leader}) isn't among the players")
     # Every curated connection is explained: a reviewed record both are on, or a bond.
     on = {}

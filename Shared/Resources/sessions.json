@@ -3474,14 +3474,26 @@
   ]
  },
  "blood-on-the-fields": {
-  "reviewed": false,
-  "source": "musicbrainz:release/b6bdb222-5b49-4edd-89cc-a03c44a03471",
+  "reviewed": true,
+  "source": "Discogs release 2772535 (Columbia CXK 57694 booklet credits), checked against Wikipedia: Blood on the Fields",
   "mbReleaseGroup": "de9bc2ca-3285-345a-a919-eea72815aa0a",
-  "edition": "1997-06-17 US",
+  "edition": "1997 US Columbia CXK 57694",
   "recorded": [
    {
     "date": "1995-01-22",
-    "place": "Masonic Hall NYC, Grand Lodge Room"
+    "place": "Grand Hall, Masonic Grand Lodge, New York"
+   },
+   {
+    "date": "1995-01-23",
+    "place": "Grand Hall, Masonic Grand Lodge, New York"
+   },
+   {
+    "date": "1995-01-24",
+    "place": "Grand Hall, Masonic Grand Lodge, New York"
+   },
+   {
+    "date": "1995-01-25",
+    "place": "Grand Hall, Masonic Grand Lodge, New York"
    }
   ],
   "tracks": [
@@ -3523,35 +3535,7 @@
    },
    {
     "artist": null,
-    "name": "Seneca Black",
-    "instruments": [
-     "trumpet"
-    ]
-   },
-   {
-    "artist": null,
-    "name": "Russell Gunn",
-    "instruments": [
-     "trumpet"
-    ]
-   },
-   {
-    "artist": null,
     "name": "Roger Ingram",
-    "instruments": [
-     "trumpet"
-    ]
-   },
-   {
-    "artist": null,
-    "name": "Ryan Kisor",
-    "instruments": [
-     "trumpet"
-    ]
-   },
-   {
-    "artist": null,
-    "name": "Riley Mullins",
     "instruments": [
      "trumpet"
     ]
@@ -3565,9 +3549,9 @@
    },
    {
     "artist": null,
-    "name": "Wayne Goodman",
+    "name": "Russell Gunn",
     "instruments": [
-     "trombone"
+     "trumpet"
     ]
    },
    {
@@ -3575,6 +3559,21 @@
     "name": "Ron Westray",
     "instruments": [
      "trombone"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Wayne Goodman",
+    "instruments": [
+     "trombone"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Wycliffe Gordon",
+    "instruments": [
+     "trombone",
+     "tuba"
     ]
    },
    {
@@ -3589,9 +3588,35 @@
    },
    {
     "artist": null,
-    "name": "Dr. Robert Stewart",
+    "name": "Wessell Anderson",
+    "instruments": [
+     "alto saxophone"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Robert Stewart",
     "instruments": [
      "tenor saxophone"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Victor Goines",
+    "instruments": [
+     "tenor saxophone",
+     "soprano saxophone",
+     "clarinet",
+     "bass clarinet"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "James Carter",
+    "instruments": [
+     "baritone saxophone",
+     "clarinet",
+     "bass clarinet"
     ]
    },
    {
@@ -3619,7 +3644,15 @@
     "artist": null,
     "name": "Herlin Riley",
     "instruments": [
-     "percussion"
+     "drums",
+     "tambourine"
+    ]
+   },
+   {
+    "artist": "cassandra-wilson",
+    "name": "Cassandra Wilson",
+    "instruments": [
+     "vocals"
     ]
    },
    {
@@ -3635,49 +3668,9 @@
     "instruments": [
      "vocals"
     ]
-   },
-   {
-    "artist": "cassandra-wilson",
-    "name": "Cassandra Wilson",
-    "instruments": [
-     "vocals"
-    ]
-   },
-   {
-    "artist": null,
-    "name": "Wessell Anderson",
-    "instruments": [
-     "reeds"
-    ]
-   },
-   {
-    "artist": null,
-    "name": "James Carter",
-    "instruments": [
-     "reeds"
-    ]
-   },
-   {
-    "artist": null,
-    "name": "Victor Goines",
-    "instruments": [
-     "reeds"
-    ]
-   },
-   {
-    "artist": null,
-    "name": "Wycliffe Gordon",
-    "instruments": [
-     "brass"
-    ]
    }
   ],
   "crew": [
-   {
-    "artist": null,
-    "name": "Josephine DiDonato",
-    "role": "design"
-   },
    {
     "artist": "wynton-marsalis",
     "name": "Wynton Marsalis",
@@ -3692,11 +3685,24 @@
     "artist": null,
     "name": "Mark Wilder",
     "role": "engineer"
+   },
+   {
+    "artist": null,
+    "name": "Todd Whitelock",
+    "role": "engineer"
+   },
+   {
+    "artist": null,
+    "name": "Josephine DiDonato",
+    "role": "design"
    }
   ],
-  "edited": true,
   "draftNotes": [
-   "Not approved: MusicBrainz adds trumpeters (Seneca Black, Ryan Kisor, Riley Mullins) and leaves out Regina Carter, against Wikipedia's list; needs the liner notes."
+   "Players from the booklet credits as transcribed on Discogs (both the retail and BMG club editions), in section order; they match Wikipedia's list except as noted.",
+   "Removed MusicBrainz's extra trumpeters (Seneca Black, Ryan Kisor, Riley Mullins): neither the booklet nor Wikipedia has them. Wycliffe Gordon is trombone and tuba, Wessell Anderson alto, Robert Stewart tenor, Victor Goines and James Carter doublers (MusicBrainz had them as 'reeds' and 'brass').",
+   "Walter Blanding is credited on disc 1, track 7 (\"Work Song\") only. The ensemble's 'oratory vocals' (Wikipedia) aren't listed as an instrument.",
+   "Regina Carter (violin) is on Wikipedia's list and a 2013 Playbill piece, but not in the booklet credits; left out in favour of the booklet. Worth a check against a physical copy.",
+   "Recorded in the Grand Hall of the Masonic Grand Lodge, New York, January 22-25, 1995 (booklet). Todd Whitelock mixed; Mark Wilder recorded."
   ]
  },
  "blue-light-til-dawn": {
@@ -6683,14 +6689,22 @@
   ]
  },
  "future-shock": {
-  "reviewed": false,
-  "source": "musicbrainz:release/dce34741-c297-4c1e-8b81-40f12a82bca5",
+  "reviewed": true,
+  "source": "Discogs release 35929 (Columbia FC 38814 sleeve credits, per track), checked against Wikipedia: Future Shock (Herbie Hancock album)",
   "mbReleaseGroup": "7f86ad0f-d1d0-3732-a395-4e2e648e1262",
-  "edition": "1983 GB",
+  "edition": "1983 US Columbia FC 38814",
   "recorded": [
    {
     "date": "1983",
-    "place": "OAO Studio"
+    "place": "OAO Studios, Brooklyn"
+   },
+   {
+    "date": "1983",
+    "place": "RPM Studios, New York"
+   },
+   {
+    "date": "1983",
+    "place": "Garage Sale Recording, Los Angeles"
    }
   ],
   "tracks": [
@@ -6706,7 +6720,18 @@
     "artist": "herbie-hancock",
     "name": "Herbie Hancock",
     "instruments": [
-     "keyboards"
+     "synthesizer",
+     "piano",
+     "clavinet",
+     "vocoder"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Michael Beinhorn",
+    "instruments": [
+     "synthesizer",
+     "drum machine"
     ]
    },
    {
@@ -6721,27 +6746,64 @@
    },
    {
     "artist": null,
-    "name": "Michael Beinhorn",
-    "instruments": [
-     "keyboards"
-    ]
-   },
-   {
-    "artist": null,
     "name": "Bill Laswell",
     "instruments": [
-     "bass"
+     "electric bass"
     ]
    },
    {
     "artist": null,
-    "name": "Lowell “Sly” Dunbar",
+    "name": "Sly Dunbar",
     "instruments": [
-     "bongos",
-     "drums"
+     "drums",
+     "bongos"
     ],
     "only": [
      "Future Shock",
+     "Rough"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Daniel Poncé",
+    "instruments": [
+     "batá"
+    ],
+    "only": [
+     "Rockit",
+     "Earth Beat"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Grand Mixer D.ST.",
+    "instruments": [
+     "turntable",
+     "vocals"
+    ],
+    "only": [
+     "Rockit",
+     "Earth Beat",
+     "Rough"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Dwight Jackson Jr.",
+    "instruments": [
+     "vocals"
+    ],
+    "only": [
+     "Future Shock"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Lamar Wright",
+    "instruments": [
+     "vocals"
+    ],
+    "only": [
      "Rough"
     ]
    },
@@ -6779,24 +6841,46 @@
   ],
   "crew": [
    {
+    "artist": null,
+    "name": "Material",
+    "role": "producer"
+   },
+   {
     "artist": "herbie-hancock",
     "name": "Herbie Hancock",
     "role": "producer"
    },
    {
     "artist": null,
-    "name": "Material",
-    "role": "producer"
+    "name": "Martin Bisi",
+    "role": "engineer"
    },
    {
     "artist": null,
-    "name": "Martin Bisi",
+    "name": "Dominick Maita",
+    "role": "engineer"
+   },
+   {
+    "artist": null,
+    "name": "Dave Jerden",
+    "role": "engineer"
+   },
+   {
+    "artist": null,
+    "name": "Billy Youdelman",
+    "role": "engineer"
+   },
+   {
+    "artist": null,
+    "name": "Bryan Bell",
     "role": "engineer"
    }
   ],
-  "edited": true,
   "draftNotes": [
-   "Not approved: Wikipedia adds Grand Mixer D.ST. (turntables), Daniel Poncé (percussion), Dwight Jackson Jr. and Lamar Wright (lead vocals) without track numbers, and MusicBrainz's partial per-track credits can't be checked against them."
+   "Per-track credits from the US LP sleeve as transcribed on Discogs; the players match Wikipedia's list.",
+   "Added Grand Mixer D.ST. (turntables on Rockit, Earth Beat and Rough, with voice and backing vocals on Rough), Daniel Poncé (batá on Rockit and Earth Beat) and the lead singers Dwight Jackson Jr. (Future Shock) and Lamar Wright (Rough). Hancock and Beinhorn play on every track; Laswell is on every track.",
+   "Basic tracks at OAO Studios, Brooklyn; overdubs at RPM, New York; keyboard overdubs at Garage Sale Recording, Los Angeles; mixed at Eldorado, Los Angeles (sleeve). No exact dates are documented, so only the year.",
+   "Material is Laswell and Beinhorn's production team; Tony Meilandt was associate producer. Dave Jerden also mixed."
   ]
  },
  "genius-of-modern-music-1": {
@@ -9348,7 +9432,7 @@
  },
  "kenya": {
   "reviewed": true,
-  "source": "musicbrainz:release/481dbbbc-7147-4b2a-b4fe-085f53c8b323",
+  "source": "musicbrainz:release/481dbbbc-7147-4b2a-b4fe-085f53c8b323, checked against the 1999 Roulette Jazz CD booklet credits (Discogs release 18844480), the 1958 LP (Discogs 3303776) and Fresh Sound's Kenya / With Flute to Boot notes",
   "mbReleaseGroup": "2b5535ee-adbe-33a5-8986-74eace9dd169",
   "edition": "1958 None",
   "recorded": [
@@ -9380,6 +9464,13 @@
    "Tururato"
   ],
   "personnel": [
+   {
+    "artist": "machito",
+    "name": "Machito",
+    "instruments": [
+     "maracas"
+    ]
+   },
    {
     "artist": null,
     "name": "Doc Cheatham",
@@ -9573,6 +9664,27 @@
     "instruments": [
      "timbales"
     ]
+   },
+   {
+    "artist": null,
+    "name": "Pedro Boulong",
+    "instruments": [
+     "percussion"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "José Silva",
+    "instruments": [
+     "percussion"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Nilo Sierra",
+    "instruments": [
+     "percussion"
+    ]
    }
   ],
   "crew": [
@@ -9585,11 +9697,6 @@
     "artist": null,
     "name": "A.K. Salim",
     "role": "arranger"
-   },
-   {
-    "artist": "machito",
-    "name": "Machito",
-    "role": "conductor"
    },
    {
     "artist": null,
@@ -9605,10 +9712,18 @@
     "artist": null,
     "name": "René Hernández",
     "role": "arranger"
+   },
+   {
+    "artist": null,
+    "name": "Mario Bauzá",
+    "role": "conductor"
    }
   ],
   "draftNotes": [
-   "No album page on Wikipedia; credits from MusicBrainz (apparently the liner notes). Machito is credited as conductor, not as a player. Cannonball Adderley's appearance is confirmed by his discography."
+   "No album page on Wikipedia; credits from MusicBrainz (apparently the liner notes). Machito is credited as conductor, not as a player. Cannonball Adderley's appearance is confirmed by his discography.",
+   "Machito is credited as leader and on maracas (Fresh Sound's reissue personnel; Jazzdisco's Adderley discography has him as leader). Mario Bauzá, not Machito, is the musical director and conductor (1958 LP, 1999 booklet, Fresh Sound).",
+   "Pedro Boulong, José Silva and Nilo Sierra (percussion) are listed in the 1999 booklet and by Fresh Sound, without tracks.",
+   "Fresh Sound lists Joe Livramento on alto saxophone (and says he plays alto, not trumpet, on Wild Jungle); the 1999 booklet has him on trumpet. Kept as trumpet."
   ]
  },
  "keystone-3": {
@@ -10621,10 +10736,16 @@
   ]
  },
  "mulatu-of-ethiopia": {
-  "reviewed": false,
-  "source": "musicbrainz:release/f64dc9c1-661c-4f23-be86-9281c5ff4c57",
+  "reviewed": true,
+  "source": "Discogs master 18050 (Worthy W-1020 and Strut STRUT129 credits), Strut reissue notes (Bandcamp) and the Songlines review",
   "mbReleaseGroup": "eec0dc49-b8b0-3480-9f37-2e67e4571252",
-  "edition": "1972 US",
+  "edition": "1972 US Worthy W-1020",
+  "recorded": [
+   {
+    "date": "1972",
+    "place": "New York"
+   }
+  ],
   "tracks": [
    "Mulatu",
    "Mascaram setaba",
@@ -10639,75 +10760,17 @@
     "artist": "mulatu-astatke",
     "name": "Mulatu Astatke",
     "instruments": [
-     "piano"
-    ],
-    "only": [
-     "Dèwèl"
-    ]
-   },
-   {
-    "artist": null,
-    "name": "Yohannes Tekola",
-    "instruments": [
-     "trumpet"
-    ],
-    "only": [
-     "Dèwèl"
-    ]
-   },
-   {
-    "artist": null,
-    "name": "Fèqadu Amdè‐Mesqel",
-    "instruments": [
-     "flute",
-     "saxophone"
-    ],
-    "only": [
-     "Dèwèl"
-    ]
-   },
-   {
-    "artist": null,
-    "name": "Mogès Habté",
-    "instruments": [
-     "saxophone"
-    ],
-    "only": [
-     "Dèwèl"
-    ]
-   },
-   {
-    "artist": null,
-    "name": "Andrew Wilson",
-    "instruments": [
-     "guitar"
-    ],
-    "only": [
-     "Dèwèl"
-    ]
-   },
-   {
-    "artist": null,
-    "name": "Giovanni Rico",
-    "instruments": [
-     "electric bass"
-    ],
-    "only": [
-     "Dèwèl"
-    ]
-   },
-   {
-    "artist": null,
-    "name": "Temare Haregu",
-    "instruments": [
-     "drums"
-    ],
-    "only": [
-     "Dèwèl"
+     "vibraphone",
+     "electric piano"
     ]
    }
   ],
   "crew": [
+   {
+    "artist": null,
+    "name": "Gil Snapper",
+    "role": "producer"
+   },
    {
     "artist": "mulatu-astatke",
     "name": "Mulatu Astatke",
@@ -10715,9 +10778,11 @@
    }
   ],
   "draftNotes": [
-   "Not approved: MusicBrainz credits players on 'Dèwèl' only, and no personnel listing for the 1972 Worthy LP turned up (reissue notes say New York session players). Needs the Strut reissue's notes."
-  ],
-  "edited": true
+   "The original Worthy LP and Strut's 2017 reissue name no players; Strut and Songlines say the band was New York session players (American and Puerto Rican) whose names are lost. So only Mulatu is listed, on vibraphone and electric piano (Songlines).",
+   "Removed MusicBrainz's 'Dèwèl' credits (Yohannes Tekola, Fèqadu Amdè-Mesqel, Mogès Habté, Andrew Wilson, Giovanni Rico, Temare Haregu): they are the Addis Ababa players of Mulatu's 1974 Amha recordings as listed on Éthiopiques 4, not this New York album.",
+   "Gil Snapper ran Worthy and wrote the sleeve notes; Strut's notes describe him as the producer who took Mulatu into the studio. The LP credits Mulatu as arranger of tracks 2-4 and 6 (and writer of 1, 5, 7).",
+   "Recorded in New York, 1972: Strut says a downtown Manhattan studio, a 2003 Worthy reissue says Brooklyn, so just the city."
+  ]
  },
  "my-favorite-things": {
   "reviewed": true,
@@ -13522,10 +13587,10 @@
   ]
  },
  "spirits-known-and-unknown": {
-  "reviewed": false,
-  "source": "musicbrainz:release/e75d1d5f-ec44-4573-a3ee-f4588f6c80ec",
+  "reviewed": true,
+  "source": "Discogs release 389485 (Flying Dutchman FDS-115 sleeve credits), checked against Wikipedia: Spirits Known and Unknown",
   "mbReleaseGroup": "d887e7cf-2288-3a08-853e-74591c85e556",
-  "edition": "1969 US",
+  "edition": "1969 US Flying Dutchman FDS-115",
   "recorded": [
    {
     "date": "1969-10-21",
@@ -13610,13 +13675,28 @@
     "artist": null,
     "name": "Bob Thiele",
     "role": "producer"
+   },
+   {
+    "artist": null,
+    "name": "Reice Hamel",
+    "role": "engineer"
+   },
+   {
+    "artist": null,
+    "name": "Robert Flynn",
+    "role": "design"
+   },
+   {
+    "artist": null,
+    "name": "Chuck Stewart",
+    "role": "photography"
    }
   ],
   "draftNotes": [
-   "Players confirmed (Wikipedia, All About Jazz, MusicWeb); Sanders is credited as 'Little Rock'. James Spaulding added; MusicBrainz missed him.",
-   "Not approved: sources disagree on which bassist and which horns play on which track (Davis on 1–5 and 7 and McBee on 6 in one listing), so only/except are left out until the liner notes are checked."
-  ],
-  "edited": true
+   "The sleeve and Wikipedia agree on all eight players. Sanders is credited as 'Little Rock'.",
+   "The sleeve gives no per-track personnel, and secondary listings disagree on which bassist plays where (one has Davis on 1-5 and 7 and McBee on 6), so there is no only/except.",
+   "Recorded October 21 and 22, 1969, in New York (Wikipedia); one listing says RCA's studio, unconfirmed, so no studio is named. Reice Hamel ('Reice Hamill' on the sleeve) is credited as sound mixer, i.e. the recording engineer."
+  ]
  },
  "spiritual-unity": {
   "reviewed": true,
@@ -15436,10 +15516,32 @@
   ]
  },
  "tutu": {
-  "reviewed": false,
-  "source": "musicbrainz:release/06218c01-82aa-48c7-ad94-4e94c389b12c",
+  "reviewed": true,
+  "source": "Discogs release 55663 (Warner Bros. 1-25490 sleeve credits and session dates), Wikipedia: Tutu (album), and Peter Losin's Miles Ahead sessionography",
   "mbReleaseGroup": "44a7c417-f4ce-31d3-9e81-2f370126526f",
-  "edition": "1986 XE",
+  "edition": "1986 US Warner Bros. 1-25490",
+  "recorded": [
+   {
+    "date": "1986-02-06",
+    "place": "Le Gonks, West Hollywood"
+   },
+   {
+    "date": "1986-02-10",
+    "place": "Capitol Studios, Hollywood"
+   },
+   {
+    "date": "1986-02-11",
+    "place": "Capitol Studios, Hollywood"
+   },
+   {
+    "date": "1986-02-13",
+    "place": "Capitol Studios, Hollywood"
+   },
+   {
+    "date": "1986-03",
+    "place": "Clinton Recording Studios, New York"
+   }
+  ],
   "tracks": [
    "Tutu",
    "Tomaas",
@@ -15460,10 +15562,19 @@
    },
    {
     "artist": null,
+    "name": "Marcus Miller",
+    "instruments": [
+     "electric bass",
+     "bass clarinet",
+     "synthesizer",
+     "other instruments"
+    ]
+   },
+   {
+    "artist": null,
     "name": "Michał Urbaniak",
     "instruments": [
-     "electric violin",
-     "violin"
+     "electric violin"
     ],
     "only": [
      "Don’t Lose Your Mind"
@@ -15471,13 +15582,24 @@
    },
    {
     "artist": null,
-    "name": "Marcus Miller",
+    "name": "Jason Miles",
     "instruments": [
-     "electric bass",
-     "drum machine",
-     "guitar",
-     "synthesizer",
-     "other instruments"
+     "synthesizer programming"
+    ],
+    "except": [
+     "Backyard Ritual"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Adam Holzman",
+    "instruments": [
+     "synthesizer"
+    ],
+    "only": [
+     "Tutu",
+     "Portia",
+     "Splatch"
     ]
    },
    {
@@ -15493,20 +15615,12 @@
    },
    {
     "artist": null,
-    "name": "Adam Holzman",
+    "name": "George Duke",
     "instruments": [
-     "synthesizer"
+     "other instruments"
     ],
     "only": [
-     "Splatch"
-    ]
-   },
-   {
-    "artist": null,
-    "name": "Billy Hart",
-    "instruments": [
-     "bongos",
-     "drums"
+     "Backyard Ritual"
     ]
    },
    {
@@ -15542,22 +15656,32 @@
     "only": [
      "Splatch"
     ]
-   },
-   {
-    "artist": null,
-    "name": "George Duke",
-    "instruments": [
-     "other instruments"
-    ],
-    "only": [
-     "Backyard Ritual"
-    ]
    }
   ],
   "crew": [
    {
     "artist": null,
+    "name": "Tommy LiPuma",
+    "role": "producer"
+   },
+   {
+    "artist": null,
     "name": "Marcus Miller",
+    "role": "producer"
+   },
+   {
+    "artist": null,
+    "name": "George Duke",
+    "role": "producer"
+   },
+   {
+    "artist": null,
+    "name": "Marcus Miller",
+    "role": "arranger"
+   },
+   {
+    "artist": null,
+    "name": "George Duke",
     "role": "arranger"
    },
    {
@@ -15572,43 +15696,27 @@
    },
    {
     "artist": null,
-    "name": "Maureen Thompson",
-    "role": "engineer"
-   },
-   {
-    "artist": null,
-    "name": "Tommy LiPuma",
-    "role": "producer"
-   },
-   {
-    "artist": null,
-    "name": "Marcus Miller",
-    "role": "producer"
-   },
-   {
-    "artist": null,
-    "name": "George Duke",
-    "role": "arranger"
-   },
-   {
-    "artist": null,
-    "name": "Mitch Gibson",
-    "role": "engineer"
-   },
-   {
-    "artist": null,
     "name": "Erik Zobler",
     "role": "engineer"
    },
    {
     "artist": null,
-    "name": "George Duke",
-    "role": "producer"
+    "name": "Eiko Ishioka",
+    "role": "design"
+   },
+   {
+    "artist": null,
+    "name": "Irving Penn",
+    "role": "photography"
    }
   ],
-  "edited": true,
   "draftNotes": [
-   "Not approved: per-track credits match Wikipedia except Billy Hart (drums, bongos), who MusicBrainz and Shazam credit and Wikipedia's liner-note list doesn't; Jason Miles (synthesizer programming) is missing here."
+   "Per-track credits from the sleeve (Discogs) and Wikipedia, which agree. Billy Hart removed: neither the sleeve, Wikipedia nor the Losin sessionography has him. Jason Miles (synthesizer programming) added.",
+   "Marcus Miller plays everything not credited to someone else on all tracks but Backyard Ritual, where he plays only bass (George Duke's track: Duke arranged, produced and played the rest). Bass clarinet is from Wikipedia.",
+   "Adam Holzman is credited on the sleeve with additional synthesizer programming and the Splatch solo; Losin lists him on the Tutu, Portia and Splatch sessions. Jason Miles is on every Miller session in Losin, not on Backyard Ritual.",
+   "Dates from the sleeve notes (Discogs) and Losin: Backyard Ritual Feb 6 (Duke's demo, Le Gonks per the sleeve; Losin files it under Capitol), Splatch Feb 10, Tutu Feb 11, Portia Feb 13 at Capitol Studio B, Los Angeles; Tomaas, Perfect Way, Don't Lose Your Mind and Full Nelson at Clinton Recording, New York, March 12-25 (so only the month). Mixed at Ocean Way and Atlantic.",
+   "Losin also lists Kenny Garrett on the Feb 6 Backyard Ritual session and quotes Steve Reid as playing most of its percussion; neither is credited on the record, so both are left out there.",
+   "Assistant engineers (Maureen Thompson, Eddie Garcia, Mitch Gibson) and mixer Bill Schnee left out of the crew."
   ]
  },
  "unit-structures": {
