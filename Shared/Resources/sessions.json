@@ -698,7 +698,8 @@
    "Back at the Chicken Shack",
    "When I Grow Too Old to Dream",
    "Minor Chant",
-   "Messy Bessie"
+   "Messy Bessie",
+   "On the Sunny Side of the Street"
   ],
   "personnel": [
    {
@@ -724,7 +725,7 @@
    },
    {
     "artist": null,
-    "name": "Donald “Duck” Bailey",
+    "name": "Donald Bailey",
     "instruments": [
      "drums"
     ]
@@ -741,7 +742,8 @@
     "name": "Rudy Van Gelder",
     "role": "engineer"
    }
-  ]
+  ],
+  "edited": true
  },
  "basie-complete-decca": {
   "reviewed": false,
@@ -1028,7 +1030,7 @@
   ]
  },
  "birth-of-the-cool": {
-  "reviewed": false,
+  "reviewed": true,
   "source": "musicbrainz:release/2c9af123-adef-4db0-9db8-145ce9b283c3",
   "mbReleaseGroup": "903d5fe8-ab43-33b2-9411-6738af50de19",
   "edition": "1957-02 US",
@@ -1286,8 +1288,7 @@
   ],
   "draftNotes": [
    "Sessions per track from Wikipedia's track listing; the 11 tracks of the 1957 LP (\"Darn That Dream\", added in 1972, isn't on the Apple Music album)."
-  ],
-  "edited": true
+  ]
  },
  "birth-of-the-hot": {
   "reviewed": false,
@@ -2550,7 +2551,7 @@
   ]
  },
  "blue-train": {
-  "reviewed": false,
+  "reviewed": true,
   "source": "musicbrainz:release/4ca248f9-8f10-462b-a3bd-6ff48f25f151",
   "mbReleaseGroup": "12349ce8-2087-3d16-93da-70cd65621774",
   "edition": "1958 US",
@@ -2632,8 +2633,7 @@
     "name": "Francis Wolff",
     "role": "photography"
    }
-  ],
-  "edited": true
+  ]
  },
  "bright-size-life": {
   "reviewed": false,
@@ -3327,7 +3327,7 @@
   ]
  },
  "chet-baker-sings": {
-  "reviewed": false,
+  "reviewed": true,
   "source": "musicbrainz:release/dc0bbfac-ccd4-4c43-a6d7-cfd8b167b137",
   "mbReleaseGroup": "a0aabd83-2341-335d-a0d6-e0ea609b0b3f",
   "edition": "1954 US",
@@ -3488,8 +3488,7 @@
   ],
   "draftNotes": [
    "Jazzdisco places \"I've Never Been in Love Before\" on 23 July 1956 and \"My Ideal\" on 30 July 1956."
-  ],
-  "edited": true
+  ]
  },
  "complete-communion": {
   "reviewed": false,
@@ -4596,7 +4595,7 @@
   ]
  },
  "giant-steps": {
-  "reviewed": false,
+  "reviewed": true,
   "source": "musicbrainz:release/22689758-ffc1-450f-bb48-52b577077dba",
   "mbReleaseGroup": "2cdca11d-3e45-3152-93e5-4d2a4ddb1bc6",
   "edition": "1960-01-27 US",
@@ -4705,11 +4704,10 @@
     "name": "Phil Iehle",
     "role": "engineer"
    }
-  ],
-  "edited": true
+  ]
  },
  "go": {
-  "reviewed": false,
+  "reviewed": true,
   "source": "musicbrainz:release/6392969f-deba-4383-953a-3bf5920bb834",
   "mbReleaseGroup": "2b77fa1f-384d-3056-9491-91cb64a96eae",
   "edition": "1962 US",
@@ -4768,8 +4766,7 @@
     "name": "Rudy Van Gelder",
     "role": "engineer"
    }
-  ],
-  "edited": true
+  ]
  },
  "groovin-high": {
   "reviewed": true,
@@ -5539,7 +5536,8 @@
     "name": "Alfred Lion",
     "role": "producer"
    }
-  ]
+  ],
+  "edited": true
  },
  "jaco-pastorius-album": {
   "reviewed": false,
@@ -6592,17 +6590,19 @@
   "recorded": [
    {
     "date": "1959-03-02",
-    "place": "CBS 30th Street Studio"
+    "place": "CBS 30th Street Studio, New York"
    },
    {
     "date": "1959-04-22",
-    "place": "CBS 30th Street Studio"
+    "place": "CBS 30th Street Studio, New York"
    }
   ],
   "tracks": [
    "So What",
+   "Freddie Freeloader",
    "Blue in Green",
-   "All Blues"
+   "All Blues",
+   "Flamenco Sketches"
   ],
   "personnel": [
    {
@@ -6634,6 +6634,19 @@
     "name": "Bill Evans",
     "instruments": [
      "piano"
+    ],
+    "except": [
+     "Freddie Freeloader"
+    ]
+   },
+   {
+    "artist": null,
+    "name": "Wynton Kelly",
+    "instruments": [
+     "piano"
+    ],
+    "only": [
+     "Freddie Freeloader"
     ]
    },
    {
@@ -6654,15 +6667,19 @@
   "crew": [
    {
     "artist": null,
-    "name": "Fred Plaut",
-    "role": "engineer"
+    "name": "Irving Townsend",
+    "role": "producer"
    },
    {
     "artist": null,
-    "name": "Irving Townsend",
-    "role": "producer"
+    "name": "Fred Plaut",
+    "role": "engineer"
    }
-  ]
+  ],
+  "draftNotes": [
+   "The full run had picked a 3-track edition; rebuilt for the five tracks, with Wynton Kelly on \"Freddie Freeloader\"."
+  ],
+  "edited": true
  },
  "little-girl-blue": {
   "reviewed": false,
@@ -6699,7 +6716,7 @@
    },
    {
     "artist": null,
-    "name": "James E. Bond",
+    "name": "Jimmy Bond",
     "instruments": [
      "bass"
     ]
@@ -6711,7 +6728,8 @@
      "drums"
     ]
    }
-  ]
+  ],
+  "edited": true
  },
  "ma-rainey": {
   "reviewed": false,
@@ -6821,11 +6839,6 @@
   "crew": [
    {
     "artist": null,
-    "name": "Michael Cuscuna",
-    "role": "producer"
-   },
-   {
-    "artist": null,
     "name": "Alfred Lion",
     "role": "producer"
    },
@@ -6834,7 +6847,8 @@
     "name": "Rudy Van Gelder",
     "role": "engineer"
    }
-  ]
+  ],
+  "edited": true
  },
  "mercy-mercy-mercy": {
   "reviewed": false,
@@ -6874,6 +6888,7 @@
     "artist": "joe-zawinul",
     "name": "Joe Zawinul",
     "instruments": [
+     "piano",
      "electric piano"
     ]
    },
@@ -6898,10 +6913,14 @@
     "name": "David Axelrod",
     "role": "producer"
    }
-  ]
+  ],
+  "draftNotes": [
+   "Recorded at Capitol's Hollywood studio before an invited audience, not at \"The Club\" in Chicago, despite the title."
+  ],
+  "edited": true
  },
  "miles-ahead": {
-  "reviewed": false,
+  "reviewed": true,
   "source": "musicbrainz:release/61a4bb9f-85af-4d31-8665-2043ffa340b1",
   "mbReleaseGroup": "cc0c7530-a135-3386-a682-0d33d14c876e",
   "edition": "1957 US",
@@ -7139,8 +7158,7 @@
   ],
   "draftNotes": [
    "Wikipedia's per-track notes use the 1997 numbering. Bonus tracks repeat titles (two \"Springsville\", a \"Blues for Pablo\" that is really \"Miles Ahead\"), so who-is-on-what is only exact for the first ten."
-  ],
-  "edited": true
+  ]
  },
  "miles-smiles": {
   "reviewed": false,
@@ -7201,10 +7219,28 @@
      "drums"
     ]
    }
-  ]
+  ],
+  "crew": [
+   {
+    "artist": null,
+    "name": "Teo Macero",
+    "role": "producer"
+   },
+   {
+    "artist": null,
+    "name": "Frank Laico",
+    "role": "engineer"
+   },
+   {
+    "artist": null,
+    "name": "Vernon Smith",
+    "role": "photography"
+   }
+  ],
+  "edited": true
  },
  "mingus-ah-um": {
-  "reviewed": false,
+  "reviewed": true,
   "source": "musicbrainz:release/96c5cc73-798b-49d8-9708-51fcaf81931a",
   "mbReleaseGroup": "48ec720b-2fc2-35dd-8130-5b186c4abcbc",
   "edition": "1959 US",
@@ -7310,11 +7346,10 @@
     "name": "Teo Macero",
     "role": "producer"
    }
-  ],
-  "edited": true
+  ]
  },
  "moanin": {
-  "reviewed": false,
+  "reviewed": true,
   "source": "musicbrainz:release/68cf83c9-3f68-4af2-9edd-37f22d5da600",
   "mbReleaseGroup": "e809b0f3-5683-3248-b39a-e7ee8e86d2d9",
   "edition": "1958 US",
@@ -7385,8 +7420,7 @@
     "name": "Buck Hoeffler",
     "role": "photography"
    }
-  ],
-  "edited": true
+  ]
  },
  "my-favorite-things": {
   "reviewed": false,
@@ -7470,10 +7504,11 @@
     "name": "Phil Iehle",
     "role": "engineer"
    }
-  ]
+  ],
+  "edited": true
  },
  "out-of-the-cool": {
-  "reviewed": false,
+  "reviewed": true,
   "source": "musicbrainz:release/02f42674-50da-4bb4-988b-f7825ee065b9",
   "mbReleaseGroup": "50440e61-2549-37df-bc02-b6436938b72d",
   "edition": "1961 US",
@@ -7633,8 +7668,7 @@
     "name": "Rudy Van Gelder",
     "role": "engineer"
    }
-  ],
-  "edited": true
+  ]
  },
  "out-to-lunch": {
   "reviewed": false,
@@ -8411,7 +8445,7 @@
   ]
  },
  "saxophone-colossus": {
-  "reviewed": false,
+  "reviewed": true,
   "source": "musicbrainz:release/e29d9fea-4e28-412f-8b92-93b67bcd4f85",
   "mbReleaseGroup": "cf29d6a2-a18a-3bb6-a861-495148baee1f",
   "edition": "1957-04-27 US",
@@ -8469,8 +8503,7 @@
     "name": "Rudy Van Gelder",
     "role": "engineer"
    }
-  ],
-  "edited": true
+  ]
  },
  "snowy-morning-blues": {
   "reviewed": false,
@@ -8541,7 +8574,7 @@
   ]
  },
  "somethin-else": {
-  "reviewed": false,
+  "reviewed": true,
   "source": "musicbrainz:release/12c3ef02-0b5d-3350-968c-0af67a329ae0",
   "mbReleaseGroup": "495c22f5-90b3-3e87-8be1-2c55aef3ed82",
   "edition": "1958 US",
@@ -8623,11 +8656,10 @@
   ],
   "draftNotes": [
    "Jazzdisco: Miles Davis on tracks 1–5 (\"Bangoon\" included), not on \"Dancing in the Dark\"."
-  ],
-  "edited": true
+  ]
  },
  "song-for-my-father": {
-  "reviewed": false,
+  "reviewed": true,
   "source": "musicbrainz:release/219c3a25-3772-41eb-ac23-4fd68047bbbe",
   "mbReleaseGroup": "5fd8134c-ff96-3f48-a0a7-952a1e00e78e",
   "edition": "1964-12 US",
@@ -8755,8 +8787,7 @@
     "name": "Rudy Van Gelder",
     "role": "engineer"
    }
-  ],
-  "edited": true
+  ]
  },
  "source": {
   "reviewed": false,
@@ -9110,16 +9141,6 @@
   "crew": [
    {
     "artist": null,
-    "name": "Reid Miles",
-    "role": "design"
-   },
-   {
-    "artist": null,
-    "name": "Reid Miles",
-    "role": "photography"
-   },
-   {
-    "artist": null,
     "name": "Alfred Lion",
     "role": "producer"
    },
@@ -9130,10 +9151,16 @@
    },
    {
     "artist": null,
-    "name": "Michael Cuscuna",
-    "role": "producer"
+    "name": "Reid Miles",
+    "role": "design"
+   },
+   {
+    "artist": null,
+    "name": "Reid Miles",
+    "role": "photography"
    }
-  ]
+  ],
+  "edited": true
  },
  "spiritual-unity": {
   "reviewed": false,
@@ -9235,7 +9262,7 @@
   ]
  },
  "study-in-brown": {
-  "reviewed": false,
+  "reviewed": true,
   "source": "musicbrainz:release/928c547b-c0cb-420c-8233-a4b3df2b5727",
   "mbReleaseGroup": "ecdf91a1-9e2a-44db-83f2-7f6c9ff82c10",
   "edition": "1955 US",
@@ -9300,8 +9327,7 @@
      "drums"
     ]
    }
-  ],
-  "edited": true
+  ]
  },
  "sunday-at-the-village-vanguard": {
   "reviewed": false,
@@ -9355,16 +9381,12 @@
     "artist": null,
     "name": "Dave Jones",
     "role": "engineer"
-   },
-   {
-    "artist": null,
-    "name": "David B. Jones",
-    "role": "engineer"
    }
   ],
   "draftNotes": [
-   "this edition has 6 tracks; the Apple Music album has 10"
-  ]
+   "Apple Music has 10 tracks (two takes of several tunes); takes match by title."
+  ],
+  "edited": true
  },
  "the-epic": {
   "reviewed": false,
@@ -10117,7 +10139,8 @@
     "name": "Rudy Van Gelder",
     "role": "engineer"
    }
-  ]
+  ],
+  "edited": true
  },
  "the-sermon": {
   "reviewed": false,
@@ -10126,11 +10149,12 @@
   "edition": "1959 US",
   "recorded": [
    {
-    "date": "1957-08-25"
+    "date": "1957-08-25",
+    "place": "Manhattan Towers, New York"
    },
    {
     "date": "1958-02-25",
-    "place": "Manhattan Towers"
+    "place": "Manhattan Towers, New York"
    }
   ],
   "tracks": [
@@ -10151,16 +10175,6 @@
     "name": "Lee Morgan",
     "instruments": [
      "trumpet"
-    ]
-   },
-   {
-    "artist": null,
-    "name": "Curtis Fuller",
-    "instruments": [
-     "trombone"
-    ],
-    "only": [
-     "J.O.S."
     ]
    },
    {
@@ -10189,8 +10203,8 @@
     "instruments": [
      "tenor saxophone"
     ],
-    "except": [
-     "Flamingo"
+    "only": [
+     "The Sermon"
     ]
    },
    {
@@ -10200,16 +10214,6 @@
      "guitar"
     ],
     "except": [
-     "J.O.S."
-    ]
-   },
-   {
-    "artist": null,
-    "name": "Eric McFadden",
-    "instruments": [
-     "guitar"
-    ],
-    "only": [
      "J.O.S."
     ]
    },
@@ -10235,7 +10239,7 @@
    },
    {
     "artist": null,
-    "name": "Donald “Duck” Bailey",
+    "name": "Donald Bailey",
     "instruments": [
      "drums"
     ],
@@ -10254,8 +10258,22 @@
     "artist": null,
     "name": "Rudy Van Gelder",
     "role": "engineer"
+   },
+   {
+    "artist": null,
+    "name": "Reid Miles",
+    "role": "design"
+   },
+   {
+    "artist": null,
+    "name": "Francis Wolff",
+    "role": "photography"
    }
-  ]
+  ],
+  "draftNotes": [
+   "Per Jazzdisco and Wikipedia: Curtis Fuller (credited by MusicBrainz) isn't on the album; Tina Brooks plays only on \"The Sermon\"."
+  ],
+  "edited": true
  },
  "the-shape-of-jazz-to-come": {
   "reviewed": false,
@@ -10389,10 +10407,11 @@
     "name": "Rudy Van Gelder",
     "role": "engineer"
    }
-  ]
+  ],
+  "edited": true
  },
  "time-out": {
-  "reviewed": false,
+  "reviewed": true,
   "source": "musicbrainz:release/08051d23-d6ed-4515-b176-3f2a6d67fcd4",
   "mbReleaseGroup": "035a7881-3e2c-39d2-b110-fe26a4de94e5",
   "edition": "1959 US",
@@ -10470,8 +10489,7 @@
     "name": "S. Neil Fujita",
     "role": "design"
    }
-  ],
-  "edited": true
+  ]
  },
  "unit-structures": {
   "reviewed": false,
