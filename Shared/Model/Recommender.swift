@@ -141,6 +141,8 @@ enum Recommender {
         // Walk the ties outward from the leader, nearest first, to someone playing today who leads a record here.
         var seen: Set<String> = [album.artist]
         var frontier: [[String]] = [[album.artist]]
+        // A heard record found along the line, kept in case nothing unheard turns up further out.
+        var heardDoor: Door?
         // At most three links: further than that, the line says little.
         while !frontier.isEmpty && frontier[0].count <= 3 {
             var next: [[String]] = []
@@ -168,17 +170,27 @@ enum Recommender {
                 let because = names.count == 2
                     ? "\(names[1]) carries it on: \(names[0]) and \(names[1]) are linked directly."
                     : "Linked through \(names.dropFirst().dropLast().joined(separator: " and ")): \(names.joined(separator: " → "))."
-                return Door(kind: .echoToday, album: f.album, because: because)
+                let door = Door(kind: .echoToday, album: f.album, because: because)
+                // Everything this close has been heard: look further out for something new first.
+                guard isHeard(f.album.id) else { return door }
+                if heardDoor == nil { heardDoor = door }
             }
             frontier = next
         }
+        if let heardDoor { return heardDoor }
         // No line: a record today by someone on the same instrument.
         let instrument = library.artist(album.artist).map { Passport.family($0.instrument) }
         let today = library.albums.filter { a in
             guard let lead = library.artist(a.artist), todayEras.contains(lead.primaryEra) else { return false }
             return instrument == nil || Passport.family(lead.instrument) == instrument
         }
-        guard let pick = best(today, isHeard: isHeard, excluding: excluding, rank: { -Double($0.year) }) else { return nil }
-        return Door(kind: .echoToday, album: pick, because: "The same instrument today, in the hands of \(pick.artistName).")
+        if let pick = best(today, isHeard: isHeard, excluding: excluding, rank: { -Double($0.year) }) {
+            return Door(kind: .echoToday, album: pick, because: "The same instrument today, in the hands of \(pick.artistName).")
+        }
+        // Not even that: where the music has got to now, newest first.
+        let now = library.albums.filter { a in library.artist(a.artist).map { todayEras.contains($0.primaryEra) } ?? false }
+        guard let pick = best(now, isHeard: isHeard, excluding: excluding, rank: { -Double($0.year) }),
+              let era = library.era(album.era) else { return nil }
+        return Door(kind: .echoToday, album: pick, because: "Where the line from \(era.name) has got to today: \(pick.artistName).")
     }
 }

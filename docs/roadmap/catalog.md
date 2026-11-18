@@ -4,7 +4,15 @@ Every feature in the roadmap is only as good as the data under it. A radio stati
 lineage with three bassists isn't one; a calendar with 170 dates is empty half the year. This thread grows the content
 alongside the features. It isn't a release of its own: each release takes a batch.
 
-## Where it stands (2026-11-18, after the first batch)
+## Where it stands (2026-11-18, after the second batch)
+
+183 artists and 176 records. The second batch (31 artists, 46 records) meets every floor in this file: each decade
+from the 1920s has at least 10 records (the 1920s 11, 1930s 11, 1940s 10, 2020s 17), each era at least 6 artists and 8
+records, and trombone, clarinet, vibraphone and organ each have a lineage tree (6–8 players). Two records' personnel
+stay unreviewed (The Movement Revisited, Dear Love: no per-track credits, two unconfirmed names). Research for the
+batch was done by agents with a source for every fact, kept outside the repo; `scripts/coverage.py` prints the shape.
+
+## Where it stood (2026-11-18, after the first batch)
 
 152 artists and 130 records (was 86 and 88 when this was written; 127 after 1.1's sidemen). The first batch (25 artists,
 42 records) filled the 1980s–2010s (each now 10 or more records), soul jazz, spiritual jazz, the organ, the first male

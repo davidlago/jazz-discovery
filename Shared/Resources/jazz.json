@@ -1393,7 +1393,7 @@
       "primaryEra": "swing",
       "wikipedia": "Benny_Goodman",
       "blurb": "The King of Swing led the band that ignited the big-band craze and broke the color line with his integrated small groups featuring Teddy Wilson and Lionel Hampton.",
-      "connections": ["billie-holiday", "ella-fitzgerald", "lester-young", "fletcher-henderson", "artie-shaw", "red-norvo", "mary-lou-williams", "anat-cohen", "jack-teagarden"],
+      "connections": ["billie-holiday", "ella-fitzgerald", "lester-young", "fletcher-henderson", "artie-shaw", "red-norvo", "mary-lou-williams", "anat-cohen"],
       "albums": [
         "carnegie-hall-1938"
       ],
@@ -1463,7 +1463,7 @@
       "primaryEra": "swing",
       "wikipedia": "Billie_Holiday",
       "blurb": "Lady Day phrased like a horn player and sang behind the beat with devastating emotional truth, turning pop songs into confessions and 'Strange Fruit' into a protest landmark.",
-      "connections": ["count-basie", "benny-goodman", "lester-young", "nina-simone", "cassandra-wilson", "artie-shaw", "jack-teagarden"],
+      "connections": ["count-basie", "benny-goodman", "lester-young", "nina-simone", "cassandra-wilson", "artie-shaw"],
       "albums": [
         "billie-commodore"
       ],
@@ -1488,7 +1488,7 @@
       "primaryEra": "swing",
       "wikipedia": "Ella_Fitzgerald",
       "blurb": "The First Lady of Song combined flawless pitch, pure tone and boundless swing; her scat improvisations rival any horn, and her Songbook albums canonized American song.",
-      "connections": ["louis-armstrong", "duke-ellington", "count-basie", "benny-goodman", "dizzy-gillespie", "wild-bill-davis"],
+      "connections": ["louis-armstrong", "duke-ellington", "count-basie", "benny-goodman", "dizzy-gillespie"],
       "albums": [
         "ella-cole-porter"
       ],
@@ -1708,7 +1708,7 @@
       "primaryEra": "bebop",
       "wikipedia": "Sarah_Vaughan",
       "blurb": "Sassy had an operatic range and a bebop musician's ear, bending harmonies and swooping through octaves with breathtaking control.",
-      "connections": ["charlie-parker", "dizzy-gillespie", "clifford-brown", "samara-joy", "jazzmeia-horn"],
+      "connections": ["charlie-parker", "dizzy-gillespie", "clifford-brown", "samara-joy"],
       "albums": [
         "sarah-vaughan-1955"
       ],
@@ -2159,7 +2159,7 @@
       "primaryEra": "latin",
       "wikipedia": "Tito_Puente",
       "blurb": "El Rey del Timbal ruled the Palladium's mambo era with a flashy timbales style and a big band that fused Cuban rhythm with jazz harmony.",
-      "connections": ["machito", "mongo-santamaria", "cal-tjader"],
+      "connections": ["machito", "mongo-santamaria"],
       "albums": [
         "dance-mania"
       ],
@@ -2207,7 +2207,7 @@
       "primaryEra": "latin",
       "wikipedia": "Antônio_Carlos_Jobim",
       "blurb": "Brazil's great songwriter gave bossa nova its repertoire, with sophisticated melodies over sumptuous harmonies that jazz musicians adopted as modern standards.",
-      "connections": ["stan-getz", "joao-gilberto", "anat-cohen"],
+      "connections": ["stan-getz", "joao-gilberto"],
       "albums": [
         "wave"
       ],
@@ -3767,7 +3767,7 @@
       "primaryEra": "new-orleans",
       "wikipedia": "Kid_Ory",
       "blurb": "The New Orleans bandleader who gave the young King Oliver and Louis Armstrong work, Ory perfected the \"tailgate\" trombone, sliding glissandos under the melody, on Armstrong's Hot Five records.",
-      "connections": ["jack-teagarden"],
+      "connections": [],
       "albums": ["kid-ory-1944-45"],
       "signatureTracks": ["Heebie Jeebies", "Struttin' with Some Barbecue", "Muskrat Ramble", "Ory's Creole Trombone"],
       "videoQuery": "Kid Ory Creole Jazz Band"
@@ -3943,7 +3943,7 @@
       "primaryEra": "cool",
       "wikipedia": "Lee_Konitz",
       "blurb": "A student of Lennie Tristano and the alto voice of Birth of the Cool, Konitz offered a dry, light alternative to Charlie Parker and kept improvising with rare freedom for seventy years.",
-      "connections": ["jimmy-giuffre"],
+      "connections": [],
       "albums": ["lee-konitz-with-warne-marsh"],
       "signatureTracks": [
         "Boplicity",
@@ -4713,7 +4713,7 @@
       "primaryEra": "fusion",
       "wikipedia": "Egberto_Gismonti",
       "blurb": "A self-taught Brazilian guitarist who plays eight- and ten-string instruments as well as piano, Gismonti drew on time spent with the peoples of the Xingu in the Amazon; his ECM records with Naná Vasconcelos and with Charlie Haden and Jan Garbarek made him known abroad.",
-      "connections": ["jan-garbarek", "charlie-haden", "anat-cohen"],
+      "connections": ["jan-garbarek", "charlie-haden"],
       "albums": [
         "danca-das-cabecas"
       ],
@@ -5051,7 +5051,7 @@
       "primaryEra": "contemporary",
       "wikipedia": "Anat_Cohen",
       "blurb": "Born in Tel Aviv and based in New York, Cohen put the clarinet back at the front of modern jazz, moving between swing, Brazilian choro and chamber music; the Jazz Journalists Association named her clarinetist of the year every year from 2007 to 2023.",
-      "connections": ["antonio-carlos-jobim", "egberto-gismonti", "benny-goodman"],
+      "connections": ["benny-goodman"],
       "albums": ["quartetinho"],
       "signatureTracks": ["Happy Song", "Anat's Dance", "Baroquen Spirit"],
       "videoQuery": "Anat Cohen clarinet live"
@@ -5066,7 +5066,7 @@
       "primaryEra": "cool",
       "wikipedia": "Jimmy_Giuffre",
       "blurb": "A Texas-born clarinetist and saxophonist who wrote 'Four Brothers' for Woody Herman, Giuffre became a quiet radical of West Coast jazz: his trio with Jim Hall played soft, folk-tinged chamber music, and his 1961 trio with Paul Bley and Steve Swallow moved toward free improvisation.",
-      "connections": ["stan-getz", "lee-konitz"],
+      "connections": ["stan-getz"],
       "albums": ["the-jimmy-giuffre-3"],
       "signatureTracks": ["The Train and the River", "Emphasis", "Crawdad Suite"],
       "videoQuery": "Jimmy Giuffre The Train and the River"
@@ -5081,7 +5081,7 @@
       "primaryEra": "latin",
       "wikipedia": "Cal_Tjader",
       "blurb": "Tjader drummed with Dave Brubeck before Afro-Cuban music took hold of him; his bands set cool, airy vibraphone over mambo and cha-cha rhythms, made him one of the most successful non-Latino musicians in Latin jazz, and won him a Grammy for La Onda Va Bien in 1980.",
-      "connections": ["dave-brubeck", "mongo-santamaria", "tito-puente"],
+      "connections": ["dave-brubeck", "mongo-santamaria"],
       "albums": ["soul-sauce"],
       "signatureTracks": ["Soul Sauce (Guachi Guara)", "Afro Blue", "Black Orchid"],
       "videoQuery": "Cal Tjader vibraphone live"
@@ -5240,7 +5240,7 @@
       "primaryEra": "contemporary",
       "wikipedia": "Jazzmeia_Horn",
       "blurb": "A Dallas-born singer who won the Sarah Vaughan competition in 2013 and the Thelonious Monk competition in 2015, Horn sings standards and her own socially minded songs, and is often compared to Betty Carter and Sarah Vaughan.",
-      "connections": ["sarah-vaughan"],
+      "connections": [],
       "albums": ["dear-love"],
       "signatureTracks": ["Tight", "Free Your Mind", "Where Is Freedom!?"],
       "videoQuery": "Jazzmeia Horn live"
@@ -5255,7 +5255,7 @@
       "primaryEra": "swing",
       "wikipedia": "Jack_Teagarden",
       "blurb": "A Texan who made the trombone sound like a blues singer, with long, smooth lines and a technique he largely taught himself, and who sang in the same lazy drawl. He was the trombone and second voice of Louis Armstrong's All Stars from 1947 to 1951.",
-      "connections": ["louis-armstrong", "kid-ory", "fats-waller", "benny-goodman", "billie-holiday", "earl-hines"],
+      "connections": ["louis-armstrong", "fats-waller", "earl-hines"],
       "albums": [],
       "signatureTracks": ["Basin Street Blues", "St. James Infirmary", "I Gotta Right to Sing the Blues"],
       "videoQuery": "Jack Teagarden trombone Basin Street Blues"
@@ -5299,7 +5299,7 @@
       "primaryEra": "soul-jazz",
       "wikipedia": "Wild_Bill_Davis",
       "blurb": "Louis Jordan's pianist turned organist, who led one of the first Hammond trios from 1950 and set the instrument's pace until Jimmy Smith arrived. His arrangement of April in Paris became Count Basie's 1955 hit.",
-      "connections": ["count-basie", "johnny-hodges", "duke-ellington", "ella-fitzgerald", "jimmy-smith"],
+      "connections": ["count-basie", "johnny-hodges", "duke-ellington", "jimmy-smith"],
       "albums": [],
       "signatureTracks": ["April in Paris", "Lullaby of Birdland", "Azure-Te"],
       "videoQuery": "Wild Bill Davis Hammond organ"
@@ -9005,6 +9005,132 @@
       "b": "makaya-mccraven",
       "kind": "band",
       "note": "Thackray's 'Too Shy' first appeared on McCraven's 2018 mixtape Where We Come From (CHICAGOxLONDON), and the 2019 12-inch credits production by both."
+    },
+    {
+      "a": "chick-corea",
+      "b": "gary-burton",
+      "kind": "duo",
+      "note": "Corea and Burton recorded Crystal Silence (ECM, 1972) as a vibes-and-piano duo and kept the partnership going for four decades."
+    },
+    {
+      "a": "gary-burton",
+      "b": "stan-getz",
+      "kind": "band",
+      "note": "Burton toured and recorded in Stan Getz's quartet from 1964 to 1966, before leading his own band."
+    },
+    {
+      "a": "gary-burton",
+      "b": "pat-metheny",
+      "kind": "band",
+      "note": "Metheny joined Burton's band in 1974, at 19, and recorded with it before ECM signed him as a leader."
+    },
+    {
+      "a": "gary-burton",
+      "b": "keith-jarrett",
+      "kind": "duo",
+      "note": "They made Gary Burton & Keith Jarrett together for Atlantic in 1970."
+    },
+    {
+      "a": "gary-burton",
+      "b": "red-norvo",
+      "kind": "influence",
+      "note": "Burton, a four-mallet player, has named Norvo among the vibraphonists who shaped him."
+    },
+    {
+      "a": "jimmy-smith",
+      "b": "wild-bill-davis",
+      "kind": "influence",
+      "note": "Smith turned to the Hammond organ after hearing Wild Bill Davis play it in the early 1950s."
+    },
+    {
+      "a": "bobby-hutcherson",
+      "b": "joel-ross",
+      "kind": "influence",
+      "note": "Ross has named Hutcherson as the vibraphonist he studied most closely."
+    },
+    {
+      "a": "anat-cohen",
+      "b": "benny-goodman",
+      "kind": "influence",
+      "note": "Cohen has described Goodman's records as where her clarinet playing began."
+    },
+    {
+      "a": "count-basie",
+      "b": "wild-bill-davis",
+      "kind": "band",
+      "note": "Basie's 1955 hit arrangement of April in Paris was Davis's, worked out on the organ before he gave it to the band."
+    },
+    {
+      "a": "johnny-hodges",
+      "b": "wild-bill-davis",
+      "kind": "duo",
+      "note": "Hodges and Davis made a run of organ-and-alto records together in the 1960s, Blue Pyramid and Mess of Blues among them."
+    },
+    {
+      "a": "duke-ellington",
+      "b": "wild-bill-davis",
+      "kind": "band",
+      "note": "Davis played organ and piano with Ellington's orchestra around 1969 to 1971."
+    },
+    {
+      "a": "benny-goodman",
+      "b": "mary-lou-williams",
+      "kind": "band",
+      "note": "Williams wrote arrangements for Goodman's band in the 1930s, including Roll 'Em."
+    },
+    {
+      "a": "duke-ellington",
+      "b": "mary-lou-williams",
+      "kind": "band",
+      "note": "Williams arranged for Ellington in the 1940s; Trumpet No End is hers."
+    },
+    {
+      "a": "earl-hines",
+      "b": "jack-teagarden",
+      "kind": "band",
+      "note": "Both were in Louis Armstrong's All Stars in the late 1940s."
+    },
+    {
+      "a": "lonnie-johnson",
+      "b": "louis-armstrong",
+      "kind": "band",
+      "note": "Johnson played guitar on Armstrong's Hot Five sides in December 1927, Hotter Than That among them."
+    },
+    {
+      "a": "dicky-wells",
+      "b": "fletcher-henderson",
+      "kind": "band",
+      "note": "Wells played trombone in Henderson's orchestra in 1933, before Teddy Hill's and Count Basie's."
+    },
+    {
+      "a": "dicky-wells",
+      "b": "django-reinhardt",
+      "kind": "band",
+      "note": "Wells recorded with Reinhardt in Paris in July 1937, the sessions released as Dicky Wells in Paris."
+    },
+    {
+      "a": "immanuel-wilkins",
+      "b": "jason-moran",
+      "kind": "mentor",
+      "note": "Moran produced Wilkins's debut Omega (Blue Note, 2020)."
+    },
+    {
+      "a": "cal-tjader",
+      "b": "mongo-santamaria",
+      "kind": "band",
+      "note": "Santamaría played congas in Tjader's band in the late 1950s, with Willie Bobo on timbales."
+    },
+    {
+      "a": "jimmy-giuffre",
+      "b": "stan-getz",
+      "kind": "band",
+      "note": "Giuffre wrote Four Brothers for Woody Herman's 1947 saxophone section, one of whose four was Getz."
+    },
+    {
+      "a": "samara-joy",
+      "b": "sarah-vaughan",
+      "kind": "influence",
+      "note": "Joy has named Vaughan as the singer she learned from first, and won the competition in her name in 2019."
     }
   ]
 }

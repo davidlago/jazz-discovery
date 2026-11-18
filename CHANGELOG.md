@@ -6,6 +6,18 @@ section for the tagged version at the top of the GitHub release notes (or **Unre
 
 ## Unreleased
 
+- **31 more artists and 46 more records** (183 and 176 in all). Before 1950: the roots of jazz (the Original
+  Dixieland Jass Band, James Reese Europe, Blind Lemon Jefferson, Lonnie Johnson, Robert Johnson), New Orleans, swing
+  and bebop records, including the first records here for King Oliver, Johnny Dodds, Earl Hines, Kid Ory, Art Tatum,
+  Fats Waller, Lionel Hampton and Lester Young, and Fletcher Henderson, Artie Shaw, Red Norvo, Fats Navarro and Mary
+  Lou Williams. Since 1950: the 2020s (DOMi & JD Beck, Joel Ross, Immanuel Wilkins, Samara Joy, Anat Cohen, Christian
+  McBride, Yussef Dayes, Emma-Jean Thackray, Tigran Hamasyan, Jazzmeia Horn, and new records by Makaya McCraven,
+  Kamasi Washington, Cécile McLorin Salvant and Ambrose Akinmusire), cool and Latin records, and the organ, vibraphone,
+  trombone and clarinet. Every decade from the 1920s now has at least ten records.
+- **Four new lineage trees**: the trombone, the clarinet, the vibraphone and the organ.
+- **Who played on what** for every record but two, including the five whose credits were still being checked.
+- **On This Day** has more days with something on them (520 events on 281 days): more release dates, and the new
+  records' sessions.
 - **Search** finds places, labels, glossary terms, paths and listening guides too.
 - **Listening guides** are easier to find: a mark on guided tracks in album, era and tune lists, a *Listening guide*
   button on path stops that have one, and How to Listen leads to the So What guide.
