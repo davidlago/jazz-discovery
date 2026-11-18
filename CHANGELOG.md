@@ -6,6 +6,12 @@ section for the tagged version at the top of the GitHub release notes (or **Unre
 
 ## Unreleased
 
+- **Sidemen**: 41 more artists, the players all over the records in the Crate: Ron Carter, Paul Chambers, Billy Higgins,
+  Tony Williams, Wynton Kelly, Joe Henderson, Johnny Hodges, Jimmy Blanton, Lil Hardin Armstrong and more, including
+  the guide's first trombonists, vibraphonists, percussionists, a harpist and a flutist. Their pages show the records
+  they play on (*Also Plays On*, with their instrument on each), and so do the pages of everyone already in the guide.
+- Artists can be filtered to **Leaders** or **Sidemen**, and search also finds players who don't have a page yet,
+  with the records they're on.
 - **Personnel**: album pages list who played on the record, set like the credits on an LP's back cover, with when and
   where it was recorded and who produced, arranged and engineered it. Players with a page in the app link to it, and
   on the Mac, pointing at a track dims the players who aren't on it. 86 of the 88 albums so far, each checked by hand

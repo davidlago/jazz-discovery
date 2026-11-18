@@ -103,6 +103,28 @@ struct SearchTab: View {
                         }
                     }
                 }
+                if !r.players.isEmpty {
+                    resultSection("On the Records") {
+                        ForEach(r.players) { p in
+                            VStack(alignment: .leading, spacing: 8) {
+                                VStack(alignment: .leading, spacing: 2) {
+                                    Text(p.name).font(.body.weight(.semibold)).foregroundStyle(Theme.cream)
+                                    Text(p.instruments.joined(separator: ", ")).font(.subheadline).foregroundStyle(Theme.muted)
+                                }
+                                FlowLayout(spacing: 6) {
+                                    ForEach(p.albums) { a in
+                                        NavigationLink(value: PhoneRoute.album(a.id)) {
+                                            Chip(text: a.title, tint: library.color(forEra: a.era))
+                                        }
+                                        .buttonStyle(.pressable)
+                                    }
+                                }
+                            }
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .padding(.vertical, 10)
+                        }
+                    }
+                }
             }
             .padding(.top, 12).padding(.bottom, 32)
         }

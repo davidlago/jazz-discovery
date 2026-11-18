@@ -5,7 +5,10 @@ struct ArtistsView: View {
     @State private var era: String? = nil
     @State private var instrument: String? = nil
     @State private var sort: Sort = .chronological
+    @State private var role: Role = .everyone
     enum Sort: String, CaseIterable { case chronological = "By birth", alphabetical = "A–Z" }
+    /// Leaders have records in the Crate; sidemen are known from the records they play on.
+    enum Role: String, CaseIterable { case everyone = "Everyone", leaders = "Leaders", sidemen = "Sidemen" }
 
     private let columns = [GridItem(.adaptive(minimum: 160, maximum: 200), spacing: 20)]
 
@@ -13,6 +16,7 @@ struct ArtistsView: View {
         let list = library.artists
             .filter { era == nil || $0.eras.contains(era!) }
             .filter { instrument == nil || $0.instrument == instrument }
+            .filter { role == .everyone || (role == .sidemen) == library.isSideman($0.id) }
             .sorted { sort == .alphabetical ? $0.name < $1.name : ($0.born ?? 0, $0.name) < ($1.born ?? 0, $1.name) }
 
         ScrollView {
@@ -24,6 +28,10 @@ struct ArtistsView: View {
                             .font(Theme.serif(18)).italic().foregroundStyle(Theme.muted)
                     }
                     Spacer()
+                    Picker("", selection: $role) {
+                        ForEach(Role.allCases, id: \.self) { Text($0.rawValue).tag($0) }
+                    }
+                    .pickerStyle(.segmented).frame(width: 240)
                     Picker("Instrument", selection: $instrument) {
                         Text("All instruments").tag(String?.none)
                         Divider()
@@ -138,6 +146,26 @@ struct ArtistDetailView: View {
                     VStack(alignment: .leading, spacing: 4) {
                         SectionHeader(title: "Essential Records", tint: tint).padding(.horizontal, 40)
                         HRow { ForEach(albums) { AlbumCard(album: $0, width: 200, showArtist: false) } }
+                    }
+                }
+
+                let appearances = library.appearances(of: artist.id)
+                if !appearances.isEmpty {
+                    VStack(alignment: .leading, spacing: 4) {
+                        SectionHeader(title: "Also Plays On", subtitle: "Records in the Crate led by others.", tint: tint)
+                            .padding(.horizontal, 40)
+                        HRow {
+                            ForEach(appearances) { a in
+                                VStack(alignment: .leading, spacing: 6) {
+                                    AlbumCard(album: a, width: 200)
+                                    if let credit = library.credit(of: artist.id, on: a.id) {
+                                        Text(credit.instrumentsText).font(.system(size: 11, weight: .medium)).foregroundStyle(tint)
+                                            .lineLimit(1)
+                                    }
+                                }
+                                .frame(width: 200, alignment: .leading)
+                            }
+                        }
                     }
                 }
 

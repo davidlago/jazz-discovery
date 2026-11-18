@@ -63,7 +63,7 @@ struct ConnectionsMapView: View {
         .sensoryFeedback(.selection, trigger: selected)
         .task {
             guard layout == nil else { return }
-            let artists = library.artists, edges = library.edges
+            let artists = library.connectedArtists, edges = library.edges
             let eras = Dictionary(library.eras.map { ($0.id, $0.start) }, uniquingKeysWith: { a, _ in a })
             layout = await Task.detached { GraphLayout.compute(artists: artists, edges: edges, eraStarts: eras) }.value
             placeCamera()

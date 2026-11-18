@@ -5,7 +5,10 @@ struct ArtistsTab: View {
     @State private var era: String? = nil
     @State private var instrument: String? = nil
     @State private var sort: Sort = .chronological
+    @State private var role: Role = .everyone
     enum Sort: String, CaseIterable { case chronological = "By Birth", alphabetical = "A–Z" }
+    /// Leaders have records in the Crate; sidemen are known from the records they play on.
+    enum Role: String, CaseIterable { case everyone = "Everyone", leaders = "Leaders", sidemen = "Sidemen" }
 
     private let columns = [GridItem(.flexible(), spacing: 14), GridItem(.flexible(), spacing: 14)]
 
@@ -13,6 +16,7 @@ struct ArtistsTab: View {
         let list = library.artists
             .filter { era == nil || $0.eras.contains(era!) }
             .filter { instrument == nil || $0.instrument == instrument }
+            .filter { role == .everyone || (role == .sidemen) == library.isSideman($0.id) }
             .sorted { sort == .alphabetical ? $0.name < $1.name : ($0.born ?? 0, $0.name) < ($1.born ?? 0, $1.name) }
 
         ScrollView {
@@ -34,6 +38,13 @@ struct ArtistsTab: View {
                         } label: {
                             Chip(text: instrument?.capitalized ?? "Instrument", tint: Theme.cream, filled: instrument != nil,
                                  systemImage: "chevron.down")
+                        }
+                        Menu {
+                            Picker("Role", selection: $role) {
+                                ForEach(Role.allCases, id: \.self) { Text($0.rawValue).tag($0) }
+                            }
+                        } label: {
+                            Chip(text: role.rawValue, tint: Theme.cream, filled: role != .everyone, systemImage: "chevron.down")
                         }
                         Menu {
                             Picker("Sort", selection: $sort) {
@@ -59,7 +70,7 @@ struct ArtistsTab: View {
                     } description: {
                         Text("No one in the guide matches both filters.")
                     } actions: {
-                        Button("Clear Filters") { era = nil; instrument = nil }
+                        Button("Clear Filters") { era = nil; instrument = nil; role = .everyone }
                     }
                     .padding(.top, 30)
                 } else {
@@ -228,6 +239,24 @@ struct ArtistDetailView: View {
                     VStack(alignment: .leading, spacing: 4) {
                         SectionHeader(title: "Essential Records", tint: tint)
                         HRow { ForEach(albums) { AlbumCard(album: $0, width: 150, showArtist: false) } }
+                    }
+                }
+
+                let appearances = library.appearances(of: artist.id)
+                if !appearances.isEmpty {
+                    VStack(alignment: .leading, spacing: 4) {
+                        SectionHeader(title: "Also Plays On", subtitle: "Records in the Crate led by others.", tint: tint)
+                        HRow {
+                            ForEach(appearances) { a in
+                                VStack(alignment: .leading, spacing: 5) {
+                                    AlbumCard(album: a, width: 150)
+                                    if let credit = library.credit(of: artist.id, on: a.id) {
+                                        Text(credit.instrumentsText).font(.caption.weight(.medium)).foregroundStyle(tint).lineLimit(1)
+                                    }
+                                }
+                                .frame(width: 150, alignment: .leading)
+                            }
+                        }
                     }
                 }
 

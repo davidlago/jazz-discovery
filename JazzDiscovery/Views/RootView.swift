@@ -167,6 +167,29 @@ struct SearchResultsView: View {
                     SectionHeader(title: "Albums").padding(.horizontal, 40)
                     HRow { ForEach(r.albums) { AlbumCard(album: $0) } }
                 }
+                if !r.players.isEmpty {
+                    SectionHeader(title: "On the Records", subtitle: "Players credited on the albums who don't have a page yet.")
+                        .padding(.horizontal, 40)
+                    VStack(alignment: .leading, spacing: 12) {
+                        ForEach(r.players) { p in
+                            VStack(alignment: .leading, spacing: 5) {
+                                HStack(spacing: 8) {
+                                    Text(p.name.uppercased()).font(Theme.label(12)).tracking(1.2).foregroundStyle(Theme.cream)
+                                    Text(p.instruments.joined(separator: ", ")).font(.system(size: 12)).foregroundStyle(Theme.muted)
+                                }
+                                FlowLayout(spacing: 6) {
+                                    ForEach(p.albums) { a in
+                                        Button { router.go(.album(a.id)) } label: {
+                                            Chip(text: "\(a.title) (\(String(a.year)))", tint: library.color(forEra: a.era))
+                                        }
+                                        .buttonStyle(.plain)
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .padding(.horizontal, 40)
+                }
             }
             .padding(.bottom, 40)
         }

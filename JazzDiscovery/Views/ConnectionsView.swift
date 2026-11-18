@@ -59,7 +59,7 @@ struct ConnectionsView: View {
         }
         .task {
             if layout == nil {
-                let artists = library.artists, edges = library.edges
+                let artists = library.connectedArtists, edges = library.edges
                 let eras = Dictionary(library.eras.map { ($0.id, $0.start) }, uniquingKeysWith: { a, _ in a })
                 layout = await Task.detached { GraphLayout.compute(artists: artists, edges: edges, eraStarts: eras) }.value
             }
@@ -100,7 +100,7 @@ struct ConnectionsView: View {
             .frame(width: g.size.width, height: g.size.height)
             .allowsHitTesting(false)
             // Nodes
-            ForEach(library.artists) { a in
+            ForEach(library.connectedArtists) { a in
                 if let p = g.positions[a.id] {
                     GraphNode(artist: a, tint: library.color(forEra: a.primaryEra),
                               state: focus == nil ? .normal : (a.id == focus ? .focus : (lit.contains(a.id) ? .lit : .dim)))

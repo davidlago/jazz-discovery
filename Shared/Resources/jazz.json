@@ -3521,6 +3521,878 @@
         "La Cumbia Me Está Llamando"
       ],
       "videoQuery": "Nubya Garcia live"
+    },
+    {
+      "id": "ron-carter",
+      "name": "Ron Carter",
+      "born": 1937,
+      "instrument": "Bass",
+      "eras": [
+        "modal",
+        "post-bop"
+      ],
+      "primaryEra": "modal",
+      "wikipedia": "Ron_Carter",
+      "blurb": "The most recorded bassist in jazz history anchored Miles Davis's second great quintet and dozens of 1960s Blue Note dates with a deep, singing tone and a harmonic imagination that let the bass steer the band.",
+      "connections": [],
+      "albums": [],
+      "signatureTracks": [
+        "Maiden Voyage",
+        "Footprints",
+        "Speak No Evil"
+      ],
+      "videoQuery": "Ron Carter bass solo live"
+    },
+    {
+      "id": "paul-chambers",
+      "name": "Paul Chambers",
+      "born": 1935,
+      "died": 1969,
+      "instrument": "Bass",
+      "eras": [
+        "hard-bop",
+        "modal"
+      ],
+      "primaryEra": "hard-bop",
+      "wikipedia": "Paul_Chambers",
+      "blurb": "The bassist of choice in the hard-bop years, Chambers held down Miles Davis's rhythm section for eight years, from 'Round About Midnight to Kind of Blue, and was among the first to take bowed bass solos seriously.",
+      "connections": [],
+      "albums": [],
+      "signatureTracks": [
+        "So What",
+        "Blue Train",
+        "Giant Steps"
+      ],
+      "videoQuery": "Paul Chambers bass"
+    },
+    {
+      "id": "charlie-haden",
+      "name": "Charlie Haden",
+      "born": 1937,
+      "died": 2014,
+      "instrument": "Bass",
+      "eras": [
+        "free",
+        "post-bop"
+      ],
+      "primaryEra": "free",
+      "wikipedia": "Charlie_Haden",
+      "blurb": "Haden's warm, folk-rooted bass helped free the instrument in Ornette Coleman's quartet, moving with the soloist instead of marking the chords, and he later led the politically charged Liberation Music Orchestra.",
+      "connections": [],
+      "albums": [],
+      "signatureTracks": [
+        "Lonely Woman",
+        "Peace",
+        "Congeniality"
+      ],
+      "videoQuery": "Charlie Haden live"
+    },
+    {
+      "id": "richard-davis",
+      "name": "Richard Davis",
+      "born": 1930,
+      "died": 2023,
+      "instrument": "Bass",
+      "eras": [
+        "free",
+        "spiritual"
+      ],
+      "primaryEra": "free",
+      "wikipedia": "Richard_Davis_(bassist)",
+      "blurb": "Equally at home with Eric Dolphy, Sarah Vaughan and symphony orchestras, Davis brought a classical player's range and an unpredictable swing to some of the most adventurous sessions of the 1960s.",
+      "connections": [],
+      "albums": [],
+      "signatureTracks": [
+        "Hat and Beard",
+        "Gazzelloni",
+        "Out to Lunch"
+      ],
+      "videoQuery": "Richard Davis bass"
+    },
+    {
+      "id": "jimmy-blanton",
+      "name": "Jimmy Blanton",
+      "born": 1918,
+      "died": 1942,
+      "instrument": "Bass",
+      "eras": [
+        "swing"
+      ],
+      "primaryEra": "swing",
+      "wikipedia": "Jimmy_Blanton",
+      "blurb": "In barely two years with Duke Ellington, before tuberculosis took him at 23, Blanton turned the bass from a timekeeper into a solo voice, with a big, melodic sound every modern bassist inherited.",
+      "connections": [],
+      "albums": [],
+      "signatureTracks": [
+        "Jack the Bear",
+        "Ko-Ko",
+        "Concerto for Cootie"
+      ],
+      "videoQuery": "Jimmy Blanton Duke Ellington Jack the Bear"
+    },
+    {
+      "id": "walter-page",
+      "name": "Walter Page",
+      "born": 1900,
+      "died": 1957,
+      "instrument": "Bass",
+      "eras": [
+        "swing"
+      ],
+      "primaryEra": "swing",
+      "wikipedia": "Walter_Page",
+      "blurb": "The anchor of Count Basie's \"All-American Rhythm Section\", Page brought the even, walking four-beat bass of his Kansas City Blue Devils that made the Basie band float.",
+      "connections": [],
+      "albums": [],
+      "signatureTracks": [
+        "One O'Clock Jump",
+        "Jumpin' at the Woodside",
+        "Swingin' the Blues"
+      ],
+      "videoQuery": "Count Basie Walter Page rhythm section"
+    },
+    {
+      "id": "gary-peacock",
+      "name": "Gary Peacock",
+      "born": 1935,
+      "died": 2020,
+      "instrument": "Bass",
+      "eras": [
+        "post-bop",
+        "free"
+      ],
+      "primaryEra": "post-bop",
+      "wikipedia": "Gary_Peacock",
+      "blurb": "Peacock went from Albert Ayler's ecstatic free jazz to three decades as the elastic, conversational bassist of Keith Jarrett's Standards Trio.",
+      "connections": [],
+      "albums": [],
+      "signatureTracks": [
+        "Ghosts: First Variation",
+        "The Wizard",
+        "Spirits"
+      ],
+      "videoQuery": "Keith Jarrett Gary Peacock Jack DeJohnette trio live"
+    },
+    {
+      "id": "billy-higgins",
+      "name": "Billy Higgins",
+      "born": 1936,
+      "died": 2001,
+      "instrument": "Drums",
+      "eras": [
+        "free",
+        "hard-bop"
+      ],
+      "primaryEra": "free",
+      "wikipedia": "Billy_Higgins",
+      "blurb": "With a light touch and a constant smile, Higgins drummed on Ornette Coleman's first revolutionary records and then on hundreds of sessions, from The Sidewinder to Dexter Gordon's Go.",
+      "connections": [],
+      "albums": [],
+      "signatureTracks": [
+        "Lonely Woman",
+        "The Sidewinder",
+        "Cheese Cake"
+      ],
+      "videoQuery": "Billy Higgins drums live"
+    },
+    {
+      "id": "tony-williams",
+      "name": "Tony Williams",
+      "born": 1945,
+      "died": 1997,
+      "instrument": "Drums",
+      "eras": [
+        "modal",
+        "fusion"
+      ],
+      "primaryEra": "modal",
+      "wikipedia": "Tony_Williams_(drummer)",
+      "blurb": "Joining Miles Davis at 17, Williams broke up the beat with a restless, polyrhythmic drive that defined the second great quintet, then helped invent fusion with his band Lifetime.",
+      "connections": [],
+      "albums": [],
+      "signatureTracks": [
+        "Maiden Voyage",
+        "Footprints",
+        "Hat and Beard"
+      ],
+      "videoQuery": "Tony Williams drum solo"
+    },
+    {
+      "id": "jimmy-cobb",
+      "name": "Jimmy Cobb",
+      "born": 1929,
+      "died": 2020,
+      "instrument": "Drums",
+      "eras": [
+        "modal",
+        "hard-bop"
+      ],
+      "primaryEra": "modal",
+      "wikipedia": "Jimmy_Cobb",
+      "blurb": "The drummer on Kind of Blue kept impeccable, quietly swinging time for Miles Davis from 1958 to 1963, and was the last surviving musician from that session.",
+      "connections": [],
+      "albums": [],
+      "signatureTracks": [
+        "So What",
+        "Blue in Green",
+        "All Blues"
+      ],
+      "videoQuery": "Jimmy Cobb drums"
+    },
+    {
+      "id": "roy-haynes",
+      "name": "Roy Haynes",
+      "born": 1925,
+      "died": 2024,
+      "instrument": "Drums",
+      "eras": [
+        "bebop",
+        "modal"
+      ],
+      "primaryEra": "bebop",
+      "wikipedia": "Roy_Haynes",
+      "blurb": "Nicknamed \"Snap Crackle\" for his crisp snare, Haynes played with Lester Young, Charlie Parker and Sarah Vaughan, then with John Coltrane and Chick Corea, in a career that lasted eight decades.",
+      "connections": [],
+      "albums": [],
+      "signatureTracks": [
+        "Bouncin' with Bud",
+        "Dance of the Infidels",
+        "Lullaby of Birdland"
+      ],
+      "videoQuery": "Roy Haynes drum solo"
+    },
+    {
+      "id": "kenny-clarke",
+      "name": "Kenny Clarke",
+      "born": 1914,
+      "died": 1985,
+      "instrument": "Drums",
+      "eras": [
+        "bebop",
+        "cool"
+      ],
+      "primaryEra": "bebop",
+      "wikipedia": "Kenny_Clarke",
+      "blurb": "At Minton's Playhouse, Clarke moved the beat from the hi-hat to the ride cymbal and dropped surprise \"bombs\" on the bass drum, inventing the language of bebop drumming; he later co-founded the Modern Jazz Quartet.",
+      "connections": [],
+      "albums": [],
+      "signatureTracks": [
+        "Boplicity",
+        "Israel",
+        "Venus de Milo"
+      ],
+      "videoQuery": "Kenny Clarke drums"
+    },
+    {
+      "id": "jack-dejohnette",
+      "name": "Jack DeJohnette",
+      "born": 1942,
+      "died": 2025,
+      "instrument": "Drums",
+      "eras": [
+        "post-bop",
+        "fusion"
+      ],
+      "primaryEra": "post-bop",
+      "wikipedia": "Jack_DeJohnette",
+      "blurb": "Equally at home in Miles Davis's electric bands and Keith Jarrett's Standards Trio, DeJohnette played drums as a colorist, with a fluid, cymbal-led sound that spanned free jazz, fusion and the standards.",
+      "connections": [],
+      "albums": [],
+      "signatureTracks": [
+        "Pharaoh's Dance",
+        "Bitches Brew",
+        "Miles Runs the Voodoo Down"
+      ],
+      "videoQuery": "Jack DeJohnette drum solo"
+    },
+    {
+      "id": "baby-dodds",
+      "name": "Baby Dodds",
+      "born": 1898,
+      "died": 1959,
+      "instrument": "Drums",
+      "eras": [
+        "new-orleans"
+      ],
+      "primaryEra": "new-orleans",
+      "wikipedia": "Baby_Dodds",
+      "blurb": "Brother of clarinetist Johnny Dodds, Baby Dodds was the first great jazz drummer on record, varying his patterns with press rolls and accents behind King Oliver, Jelly Roll Morton and Louis Armstrong's Hot Seven.",
+      "connections": [],
+      "albums": [],
+      "signatureTracks": [
+        "Potato Head Blues",
+        "Wild Man Blues",
+        "Melancholy Blues"
+      ],
+      "videoQuery": "Baby Dodds drums"
+    },
+    {
+      "id": "wynton-kelly",
+      "name": "Wynton Kelly",
+      "born": 1931,
+      "died": 1971,
+      "instrument": "Piano",
+      "eras": [
+        "hard-bop",
+        "modal"
+      ],
+      "primaryEra": "hard-bop",
+      "wikipedia": "Wynton_Kelly",
+      "blurb": "Kelly's bright, bluesy swing made him Miles Davis's pianist from 1959 to 1963 and one of the great accompanists in jazz; his one track on Kind of Blue, \"Freddie Freeloader\", is the bluesiest on the record.",
+      "connections": [],
+      "albums": [],
+      "signatureTracks": [
+        "Freddie Freeloader",
+        "Naima",
+        "Springsville"
+      ],
+      "videoQuery": "Wynton Kelly trio"
+    },
+    {
+      "id": "tommy-flanagan",
+      "name": "Tommy Flanagan",
+      "born": 1930,
+      "died": 2001,
+      "instrument": "Piano",
+      "eras": [
+        "hard-bop"
+      ],
+      "primaryEra": "hard-bop",
+      "wikipedia": "Tommy_Flanagan_(musician)",
+      "blurb": "A Detroit pianist of quiet elegance, Flanagan played on both Saxophone Colossus and Giant Steps and spent years as Ella Fitzgerald's accompanist.",
+      "connections": [],
+      "albums": [],
+      "signatureTracks": [
+        "St. Thomas",
+        "Blue 7",
+        "Moritat"
+      ],
+      "videoQuery": "Tommy Flanagan trio"
+    },
+    {
+      "id": "john-lewis",
+      "name": "John Lewis",
+      "born": 1920,
+      "died": 2001,
+      "instrument": "Piano",
+      "eras": [
+        "cool",
+        "bebop"
+      ],
+      "primaryEra": "cool",
+      "wikipedia": "John_Lewis_(pianist)",
+      "blurb": "Pianist in Dizzy Gillespie's big band and on Birth of the Cool, Lewis founded the Modern Jazz Quartet and blended bebop with Bach-like counterpoint, with an economy that made every note count.",
+      "connections": [],
+      "albums": [],
+      "signatureTracks": [
+        "Boplicity",
+        "Moon Dreams",
+        "Rouge"
+      ],
+      "videoQuery": "Modern Jazz Quartet Django live"
+    },
+    {
+      "id": "earl-hines",
+      "name": "Earl Hines",
+      "born": 1903,
+      "died": 1983,
+      "instrument": "Piano",
+      "eras": [
+        "new-orleans",
+        "swing"
+      ],
+      "primaryEra": "new-orleans",
+      "wikipedia": "Earl_Hines",
+      "blurb": "Hines's \"trumpet-style\" piano, its octave melodies punching through like a horn, transformed jazz piano on his 1928 records with Louis Armstrong; his big band later gave the young Charlie Parker and Dizzy Gillespie a home.",
+      "connections": [],
+      "albums": [],
+      "signatureTracks": [
+        "West End Blues",
+        "Weather Bird",
+        "Tight Like This"
+      ],
+      "videoQuery": "Earl Hines piano"
+    },
+    {
+      "id": "lil-hardin-armstrong",
+      "name": "Lil Hardin Armstrong",
+      "born": 1898,
+      "died": 1971,
+      "instrument": "Piano",
+      "eras": [
+        "new-orleans"
+      ],
+      "primaryEra": "new-orleans",
+      "wikipedia": "Lil_Hardin_Armstrong",
+      "blurb": "Pianist, composer and bandleader, Lil Hardin played in King Oliver's band, married Louis Armstrong and urged him to lead his own groups, and wrote \"Struttin' with Some Barbecue\" for the Hot Fives.",
+      "connections": [],
+      "albums": [],
+      "signatureTracks": [
+        "Heebie Jeebies",
+        "Struttin' with Some Barbecue",
+        "Potato Head Blues"
+      ],
+      "videoQuery": "Lil Hardin Armstrong"
+    },
+    {
+      "id": "j-j-johnson",
+      "name": "J.J. Johnson",
+      "born": 1924,
+      "died": 2001,
+      "instrument": "Trombone",
+      "eras": [
+        "bebop",
+        "hard-bop"
+      ],
+      "primaryEra": "bebop",
+      "wikipedia": "J._J._Johnson",
+      "blurb": "Johnson proved the trombone could play bebop, matching the speed of Parker and Gillespie with a clean, almost valve-like articulation, and set the standard for the instrument for generations.",
+      "connections": [],
+      "albums": [],
+      "signatureTracks": [
+        "Manteca Theme",
+        "Boplicity",
+        "Moon Dreams"
+      ],
+      "videoQuery": "J.J. Johnson trombone"
+    },
+    {
+      "id": "kid-ory",
+      "name": "Kid Ory",
+      "born": 1886,
+      "died": 1973,
+      "instrument": "Trombone",
+      "eras": [
+        "new-orleans"
+      ],
+      "primaryEra": "new-orleans",
+      "wikipedia": "Kid_Ory",
+      "blurb": "The New Orleans bandleader who gave the young King Oliver and Louis Armstrong work, Ory perfected the \"tailgate\" trombone, sliding glissandos under the melody, on Armstrong's Hot Five records.",
+      "connections": [],
+      "albums": [],
+      "signatureTracks": [
+        "Heebie Jeebies",
+        "Struttin' with Some Barbecue",
+        "Muskrat Ramble"
+      ],
+      "videoQuery": "Kid Ory Creole Jazz Band"
+    },
+    {
+      "id": "jimmy-knepper",
+      "name": "Jimmy Knepper",
+      "born": 1927,
+      "died": 2003,
+      "instrument": "Trombone",
+      "eras": [
+        "hard-bop"
+      ],
+      "primaryEra": "hard-bop",
+      "wikipedia": "Jimmy_Knepper",
+      "blurb": "Knepper's agile, unusual lines were central to Charles Mingus's late-1950s bands, Mingus Ah Um included, and he later played in Gil Evans's orchestra and the Thad Jones–Mel Lewis band.",
+      "connections": [],
+      "albums": [],
+      "signatureTracks": [
+        "Better Git It in Your Soul",
+        "Fables of Faubus",
+        "La Nevada"
+      ],
+      "videoQuery": "Jimmy Knepper trombone"
+    },
+    {
+      "id": "milt-jackson",
+      "name": "Milt Jackson",
+      "born": 1923,
+      "died": 1999,
+      "instrument": "Vibraphone",
+      "eras": [
+        "bebop",
+        "cool"
+      ],
+      "primaryEra": "bebop",
+      "wikipedia": "Milt_Jackson",
+      "blurb": "\"Bags\" slowed the vibraphone's motor to make it sing, bringing a blues feeling to bebop with Dizzy Gillespie and Thelonious Monk and, for four decades, to the Modern Jazz Quartet.",
+      "connections": [],
+      "albums": [],
+      "signatureTracks": [
+        "Epistrophy",
+        "Misterioso",
+        "I Mean You"
+      ],
+      "videoQuery": "Milt Jackson Bags Groove"
+    },
+    {
+      "id": "bobby-hutcherson",
+      "name": "Bobby Hutcherson",
+      "born": 1941,
+      "died": 2016,
+      "instrument": "Vibraphone",
+      "eras": [
+        "free",
+        "modal"
+      ],
+      "primaryEra": "free",
+      "wikipedia": "Bobby_Hutcherson",
+      "blurb": "Hutcherson gave the vibraphone a modern, harmonically open voice on 1960s Blue Note records, from Eric Dolphy's Out to Lunch to Grant Green's Idle Moments and his own Components.",
+      "connections": [],
+      "albums": [],
+      "signatureTracks": [
+        "Hat and Beard",
+        "Gazzelloni",
+        "Out to Lunch"
+      ],
+      "videoQuery": "Bobby Hutcherson vibraphone"
+    },
+    {
+      "id": "lionel-hampton",
+      "name": "Lionel Hampton",
+      "born": 1908,
+      "died": 2002,
+      "instrument": "Vibraphone",
+      "eras": [
+        "swing"
+      ],
+      "primaryEra": "swing",
+      "wikipedia": "Lionel_Hampton",
+      "blurb": "The first jazz star of the vibraphone, Hampton played in Benny Goodman's racially integrated quartet and then led a roaring big band whose \"Flying Home\" pointed the way to rhythm and blues.",
+      "connections": [],
+      "albums": [],
+      "signatureTracks": [
+        "Avalon",
+        "The Man I Love",
+        "Dizzy Spells"
+      ],
+      "videoQuery": "Lionel Hampton Flying Home"
+    },
+    {
+      "id": "joe-henderson",
+      "name": "Joe Henderson",
+      "born": 1937,
+      "died": 2001,
+      "instrument": "Saxophone",
+      "eras": [
+        "hard-bop",
+        "modal"
+      ],
+      "primaryEra": "hard-bop",
+      "wikipedia": "Joe_Henderson",
+      "blurb": "A tenor saxophonist with a sound all his own, mixing bebop agility with sly, searching phrases, Henderson was everywhere on Blue Note in the 1960s, from The Sidewinder to Song for My Father and The Real McCoy.",
+      "connections": [],
+      "albums": [],
+      "signatureTracks": [
+        "The Sidewinder",
+        "Totem Pole",
+        "Hocus-Pocus"
+      ],
+      "videoQuery": "Joe Henderson tenor live"
+    },
+    {
+      "id": "johnny-hodges",
+      "name": "Johnny Hodges",
+      "born": 1907,
+      "died": 1970,
+      "instrument": "Saxophone",
+      "eras": [
+        "swing"
+      ],
+      "primaryEra": "swing",
+      "wikipedia": "Johnny_Hodges",
+      "blurb": "Duke Ellington's lead alto for nearly four decades, Hodges had the most sensuous sound in jazz, gliding between notes on ballads like \"Passion Flower\" and \"Prelude to a Kiss\".",
+      "connections": [],
+      "albums": [],
+      "signatureTracks": [
+        "Never No Lament",
+        "Warm Valley",
+        "Ko-Ko"
+      ],
+      "videoQuery": "Johnny Hodges Duke Ellington"
+    },
+    {
+      "id": "ben-webster",
+      "name": "Ben Webster",
+      "born": 1909,
+      "died": 1973,
+      "instrument": "Saxophone",
+      "eras": [
+        "swing"
+      ],
+      "primaryEra": "swing",
+      "wikipedia": "Ben_Webster",
+      "blurb": "With Coleman Hawkins and Lester Young, Webster was one of the three great tenors of the swing era; his breathy, growling solo on Ellington's \"Cotton Tail\" became a test piece for every saxophonist.",
+      "connections": [],
+      "albums": [],
+      "signatureTracks": [
+        "Cotton Tail",
+        "All Too Soon",
+        "Conga Brava"
+      ],
+      "videoQuery": "Ben Webster tenor"
+    },
+    {
+      "id": "lee-konitz",
+      "name": "Lee Konitz",
+      "born": 1927,
+      "died": 2020,
+      "instrument": "Saxophone",
+      "eras": [
+        "cool"
+      ],
+      "primaryEra": "cool",
+      "wikipedia": "Lee_Konitz",
+      "blurb": "A student of Lennie Tristano and the alto voice of Birth of the Cool, Konitz offered a dry, light alternative to Charlie Parker and kept improvising with rare freedom for seventy years.",
+      "connections": [],
+      "albums": [],
+      "signatureTracks": [
+        "Boplicity",
+        "Jeru",
+        "Moon Dreams"
+      ],
+      "videoQuery": "Lee Konitz alto"
+    },
+    {
+      "id": "harry-carney",
+      "name": "Harry Carney",
+      "born": 1910,
+      "died": 1974,
+      "instrument": "Saxophone",
+      "eras": [
+        "swing"
+      ],
+      "primaryEra": "swing",
+      "wikipedia": "Harry_Carney",
+      "blurb": "Carney joined Duke Ellington at 17 and stayed for the rest of Ellington's life, giving the orchestra its deep, burnished bottom and making the baritone saxophone a solo instrument.",
+      "connections": [],
+      "albums": [],
+      "signatureTracks": [
+        "Ko-Ko",
+        "Harlem Air Shaft",
+        "Jack the Bear"
+      ],
+      "videoQuery": "Harry Carney baritone Ellington"
+    },
+    {
+      "id": "johnny-dodds",
+      "name": "Johnny Dodds",
+      "born": 1892,
+      "died": 1940,
+      "instrument": "Clarinet",
+      "eras": [
+        "new-orleans"
+      ],
+      "primaryEra": "new-orleans",
+      "wikipedia": "Johnny_Dodds",
+      "blurb": "The bluesy, piercing clarinet of King Oliver's Creole Jazz Band and Louis Armstrong's Hot Five, Dodds was the model New Orleans clarinetist of the 1920s.",
+      "connections": [],
+      "albums": [],
+      "signatureTracks": [
+        "Heebie Jeebies",
+        "Potato Head Blues",
+        "Struttin' with Some Barbecue"
+      ],
+      "videoQuery": "Johnny Dodds clarinet"
+    },
+    {
+      "id": "bennie-maupin",
+      "name": "Bennie Maupin",
+      "born": 1940,
+      "instrument": "Clarinet",
+      "eras": [
+        "fusion"
+      ],
+      "primaryEra": "fusion",
+      "wikipedia": "Bennie_Maupin",
+      "blurb": "Maupin's dark bass clarinet threads through Miles Davis's Bitches Brew, and his saxophones and flutes shaped Herbie Hancock's Mwandishi band and Head Hunters.",
+      "connections": [],
+      "albums": [],
+      "signatureTracks": [
+        "Chameleon",
+        "Watermelon Man",
+        "Pharaoh's Dance"
+      ],
+      "videoQuery": "Bennie Maupin bass clarinet"
+    },
+    {
+      "id": "cootie-williams",
+      "name": "Cootie Williams",
+      "born": 1911,
+      "died": 1985,
+      "instrument": "Trumpet",
+      "eras": [
+        "swing"
+      ],
+      "primaryEra": "swing",
+      "wikipedia": "Cootie_Williams",
+      "blurb": "Williams took over the growling plunger-mute trumpet in Duke Ellington's orchestra; Ellington wrote \"Concerto for Cootie\" to show it off before Williams left for Benny Goodman's band in 1940.",
+      "connections": [],
+      "albums": [],
+      "signatureTracks": [
+        "Concerto for Cootie",
+        "Harlem Air Shaft",
+        "Ko-Ko"
+      ],
+      "videoQuery": "Cootie Williams Concerto for Cootie"
+    },
+    {
+      "id": "buck-clayton",
+      "name": "Buck Clayton",
+      "born": 1911,
+      "died": 1991,
+      "instrument": "Trumpet",
+      "eras": [
+        "swing"
+      ],
+      "primaryEra": "swing",
+      "wikipedia": "Buck_Clayton",
+      "blurb": "Count Basie's lyrical trumpet star of the late 1930s, Clayton played with clean, singing phrasing on Basie's Decca records and on Billie Holiday and Lester Young's small-group classics.",
+      "connections": [],
+      "albums": [],
+      "signatureTracks": [
+        "One O'Clock Jump",
+        "Jumpin' at the Woodside",
+        "Swingin' the Blues"
+      ],
+      "videoQuery": "Buck Clayton trumpet"
+    },
+    {
+      "id": "harry-edison",
+      "name": "Harry \"Sweets\" Edison",
+      "born": 1915,
+      "died": 1999,
+      "instrument": "Trumpet",
+      "eras": [
+        "swing"
+      ],
+      "primaryEra": "swing",
+      "wikipedia": "Harry_Edison",
+      "blurb": "Edison's sly, muted trumpet earned him the nickname \"Sweets\" in Count Basie's band, and later made him Hollywood's favorite accompanist for singers, Frank Sinatra above all.",
+      "connections": [],
+      "albums": [],
+      "signatureTracks": [
+        "Jumpin' at the Woodside"
+      ],
+      "videoQuery": "Harry Sweets Edison"
+    },
+    {
+      "id": "freddie-green",
+      "name": "Freddie Green",
+      "born": 1911,
+      "died": 1987,
+      "instrument": "Guitar",
+      "eras": [
+        "swing"
+      ],
+      "primaryEra": "swing",
+      "wikipedia": "Freddie_Green",
+      "blurb": "For nearly fifty years Green strummed even, chunky chords in Count Basie's rhythm section, rarely soloing but giving the band its unmistakable pulse.",
+      "connections": [],
+      "albums": [],
+      "signatureTracks": [
+        "One O'Clock Jump",
+        "Jumpin' at the Woodside",
+        "Swingin' the Blues"
+      ],
+      "videoQuery": "Freddie Green rhythm guitar Basie"
+    },
+    {
+      "id": "kenny-burrell",
+      "name": "Kenny Burrell",
+      "born": 1931,
+      "instrument": "Guitar",
+      "eras": [
+        "soul-jazz",
+        "hard-bop"
+      ],
+      "primaryEra": "soul-jazz",
+      "wikipedia": "Kenny_Burrell",
+      "blurb": "A Detroit guitarist with a warm, blues-soaked sound, Burrell recorded for Blue Note, Prestige and Verve, most famously with organist Jimmy Smith and on his own Midnight Blue.",
+      "connections": [],
+      "albums": [],
+      "signatureTracks": [
+        "The Sermon",
+        "Flamingo",
+        "Back at the Chicken Shack"
+      ],
+      "videoQuery": "Kenny Burrell Chitlins con Carne"
+    },
+    {
+      "id": "candido",
+      "name": "Cándido",
+      "born": 1921,
+      "died": 2020,
+      "instrument": "Percussion",
+      "eras": [
+        "latin"
+      ],
+      "primaryEra": "latin",
+      "wikipedia": "Cándido_Camero",
+      "blurb": "A Havana-born conga player who moved to New York in 1946, Cándido pioneered playing several tuned congas at once and brought Afro-Cuban rhythm to records by Dizzy Gillespie, Machito and Billy Taylor.",
+      "connections": [],
+      "albums": [],
+      "signatureTracks": [
+        "Manteca Theme",
+        "Con Alma",
+        "A Night in Tunisia"
+      ],
+      "videoQuery": "Candido Camero congas"
+    },
+    {
+      "id": "don-alias",
+      "name": "Don Alias",
+      "born": 1939,
+      "died": 2006,
+      "instrument": "Percussion",
+      "eras": [
+        "fusion"
+      ],
+      "primaryEra": "fusion",
+      "wikipedia": "Don_Alias",
+      "blurb": "Alias's congas and hand drums colored Miles Davis's Bitches Brew, where he also played the drum part on \"Miles Runs the Voodoo Down\", and Jaco Pastorius's debut album.",
+      "connections": [],
+      "albums": [],
+      "signatureTracks": [
+        "Miles Runs the Voodoo Down",
+        "Donna Lee",
+        "Pharaoh's Dance"
+      ],
+      "videoQuery": "Don Alias percussion"
+    },
+    {
+      "id": "brandee-younger",
+      "name": "Brandee Younger",
+      "born": 1983,
+      "instrument": "Harp",
+      "eras": [
+        "contemporary"
+      ],
+      "primaryEra": "contemporary",
+      "wikipedia": "Brandee_Younger",
+      "blurb": "Younger carries forward the jazz harp of Alice Coltrane and Dorothy Ashby, and plays on Makaya McCraven's Universal Beings and Shabaka Hutchings's Perceive Its Beauty, Acknowledge Its Grace.",
+      "connections": [],
+      "albums": [],
+      "signatureTracks": [
+        "Holy Lands",
+        "Young Genius",
+        "Body to Inhabit"
+      ],
+      "videoQuery": "Brandee Younger harp live"
+    },
+    {
+      "id": "elena-pinderhughes",
+      "name": "Elena Pinderhughes",
+      "born": 1995,
+      "instrument": "Flute",
+      "eras": [
+        "contemporary"
+      ],
+      "primaryEra": "contemporary",
+      "wikipedia": "Elena_Pinderhughes",
+      "blurb": "A flutist and singer who began touring as a teenager, Pinderhughes became a key voice in Chief Xian aTunde Adjuah's band and plays on Ambrose Akinmusire's The Imagined Savior Is Far Easier to Paint.",
+      "connections": [],
+      "albums": [],
+      "signatureTracks": [
+        "The Beauty of Dissolving Portraits",
+        "Her Arrival"
+      ],
+      "videoQuery": "Elena Pinderhughes flute"
     }
   ],
   "albums": [

@@ -139,7 +139,7 @@
     ]
    },
    {
-    "artist": null,
+    "artist": "j-j-johnson",
     "name": "J.J. Johnson",
     "instruments": [
      "trombone"
@@ -301,7 +301,7 @@
     ]
    },
    {
-    "artist": null,
+    "artist": "candido",
     "name": "Candido",
     "instruments": [
      "congas",
@@ -452,7 +452,7 @@
     ]
    },
    {
-    "artist": null,
+    "artist": "roy-haynes",
     "name": "Roy Haynes",
     "instruments": [
      "drums"
@@ -562,7 +562,7 @@
     ]
    },
    {
-    "artist": null,
+    "artist": "elena-pinderhughes",
     "name": "Elena Pinderhughes",
     "instruments": [
      "flute"
@@ -753,7 +753,7 @@
     ]
    },
    {
-    "artist": null,
+    "artist": "kenny-burrell",
     "name": "Kenny Burrell",
     "instruments": [
      "guitar"
@@ -865,7 +865,7 @@
     "tracks": 63
    },
    {
-    "artist": null,
+    "artist": "buck-clayton",
     "name": "Buck Clayton",
     "instruments": [
      "trumpet"
@@ -881,7 +881,7 @@
     "tracks": 44
    },
    {
-    "artist": null,
+    "artist": "harry-edison",
     "name": "Harry “Sweets” Edison",
     "instruments": [
      "trumpet"
@@ -974,7 +974,7 @@
     "tracks": 42
    },
    {
-    "artist": null,
+    "artist": "freddie-green",
     "name": "Freddie Green",
     "instruments": [
      "guitar"
@@ -982,7 +982,7 @@
     "tracks": 59
    },
    {
-    "artist": null,
+    "artist": "walter-page",
     "name": "Walter Page",
     "instruments": [
      "bass"
@@ -1033,7 +1033,7 @@
     "role": "arranger"
    },
    {
-    "artist": null,
+    "artist": "buck-clayton",
     "name": "Buck Clayton",
     "role": "arranger"
    },
@@ -1058,7 +1058,7 @@
     "role": "arranger"
    },
    {
-    "artist": null,
+    "artist": "harry-edison",
     "name": "Harry “Sweets” Edison",
     "role": "arranger"
    }
@@ -1371,7 +1371,7 @@
     ]
    },
    {
-    "artist": null,
+    "artist": "j-j-johnson",
     "name": "J.J. Johnson",
     "instruments": [
      "trombone"
@@ -1432,7 +1432,7 @@
     ]
    },
    {
-    "artist": null,
+    "artist": "lee-konitz",
     "name": "Lee Konitz",
     "instruments": [
      "alto saxophone"
@@ -1459,7 +1459,7 @@
     ]
    },
    {
-    "artist": null,
+    "artist": "john-lewis",
     "name": "John Lewis",
     "instruments": [
      "piano"
@@ -1529,7 +1529,7 @@
     ]
    },
    {
-    "artist": null,
+    "artist": "kenny-clarke",
     "name": "Kenny Clarke",
     "instruments": [
      "drums"
@@ -1554,7 +1554,7 @@
     "role": "producer"
    },
    {
-    "artist": null,
+    "artist": "john-lewis",
     "name": "John Lewis",
     "role": "arranger"
    },
@@ -1646,7 +1646,7 @@
     "tracks": 21
    },
    {
-    "artist": null,
+    "artist": "kid-ory",
     "name": "Kid Ory",
     "instruments": [
      "trombone"
@@ -1687,7 +1687,7 @@
     "tracks": 15
    },
    {
-    "artist": null,
+    "artist": "johnny-dodds",
     "name": "Johnny Dodds",
     "instruments": [
      "clarinet"
@@ -1729,7 +1729,7 @@
     "tracks": 15
    },
    {
-    "artist": null,
+    "artist": "baby-dodds",
     "name": "Baby Dodds",
     "instruments": [
      "drums"
@@ -1799,7 +1799,7 @@
     ]
    },
    {
-    "artist": null,
+    "artist": "bennie-maupin",
     "name": "Bennie Maupin",
     "instruments": [
      "bass clarinet"
@@ -1868,7 +1868,7 @@
     ]
    },
    {
-    "artist": null,
+    "artist": "don-alias",
     "name": "Don Alias",
     "instruments": [
      "congas",
@@ -1876,7 +1876,7 @@
     ]
    },
    {
-    "artist": null,
+    "artist": "jack-dejohnette",
     "name": "Jack DeJohnette",
     "instruments": [
      "drums"
@@ -1999,7 +1999,7 @@
     ]
    },
    {
-    "artist": null,
+    "artist": "ron-carter",
     "name": "Ron Carter",
     "instruments": [
      "bass"
@@ -2441,7 +2441,7 @@
     ]
    },
    {
-    "artist": null,
+    "artist": "cootie-williams",
     "name": "Cootie Williams",
     "instruments": [
      "trumpet"
@@ -2501,7 +2501,7 @@
     ]
    },
    {
-    "artist": null,
+    "artist": "johnny-hodges",
     "name": "Johnny Hodges",
     "instruments": [
      "alto saxophone",
@@ -2517,14 +2517,14 @@
     ]
    },
    {
-    "artist": null,
+    "artist": "ben-webster",
     "name": "Ben Webster",
     "instruments": [
      "tenor saxophone"
     ]
    },
    {
-    "artist": null,
+    "artist": "harry-carney",
     "name": "Harry Carney",
     "instruments": [
      "baritone saxophone",
@@ -2547,7 +2547,7 @@
     ]
    },
    {
-    "artist": null,
+    "artist": "jimmy-blanton",
     "name": "Jimmy Blanton",
     "instruments": [
      "bass"
@@ -2592,7 +2592,7 @@
     "role": "arranger"
    },
    {
-    "artist": null,
+    "artist": "ben-webster",
     "name": "Ben Webster",
     "role": "arranger"
    }
@@ -2914,7 +2914,7 @@
     ]
    },
    {
-    "artist": null,
+    "artist": "paul-chambers",
     "name": "Paul Chambers",
     "instruments": [
      "bass"
@@ -3182,7 +3182,7 @@
     ]
    },
    {
-    "artist": null,
+    "artist": "cootie-williams",
     "name": "Cootie Williams",
     "instruments": [
      "trumpet"
@@ -3192,7 +3192,7 @@
     ]
    },
    {
-    "artist": null,
+    "artist": "buck-clayton",
     "name": "Buck Clayton",
     "instruments": [
      "trumpet"
@@ -3262,7 +3262,7 @@
     ]
    },
    {
-    "artist": null,
+    "artist": "johnny-hodges",
     "name": "Johnny Hodges",
     "instruments": [
      "soprano saxophone",
@@ -3350,7 +3350,7 @@
     ]
    },
    {
-    "artist": null,
+    "artist": "harry-carney",
     "name": "Harry Carney",
     "instruments": [
      "baritone saxophone"
@@ -3361,7 +3361,7 @@
     ]
    },
    {
-    "artist": null,
+    "artist": "lionel-hampton",
     "name": "Lionel Hampton",
     "instruments": [
      "vibraphone"
@@ -3400,7 +3400,7 @@
     ]
    },
    {
-    "artist": null,
+    "artist": "freddie-green",
     "name": "Freddie Green",
     "instruments": [
      "guitar"
@@ -3485,7 +3485,7 @@
     ]
    },
    {
-    "artist": null,
+    "artist": "walter-page",
     "name": "Walter Page",
     "instruments": [
      "bass"
@@ -4206,7 +4206,7 @@
     ]
    },
    {
-    "artist": null,
+    "artist": "harry-edison",
     "name": "Harry “Sweets” Edison",
     "instruments": [
      "trumpet"
@@ -4860,7 +4860,7 @@
     ]
    },
    {
-    "artist": null,
+    "artist": "milt-jackson",
     "name": "Milt Jackson",
     "instruments": [
      "vibraphone"
@@ -5077,7 +5077,7 @@
     ]
    },
    {
-    "artist": null,
+    "artist": "tommy-flanagan",
     "name": "Tommy Flanagan",
     "instruments": [
      "piano"
@@ -5087,7 +5087,7 @@
     ]
    },
    {
-    "artist": null,
+    "artist": "wynton-kelly",
     "name": "Wynton Kelly",
     "instruments": [
      "piano"
@@ -5097,7 +5097,7 @@
     ]
    },
    {
-    "artist": null,
+    "artist": "paul-chambers",
     "name": "Paul Chambers",
     "instruments": [
      "bass"
@@ -5114,7 +5114,7 @@
     ]
    },
    {
-    "artist": null,
+    "artist": "jimmy-cobb",
     "name": "Jimmy Cobb",
     "instruments": [
      "drums"
@@ -5194,7 +5194,7 @@
     ]
    },
    {
-    "artist": null,
+    "artist": "billy-higgins",
     "name": "Billy Higgins",
     "instruments": [
      "drums"
@@ -5253,7 +5253,7 @@
     "tracks": 5
    },
    {
-    "artist": null,
+    "artist": "milt-jackson",
     "name": "Milt Jackson",
     "instruments": [
      "vibraphone",
@@ -5278,7 +5278,7 @@
     "tracks": 4
    },
    {
-    "artist": null,
+    "artist": "john-lewis",
     "name": "John Lewis",
     "instruments": [
      "piano"
@@ -5310,7 +5310,7 @@
     "tracks": 3
    },
    {
-    "artist": null,
+    "artist": "kenny-clarke",
     "name": "Kenny Clarke",
     "instruments": [
      "drums"
@@ -5627,7 +5627,7 @@
     ]
    },
    {
-    "artist": null,
+    "artist": "bennie-maupin",
     "name": "Bennie Maupin",
     "instruments": [
      "soprano saxophone",
@@ -5958,7 +5958,7 @@
     "tracks": 85
    },
    {
-    "artist": null,
+    "artist": "kid-ory",
     "name": "Kid Ory",
     "instruments": [
      "trombone",
@@ -5983,7 +5983,7 @@
     "tracks": 11
    },
    {
-    "artist": null,
+    "artist": "johnny-dodds",
     "name": "Johnny Dodds",
     "instruments": [
      "clarinet",
@@ -6001,7 +6001,7 @@
     "tracks": 15
    },
    {
-    "artist": null,
+    "artist": "lil-hardin-armstrong",
     "name": "Lil Hardin Armstrong",
     "instruments": [
      "piano",
@@ -6010,7 +6010,7 @@
     "tracks": 47
    },
    {
-    "artist": null,
+    "artist": "earl-hines",
     "name": "Earl Hines",
     "instruments": [
      "piano",
@@ -6044,7 +6044,7 @@
     "tracks": 12
    },
    {
-    "artist": null,
+    "artist": "baby-dodds",
     "name": "Baby Dodds",
     "instruments": [
      "drums"
@@ -6106,14 +6106,14 @@
     ]
    },
    {
-    "artist": null,
+    "artist": "joe-henderson",
     "name": "Joe Henderson",
     "instruments": [
      "tenor saxophone"
     ]
    },
    {
-    "artist": null,
+    "artist": "bobby-hutcherson",
     "name": "Bobby Hutcherson",
     "instruments": [
      "vibraphone"
@@ -6375,7 +6375,7 @@
     ]
    },
    {
-    "artist": null,
+    "artist": "richard-davis",
     "name": "Richard Davis",
     "instruments": [
      "bass"
@@ -6467,7 +6467,7 @@
     ]
    },
    {
-    "artist": null,
+    "artist": "don-alias",
     "name": "Don Alias",
     "instruments": [
      "congas",
@@ -6764,7 +6764,7 @@
     ]
    },
    {
-    "artist": null,
+    "artist": "charlie-haden",
     "name": "Charlie Haden",
     "instruments": [
      "bass"
@@ -6898,7 +6898,7 @@
     ]
    },
    {
-    "artist": null,
+    "artist": "richard-davis",
     "name": "Richard Davis",
     "instruments": [
      "bass"
@@ -6908,7 +6908,7 @@
     ]
    },
    {
-    "artist": null,
+    "artist": "ron-carter",
     "name": "Ron Carter",
     "instruments": [
      "bass"
@@ -7163,7 +7163,7 @@
     ]
    },
    {
-    "artist": null,
+    "artist": "candido",
     "name": "Candido",
     "instruments": [
      "congas"
@@ -7292,7 +7292,7 @@
     ]
    },
    {
-    "artist": null,
+    "artist": "wynton-kelly",
     "name": "Wynton Kelly",
     "instruments": [
      "piano"
@@ -7302,14 +7302,14 @@
     ]
    },
    {
-    "artist": null,
+    "artist": "paul-chambers",
     "name": "Paul Chambers",
     "instruments": [
      "bass"
     ]
    },
    {
-    "artist": null,
+    "artist": "jimmy-cobb",
     "name": "Jimmy Cobb",
     "instruments": [
      "drums"
@@ -7486,14 +7486,14 @@
     ]
    },
    {
-    "artist": null,
+    "artist": "ron-carter",
     "name": "Ron Carter",
     "instruments": [
      "bass"
     ]
    },
    {
-    "artist": null,
+    "artist": "tony-williams",
     "name": "Tony Williams",
     "instruments": [
      "drums"
@@ -7725,7 +7725,7 @@
     ]
    },
    {
-    "artist": null,
+    "artist": "lee-konitz",
     "name": "Lee Konitz",
     "instruments": [
      "alto saxophone"
@@ -7770,7 +7770,7 @@
     ]
    },
    {
-    "artist": null,
+    "artist": "wynton-kelly",
     "name": "Wynton Kelly",
     "instruments": [
      "piano"
@@ -7782,7 +7782,7 @@
     ]
    },
    {
-    "artist": null,
+    "artist": "paul-chambers",
     "name": "Paul Chambers",
     "instruments": [
      "bass"
@@ -7868,14 +7868,14 @@
     ]
    },
    {
-    "artist": null,
+    "artist": "ron-carter",
     "name": "Ron Carter",
     "instruments": [
      "bass"
     ]
    },
    {
-    "artist": null,
+    "artist": "tony-williams",
     "name": "Tony Williams",
     "instruments": [
      "drums"
@@ -7935,7 +7935,7 @@
     ]
    },
    {
-    "artist": null,
+    "artist": "jimmy-knepper",
     "name": "Jimmy Knepper",
     "instruments": [
      "trombone"
@@ -8227,7 +8227,7 @@
     ]
    },
    {
-    "artist": null,
+    "artist": "jimmy-knepper",
     "name": "Jimmy Knepper",
     "instruments": [
      "trombone"
@@ -8290,7 +8290,7 @@
     ]
    },
    {
-    "artist": null,
+    "artist": "ron-carter",
     "name": "Ron Carter",
     "instruments": [
      "bass"
@@ -8366,21 +8366,21 @@
     ]
    },
    {
-    "artist": null,
+    "artist": "bobby-hutcherson",
     "name": "Bobby Hutcherson",
     "instruments": [
      "vibraphone"
     ]
    },
    {
-    "artist": null,
+    "artist": "richard-davis",
     "name": "Richard Davis",
     "instruments": [
      "bass"
     ]
    },
    {
-    "artist": null,
+    "artist": "tony-williams",
     "name": "Tony Williams",
     "instruments": [
      "drums"
@@ -8534,7 +8534,7 @@
     ]
    },
    {
-    "artist": null,
+    "artist": "brandee-younger",
     "name": "Brandee Younger",
     "instruments": [
      "harp"
@@ -8957,7 +8957,7 @@
     ]
    },
    {
-    "artist": null,
+    "artist": "roy-haynes",
     "name": "Roy Haynes",
     "instruments": [
      "drums"
@@ -9144,7 +9144,7 @@
     ]
    },
    {
-    "artist": null,
+    "artist": "tommy-flanagan",
     "name": "Tommy Flanagan",
     "instruments": [
      "piano"
@@ -9370,7 +9370,7 @@
     ]
    },
    {
-    "artist": null,
+    "artist": "joe-henderson",
     "name": "Joe Henderson",
     "instruments": [
      "tenor saxophone"
@@ -9837,7 +9837,7 @@
     ]
    },
    {
-    "artist": null,
+    "artist": "ron-carter",
     "name": "Ron Carter",
     "instruments": [
      "bass"
@@ -9900,7 +9900,7 @@
     ]
    },
    {
-    "artist": null,
+    "artist": "gary-peacock",
     "name": "Gary Peacock",
     "instruments": [
      "bass"
@@ -9953,14 +9953,14 @@
     ]
    },
    {
-    "artist": null,
+    "artist": "gary-peacock",
     "name": "Gary Peacock",
     "instruments": [
      "bass"
     ]
    },
    {
-    "artist": null,
+    "artist": "jack-dejohnette",
     "name": "Jack DeJohnette",
     "instruments": [
      "drums"
@@ -10604,7 +10604,7 @@
     ]
    },
    {
-    "artist": null,
+    "artist": "elena-pinderhughes",
     "name": "Elena Pinderhughes",
     "instruments": [
      "flute"
@@ -10891,14 +10891,14 @@
     ]
    },
    {
-    "artist": null,
+    "artist": "joe-henderson",
     "name": "Joe Henderson",
     "instruments": [
      "tenor saxophone"
     ]
    },
    {
-    "artist": null,
+    "artist": "ron-carter",
     "name": "Ron Carter",
     "instruments": [
      "bass"
@@ -10991,7 +10991,7 @@
     ]
    },
    {
-    "artist": null,
+    "artist": "kenny-burrell",
     "name": "Kenny Burrell",
     "instruments": [
      "guitar"
@@ -11092,14 +11092,14 @@
     ]
    },
    {
-    "artist": null,
+    "artist": "charlie-haden",
     "name": "Charlie Haden",
     "instruments": [
      "bass"
     ]
    },
    {
-    "artist": null,
+    "artist": "billy-higgins",
     "name": "Billy Higgins",
     "instruments": [
      "drums"
@@ -11146,7 +11146,7 @@
     ]
    },
    {
-    "artist": null,
+    "artist": "joe-henderson",
     "name": "Joe Henderson",
     "instruments": [
      "tenor saxophone"
@@ -11167,7 +11167,7 @@
     ]
    },
    {
-    "artist": null,
+    "artist": "billy-higgins",
     "name": "Billy Higgins",
     "instruments": [
      "drums"
@@ -11410,7 +11410,7 @@
     ]
    },
    {
-    "artist": null,
+    "artist": "brandee-younger",
     "name": "Brandee Younger",
     "instruments": [
      "harp"
@@ -11896,7 +11896,7 @@
     ]
    },
    {
-    "artist": null,
+    "artist": "ron-carter",
     "name": "Ron Carter",
     "instruments": [
      "bass"
@@ -12204,14 +12204,14 @@
     ]
    },
    {
-    "artist": null,
+    "artist": "charlie-haden",
     "name": "Charlie Haden",
     "instruments": [
      "bass"
     ]
    },
    {
-    "artist": null,
+    "artist": "billy-higgins",
     "name": "Billy Higgins",
     "instruments": [
      "drums"

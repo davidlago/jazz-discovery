@@ -101,6 +101,23 @@ final class JazzLibrary {
         return on(a).intersection(on(b)).compactMap { albumByID[$0] }.sorted { ($0.year, $0.title) < ($1.year, $1.title) }
     }
 
+    /// The artist's credit on an album (instruments, which tracks), when its session is reviewed.
+    func credit(of artistID: String, on albumID: String) -> Credit? {
+        sessions[albumID]?.personnel.first { $0.artist == artistID }
+    }
+
+    /// Whether the artist leads a record in the Crate.
+    func leads(_ artistID: String) -> Bool { !albums(by: artistID).isEmpty }
+
+    /// A sideman: no record of their own in the Crate, known from the ones they play on. (Figures with neither, such
+    /// as Scott Joplin or Art Tatum, count as leaders.)
+    func isSideman(_ artistID: String) -> Bool { !leads(artistID) && !appearances(of: artistID).isEmpty }
+
+    /// Artists with at least one connection to another artist in the guide, for the Connections map.
+    var connectedArtists: [Artist] {
+        artists.filter { a in neighbors(of: a.id).contains { artistByID[$0] != nil } }
+    }
+
     /// The instruments an artist is credited with across the reviewed albums, most albums first.
     func instruments(of artistID: String) -> [String] {
         var count: [String: Int] = [:]
@@ -137,17 +154,41 @@ final class JazzLibrary {
         return s
     }
 
+    /// Someone credited on the records who has no page of their own.
+    struct Player: Identifiable, Hashable {
+        let name: String
+        let instruments: [String]
+        let albums: [Album]
+        var id: String { name }
+    }
+
     struct SearchResults { var eras: [Era] = []; var artists: [Artist] = []; var albums: [Album] = []
-        var isEmpty: Bool { eras.isEmpty && artists.isEmpty && albums.isEmpty } }
+        var players: [Player] = []
+        var isEmpty: Bool { eras.isEmpty && artists.isEmpty && albums.isEmpty && players.isEmpty } }
 
     func search(_ q: String) -> SearchResults {
         let q = q.trimmingCharacters(in: .whitespaces).lowercased()
         guard !q.isEmpty else { return SearchResults() }
         func m(_ s: String) -> Bool { s.folding(options: .diacriticInsensitive, locale: nil).lowercased().contains(q) }
+        // Players without a page, by name: the records they're on.
+        var byName: [String: (instruments: [String], albums: [Album])] = [:]
+        for (albumID, session) in sessions {
+            guard let album = albumByID[albumID] else { continue }
+            for credit in session.personnel where credit.artist == nil && m(credit.name) {
+                var entry = byName[credit.name] ?? ([], [])
+                for i in credit.instruments where !entry.instruments.contains(i) { entry.instruments.append(i) }
+                if !entry.albums.contains(album) { entry.albums.append(album) }
+                byName[credit.name] = entry
+            }
+        }
+        let players = byName.map { Player(name: $0.key, instruments: $0.value.instruments,
+                                          albums: $0.value.albums.sorted { $0.year < $1.year }) }
+            .sorted { ($0.albums.count, $1.name) > ($1.albums.count, $0.name) }
         return SearchResults(
             eras: eras.filter { m($0.name) || m($0.tagline) },
             artists: artists.filter { m($0.name) || m($0.instrument) },
-            albums: albums.filter { m($0.title) || m($0.artistName) || m($0.label) || String($0.year) == q }
+            albums: albums.filter { m($0.title) || m($0.artistName) || m($0.label) || String($0.year) == q },
+            players: Array(players.prefix(20))
         )
     }
 }
