@@ -1371,7 +1371,9 @@
         "ella-fitzgerald",
         "charles-mingus",
         "coleman-hawkins",
-        "django-reinhardt"
+        "django-reinhardt",
+        "abdullah-ibrahim",
+        "mulatu-astatke"
       ],
       "albums": [
         "blanton-webster-band"
@@ -1691,7 +1693,9 @@
         "sarah-vaughan",
         "machito",
         "max-roach",
-        "chucho-valdes"
+        "chucho-valdes",
+        "arturo-sandoval",
+        "johnny-hartman"
       ],
       "albums": [
         "groovin-high",
@@ -1851,14 +1855,18 @@
         "cannonball-adderley",
         "wayne-shorter",
         "herbie-hancock",
-        "john-mclaughlin"
+        "john-mclaughlin",
+        "dave-holland",
+        "larry-young",
+        "lonnie-liston-smith"
       ],
       "albums": [
         "birth-of-the-cool",
         "miles-ahead",
         "kind-of-blue",
         "miles-smiles",
-        "bitches-brew"
+        "bitches-brew",
+        "tutu"
       ],
       "signatureTracks": [
         "So What",
@@ -2055,10 +2063,12 @@
         "wayne-shorter",
         "freddie-hubbard",
         "wynton-marsalis",
-        "keith-jarrett"
+        "keith-jarrett",
+        "lou-donaldson"
       ],
       "albums": [
-        "moanin"
+        "moanin",
+        "keystone-3"
       ],
       "signatureTracks": [
         "Moanin'",
@@ -2174,7 +2184,8 @@
         "art-blakey",
         "wayne-shorter",
         "freddie-hubbard",
-        "jimmy-smith"
+        "jimmy-smith",
+        "lou-donaldson"
       ],
       "albums": [
         "the-sidewinder"
@@ -2298,7 +2309,8 @@
         "dexter-gordon",
         "ornette-coleman",
         "eric-dolphy",
-        "herbie-hancock"
+        "herbie-hancock",
+        "stanley-turrentine"
       ],
       "albums": [],
       "signatureTracks": [
@@ -2455,7 +2467,8 @@
       "blurb": "A towering Cuban pianist who co-founded the explosive band Irakere and fuses Afro-Cuban ritual rhythm, classical technique and jazz improvisation.",
       "connections": [
         "dizzy-gillespie",
-        "roy-hargrove"
+        "roy-hargrove",
+        "arturo-sandoval"
       ],
       "albums": [
         "jazz-bata-2"
@@ -2480,7 +2493,9 @@
       "blurb": "The man who made the Hammond B-3 a jazz instrument, with roaring, bluesy and swinging chops. Every organ player since has worked in his shadow.",
       "connections": [
         "lee-morgan",
-        "grant-green"
+        "grant-green",
+        "stanley-turrentine",
+        "lou-donaldson"
       ],
       "albums": [
         "the-sermon",
@@ -2571,7 +2586,8 @@
         "elvin-jones",
         "eric-dolphy",
         "alice-coltrane",
-        "pharoah-sanders"
+        "pharoah-sanders",
+        "johnny-hartman"
       ],
       "albums": [
         "blue-train",
@@ -2633,7 +2649,8 @@
         "grant-green",
         "john-coltrane",
         "elvin-jones",
-        "kamasi-washington"
+        "kamasi-washington",
+        "johnny-hartman"
       ],
       "albums": [
         "the-real-mccoy",
@@ -2667,10 +2684,12 @@
         "herbie-hancock",
         "joe-zawinul",
         "jaco-pastorius",
-        "esperanza-spalding"
+        "esperanza-spalding",
+        "dave-holland"
       ],
       "albums": [
-        "speak-no-evil"
+        "speak-no-evil",
+        "footprints-live"
       ],
       "signatureTracks": [
         "Footprints",
@@ -2698,11 +2717,14 @@
         "mongo-santamaria",
         "grant-green",
         "wayne-shorter",
-        "chick-corea"
+        "chick-corea",
+        "dave-holland"
       ],
       "albums": [
         "maiden-voyage",
-        "head-hunters"
+        "head-hunters",
+        "future-shock",
+        "river-the-joni-letters"
       ],
       "signatureTracks": [
         "Maiden Voyage",
@@ -2728,7 +2750,9 @@
         "gil-evans",
         "grant-green",
         "john-coltrane",
-        "mccoy-tyner"
+        "mccoy-tyner",
+        "johnny-hartman",
+        "larry-young"
       ],
       "albums": [],
       "signatureTracks": [
@@ -2757,7 +2781,9 @@
         "pat-metheny"
       ],
       "albums": [
-        "the-shape-of-jazz-to-come"
+        "the-shape-of-jazz-to-come",
+        "free-jazz",
+        "sound-grammar"
       ],
       "signatureTracks": [
         "Lonely Woman",
@@ -2782,7 +2808,8 @@
       "connections": [
         "max-roach",
         "archie-shepp",
-        "albert-ayler"
+        "albert-ayler",
+        "tomasz-stanko"
       ],
       "albums": [
         "unit-structures"
@@ -2945,10 +2972,12 @@
       "blurb": "A pianist, harpist and organist who transformed her spiritual practice into cosmic, devotional music, among the most visionary in jazz.",
       "connections": [
         "john-coltrane",
-        "pharoah-sanders"
+        "pharoah-sanders",
+        "joe-henderson"
       ],
       "albums": [
-        "journey-in-satchidananda"
+        "journey-in-satchidananda",
+        "ptah-the-el-daoud"
       ],
       "signatureTracks": [
         "Journey in Satchidananda",
@@ -2974,7 +3003,10 @@
         "john-coltrane",
         "sun-ra",
         "don-cherry",
-        "alice-coltrane"
+        "alice-coltrane",
+        "leon-thomas",
+        "lonnie-liston-smith",
+        "joe-henderson"
       ],
       "albums": [
         "karma"
@@ -3004,7 +3036,9 @@
         "mongo-santamaria",
         "herbie-hancock",
         "keith-jarrett",
-        "john-mclaughlin"
+        "john-mclaughlin",
+        "hiromi",
+        "dave-holland"
       ],
       "albums": [
         "return-to-forever"
@@ -3031,7 +3065,9 @@
       "connections": [
         "miles-davis",
         "chick-corea",
-        "joe-zawinul"
+        "joe-zawinul",
+        "dave-holland",
+        "larry-young"
       ],
       "albums": [
         "the-inner-mounting-flame"
@@ -3088,7 +3124,8 @@
         "wayne-shorter",
         "john-mclaughlin",
         "jaco-pastorius",
-        "snarky-puppy"
+        "snarky-puppy",
+        "dave-holland"
       ],
       "albums": [
         "heavy-weather"
@@ -3119,7 +3156,8 @@
         "joshua-redman"
       ],
       "albums": [
-        "bright-size-life"
+        "bright-size-life",
+        "song-x"
       ],
       "signatureTracks": [
         "Phase Dance",
@@ -3143,10 +3181,12 @@
         "art-blakey",
         "roy-hargrove",
         "cassandra-wilson",
-        "cecile-mclorin-salvant"
+        "cecile-mclorin-salvant",
+        "joe-henderson"
       ],
       "albums": [
-        "black-codes"
+        "black-codes",
+        "blood-on-the-fields"
       ],
       "signatureTracks": [
         "Black Codes (From the Underground)",
@@ -3169,10 +3209,13 @@
       "blurb": "A pianist of rapturous lyricism, known for vast solo improvisations like The Köln Concert and a long-running Standards Trio that rethought the American songbook.",
       "connections": [
         "art-blakey",
-        "chick-corea"
+        "chick-corea",
+        "jan-garbarek",
+        "charles-lloyd"
       ],
       "albums": [
-        "standards-vol-1"
+        "standards-vol-1",
+        "the-koln-concert"
       ],
       "signatureTracks": [
         "Köln, January 24, 1975, Pt. I",
@@ -3250,7 +3293,8 @@
         "billie-holiday"
       ],
       "albums": [
-        "blue-light-til-dawn"
+        "blue-light-til-dawn",
+        "new-moon-daughter"
       ],
       "signatureTracks": [
         "Come On in My Kitchen",
@@ -3325,7 +3369,8 @@
         "kamasi-washington"
       ],
       "albums": [
-        "black-radio"
+        "black-radio",
+        "canvas"
       ],
       "signatureTracks": [
         "Afro Blue",
@@ -3371,7 +3416,8 @@
       "blurb": "The catalyst of London's jazz renaissance led Sons of Kemet, The Comet Is Coming and Shabaka and the Ancestors, before turning to flutes for a meditative new chapter.",
       "connections": [
         "nubya-garcia",
-        "makaya-mccraven"
+        "makaya-mccraven",
+        "jason-moran"
       ],
       "albums": [
         "perceive-its-beauty"
@@ -3537,7 +3583,10 @@
       "primaryEra": "modal",
       "wikipedia": "Ron_Carter",
       "blurb": "The most recorded bassist in jazz history anchored Miles Davis's second great quintet and dozens of 1960s Blue Note dates with a deep, singing tone and a harmonic imagination that let the bass steer the band.",
-      "connections": [],
+      "connections": [
+        "joe-henderson",
+        "stanley-turrentine"
+      ],
       "albums": [],
       "signatureTracks": [
         "Maiden Voyage",
@@ -3581,8 +3630,13 @@
       "primaryEra": "free",
       "wikipedia": "Charlie_Haden",
       "blurb": "Haden's warm, folk-rooted bass helped free the instrument in Ornette Coleman's quartet, moving with the soloist instead of marking the chords, and he later led the politically charged Liberation Music Orchestra.",
-      "connections": [],
-      "albums": [],
+      "connections": [
+        "egberto-gismonti",
+        "jan-garbarek"
+      ],
+      "albums": [
+        "beyond-the-missouri-sky"
+      ],
       "signatureTracks": [
         "Lonely Woman",
         "Peace",
@@ -3711,7 +3765,9 @@
       "primaryEra": "modal",
       "wikipedia": "Tony_Williams_(drummer)",
       "blurb": "Joining Miles Davis at 17, Williams broke up the beat with a restless, polyrhythmic drive that defined the second great quintet, then helped invent fusion with his band Lifetime.",
-      "connections": [],
+      "connections": [
+        "larry-young"
+      ],
       "albums": [],
       "signatureTracks": [
         "Maiden Voyage",
@@ -3799,7 +3855,9 @@
       "primaryEra": "post-bop",
       "wikipedia": "Jack_DeJohnette",
       "blurb": "Equally at home in Miles Davis's electric bands and Keith Jarrett's Standards Trio, DeJohnette played drums as a colorist, with a fluid, cymbal-led sound that spanned free jazz, fusion and the standards.",
-      "connections": [],
+      "connections": [
+        "charles-lloyd"
+      ],
       "albums": [],
       "signatureTracks": [
         "Pharaoh's Dance",
@@ -4079,8 +4137,17 @@
       "primaryEra": "hard-bop",
       "wikipedia": "Joe_Henderson",
       "blurb": "A tenor saxophonist with a sound all his own, mixing bebop agility with sly, searching phrases, Henderson was everywhere on Blue Note in the 1960s, from The Sidewinder to Song for My Father and The Real McCoy.",
-      "connections": [],
-      "albums": [],
+      "connections": [
+        "ron-carter",
+        "pharoah-sanders",
+        "larry-young",
+        "alice-coltrane",
+        "wynton-marsalis"
+      ],
+      "albums": [
+        "state-of-the-tenor-vol-1",
+        "lush-life"
+      ],
       "signatureTracks": [
         "The Sidewinder",
         "Totem Pole",
@@ -4307,7 +4374,10 @@
       "primaryEra": "soul-jazz",
       "wikipedia": "Kenny_Burrell",
       "blurb": "A Detroit guitarist with a warm, blues-soaked sound, Burrell recorded for Blue Note, Prestige and Verve, most famously with organist Jimmy Smith and on his own Midnight Blue.",
-      "connections": [],
+      "connections": [
+        "lou-donaldson",
+        "stanley-turrentine"
+      ],
       "albums": [],
       "signatureTracks": [
         "The Sermon",
@@ -4369,7 +4439,9 @@
       "primaryEra": "contemporary",
       "wikipedia": "Brandee_Younger",
       "blurb": "Younger carries forward the jazz harp of Alice Coltrane and Dorothy Ashby, and plays on Makaya McCraven's Universal Beings and Shabaka Hutchings's Perceive Its Beauty, Acknowledge Its Grace.",
-      "connections": [],
+      "connections": [
+        "dorothy-ashby"
+      ],
       "albums": [],
       "signatureTracks": [
         "Holy Lands",
@@ -4396,6 +4468,663 @@
         "Her Arrival"
       ],
       "videoQuery": "Elena Pinderhughes flute"
+    },
+    {
+      "id": "johnny-hartman",
+      "name": "Johnny Hartman",
+      "born": 1923,
+      "died": 1983,
+      "instrument": "Vocals",
+      "eras": [
+        "bebop",
+        "modal"
+      ],
+      "primaryEra": "modal",
+      "wikipedia": "Johnny_Hartman",
+      "blurb": "A baritone of deep, unhurried warmth, Hartman sang in the Earl Hines and Dizzy Gillespie big bands before the 1963 ballad album with John Coltrane's quartet that he is remembered for. The Bridges of Madison County brought his voice back in 1995.",
+      "connections": [
+        "mccoy-tyner",
+        "elvin-jones",
+        "kurt-elling",
+        "john-coltrane",
+        "dizzy-gillespie"
+      ],
+      "albums": [
+        "john-coltrane-and-johnny-hartman"
+      ],
+      "signatureTracks": [
+        "My One and Only Love",
+        "Lush Life",
+        "They Say It's Wonderful"
+      ],
+      "videoQuery": "Johnny Hartman My One and Only Love"
+    },
+    {
+      "id": "kurt-elling",
+      "name": "Kurt Elling",
+      "born": 1967,
+      "instrument": "Vocals",
+      "eras": [
+        "post-bop",
+        "contemporary"
+      ],
+      "primaryEra": "contemporary",
+      "wikipedia": "Kurt_Elling",
+      "blurb": "A Chicago baritone who left divinity school one credit short of a degree to sing, Elling writes his own words to improvised solos in the vocalese tradition and scats with a four-octave range.",
+      "connections": [
+        "johnny-hartman"
+      ],
+      "albums": [
+        "dedicated-to-you"
+      ],
+      "signatureTracks": [
+        "Dedicated to You",
+        "Nancy with the Laughing Face",
+        "You Are Too Beautiful"
+      ],
+      "videoQuery": "Kurt Elling live"
+    },
+    {
+      "id": "bobby-mcferrin",
+      "name": "Bobby McFerrin",
+      "born": 1950,
+      "instrument": "Vocals",
+      "eras": [
+        "post-bop"
+      ],
+      "primaryEra": "post-bop",
+      "wikipedia": "Bobby_McFerrin",
+      "blurb": "McFerrin switches between bass line, melody and vocal percussion so quickly that one voice sounds like a band. He took the idea from solo jazz concerts to number one in 1988 with 'Don't Worry, Be Happy', the only a cappella song to top the US chart.",
+      "connections": [],
+      "albums": [
+        "the-voice"
+      ],
+      "signatureTracks": [
+        "Don't Worry, Be Happy",
+        "Blackbird",
+        "The Jump"
+      ],
+      "videoQuery": "Bobby McFerrin solo voice live"
+    },
+    {
+      "id": "leon-thomas",
+      "name": "Leon Thomas",
+      "born": 1937,
+      "died": 1999,
+      "instrument": "Vocals",
+      "eras": [
+        "free",
+        "spiritual"
+      ],
+      "primaryEra": "spiritual",
+      "wikipedia": "Leon_Thomas_(jazz_singer)",
+      "blurb": "A singer from East St. Louis who passed briefly through Count Basie's band, Thomas found his voice with Pharoah Sanders: on 'The Creator Has a Master Plan' his chants and sudden yodels turn the voice into another horn.",
+      "connections": [
+        "lonnie-liston-smith",
+        "pharoah-sanders"
+      ],
+      "albums": [
+        "spirits-known-and-unknown"
+      ],
+      "signatureTracks": [
+        "The Creator Has a Master Plan (Peace)",
+        "Echoes",
+        "Malcolm's Gone"
+      ],
+      "videoQuery": "Leon Thomas The Creator Has a Master Plan"
+    },
+    {
+      "id": "les-mccann",
+      "name": "Les McCann",
+      "born": 1935,
+      "died": 2023,
+      "instrument": "Piano",
+      "eras": [
+        "soul-jazz"
+      ],
+      "primaryEra": "soul-jazz",
+      "wikipedia": "Les_McCann",
+      "blurb": "A pianist and singer who built soul jazz on gospel chords and a shouting good humour, McCann had a million-selling hit at Montreux in 1969 with 'Compared to What', a protest song he sang over a churning groove. Hip-hop producers have sampled his records widely.",
+      "connections": [],
+      "albums": [
+        "swiss-movement"
+      ],
+      "signatureTracks": [
+        "Compared to What",
+        "Cold Duck Time",
+        "Kathleen's Theme"
+      ],
+      "videoQuery": "Les McCann Eddie Harris Compared to What Montreux"
+    },
+    {
+      "id": "shirley-scott",
+      "name": "Shirley Scott",
+      "born": 1934,
+      "died": 2002,
+      "instrument": "Organ",
+      "eras": [
+        "hard-bop",
+        "soul-jazz"
+      ],
+      "primaryEra": "soul-jazz",
+      "wikipedia": "Shirley_Scott",
+      "blurb": "Philadelphia's 'Queen of the Organ' mixed bebop lines with blues and gospel chords, first in Eddie 'Lockjaw' Davis's band and then on a long run of records with her husband, the tenor saxophonist Stanley Turrentine.",
+      "connections": [
+        "stanley-turrentine"
+      ],
+      "albums": [
+        "queen-of-the-organ"
+      ],
+      "signatureTracks": [
+        "Just in Time",
+        "Rapid Shave",
+        "That's for Me"
+      ],
+      "videoQuery": "Shirley Scott Hammond organ"
+    },
+    {
+      "id": "larry-young",
+      "name": "Larry Young",
+      "born": 1940,
+      "died": 1978,
+      "instrument": "Organ",
+      "eras": [
+        "soul-jazz",
+        "modal",
+        "fusion"
+      ],
+      "primaryEra": "modal",
+      "wikipedia": "Larry_Young_(musician)",
+      "blurb": "A Newark organist who began in Jimmy Smith's soul-jazz mould, Young took the Hammond B-3 into Coltrane's modal territory on Unity and then lent its roar to the first fusion bands: Tony Williams's Lifetime and Miles Davis's Bitches Brew.",
+      "connections": [
+        "elvin-jones",
+        "joe-henderson",
+        "miles-davis",
+        "tony-williams",
+        "john-mclaughlin",
+        "dave-holland"
+      ],
+      "albums": [
+        "unity"
+      ],
+      "signatureTracks": [
+        "Zoltan",
+        "The Moontrane",
+        "Softly, as in a Morning Sunrise"
+      ],
+      "videoQuery": "Larry Young organ Lifetime"
+    },
+    {
+      "id": "lou-donaldson",
+      "name": "Lou Donaldson",
+      "born": 1926,
+      "died": 2024,
+      "instrument": "Saxophone",
+      "eras": [
+        "bebop",
+        "hard-bop",
+        "soul-jazz"
+      ],
+      "primaryEra": "soul-jazz",
+      "wikipedia": "Lou_Donaldson",
+      "blurb": "An alto player who started out as a disciple of Charlie Parker, on Art Blakey's A Night at Birdland among other sessions, Donaldson settled into bluesy, danceable soul jazz with organ bands, from Jimmy Smith's The Sermon! to his own Alligator Bogaloo.",
+      "connections": [
+        "jimmy-smith",
+        "lee-morgan",
+        "kenny-burrell",
+        "art-blakey"
+      ],
+      "albums": [
+        "alligator-bogaloo"
+      ],
+      "signatureTracks": [
+        "Alligator Bogaloo",
+        "Blues Walk",
+        "The Thang"
+      ],
+      "videoQuery": "Lou Donaldson alto saxophone live"
+    },
+    {
+      "id": "stanley-turrentine",
+      "name": "Stanley Turrentine",
+      "born": 1934,
+      "died": 2000,
+      "instrument": "Saxophone",
+      "eras": [
+        "hard-bop",
+        "soul-jazz",
+        "fusion"
+      ],
+      "primaryEra": "soul-jazz",
+      "wikipedia": "Stanley_Turrentine",
+      "blurb": "Mr. T's big, blues-soaked tenor came out of R&B with Earl Bostic and found its home in soul jazz: organ sessions for Blue Note with Jimmy Smith and with his wife Shirley Scott, then the polished CTI sound of Sugar.",
+      "connections": [
+        "jimmy-smith",
+        "shirley-scott",
+        "freddie-hubbard",
+        "ron-carter",
+        "lonnie-liston-smith",
+        "kenny-burrell"
+      ],
+      "albums": [
+        "sugar"
+      ],
+      "signatureTracks": [
+        "Sugar",
+        "Sunshine Alley"
+      ],
+      "videoQuery": "Stanley Turrentine tenor saxophone live"
+    },
+    {
+      "id": "dorothy-ashby",
+      "name": "Dorothy Ashby",
+      "born": 1932,
+      "died": 1986,
+      "instrument": "Harp",
+      "eras": [
+        "hard-bop",
+        "soul-jazz"
+      ],
+      "primaryEra": "soul-jazz",
+      "wikipedia": "Dorothy_Ashby",
+      "blurb": "A Detroit harpist who showed the instrument could play bebop lines as nimbly as a saxophone, Ashby later set it inside Chicago soul arrangements and the Japanese koto; producers from Pete Rock to J Dilla have sampled her records.",
+      "connections": [
+        "brandee-younger"
+      ],
+      "albums": [
+        "afro-harping"
+      ],
+      "signatureTracks": [
+        "Soul Vibrations",
+        "Afro-Harping",
+        "The Windmills of Your Mind"
+      ],
+      "videoQuery": "Dorothy Ashby harp jazz"
+    },
+    {
+      "id": "lonnie-liston-smith",
+      "name": "Lonnie Liston Smith",
+      "born": 1940,
+      "instrument": "Piano",
+      "eras": [
+        "spiritual",
+        "fusion"
+      ],
+      "primaryEra": "spiritual",
+      "wikipedia": "Lonnie_Liston_Smith",
+      "blurb": "The pianist on Pharoah Sanders's Karma and Thembi, where he first played a Fender Rhodes, Smith joined Miles Davis's electric band and then led the Cosmic Echoes, whose floating, groove-based spiritual jazz drew a crossover audience.",
+      "connections": [
+        "pharoah-sanders",
+        "leon-thomas",
+        "stanley-turrentine",
+        "miles-davis"
+      ],
+      "albums": [
+        "astral-traveling"
+      ],
+      "signatureTracks": [
+        "Astral Traveling",
+        "Expansions",
+        "Let Us Go Into the House of the Lord"
+      ],
+      "videoQuery": "Lonnie Liston Smith Cosmic Echoes live"
+    },
+    {
+      "id": "charles-lloyd",
+      "name": "Charles Lloyd",
+      "born": 1938,
+      "instrument": "Saxophone",
+      "eras": [
+        "modal",
+        "spiritual",
+        "contemporary"
+      ],
+      "primaryEra": "spiritual",
+      "wikipedia": "Charles_Lloyd_(jazz_musician)",
+      "blurb": "A Memphis tenor and flute player whose 1966 quartet with Keith Jarrett and Jack DeJohnette won over rock audiences with Forest Flower, Lloyd withdrew to Big Sur in the 1970s and came back with a searching, hymn-like sound, most of it recorded for ECM.",
+      "connections": [
+        "jason-moran",
+        "keith-jarrett",
+        "jack-dejohnette"
+      ],
+      "albums": [
+        "rabo-de-nube"
+      ],
+      "signatureTracks": [
+        "Forest Flower",
+        "Sombrero Sam",
+        "Rabo de Nube"
+      ],
+      "videoQuery": "Charles Lloyd quartet live"
+    },
+    {
+      "id": "abdullah-ibrahim",
+      "name": "Abdullah Ibrahim",
+      "born": 1934,
+      "died": 2026,
+      "instrument": "Piano",
+      "eras": [
+        "spiritual",
+        "post-bop"
+      ],
+      "primaryEra": "post-bop",
+      "wikipedia": "Abdullah_Ibrahim",
+      "blurb": "A Cape Town pianist first known as Dollar Brand, Ibrahim joined traditional African songs and the hymns of Cape Town's churches to the influence of Ellington and Monk. Ellington set up a recording session for his trio in 1963, and his 'Mannenberg' became an anthem of the struggle against apartheid.",
+      "connections": [
+        "duke-ellington"
+      ],
+      "albums": [
+        "water-from-an-ancient-well"
+      ],
+      "signatureTracks": [
+        "Mandela",
+        "The Wedding",
+        "Water from an Ancient Well"
+      ],
+      "videoQuery": "Abdullah Ibrahim piano live"
+    },
+    {
+      "id": "mulatu-astatke",
+      "name": "Mulatu Astatke",
+      "born": 1943,
+      "instrument": "Vibraphone",
+      "eras": [
+        "latin",
+        "fusion"
+      ],
+      "primaryEra": "fusion",
+      "wikipedia": "Mulatu_Astatke",
+      "blurb": "The father of Ethio-jazz set Ethiopian modes over jazz and Latin rhythms on vibraphone and congas, instruments he brought into Ethiopian popular music. Berklee's first African student, he found a new audience when Jim Jarmusch used his music in Broken Flowers.",
+      "connections": [
+        "duke-ellington"
+      ],
+      "albums": [
+        "mulatu-of-ethiopia"
+      ],
+      "signatureTracks": [
+        "Yègellé Tezeta",
+        "Mulatu",
+        "Chifara"
+      ],
+      "videoQuery": "Mulatu Astatke Ethio-jazz live"
+    },
+    {
+      "id": "hiromi",
+      "name": "Hiromi",
+      "born": 1979,
+      "instrument": "Piano",
+      "eras": [
+        "contemporary"
+      ],
+      "primaryEra": "contemporary",
+      "wikipedia": "Hiromi_Uehara",
+      "blurb": "A pianist from Hamamatsu whom Chick Corea invited on stage when she was 17, Hiromi studied at Berklee under the wing of Ahmad Jamal and plays with a speed and theatrical force that runs from stride to progressive rock.",
+      "connections": [
+        "chick-corea"
+      ],
+      "albums": [
+        "another-mind"
+      ],
+      "signatureTracks": [
+        "XYZ",
+        "Another Mind",
+        "Spiral"
+      ],
+      "videoQuery": "Hiromi piano live"
+    },
+    {
+      "id": "jan-garbarek",
+      "name": "Jan Garbarek",
+      "born": 1947,
+      "instrument": "Saxophone",
+      "eras": [
+        "fusion",
+        "post-bop"
+      ],
+      "primaryEra": "fusion",
+      "wikipedia": "Jan_Garbarek",
+      "blurb": "A Norwegian saxophonist with a keening, glacial tone, Garbarek became one of the voices most associated with ECM, in Keith Jarrett's European Quartet and his own groups; Officium, with the Hilliard Ensemble's early music, reached pop charts across Europe.",
+      "connections": [
+        "keith-jarrett",
+        "egberto-gismonti",
+        "charlie-haden"
+      ],
+      "albums": [
+        "witchi-tai-to"
+      ],
+      "signatureTracks": [
+        "Witchi-Tai-To",
+        "Hasta Siempre",
+        "Desireless"
+      ],
+      "videoQuery": "Jan Garbarek saxophone live"
+    },
+    {
+      "id": "tomasz-stanko",
+      "name": "Tomasz Stańko",
+      "born": 1942,
+      "died": 2018,
+      "instrument": "Trumpet",
+      "eras": [
+        "free",
+        "contemporary"
+      ],
+      "primaryEra": "contemporary",
+      "wikipedia": "Tomasz_Stańko",
+      "blurb": "A Polish trumpeter whose early-1960s Jazz Darings are often called the first European free-jazz group, Stańko played on Krzysztof Komeda's Astigmatic, joined Cecil Taylor's big band and late in life made dark, lyrical ECM records with young Polish players.",
+      "connections": [
+        "cecil-taylor"
+      ],
+      "albums": [
+        "soul-of-things"
+      ],
+      "signatureTracks": [
+        "Soul of Things, Var. 1",
+        "Soul of Things, Var. 6",
+        "Litania"
+      ],
+      "videoQuery": "Tomasz Stanko trumpet quartet"
+    },
+    {
+      "id": "esbjorn-svensson",
+      "name": "Esbjörn Svensson",
+      "born": 1964,
+      "died": 2008,
+      "instrument": "Piano",
+      "eras": [
+        "post-bop",
+        "contemporary"
+      ],
+      "primaryEra": "contemporary",
+      "wikipedia": "Esbjörn_Svensson",
+      "blurb": "The Swedish pianist's trio e.s.t. gave acoustic jazz rock dynamics, electronics and pop melody, and drew crowds few jazz groups reach; in 2006 it became the first European band on DownBeat's cover. Svensson died in a diving accident in 2008.",
+      "connections": [],
+      "albums": [
+        "seven-days-of-falling"
+      ],
+      "signatureTracks": [
+        "Seven Days of Falling",
+        "Ballad for the Unborn",
+        "Believe, Beleft, Below"
+      ],
+      "videoQuery": "e.s.t. Esbjorn Svensson Trio live"
+    },
+    {
+      "id": "courtney-pine",
+      "name": "Courtney Pine",
+      "born": 1964,
+      "instrument": "Saxophone",
+      "eras": [
+        "post-bop",
+        "contemporary"
+      ],
+      "primaryEra": "post-bop",
+      "wikipedia": "Courtney_Pine",
+      "blurb": "A London saxophonist who founded the Jazz Warriors, a big band of young Black British musicians, in 1985, Pine took his debut into the UK top 40 and mixed post-bop with reggae and soul, a forerunner of the London scene that followed.",
+      "connections": [],
+      "albums": [
+        "journey-to-the-urge-within"
+      ],
+      "signatureTracks": [
+        "Children of the Ghetto",
+        "Miss Interpret",
+        "I Believe"
+      ],
+      "videoQuery": "Courtney Pine saxophone live"
+    },
+    {
+      "id": "egberto-gismonti",
+      "name": "Egberto Gismonti",
+      "born": 1947,
+      "instrument": "Guitar",
+      "eras": [
+        "latin",
+        "fusion"
+      ],
+      "primaryEra": "fusion",
+      "wikipedia": "Egberto_Gismonti",
+      "blurb": "A self-taught Brazilian guitarist who plays eight- and ten-string instruments as well as piano, Gismonti drew on time spent with the peoples of the Xingu in the Amazon; his ECM records with Naná Vasconcelos and with Charlie Haden and Jan Garbarek made him known abroad.",
+      "connections": [
+        "jan-garbarek",
+        "charlie-haden"
+      ],
+      "albums": [
+        "danca-das-cabecas"
+      ],
+      "signatureTracks": [
+        "Dança Das Cabeças, Pt. 1",
+        "Dança Das Cabeças, Pt. 2"
+      ],
+      "videoQuery": "Egberto Gismonti guitar live"
+    },
+    {
+      "id": "arturo-sandoval",
+      "name": "Arturo Sandoval",
+      "born": 1949,
+      "instrument": "Trumpet",
+      "eras": [
+        "latin",
+        "post-bop"
+      ],
+      "primaryEra": "latin",
+      "wikipedia": "Arturo_Sandoval",
+      "blurb": "A Cuban trumpeter of blazing range and a founder member of Irakere, Sandoval met Dizzy Gillespie in 1977; Gillespie became his mentor and helped him defect while they toured with the United Nation Orchestra. His story was filmed as For Love or Country.",
+      "connections": [
+        "dizzy-gillespie",
+        "chucho-valdes"
+      ],
+      "albums": [
+        "flight-to-freedom"
+      ],
+      "signatureTracks": [
+        "Flight to Freedom",
+        "Caprichosos de la Habana",
+        "Marianela"
+      ],
+      "videoQuery": "Arturo Sandoval trumpet live"
+    },
+    {
+      "id": "dave-holland",
+      "name": "Dave Holland",
+      "born": 1946,
+      "instrument": "Bass",
+      "eras": [
+        "fusion",
+        "free",
+        "post-bop"
+      ],
+      "primaryEra": "free",
+      "wikipedia": "Dave_Holland_(bassist)",
+      "blurb": "An English bassist whom Miles Davis heard at Ronnie Scott's in 1968 and hired for In a Silent Way and Bitches Brew, Holland went on to Circle, his own Conference of the Birds and, from the 1980s, bands built on supple, grooving counterpoint.",
+      "connections": [
+        "miles-davis",
+        "chick-corea",
+        "wayne-shorter",
+        "john-mclaughlin",
+        "joe-zawinul",
+        "herbie-hancock",
+        "larry-young"
+      ],
+      "albums": [
+        "conference-of-the-birds"
+      ],
+      "signatureTracks": [
+        "Conference of the Birds",
+        "Four Winds",
+        "Prime Directive"
+      ],
+      "videoQuery": "Dave Holland bass quintet live"
+    },
+    {
+      "id": "jason-moran",
+      "name": "Jason Moran",
+      "born": 1975,
+      "instrument": "Piano",
+      "eras": [
+        "contemporary"
+      ],
+      "primaryEra": "contemporary",
+      "wikipedia": "Jason_Moran_(musician)",
+      "blurb": "A Houston pianist whose trio The Bandwagon threads stride, Brahms, hip-hop and recorded speech through the same set, Moran also plays in Charles Lloyd's quartet and was named a MacArthur Fellow in 2010.",
+      "connections": [
+        "charles-lloyd",
+        "shabaka-hutchings"
+      ],
+      "albums": [
+        "the-bandwagon"
+      ],
+      "signatureTracks": [
+        "Planet Rock",
+        "Ringing My Phone (Straight Outta Istanbul)",
+        "Intermezzo, Op. 118, No. 2"
+      ],
+      "videoQuery": "Jason Moran Bandwagon live"
+    },
+    {
+      "id": "vijay-iyer",
+      "name": "Vijay Iyer",
+      "born": 1971,
+      "instrument": "Piano",
+      "eras": [
+        "contemporary"
+      ],
+      "primaryEra": "contemporary",
+      "wikipedia": "Vijay_Iyer",
+      "blurb": "A pianist who studied physics before he turned to music, Iyer builds trio music from interlocking rhythmic cycles and covers that run from Andrew Hill to M.I.A.; he was named a MacArthur Fellow in 2013.",
+      "connections": [],
+      "albums": [
+        "historicity",
+        "accelerando"
+      ],
+      "signatureTracks": [
+        "Historicity",
+        "Galang (Trio Riot Version)",
+        "Accelerando"
+      ],
+      "videoQuery": "Vijay Iyer trio live"
+    },
+    {
+      "id": "medeski-martin-wood",
+      "name": "Medeski Martin & Wood",
+      "born": 1991,
+      "instrument": "Bandleader",
+      "eras": [
+        "post-bop",
+        "contemporary"
+      ],
+      "primaryEra": "post-bop",
+      "wikipedia": "Medeski_Martin_&_Wood",
+      "blurb": "A Brooklyn trio formed in 1991, MMW took the Hammond grooves of soul jazz into funk, hip-hop and free improvisation, with John Medeski on organ, Chris Wood on bass and Billy Martin on drums, and found its audience on the jam-band circuit.",
+      "connections": [],
+      "albums": [
+        "shack-man"
+      ],
+      "signatureTracks": [
+        "Bubblehouse",
+        "Chubb Sub",
+        "Think"
+      ],
+      "videoQuery": "Medeski Martin and Wood live"
     }
   ],
   "albums": [
@@ -5804,6 +6533,676 @@
         "La Cumbia Me Está Llamando"
       ],
       "starter": false
+    },
+    {
+      "id": "john-coltrane-and-johnny-hartman",
+      "title": "John Coltrane and Johnny Hartman",
+      "artist": "johnny-hartman",
+      "artistName": "John Coltrane & Johnny Hartman",
+      "year": 1963,
+      "label": "Impulse!",
+      "era": "modal",
+      "why": "Six ballads recorded in one day in March 1963, Coltrane's quartet playing quietly around Hartman's deep baritone; the album entered the Grammy Hall of Fame in 2013.",
+      "highlights": [
+        "My One and Only Love",
+        "Lush Life",
+        "They Say It's Wonderful"
+      ],
+      "starter": true
+    },
+    {
+      "id": "dedicated-to-you",
+      "title": "Dedicated to You: Kurt Elling Sings the Music of Coltrane and Hartman",
+      "artist": "kurt-elling",
+      "artistName": "Kurt Elling",
+      "year": 2009,
+      "label": "Concord",
+      "era": "contemporary",
+      "why": "Recorded live at Lincoln Center, Elling's tribute to the Coltrane and Hartman album sings its ballads with a string quartet and Ernie Watts's tenor in Coltrane's place; it won the Grammy for best jazz vocal album.",
+      "highlights": [
+        "Dedicated to You",
+        "Nancy with the Laughing Face",
+        "You Are Too Beautiful"
+      ],
+      "starter": false
+    },
+    {
+      "id": "the-voice",
+      "title": "The Voice",
+      "artist": "bobby-mcferrin",
+      "artistName": "Bobby McFerrin",
+      "year": 1984,
+      "label": "Elektra Musician",
+      "era": "post-bop",
+      "why": "Recorded alone on a German tour, with no band and no overdubs, the first jazz vocal album made that way: McFerrin plays every part himself, from the bass line of 'Blackbird' to a scat sprint through Charlie Parker's 'Donna Lee'.",
+      "highlights": [
+        "Blackbird",
+        "The Jump",
+        "I'm My Own Walkman"
+      ],
+      "starter": false
+    },
+    {
+      "id": "spirits-known-and-unknown",
+      "title": "Spirits Known and Unknown",
+      "artist": "leon-thomas",
+      "artistName": "Leon Thomas",
+      "year": 1970,
+      "label": "Flying Dutchman",
+      "era": "spiritual",
+      "why": "Thomas's debut, with Pharoah Sanders under a pseudonym, Lonnie Liston Smith and Roy Haynes, returns to 'The Creator Has a Master Plan' and adds songs against the Vietnam War and for Malcolm X, sung in his chanting, yodelling style.",
+      "highlights": [
+        "The Creator Has a Master Plan (Peace)",
+        "Echoes",
+        "Malcolm's Gone"
+      ],
+      "starter": false
+    },
+    {
+      "id": "swiss-movement",
+      "title": "Swiss Movement",
+      "artist": "les-mccann",
+      "artistName": "Les McCann & Eddie Harris",
+      "year": 1969,
+      "label": "Atlantic",
+      "era": "soul-jazz",
+      "why": "A set at the 1969 Montreux festival by McCann's trio with Eddie Harris and trumpeter Benny Bailey; McCann's sung 'Compared to What', a protest song over a pounding groove, and the album both sold in the millions.",
+      "highlights": [
+        "Compared to What",
+        "Cold Duck Time",
+        "You Got It in Your Soulness"
+      ],
+      "starter": false
+    },
+    {
+      "id": "queen-of-the-organ",
+      "title": "Queen of the Organ",
+      "artist": "shirley-scott",
+      "artistName": "Shirley Scott",
+      "year": 1965,
+      "label": "Impulse!",
+      "era": "soul-jazz",
+      "why": "Recorded live at the Front Room in Newark in 1964, Scott's quartet with Stanley Turrentine stretches out on standards and blues, her organ swinging between bebop runs and churchy chords.",
+      "highlights": [
+        "Just in Time",
+        "Squeeze Me (But Don't Tease Me)",
+        "Rapid Shave"
+      ],
+      "starter": false
+    },
+    {
+      "id": "unity",
+      "title": "Unity",
+      "artist": "larry-young",
+      "artistName": "Larry Young",
+      "year": 1966,
+      "label": "Blue Note",
+      "era": "modal",
+      "why": "With Woody Shaw, Joe Henderson and Elvin Jones, Young turned the organ toward Coltrane's modal music: no soul-jazz shuffles, but fast, open themes like Shaw's 'Zoltan', which begins with a march from Kodály.",
+      "highlights": [
+        "Zoltan",
+        "The Moontrane",
+        "Softly, as in a Morning Sunrise"
+      ],
+      "starter": false
+    },
+    {
+      "id": "alligator-bogaloo",
+      "title": "Alligator Bogaloo",
+      "artist": "lou-donaldson",
+      "artistName": "Lou Donaldson",
+      "year": 1967,
+      "label": "Blue Note",
+      "era": "soul-jazz",
+      "why": "A 1967 organ-groove date with Lonnie Smith and a young George Benson; the title riff, made up in the studio to fill three spare minutes, was the track that sold the record.",
+      "highlights": [
+        "Alligator Bogaloo",
+        "One Cylinder",
+        "Aw Shucks!"
+      ],
+      "starter": false
+    },
+    {
+      "id": "sugar",
+      "title": "Sugar",
+      "artist": "stanley-turrentine",
+      "artistName": "Stanley Turrentine",
+      "year": 1970,
+      "label": "CTI",
+      "era": "soul-jazz",
+      "why": "Turrentine's first record for CTI, with Freddie Hubbard, George Benson and Ron Carter, sets his tenor in Creed Taylor's polished sound; the title track is a ten-minute slow-burning blues, and the band also takes on Coltrane's 'Impressions'.",
+      "highlights": [
+        "Sugar",
+        "Sunshine Alley",
+        "Impressions"
+      ],
+      "starter": false
+    },
+    {
+      "id": "afro-harping",
+      "title": "Afro-Harping",
+      "artist": "dorothy-ashby",
+      "artistName": "Dorothy Ashby",
+      "year": 1968,
+      "label": "Cadet",
+      "era": "soul-jazz",
+      "why": "Ashby's harp inside Richard Evans's orchestral Chicago soul arrangements, on her own tunes and film and pop songs of the day, joining jazz harp to the sound of Cadet's soul records.",
+      "highlights": [
+        "Soul Vibrations",
+        "Afro-Harping",
+        "Little Sunflower"
+      ],
+      "starter": false
+    },
+    {
+      "id": "astral-traveling",
+      "title": "Astral Traveling",
+      "artist": "lonnie-liston-smith",
+      "artistName": "Lonnie Liston Smith & The Cosmic Echoes",
+      "year": 1973,
+      "label": "Flying Dutchman",
+      "era": "spiritual",
+      "why": "Smith's first record as a leader floats electric piano, soprano saxophone, tabla and tamboura over gentle grooves; its title piece was first recorded on Pharoah Sanders's Thembi, the session where Smith first played electric piano.",
+      "highlights": [
+        "Astral Traveling",
+        "Let Us Go Into the House of the Lord",
+        "In Search of Truth"
+      ],
+      "starter": false
+    },
+    {
+      "id": "rabo-de-nube",
+      "title": "Rabo de Nube",
+      "artist": "charles-lloyd",
+      "artistName": "Charles Lloyd",
+      "year": 2008,
+      "label": "ECM",
+      "era": "contemporary",
+      "why": "A 2007 Basel concert by Lloyd's quartet with Jason Moran, Reuben Rogers and Eric Harland: long, incantatory pieces on tenor, alto flute and tárogató, ending with Silvio Rodríguez's song 'Rabo de Nube'.",
+      "highlights": [
+        "Prometheus",
+        "Booker's Garden",
+        "Rabo de Nube"
+      ],
+      "starter": false
+    },
+    {
+      "id": "water-from-an-ancient-well",
+      "title": "Water from an Ancient Well",
+      "artist": "abdullah-ibrahim",
+      "artistName": "Abdullah Ibrahim",
+      "year": 1986,
+      "label": "Blackhawk",
+      "era": "post-bop",
+      "why": "Ibrahim's septet, with three saxophones and trombone, plays his hymn-like Cape Town melodies in rich horn voicings, among them 'Mandela', 'The Wedding' and a return to 'Mannenberg'.",
+      "highlights": [
+        "Mandela",
+        "The Wedding",
+        "Water from an Ancient Well"
+      ],
+      "starter": false
+    },
+    {
+      "id": "mulatu-of-ethiopia",
+      "title": "Mulatu of Ethiopia",
+      "artist": "mulatu-astatke",
+      "artistName": "Mulatu Astatke",
+      "year": 1972,
+      "label": "Worthy",
+      "era": "fusion",
+      "why": "Recorded in New York in 1972, the album sets Ethiopian melodies and rhythms against funk drums, horns and Mulatu's vibraphone, an early album-length statement of the Ethio-jazz he invented.",
+      "highlights": [
+        "Mulatu",
+        "Dewel",
+        "Chifara"
+      ],
+      "starter": false
+    },
+    {
+      "id": "another-mind",
+      "title": "Another Mind",
+      "artist": "hiromi",
+      "artistName": "Hiromi",
+      "year": 2003,
+      "label": "Telarc",
+      "era": "contemporary",
+      "why": "Hiromi's debut, co-produced by her mentor Ahmad Jamal before she had finished at Berklee, runs from the rock-tinged 'XYZ' to long, many-sectioned pieces played at startling speed.",
+      "highlights": [
+        "XYZ",
+        "Double Personality",
+        "Another Mind"
+      ],
+      "starter": false
+    },
+    {
+      "id": "witchi-tai-to",
+      "title": "Witchi-Tai-To",
+      "artist": "jan-garbarek",
+      "artistName": "Jan Garbarek & Bobo Stenson Quartet",
+      "year": 1974,
+      "label": "ECM",
+      "era": "fusion",
+      "why": "Garbarek and Bobo Stenson's Nordic quartet turn tunes by Carla Bley, Don Cherry and Jim Pepper into slow-building, open-air improvisations, an early example of the spacious sound ECM became known for.",
+      "highlights": [
+        "Witchi-Tai-To",
+        "Hasta Siempre",
+        "Desireless"
+      ],
+      "starter": false
+    },
+    {
+      "id": "soul-of-things",
+      "title": "Soul of Things",
+      "artist": "tomasz-stanko",
+      "artistName": "Tomasz Stańko Quartet",
+      "year": 2002,
+      "label": "ECM",
+      "era": "contemporary",
+      "why": "A thirteen-part suite played by Stańko with the young Polish trio of Marcin Wasilewski, Sławomir Kurkiewicz and Michał Miśkiewicz: slow, dark-toned trumpet ballads with room to breathe.",
+      "highlights": [
+        "Soul of Things, Var. 1",
+        "Soul of Things, Var. 6",
+        "Soul of Things, Var. 12"
+      ],
+      "starter": false
+    },
+    {
+      "id": "seven-days-of-falling",
+      "title": "Seven Days of Falling",
+      "artist": "esbjorn-svensson",
+      "artistName": "e.s.t.",
+      "year": 2003,
+      "label": "ACT",
+      "era": "contemporary",
+      "why": "Esbjörn Svensson's trio with Dan Berglund and Magnus Öström plays acoustic piano jazz with rock dynamics and studio effects; the album charted on both jazz and pop lists, rare for a jazz record.",
+      "highlights": [
+        "Seven Days of Falling",
+        "Ballad for the Unborn",
+        "Believe, Beleft, Below"
+      ],
+      "starter": false
+    },
+    {
+      "id": "journey-to-the-urge-within",
+      "title": "Journey to the Urge Within",
+      "artist": "courtney-pine",
+      "artistName": "Courtney Pine",
+      "year": 1986,
+      "label": "Island",
+      "era": "post-bop",
+      "why": "Pine's debut, made in London with players from his Jazz Warriors, mixes Coltrane-inspired soprano and tenor with a reggae-soul single, 'Children of the Ghetto', and reached the UK top 40.",
+      "highlights": [
+        "Miss Interpret",
+        "Children of the Ghetto",
+        "Dolores"
+      ],
+      "starter": false
+    },
+    {
+      "id": "danca-das-cabecas",
+      "title": "Dança das Cabeças",
+      "artist": "egberto-gismonti",
+      "artistName": "Egberto Gismonti",
+      "year": 1977,
+      "label": "ECM",
+      "era": "fusion",
+      "why": "Two continuous suites for Gismonti's guitar, piano and wooden flutes and Naná Vasconcelos's berimbau, percussion and voice, drawn from his time in the Amazon; it won Germany's Grosser Deutscher Schallplattenpreis in 1977.",
+      "highlights": [
+        "Dança Das Cabeças, Pt. 1",
+        "Dança Das Cabeças, Pt. 2"
+      ],
+      "starter": false
+    },
+    {
+      "id": "flight-to-freedom",
+      "title": "Flight to Freedom",
+      "artist": "arturo-sandoval",
+      "artistName": "Arturo Sandoval",
+      "year": 1991,
+      "label": "GRP",
+      "era": "post-bop",
+      "why": "Made in New York after Sandoval left Cuba, the album runs from Danilo Pérez's title tune and Chick Corea's 'Psalm', with Corea at the piano, to 'Caribeño', which Sandoval sings, his high trumpet bright over all of it.",
+      "highlights": [
+        "Flight to Freedom",
+        "Caribeño",
+        "Psalm"
+      ],
+      "starter": false
+    },
+    {
+      "id": "conference-of-the-birds",
+      "title": "Conference of the Birds",
+      "artist": "dave-holland",
+      "artistName": "Dave Holland Quartet",
+      "year": 1973,
+      "label": "ECM",
+      "era": "free",
+      "why": "Holland's debut as a leader, with Sam Rivers and Anthony Braxton on reeds and flutes and Barry Altschul on percussion, moves between free improvisation and folk-like tunes; the title piece came from birdsong outside his London flat.",
+      "highlights": [
+        "Four Winds",
+        "Conference of the Birds",
+        "Q & A"
+      ],
+      "starter": false
+    },
+    {
+      "id": "the-bandwagon",
+      "title": "The Bandwagon",
+      "artist": "jason-moran",
+      "artistName": "Jason Moran",
+      "year": 2003,
+      "label": "Blue Note",
+      "era": "contemporary",
+      "why": "Live at the Village Vanguard in 2002, Moran's trio with Tarus Mateen and Nasheet Waits plays Brahms, Jaki Byard and Afrika Bambaataa's 'Planet Rock', and builds pieces around recorded voices, among them a Turkish phone call.",
+      "highlights": [
+        "Planet Rock",
+        "Ringing My Phone (Straight Outta Istanbul)",
+        "Intermezzo, Op. 118, No. 2"
+      ],
+      "starter": false
+    },
+    {
+      "id": "historicity",
+      "title": "Historicity",
+      "artist": "vijay-iyer",
+      "artistName": "Vijay Iyer Trio",
+      "year": 2009,
+      "label": "ACT",
+      "era": "contemporary",
+      "why": "Iyer's trio with Stephan Crump and Marcus Gilmore recasts songs by M.I.A., Stevie Wonder, Andrew Hill and Leonard Bernstein in dense, interlocking rhythm; it was nominated for a Grammy.",
+      "highlights": [
+        "Historicity",
+        "Galang (Trio Riot Version)",
+        "Somewhere"
+      ],
+      "starter": false
+    },
+    {
+      "id": "shack-man",
+      "title": "Shack-Man",
+      "artist": "medeski-martin-wood",
+      "artistName": "Medeski, Martin & Wood",
+      "year": 1996,
+      "label": "Gramavision",
+      "era": "post-bop",
+      "why": "Recorded in a solar-powered shack in Hawaii, MMW's breakthrough sets Medeski's Hammond, clavinet and Wurlitzer over Billy Martin's funk drums and Chris Wood's bass, soul-jazz grooves played with a jam band's looseness.",
+      "highlights": [
+        "Is There Anybody Here That Love My Jesus",
+        "Bubblehouse",
+        "Think"
+      ],
+      "starter": false
+    },
+    {
+      "id": "free-jazz",
+      "title": "Free Jazz",
+      "artist": "ornette-coleman",
+      "artistName": "Ornette Coleman",
+      "year": 1961,
+      "label": "Atlantic",
+      "era": "free",
+      "why": "Recorded in one take in December 1960, two quartets improvising at once, one in each stereo channel: Coleman, Don Cherry, Scott LaFaro and Billy Higgins against Eric Dolphy, Freddie Hubbard, Charlie Haden and Ed Blackwell.",
+      "highlights": [
+        "Free Jazz, Pts. 1 & 2",
+        "First Take"
+      ],
+      "starter": false
+    },
+    {
+      "id": "accelerando",
+      "title": "Accelerando",
+      "artist": "vijay-iyer",
+      "artistName": "Vijay Iyer Trio",
+      "year": 2012,
+      "label": "ACT",
+      "era": "contemporary",
+      "why": "Iyer's trio with Stephan Crump and Marcus Gilmore again, setting Michael Jackson's 'Human Nature', Flying Lotus and Heatwave's 'The Star of a Story' beside pieces by Herbie Nichols, Henry Threadgill and Ellington.",
+      "highlights": [
+        "Human Nature",
+        "The Star of a Story",
+        "Accelerando"
+      ],
+      "starter": false
+    },
+    {
+      "id": "tutu",
+      "title": "Tutu",
+      "artist": "miles-davis",
+      "artistName": "Miles Davis",
+      "year": 1986,
+      "label": "Warner Bros.",
+      "era": "post-bop",
+      "why": "Named for Desmond Tutu, Davis's tribute was written and largely played by Marcus Miller on bass, synthesizers and drum programs, setting the muted trumpet in a glossy 1980s studio sound; it won Davis a Grammy.",
+      "highlights": [
+        "Tutu",
+        "Portia",
+        "Full Nelson"
+      ],
+      "starter": false
+    },
+    {
+      "id": "future-shock",
+      "title": "Future Shock",
+      "artist": "herbie-hancock",
+      "artistName": "Herbie Hancock",
+      "year": 1983,
+      "label": "Columbia",
+      "era": "fusion",
+      "why": "Hancock's electro-funk record with Bill Laswell and Michael Beinhorn; Grand Mixer D.ST.'s scratching on 'Rockit' took hip-hop's turntable into a jazz musician's hit and onto MTV, an early instrumental hip-hop record.",
+      "highlights": [
+        "Rockit",
+        "Future Shock",
+        "Autodrive"
+      ],
+      "starter": false
+    },
+    {
+      "id": "river-the-joni-letters",
+      "title": "River: The Joni Letters",
+      "artist": "herbie-hancock",
+      "artistName": "Herbie Hancock",
+      "year": 2007,
+      "label": "Verve",
+      "era": "contemporary",
+      "why": "Hancock's tribute to Joni Mitchell, with Wayne Shorter and singers including Norah Jones, Tina Turner, Leonard Cohen and Mitchell herself, won the Grammy for album of the year, the first jazz album to do so since Getz/Gilberto.",
+      "highlights": [
+        "River",
+        "Both Sides Now",
+        "Nefertiti"
+      ],
+      "starter": false
+    },
+    {
+      "id": "footprints-live",
+      "title": "Footprints Live!",
+      "artist": "wayne-shorter",
+      "artistName": "Wayne Shorter",
+      "year": 2002,
+      "label": "Verve",
+      "era": "contemporary",
+      "why": "The first album by Shorter's quartet with Danilo Pérez, John Patitucci and Brian Blade, recorded at European festivals in 2001, turns old themes like 'Footprints' and 'JuJu' into open, constantly shifting group improvisation.",
+      "highlights": [
+        "Footprints",
+        "Sanctuary",
+        "JuJu"
+      ],
+      "starter": false
+    },
+    {
+      "id": "sound-grammar",
+      "title": "Sound Grammar",
+      "artist": "ornette-coleman",
+      "artistName": "Ornette Coleman",
+      "year": 2006,
+      "label": "Sound Grammar",
+      "era": "contemporary",
+      "why": "A 2005 concert in Germany by Coleman's quartet with two bassists and his son Denardo on drums, revisiting old tunes under new names; it won the Pulitzer Prize for Music.",
+      "highlights": [
+        "Jordan",
+        "Sleep Talking",
+        "Song X"
+      ],
+      "starter": false
+    },
+    {
+      "id": "song-x",
+      "title": "Song X",
+      "artist": "pat-metheny",
+      "artistName": "Pat Metheny & Ornette Coleman",
+      "year": 1986,
+      "label": "Geffen",
+      "era": "post-bop",
+      "why": "Metheny, a longtime admirer, brought Coleman to Geffen for three days of ferocious free playing with Charlie Haden, Jack DeJohnette and Denardo Coleman, guitar synthesizer and alto saxophone blending in harmolodic counterpoint.",
+      "highlights": [
+        "Song X",
+        "Endangered Species",
+        "Kathelin Gray"
+      ],
+      "starter": false
+    },
+    {
+      "id": "state-of-the-tenor-vol-1",
+      "title": "The State of the Tenor, Vol. 1",
+      "artist": "joe-henderson",
+      "artistName": "Joe Henderson",
+      "year": 1986,
+      "label": "Blue Note",
+      "era": "post-bop",
+      "why": "Henderson at the Village Vanguard in November 1985 with only Ron Carter and Al Foster, no piano: long, searching solos on Monk, Ellington, Sam Rivers and his own 'Isotope', with the trio leaving him all the room he wants.",
+      "highlights": [
+        "Ask Me Now",
+        "Friday the Thirteenth",
+        "Isotope"
+      ],
+      "starter": false
+    },
+    {
+      "id": "beyond-the-missouri-sky",
+      "title": "Beyond the Missouri Sky (Short Stories)",
+      "artist": "charlie-haden",
+      "artistName": "Charlie Haden & Pat Metheny",
+      "year": 1997,
+      "label": "Verve",
+      "era": "post-bop",
+      "why": "Quiet duets for Haden's bass and Metheny's acoustic guitars on folk songs, film themes and originals; it won the Grammy for best jazz instrumental performance.",
+      "highlights": [
+        "Waltz for Ruth",
+        "Two for the Road",
+        "Cinema Paradiso"
+      ],
+      "starter": false
+    },
+    {
+      "id": "ptah-the-el-daoud",
+      "title": "Ptah, the El Daoud",
+      "artist": "alice-coltrane",
+      "artistName": "Alice Coltrane",
+      "year": 1970,
+      "label": "Impulse!",
+      "era": "spiritual",
+      "why": "Recorded in the basement studio of her Dix Hills home, with Pharoah Sanders and Joe Henderson on tenors and flutes, Ron Carter and Ben Riley: long modal pieces led by her piano and harp, named for Egyptian and Hindu deities.",
+      "highlights": [
+        "Ptah, the El Daoud",
+        "Turiya and Ramakrishna",
+        "Blue Nile"
+      ],
+      "starter": false
+    },
+    {
+      "id": "new-moon-daughter",
+      "title": "New Moon Daughter",
+      "artist": "cassandra-wilson",
+      "artistName": "Cassandra Wilson",
+      "year": 1995,
+      "label": "Blue Note",
+      "era": "post-bop",
+      "why": "Wilson's low voice among acoustic guitars, cornet and percussion, singing 'Strange Fruit' beside songs by U2, Hank Williams and the Monkees; it topped the jazz chart and won a Grammy.",
+      "highlights": [
+        "Strange Fruit",
+        "Love Is Blindness",
+        "Last Train to Clarksville"
+      ],
+      "starter": false
+    },
+    {
+      "id": "lush-life",
+      "title": "Lush Life: The Music of Billy Strayhorn",
+      "artist": "joe-henderson",
+      "artistName": "Joe Henderson",
+      "year": 1992,
+      "label": "Verve",
+      "era": "post-bop",
+      "why": "Strayhorn songs played in shifting line-ups, from solo tenor to a quintet with Wynton Marsalis; a critical and commercial success that opened Henderson's Verve years, and its title track won him a Grammy.",
+      "highlights": [
+        "Isfahan",
+        "Blood Count",
+        "Lush Life"
+      ],
+      "starter": false
+    },
+    {
+      "id": "blood-on-the-fields",
+      "title": "Blood on the Fields",
+      "artist": "wynton-marsalis",
+      "artistName": "Wynton Marsalis & Lincoln Center Jazz Orchestra",
+      "year": 1997,
+      "label": "Columbia",
+      "era": "post-bop",
+      "why": "Marsalis's oratorio about slavery, sung by Cassandra Wilson, Jon Hendricks and Miles Griffith with the Lincoln Center Jazz Orchestra; it won the Pulitzer Prize for Music in 1997.",
+      "highlights": [
+        "Calling the Indians Out",
+        "Work Song (Blood on the Fields)",
+        "Follow the Drinking Gourd"
+      ],
+      "starter": false
+    },
+    {
+      "id": "keystone-3",
+      "title": "Keystone 3",
+      "artist": "art-blakey",
+      "artistName": "Art Blakey & The Jazz Messengers",
+      "year": 1982,
+      "label": "Concord Jazz",
+      "era": "post-bop",
+      "why": "Blakey's Jazz Messengers live in San Francisco in 1982, with Wynton and Branford Marsalis in the front line: the band that schooled the decade's young lions in hard bop.",
+      "highlights": [
+        "In Walked Bud",
+        "In a Sentimental Mood",
+        "Waterfalls"
+      ],
+      "starter": false
+    },
+    {
+      "id": "canvas",
+      "title": "Canvas",
+      "artist": "robert-glasper",
+      "artistName": "Robert Glasper",
+      "year": 2005,
+      "label": "Blue Note",
+      "era": "contemporary",
+      "why": "Glasper's first album for a major label, a piano trio with guests Mark Turner and Bilal, whose hip-hop-shaped grooves and chords point to the Black Radio sound to come.",
+      "highlights": [
+        "Rise and Shine",
+        "Riot",
+        "Jelly's da Beener"
+      ],
+      "starter": false
+    },
+    {
+      "id": "the-koln-concert",
+      "title": "The Köln Concert",
+      "artist": "keith-jarrett",
+      "artistName": "Keith Jarrett",
+      "year": 1975,
+      "label": "ECM",
+      "era": "fusion",
+      "why": "A wholly improvised solo concert at the Cologne opera house in January 1975, played on the wrong, smaller piano; it became the best-selling solo album in jazz history.",
+      "highlights": [
+        "Köln, January 24, 1975, Pt. I",
+        "Köln, January 24, 1975, Pt. II A",
+        "Köln, January 24, 1975, Pt. II C"
+      ],
+      "starter": true
     }
   ],
   "milestones": [
@@ -6010,6 +7409,12 @@
   ],
   "bonds": [
     {
+      "a": "abdullah-ibrahim",
+      "b": "duke-ellington",
+      "kind": "mentor",
+      "note": "Ellington heard the Dollar Brand Trio in Zurich in 1963 and set up the Reprise session for Duke Ellington Presents the Dollar Brand Trio."
+    },
+    {
       "a": "albert-ayler",
       "b": "cecil-taylor",
       "kind": "band",
@@ -6065,6 +7470,12 @@
     },
     {
       "a": "art-blakey",
+      "b": "lou-donaldson",
+      "kind": "band",
+      "note": "Donaldson played alto in Blakey's quintet on A Night at Birdland (1954)."
+    },
+    {
+      "a": "art-blakey",
       "b": "wayne-shorter",
       "kind": "band",
       "note": "Shorter was the Jazz Messengers' saxophonist and musical director from 1959 to 1964."
@@ -6092,6 +7503,18 @@
       "b": "james-p-johnson",
       "kind": "influence",
       "note": "Tatum grew out of Harlem stride and outplayed Johnson, Fats Waller and Willie \"The Lion\" Smith at a famous 1933 cutting contest."
+    },
+    {
+      "a": "arturo-sandoval",
+      "b": "chucho-valdes",
+      "kind": "band",
+      "note": "Sandoval was a founding member of Irakere, the band Valdés led, in 1973."
+    },
+    {
+      "a": "arturo-sandoval",
+      "b": "dizzy-gillespie",
+      "kind": "mentor",
+      "note": "Sandoval met Gillespie in 1977; Gillespie became his mentor and helped him defect while they toured with the United Nation Orchestra."
     },
     {
       "a": "benny-goodman",
@@ -6160,6 +7583,12 @@
       "note": "Their duo and quartet albums Metheny Mehldau (2006) and Quartet (2007)."
     },
     {
+      "a": "brandee-younger",
+      "b": "dorothy-ashby",
+      "kind": "influence",
+      "note": "Younger's Brand New Life (2023) is a tribute to Ashby."
+    },
+    {
       "a": "bud-powell",
       "b": "dexter-gordon",
       "kind": "band",
@@ -6184,10 +7613,28 @@
       "note": "Their 1979 duo concert, issued as Historic Concerts."
     },
     {
+      "a": "cecil-taylor",
+      "b": "tomasz-stanko",
+      "kind": "band",
+      "note": "Stańko was a member of Cecil Taylor's big band from 1984."
+    },
+    {
       "a": "cecile-mclorin-salvant",
       "b": "wynton-marsalis",
       "kind": "band",
       "note": "Salvant has sung with Marsalis and the Jazz at Lincoln Center Orchestra."
+    },
+    {
+      "a": "charles-lloyd",
+      "b": "jack-dejohnette",
+      "kind": "band",
+      "note": "DeJohnette was the drummer in Lloyd's 1966 quartet, heard on Forest Flower."
+    },
+    {
+      "a": "charles-lloyd",
+      "b": "keith-jarrett",
+      "kind": "band",
+      "note": "Jarrett was the pianist in Lloyd's 1966 quartet, heard on Forest Flower."
     },
     {
       "a": "charles-mingus",
@@ -6200,6 +7647,18 @@
       "b": "eric-dolphy",
       "kind": "band",
       "note": "Dolphy played in Mingus's bands in 1960 and 1964."
+    },
+    {
+      "a": "charlie-haden",
+      "b": "egberto-gismonti",
+      "kind": "band",
+      "note": "Gismonti and Haden played in a trio with Jan Garbarek for ECM."
+    },
+    {
+      "a": "charlie-haden",
+      "b": "jan-garbarek",
+      "kind": "band",
+      "note": "Haden and Garbarek played in a trio with Egberto Gismonti for ECM."
     },
     {
       "a": "charlie-parker",
@@ -6242,6 +7701,12 @@
       "b": "herbie-hancock",
       "kind": "duo",
       "note": "Both played keyboards for Miles Davis, and toured as a piano duo in 1978."
+    },
+    {
+      "a": "chick-corea",
+      "b": "hiromi",
+      "kind": "duo",
+      "note": "Corea met Hiromi in Tokyo when she was 17 and invited her to play at his concert; they later recorded the duo album Duet."
     },
     {
       "a": "chick-corea",
@@ -6353,6 +7818,12 @@
     },
     {
       "a": "dizzy-gillespie",
+      "b": "johnny-hartman",
+      "kind": "band",
+      "note": "Gillespie took Hartman into his big band in 1948, for a tour of California."
+    },
+    {
+      "a": "dizzy-gillespie",
       "b": "machito",
       "kind": "band",
       "note": "Afro-Cuban Jazz Moods (1975), with Chico O'Farrill's arrangements."
@@ -6401,9 +7872,21 @@
     },
     {
       "a": "duke-ellington",
+      "b": "mulatu-astatke",
+      "kind": "band",
+      "note": "Mulatu appeared as a special guest with Ellington's orchestra on its 1973 tour of Ethiopia."
+    },
+    {
+      "a": "duke-ellington",
       "b": "sidney-bechet",
       "kind": "band",
       "note": "Bechet played in Ellington's band in the mid-1920s."
+    },
+    {
+      "a": "egberto-gismonti",
+      "b": "jan-garbarek",
+      "kind": "band",
+      "note": "Garbarek and Gismonti played in a trio with Charlie Haden for ECM."
     },
     {
       "a": "ella-fitzgerald",
@@ -6520,6 +8003,12 @@
       "note": "Johnson's stride grew out of the ragtime of Joplin's generation."
     },
     {
+      "a": "jan-garbarek",
+      "b": "keith-jarrett",
+      "kind": "band",
+      "note": "Garbarek was the saxophonist in Jarrett's European Quartet, on Belonging (1974) and My Song (1977)."
+    },
+    {
       "a": "jelly-roll-morton",
       "b": "king-oliver",
       "kind": "duo",
@@ -6556,6 +8045,18 @@
       "note": "Coltrane played in Monk's quartet at the Five Spot in 1957."
     },
     {
+      "a": "john-mclaughlin",
+      "b": "larry-young",
+      "kind": "band",
+      "note": "Young and McLaughlin were the original Tony Williams Lifetime, on Emergency! (1969)."
+    },
+    {
+      "a": "johnny-hartman",
+      "b": "kurt-elling",
+      "kind": "influence",
+      "note": "Elling's Dedicated to You (2009) is a tribute to Hartman's 1963 album with John Coltrane, singing its ballads."
+    },
+    {
       "a": "kamasi-washington",
       "b": "mccoy-tyner",
       "kind": "band",
@@ -6574,10 +8075,22 @@
       "note": "Oliver taught the young Armstrong and in 1922 sent for him to play second cornet in his Creole Jazz Band."
     },
     {
+      "a": "larry-young",
+      "b": "tony-williams",
+      "kind": "band",
+      "note": "Young played organ in Tony Williams's Lifetime, on Emergency! (1969)."
+    },
+    {
       "a": "lee-morgan",
       "b": "wayne-shorter",
       "kind": "band",
       "note": "Together in the Jazz Messengers from 1959 to 1961."
+    },
+    {
+      "a": "lonnie-liston-smith",
+      "b": "miles-davis",
+      "kind": "band",
+      "note": "Smith joined Davis's electric band in 1972 and plays on On the Corner."
     },
     {
       "a": "louis-armstrong",
@@ -6626,6 +8139,12 @@
       "b": "wynton-marsalis",
       "kind": "mentor",
       "note": "Marsalis heard the teenage Hargrove at his Dallas high school in 1987 and helped launch him."
+    },
+    {
+      "a": "shirley-scott",
+      "b": "stanley-turrentine",
+      "kind": "band",
+      "note": "Married in 1961, Scott and Turrentine recorded together through the 1960s, on her records and his."
     },
     {
       "a": "sonny-rollins",
