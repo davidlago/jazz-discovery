@@ -18,8 +18,8 @@ struct Shot {
 let shots = [
     Shot(name: "01-timeline", kicker: "FROM RAGTIME TO TODAY", headline: "130 years of jazz,\nat a glance", tint: "#E8873A"),
     Shot(name: "02-era", kicker: "ERAS & STYLES", headline: "Every style, its sound\nand its people", tint: "#E3383F"),
-    Shot(name: "03-artist", kicker: "152 ARTISTS", headline: "Meet the people\nwho made it", tint: "#7A5CD6"),
-    Shot(name: "04-album", kicker: "130 ESSENTIAL RECORDS", headline: "Who played on\nevery record", tint: "#2D68D6"),
+    Shot(name: "03-artist", kicker: "183 ARTISTS", headline: "Meet the people\nwho made it", tint: "#7A5CD6"),
+    Shot(name: "04-album", kicker: "176 ESSENTIAL RECORDS", headline: "Who played on\nevery record", tint: "#2D68D6"),
     Shot(name: "05-connections", kicker: "CONNECTIONS", headline: "The path between\nany two players", tint: "#36B58C"),
     Shot(name: "06-guide", kicker: "LISTENING GUIDES", headline: "Follow a recording\nas it plays", tint: "#1BD3C6"),
     Shot(name: "07-places", kicker: "PLACES & LABELS", headline: "From New Orleans\nto South London", tint: "#EAC13F"),

@@ -227,7 +227,7 @@ reason" API the app uses (UserDefaults, CA92.1).
 
 ### Version text
 
-This text is for 1.11 (152 artists, 130 records, personnel, Find a Path, Passport, Radio, the Blindfold Test, the
+This text is for 1.12 (183 artists, 176 records, personnel, Find a Path, Passport, Radio, the Blindfold Test, the
 Songbook, Places and Labels, Lineages and the Glossary, Paths, listening guides, Today in Jazz, widgets, Siri). App
 Store Connect's limits: description 4,000 characters, promotional text 170, keywords 100, and ten screenshots per
 size.
@@ -235,7 +235,7 @@ size.
 **Promotional text** (170 characters, can change any time without review):
 
 ```
-152 artists and 130 essential records, from ragtime to today. Follow a recording as it plays with listening guides, and find the path between any two players.
+183 artists and 176 essential records, from ragtime to today. Follow a recording as it plays with listening guides, and find the path between any two players.
 ```
 
 **Keywords** (100 characters):
@@ -255,7 +255,7 @@ Fourteen styles flow across a timeline like river channels, overlapping where th
 Eras and decades
 Each era has its story, its sound, the places it happened, its key artists and essential records, with tracks to play, performances and a picture archive. Or travel by decade, from the 1890s to the 2020s.
 
-152 artists, 130 records
+183 artists, 176 records
 Leaders and the sidemen all over their records, in Blue Note–style duotone portraits, each with a biography, their records and the people they played with. Every album lists its band like the back of an LP: who played what, and when and where it was recorded. New to jazz? Follow Start Here, one record at a time.
 
 Connections
@@ -271,7 +271,7 @@ The Songbook
 Forty standards and jazz originals, each with its story and the versions that made it matter. Play them in order and hear one song travel through the decades.
 
 Lineages and the glossary
-Family trees for the trumpet, saxophone, piano, bass, guitar, drums and voice, showing who learned from whom, and a glossary of the words jazz uses, each with a recording to hear it in. How to Listen walks you through one record in five steps.
+Family trees for eleven instruments, from the trumpet and saxophone to the vibraphone and organ, showing who learned from whom, and a glossary of the words jazz uses, each with a recording to hear it in. How to Listen walks you through one record in five steps.
 
 Places and labels
 A map of jazz with a time slider, from New Orleans in 1895 to South London today, with a page for every city, club and studio. And the labels, from Blue Note to ECM, with a wall of their covers.
