@@ -16,13 +16,14 @@ enum AppSection: String, CaseIterable, Identifiable {
     case almanac = "On This Day"
     case glossary = "Glossary"
     case paths = "Paths"
+    case guides = "Listening Guides"
     case radio = "Radio"
     case blindfold = "Blindfold Test"
     case passport = "Passport"
     var id: String { rawValue }
     /// The sections under Explore in the sidebar (Listen and You have their own).
-    static var explore: [AppSection] { allCases.filter { ![.passport, .paths, .radio, .blindfold].contains($0) } }
-    static var listen: [AppSection] { [.paths, .radio, .blindfold] }
+    static var explore: [AppSection] { allCases.filter { ![.passport, .paths, .guides, .radio, .blindfold].contains($0) } }
+    static var listen: [AppSection] { [.paths, .guides, .radio, .blindfold] }
     var symbol: String {
         switch self {
         case .timeline: return "timeline.selection"
@@ -41,6 +42,7 @@ enum AppSection: String, CaseIterable, Identifiable {
         case .radio: return "dot.radiowaves.left.and.right"
         case .paths: return "point.topright.arrow.triangle.backward.to.point.bottomleft.scurvepath.fill"
         case .blindfold: return "eyes"
+        case .guides: return "list.bullet.rectangle.portrait.fill"
         }
     }
 
@@ -57,6 +59,7 @@ enum AppSection: String, CaseIterable, Identifiable {
         case .lineage: self = .lineages
         case .term: self = .glossary
         case .journey: self = .paths
+        case .guide: self = .guides
         }
     }
 }
@@ -127,6 +130,9 @@ final class Router {
         case .paths:
             query = ""
             show(.paths)
+        case .guides:
+            query = ""
+            show(.guides)
         case .almanac(let m, let d):
             query = ""
             almanacDay = m.flatMap { m in d.map { DateComponents(month: m, day: $0) } }

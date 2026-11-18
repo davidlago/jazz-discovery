@@ -277,6 +277,38 @@ if os.path.exists(pa_p):
             if st.get("track") and st["track"] not in tracks_all: errors.append(f"{w}: start track {st['track']} isn't resolved")
     print(f"paths.json: {len(paths)} paths")
 
+# guides.json: prose by hand, times from the Mac's guide editor (a guide may be untimed, but not half timed).
+gu_p = os.path.join(res_dir, "guides.json")
+if os.path.exists(gu_p):
+    guides = json.load(open(gu_p))["guides"]
+    gids = [g["id"] for g in guides]
+    if len(gids) != len(set(gids)): errors.append("guides.json: duplicate IDs")
+    tunes_ids = {t["id"] for t in json.load(open(sp))["tunes"]} if os.path.exists(sp) else set()
+    term_ids = {t["id"] for t in json.load(open(gl_p))["terms"]} if os.path.exists(gl_p) else set()
+    kinds = {"intro", "head", "solo", "trading", "ensemble", "interlude", "vamp", "head-out", "coda"}
+    timed = 0
+    for g in guides:
+        w = f"guide {g['id']}"
+        if g["track"] not in tracks_all: errors.append(f"{w}: track {g['track']} isn't resolved")
+        if g.get("album") and g["album"] not in albums: errors.append(f"{w}: album {g['album']} isn't in the Crate")
+        if g.get("tune") and g["tune"] not in tunes_ids: errors.append(f"{w}: tune {g['tune']} isn't in the Songbook")
+        if not g.get("intro") or not g.get("form"): errors.append(f"{w}: needs an intro and a form line")
+        if not g.get("sections"): errors.append(f"{w}: no sections")
+        times = [s.get("at") for s in g.get("sections", [])]
+        for s in g.get("sections", []):
+            if s["kind"] not in kinds: errors.append(f"{w}: unknown kind {s['kind']}")
+            if not s.get("note"): errors.append(f"{w}: {s['label']} has no note")
+            errors += [f"{w}: {s['label']}: {t} isn't a term" for t in s.get("terms", []) if t not in term_ids]
+            for who in s.get("who", []):
+                if "-" in who and " " not in who and who not in artists: errors.append(f"{w}: {s['label']}: {who} isn't an artist")
+        if any(t is not None for t in times):
+            if any(t is None for t in times): errors.append(f"{w}: some sections are timed and some aren't")
+            elif times != sorted(times): errors.append(f"{w}: section times aren't in order")
+            elif not g.get("songID") or not g.get("duration"): errors.append(f"{w}: timed without the song and length it was timed on")
+            elif times[-1] >= g["duration"]: errors.append(f"{w}: a section starts after the recording ends")
+            else: timed += 1
+    print(f"guides.json: {len(guides)} guides, {timed} timed")
+
 # almanac.json is rebuilt from ids.json and sessions.json; it must not be stale.
 import subprocess
 if os.path.exists(os.path.join(res_dir, "almanac.json")):

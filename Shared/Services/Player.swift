@@ -31,7 +31,8 @@ final class PlayerController {
 
     private(set) var current: NowPlaying?
     private(set) var isPlaying = false
-    private(set) var elapsed: Double = 0
+    private(set) var elapsed: Double = 0 { didSet { elapsedAt = .now } }
+    @ObservationIgnored private var elapsedAt = Date.now
     private(set) var duration: Double = 0
     private(set) var loadingKey: String?
     private(set) var currentTrackID: Int?
@@ -308,8 +309,18 @@ final class PlayerController {
         }
     }
 
-    func seek(to fraction: Double) {
-        let t = max(0, min(1, fraction)) * duration
+    func seek(to fraction: Double) { seek(toSeconds: max(0, min(1, fraction)) * duration) }
+
+    /// Where playback is at `date`: the last position the player reported, moved on by the time since, while playing.
+    /// For a playhead that glides between the 400 ms ticks.
+    func position(at date: Date = .now) -> Double {
+        guard isPlaying else { return elapsed }
+        let p = elapsed + max(0, date.timeIntervalSince(elapsedAt))
+        return duration > 0 ? min(p, duration) : p
+    }
+
+    func seek(toSeconds seconds: Double) {
+        let t = duration > 0 ? max(0, min(duration, seconds)) : max(0, seconds)
         switch mode {
         case .preview: avPlayer.seek(to: CMTime(seconds: t, preferredTimescale: 600))
         case .appleMusic: ApplicationMusicPlayer.shared.playbackTime = t; lastPlaybackTime = t
@@ -377,9 +388,15 @@ final class PlayerController {
             let ids = tracks.map { MusicItemID(String($0.trackId)) }
             let req = MusicCatalogResourceRequest<Song>(matching: \.id, memberOf: ids)
             let resp = try await req.response()
-            let byID = Dictionary(resp.items.map { ($0.id, $0) }, uniquingKeysWith: { a, _ in a })
+            var byID = Dictionary(resp.items.map { ($0.id, $0) }, uniquingKeysWith: { a, _ in a })
+            // The song to start with isn't in this country's catalogue under its ID (Apple Music lists some
+            // recordings under different IDs in different countries): find the same recording by name.
+            if byID[ids[index]] == nil, let found = await findSong(like: tracks[index]) { byID[ids[index]] = found }
             let songs = ids.compactMap { byID[$0] }
-            guard let start = byID[ids[index]] ?? songs.first else { return false }
+            guard let start = byID[ids[index]] ?? songs.first else {
+                lastError = "Apple Music doesn't have \(tracks[index].name) here. Playing a preview instead."
+                return false
+            }
             let player = ApplicationMusicPlayer.shared
             player.queue = ApplicationMusicPlayer.Queue(for: songs, startingAt: start)
             queueAlbumTitle = nil
@@ -400,6 +417,21 @@ final class PlayerController {
             lastError = "Apple Music: \(error.localizedDescription). Playing a preview instead."
             return false
         }
+    }
+
+    /// The same recording in the catalogue, by title and artist, and within a few seconds of its length when that's
+    /// known (so a live or later version isn't taken for it).
+    private func findSong(like track: CatalogTrack) async -> Song? {
+        var req = MusicCatalogSearchRequest(term: "\(track.name) \(track.artistName)", types: [Song.self])
+        req.limit = 15
+        guard let found = try? await req.response().songs else { return nil }
+        func fold(_ s: String) -> String { s.folding(options: [.diacriticInsensitive, .caseInsensitive], locale: nil) }
+        let title = fold(track.name), artist = fold(track.artistName)
+        let named = found.filter { fold($0.title) == title && (fold($0.artistName).contains(artist) || artist.contains(fold($0.artistName))) }
+        guard let ms = track.durationMillis else { return named.first }
+        let length = Double(ms) / 1000
+        return named.filter { abs(($0.duration ?? 0) - length) <= 3 }
+            .min { abs(($0.duration ?? 0) - length) < abs(($1.duration ?? 0) - length) }
     }
 
     private func playAlbumWithMusicKit(_ album: CatalogAlbum) async -> Bool {

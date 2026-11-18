@@ -13,6 +13,8 @@ enum Route: Hashable {
     case lineage(String)
     case term(String)
     case journey(String)
+    /// A listening guide.
+    case guide(String)
 }
 
 extension Route {
@@ -37,6 +39,7 @@ extension Route {
 ///     era/<id>  artist/<id>  album/<id>  decade/<1950>  decades  connections[/<artist id>]  between/<artist>/<artist>
 ///     tab/<timeline|eras|artists|crate|search>[?q=<search>]  now-playing  settings  passport  radio  blindfold  tune/<id>  songbook  place/<id>  map  label/<id>  labels
 ///     lineage/<id>  lineages  term/<id>  glossary  how-to-listen  path/<id>  paths  today  almanac[/<mm>-<dd>]
+///     guide/<id>  guides
 ///
 /// Links come from anywhere (a web page, another app, a widget), so a link only parses when the page it names exists.
 /// `play/album/<id>` parses as `.playAlbum`; it's the one link that starts music, and the apps honour it only from their
@@ -61,6 +64,8 @@ enum DeepLink: Equatable {
     case glossary
     /// The paths' index.
     case paths
+    /// The listening guides' index.
+    case guides
     /// The almanac, at a day ("05-26") or today.
     case almanac(month: Int?, day: Int?)
     /// Your listening passport.
@@ -119,6 +124,11 @@ enum DeepLink: Equatable {
             self = .page(.journey(id))
         case "paths":
             self = .paths
+        case "guide":
+            guard let id = arg, library.guide(id) != nil else { return nil }
+            self = .page(.guide(id))
+        case "guides":
+            self = .guides
         case "today":
             self = .almanac(month: nil, day: nil)
         case "almanac":

@@ -27,6 +27,7 @@ struct JazzDiscoveryApp: App {
         AppContext.shared.passport = passport
         AppContext.shared.player = player
         MorningNote.shared.start(library: library)
+        if GuideEditorModel.isEnabled { GuideEditorModel.applySaved(to: library) }
         if SelfTest.requested {
             Task { @MainActor in await SelfTest.run(library) }
         }
@@ -61,8 +62,21 @@ struct JazzDiscoveryApp: App {
                 Button("Stop") { player.stop() }
                     .keyboardShortcut(".", modifiers: .command)
                     .disabled(player.current == nil)
+                if GuideEditorModel.isEnabled {
+                    Divider()
+                    GuideEditorMenuItem()
+                }
             }
         }
+
+        // Timing the listening guides; only with `-guideEditor YES` (scripts/guide-editor.sh).
+        Window("Guide Editor", id: GuideEditorView.windowID) {
+            GuideEditorView()
+                .environment(library)
+                .environment(player)
+                .preferredColorScheme(.dark)
+        }
+        .defaultSize(width: 1100, height: 760)
 
         Settings {
             SettingsView()
