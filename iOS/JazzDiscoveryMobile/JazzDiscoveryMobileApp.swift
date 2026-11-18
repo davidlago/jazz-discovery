@@ -124,6 +124,7 @@ struct RouteView: View {
         case .labels: LabelsPage()
         case .lineages: LineagesPage()
         case .paths: PathsPage()
+        case .almanac(let m, let d): AlmanacPage(month: m, day: d)
         case .glossary: GlossaryPage()
         case .radio: RadioPage()
         case .blindfold: BlindfoldPage()

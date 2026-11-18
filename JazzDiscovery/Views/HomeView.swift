@@ -9,6 +9,12 @@ struct HomeView: View {
             VStack(alignment: .leading, spacing: 44) {
                 HomeHero()
 
+                VStack(alignment: .leading, spacing: 14) {
+                    TodayCard(open: { router.go($0) }, openAlmanac: { router.show(.almanac) })
+                    HRow(spacing: 12) { ThisWeekStrip { router.go($0) } }.padding(.horizontal, -40)
+                }
+                .padding(.horizontal, 40)
+
                 ContinueSection()
 
                 HowToListenHome()
@@ -60,7 +66,9 @@ struct HomeView: View {
                     }
                 }
 
-                SpotlightCard()
+                if library.calendar.events(on: .now).isEmpty && library.calendar.nearest(to: .now) == nil {
+                    SpotlightCard()
+                }
 
                 VStack(alignment: .leading, spacing: 6) {
                     SectionHeader(title: "Travel by Decade").padding(.horizontal, 40)

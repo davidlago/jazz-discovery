@@ -28,6 +28,7 @@ enum PhoneRoute: Hashable {
     case lineages
     case glossary
     case paths
+    case almanac(month: Int?, day: Int?)
     case radio
     case blindfold
 
@@ -109,6 +110,7 @@ final class PhoneRouter {
         case .labels: show(.eras, [.labels])
         case .lineages: show(.eras, [.lineages])
         case .paths: show(.timeline, [.paths])
+        case .almanac(let m, let d): show(.timeline, [.almanac(month: m, day: d)])
         case .glossary: show(.eras, [.glossary])
         case .connections(let focus): show(.artists, [.connections(focus: focus)])
         case .between(let a, let b):

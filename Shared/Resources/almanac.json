@@ -1,0 +1,2578 @@
+{
+ "artists": {
+  "albert-ayler": {
+   "born": "1936-07-13"
+  },
+  "alice-coltrane": {
+   "born": "1937-08-27",
+   "died": "2007-01-12"
+  },
+  "ambrose-akinmusire": {
+   "born": "1982-05-01"
+  },
+  "antonio-carlos-jobim": {
+   "born": "1927-01-25",
+   "died": "1994-12-08"
+  },
+  "archie-shepp": {
+   "born": "1937-05-24"
+  },
+  "art-blakey": {
+   "born": "1919-10-11",
+   "died": "1990-10-16"
+  },
+  "art-tatum": {
+   "born": "1909-10-13",
+   "died": "1956-11-05"
+  },
+  "baby-dodds": {
+   "born": "1898-12-24",
+   "died": "1959-02-14"
+  },
+  "ben-webster": {
+   "born": "1909-03-27",
+   "died": "1973-09-20"
+  },
+  "bennie-maupin": {
+   "born": "1940-08-29"
+  },
+  "benny-goodman": {
+   "born": "1909-05-30",
+   "died": "1986-06-13"
+  },
+  "bessie-smith": {
+   "born": "1894-04-15",
+   "died": "1937-09-26"
+  },
+  "bill-evans": {
+   "born": "1929-08-16",
+   "died": "1980-09-15"
+  },
+  "billie-holiday": {
+   "born": "1915-04-07",
+   "died": "1959-07-17"
+  },
+  "billy-higgins": {
+   "born": "1936-10-11",
+   "died": "2001-05-03"
+  },
+  "bix-beiderbecke": {
+   "born": "1903-03-10",
+   "died": "1931-08-06"
+  },
+  "bobby-hutcherson": {
+   "died": "2016-08-15"
+  },
+  "brad-mehldau": {
+   "born": "1970-08-23"
+  },
+  "brandee-younger": {
+   "born": "1983-07-01"
+  },
+  "buck-clayton": {
+   "born": "1911-11-12",
+   "died": "1991-12-08"
+  },
+  "bud-powell": {
+   "born": "1924-09-27",
+   "died": "1966-07-31"
+  },
+  "candido": {
+   "born": "1921-04-22",
+   "died": "2020-11-07"
+  },
+  "cannonball-adderley": {
+   "born": "1928-09-15",
+   "died": "1975-08-08"
+  },
+  "cassandra-wilson": {
+   "born": "1955-12-04",
+   "died": "2026-09-02"
+  },
+  "cecil-taylor": {
+   "born": "1929-03-25",
+   "died": "2018-04-05"
+  },
+  "cecile-mclorin-salvant": {
+   "born": "1989-08-28"
+  },
+  "charles-mingus": {
+   "born": "1922-04-22",
+   "died": "1979-01-05"
+  },
+  "charlie-haden": {
+   "born": "1937-08-06",
+   "died": "2014-07-11"
+  },
+  "charlie-parker": {
+   "born": "1920-08-29",
+   "died": "1955-03-12"
+  },
+  "chet-baker": {
+   "born": "1929-12-23",
+   "died": "1988-05-13"
+  },
+  "chick-corea": {
+   "born": "1941-06-12",
+   "died": "2021-02-09"
+  },
+  "christian-scott": {
+   "born": "1983-03-31"
+  },
+  "chucho-valdes": {
+   "born": "1941-10-09"
+  },
+  "clifford-brown": {
+   "born": "1930-10-30",
+   "died": "1956-06-26"
+  },
+  "coleman-hawkins": {
+   "born": "1904-11-21",
+   "died": "1969-05-19"
+  },
+  "cootie-williams": {
+   "born": "1911-07-10",
+   "died": "1985-09-15"
+  },
+  "count-basie": {
+   "born": "1904-08-21",
+   "died": "1984-04-26"
+  },
+  "dave-brubeck": {
+   "born": "1920-12-06",
+   "died": "2012-12-05"
+  },
+  "dexter-gordon": {
+   "born": "1923-02-27"
+  },
+  "dizzy-gillespie": {
+   "born": "1917-10-21",
+   "died": "1993-01-06"
+  },
+  "django-reinhardt": {
+   "born": "1910-01-23",
+   "died": "1953-05-16"
+  },
+  "don-alias": {
+   "born": "1939-12-25",
+   "died": "2006-03-28"
+  },
+  "don-cherry": {
+   "born": "1936-11-18",
+   "died": "1995-10-19"
+  },
+  "duke-ellington": {
+   "born": "1899-04-29",
+   "died": "1974-05-24"
+  },
+  "earl-hines": {
+   "born": "1903-12-28",
+   "died": "1983-04-22"
+  },
+  "ella-fitzgerald": {
+   "born": "1917-04-25",
+   "died": "1996-06-15"
+  },
+  "elvin-jones": {
+   "born": "1927-09-09",
+   "died": "2004-05-18"
+  },
+  "eric-dolphy": {
+   "born": "1928-06-20",
+   "died": "1964-06-29"
+  },
+  "esperanza-spalding": {
+   "born": "1984-10-18"
+  },
+  "fats-waller": {
+   "born": "1904-05-21",
+   "died": "1943-12-15"
+  },
+  "freddie-green": {
+   "born": "1911-03-31",
+   "died": "1987-03-01"
+  },
+  "freddie-hubbard": {
+   "born": "1938-04-07",
+   "died": "2008-12-29"
+  },
+  "gary-peacock": {
+   "born": "1935-05-12",
+   "died": "2020-09-04"
+  },
+  "gerry-mulligan": {
+   "born": "1927-04-06"
+  },
+  "gil-evans": {
+   "born": "1912-05-13"
+  },
+  "grant-green": {
+   "died": "1979-01-31"
+  },
+  "harry-carney": {
+   "born": "1910-04-01",
+   "died": "1974-10-08"
+  },
+  "harry-edison": {
+   "born": "1915-10-10",
+   "died": "1999-07-27"
+  },
+  "herbie-hancock": {
+   "born": "1940-04-12"
+  },
+  "horace-silver": {
+   "born": "1928-09-02",
+   "died": "2014-06-18"
+  },
+  "j-j-johnson": {
+   "born": "1924-01-22",
+   "died": "2001-02-04"
+  },
+  "jack-dejohnette": {
+   "born": "1942-08-09",
+   "died": "2025-10-26"
+  },
+  "jaco-pastorius": {
+   "born": "1951-12-01",
+   "died": "1987-09-21"
+  },
+  "james-p-johnson": {
+   "born": "1894-02-01",
+   "died": "1955-11-17"
+  },
+  "jelly-roll-morton": {
+   "born": "1890-10-20",
+   "died": "1941-07-10"
+  },
+  "jimmy-blanton": {
+   "born": "1918-10-05",
+   "died": "1942-07-30"
+  },
+  "jimmy-cobb": {
+   "born": "1929-01-20",
+   "died": "2020-05-24"
+  },
+  "jimmy-knepper": {
+   "born": "1927-11-22",
+   "died": "2003-06-14"
+  },
+  "jimmy-smith": {
+   "died": "2005-02-08"
+  },
+  "joao-gilberto": {
+   "born": "1931-06-10",
+   "died": "2019-07-06"
+  },
+  "joe-henderson": {
+   "born": "1937-04-24",
+   "died": "2001-06-30"
+  },
+  "joe-zawinul": {
+   "born": "1932-07-07",
+   "died": "2007-09-11"
+  },
+  "john-coltrane": {
+   "born": "1926-09-23",
+   "died": "1967-07-17"
+  },
+  "john-lewis": {
+   "born": "1920-05-03",
+   "died": "2001-03-29"
+  },
+  "john-mclaughlin": {
+   "born": "1942-01-04"
+  },
+  "johnny-dodds": {
+   "born": "1892-04-12",
+   "died": "1940-08-08"
+  },
+  "johnny-hodges": {
+   "died": "1970-05-11"
+  },
+  "joshua-redman": {
+   "born": "1969-02-01"
+  },
+  "kamasi-washington": {
+   "born": "1981-02-18"
+  },
+  "keith-jarrett": {
+   "born": "1945-05-08"
+  },
+  "kenny-burrell": {
+   "born": "1931-07-31"
+  },
+  "kenny-clarke": {
+   "born": "1914-01-09",
+   "died": "1985-01-26"
+  },
+  "kid-ory": {
+   "born": "1886-12-25",
+   "died": "1973-01-23"
+  },
+  "king-oliver": {
+   "born": "1881-12-19",
+   "died": "1938-04-10"
+  },
+  "lee-konitz": {
+   "born": "1927-10-13",
+   "died": "2020-04-15"
+  },
+  "lee-morgan": {
+   "born": "1938-07-10",
+   "died": "1972-02-19"
+  },
+  "lester-young": {
+   "born": "1909-08-27",
+   "died": "1959-03-15"
+  },
+  "lil-hardin-armstrong": {
+   "born": "1898-02-03",
+   "died": "1971-08-27"
+  },
+  "lionel-hampton": {
+   "born": "1908-04-20",
+   "died": "2002-08-31"
+  },
+  "louis-armstrong": {
+   "born": "1901-08-04",
+   "died": "1971-07-06"
+  },
+  "ma-rainey": {
+   "born": "1886-04-26",
+   "died": "1939-12-22"
+  },
+  "machito": {
+   "died": "1984-04-15"
+  },
+  "makaya-mccraven": {
+   "born": "1983-10-19"
+  },
+  "max-roach": {
+   "born": "1924-01-10",
+   "died": "2007-08-16"
+  },
+  "mccoy-tyner": {
+   "born": "1938-12-11",
+   "died": "2020-03-06"
+  },
+  "miles-davis": {
+   "born": "1926-05-26",
+   "died": "1991-09-28"
+  },
+  "milt-jackson": {
+   "born": "1923-01-01",
+   "died": "1999-10-09"
+  },
+  "mongo-santamaria": {
+   "died": "2003-02-01"
+  },
+  "nina-simone": {
+   "born": "1933-02-21",
+   "died": "2003-04-21"
+  },
+  "ornette-coleman": {
+   "died": "2015-06-11"
+  },
+  "pat-metheny": {
+   "born": "1954-08-12"
+  },
+  "paul-chambers": {
+   "born": "1935-04-22",
+   "died": "1969-01-04"
+  },
+  "paul-desmond": {
+   "born": "1924-11-25",
+   "died": "1977-05-30"
+  },
+  "pharoah-sanders": {
+   "born": "1940-10-13",
+   "died": "2022-09-24"
+  },
+  "richard-davis": {
+   "born": "1930-04-15",
+   "died": "2023-09-06"
+  },
+  "robert-glasper": {
+   "born": "1978-04-05"
+  },
+  "ron-carter": {
+   "born": "1937-05-04"
+  },
+  "roy-hargrove": {
+   "born": "1969-10-16",
+   "died": "2018-11-02"
+  },
+  "roy-haynes": {
+   "born": "1925-03-13",
+   "died": "2024-11-12"
+  },
+  "sarah-vaughan": {
+   "born": "1924-03-27",
+   "died": "1990-04-03"
+  },
+  "sidney-bechet": {
+   "born": "1897-05-14",
+   "died": "1959-05-14"
+  },
+  "sonny-rollins": {
+   "born": "1930-09-07",
+   "died": "2026-05-25"
+  },
+  "stan-getz": {
+   "born": "1927-02-02",
+   "died": "1991-06-06"
+  },
+  "sun-ra": {
+   "born": "1914-05-22",
+   "died": "1993-05-30"
+  },
+  "thelonious-monk": {
+   "born": "1917-10-10",
+   "died": "1982-02-17"
+  },
+  "tito-puente": {
+   "born": "1923-04-20"
+  },
+  "tommy-flanagan": {
+   "born": "1930-03-16",
+   "died": "2001-11-16"
+  },
+  "tony-williams": {
+   "born": "1945-12-12",
+   "died": "1997-02-23"
+  },
+  "walter-page": {
+   "born": "1900-02-09",
+   "died": "1957-12-20"
+  },
+  "wayne-shorter": {
+   "born": "1933-08-25",
+   "died": "2023-03-02"
+  },
+  "wynton-kelly": {
+   "born": "1931-12-02",
+   "died": "1971-04-12"
+  },
+  "wynton-marsalis": {
+   "born": "1961-10-18"
+  }
+ },
+ "days": {
+  "01-01": [
+   {
+    "artist": "milt-jackson",
+    "kind": "born",
+    "year": 1923
+   }
+  ],
+  "01-04": [
+   {
+    "artist": "john-mclaughlin",
+    "kind": "born",
+    "year": 1942
+   },
+   {
+    "artist": "paul-chambers",
+    "kind": "died",
+    "year": 1969
+   }
+  ],
+  "01-05": [
+   {
+    "album": "habana",
+    "kind": "recorded",
+    "year": 1997
+   },
+   {
+    "artist": "charles-mingus",
+    "kind": "died",
+    "year": 1979
+   }
+  ],
+  "01-06": [
+   {
+    "album": "habana",
+    "kind": "recorded",
+    "year": 1997
+   },
+   {
+    "artist": "dizzy-gillespie",
+    "kind": "died",
+    "year": 1993
+   }
+  ],
+  "01-09": [
+   {
+    "artist": "kenny-clarke",
+    "kind": "born",
+    "year": 1914
+   }
+  ],
+  "01-10": [
+   {
+    "artist": "max-roach",
+    "kind": "born",
+    "year": 1924
+   }
+  ],
+  "01-11": [
+   {
+    "album": "standards-vol-1",
+    "kind": "recorded",
+    "place": "Power Station, New York",
+    "year": 1983
+   }
+  ],
+  "01-12": [
+   {
+    "album": "standards-vol-1",
+    "kind": "recorded",
+    "place": "Power Station, New York",
+    "year": 1983
+   },
+   {
+    "artist": "alice-coltrane",
+    "kind": "died",
+    "year": 2007
+   }
+  ],
+  "01-16": [
+   {
+    "album": "carnegie-hall-1938",
+    "kind": "recorded",
+    "place": "Carnegie Hall",
+    "year": 1938
+   }
+  ],
+  "01-20": [
+   {
+    "artist": "jimmy-cobb",
+    "kind": "born",
+    "year": 1929
+   }
+  ],
+  "01-21": [
+   {
+    "album": "birth-of-the-cool",
+    "kind": "recorded",
+    "place": "WOR Studios, New York",
+    "year": 1949
+   }
+  ],
+  "01-22": [
+   {
+    "artist": "j-j-johnson",
+    "kind": "born",
+    "year": 1924
+   }
+  ],
+  "01-23": [
+   {
+    "artist": "django-reinhardt",
+    "kind": "born",
+    "year": 1910
+   },
+   {
+    "artist": "kid-ory",
+    "kind": "died",
+    "year": 1973
+   }
+  ],
+  "01-25": [
+   {
+    "artist": "antonio-carlos-jobim",
+    "kind": "born",
+    "year": 1927
+   }
+  ],
+  "01-26": [
+   {
+    "artist": "kenny-clarke",
+    "kind": "died",
+    "year": 1985
+   }
+  ],
+  "01-31": [
+   {
+    "artist": "grant-green",
+    "kind": "died",
+    "year": 1979
+   }
+  ],
+  "02-01": [
+   {
+    "artist": "james-p-johnson",
+    "kind": "born",
+    "year": 1894
+   },
+   {
+    "artist": "joshua-redman",
+    "kind": "born",
+    "year": 1969
+   },
+   {
+    "artist": "mongo-santamaria",
+    "kind": "died",
+    "year": 2003
+   }
+  ],
+  "02-02": [
+   {
+    "album": "return-to-forever",
+    "kind": "recorded",
+    "place": "A&R Studios, New York",
+    "year": 1972
+   },
+   {
+    "artist": "stan-getz",
+    "kind": "born",
+    "year": 1927
+   }
+  ],
+  "02-03": [
+   {
+    "album": "return-to-forever",
+    "kind": "recorded",
+    "place": "A&R Studios, New York",
+    "year": 1972
+   },
+   {
+    "artist": "lil-hardin-armstrong",
+    "kind": "born",
+    "year": 1898
+   }
+  ],
+  "02-04": [
+   {
+    "artist": "j-j-johnson",
+    "kind": "died",
+    "year": 2001
+   }
+  ],
+  "02-07": [
+   {
+    "album": "ella-cole-porter",
+    "kind": "recorded",
+    "place": "Capitol Studios, Los Angeles",
+    "year": 1956
+   }
+  ],
+  "02-08": [
+   {
+    "album": "ella-cole-porter",
+    "kind": "recorded",
+    "place": "Capitol Studios, Los Angeles",
+    "year": 1956
+   },
+   {
+    "artist": "jimmy-smith",
+    "kind": "died",
+    "year": 2005
+   }
+  ],
+  "02-09": [
+   {
+    "album": "ella-cole-porter",
+    "kind": "recorded",
+    "place": "Capitol Studios, Los Angeles",
+    "year": 1956
+   },
+   {
+    "artist": "walter-page",
+    "kind": "born",
+    "year": 1900
+   },
+   {
+    "artist": "chick-corea",
+    "kind": "died",
+    "year": 2021
+   }
+  ],
+  "02-14": [
+   {
+    "album": "karma",
+    "kind": "recorded",
+    "year": 1969
+   },
+   {
+    "artist": "baby-dodds",
+    "kind": "died",
+    "year": 1959
+   }
+  ],
+  "02-15": [
+   {
+    "album": "chet-baker-sings",
+    "kind": "recorded",
+    "place": "Capitol Melrose Studios, Los Angeles",
+    "year": 1954
+   }
+  ],
+  "02-16": [
+   {
+    "album": "fire-music",
+    "kind": "recorded",
+    "place": "Van Gelder Studio, Englewood Cliffs",
+    "year": 1965
+   }
+  ],
+  "02-17": [
+   {
+    "artist": "thelonious-monk",
+    "kind": "died",
+    "year": 1982
+   }
+  ],
+  "02-18": [
+   {
+    "artist": "kamasi-washington",
+    "kind": "born",
+    "year": 1981
+   }
+  ],
+  "02-19": [
+   {
+    "album": "karma",
+    "kind": "recorded",
+    "place": "RCA Studio A",
+    "year": 1969
+   },
+   {
+    "artist": "lee-morgan",
+    "kind": "died",
+    "year": 1972
+   }
+  ],
+  "02-21": [
+   {
+    "artist": "nina-simone",
+    "kind": "born",
+    "year": 1933
+   }
+  ],
+  "02-23": [
+   {
+    "album": "study-in-brown",
+    "kind": "recorded",
+    "place": "Capitol Studios",
+    "year": 1955
+   },
+   {
+    "artist": "tony-williams",
+    "kind": "died",
+    "year": 1997
+   }
+  ],
+  "02-24": [
+   {
+    "album": "study-in-brown",
+    "kind": "recorded",
+    "place": "Capitol Studios",
+    "year": 1955
+   }
+  ],
+  "02-25": [
+   {
+    "album": "study-in-brown",
+    "kind": "recorded",
+    "place": "Capitol Studios",
+    "year": 1955
+   },
+   {
+    "album": "the-sermon",
+    "kind": "recorded",
+    "place": "Manhattan Towers, New York",
+    "year": 1958
+   },
+   {
+    "album": "out-to-lunch",
+    "kind": "recorded",
+    "place": "Van Gelder Studio",
+    "year": 1964
+   }
+  ],
+  "02-27": [
+   {
+    "artist": "dexter-gordon",
+    "kind": "born",
+    "year": 1923
+   }
+  ],
+  "03-01": [
+   {
+    "artist": "freddie-green",
+    "kind": "died",
+    "year": 1987
+   }
+  ],
+  "03-02": [
+   {
+    "album": "kind-of-blue",
+    "kind": "recorded",
+    "place": "CBS 30th Street Studio, New York",
+    "year": 1959
+   },
+   {
+    "artist": "wayne-shorter",
+    "kind": "died",
+    "year": 2023
+   }
+  ],
+  "03-06": [
+   {
+    "artist": "mccoy-tyner",
+    "kind": "died",
+    "year": 2020
+   }
+  ],
+  "03-09": [
+   {
+    "album": "birth-of-the-cool",
+    "kind": "recorded",
+    "place": "WOR Studios, New York",
+    "year": 1950
+   },
+   {
+    "album": "somethin-else",
+    "kind": "recorded",
+    "place": "Van Gelder Studio",
+    "year": 1958
+   },
+   {
+    "album": "fire-music",
+    "kind": "recorded",
+    "place": "Van Gelder Studio, Englewood Cliffs",
+    "year": 1965
+   }
+  ],
+  "03-10": [
+   {
+    "artist": "bix-beiderbecke",
+    "kind": "born",
+    "year": 1903
+   }
+  ],
+  "03-12": [
+   {
+    "artist": "charlie-parker",
+    "kind": "died",
+    "year": 1955
+   }
+  ],
+  "03-13": [
+   {
+    "artist": "roy-haynes",
+    "kind": "born",
+    "year": 1925
+   }
+  ],
+  "03-15": [
+   {
+    "artist": "lester-young",
+    "kind": "died",
+    "year": 1959
+   }
+  ],
+  "03-16": [
+   {
+    "artist": "tommy-flanagan",
+    "kind": "born",
+    "year": 1930
+   }
+  ],
+  "03-17": [
+   {
+    "album": "maiden-voyage",
+    "kind": "recorded",
+    "place": "Van Gelder Studio",
+    "year": 1965
+   }
+  ],
+  "03-18": [
+   {
+    "album": "getz-gilberto",
+    "kind": "recorded",
+    "place": "A&R Recording, New York",
+    "year": 1963
+   }
+  ],
+  "03-19": [
+   {
+    "album": "getz-gilberto",
+    "kind": "recorded",
+    "place": "A&R Recording, New York",
+    "year": 1963
+   }
+  ],
+  "03-25": [
+   {
+    "album": "billie-commodore",
+    "kind": "recorded",
+    "place": "New York",
+    "year": 1944
+   },
+   {
+    "artist": "cecil-taylor",
+    "kind": "born",
+    "year": 1929
+   }
+  ],
+  "03-27": [
+   {
+    "album": "ella-cole-porter",
+    "kind": "recorded",
+    "place": "Capitol Studios, Los Angeles",
+    "year": 1956
+   },
+   {
+    "artist": "ben-webster",
+    "kind": "born",
+    "year": 1909
+   },
+   {
+    "artist": "sarah-vaughan",
+    "kind": "born",
+    "year": 1924
+   }
+  ],
+  "03-28": [
+   {
+    "artist": "don-alias",
+    "kind": "died",
+    "year": 2006
+   }
+  ],
+  "03-29": [
+   {
+    "artist": "john-lewis",
+    "kind": "died",
+    "year": 2001
+   }
+  ],
+  "03-31": [
+   {
+    "artist": "freddie-green",
+    "kind": "born",
+    "year": 1911
+   },
+   {
+    "artist": "christian-scott",
+    "kind": "born",
+    "year": 1983
+   }
+  ],
+  "04-01": [
+   {
+    "album": "billie-commodore",
+    "kind": "recorded",
+    "place": "New York",
+    "year": 1944
+   },
+   {
+    "artist": "harry-carney",
+    "kind": "born",
+    "year": 1910
+   }
+  ],
+  "04-03": [
+   {
+    "artist": "sarah-vaughan",
+    "kind": "died",
+    "year": 1990
+   }
+  ],
+  "04-05": [
+   {
+    "artist": "robert-glasper",
+    "kind": "born",
+    "year": 1978
+   },
+   {
+    "artist": "cecil-taylor",
+    "kind": "died",
+    "year": 2018
+   }
+  ],
+  "04-06": [
+   {
+    "artist": "gerry-mulligan",
+    "kind": "born",
+    "year": 1927
+   }
+  ],
+  "04-07": [
+   {
+    "artist": "billie-holiday",
+    "kind": "born",
+    "year": 1915
+   },
+   {
+    "artist": "freddie-hubbard",
+    "kind": "born",
+    "year": 1938
+   }
+  ],
+  "04-08": [
+   {
+    "album": "billie-commodore",
+    "kind": "recorded",
+    "place": "New York",
+    "year": 1944
+   }
+  ],
+  "04-10": [
+   {
+    "artist": "king-oliver",
+    "kind": "died",
+    "year": 1938
+   }
+  ],
+  "04-12": [
+   {
+    "artist": "johnny-dodds",
+    "kind": "born",
+    "year": 1892
+   },
+   {
+    "artist": "herbie-hancock",
+    "kind": "born",
+    "year": 1940
+   },
+   {
+    "artist": "wynton-kelly",
+    "kind": "died",
+    "year": 1971
+   }
+  ],
+  "04-15": [
+   {
+    "artist": "bessie-smith",
+    "kind": "born",
+    "year": 1894
+   },
+   {
+    "artist": "richard-davis",
+    "kind": "born",
+    "year": 1930
+   },
+   {
+    "artist": "machito",
+    "kind": "died",
+    "year": 1984
+   },
+   {
+    "artist": "lee-konitz",
+    "kind": "died",
+    "year": 2020
+   }
+  ],
+  "04-20": [
+   {
+    "album": "billie-commodore",
+    "kind": "recorded",
+    "place": "New York",
+    "year": 1939
+   },
+   {
+    "artist": "lionel-hampton",
+    "kind": "born",
+    "year": 1908
+   },
+   {
+    "artist": "tito-puente",
+    "kind": "born",
+    "year": 1923
+   }
+  ],
+  "04-21": [
+   {
+    "album": "the-real-mccoy",
+    "kind": "recorded",
+    "place": "Van Gelder Studio",
+    "year": 1967
+   },
+   {
+    "artist": "nina-simone",
+    "kind": "died",
+    "year": 2003
+   }
+  ],
+  "04-22": [
+   {
+    "album": "birth-of-the-cool",
+    "kind": "recorded",
+    "place": "WOR Studios, New York",
+    "year": 1949
+   },
+   {
+    "album": "kind-of-blue",
+    "kind": "recorded",
+    "place": "CBS 30th Street Studio, New York",
+    "year": 1959
+   },
+   {
+    "artist": "candido",
+    "kind": "born",
+    "year": 1921
+   },
+   {
+    "artist": "charles-mingus",
+    "kind": "born",
+    "year": 1922
+   },
+   {
+    "artist": "paul-chambers",
+    "kind": "born",
+    "year": 1935
+   },
+   {
+    "artist": "earl-hines",
+    "kind": "died",
+    "year": 1983
+   }
+  ],
+  "04-24": [
+   {
+    "artist": "joe-henderson",
+    "kind": "born",
+    "year": 1937
+   }
+  ],
+  "04-25": [
+   {
+    "album": "back-at-the-chicken-shack",
+    "kind": "recorded",
+    "place": "Van Gelder Studio",
+    "year": 1960
+   },
+   {
+    "artist": "ella-fitzgerald",
+    "kind": "born",
+    "year": 1917
+   }
+  ],
+  "04-26": [
+   {
+    "artist": "ma-rainey",
+    "kind": "born",
+    "year": 1886
+   },
+   {
+    "artist": "count-basie",
+    "kind": "died",
+    "year": 1984
+   }
+  ],
+  "04-29": [
+   {
+    "artist": "duke-ellington",
+    "kind": "born",
+    "year": 1899
+   }
+  ],
+  "05-01": [
+   {
+    "album": "amazing-bud-powell-1",
+    "kind": "recorded",
+    "place": "WOR Studios",
+    "year": 1951
+   },
+   {
+    "artist": "ambrose-akinmusire",
+    "kind": "born",
+    "year": 1982
+   }
+  ],
+  "05-03": [
+   {
+    "artist": "john-lewis",
+    "kind": "born",
+    "year": 1920
+   },
+   {
+    "artist": "billy-higgins",
+    "kind": "died",
+    "year": 2001
+   }
+  ],
+  "05-04": [
+   {
+    "album": "giant-steps",
+    "kind": "recorded",
+    "place": "Atlantic Studios",
+    "year": 1959
+   },
+   {
+    "artist": "ron-carter",
+    "kind": "born",
+    "year": 1937
+   }
+  ],
+  "05-05": [
+   {
+    "album": "giant-steps",
+    "kind": "recorded",
+    "place": "Atlantic Studios",
+    "year": 1959
+   },
+   {
+    "album": "mingus-ah-um",
+    "kind": "recorded",
+    "place": "Columbia 30th Street Studio, New York",
+    "year": 1959
+   }
+  ],
+  "05-06": [
+   {
+    "album": "miles-ahead",
+    "kind": "recorded",
+    "place": "Columbia 30th Street Studio, New York",
+    "year": 1957
+   }
+  ],
+  "05-08": [
+   {
+    "artist": "keith-jarrett",
+    "kind": "born",
+    "year": 1945
+   }
+  ],
+  "05-10": [
+   {
+    "album": "miles-ahead",
+    "kind": "recorded",
+    "place": "Columbia 30th Street Studio, New York",
+    "year": 1957
+   }
+  ],
+  "05-11": [
+   {
+    "artist": "johnny-hodges",
+    "kind": "died",
+    "year": 1970
+   }
+  ],
+  "05-12": [
+   {
+    "album": "mingus-ah-um",
+    "kind": "recorded",
+    "place": "Columbia 30th Street Studio, New York",
+    "year": 1959
+   },
+   {
+    "artist": "gary-peacock",
+    "kind": "born",
+    "year": 1935
+   }
+  ],
+  "05-13": [
+   {
+    "artist": "gil-evans",
+    "kind": "born",
+    "year": 1912
+   },
+   {
+    "artist": "chet-baker",
+    "kind": "died",
+    "year": 1988
+   }
+  ],
+  "05-14": [
+   {
+    "artist": "sidney-bechet",
+    "kind": "born",
+    "year": 1897
+   },
+   {
+    "artist": "sidney-bechet",
+    "kind": "died",
+    "year": 1959
+   }
+  ],
+  "05-15": [
+   {
+    "album": "jazz-at-massey-hall",
+    "kind": "recorded",
+    "place": "Massey Hall, Toronto",
+    "year": 1953
+   }
+  ],
+  "05-16": [
+   {
+    "artist": "django-reinhardt",
+    "kind": "died",
+    "year": 1953
+   }
+  ],
+  "05-18": [
+   {
+    "artist": "elvin-jones",
+    "kind": "died",
+    "year": 2004
+   }
+  ],
+  "05-19": [
+   {
+    "album": "unit-structures",
+    "kind": "recorded",
+    "place": "Van Gelder Studio",
+    "year": 1966
+   },
+   {
+    "artist": "coleman-hawkins",
+    "kind": "died",
+    "year": 1969
+   }
+  ],
+  "05-21": [
+   {
+    "artist": "fats-waller",
+    "kind": "born",
+    "year": 1904
+   }
+  ],
+  "05-22": [
+   {
+    "album": "the-shape-of-jazz-to-come",
+    "kind": "recorded",
+    "place": "Radio Recorders, Hollywood",
+    "year": 1959
+   },
+   {
+    "album": "wave",
+    "kind": "recorded",
+    "place": "Van Gelder Studio, Englewood Cliffs",
+    "year": 1967
+   },
+   {
+    "artist": "sun-ra",
+    "kind": "born",
+    "year": 1914
+   }
+  ],
+  "05-23": [
+   {
+    "album": "miles-ahead",
+    "kind": "recorded",
+    "place": "Columbia 30th Street Studio, New York",
+    "year": 1957
+   },
+   {
+    "album": "wave",
+    "kind": "recorded",
+    "place": "Van Gelder Studio, Englewood Cliffs",
+    "year": 1967
+   }
+  ],
+  "05-24": [
+   {
+    "album": "afro",
+    "kind": "recorded",
+    "year": 1954
+   },
+   {
+    "album": "wave",
+    "kind": "recorded",
+    "place": "Van Gelder Studio, Englewood Cliffs",
+    "year": 1967
+   },
+   {
+    "artist": "archie-shepp",
+    "kind": "born",
+    "year": 1937
+   },
+   {
+    "artist": "duke-ellington",
+    "kind": "died",
+    "year": 1974
+   },
+   {
+    "artist": "jimmy-cobb",
+    "kind": "died",
+    "year": 2020
+   }
+  ],
+  "05-25": [
+   {
+    "artist": "sonny-rollins",
+    "kind": "died",
+    "year": 2026
+   }
+  ],
+  "05-26": [
+   {
+    "artist": "miles-davis",
+    "kind": "born",
+    "year": 1926
+   }
+  ],
+  "05-27": [
+   {
+    "album": "miles-ahead",
+    "kind": "recorded",
+    "place": "Columbia 30th Street Studio, New York",
+    "year": 1957
+   }
+  ],
+  "05-30": [
+   {
+    "artist": "benny-goodman",
+    "kind": "born",
+    "year": 1909
+   },
+   {
+    "artist": "paul-desmond",
+    "kind": "died",
+    "year": 1977
+   },
+   {
+    "artist": "sun-ra",
+    "kind": "died",
+    "year": 1993
+   }
+  ],
+  "06-03": [
+   {
+    "album": "afro",
+    "kind": "recorded",
+    "year": 1954
+   }
+  ],
+  "06-06": [
+   {
+    "artist": "stan-getz",
+    "kind": "died",
+    "year": 1991
+   }
+  ],
+  "06-10": [
+   {
+    "artist": "joao-gilberto",
+    "kind": "born",
+    "year": 1931
+   }
+  ],
+  "06-11": [
+   {
+    "artist": "ornette-coleman",
+    "kind": "died",
+    "year": 2015
+   }
+  ],
+  "06-12": [
+   {
+    "artist": "chick-corea",
+    "kind": "born",
+    "year": 1941
+   }
+  ],
+  "06-13": [
+   {
+    "artist": "benny-goodman",
+    "kind": "died",
+    "year": 1986
+   }
+  ],
+  "06-14": [
+   {
+    "artist": "jimmy-knepper",
+    "kind": "died",
+    "year": 2003
+   }
+  ],
+  "06-15": [
+   {
+    "album": "wave",
+    "kind": "recorded",
+    "place": "Van Gelder Studio, Englewood Cliffs",
+    "year": 1967
+   },
+   {
+    "artist": "ella-fitzgerald",
+    "kind": "died",
+    "year": 1996
+   }
+  ],
+  "06-18": [
+   {
+    "artist": "horace-silver",
+    "kind": "died",
+    "year": 2014
+   }
+  ],
+  "06-20": [
+   {
+    "artist": "eric-dolphy",
+    "kind": "born",
+    "year": 1928
+   }
+  ],
+  "06-22": [
+   {
+    "album": "saxophone-colossus",
+    "kind": "recorded",
+    "place": "Van Gelder Studio",
+    "year": 1956
+   }
+  ],
+  "06-25": [
+   {
+    "album": "time-out",
+    "kind": "recorded",
+    "place": "CBS 30th Street Studio",
+    "year": 1959
+   },
+   {
+    "album": "sunday-at-the-village-vanguard",
+    "kind": "recorded",
+    "place": "Village Vanguard",
+    "year": 1961
+   }
+  ],
+  "06-26": [
+   {
+    "artist": "clifford-brown",
+    "kind": "died",
+    "year": 1956
+   }
+  ],
+  "06-29": [
+   {
+    "artist": "eric-dolphy",
+    "kind": "died",
+    "year": 1964
+   }
+  ],
+  "06-30": [
+   {
+    "artist": "joe-henderson",
+    "kind": "died",
+    "year": 2001
+   }
+  ],
+  "07-01": [
+   {
+    "album": "time-out",
+    "kind": "recorded",
+    "place": "CBS 30th Street Studio",
+    "year": 1959
+   },
+   {
+    "artist": "brandee-younger",
+    "kind": "born",
+    "year": 1983
+   }
+  ],
+  "07-02": [
+   {
+    "album": "genius-of-modern-music-1",
+    "kind": "recorded",
+    "place": "Apex Studios",
+    "year": 1948
+   }
+  ],
+  "07-04": [
+   {
+    "album": "journey-in-satchidananda",
+    "kind": "recorded",
+    "place": "The Village Gate",
+    "year": 1970
+   }
+  ],
+  "07-06": [
+   {
+    "artist": "louis-armstrong",
+    "kind": "died",
+    "year": 1971
+   },
+   {
+    "artist": "joao-gilberto",
+    "kind": "died",
+    "year": 2019
+   }
+  ],
+  "07-07": [
+   {
+    "artist": "joe-zawinul",
+    "kind": "born",
+    "year": 1932
+   }
+  ],
+  "07-08": [
+   {
+    "album": "heavy-weather",
+    "kind": "recorded",
+    "place": "Montreux Jazz Festival",
+    "year": 1976
+   }
+  ],
+  "07-10": [
+   {
+    "album": "spiritual-unity",
+    "kind": "recorded",
+    "year": 1964
+   },
+   {
+    "artist": "cootie-williams",
+    "kind": "born",
+    "year": 1911
+   },
+   {
+    "artist": "lee-morgan",
+    "kind": "born",
+    "year": 1938
+   },
+   {
+    "artist": "jelly-roll-morton",
+    "kind": "died",
+    "year": 1941
+   }
+  ],
+  "07-11": [
+   {
+    "artist": "charlie-haden",
+    "kind": "died",
+    "year": 2014
+   }
+  ],
+  "07-13": [
+   {
+    "artist": "albert-ayler",
+    "kind": "born",
+    "year": 1936
+   }
+  ],
+  "07-17": [
+   {
+    "artist": "billie-holiday",
+    "kind": "died",
+    "year": 1959
+   },
+   {
+    "artist": "john-coltrane",
+    "kind": "died",
+    "year": 1967
+   }
+  ],
+  "07-23": [
+   {
+    "album": "chet-baker-sings",
+    "kind": "recorded",
+    "place": "Forum Theatre, Los Angeles",
+    "year": 1956
+   }
+  ],
+  "07-27": [
+   {
+    "artist": "harry-edison",
+    "kind": "died",
+    "year": 1999
+   }
+  ],
+  "07-30": [
+   {
+    "album": "chet-baker-sings",
+    "kind": "recorded",
+    "place": "Forum Theatre, Los Angeles",
+    "year": 1956
+   },
+   {
+    "artist": "jimmy-blanton",
+    "kind": "died",
+    "year": 1942
+   }
+  ],
+  "07-31": [
+   {
+    "artist": "kenny-burrell",
+    "kind": "born",
+    "year": 1931
+   },
+   {
+    "artist": "bud-powell",
+    "kind": "died",
+    "year": 1966
+   }
+  ],
+  "08-04": [
+   {
+    "artist": "louis-armstrong",
+    "kind": "born",
+    "year": 1901
+   }
+  ],
+  "08-06": [
+   {
+    "artist": "charlie-haden",
+    "kind": "born",
+    "year": 1937
+   },
+   {
+    "artist": "bix-beiderbecke",
+    "kind": "died",
+    "year": 1931
+   }
+  ],
+  "08-08": [
+   {
+    "album": "amazing-bud-powell-1",
+    "kind": "recorded",
+    "place": "WOR Studios",
+    "year": 1949
+   },
+   {
+    "artist": "johnny-dodds",
+    "kind": "died",
+    "year": 1940
+   },
+   {
+    "artist": "cannonball-adderley",
+    "kind": "died",
+    "year": 1975
+   }
+  ],
+  "08-09": [
+   {
+    "artist": "jack-dejohnette",
+    "kind": "born",
+    "year": 1942
+   }
+  ],
+  "08-12": [
+   {
+    "artist": "pat-metheny",
+    "kind": "born",
+    "year": 1954
+   }
+  ],
+  "08-14": [
+   {
+    "album": "the-inner-mounting-flame",
+    "kind": "recorded",
+    "place": "Columbia Studios, New York",
+    "year": 1971
+   }
+  ],
+  "08-15": [
+   {
+    "artist": "bobby-hutcherson",
+    "kind": "died",
+    "year": 2016
+   }
+  ],
+  "08-16": [
+   {
+    "artist": "bill-evans",
+    "kind": "born",
+    "year": 1929
+   },
+   {
+    "artist": "max-roach",
+    "kind": "died",
+    "year": 2007
+   }
+  ],
+  "08-18": [
+   {
+    "album": "time-out",
+    "kind": "recorded",
+    "place": "CBS 30th Street Studio",
+    "year": 1959
+   }
+  ],
+  "08-19": [
+   {
+    "album": "bitches-brew",
+    "kind": "recorded",
+    "place": "Columbia Studio B, New York",
+    "year": 1969
+   }
+  ],
+  "08-20": [
+   {
+    "album": "bitches-brew",
+    "kind": "recorded",
+    "place": "Columbia Studio B, New York",
+    "year": 1969
+   }
+  ],
+  "08-21": [
+   {
+    "album": "bitches-brew",
+    "kind": "recorded",
+    "place": "Columbia Studio B, New York",
+    "year": 1969
+   },
+   {
+    "artist": "count-basie",
+    "kind": "born",
+    "year": 1904
+   }
+  ],
+  "08-23": [
+   {
+    "artist": "brad-mehldau",
+    "kind": "born",
+    "year": 1970
+   }
+  ],
+  "08-25": [
+   {
+    "album": "the-sermon",
+    "kind": "recorded",
+    "place": "Manhattan Towers, New York",
+    "year": 1957
+   },
+   {
+    "artist": "wayne-shorter",
+    "kind": "born",
+    "year": 1933
+   }
+  ],
+  "08-27": [
+   {
+    "album": "go",
+    "kind": "recorded",
+    "place": "Van Gelder Studio",
+    "year": 1962
+   },
+   {
+    "artist": "lester-young",
+    "kind": "born",
+    "year": 1909
+   },
+   {
+    "artist": "alice-coltrane",
+    "kind": "born",
+    "year": 1937
+   },
+   {
+    "artist": "lil-hardin-armstrong",
+    "kind": "died",
+    "year": 1971
+   }
+  ],
+  "08-28": [
+   {
+    "artist": "cecile-mclorin-salvant",
+    "kind": "born",
+    "year": 1989
+   }
+  ],
+  "08-29": [
+   {
+    "album": "universal-beings",
+    "kind": "recorded",
+    "place": "H0l0, Ridgewood, New York",
+    "year": 2017
+   },
+   {
+    "artist": "charlie-parker",
+    "kind": "born",
+    "year": 1920
+   },
+   {
+    "artist": "bennie-maupin",
+    "kind": "born",
+    "year": 1940
+   }
+  ],
+  "08-31": [
+   {
+    "artist": "lionel-hampton",
+    "kind": "died",
+    "year": 2002
+   }
+  ],
+  "09-02": [
+   {
+    "artist": "horace-silver",
+    "kind": "born",
+    "year": 1928
+   },
+   {
+    "artist": "cassandra-wilson",
+    "kind": "died",
+    "year": 2026
+   }
+  ],
+  "09-04": [
+   {
+    "album": "art-of-the-trio-vol-1",
+    "kind": "recorded",
+    "place": "Mad Hatter Studios, Los Angeles",
+    "year": 1996
+   },
+   {
+    "artist": "gary-peacock",
+    "kind": "died",
+    "year": 2020
+   }
+  ],
+  "09-05": [
+   {
+    "album": "art-of-the-trio-vol-1",
+    "kind": "recorded",
+    "place": "Mad Hatter Studios, Los Angeles",
+    "year": 1996
+   }
+  ],
+  "09-06": [
+   {
+    "artist": "richard-davis",
+    "kind": "died",
+    "year": 2023
+   }
+  ],
+  "09-07": [
+   {
+    "artist": "sonny-rollins",
+    "kind": "born",
+    "year": 1930
+   }
+  ],
+  "09-09": [
+   {
+    "artist": "elvin-jones",
+    "kind": "born",
+    "year": 1927
+   }
+  ],
+  "09-11": [
+   {
+    "artist": "joe-zawinul",
+    "kind": "died",
+    "year": 2007
+   }
+  ],
+  "09-15": [
+   {
+    "album": "blue-train",
+    "kind": "recorded",
+    "place": "Van Gelder Studio",
+    "year": 1957
+   },
+   {
+    "artist": "cannonball-adderley",
+    "kind": "born",
+    "year": 1928
+   },
+   {
+    "artist": "bill-evans",
+    "kind": "died",
+    "year": 1980
+   },
+   {
+    "artist": "cootie-williams",
+    "kind": "died",
+    "year": 1985
+   }
+  ],
+  "09-20": [
+   {
+    "artist": "ben-webster",
+    "kind": "died",
+    "year": 1973
+   }
+  ],
+  "09-21": [
+   {
+    "artist": "jaco-pastorius",
+    "kind": "died",
+    "year": 1987
+   }
+  ],
+  "09-23": [
+   {
+    "artist": "john-coltrane",
+    "kind": "born",
+    "year": 1926
+   }
+  ],
+  "09-24": [
+   {
+    "artist": "pharoah-sanders",
+    "kind": "died",
+    "year": 2022
+   }
+  ],
+  "09-26": [
+   {
+    "artist": "bessie-smith",
+    "kind": "died",
+    "year": 1937
+   }
+  ],
+  "09-27": [
+   {
+    "artist": "bud-powell",
+    "kind": "born",
+    "year": 1924
+   }
+  ],
+  "09-28": [
+   {
+    "artist": "miles-davis",
+    "kind": "died",
+    "year": 1991
+   }
+  ],
+  "10-05": [
+   {
+    "artist": "jimmy-blanton",
+    "kind": "born",
+    "year": 1918
+   }
+  ],
+  "10-08": [
+   {
+    "artist": "harry-carney",
+    "kind": "died",
+    "year": 1974
+   }
+  ],
+  "10-09": [
+   {
+    "artist": "chucho-valdes",
+    "kind": "born",
+    "year": 1941
+   },
+   {
+    "artist": "milt-jackson",
+    "kind": "died",
+    "year": 1999
+   }
+  ],
+  "10-10": [
+   {
+    "artist": "harry-edison",
+    "kind": "born",
+    "year": 1915
+   },
+   {
+    "artist": "thelonious-monk",
+    "kind": "born",
+    "year": 1917
+   }
+  ],
+  "10-11": [
+   {
+    "artist": "art-blakey",
+    "kind": "born",
+    "year": 1919
+   },
+   {
+    "artist": "billy-higgins",
+    "kind": "born",
+    "year": 1936
+   }
+  ],
+  "10-13": [
+   {
+    "artist": "art-tatum",
+    "kind": "born",
+    "year": 1909
+   },
+   {
+    "artist": "lee-konitz",
+    "kind": "born",
+    "year": 1927
+   },
+   {
+    "artist": "pharoah-sanders",
+    "kind": "born",
+    "year": 1940
+   }
+  ],
+  "10-15": [
+   {
+    "album": "genius-of-modern-music-1",
+    "kind": "recorded",
+    "place": "WOR Studios",
+    "year": 1947
+   }
+  ],
+  "10-16": [
+   {
+    "artist": "roy-hargrove",
+    "kind": "born",
+    "year": 1969
+   },
+   {
+    "artist": "art-blakey",
+    "kind": "died",
+    "year": 1990
+   }
+  ],
+  "10-18": [
+   {
+    "artist": "wynton-marsalis",
+    "kind": "born",
+    "year": 1961
+   },
+   {
+    "artist": "esperanza-spalding",
+    "kind": "born",
+    "year": 1984
+   }
+  ],
+  "10-19": [
+   {
+    "album": "space-is-the-place",
+    "kind": "recorded",
+    "place": "Streeterville Studios, Chicago",
+    "year": 1972
+   },
+   {
+    "artist": "makaya-mccraven",
+    "kind": "born",
+    "year": 1983
+   },
+   {
+    "artist": "don-cherry",
+    "kind": "died",
+    "year": 1995
+   }
+  ],
+  "10-20": [
+   {
+    "album": "mercy-mercy-mercy",
+    "kind": "recorded",
+    "place": "Capitol Studios",
+    "year": 1966
+   },
+   {
+    "album": "space-is-the-place",
+    "kind": "recorded",
+    "place": "Streeterville Studios, Chicago",
+    "year": 1972
+   },
+   {
+    "artist": "jelly-roll-morton",
+    "kind": "born",
+    "year": 1890
+   }
+  ],
+  "10-21": [
+   {
+    "album": "my-favorite-things",
+    "kind": "recorded",
+    "place": "Atlantic Studios",
+    "year": 1960
+   },
+   {
+    "artist": "dizzy-gillespie",
+    "kind": "born",
+    "year": 1917
+   }
+  ],
+  "10-24": [
+   {
+    "album": "genius-of-modern-music-1",
+    "kind": "recorded",
+    "place": "WOR Studios",
+    "year": 1947
+   },
+   {
+    "album": "my-favorite-things",
+    "kind": "recorded",
+    "place": "Atlantic Studios",
+    "year": 1960
+   },
+   {
+    "album": "miles-smiles",
+    "kind": "recorded",
+    "place": "CBS 30th Street Studio",
+    "year": 1966
+   }
+  ],
+  "10-25": [
+   {
+    "album": "miles-smiles",
+    "kind": "recorded",
+    "place": "CBS 30th Street Studio",
+    "year": 1966
+   }
+  ],
+  "10-26": [
+   {
+    "album": "my-favorite-things",
+    "kind": "recorded",
+    "place": "Atlantic Studios",
+    "year": 1960
+   },
+   {
+    "album": "song-for-my-father",
+    "kind": "recorded",
+    "place": "Van Gelder Studio",
+    "year": 1964
+   },
+   {
+    "artist": "jack-dejohnette",
+    "kind": "died",
+    "year": 2025
+   }
+  ],
+  "10-27": [
+   {
+    "album": "chet-baker-sings",
+    "kind": "recorded",
+    "place": "Radio Recorders, Los Angeles",
+    "year": 1953
+   }
+  ],
+  "10-30": [
+   {
+    "album": "moanin",
+    "kind": "recorded",
+    "place": "Van Gelder Studio",
+    "year": 1958
+   },
+   {
+    "artist": "clifford-brown",
+    "kind": "born",
+    "year": 1930
+   }
+  ],
+  "10-31": [
+   {
+    "album": "song-for-my-father",
+    "kind": "recorded",
+    "place": "Van Gelder Studio",
+    "year": 1963
+   }
+  ],
+  "11-02": [
+   {
+    "artist": "roy-hargrove",
+    "kind": "died",
+    "year": 2018
+   }
+  ],
+  "11-04": [
+   {
+    "album": "idle-moments",
+    "kind": "recorded",
+    "place": "Van Gelder Studio",
+    "year": 1963
+   }
+  ],
+  "11-05": [
+   {
+    "artist": "art-tatum",
+    "kind": "died",
+    "year": 1956
+   }
+  ],
+  "11-07": [
+   {
+    "artist": "candido",
+    "kind": "died",
+    "year": 2020
+   }
+  ],
+  "11-08": [
+   {
+    "album": "journey-in-satchidananda",
+    "kind": "recorded",
+    "place": "The Coltrane Home Studio",
+    "year": 1970
+   }
+  ],
+  "11-12": [
+   {
+    "artist": "buck-clayton",
+    "kind": "born",
+    "year": 1911
+   },
+   {
+    "artist": "roy-haynes",
+    "kind": "died",
+    "year": 2024
+   }
+  ],
+  "11-15": [
+   {
+    "album": "idle-moments",
+    "kind": "recorded",
+    "place": "Van Gelder Studio",
+    "year": 1963
+   }
+  ],
+  "11-16": [
+   {
+    "artist": "tommy-flanagan",
+    "kind": "died",
+    "year": 2001
+   }
+  ],
+  "11-17": [
+   {
+    "artist": "james-p-johnson",
+    "kind": "died",
+    "year": 1955
+   }
+  ],
+  "11-18": [
+   {
+    "album": "out-of-the-cool",
+    "kind": "recorded",
+    "place": "Van Gelder Studio, Englewood Cliffs",
+    "year": 1960
+   },
+   {
+    "artist": "don-cherry",
+    "kind": "born",
+    "year": 1936
+   }
+  ],
+  "11-21": [
+   {
+    "album": "genius-of-modern-music-1",
+    "kind": "recorded",
+    "place": "WOR Studios",
+    "year": 1947
+   },
+   {
+    "artist": "coleman-hawkins",
+    "kind": "born",
+    "year": 1904
+   }
+  ],
+  "11-22": [
+   {
+    "artist": "jimmy-knepper",
+    "kind": "born",
+    "year": 1927
+   }
+  ],
+  "11-25": [
+   {
+    "artist": "paul-desmond",
+    "kind": "born",
+    "year": 1924
+   }
+  ],
+  "11-30": [
+   {
+    "album": "out-of-the-cool",
+    "kind": "recorded",
+    "place": "Van Gelder Studio, Englewood Cliffs",
+    "year": 1960
+   }
+  ],
+  "12-01": [
+   {
+    "artist": "jaco-pastorius",
+    "kind": "born",
+    "year": 1951
+   }
+  ],
+  "12-02": [
+   {
+    "album": "giant-steps",
+    "kind": "recorded",
+    "place": "Atlantic Studios",
+    "year": 1959
+   },
+   {
+    "artist": "wynton-kelly",
+    "kind": "born",
+    "year": 1931
+   }
+  ],
+  "12-04": [
+   {
+    "artist": "cassandra-wilson",
+    "kind": "born",
+    "year": 1955
+   }
+  ],
+  "12-05": [
+   {
+    "artist": "dave-brubeck",
+    "kind": "died",
+    "year": 2012
+   }
+  ],
+  "12-06": [
+   {
+    "artist": "dave-brubeck",
+    "kind": "born",
+    "year": 1920
+   }
+  ],
+  "12-08": [
+   {
+    "artist": "buck-clayton",
+    "kind": "died",
+    "year": 1991
+   },
+   {
+    "artist": "antonio-carlos-jobim",
+    "kind": "died",
+    "year": 1994
+   }
+  ],
+  "12-09": [
+   {
+    "album": "a-love-supreme",
+    "kind": "recorded",
+    "place": "Van Gelder Studio, Englewood Cliffs",
+    "year": 1964
+   }
+  ],
+  "12-10": [
+   {
+    "album": "out-of-the-cool",
+    "kind": "recorded",
+    "place": "Van Gelder Studio, Englewood Cliffs",
+    "year": 1960
+   }
+  ],
+  "12-11": [
+   {
+    "artist": "mccoy-tyner",
+    "kind": "born",
+    "year": 1938
+   }
+  ],
+  "12-12": [
+   {
+    "artist": "tony-williams",
+    "kind": "born",
+    "year": 1945
+   }
+  ],
+  "12-15": [
+   {
+    "album": "out-of-the-cool",
+    "kind": "recorded",
+    "place": "Van Gelder Studio, Englewood Cliffs",
+    "year": 1960
+   },
+   {
+    "artist": "fats-waller",
+    "kind": "died",
+    "year": 1943
+   }
+  ],
+  "12-16": [
+   {
+    "album": "sarah-vaughan-1955",
+    "kind": "recorded",
+    "place": "Fine Sound Studios",
+    "year": 1954
+   }
+  ],
+  "12-17": [
+   {
+    "album": "kenya",
+    "kind": "recorded",
+    "place": "Metropolitan Studios",
+    "year": 1957
+   }
+  ],
+  "12-18": [
+   {
+    "album": "sarah-vaughan-1955",
+    "kind": "recorded",
+    "place": "Fine Sound Studios",
+    "year": 1954
+   }
+  ],
+  "12-19": [
+   {
+    "album": "kenya",
+    "kind": "recorded",
+    "place": "Metropolitan Studios",
+    "year": 1957
+   },
+   {
+    "artist": "king-oliver",
+    "kind": "born",
+    "year": 1881
+   }
+  ],
+  "12-20": [
+   {
+    "artist": "walter-page",
+    "kind": "died",
+    "year": 1957
+   }
+  ],
+  "12-21": [
+   {
+    "album": "the-sidewinder",
+    "kind": "recorded",
+    "place": "Van Gelder Studio",
+    "year": 1963
+   }
+  ],
+  "12-22": [
+   {
+    "artist": "ma-rainey",
+    "kind": "died",
+    "year": 1939
+   }
+  ],
+  "12-23": [
+   {
+    "artist": "chet-baker",
+    "kind": "born",
+    "year": 1929
+   }
+  ],
+  "12-24": [
+   {
+    "album": "kenya",
+    "kind": "recorded",
+    "place": "Metropolitan Studios",
+    "year": 1957
+   },
+   {
+    "album": "speak-no-evil",
+    "kind": "recorded",
+    "place": "Van Gelder Studio",
+    "year": 1964
+   },
+   {
+    "album": "complete-communion",
+    "kind": "recorded",
+    "place": "Van Gelder Studio",
+    "year": 1965
+   },
+   {
+    "artist": "baby-dodds",
+    "kind": "born",
+    "year": 1898
+   }
+  ],
+  "12-25": [
+   {
+    "artist": "kid-ory",
+    "kind": "born",
+    "year": 1886
+   },
+   {
+    "artist": "don-alias",
+    "kind": "born",
+    "year": 1939
+   }
+  ],
+  "12-28": [
+   {
+    "artist": "earl-hines",
+    "kind": "born",
+    "year": 1903
+   }
+  ],
+  "12-29": [
+   {
+    "artist": "freddie-hubbard",
+    "kind": "died",
+    "year": 2008
+   }
+  ]
+ }
+}

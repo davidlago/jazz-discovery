@@ -29,6 +29,7 @@ struct RootView: View {
                         case .labels: LabelsView()
                         case .lineages: LineagesView()
                         case .paths: PathsView()
+                        case .almanac: AlmanacView()
                         case .glossary: GlossaryView()
                         case .passport: PassportView()
                         case .radio: RadioView()

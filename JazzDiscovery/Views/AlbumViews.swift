@@ -117,6 +117,7 @@ struct AlbumDetailView: View {
                             HStack(spacing: 10) {
                                 AlbumPlayControls(catalog: catalog, tracks: tracks, tint: tint)
                                 AlbumPassportButtons(albumID: album.id, tint: tint)
+                                ShareCardButton(card: .record(album))
                             }
                             .padding(.top, 6)
                         }

@@ -101,7 +101,7 @@ struct ArtistDetailView: View {
                             .clipShape(RoundedRectangle(cornerRadius: 8))
                             .shadow(color: .black.opacity(0.6), radius: 24, y: 10)
                         VStack(alignment: .leading, spacing: 10) {
-                            Text("\(artist.instrument.uppercased()) · \(artist.lifespan)").font(Theme.label(12)).tracking(3).foregroundStyle(tint)
+                            Text("\(artist.instrument.uppercased()) · \(library.fullDates(of: artist.id)?.uppercased() ?? artist.lifespan)").font(Theme.label(12)).tracking(3).foregroundStyle(tint)
                             Text(artist.name.uppercased()).font(Theme.display(72)).foregroundStyle(Theme.cream)
                                 .lineLimit(2).minimumScaleFactor(0.5)
                             Text(artist.blurb).font(Theme.serif(19)).foregroundStyle(Theme.cream.opacity(0.9))
