@@ -28,7 +28,8 @@ concurrency:
 jobs:
   build:
     name: Build
-    runs-on: macos-15
+    # macos-15 runners stopped being handed out reliably (jobs queued 15+ minutes, Nov 2026); macos-26 is the newer GA image.
+    runs-on: macos-26
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
 
