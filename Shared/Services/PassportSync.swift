@@ -24,7 +24,7 @@ final class PassportSync {
                 Task { @MainActor in self?.pull() }
             }
         pull()
-        passport.onChange = { [weak self] in self?.schedulePush() }
+        passport.onChange { [weak self] in self?.schedulePush() }
         push()
     }
 

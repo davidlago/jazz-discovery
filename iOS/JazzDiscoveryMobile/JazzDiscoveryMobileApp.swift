@@ -7,6 +7,7 @@ struct JazzDiscoveryMobileApp: App {
     @State private var player: PlayerController
     @State private var passport: Passport
     @State private var sync: PassportSync?
+    @State private var widgets: WidgetPublisher?
 
     // The objects are made here and handed to @State as they are: @State makes an Observable object lazily, so one
     // read from it in init would be a different object from the one the app ends up with.
@@ -22,6 +23,7 @@ struct JazzDiscoveryMobileApp: App {
         _player = State(initialValue: player)
         _passport = State(initialValue: passport)
         _sync = State(initialValue: demo ? nil : PassportSync(passport: passport))
+        _widgets = State(initialValue: demo ? nil : WidgetPublisher(passport: passport, library: library))
     }
 
     var body: some Scene {

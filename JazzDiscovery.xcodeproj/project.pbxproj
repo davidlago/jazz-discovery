@@ -6,6 +6,53 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		A10000000000000000000003 /* JazzDiscoveryWidgets.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = E10000000000000000000001 /* JazzDiscoveryWidgets.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B10000000000000000000005 /* JazzDiscoveryWidgets.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = E10000000000000000000001 /* JazzDiscoveryWidgets.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A10000000000000000000090 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A10000000000000000000060 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E10000000000000000000040;
+			remoteInfo = JazzDiscoveryWidgets;
+		};
+		B10000000000000000000090 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A10000000000000000000060 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E10000000000000000000040;
+			remoteInfo = JazzDiscoveryWidgets;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A10000000000000000000052 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A10000000000000000000003 /* JazzDiscoveryWidgets.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B10000000000000000000052 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B10000000000000000000005 /* JazzDiscoveryWidgets.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		A10000000000000000000001 /* Jazz Discovery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Jazz Discovery.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A10000000000000000000002 /* Config */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Config; sourceTree = "<group>"; };
@@ -13,8 +60,48 @@
 		B10000000000000000000002 /* Signing.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Signing.xcconfig; sourceTree = "<group>"; };
 		B10000000000000000000003 /* Version.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Version.xcconfig; sourceTree = "<group>"; };
 		B10000000000000000000004 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E10000000000000000000001 /* JazzDiscoveryWidgets.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = JazzDiscoveryWidgets.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		D10000000000000000000001 /* JazzDiscoveryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JazzDiscoveryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		E10000000000000000000011 /* Exceptions for "Shared" folder in "JazzDiscoveryWidgets" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Design/AlmanacViews.swift,
+				Design/BlindfoldGame.swift,
+				Design/Credits.swift,
+				Design/Doors.swift,
+				Design/LastFMImportView.swift,
+				Design/Layouts.swift,
+				Design/LineageViews.swift,
+				Design/PassportMarks.swift,
+				Design/PathViews.swift,
+				Design/PlacesViews.swift,
+				Design/Radio.swift,
+				Design/SongbookViews.swift,
+				Design/Ties.swift,
+				Resources/glossary.json,
+				Resources/ids.json,
+				Resources/labels.json,
+				Resources/lineages.json,
+				Resources/paths.json,
+				Resources/places.json,
+				Resources/songbook.json,
+				Resources/tracklists.json,
+				Resources/tracks.json,
+				Services/AudioQuality.swift,
+				Services/LastFM.swift,
+				Services/LastFMImport.swift,
+				Services/PassportSync.swift,
+				Services/Player.swift,
+				Services/WidgetPublisher.swift,
+				Services/YouTube.swift,
+				Services/YouTubeEmbed.swift,
+			);
+			target = E10000000000000000000040 /* JazzDiscoveryWidgets */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		A10000000000000000000010 /* JazzDiscovery */ = {
@@ -24,6 +111,9 @@
 		};
 		C10000000000000000000010 /* Shared */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				E10000000000000000000011 /* Exceptions for "Shared" folder in "JazzDiscoveryWidgets" target */,
+			);
 			path = Shared;
 			sourceTree = "<group>";
 		};
@@ -35,6 +125,11 @@
 		D10000000000000000000010 /* Tests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = Tests;
+			sourceTree = "<group>";
+		};
+		E10000000000000000000010 /* Widgets */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Widgets;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -61,6 +156,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E10000000000000000000020 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -71,6 +173,7 @@
 				A10000000000000000000010 /* JazzDiscovery */,
 				A10000000000000000000002 /* Config */,
 				B10000000000000000000030 /* iOS */,
+				E10000000000000000000010 /* Widgets */,
 				D10000000000000000000010 /* Tests */,
 				A10000000000000000000031 /* Products */,
 			);
@@ -93,6 +196,7 @@
 				A10000000000000000000001 /* Jazz Discovery.app */,
 				B10000000000000000000001 /* Jazz Discovery.app */,
 				D10000000000000000000001 /* JazzDiscoveryTests.xctest */,
+				E10000000000000000000001 /* JazzDiscoveryWidgets.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -107,10 +211,12 @@
 				A10000000000000000000050 /* Sources */,
 				A10000000000000000000020 /* Frameworks */,
 				A10000000000000000000051 /* Resources */,
+				A10000000000000000000052 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A10000000000000000000091 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				C10000000000000000000010 /* Shared */,
@@ -128,10 +234,12 @@
 				B10000000000000000000050 /* Sources */,
 				B10000000000000000000020 /* Frameworks */,
 				B10000000000000000000051 /* Resources */,
+				B10000000000000000000052 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				B10000000000000000000091 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				C10000000000000000000010 /* Shared */,
@@ -163,6 +271,27 @@
 			productReference = D10000000000000000000001 /* JazzDiscoveryTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		E10000000000000000000040 /* JazzDiscoveryWidgets */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E10000000000000000000070 /* Build configuration list for PBXNativeTarget "JazzDiscoveryWidgets" */;
+			buildPhases = (
+				E10000000000000000000050 /* Sources */,
+				E10000000000000000000020 /* Frameworks */,
+				E10000000000000000000051 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				C10000000000000000000010 /* Shared */,
+				E10000000000000000000010 /* Widgets */,
+			);
+			name = JazzDiscoveryWidgets;
+			productName = JazzDiscoveryWidgets;
+			productReference = E10000000000000000000001 /* JazzDiscoveryWidgets.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -180,6 +309,9 @@
 						CreatedOnToolsVersion = 27.2;
 					};
 					D10000000000000000000040 = {
+						CreatedOnToolsVersion = 27.2;
+					};
+					E10000000000000000000040 = {
 						CreatedOnToolsVersion = 27.2;
 					};
 				};
@@ -201,6 +333,7 @@
 				A10000000000000000000040 /* JazzDiscovery */,
 				B10000000000000000000040 /* JazzDiscoveryMobile */,
 				D10000000000000000000040 /* JazzDiscoveryTests */,
+				E10000000000000000000040 /* JazzDiscoveryWidgets */,
 			);
 		};
 /* End PBXProject section */
@@ -221,6 +354,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		D10000000000000000000051 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E10000000000000000000051 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -251,13 +391,40 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E10000000000000000000050 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A10000000000000000000091 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E10000000000000000000040 /* JazzDiscoveryWidgets */;
+			targetProxy = A10000000000000000000090 /* PBXContainerItemProxy */;
+		};
+		B10000000000000000000091 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E10000000000000000000040 /* JazzDiscoveryWidgets */;
+			targetProxy = B10000000000000000000090 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		A10000000000000000000081 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				APP_BUNDLE_ID = io.github.davidlago.JazzDiscovery;
+				APP_GROUP_IDENTIFIER = "group.$(APP_BUNDLE_ID)";
+				APP_GROUP_IN_USE = "";
+				MAC_APP_ENTITLEMENTS = Config/JazzDiscovery.entitlements;
+				MAC_APP_PROFILE = "";
+				MAC_WIDGET_ENTITLEMENTS = Config/JazzDiscoveryWidgets.entitlements;
+				MAC_WIDGET_PROFILE = "";
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -279,6 +446,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				APP_BUNDLE_ID = io.github.davidlago.JazzDiscovery;
+				APP_GROUP_IDENTIFIER = "group.$(APP_BUNDLE_ID)";
+				APP_GROUP_IN_USE = "";
+				MAC_APP_ENTITLEMENTS = Config/JazzDiscovery.entitlements;
+				MAC_APP_PROFILE = "";
+				MAC_WIDGET_ENTITLEMENTS = Config/JazzDiscoveryWidgets.entitlements;
+				MAC_WIDGET_PROFILE = "";
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -298,7 +472,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Config/JazzDiscovery.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "$(MAC_APP_ENTITLEMENTS)";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -314,7 +488,8 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.github.davidlago.JazzDiscovery;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_BUNDLE_ID)";
+				PROVISIONING_PROFILE_SPECIFIER = "$(MAC_APP_PROFILE)";
 				PRODUCT_NAME = "Jazz Discovery";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -326,7 +501,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Config/JazzDiscovery.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "$(MAC_APP_ENTITLEMENTS)";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -342,7 +517,8 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.github.davidlago.JazzDiscovery;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_BUNDLE_ID)";
+				PROVISIONING_PROFILE_SPECIFIER = "$(MAC_APP_PROFILE)";
 				PRODUCT_NAME = "Jazz Discovery";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -445,6 +621,90 @@
 			};
 			name = Release;
 		};
+		E10000000000000000000071 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B10000000000000000000002 /* Signing.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = "$(IOS_WIDGET_ENTITLEMENTS)";
+				"CODE_SIGN_ENTITLEMENTS[sdk=macosx*]" = "$(MAC_WIDGET_ENTITLEMENTS)";
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Config/JazzDiscoveryWidgets-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Jazz Discovery";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IOS_WIDGET_ENTITLEMENTS = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_BUNDLE_ID).Widgets";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "$(MAC_WIDGET_PROFILE)";
+				SDKROOT = auto;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "WIDGET_EXTENSION $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		E10000000000000000000072 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B10000000000000000000002 /* Signing.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = "$(IOS_WIDGET_ENTITLEMENTS)";
+				"CODE_SIGN_ENTITLEMENTS[sdk=macosx*]" = "$(MAC_WIDGET_ENTITLEMENTS)";
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Config/JazzDiscoveryWidgets-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Jazz Discovery";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IOS_WIDGET_ENTITLEMENTS = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_BUNDLE_ID).Widgets";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "$(MAC_WIDGET_PROFILE)";
+				SDKROOT = auto;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "WIDGET_EXTENSION $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -480,6 +740,15 @@
 			buildConfigurations = (
 				D10000000000000000000071 /* Debug */,
 				D10000000000000000000072 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E10000000000000000000070 /* Build configuration list for PBXNativeTarget "JazzDiscoveryWidgets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E10000000000000000000071 /* Debug */,
+				E10000000000000000000072 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

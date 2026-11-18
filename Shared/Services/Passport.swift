@@ -129,8 +129,8 @@ final class Passport {
     static let heardShare = 0.6
 
     private(set) var data = PassportData()
-    /// Told after every change, to send it to iCloud.
-    @ObservationIgnored var onChange: (() -> Void)?
+    /// Told after every change: iCloud sync, the widgets.
+    @ObservationIgnored private var changeHandlers: [() -> Void] = []
     /// Whether the passport syncs through iCloud (the build has the entitlement and an account is signed in).
     var syncsWithICloud = false
     @ObservationIgnored let fileURL: URL?
@@ -307,8 +307,11 @@ final class Passport {
     func encoded() -> Data? { try? Self.encoder.encode(data) }
     static func decode(_ d: Data) -> PassportData? { try? decoder.decode(PassportData.self, from: d) }
 
+    /// Calls `handler` after every change.
+    func onChange(_ handler: @escaping () -> Void) { changeHandlers.append(handler) }
+
     private func save() {
-        onChange?()
+        for handler in changeHandlers { handler() }
         guard let fileURL, let d = encoded() else { return }
         try? d.write(to: fileURL, options: .atomic)
     }

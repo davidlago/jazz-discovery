@@ -13,7 +13,9 @@ enum Platform {
     /// Opens a URL in the app that handles it (the browser, Music, YouTube…).
     @MainActor
     static func open(_ url: URL) {
-        #if canImport(UIKit)
+        #if WIDGET_EXTENSION
+        // Widgets open links with widgetURL/Link; extensions can't reach UIApplication.
+        #elseif canImport(UIKit)
         UIApplication.shared.open(url)
         #else
         NSWorkspace.shared.open(url)

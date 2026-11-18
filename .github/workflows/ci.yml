@@ -67,16 +67,21 @@ jobs:
           identity="$(scripts/import-certificate.sh "Developer ID Application")"
           echo "SIGN_IDENTITY=$identity" >> "$GITHUB_ENV"
 
-      # iCloud (the passport's sync): once the repository variable ICLOUD is 1, releases embed the Developer ID profile
-      # from the MAC_PROVISIONING_PROFILE secret and are signed with iCloud key-value storage (docs/app-store.md).
-      - name: Install the Mac provisioning profile
+      # iCloud and the app group: once the repository variable ICLOUD is 1, releases embed the Developer ID profiles
+      # from the MAC_PROVISIONING_PROFILE (the app) and MAC_WIDGETS_PROVISIONING_PROFILE (its widgets) secrets, and are
+      # signed with iCloud key-value storage and the app group (docs/app-store.md).
+      - name: Install the Mac provisioning profiles
         if: startsWith(github.ref, 'refs/tags/v') && vars.ICLOUD == '1'
         env:
           PROFILE: ${{ secrets.MAC_PROVISIONING_PROFILE }}
+          WIDGETS_PROFILE: ${{ secrets.MAC_WIDGETS_PROVISIONING_PROFILE }}
         run: |
           [ -n "$PROFILE" ] || { echo "::error::ICLOUD is 1 but the MAC_PROVISIONING_PROFILE secret is empty"; exit 1; }
+          [ -n "$WIDGETS_PROFILE" ] || { echo "::error::ICLOUD is 1 but the MAC_WIDGETS_PROVISIONING_PROFILE secret is empty"; exit 1; }
           printf '%s' "$PROFILE" | base64 --decode > "$RUNNER_TEMP/JazzDiscovery.provisionprofile"
+          printf '%s' "$WIDGETS_PROFILE" | base64 --decode > "$RUNNER_TEMP/JazzDiscoveryWidgets.provisionprofile"
           echo "PROVISIONING_PROFILE=$RUNNER_TEMP/JazzDiscovery.provisionprofile" >> "$GITHUB_ENV"
+          echo "WIDGETS_PROVISIONING_PROFILE=$RUNNER_TEMP/JazzDiscoveryWidgets.provisionprofile" >> "$GITHUB_ENV"
 
       - name: Build app (Apple Silicon + Intel)
         env:
@@ -128,11 +133,12 @@ jobs:
         run: scripts/select-xcode.sh
 
       - name: Build the iPhone app
-        # With the iCloud entitlements, so the file and its build settings are checked too.
+        # With the iCloud and app group entitlements (and the widgets'), so the files and settings are checked too.
         run: |
           xcodebuild -project JazzDiscovery.xcodeproj -scheme JazzDiscoveryMobile -configuration Release \
             -destination 'generic/platform=iOS Simulator' CODE_SIGNING_ALLOWED=NO \
-            APP_ENTITLEMENTS=iOS/JazzDiscoveryMobile.entitlements build
+            APP_ENTITLEMENTS=iOS/JazzDiscoveryMobile.entitlements IOS_WIDGET_ENTITLEMENTS=iOS/JazzDiscoveryWidgets.entitlements \
+            'APP_GROUP_IN_USE=$(APP_GROUP_IDENTIFIER)' build
 
   testflight:
     name: Upload the iPhone app to TestFlight

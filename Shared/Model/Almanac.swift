@@ -49,6 +49,16 @@ struct Almanac {
 
     static func isRound(_ years: Int) -> Bool { years > 0 && years % 25 == 0 }
 
+    /// What the day shown is called: today, or the nearest day with something when today has nothing.
+    static func label(offset: Int?) -> String {
+        switch offset {
+        case nil, 0: return "TODAY IN JAZZ"
+        case 1: return "TOMORROW IN JAZZ"
+        case -1: return "YESTERDAY IN JAZZ"
+        case let o?: return o > 0 ? "IN \(o) DAYS" : "\(-o) DAYS AGO"
+        }
+    }
+
     /// The event to feature on a day: a round anniversary first, then sessions (they come with something to play),
     /// then births, then deaths; among equals, saved things, then unheard ones, then the older event.
     func lead(on date: Date, isSaved: (DayEvent) -> Bool = { _ in false }, isHeard: (DayEvent) -> Bool = { _ in false },
