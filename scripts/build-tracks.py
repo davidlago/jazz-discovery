@@ -4,7 +4,7 @@ one. Writes two files in Shared/Resources:
 
 - tracklists.json: each Crate album's Apple Music tracks (one lookup per album in catalog.json).
 - tracks.json: every named track ("artist|title", as TrackRef.id), from era essential tracks, album highlights and
-  artists' signature tracks. A track on a Crate album is taken from that album's tracklist; anything else is searched,
+  artists' signature tracks, and the Songbook's versions ("artist|title|year", with the record as a hint). A track on a Crate album is taken from that album's tracklist; anything else is searched,
   preferring the earliest release over a later remake and skipping karaoke and tributes.
 
 Only what's missing is looked up, 3.1 seconds apart, saving as it goes; misses are printed and simply left out (the
@@ -91,9 +91,10 @@ def main():
     # 2. The pool of named tracks: (artist, title) -> what we know about it.
     pool = {}
 
-    def add(artist, title, era=None, year=None, album=None):
-        k = f"{artist}|{title}"
-        e = pool.setdefault(k, {"artist": artist, "title": title, "era": era, "year": year, "album": album})
+    def add(artist, title, era=None, year=None, album=None, record=None, key=None):
+        k = key or f"{artist}|{title}"
+        e = pool.setdefault(k, {"artist": artist, "title": title, "era": era, "year": year, "album": album, "record": record})
+        e["record"] = e.get("record") or record
         e["era"] = e["era"] or era
         e["year"] = e["year"] or year
         e["album"] = e["album"] or album
@@ -108,6 +109,16 @@ def main():
         for t in a["signatureTracks"]:
             add(a["name"], t, era=a["primaryEra"])
 
+    # The Songbook's versions, with the year and record they were made on as hints.
+    sb_path = os.path.join(RES, "songbook.json")
+    if os.path.exists(sb_path):
+        for tune in json.load(open(sb_path))["tunes"]:
+            for v in tune["versions"]:
+                era = artists[v["artist"]]["primaryEra"] if v.get("artist") in artists else None
+                title = v.get("title") or tune["title"]
+                add(v["artistName"], title, era=era, year=v["year"], album=v.get("album"), record=v.get("record"),
+                    key=f"{v['artistName']}|{title}|{v['year']}")
+
     out_path = os.path.join(RES, "tracks.json")
     out = {} if redo or not os.path.exists(out_path) else json.load(open(out_path))
     out = {k: v for k, v in out.items() if k in pool}   # drop tracks the data no longer names
@@ -120,7 +131,8 @@ def main():
         return None
 
     for k, p in sorted(pool.items()):
-        if k in out:
+        existing = out.get(k)
+        if existing and existing.get("album"):
             continue
         found, album = None, p["album"]
         if album:
@@ -142,10 +154,19 @@ def main():
                     found = on_album(a["id"], p["title"])
                     if found:
                         album = a["id"]; break
+        if not found and existing:
+            continue   # searched before; nothing better on the Crate's records
         if not found:
-            term = urllib.parse.quote(f"{p['artist']} {p['title']}")
-            res = [r for r in get(f"https://itunes.apple.com/search?term={term}&entity=song&media=music&limit=25")["results"]
-                   if r.get("kind") == "song"]
+            rec = norm(p.get("record") or "")
+            res = []
+            if rec:
+                term = urllib.parse.quote(f"{p['artist']} {p['title']} {p['record']}")
+                res = [r for r in get(f"https://itunes.apple.com/search?term={term}&entity=song&media=music&limit=25")["results"]
+                       if r.get("kind") == "song"]
+            if not any(rec and rec in norm(r.get("collectionName", "")) for r in res):
+                term = urllib.parse.quote(f"{p['artist']} {p['title']}")
+                res += [r for r in get(f"https://itunes.apple.com/search?term={term}&entity=song&media=music&limit=50")["results"]
+                        if r.get("kind") == "song"]
             t, a = key(p["title"]), norm(p["artist"])
 
             def score(r):
@@ -159,7 +180,8 @@ def main():
                 if r.get("previewUrl"): s += 1
                 low = (r.get("trackName", "") + " " + r.get("collectionName", "")).lower()
                 if any(b in low for b in BAD): s -= 20
-                if "live" in low and "live" not in p["title"].lower(): s -= 2
+                if "live" in low and "live" not in p["title"].lower() and "live" not in (p.get("record") or "").lower(): s -= 2
+                if rec and rec in norm(r.get("collectionName", "")): s += 8
                 # The earliest release: a point for every decade before 2030.
                 y = int((r.get("releaseDate") or "2030")[:4])
                 s += max(0, (2030 - y)) / 10 * 0.3
@@ -178,6 +200,7 @@ def main():
         entry = dict(found)
         released = entry.pop("released", None)
         entry["album"] = album
+        if p.get("record"): entry["record"] = p["record"]
         entry["era"] = p["era"] or (albums[album]["era"] if album else None)
         entry["year"] = p["year"] or (albums[album]["year"] if album else (int(released) if released else None))
         out[k] = entry

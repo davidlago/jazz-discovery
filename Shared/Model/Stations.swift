@@ -14,7 +14,8 @@ struct StationTrack: Decodable, Hashable, Identifiable {
 
     var id: Int { track.trackId }
     var artistName: String { String(ref.split(separator: "|").first ?? Substring(track.artistName)) }
-    var title: String { String(ref.split(separator: "|").dropFirst().joined(separator: "|")) }
+    /// The title in the ref ("artist|title", or "artist|title|year" for a Songbook version).
+    var title: String { ref.split(separator: "|").dropFirst().first.map(String.init) ?? track.name }
 
     private enum Keys: String, CodingKey { case album, era, year, skip }
 
