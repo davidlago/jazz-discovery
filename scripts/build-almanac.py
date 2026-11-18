@@ -2,28 +2,45 @@
 """Flatten the guide's exact dates into Shared/Resources/almanac.json, so the app doesn't recompute them:
 
 - births and deaths from ids.json (day precision only; a date with a disputed alternative is left out),
-- recording sessions from sessions.json (reviewed albums, not compilations, day precision).
+- recording sessions from sessions.json (reviewed albums, not compilations, day precision),
+- release dates of Crate albums and dated milestones from scripts/almanac-dates.json, gathered by hand with a source
+  for each (day precision only).
 
 Output: {"days": {"MM-DD": [event, ...]}, "artists": {id: {"born": "...", "died": "..."}}}. Each event has a kind
-(born, died, recorded), a year, and an artist or album (with the studio for sessions). With --check, exits 1 if the
-file on disk differs from what would be written (the validator runs it). Usage: python3 -I scripts/build-almanac.py
+(born, died, recorded), a year, and an artist or album (with the studio for sessions). The app has no "released" or
+"milestone" kind yet, so a release, or a milestone that belongs to a Crate album, is written as a "recorded" event on
+that album with a hand-written "line" (the album is what there is to play and open); a milestone with no album is
+kept in the source file with "held" and left out until the app has a kind for it. With --check, exits 1 if the file
+on disk differs from what would be written (the validator runs it). Usage: python3 -I scripts/build-almanac.py
 """
 import json, os, sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 RES = os.path.join(ROOT, "Shared", "Resources")
+DATES = os.path.join(ROOT, "scripts", "almanac-dates.json")
 
 
 def exact(d):
     return isinstance(d, str) and len(d) == 10
 
 
+def release_line(album, date):
+    name = album["artistName"]
+    if name.startswith("The "):
+        name = "the " + name[4:]
+    label = f" on {album['label']}" if album.get("label") else ""
+    line = f"On this day in {date[:4]}, {name} released {album['title']}{label}"
+    return line if line[-1] in ".!?" else line + "."
+
+
 def build():
     data = json.load(open(os.path.join(RES, "jazz.json")))
     ids = json.load(open(os.path.join(RES, "ids.json")))
     sessions = json.load(open(os.path.join(RES, "sessions.json")))
+    extra = json.load(open(DATES)) if os.path.exists(DATES) else {}
     artists = {a["id"] for a in data["artists"]}
     albums = {a["id"]: a for a in data["albums"]}
+    milestones = {m["title"] for m in data["milestones"]}
     days, dates = {}, {}
 
     def add(md, event):
@@ -55,6 +72,30 @@ def build():
             if r.get("place"):
                 ev["place"] = r["place"]
             add(d[5:], ev)
+
+    def check(entry, what):
+        if not exact(entry.get("date")) or not entry.get("source"):
+            raise SystemExit(f"almanac-dates.json: {what} needs a YYYY-MM-DD date and a source")
+        if entry.get("album") and entry["album"] not in albums:
+            raise SystemExit(f"almanac-dates.json: {what}: unknown album {entry['album']}")
+
+    for r in extra.get("releases", []):
+        check(r, f"release of {r.get('album')}")
+        d, a = r["date"], albums[r["album"]]
+        if any(e.get("album") == a["id"] and e["year"] == int(d[:4]) for e in days.get(d[5:], [])):
+            continue  # released on a day it was also recorded: the session says it
+        add(d[5:], {"kind": "recorded", "year": int(d[:4]), "album": a["id"], "line": release_line(a, d)})
+
+    for m in extra.get("milestones", []):
+        if m.get("milestone") not in milestones:
+            raise SystemExit(f"almanac-dates.json: unknown milestone {m.get('milestone')!r}")
+        check(m, f"milestone {m['milestone']!r}")
+        if m.get("held"):
+            continue  # needs a milestone kind in the app (DayEvent.Kind); see the source file
+        if not m.get("album") or not m.get("line"):
+            raise SystemExit(f"almanac-dates.json: milestone {m['milestone']!r} needs an album and a line, or held")
+        d = m["date"]
+        add(d[5:], {"kind": "recorded", "year": int(d[:4]), "album": m["album"], "line": m["line"]})
 
     order = {"recorded": 0, "born": 1, "died": 2}
     for md in days:
