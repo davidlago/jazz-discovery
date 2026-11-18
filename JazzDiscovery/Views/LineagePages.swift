@@ -146,3 +146,38 @@ struct AlmanacView: View {
         .onAppear { if let d = router.almanacDay { selected = d; router.almanacDay = nil } }
     }
 }
+
+struct GuidesView: View {
+    @Environment(Router.self) private var router
+
+    var body: some View {
+        ScrollView {
+            VStack(alignment: .leading, spacing: 22) {
+                VStack(alignment: .leading, spacing: 6) {
+                    Text("LISTENING GUIDES").font(Theme.display(64)).foregroundStyle(Theme.cream)
+                    Text("One recording at a time: what's happening, section by section, following the music as it plays. They follow the full track, with Apple Music.")
+                        .font(Theme.serif(18)).italic().foregroundStyle(Theme.muted)
+                }
+                .padding(.top, 30)
+                LazyVGrid(columns: [GridItem(.adaptive(minimum: 260, maximum: 320), spacing: 18)], alignment: .leading, spacing: 18) {
+                    GuidesRow(cardWidth: nil) { router.go(.guide($0)) }
+                }
+            }
+            .padding(.horizontal, 40).padding(.bottom, 50)
+        }
+        .background(Theme.ink)
+        .navigationTitle("Listening Guides")
+    }
+}
+
+struct GuideDetailView: View {
+    let guide: Guide
+    @Environment(Router.self) private var router
+    @Environment(JazzLibrary.self) private var library
+
+    var body: some View {
+        GuideView(guide: guide, openArtist: { router.go(.artist($0)) }, openTerm: { router.go(.term($0)) },
+                  openAlbum: { router.go(.album($0)) })
+            .navigationTitle(library.tracks[guide.track]?.title ?? "Listening Guide")
+    }
+}

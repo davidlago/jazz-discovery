@@ -210,6 +210,7 @@ struct NowPlayingBar: View {
                          openEra: { router.go(.era($0)) })
                 .frame(maxWidth: .infinity, alignment: .leading)
             NextStopButton { router.go($0) }
+            NowPlayingGuide { router.go(.guide($0)) }
             HStack(spacing: 16) {
                 RemoteImage(url: np.artwork) { Theme.panelHi }
                     .frame(width: 48, height: 48).clipShape(RoundedRectangle(cornerRadius: 4))

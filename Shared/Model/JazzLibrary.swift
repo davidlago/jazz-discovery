@@ -35,6 +35,8 @@ final class JazzLibrary {
     let paths: [JourneyPath]
     /// Births, deaths and sessions by day of the year (almanac.json).
     let almanac: AlmanacData
+    /// Listening guides (guides.json). A var so the Mac's guide editor can try new times on the running app.
+    var guides: [Guide]
     let termLinker: TermLinker
     private let tuneByID: [String: Tune]
     /// Title key → tune, from titles and aliases.
@@ -43,8 +45,9 @@ final class JazzLibrary {
     init(data: JazzData, sessions: [String: Session] = [:], tracks: [String: StationTrack] = [:],
          tracklists: [String: [CatalogTrack]] = [:], tunes: [Tune] = [], places: [Place] = [], labels: [LabelInfo] = [],
          lineages: [Lineage] = [], glossary: GlossaryData = GlossaryData(terms: []), paths: [JourneyPath] = [],
-         almanac: AlmanacData = AlmanacData()) {
+         almanac: AlmanacData = AlmanacData(), guides: [Guide] = []) {
         self.almanac = almanac
+        self.guides = guides
         self.paths = paths.map { p in
             guard p.id == "start-here", p.stops.isEmpty else { return p }
             var filled = p
@@ -133,7 +136,8 @@ final class JazzLibrary {
                                lineages: optional(LineagesData.self, "lineages", in: bundle)?.lineages ?? [],
                                glossary: optional(GlossaryData.self, "glossary", in: bundle) ?? GlossaryData(terms: []),
                                paths: optional(PathsData.self, "paths", in: bundle)?.paths ?? [],
-                               almanac: optional(AlmanacData.self, "almanac", in: bundle) ?? AlmanacData())
+                               almanac: optional(AlmanacData.self, "almanac", in: bundle) ?? AlmanacData(),
+                               guides: optional(GuidesData.self, "guides", in: bundle)?.guides ?? [])
         } catch {
             fatalError("Could not decode jazz.json: \(error)")
         }

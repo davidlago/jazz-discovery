@@ -5,6 +5,7 @@ struct RootView: View {
     @Environment(JazzLibrary.self) private var library
     @Environment(PlayerController.self) private var player
     @Environment(\.openSettings) private var openSettings
+    @Environment(\.openWindow) private var openWindow
 
     var body: some View {
         @Bindable var router = router
@@ -29,6 +30,7 @@ struct RootView: View {
                         case .labels: LabelsView()
                         case .lineages: LineagesView()
                         case .paths: PathsView()
+                        case .guides: GuidesView()
                         case .almanac: AlmanacView()
                         case .glossary: GlossaryView()
                         case .passport: PassportView()
@@ -49,6 +51,7 @@ struct RootView: View {
                     case .lineage(let id): if let l = library.lineage(id) { LineageDetailView(lineage: l) }
                     case .term(let id): if let t = library.term(id) { TermDetailView(term: t) }
                     case .journey(let id): if let p = library.journey(id) { PathDetailView(path: p) }
+                    case .guide(let id): if let g = library.guide(id) { GuideDetailView(guide: g) }
                     }
                 }
                 .background(Theme.ink)
@@ -67,6 +70,7 @@ struct RootView: View {
                 if let link = DeepLink(url, library: library) { router.open(link) }
             }
             SpotlightIndex.update(library: library)
+            if GuideEditorModel.isEnabled { openWindow(id: GuideEditorView.windowID) }
         }
         .overlay(alignment: .top) { ErrorToast() }
     }

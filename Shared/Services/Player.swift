@@ -2,6 +2,7 @@ import SwiftUI
 import AVFoundation
 import MusicKit
 import Observation
+import OSLog
 #if os(iOS)
 import MediaPlayer
 #else
@@ -31,7 +32,8 @@ final class PlayerController {
 
     private(set) var current: NowPlaying?
     private(set) var isPlaying = false
-    private(set) var elapsed: Double = 0
+    private(set) var elapsed: Double = 0 { didSet { elapsedAt = .now } }
+    @ObservationIgnored private var elapsedAt = Date.now
     private(set) var duration: Double = 0
     private(set) var loadingKey: String?
     private(set) var currentTrackID: Int?
@@ -308,8 +310,18 @@ final class PlayerController {
         }
     }
 
-    func seek(to fraction: Double) {
-        let t = max(0, min(1, fraction)) * duration
+    func seek(to fraction: Double) { seek(toSeconds: max(0, min(1, fraction)) * duration) }
+
+    /// Where playback is at `date`: the last position the player reported, moved on by the time since, while playing.
+    /// For a playhead that glides between the 400 ms ticks.
+    func position(at date: Date = .now) -> Double {
+        guard isPlaying else { return elapsed }
+        let p = elapsed + max(0, date.timeIntervalSince(elapsedAt))
+        return duration > 0 ? min(p, duration) : p
+    }
+
+    func seek(toSeconds seconds: Double) {
+        let t = duration > 0 ? max(0, min(duration, seconds)) : max(0, seconds)
         switch mode {
         case .preview: avPlayer.seek(to: CMTime(seconds: t, preferredTimescale: 600))
         case .appleMusic: ApplicationMusicPlayer.shared.playbackTime = t; lastPlaybackTime = t
@@ -379,7 +391,10 @@ final class PlayerController {
             let resp = try await req.response()
             let byID = Dictionary(resp.items.map { ($0.id, $0) }, uniquingKeysWith: { a, _ in a })
             let songs = ids.compactMap { byID[$0] }
-            guard let start = byID[ids[index]] ?? songs.first else { return false }
+            guard let start = byID[ids[index]] ?? songs.first else {
+                lastError = "Apple Music doesn't have \(tracks[index].name) here. Playing a preview instead."
+                return false
+            }
             let player = ApplicationMusicPlayer.shared
             player.queue = ApplicationMusicPlayer.Queue(for: songs, startingAt: start)
             queueAlbumTitle = nil
@@ -389,7 +404,18 @@ final class PlayerController {
             #if os(macOS)
             await matchOutput()
             #endif
-            try await player.play()
+            do {
+                try await player.play()
+            } catch let error as NSError where error.domain == "MPMusicPlayerControllerErrorDomain" && error.code == 6 {
+                // "Prepare queue failed with unexpected start item". It happens to the first song played in the
+                // seconds after launch, while the system player is still getting ready (seen on the Mac,
+                // 2026-11-18); a moment later the same queue plays. Try once more, queuing from that song on.
+                Self.log.notice("Apple Music refused the start item \(start.id.rawValue, privacy: .public); trying again")
+                try? await Task.sleep(for: .milliseconds(600))
+                let from = songs.firstIndex { $0.id == start.id } ?? 0
+                player.queue = ApplicationMusicPlayer.Queue(for: Array(songs[from...]))
+                try await player.play()
+            }
             switchTo(.appleMusic)
             current = NowPlaying(title: start.title, artist: start.artistName,
                                  artwork: start.artwork?.url(width: 600, height: 600) ?? tracks[index].artwork(600),
@@ -397,10 +423,13 @@ final class PlayerController {
             duration = start.duration ?? 0
             return true
         } catch {
+            Self.log.error("Apple Music couldn't play songs: \(String(reflecting: error), privacy: .public)")
             lastError = "Apple Music: \(error.localizedDescription). Playing a preview instead."
             return false
         }
     }
+
+    static let log = Logger(subsystem: "io.github.davidlago.JazzDiscovery", category: "player")
 
     private func playAlbumWithMusicKit(_ album: CatalogAlbum) async -> Bool {
         do {

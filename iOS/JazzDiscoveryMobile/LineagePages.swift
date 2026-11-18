@@ -122,3 +122,33 @@ struct AlmanacPage: View {
         .onAppear { if let month, let day { selected = DateComponents(month: month, day: day) } }
     }
 }
+
+struct GuidesPage: View {
+    @Environment(PhoneRouter.self) private var router
+
+    var body: some View {
+        ScrollView {
+            VStack(alignment: .leading, spacing: 16) {
+                PageHeader(title: "Listening Guides", subtitle: "One recording at a time, section by section, following the music. They follow the full track, with Apple Music.")
+                VStack(spacing: 12) { GuidesRow(cardWidth: nil) { router.go(.guide($0)) } }
+                    .padding(.horizontal, Theme.gutter)
+            }
+            .padding(.top, 8).padding(.bottom, 32)
+        }
+        .background(Theme.ink)
+        .revealedTitle("Listening Guides", after: 60)
+    }
+}
+
+struct GuideDetailView: View {
+    let guide: Guide
+    @Environment(PhoneRouter.self) private var router
+    @Environment(JazzLibrary.self) private var library
+
+    var body: some View {
+        GuideView(guide: guide, compact: true, openArtist: { router.go(.artist($0)) }, openTerm: { router.go(.term($0)) },
+                  openAlbum: { router.go(.album($0)) })
+            .navigationTitle(library.tracks[guide.track]?.title ?? "Guide")
+            .navigationBarTitleDisplayMode(.inline)
+    }
+}

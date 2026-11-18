@@ -30,6 +30,19 @@ struct HomeView: View {
                     HRow(spacing: 16) { PathsRow { router.go(.journey($0)) } }
                 }
 
+                if !library.guides.isEmpty {
+                    VStack(alignment: .leading, spacing: 6) {
+                        HStack(alignment: .firstTextBaseline) {
+                            SectionHeader(title: "Listening Guides", subtitle: "One recording at a time, section by section, following the music.")
+                            Spacer()
+                            Button("All Guides →") { router.show(.guides) }.buttonStyle(.plain)
+                                .font(.system(size: 13, weight: .semibold)).foregroundStyle(Theme.brass)
+                        }
+                        .padding(.horizontal, 40)
+                        HRow(spacing: 16) { GuidesRow(cardWidth: 280) { router.go(.guide($0)) } }
+                    }
+                }
+
                 VStack(alignment: .leading, spacing: 6) {
                     HStack(alignment: .firstTextBaseline) {
                         SectionHeader(title: "Radio", subtitle: "Stations that keep playing, and say why each track is there.")

@@ -24,6 +24,15 @@ struct TimelineTab: View {
                     HRow(spacing: 12) { PathsRow(cardWidth: 200) { router.go(.journey($0)) } }
                 }
 
+                if !library.guides.isEmpty {
+                    VStack(alignment: .leading, spacing: 6) {
+                        SectionHeader(title: "Listening Guides", subtitle: "One recording at a time, section by section, following the music.") {
+                            SeeAllLink(route: .guides)
+                        }
+                        HRow(spacing: 12) { GuidesRow(cardWidth: 240) { router.go(.guide($0)) } }
+                    }
+                }
+
                 VStack(alignment: .leading, spacing: 6) {
                     SectionHeader(title: "Radio", subtitle: "Stations that keep playing, and say why each track is there.") {
                         SeeAllLink(route: .radio)
