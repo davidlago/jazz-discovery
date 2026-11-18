@@ -6,6 +6,18 @@ section for the tagged version at the top of the GitHub release notes (or **Unre
 
 ## Unreleased
 
+## 1.4.0
+
+- **The Songbook**: 28 tunes, from *St. Louis Blues* to *Footprints*, each with its story, who wrote it and when, its
+  form, and three to five landmark versions on a timeline, each with a sentence on what to listen for. *Play in Order*
+  plays them oldest first.
+- Tunes everywhere: a note mark on any track in the Songbook (click it on the Mac; touch and hold on iPhone), a
+  Songbook row on artist pages (the tunes they wrote and their versions of others), *Also in the Crate* on tune pages,
+  and tunes in search.
+- **Songbook Radio**, shuffling versions across the book.
+- iPhone: the Eras tab is now **Explore**: the eras as a carousel, then Decades, the Songbook and Connections.
+- Mac: Songbook in the sidebar. `jazzdiscovery://tune/<id>`, `songbook` and `tab/explore` links.
+
 ## 1.3.0
 
 - **Radio**: stations that keep playing, one per era, decade and instrument, plus **The Long Way** (130 years in order,

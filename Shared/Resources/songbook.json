@@ -1,0 +1,1155 @@
+{
+ "tunes": [
+  {
+   "id": "st-louis-blues",
+   "title": "St. Louis Blues",
+   "composers": [
+    "W. C. Handy"
+   ],
+   "lyricists": [],
+   "year": 1914,
+   "origin": "Blues",
+   "form": "12-bar blues strains with a 16-bar habanera section",
+   "summary": "W. C. Handy, the bandleader who called himself the Father of the Blues, published it in 1914, mixing a twelve-bar blues with a strain in the Latin habanera rhythm he'd heard in Cuba and on Memphis dance floors. It became one of the most recorded songs of the first half of the century.\n\nThe tango section is the thing to listen for: some versions keep it, some swing straight through it, and it tells you how each band hears the Caribbean in the blues.",
+   "versions": [
+    {
+     "artist": "bessie-smith",
+     "artistName": "Bessie Smith",
+     "year": 1925,
+     "note": "Just voice, Louis Armstrong's cornet and a reed organ: Armstrong answers each line as if he were a second singer.",
+     "landmark": true,
+     "album": "essential-bessie-smith"
+    },
+    {
+     "artist": "louis-armstrong",
+     "artistName": "Louis Armstrong",
+     "year": 1954,
+     "note": "From Louis Armstrong Plays W. C. Handy: nearly nine minutes with his All Stars and Velma Middleton, taking every strain, the tango section included, at an easy rolling tempo.",
+     "record": "Louis Armstrong Plays W.C. Handy"
+    },
+    {
+     "artist": "earl-hines",
+     "artistName": "Earl Hines",
+     "title": "Boogie Woogie On St. Louis Blues",
+     "year": 1940,
+     "note": "Hines turns it into a boogie-woogie piano showpiece, the left hand rolling eight to the bar."
+    },
+    {
+     "artist": "herbie-hancock",
+     "artistName": "Herbie Hancock",
+     "year": 1998,
+     "note": "From Gershwin's World, with Stevie Wonder singing and playing harmonica over a loose, modern groove: the old tune heard through soul music.",
+     "record": "Gershwin's World"
+    }
+   ]
+  },
+  {
+   "id": "body-and-soul",
+   "title": "Body and Soul",
+   "composers": [
+    "Johnny Green"
+   ],
+   "lyricists": [
+    "Edward Heyman",
+    "Robert Sour",
+    "Frank Eyton"
+   ],
+   "year": 1930,
+   "origin": "Popular song",
+   "form": "AABA, 32 bars (the bridge moves up a half step)",
+   "summary": "A torch song from a 1930 Broadway revue, it became the ballad every saxophonist is measured against after Coleman Hawkins recorded it in 1939 and barely played the melody at all.\n\nIts chords move in unexpected directions, especially in the bridge, which is why players treat it as a test: listen for how each version gets through the bridge and back.",
+   "versions": [
+    {
+     "artist": "coleman-hawkins",
+     "artistName": "Coleman Hawkins",
+     "year": 1939,
+     "note": "Two choruses of improvisation that hint at the melody only in the first bars, then build to a climax: a hit record made of pure invention.",
+     "landmark": true,
+     "record": "Body and Soul",
+     "album": "hawkins-body-and-soul"
+    },
+    {
+     "artist": "billie-holiday",
+     "artistName": "Billie Holiday",
+     "year": 1940,
+     "note": "Holiday sings the words Hawkins left out, slightly behind the beat, turning the torch song into something private."
+    },
+    {
+     "artist": "thelonious-monk",
+     "artistName": "Thelonious Monk",
+     "year": 1962,
+     "note": "Solo piano on Monk's Dream: the melody stated plainly, then knocked off balance with his dissonant fills and stride left hand.",
+     "record": "Monk's Dream"
+    },
+    {
+     "artist": "john-coltrane",
+     "artistName": "John Coltrane",
+     "year": 1960,
+     "note": "Coltrane reharmonises it with his own moving chords and plays it as a slow, searching ballad over McCoy Tyner and Elvin Jones.",
+     "record": "Coltrane's Sound"
+    }
+   ]
+  },
+  {
+   "id": "stardust",
+   "title": "Stardust",
+   "composers": [
+    "Hoagy Carmichael"
+   ],
+   "lyricists": [
+    "Mitchell Parish"
+   ],
+   "year": 1927,
+   "origin": "Popular song",
+   "form": "Verse and 32-bar ABAC refrain",
+   "summary": "Hoagy Carmichael first recorded it as a medium-tempo instrumental in 1927, inspired, he said, by the cornet of his friend Bix Beiderbecke. Slowed down and given Mitchell Parish's lyric in 1929, it became one of the most recorded songs of the century.\n\nThe melody wanders like an improvised solo, which is why players love it: listen for who keeps the long verse and who goes straight to the refrain.",
+   "versions": [
+    {
+     "artist": "louis-armstrong",
+     "artistName": "Louis Armstrong",
+     "year": 1931,
+     "note": "Armstrong rewrites the melody as he sings it, repeating and bending phrases, then plays it the same free way on trumpet.",
+     "landmark": true
+    },
+    {
+     "artist": null,
+     "artistName": "Artie Shaw",
+     "year": 1940,
+     "note": "The big-band hit: strings, a sumptuous arrangement and Shaw's clarinet soaring over it."
+    },
+    {
+     "artist": "lionel-hampton",
+     "artistName": "Lionel Hampton",
+     "year": 1947,
+     "note": "From the Just Jazz concert in Pasadena: a jam session where each soloist takes the tune somewhere, Hampton's vibes last.",
+     "record": "Just Jazz"
+    },
+    {
+     "artist": null,
+     "artistName": "Nat King Cole",
+     "year": 1957,
+     "note": "Cole sings the rarely heard verse in full before the refrain, over Gordon Jenkins's strings.",
+     "record": "Love Is the Thing"
+    },
+    {
+     "artist": null,
+     "artistName": "Willie Nelson",
+     "year": 1978,
+     "note": "The country singer's album of standards made it a hit again: sparse, conversational, close to how Carmichael first heard it.",
+     "record": "Stardust"
+    }
+   ]
+  },
+  {
+   "id": "i-got-rhythm",
+   "title": "I Got Rhythm",
+   "composers": [
+    "George Gershwin"
+   ],
+   "lyricists": [
+    "Ira Gershwin"
+   ],
+   "year": 1930,
+   "origin": "Show tune",
+   "form": "AABA, 32 bars (34 in the show)",
+   "summary": "Written for the 1930 musical Girl Crazy, where Ethel Merman stopped the show with it. Its chord sequence, rhythm changes, became the second most common structure in jazz after the blues: countless bebop tunes are new melodies written over it.\n\nListen for the bridge's chain of dominant chords, a moment every soloist has to navigate at speed.",
+   "versions": [
+    {
+     "artist": "louis-armstrong",
+     "artistName": "Louis Armstrong",
+     "year": 1931,
+     "note": "A hot band record a year after the show: Armstrong hands the tune around the band before taking it home.",
+     "landmark": true
+    },
+    {
+     "artist": "benny-goodman",
+     "artistName": "Benny Goodman",
+     "year": 1938,
+     "album": "carnegie-hall-1938",
+     "record": "Carnegie Hall",
+     "note": "At the 1938 Carnegie Hall concert the quartet, with Teddy Wilson, Lionel Hampton and Gene Krupa, takes it fast and light: chamber jazz from the first famous integrated small group."
+    },
+    {
+     "artist": "ella-fitzgerald",
+     "artistName": "Ella Fitzgerald",
+     "year": 1959,
+     "note": "From her Gershwin Songbook, with Nelson Riddle: the lyric sung with clear delight, the swing light and exact.",
+     "record": "Gershwin"
+    }
+   ]
+  },
+  {
+   "id": "summertime",
+   "title": "Summertime",
+   "composers": [
+    "George Gershwin"
+   ],
+   "lyricists": [
+    "DuBose Heyward"
+   ],
+   "year": 1935,
+   "origin": "Show tune",
+   "form": "16 bars, minor",
+   "summary": "A lullaby from Gershwin's opera Porgy and Bess, sung in the first scene. Short, in a minor key and built on a few chords, it has been recorded tens of thousands of times, by jazz players, soul singers and rock bands.\n\nBecause there's so little to it, each version is mostly the performer: listen for the tempo and the bass line, which change the song more than any reharmonisation.",
+   "versions": [
+    {
+     "artist": "billie-holiday",
+     "artistName": "Billie Holiday",
+     "year": 1936,
+     "note": "A year after the opera opened, Holiday swings it at medium tempo: a lullaby turned into a small-band jazz record."
+    },
+    {
+     "artist": "sidney-bechet",
+     "artistName": "Sidney Bechet",
+     "year": 1939,
+     "note": "Bechet's soprano saxophone, with its wide vibrato, sings the melody almost operatically. It was one of Blue Note's first hits.",
+     "landmark": true
+    },
+    {
+     "artist": "ella-fitzgerald",
+     "artistName": "Ella Fitzgerald & Louis Armstrong",
+     "year": 1957,
+     "note": "Arranged by Russell Garcia as a duet: Ella's clarity and Louis's gravel trading lines over strings.",
+     "record": "Porgy and Bess"
+    },
+    {
+     "artist": "miles-davis",
+     "artistName": "Miles Davis",
+     "year": 1958,
+     "note": "Gil Evans's orchestra repeats a soft figure while Miles plays muted trumpet over it: the whole tune hovers.",
+     "record": "Porgy and Bess"
+    },
+    {
+     "artist": "john-coltrane",
+     "artistName": "John Coltrane",
+     "year": 1960,
+     "note": "Fast and modal, with Coltrane's sheets of sound pouring over a single chord: the lullaby barely survives, on purpose.",
+     "record": "My Favorite Things",
+     "album": "my-favorite-things"
+    }
+   ]
+  },
+  {
+   "id": "caravan",
+   "title": "Caravan",
+   "composers": [
+    "Juan Tizol",
+    "duke-ellington"
+   ],
+   "lyricists": [
+    "Irving Mills"
+   ],
+   "year": 1936,
+   "origin": "Jazz original",
+   "form": "AABA, 64 bars",
+   "summary": "Ellington's Puerto Rican valve trombonist Juan Tizol brought the melody; Ellington shaped it into the band's exotic showpiece. It was one of the first Latin-tinged jazz standards, years before the Afro-Cuban craze.\n\nThe A sections hang over one chord while the drums keep a tom-tom pattern; the bridge suddenly swings. Listen for how each band handles that switch.",
+   "versions": [
+    {
+     "artist": "duke-ellington",
+     "artistName": "Duke Ellington",
+     "year": 1937,
+     "note": "The orchestra version: Tizol's trombone states the snaking melody over tom-toms, then the band swings the bridge.",
+     "landmark": true
+    },
+    {
+     "artist": "thelonious-monk",
+     "artistName": "Thelonious Monk",
+     "year": 1955,
+     "note": "From Monk's album of Ellington tunes: the melody played straight but voiced with his crunched, angular chords.",
+     "record": "Plays Duke Ellington"
+    },
+    {
+     "artist": "duke-ellington",
+     "artistName": "Duke Ellington",
+     "year": 1962,
+     "note": "From Money Jungle, a trio with Charles Mingus and Max Roach: tense, percussive, almost violent, three generations pushing each other.",
+     "record": "Money Jungle"
+    },
+    {
+     "artist": "art-blakey",
+     "artistName": "Art Blakey",
+     "year": 1962,
+     "note": "The Jazz Messengers with Freddie Hubbard and Wayne Shorter: a hard bop flag-waver with Blakey's drums driving the vamp.",
+     "record": "Money Jungle"
+    }
+   ]
+  },
+  {
+   "id": "cherokee",
+   "title": "Cherokee",
+   "composers": [
+    "Ray Noble"
+   ],
+   "lyricists": [],
+   "year": 1938,
+   "origin": "Popular song",
+   "form": "AABA, 64 bars",
+   "summary": "An English bandleader's song, written as part of an 'Indian Suite', it became the young bebop musicians' test piece: a long form, a bridge that moves through distant keys, and tempos that get faster every year.\n\nCharlie Parker said he found his way into bebop while working through its chords in 1939. Listen for the bridge: at speed, it separates the players who know the changes from the ones who don't.",
+   "versions": [
+    {
+     "artist": null,
+     "artistName": "Charlie Barnet",
+     "year": 1939,
+     "note": "The swing-era hit, at a comfortable dance tempo: the melody the boppers would later take apart."
+    },
+    {
+     "artist": "charlie-parker",
+     "artistName": "Charlie Parker",
+     "title": "Ko Ko",
+     "year": 1945,
+     "note": "Parker's new tune over Cherokee's chords at a breakneck tempo, with Max Roach and Dizzy Gillespie on trumpet: a manifesto for bebop.",
+     "landmark": true,
+     "album": "savoy-dial-master-takes"
+    },
+    {
+     "artist": "clifford-brown",
+     "artistName": "Clifford Brown & Max Roach",
+     "year": 1955,
+     "note": "From Study in Brown: Brown's trumpet runs through the bridge with a clarity and warmth that made it look easy.",
+     "record": "Study in Brown",
+     "album": "study-in-brown"
+    }
+   ]
+  },
+  {
+   "id": "all-the-things-you-are",
+   "title": "All the Things You Are",
+   "composers": [
+    "Jerome Kern"
+   ],
+   "lyricists": [
+    "Oscar Hammerstein II"
+   ],
+   "year": 1939,
+   "origin": "Show tune",
+   "form": "AABA, 36 bars",
+   "summary": "From a Broadway flop, Very Warm for May, it outlived the show by decades. Its chords travel through five keys in thirty-six bars, so it became the standard musicians call to show they can follow a long harmonic road.\n\nListen for the introduction the boppers added, and for how players handle the turn at the end of the bridge.",
+   "versions": [
+    {
+     "artist": "charlie-parker",
+     "artistName": "Dizzy Gillespie & Charlie Parker",
+     "year": 1945,
+     "note": "Dizzy's and Bird's version opened with a new introduction that later players kept: bebop claiming a show tune as its own.",
+     "landmark": true
+    },
+    {
+     "artist": "ella-fitzgerald",
+     "artistName": "Ella Fitzgerald",
+     "year": 1963,
+     "note": "From her Jerome Kern Songbook: sung as a ballad with Nelson Riddle, so you can hear how lovely the melody is.",
+     "record": "Jerome Kern"
+    },
+    {
+     "artist": "keith-jarrett",
+     "artistName": "Keith Jarrett",
+     "year": 1983,
+     "note": "The trio with Gary Peacock and Jack DeJohnette that took standards seriously again: long, singing lines and constant interplay.",
+     "record": "Standards",
+     "album": "standards-vol-1"
+    }
+   ]
+  },
+  {
+   "id": "how-high-the-moon",
+   "title": "How High the Moon",
+   "composers": [
+    "Morgan Lewis"
+   ],
+   "lyricists": [
+    "Nancy Hamilton"
+   ],
+   "year": 1940,
+   "origin": "Show tune",
+   "form": "ABAC, 32 bars",
+   "summary": "A ballad from a 1940 revue that bebop musicians played so fast and so often it became their anthem. Its chords also carry Charlie Parker's Ornithology, so the two are often heard back to back.\n\nListen for the tempo first: from ballad to dance band to scat to guitar trickery, the same chords take every speed.",
+   "versions": [
+    {
+     "artist": "benny-goodman",
+     "artistName": "Benny Goodman",
+     "year": 1940,
+     "note": "The swing-era version, the same year as the show: a bright dance tempo and Goodman's clarinet."
+    },
+    {
+     "artist": null,
+     "artistName": "Les Paul & Mary Ford",
+     "year": 1951,
+     "note": "A number one pop hit built from multi-tracked guitars and voices in Les Paul's home studio: jazz changes, new technology."
+    },
+    {
+     "artist": "ella-fitzgerald",
+     "artistName": "Ella Fitzgerald",
+     "year": 1960,
+     "note": "Live in Berlin: nearly seven minutes of scat, quoting one tune after another, never losing the chords.",
+     "landmark": true,
+     "record": "Ella in Berlin"
+    }
+   ]
+  },
+  {
+   "id": "take-the-a-train",
+   "title": "Take the \"A\" Train",
+   "composers": [
+    "Billy Strayhorn"
+   ],
+   "lyricists": [],
+   "year": 1939,
+   "origin": "Jazz original",
+   "form": "AABA, 32 bars",
+   "summary": "Billy Strayhorn wrote it from Ellington's directions to his house, which began with taking the A train uptown to Harlem. Recorded in 1941, it became the Ellington orchestra's theme.\n\nListen for the raised fourth note in the melody's second bar, the touch that gives it its lift, and for the train-like brass in the last chorus.",
+   "aliases": [
+    "Take The A Train"
+   ],
+   "versions": [
+    {
+     "artist": "duke-ellington",
+     "artistName": "Duke Ellington",
+     "year": 1941,
+     "note": "The original, with Ray Nance's trumpet solo, first muted, then open: compact and perfectly paced.",
+     "landmark": true,
+     "album": "blanton-webster-band"
+    },
+    {
+     "artist": "ella-fitzgerald",
+     "artistName": "Ella Fitzgerald",
+     "year": 1957,
+     "note": "From her Duke Ellington Songbook, with Ellington's own band: Ella scats her way through it.",
+     "record": "Duke Ellington Song Book"
+    },
+    {
+     "artist": "duke-ellington",
+     "artistName": "Duke Ellington",
+     "year": 1952,
+     "note": "From Ellington Uptown: Betty Roché sings it slow, then double-time with a bebop scat chorus, over the full band.",
+     "record": "Ellington Uptown"
+    }
+   ]
+  },
+  {
+   "id": "a-night-in-tunisia",
+   "title": "A Night in Tunisia",
+   "composers": [
+    "dizzy-gillespie",
+    "Frank Paparelli"
+   ],
+   "lyricists": [],
+   "year": 1942,
+   "origin": "Jazz original",
+   "form": "AABA, 32 bars, with an interlude and a break",
+   "summary": "Dizzy Gillespie wrote it in 1942 while playing with Benny Carter's band, mixing a Latin bass line in the A sections with swing in the bridge. The interlude ends with a four-bar break, a silence the soloist has to fill alone.\n\nListen for that break: it's the moment each version is remembered for.",
+   "aliases": [
+    "Night in Tunisia"
+   ],
+   "versions": [
+    {
+     "artist": "dizzy-gillespie",
+     "artistName": "Dizzy Gillespie",
+     "year": 1946,
+     "note": "The composer's own small band: the Latin vamp, then Dizzy's high, fast trumpet in the break.",
+     "landmark": true
+    },
+    {
+     "artist": "charlie-parker",
+     "artistName": "Charlie Parker",
+     "year": 1946,
+     "note": "On the famous Dial take, Parker's four-bar alto break is so dense the label issued it on its own as 'The Famous Alto Break'.",
+     "album": "savoy-dial-master-takes"
+    },
+    {
+     "artist": "art-blakey",
+     "artistName": "Art Blakey",
+     "year": 1960,
+     "note": "Blakey opens with a long drum feature, and the band with Lee Morgan and Wayne Shorter turns it into eleven minutes of fire.",
+     "record": "A Night in Tunisia"
+    },
+    {
+     "artist": null,
+     "artistName": "Chaka Khan",
+     "year": 1981,
+     "note": "Retitled 'And the Melody Still Lingers On', with Dizzy himself on trumpet and lyrics over a funk groove.",
+     "record": "What Cha' Gonna Do for Me"
+    }
+   ]
+  },
+  {
+   "id": "round-midnight",
+   "title": "'Round Midnight",
+   "composers": [
+    "thelonious-monk",
+    "Cootie Williams"
+   ],
+   "lyricists": [
+    "Bernie Hanighen"
+   ],
+   "year": 1944,
+   "origin": "Jazz original",
+   "form": "AABA, 32 bars, minor",
+   "summary": "Monk wrote it as a young man; Cootie Williams, who recorded it first in 1944, took a co-composer credit. It's the most recorded jazz original by a jazz musician.\n\nListen for the introduction and ending: Dizzy Gillespie's band added a coda that almost everyone has kept since, and Miles Davis's version made the tune famous with it.",
+   "aliases": [
+    "Round Midnight",
+    "'Round About Midnight",
+    "Round About Midnight"
+   ],
+   "versions": [
+    {
+     "artist": "cootie-williams",
+     "artistName": "Cootie Williams",
+     "year": 1944,
+     "note": "The first recording, by Williams's big band with a young Bud Powell on piano: lush and slow."
+    },
+    {
+     "artist": "thelonious-monk",
+     "artistName": "Thelonious Monk",
+     "year": 1947,
+     "note": "Monk's own first recording, for Blue Note: the melody with his wrong-sounding right notes, exactly as he meant it.",
+     "landmark": true,
+     "record": "Genius of Modern Music",
+     "album": "genius-of-modern-music-1"
+    },
+    {
+     "artist": "miles-davis",
+     "artistName": "Miles Davis",
+     "year": 1956,
+     "note": "Muted trumpet on the melody, then the band's sudden fanfare interlude and Coltrane's tenor: the version that made the tune famous.",
+     "record": "'Round About Midnight"
+    }
+   ]
+  },
+  {
+   "id": "autumn-leaves",
+   "title": "Autumn Leaves",
+   "composers": [
+    "Joseph Kosma"
+   ],
+   "lyricists": [
+    "Jacques Prévert",
+    "Johnny Mercer"
+   ],
+   "year": 1945,
+   "origin": "Film song",
+   "form": "AABC, 32 bars",
+   "summary": "A French song, 'Les feuilles mortes', written for a 1946 film, with an English lyric by Johnny Mercer in 1947. Its chords move in plain circles of fourths through a major key and its relative minor, which makes it the first standard many students learn.\n\nListen for the long introduction on Cannonball's record, and for how Bill Evans's trio passes the melody around.",
+   "versions": [
+    {
+     "artist": null,
+     "artistName": "Nat King Cole",
+     "year": 1955,
+     "note": "The English lyric, sung warmly and simply: the version that made it a standard in America."
+    },
+    {
+     "artist": "cannonball-adderley",
+     "artistName": "Cannonball Adderley",
+     "year": 1958,
+     "note": "From Somethin' Else: a long, brooding vamp introduction, then Miles Davis's muted trumpet on the melody.",
+     "landmark": true,
+     "record": "Somethin' Else",
+     "album": "somethin-else"
+    },
+    {
+     "artist": "bill-evans",
+     "artistName": "Bill Evans",
+     "year": 1959,
+     "note": "From Portrait in Jazz: piano, bass and drums trading lines as equals, Scott LaFaro's bass as much a voice as the piano.",
+     "record": "Portrait in Jazz"
+    },
+    {
+     "artist": "keith-jarrett",
+     "artistName": "Keith Jarrett",
+     "year": 1986,
+     "note": "A long live performance by the Standards trio that grows from the tune into a gospel-tinged vamp.",
+     "record": "Still Live"
+    }
+   ]
+  },
+  {
+   "id": "my-funny-valentine",
+   "title": "My Funny Valentine",
+   "composers": [
+    "Richard Rodgers"
+   ],
+   "lyricists": [
+    "Lorenz Hart"
+   ],
+   "year": 1937,
+   "origin": "Show tune",
+   "form": "ABAC, 36 bars, minor",
+   "summary": "From the 1937 musical Babes in Arms, a love song that teases its subject. In the 1950s Chet Baker made it his and, through him, the West Coast's; then Miles Davis turned it into something stormier.\n\nListen for the descending line under the opening phrase, a slow chromatic fall that every arrangement keeps.",
+   "versions": [
+    {
+     "artist": "chet-baker",
+     "artistName": "Chet Baker",
+     "year": 1954,
+     "note": "Sung softly and almost without vibrato, the trumpet's tone in his voice: the version that made him a star.",
+     "landmark": true,
+     "record": "Chet Baker Sings",
+     "album": "chet-baker-sings"
+    },
+    {
+     "artist": "ella-fitzgerald",
+     "artistName": "Ella Fitzgerald",
+     "year": 1956,
+     "note": "From her Rodgers and Hart Songbook: the lyric's wit and tenderness both, unhurried.",
+     "record": "Rodgers"
+    },
+    {
+     "artist": "miles-davis",
+     "artistName": "Miles Davis",
+     "year": 1964,
+     "note": "Live with Herbie Hancock, Ron Carter and Tony Williams: fifteen minutes in which the band speeds up, stops and starts again.",
+     "record": "My Funny Valentine"
+    }
+   ]
+  },
+  {
+   "id": "my-favorite-things",
+   "title": "My Favorite Things",
+   "composers": [
+    "Richard Rodgers"
+   ],
+   "lyricists": [
+    "Oscar Hammerstein II"
+   ],
+   "year": 1959,
+   "origin": "Show tune",
+   "form": "Waltz, 16-bar sections",
+   "summary": "A cheerful list song from The Sound of Music. A year after the show opened, John Coltrane recorded it on soprano saxophone as a long modal vamp in waltz time, and a Broadway tune became one of the signature pieces of 1960s jazz.\n\nListen for how much time Coltrane spends on just two chords, and how the waltz never stops turning.",
+   "versions": [
+    {
+     "artist": null,
+     "artistName": "Mary Martin",
+     "year": 1959,
+     "note": "The original Broadway cast: bright, brisk and short, the song Coltrane started from."
+    },
+    {
+     "artist": "john-coltrane",
+     "artistName": "John Coltrane",
+     "year": 1960,
+     "note": "Fourteen minutes on soprano saxophone over McCoy Tyner's rocking chords and Elvin Jones's waltz.",
+     "landmark": true,
+     "record": "My Favorite Things",
+     "album": "my-favorite-things"
+    },
+    {
+     "artist": "john-coltrane",
+     "artistName": "John Coltrane",
+     "year": 1963,
+     "note": "Live at Newport, with Roy Haynes on drums: longer, wilder, Coltrane pushing the vamp toward ecstasy.",
+     "record": "Selflessness"
+    },
+    {
+     "artist": null,
+     "artistName": "Julie Andrews",
+     "year": 1965,
+     "note": "The film soundtrack, the version most people know: a reminder of the simple melody underneath.",
+     "record": "Sound of Music"
+    }
+   ]
+  },
+  {
+   "id": "take-five",
+   "title": "Take Five",
+   "composers": [
+    "paul-desmond"
+   ],
+   "lyricists": [],
+   "year": 1959,
+   "origin": "Jazz original",
+   "form": "AABA in 5/4",
+   "summary": "Paul Desmond wrote it for the Dave Brubeck Quartet's Time Out, an album of unusual meters. A tune in five beats to the bar became the best-selling jazz single of its time.\n\nListen to Joe Morello's drums: the solo is built over a vamp that never loses count.",
+   "versions": [
+    {
+     "artist": "dave-brubeck",
+     "artistName": "Dave Brubeck",
+     "year": 1959,
+     "note": "Desmond's dry, light alto over Brubeck's two-chord vamp, and Morello's drum solo in five.",
+     "landmark": true,
+     "record": "Time Out",
+     "album": "time-out"
+    },
+    {
+     "artist": null,
+     "artistName": "Carmen McRae",
+     "year": 1961,
+     "note": "With Brubeck's quartet and a new lyric: proof the odd meter can be sung."
+    },
+    {
+     "artist": null,
+     "artistName": "Al Jarreau",
+     "year": 1977,
+     "note": "Live, scatting and singing in five over a funk rhythm section: the vocal athletics the tune invites.",
+     "record": "Look to the Rainbow"
+    }
+   ]
+  },
+  {
+   "id": "the-girl-from-ipanema",
+   "title": "The Girl from Ipanema",
+   "composers": [
+    "antonio-carlos-jobim"
+   ],
+   "lyricists": [
+    "Vinícius de Moraes",
+    "Norman Gimbel"
+   ],
+   "year": 1962,
+   "origin": "Latin standard",
+   "form": "AABA, 40 bars (a 16-bar bridge)",
+   "summary": "Jobim and the poet Vinícius de Moraes wrote 'Garota de Ipanema' about a girl they saw walking to the beach. Recorded by Stan Getz and João Gilberto, with Astrud Gilberto singing the English words, it made bossa nova a worldwide craze.\n\nListen for the bridge, which drifts through faraway keys before landing back home as if nothing happened.",
+   "aliases": [
+    "Garota de Ipanema"
+   ],
+   "versions": [
+    {
+     "artist": "stan-getz",
+     "artistName": "Stan Getz & João Gilberto",
+     "year": 1963,
+     "note": "João sings in Portuguese, Astrud in English, Getz's tenor floats over the guitar's bossa rhythm.",
+     "landmark": true,
+     "record": "Getz/Gilberto",
+     "album": "getz-gilberto"
+    },
+    {
+     "artist": null,
+     "artistName": "Frank Sinatra & Antônio Carlos Jobim",
+     "year": 1967,
+     "note": "Sinatra sings softly, almost whispering, with Jobim's guitar and voice and Claus Ogerman's strings.",
+     "record": "Francis Albert Sinatra"
+    },
+    {
+     "artist": "ella-fitzgerald",
+     "artistName": "Ella Fitzgerald",
+     "year": 1981,
+     "note": "From her Antonio Carlos Jobim Songbook, late in her career: bossa nova sung with a jazz singer's swing.",
+     "record": "Jobim"
+    }
+   ]
+  },
+  {
+   "id": "footprints",
+   "title": "Footprints",
+   "composers": [
+    "wayne-shorter"
+   ],
+   "lyricists": [],
+   "year": 1966,
+   "origin": "Jazz original",
+   "form": "24-bar minor blues in 6/4",
+   "summary": "Wayne Shorter's minor blues with a twist: it's in six, and its turnaround uses unexpected chords. He recorded it first on his own Adam's Apple, and the same year with Miles Davis's quintet.\n\nListen to the bass ostinato that holds everything down while the rhythm section stretches time around it.",
+   "versions": [
+    {
+     "artist": "wayne-shorter",
+     "artistName": "Wayne Shorter",
+     "year": 1966,
+     "note": "The composer's quartet with Herbie Hancock: a calm, almost mysterious statement of the tune.",
+     "record": "Adam's Apple"
+    },
+    {
+     "artist": "miles-davis",
+     "artistName": "Miles Davis",
+     "year": 1966,
+     "note": "From Miles Smiles: Tony Williams pulls the 6/4 into four and back, the time breathing under the solos.",
+     "landmark": true,
+     "record": "Miles Smiles",
+     "album": "miles-smiles"
+    },
+    {
+     "artist": "wayne-shorter",
+     "artistName": "Wayne Shorter",
+     "year": 2002,
+     "note": "From Footprints Live!, with Danilo Pérez, John Patitucci and Brian Blade: the tune opened up, barely stated, all interplay.",
+     "record": "Footprints Live"
+    }
+   ]
+  },
+  {
+   "id": "blue-monk",
+   "title": "Blue Monk",
+   "composers": [
+    "thelonious-monk"
+   ],
+   "lyricists": [
+    "Abbey Lincoln"
+   ],
+   "year": 1954,
+   "origin": "Blues",
+   "form": "12-bar blues",
+   "summary": "A twelve-bar blues with a melody that climbs in small steps, as if Monk were testing each note before trusting it. It's one of his most played tunes, simple enough for a jam session and full of his quirks.\n\nListen for the half-step neighbour notes in the melody: they're what make it unmistakably Monk.",
+   "versions": [
+    {
+     "artist": "thelonious-monk",
+     "artistName": "Thelonious Monk",
+     "year": 1954,
+     "note": "The first recording, a trio with Percy Heath and Art Blakey: the theme stated with deliberate, spaced-out phrasing.",
+     "landmark": true
+    },
+    {
+     "artist": "art-blakey",
+     "artistName": "Art Blakey",
+     "year": 1957,
+     "note": "Monk sitting in with Blakey's Jazz Messengers, Johnny Griffin's tenor taking it fast and hard.",
+     "record": "Thelonious Monk"
+    },
+    {
+     "artist": null,
+     "artistName": "Abbey Lincoln",
+     "year": 1961,
+     "note": "Lincoln wrote and sang words for it on Straight Ahead: a blues about the blues, sung with grit.",
+     "record": "Straight Ahead"
+    }
+   ]
+  },
+  {
+   "id": "straight-no-chaser",
+   "title": "Straight, No Chaser",
+   "composers": [
+    "thelonious-monk"
+   ],
+   "lyricists": [],
+   "year": 1951,
+   "origin": "Blues",
+   "form": "12-bar blues",
+   "summary": "A blues built on one short phrase repeated and shifted so it lands on a different beat each time, a Monk trick that makes a simple line sound unpredictable.\n\nListen for where the phrase falls against the beat: Monk placed it so it never quite settles.",
+   "aliases": [
+    "Straight No Chaser"
+   ],
+   "versions": [
+    {
+     "artist": "thelonious-monk",
+     "artistName": "Thelonious Monk",
+     "year": 1951,
+     "note": "The Blue Note original, with Milt Jackson on vibes: the phrase tossed back and forth across the bar lines.",
+     "landmark": true,
+     "record": "Genius of Modern Music"
+    },
+    {
+     "artist": "miles-davis",
+     "artistName": "Miles Davis",
+     "year": 1958,
+     "note": "From Milestones, with Coltrane and Cannonball Adderley: a fast, swinging blowing session on Monk's theme.",
+     "record": "Milestones"
+    },
+    {
+     "artist": "thelonious-monk",
+     "artistName": "Thelonious Monk",
+     "year": 1967,
+     "note": "The title track of his late Columbia album: the quartet with Charlie Rouse, relaxed and sure of itself.",
+     "record": "Straight, No Chaser"
+    }
+   ]
+  },
+  {
+   "id": "lonely-woman",
+   "title": "Lonely Woman",
+   "composers": [
+    "ornette-coleman"
+   ],
+   "lyricists": [],
+   "year": 1959,
+   "origin": "Jazz original",
+   "form": "Free form around a written lament",
+   "summary": "The opening track of The Shape of Jazz to Come: a mournful melody that floats over a fast, restless rhythm section, two tempos at once. It made Ornette Coleman's revolution sound beautiful.\n\nListen for the difference between the slow, crying horns and the drums racing underneath.",
+   "versions": [
+    {
+     "artist": "ornette-coleman",
+     "artistName": "Ornette Coleman",
+     "year": 1959,
+     "note": "Alto and Don Cherry's cornet in a slightly ragged unison, over Billy Higgins's brisk drums and Charlie Haden's bass drone.",
+     "landmark": true,
+     "record": "The Shape of Jazz to Come",
+     "album": "the-shape-of-jazz-to-come"
+    },
+    {
+     "artist": null,
+     "artistName": "Modern Jazz Quartet",
+     "year": 1962,
+     "note": "The most elegant band in jazz plays the free-jazz anthem as chamber music, with Milt Jackson's vibes.",
+     "record": "Lonely Woman"
+    },
+    {
+     "artist": "don-cherry",
+     "artistName": "Old and New Dreams",
+     "year": 1979,
+     "record": "Old and New Dreams",
+     "note": "Ornette's old bandmates, Don Cherry, Dewey Redman, Charlie Haden and Ed Blackwell, revisit it twenty years on: slower, darker, a lament among friends."
+    }
+   ]
+  },
+  {
+   "id": "afro-blue",
+   "title": "Afro Blue",
+   "composers": [
+    "mongo-santamaria"
+   ],
+   "lyricists": [
+    "Oscar Brown Jr."
+   ],
+   "year": 1959,
+   "origin": "Latin standard",
+   "form": "Minor modal theme over 6/8 and 3/4 at once",
+   "summary": "Mongo Santamaría's tune was one of the first jazz standards built on an Afro-Cuban rhythm in three, the 6/8 bell pattern heard against a 3/4 bass line. John Coltrane's quartet turned it into one of its ecstatic live pieces.\n\nListen for the two meters running at once: the bass in three, the percussion in six.",
+   "versions": [
+    {
+     "artist": "mongo-santamaria",
+     "artistName": "Mongo Santamaría",
+     "year": 1959,
+     "note": "The original, on flute and congas: light, hypnotic and rooted in Cuban rhythm.",
+     "landmark": true
+    },
+    {
+     "artist": null,
+     "artistName": "Abbey Lincoln",
+     "year": 1959,
+     "note": "From Abbey Is Blue, with Oscar Brown Jr.'s words: a dream of Africa sung over the 6/8 groove.",
+     "record": "Abbey Is Blue"
+    },
+    {
+     "artist": "john-coltrane",
+     "artistName": "John Coltrane",
+     "year": 1963,
+     "note": "Live at Birdland on soprano saxophone: Elvin Jones turns the rhythm into a storm.",
+     "record": "Live at Birdland"
+    },
+    {
+     "artist": "robert-glasper",
+     "artistName": "Robert Glasper Experiment",
+     "year": 2012,
+     "note": "From Black Radio, with Erykah Badu singing over a slow, hip-hop-tinged groove.",
+     "record": "Black Radio",
+     "album": "black-radio"
+    }
+   ]
+  },
+  {
+   "id": "watermelon-man",
+   "title": "Watermelon Man",
+   "composers": [
+    "herbie-hancock"
+   ],
+   "lyricists": [],
+   "year": 1962,
+   "origin": "Jazz original",
+   "form": "16-bar blues",
+   "summary": "Herbie Hancock wrote it about the watermelon sellers' cart he remembered from Chicago, and recorded it on his first album, Takin' Off. A year later Mongo Santamaría's Latin version became a pop hit; a decade after that Hancock remade it as funk.\n\nOne tune, three grooves: listen for what each band does with the bass line.",
+   "versions": [
+    {
+     "artist": "herbie-hancock",
+     "artistName": "Herbie Hancock",
+     "year": 1962,
+     "note": "The original, a gospel-tinged hard bop groove with Freddie Hubbard and Dexter Gordon.",
+     "landmark": true,
+     "record": "Takin' Off"
+    },
+    {
+     "artist": "mongo-santamaria",
+     "artistName": "Mongo Santamaría",
+     "year": 1963,
+     "note": "Congas and a cha-cha-style groove: the version that reached the pop charts.",
+     "album": "watermelon-man"
+    },
+    {
+     "artist": "herbie-hancock",
+     "artistName": "Herbie Hancock",
+     "year": 1973,
+     "note": "From Head Hunters: Bill Summers blowing into a beer bottle, then a slow funk groove with synthesizers.",
+     "record": "Head Hunters",
+     "album": "head-hunters"
+    }
+   ]
+  },
+  {
+   "id": "in-a-sentimental-mood",
+   "title": "In a Sentimental Mood",
+   "composers": [
+    "duke-ellington"
+   ],
+   "lyricists": [
+    "Manny Kurtz"
+   ],
+   "year": 1935,
+   "origin": "Jazz original",
+   "form": "AABA, 32 bars",
+   "summary": "One of Ellington's most tender ballads, recorded by his orchestra in 1935. It moves between minor and major, which gives its melody a wistful, unresolved feel.\n\nListen for the first notes of the bridge, where the tune suddenly turns bright before slipping back into the minor.",
+   "versions": [
+    {
+     "artist": "duke-ellington",
+     "artistName": "Duke Ellington",
+     "year": 1935,
+     "note": "The orchestra's original: the melody passed among the saxophones, sweet and a little melancholy."
+    },
+    {
+     "artist": "john-coltrane",
+     "artistName": "Duke Ellington & John Coltrane",
+     "year": 1962,
+     "note": "Ellington's piano introduction, then Coltrane's tenor singing the melody with total calm: one of the most loved ballad recordings in jazz.",
+     "landmark": true,
+     "record": "Duke Ellington & John Coltrane"
+    },
+    {
+     "artist": "ella-fitzgerald",
+     "artistName": "Ella Fitzgerald",
+     "year": 1957,
+     "note": "From her Duke Ellington Songbook: the ballad sung slowly and plainly, letting the melody's turns between minor and major do the work.",
+     "record": "Duke Ellington Song Book"
+    }
+   ]
+  },
+  {
+   "id": "lover-man",
+   "title": "Lover Man",
+   "composers": [
+    "Jimmy Davis",
+    "Roger Ramirez",
+    "James Sherman"
+   ],
+   "lyricists": [],
+   "year": 1941,
+   "origin": "Popular song",
+   "form": "AABA, 32 bars",
+   "summary": "A ballad written with Billie Holiday in mind, and she made it a hit in 1945. The following year Charlie Parker recorded it on a day he was so ill he could barely stand, a performance he later wished had never been released.\n\nListen for how each singer or player stretches the line 'Oh where can you be?'.",
+   "aliases": [
+    "Lover Man (Oh, Where Can You Be?)"
+   ],
+   "versions": [
+    {
+     "artist": "billie-holiday",
+     "artistName": "Billie Holiday",
+     "year": 1944,
+     "note": "Her Decca hit with strings: longing sung without self-pity, the phrasing slightly behind the beat.",
+     "landmark": true
+    },
+    {
+     "artist": "sarah-vaughan",
+     "artistName": "Sarah Vaughan",
+     "year": 1945,
+     "note": "With Dizzy Gillespie and Charlie Parker: the young Vaughan's voice already rich and sure, bebop horns behind her."
+    },
+    {
+     "artist": "charlie-parker",
+     "artistName": "Charlie Parker",
+     "year": 1946,
+     "note": "The Dial session recorded the night he collapsed: unsteady and painfully moving.",
+     "album": "savoy-dial-master-takes"
+    }
+   ]
+  },
+  {
+   "id": "goodbye-pork-pie-hat",
+   "title": "Goodbye Pork Pie Hat",
+   "composers": [
+    "charles-mingus"
+   ],
+   "lyricists": [
+    "Joni Mitchell"
+   ],
+   "year": 1959,
+   "origin": "Jazz original",
+   "form": "12-bar blues with unusual chords",
+   "summary": "Mingus's elegy for Lester Young, who had died a few weeks before the session and was known for his pork pie hat. It's a slow blues with chords nobody else would put under one.\n\nListen for the long, sighing melody played in unison by the saxophones.",
+   "versions": [
+    {
+     "artist": "charles-mingus",
+     "artistName": "Charles Mingus",
+     "year": 1959,
+     "note": "From Mingus Ah Um: John Handy's tenor carries the lament over the band's slow, dragging beat.",
+     "landmark": true,
+     "record": "Mingus Ah Um",
+     "album": "mingus-ah-um"
+    },
+    {
+     "artist": null,
+     "artistName": "Jeff Beck",
+     "year": 1976,
+     "note": "From Wired: the rock guitarist plays it with sustain and bends, a sign of how far the tune travelled.",
+     "record": "Wired"
+    },
+    {
+     "artist": null,
+     "artistName": "Joni Mitchell",
+     "year": 1979,
+     "note": "From Mingus, her collaboration with the dying bassist, with her own lyrics about Lester Young and the city.",
+     "record": "Mingus"
+    }
+   ]
+  },
+  {
+   "id": "night-and-day",
+   "title": "Night and Day",
+   "composers": [
+    "Cole Porter"
+   ],
+   "lyricists": [
+    "Cole Porter"
+   ],
+   "year": 1932,
+   "origin": "Show tune",
+   "form": "Verse and 48-bar refrain",
+   "summary": "Cole Porter wrote it for Fred Astaire in the 1932 musical Gay Divorce. The melody repeats one note insistently before breaking into a long phrase, like the obsession the lyric describes.\n\nListen for that repeated note at the start, and what each performer does with it.",
+   "versions": [
+    {
+     "artist": null,
+     "artistName": "Fred Astaire",
+     "year": 1932,
+     "note": "The original, sung lightly with a dance band: elegant and conversational."
+    },
+    {
+     "artist": "django-reinhardt",
+     "artistName": "Django Reinhardt",
+     "year": 1938,
+     "note": "The Quintette of the Hot Club of France swings it on strings, Stéphane Grappelli's violin and Django's guitar trading."
+    },
+    {
+     "artist": "ella-fitzgerald",
+     "artistName": "Ella Fitzgerald",
+     "year": 1956,
+     "note": "From her Cole Porter Songbook: the verse and the refrain, sung with perfect diction.",
+     "landmark": true,
+     "record": "Cole Porter Song Book",
+     "album": "ella-cole-porter"
+    },
+    {
+     "artist": "bill-evans",
+     "artistName": "Bill Evans",
+     "year": 1958,
+     "note": "From Everybody Digs Bill Evans: a trio version that turns the tune's insistence into rhythmic play.",
+     "record": "Everybody Digs Bill Evans"
+    }
+   ]
+  },
+  {
+   "id": "lush-life",
+   "title": "Lush Life",
+   "composers": [
+    "Billy Strayhorn"
+   ],
+   "lyricists": [
+    "Billy Strayhorn"
+   ],
+   "year": 1933,
+   "origin": "Jazz original",
+   "form": "Through-composed, verse and refrain",
+   "summary": "Billy Strayhorn began writing it as a teenager in Pittsburgh: a world-weary song about cocktail lounges and lost love, with wandering harmonies and a lyric full of worldliness he hadn't yet lived. It wasn't recorded until 1949.\n\nListen for the verse: it's as long as the refrain, and singers who skip it miss half the song.",
+   "versions": [
+    {
+     "artist": null,
+     "artistName": "Nat King Cole",
+     "year": 1949,
+     "note": "The first well-known recording, with strings: smooth, a little too sunny for Strayhorn's taste, but it put the song on the map."
+    },
+    {
+     "artist": "john-coltrane",
+     "artistName": "John Coltrane",
+     "year": 1958,
+     "note": "An instrumental, with Red Garland: Coltrane's tenor follows the melody's long, unpredictable line.",
+     "record": "Lush Life"
+    },
+    {
+     "artist": null,
+     "artistName": "John Coltrane & Johnny Hartman",
+     "year": 1963,
+     "note": "Hartman's deep baritone with Coltrane's quartet: many think it the definitive vocal version.",
+     "landmark": true,
+     "record": "John Coltrane and Johnny Hartman"
+    }
+   ]
+  }
+ ]
+}

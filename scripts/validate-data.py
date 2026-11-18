@@ -141,6 +141,10 @@ if os.path.exists(tp):
         named |= {f"{al['artistName']}|{h}" for h in al["highlights"]}
     for a in data["artists"]:
         named |= {f"{a['name']}|{t}" for t in a["signatureTracks"]}
+    sbp = os.path.join(os.path.dirname(tp), "songbook.json")
+    if os.path.exists(sbp):
+        for t in json.load(open(sbp))["tunes"]:
+            named |= {f"{v['artistName']}|{v.get('title') or t['title']}|{v['year']}" for v in t["versions"]}
     tracks = json.load(open(tp))
     per_era = {}
     for k, t in tracks.items():
@@ -151,6 +155,35 @@ if os.path.exists(tp):
         if era: per_era[era] = per_era.get(era, 0) + 1
     thin = [f"{e} ({per_era.get(e, 0)})" for e in eras if per_era.get(e, 0) < 12]
     print(f"tracks.json: {len(tracks)} of {len(named)} named tracks resolved" + (f"; thin stations: {', '.join(thin)}" if thin else ""))
+
+# songbook.json: references resolve; each tune has three versions with notes, a landmark, two eras or more.
+sp = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "Shared", "Resources", "songbook.json")
+if os.path.exists(sp):
+    book = json.load(open(sp))["tunes"]
+    ids = [t["id"] for t in book]
+    if len(ids) != len(set(ids)): errors.append("songbook.json: duplicate tune IDs")
+    tracks_have = json.load(open(tp)) if os.path.exists(tp) else {}
+    def era_of(v):
+        if v.get("artist") in by_artist: return by_artist[v["artist"]]["primaryEra"]
+        cands = [e for e in data["eras"] if e["start"] <= v["year"] <= e["end"]]
+        return max(cands, key=lambda e: e["start"])["id"] if cands else None
+    unresolved = []
+    for t in book:
+        w = f"songbook {t['id']}"
+        if t.get("builtOn") and t["builtOn"] not in ids: errors.append(f"{w}: builtOn {t['builtOn']} isn't a tune")
+        if len(t["versions"]) < 3: errors.append(f"{w}: fewer than three versions")
+        if not any(v.get("landmark") for v in t["versions"]): errors.append(f"{w}: no landmark version")
+        years = [v["year"] for v in t["versions"]]
+        if max(years) - min(years) < 15 and len({era_of(v) for v in t["versions"]}) < 2:
+            errors.append(f"{w}: its versions are from one era and less than 15 years apart")
+        for v in t["versions"]:
+            if v.get("artist") is not None and v["artist"] not in artists: errors.append(f"{w}: unknown artist {v['artist']}")
+            if v.get("album") and v["album"] not in albums: errors.append(f"{w}: unknown album {v['album']}")
+            if not v.get("note"): errors.append(f"{w}: a version without a note")
+            key = f"{v['artistName']}|{v.get('title') or t['title']}|{v['year']}"
+            if key not in tracks_have: unresolved.append(key)
+    print(f"songbook.json: {len(book)} tunes, {sum(len(t['versions']) for t in book)} versions, {len(unresolved)} not resolved"
+          + (": " + "; ".join(unresolved) if unresolved else ""))
 
 if warnings:
     print("\n".join("warning: " + w for w in warnings))

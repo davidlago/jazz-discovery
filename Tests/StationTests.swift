@@ -85,12 +85,13 @@ struct BlindfoldTests {
 
     @Test("Hard era questions offer neighbouring eras")
     func hardNeighbours() {
-        let round = RoundMaker.round(level: .hard, library: library, seed: 3)
-        for q in round where q.kind == .era {
-            let era = library.era(q.answer)!
-            for c in q.choices where c.id != q.answer {
-                let other = library.era(c.id)!
-                #expect(abs((other.start + other.end) / 2 - (era.start + era.end) / 2) <= 40, "\(era.id) vs \(other.id)")
+        for seed in UInt64(1)...20 {
+            for q in RoundMaker.round(level: .hard, library: library, seed: seed) where q.kind == .era {
+                let era = library.era(q.answer)!
+                let mid = { (e: Era) in (e.start + e.end) / 2 }
+                let nearest = library.eras.filter { $0.id != era.id }
+                    .sorted { abs(mid($0) - mid(era)) < abs(mid($1) - mid(era)) }.prefix(3).map(\.id)
+                #expect(Set(q.choices.map(\.id)).subtracting([era.id]) == Set(nearest), "\(era.id)")
             }
         }
     }

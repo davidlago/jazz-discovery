@@ -40,7 +40,7 @@ struct StationTrack: Decodable, Hashable, Identifiable {
 
 /// A station: an endless, explained mix from part of the guide.
 struct Station: Identifiable, Hashable {
-    enum Kind: Hashable { case era(String), decade(Int), instrument(String), longWay, newToYou }
+    enum Kind: Hashable { case era(String), decade(Int), instrument(String), longWay, newToYou, tune(String), songbook }
     let kind: Kind
     let title: String
     let subtitle: String
@@ -54,6 +54,8 @@ struct Station: Identifiable, Hashable {
         case .instrument(let i): return "instrument-\(i)"
         case .longWay: return "long-way"
         case .newToYou: return "new-to-you"
+        case .tune(let t): return "tune-\(t)"
+        case .songbook: return "songbook"
         }
     }
 }
@@ -89,6 +91,10 @@ enum Programmer {
         for (f, title) in instruments {
             out.append(Station(kind: .instrument(f), title: title, subtitle: "Across every era", color: "#A69E91"))
         }
+        if !library.tunes.isEmpty {
+            out.append(Station(kind: .songbook, title: "The Songbook", subtitle: "Versions of the standards, shuffled",
+                               color: "#E9D8B4"))
+        }
         return out.filter { s in s.kind == .newToYou || pool(for: s, library: library, isHeard: { _ in false }).count >= minimumTracks }
     }
 
@@ -107,7 +113,8 @@ enum Programmer {
     }
 
     private static func unsortedPool(for station: Station, library: JazzLibrary, isHeard: (String) -> Bool) -> [StationTrack] {
-        let all = library.tracks.values.filter { $0.track.preview != nil || $0.track.url != nil }
+        // Songbook versions ("artist|title|year") play on the Songbook's stations; the others use the guide's tracks.
+        let all = library.tracks.values.filter { ($0.track.preview != nil || $0.track.url != nil) && $0.ref.split(separator: "|").count == 2 }
         switch station.kind {
         case .era(let e):
             return all.filter { $0.era == e || ($0.album.flatMap { library.album($0)?.era } == e) }
@@ -123,6 +130,11 @@ enum Programmer {
             return all.filter { year($0, library: library) != nil }
         case .newToYou:
             return all.filter { t in t.album.map { !isHeard($0) } ?? true }
+        case .tune(let id):
+            guard let tune = library.tune(id) else { return [] }
+            return tune.sortedVersions.compactMap { library.track(for: $0, of: tune) }
+        case .songbook:
+            return library.tunes.flatMap { t in t.versions.compactMap { library.track(for: $0, of: t) } }
         }
     }
 
@@ -196,6 +208,10 @@ enum Programmer {
     /// Why a track is on: where it's from, then what the guide says about that record, year or artist.
     static func reason(for t: StationTrack, library: JazzLibrary) -> String {
         let y = year(t, library: library)
+        // A Songbook version: what to listen for.
+        if let (tune, v) = songbookVersion(t, library: library) {
+            return "\(tune.title), \(v.artistName), \(String(v.year)). \(v.note)"
+        }
         if let id = t.album, let album = library.album(id) {
             return "From \(album.title) (\(String(album.year))). \(firstSentence(album.why))"
         }
@@ -207,6 +223,16 @@ enum Programmer {
         if let a = library.artist(ofTrack: t), !a.blurb.isEmpty { return s + ". " + firstSentence(a.blurb) }
         if let e = t.era.flatMap({ library.era($0) }) { return s + ". \(e.name): \(e.tagline)." }
         return s + "."
+    }
+
+    /// The Songbook version a track is, from its "artist|title|year" ref.
+    static func songbookVersion(_ t: StationTrack, library: JazzLibrary) -> (Tune, TuneVersion)? {
+        let parts = t.ref.split(separator: "|")
+        guard parts.count == 3 else { return nil }
+        for tune in library.tunes {
+            if let v = tune.versions.first(where: { $0.ref(in: tune) == t.ref }) { return (tune, v) }
+        }
+        return nil
     }
 
     static func firstSentence(_ text: String) -> String {

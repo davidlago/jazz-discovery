@@ -68,6 +68,10 @@ struct TrackRow: View {
                             Image(systemName: "star.fill").font(.system(size: 9)).foregroundStyle(tint)
                                 .accessibilityLabel("Start here")
                         }
+                        if library.tune(forTrackTitle: track.name) != nil {
+                            Image(systemName: "music.quarternote.3").font(.system(size: 10)).foregroundStyle(Theme.muted)
+                                .accessibilityLabel("In the Songbook")
+                        }
                     }
                     if showArtwork, let album = track.albumName {
                         Text(album).font(.caption).foregroundStyle(Theme.muted).lineLimit(1)
@@ -87,6 +91,9 @@ struct TrackRow: View {
             }
             if let a = library.artist(named: track.artistName) {
                 Button { router.go(.artist(a.id)) } label: { Label("Go to \(a.name)", systemImage: "person") }
+            }
+            if let tune = library.tune(forTrackTitle: track.name) {
+                Button { router.go(.tune(tune.id)) } label: { Label("Open in Songbook", systemImage: "music.quarternote.3") }
             }
         }
         .sensoryFeedback(.impact(weight: .light), trigger: isCurrent && player.isPlaying)

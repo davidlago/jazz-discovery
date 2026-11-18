@@ -60,7 +60,7 @@ struct PhoneRootView: View {
             Tab("Discover", systemImage: "sparkles", value: PhoneTab.timeline) {
                 TabStack(tab: .timeline) { TimelineTab() }
             }
-            Tab("Eras", systemImage: "square.stack.3d.up.fill", value: PhoneTab.eras) {
+            Tab("Explore", systemImage: "square.stack.3d.up.fill", value: PhoneTab.eras) {
                 TabStack(tab: .eras) { ErasTab() }
             }
             Tab("Artists", systemImage: "person.2.fill", value: PhoneTab.artists) {
@@ -109,10 +109,12 @@ struct RouteView: View {
             case .artist(let id): if let a = library.artist(id) { ArtistDetailView(artist: a) }
             case .album(let id): if let a = library.album(id) { AlbumDetailView(album: a) }
             case .decade(let d): DecadeDetailView(decade: d)
+            case .tune(let id): if let t = library.tune(id) { TuneDetailView(tune: t) }
             }
         case .decades: DecadesPage()
         case .connections(let focus): ConnectionsMapView(focus: focus)
         case .passport: PassportView()
+        case .songbook: SongbookPage()
         case .radio: RadioPage()
         case .blindfold: BlindfoldPage()
         }

@@ -9,6 +9,7 @@ enum AppSection: String, CaseIterable, Identifiable {
     case artists = "Artists"
     case albums = "The Crate"
     case connections = "Connections"
+    case songbook = "Songbook"
     case radio = "Radio"
     case blindfold = "Blindfold Test"
     case passport = "Passport"
@@ -24,6 +25,7 @@ enum AppSection: String, CaseIterable, Identifiable {
         case .artists: return "person.2.fill"
         case .albums: return "square.grid.3x3.fill"
         case .connections: return "point.3.connected.trianglepath.dotted"
+        case .songbook: return "music.quarternote.3"
         case .passport: return "checkmark.seal.fill"
         case .radio: return "dot.radiowaves.left.and.right"
         case .blindfold: return "eyes"
@@ -37,6 +39,7 @@ enum AppSection: String, CaseIterable, Identifiable {
         case .artist: self = .artists
         case .album: self = .albums
         case .decade: self = .decades
+        case .tune: self = .songbook
         }
     }
 }
@@ -90,6 +93,9 @@ final class Router {
         case .passport:
             query = ""
             show(.passport)
+        case .songbook:
+            query = ""
+            show(.songbook)
         case .radio:
             query = ""
             show(.radio)
@@ -99,7 +105,7 @@ final class Router {
         case .tab(let tab, let q):
             switch tab {
             case .timeline, .discover: query = ""; show(.timeline)
-            case .eras: query = ""; show(.eras)
+            case .eras, .explore: query = ""; show(.eras)
             case .artists: query = ""; show(.artists)
             case .crate: query = ""; show(.albums)
             case .search: path = []; query = q ?? query
