@@ -39,25 +39,27 @@ struct RootView: View {
                         }
                     }
                 }
+                .withPlayerBar()
                 .navigationDestination(for: Route.self) { route in
-                    switch route {
-                    case .era(let id): if let e = library.era(id) { EraDetailView(era: e) }
-                    case .artist(let id): if let a = library.artist(id) { ArtistDetailView(artist: a) }
-                    case .album(let id): if let a = library.album(id) { AlbumDetailView(album: a) }
-                    case .decade(let d): DecadeDetailView(decade: d)
-                    case .tune(let id): if let t = library.tune(id) { TuneDetailView(tune: t) }
-                    case .place(let id): if let p = library.place(id) { PlaceDetailView(place: p) }
-                    case .label(let id): if let l = library.label(id) { LabelDetailView(label: l) }
-                    case .lineage(let id): if let l = library.lineage(id) { LineageDetailView(lineage: l) }
-                    case .term(let id): if let t = library.term(id) { TermDetailView(term: t) }
-                    case .journey(let id): if let p = library.journey(id) { PathDetailView(path: p) }
-                    case .guide(let id): if let g = library.guide(id) { GuideDetailView(guide: g) }
+                    Group {
+                        switch route {
+                        case .era(let id): if let e = library.era(id) { EraDetailView(era: e) }
+                        case .artist(let id): if let a = library.artist(id) { ArtistDetailView(artist: a) }
+                        case .album(let id): if let a = library.album(id) { AlbumDetailView(album: a) }
+                        case .decade(let d): DecadeDetailView(decade: d)
+                        case .tune(let id): if let t = library.tune(id) { TuneDetailView(tune: t) }
+                        case .place(let id): if let p = library.place(id) { PlaceDetailView(place: p) }
+                        case .label(let id): if let l = library.label(id) { LabelDetailView(label: l) }
+                        case .lineage(let id): if let l = library.lineage(id) { LineageDetailView(lineage: l) }
+                        case .term(let id): if let t = library.term(id) { TermDetailView(term: t) }
+                        case .journey(let id): if let p = library.journey(id) { PathDetailView(path: p) }
+                        case .guide(let id): if let g = library.guide(id) { GuideDetailView(guide: g) }
+                        }
                     }
+                    .withPlayerBar()
                 }
                 .background(Theme.ink)
             }
-            .safeAreaInset(edge: .bottom, spacing: 0) { NowPlayingBar() }
-            .animation(.spring(response: 0.35), value: player.current)
         }
         .searchable(text: $router.query, placement: .sidebar, prompt: "Artists, albums, eras")
         .onChange(of: router.path) { if !router.path.isEmpty, !router.query.isEmpty { router.query = "" } }
@@ -71,9 +73,46 @@ struct RootView: View {
             }
             SpotlightIndex.update(library: library)
             if GuideEditorModel.isEnabled { openWindow(id: GuideEditorView.windowID) }
+            Task { await openLaunchLinks() }
         }
         .overlay(alignment: .top) { ErrorToast() }
     }
+}
+
+extension RootView {
+    /// `--open <url>` (repeatable) opens deep links at launch, a few seconds apart, as the iPhone app does: for scripted
+    /// checks of the window. Only here, from the launch arguments, does `play/album/<id>` start music.
+    @MainActor
+    func openLaunchLinks() async {
+        let args = CommandLine.arguments
+        let urls = args.indices.dropLast().filter { args[$0] == "--open" }.compactMap { URL(string: args[$0 + 1]) }
+        for (i, url) in urls.enumerated() {
+            if i > 0 { try? await Task.sleep(for: .seconds(3)) }
+            guard let link = DeepLink(url, library: library) else { continue }
+            if case .playAlbum(let id) = link, let album = library.album(id) {
+                if let c = await ITunes.shared.album(for: album) { player.playAlbum(c, tracks: []) }
+            } else {
+                router.open(link)
+            }
+        }
+    }
+}
+
+/// The floating player over the foot of a page. Each page in the detail column carries its own: on the Mac a page pushed
+/// onto the column's stack is drawn over the whole column, so a bar on the stack itself vanished whenever a record,
+/// label or guide was open.
+private struct PlayerBarInset: ViewModifier {
+    @Environment(PlayerController.self) private var player
+
+    func body(content: Content) -> some View {
+        content
+            .safeAreaInset(edge: .bottom, spacing: 0) { NowPlayingBar() }
+            .animation(.spring(response: 0.35), value: player.current)
+    }
+}
+
+extension View {
+    func withPlayerBar() -> some View { modifier(PlayerBarInset()) }
 }
 
 struct Sidebar: View {

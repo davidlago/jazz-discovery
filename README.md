@@ -156,6 +156,7 @@ To sign and notarize locally, run `SIGN_IDENTITY="Developer ID Application: …"
 
 - `"Jazz Discovery.app/Contents/MacOS/Jazz Discovery" --self-test` checks every source from inside the sandboxed app and prints a report: Wikipedia pages and images, album matches, previews, YouTube results, whether the Last.fm API key from Settings works, and whether the MusicKit developer token works.
 - `--snapshots <dir>` renders each section offscreen and saves PNGs. Use an unsandboxed build for this, because a sandboxed app can only write inside its container.
+- `--open <jazzdiscovery:// link>` (repeatable) opens links at launch, three seconds apart, for scripted checks of the window. Only here does `jazzdiscovery://play/album/<id>` start the record.
 
 ## Layout
 

@@ -61,6 +61,12 @@ enum Snapshots {
             }),
             ("26-search", { router.show(.timeline); router.query = "blue" }),
             ("27-labels", { router.query = ""; router.show(.labels) }),
+            // A record's page with something playing: the player bar must show over it.
+            ("28-album-playing", {
+                router.query = ""
+                router.show(.album("kind-of-blue"))
+                if let t = library.tracks["Miles Davis|So What"] { player.play(t.track) }
+            }),
         ]
         // `--only <prefix>`: just the shots whose names start with it ("25", "2").
         let only = CommandLine.arguments.firstIndex(of: "--only").flatMap { i in
