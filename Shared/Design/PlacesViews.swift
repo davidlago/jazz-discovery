@@ -341,12 +341,33 @@ struct LabelCard: View {
         VStack(alignment: .leading, spacing: 8) {
             ZStack {
                 Circle().fill(Color.black)
-                Circle().fill(label.tint).padding(26)
-                Text(label.name.uppercased()).font(Theme.display(22)).foregroundStyle(Theme.cream)
-                    .shadow(color: .black.opacity(0.4), radius: 2).lineLimit(1).minimumScaleFactor(0.5).padding(.horizontal, 34)
-                Circle().fill(Theme.ink).frame(width: 8, height: 8).offset(y: 22)
+                if let url = label.logoURL {
+                    // The logo on a cream centre label, like the paper on a record; multiply melts a white backdrop
+                    // into the cream.
+                    GeometryReader { geo in
+                        let side = geo.size.width
+                        ZStack {
+                            Circle().fill(Theme.cream).padding(side * 0.12)
+                            RemoteImage(url: url, contentMode: .fit) {
+                                Text(label.name.uppercased()).font(Theme.display(20)).foregroundStyle(Theme.ink)
+                                    .lineLimit(1).minimumScaleFactor(0.5)
+                            }
+                            .blendMode(.multiply)
+                            .frame(width: side * 0.5, height: side * 0.5)
+                        }
+                        .frame(width: side, height: side)
+                        .compositingGroup()
+                    }
+                } else {
+                    Circle().fill(label.tint).padding(26)
+                    Text(label.name.uppercased()).font(Theme.display(22)).foregroundStyle(Theme.cream)
+                        .shadow(color: .black.opacity(0.4), radius: 2).lineLimit(1).minimumScaleFactor(0.5).padding(.horizontal, 34)
+                    Circle().fill(Theme.ink).frame(width: 8, height: 8).offset(y: 22)
+                }
             }
             .aspectRatio(1, contentMode: .fit)
+            .accessibilityElement()
+            .accessibilityLabel(label.name)
             Text(label.name).font(.system(size: 14, weight: .semibold)).foregroundStyle(Theme.cream)
             Text("Since \(String(label.founded)) · \(albums.count) record\(albums.count == 1 ? "" : "s") in the Crate")
                 .font(.system(size: 12)).foregroundStyle(Theme.muted).lineLimit(1)
@@ -370,11 +391,23 @@ struct LabelDetailContent: View {
         let albums = library.albums(onLabel: label.id)
         let regulars = library.regulars(onLabel: label.id)
         VStack(alignment: .leading, spacing: 26) {
-            VStack(alignment: .leading, spacing: 6) {
-                Text("SINCE \(String(label.founded))\(label.city.flatMap { library.place($0)?.name }.map { " · \($0.uppercased())" } ?? "")")
-                    .font(Theme.label(11)).tracking(1.4).foregroundStyle(Theme.cream.opacity(0.8))
-                Text(label.name.uppercased()).font(Theme.display(compact ? 54 : 80)).foregroundStyle(Theme.cream)
-                    .lineLimit(1).minimumScaleFactor(0.5)
+            HStack(alignment: .center, spacing: 20) {
+                VStack(alignment: .leading, spacing: 6) {
+                    Text("SINCE \(String(label.founded))\(label.city.flatMap { library.place($0)?.name }.map { " · \($0.uppercased())" } ?? "")")
+                        .font(Theme.label(11)).tracking(1.4).foregroundStyle(Theme.cream.opacity(0.8))
+                    Text(label.name.uppercased()).font(Theme.display(compact ? 54 : 80)).foregroundStyle(Theme.cream)
+                        .lineLimit(1).minimumScaleFactor(0.5)
+                }
+                Spacer(minLength: 0)
+                if let url = label.logoURL {
+                    RemoteImage(url: url, contentMode: .fit) { Color.clear }
+                        .blendMode(.multiply)
+                        .padding(compact ? 10 : 14)
+                        .frame(width: compact ? 92 : 150, height: compact ? 92 : 150)
+                        .background(RoundedRectangle(cornerRadius: 12).fill(Theme.cream))
+                        .compositingGroup()
+                        .accessibilityLabel("\(label.name) logo")
+                }
             }
             .padding(compact ? 18 : 28)
             .frame(maxWidth: .infinity, alignment: .leading)

@@ -60,6 +60,7 @@ enum Snapshots {
                 if let t = library.tracks["Miles Davis|So What"] { player.play(t.track) }
             }),
             ("26-search", { router.show(.timeline); router.query = "blue" }),
+            ("27-labels", { router.query = ""; router.show(.labels) }),
         ]
         // `--only <prefix>`: just the shots whose names start with it ("25", "2").
         let only = CommandLine.arguments.firstIndex(of: "--only").flatMap { i in

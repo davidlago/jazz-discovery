@@ -13,6 +13,8 @@ section for the tagged version at the top of the GitHub release notes (or **Unre
   same form (the blues; 32-bar AABA songs).
 - **Radio** lists the city, club and label stations too.
 - **The Crate** can be grouped by label as well as by decade.
+- **Labels** show their logos (from Wikimedia Commons, where the logo is free to use) on their record-label cards and
+  pages.
 - **The player** on the Mac floats at the bottom of the window as a rounded glass panel, and shows whenever music is
   playing, including after the app was reopened mid-song or started by Siri or a widget.
 - **The player** shows the record's cover again while an album plays on the Mac (Apple Music's own cover address
