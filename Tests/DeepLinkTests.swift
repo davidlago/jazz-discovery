@@ -27,6 +27,26 @@ struct DeepLinkTests {
         #expect(link("jazzdiscovery://passport") == .passport)
     }
 
+    @Test("A link written from a page reads back as the same page (Handoff hands pages over as links)")
+    func roundTrip() {
+        let links: [DeepLink] = [
+            .page(.era("bebop")), .page(.artist("miles-davis")), .page(.album("kind-of-blue")), .page(.decade(1950)),
+            .decades, .connections(focus: nil), .connections(focus: "john-coltrane"), .between("miles-davis", "joao-gilberto"),
+            .tab(.discover, query: nil), .tab(.crate, query: nil), .tab(.search, query: "blue note"), .songbook, .map, .labels,
+            .lineages, .glossary, .paths, .guides, .almanac(month: nil, day: nil), .almanac(month: 5, day: 26), .passport,
+            .radio, .blindfold,
+        ]
+        for l in links {
+            let url = try! #require(l.url)
+            #expect(DeepLink(url, library: library) == l, "\(url)")
+        }
+        // Music, Settings and Now Playing aren't handed off.
+        #expect(DeepLink.playAlbum("kind-of-blue").url == nil)
+        #expect(DeepLink.settings.url == nil)
+        #expect(Handoff.title(of: .page(.album("kind-of-blue")), library: library).hasPrefix("Kind of Blue"))
+        #expect(Handoff.title(of: .page(.decade(1950)), library: library) == "The 1950s")
+    }
+
     @Test func tabs() {
         for tab in DeepLink.Tab.allCases {
             #expect(link("jazzdiscovery://tab/\(tab.rawValue)") == .tab(tab, query: nil))

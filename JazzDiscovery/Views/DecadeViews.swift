@@ -37,7 +37,7 @@ struct DecadeCard: View {
                 ZStack(alignment: .bottomLeading) {
                     HStack(spacing: 0) {
                         if albums.isEmpty {
-                            ForEach(eras) { e in Rectangle().fill(e.tint) }
+                            DecadeFaces(decade: decade)
                         } else {
                             ForEach(albums.prefix(4)) { a in
                                 AlbumCover(album: a, size: 300).clipShape(Rectangle())
@@ -55,7 +55,7 @@ struct DecadeCard: View {
                     Text(eras.map(\.name).joined(separator: " · ")).font(.system(size: 12, weight: .medium))
                         .foregroundStyle(Theme.cream.opacity(0.85)).lineLimit(2)
                         .frame(height: 32, alignment: .topLeading)
-                    Text("\(albums.count) records · \(library.milestones(inDecade: decade).count) milestones")
+                    Text("\(library.decadeCount(decade)) · \(library.milestones(inDecade: decade).count) milestones")
                         .font(Theme.label(10)).foregroundStyle(Theme.faint)
                 }
                 .padding(14)

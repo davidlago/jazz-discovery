@@ -347,7 +347,7 @@ private struct GraphMap: View {
             let x = layout.x(forYear: d) * cam.zoom + cam.offset.x
             guard x > -60, x < size.width + 60, x >= lastLabel + 44 else { continue }
             lastLabel = x
-            ctx.draw(Text("\(String(d))s").font(Theme.label(10)).foregroundStyle(Theme.muted),
+            ctx.draw(Text("\(String(d))s").font(Theme.label(10, fixed: true)).foregroundStyle(Theme.muted),
                      at: CGPoint(x: x + 5, y: topInset + 10), anchor: .leading)
         }
         for e in library.eras {

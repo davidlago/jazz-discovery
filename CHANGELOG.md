@@ -6,6 +6,27 @@ section for the tagged version at the top of the GitHub release notes (or **Unre
 
 ## Unreleased
 
+## 1.14.0
+
+- **The player** on the Mac is a slimmer glass bar: the cover, the title and artist, the controls and the time. What
+  the app has to say about the track (why a station chose it, the next stop on your path, its listening guide, where
+  to go after a record ends) is in a bubble above it, which folds down to a small tab and stays folded until you open
+  it.
+- **The player in the menu bar** on the Mac, while music plays: what's playing, why a station chose it, the controls,
+  and a way back to the record's page. Settings ▸ Apple Music turns it off.
+- **Menus** on the Mac: a Go menu (Back, Search ⌘F, and ⌘1 to ⌘9 for Discover, Eras & Styles, Artists, the Crate,
+  Connections, the Songbook, Radio, Paths and the Passport), and Next Track, Previous Track and Go to Current Record
+  (⌘L) under Playback.
+- **Handoff** between the Mac and the iPhone: the page you're on shows up on your other device, ready to open there.
+- **Larger Text** on the iPhone: the app's pages follow the text size you set for the iPhone, up to twice the
+  usual size, where before only some of their text did. Stamps, record labels and other pictures keep their size.
+- **Wider pages** on the Mac: a tune's page puts its other records and related tunes beside the versions, a path's
+  page what comes after it beside the stops, and the Blindfold Test how your ear is doing, era by era, beside the game.
+- **Search** puts the best matches first: "blue" leads with Kind of Blue and the other records with Blue in their
+  title, before ones that only start a word with it (King of the Country Blues) or match on their label (Bluebird).
+- **Decades** before the first record (the 1890s and 1900s) show who was playing, and their faces, instead of
+  "0 records".
+
 ## 1.13.0
 
 - **New content without an update.** The apps now pick up new artists, records, guides and fixes as they're added,

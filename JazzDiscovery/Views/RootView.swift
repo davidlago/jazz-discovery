@@ -6,6 +6,7 @@ struct RootView: View {
     @Environment(PlayerController.self) private var player
     @Environment(\.openSettings) private var openSettings
     @Environment(\.openWindow) private var openWindow
+    @FocusState private var searchFocused: Bool
 
     var body: some View {
         @Bindable var router = router
@@ -62,10 +63,20 @@ struct RootView: View {
             }
         }
         .searchable(text: $router.query, placement: .sidebar, prompt: "Artists, albums, eras")
+        .searchFocused($searchFocused)
+        .onChange(of: router.searchRequest) { searchFocused = true }
         .onChange(of: router.path) { if !router.path.isEmpty, !router.query.isEmpty { router.query = "" } }
         .onOpenURL { url in
             guard let link = DeepLink(url, library: library) else { return }
             if link == .settings { openSettings() } else { router.open(link) }
+        }
+        // Handoff: the page this window shows, for the iPhone to pick up (and the iPhone's, for this window).
+        .userActivity(Handoff.activityType, element: router.currentLink) { link, activity in
+            Handoff.describe(activity, link: link, library: library)
+        }
+        .onContinueUserActivity(Handoff.activityType) { activity in
+            guard let url = Handoff.url(in: activity), let link = DeepLink(url, library: library) else { return }
+            router.open(link)
         }
         .onAppear {
             AppContext.shared.navigate = { [router, library] url in
@@ -331,6 +342,7 @@ struct SettingsView: View {
 
 struct AppleMusicSettings: View {
     @Environment(PlayerController.self) private var player
+    @AppStorage(MenuBarPlayer.settingKey) private var showsMenuBarPlayer = true
     var body: some View {
         @Bindable var player = player
         Form {
@@ -352,6 +364,9 @@ struct AppleMusicSettings: View {
                 }
                 Text("Without Apple Music access, the app plays 30-second previews and opens the full track or album in the Music app.")
                     .font(.caption).foregroundStyle(.secondary)
+            }
+            Section("Menu Bar") {
+                Toggle("Show the player in the menu bar while music plays", isOn: $showsMenuBarPlayer)
             }
             Section("Sound Quality") {
                 Toggle("Switch the output to 44.1 kHz while playing", isOn: $player.matchOutputRate)

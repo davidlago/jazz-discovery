@@ -36,7 +36,7 @@ struct CreditRow: View {
                 name
                 DottedLeader().frame(height: 10)
                 Text(credit.instrumentsText)
-                    .font(.system(size: detailSize))
+                    .font(.scaled(size: detailSize))
                     .foregroundStyle(Theme.cream.opacity(0.8))
                     .lineLimit(2)
                     .multilineTextAlignment(.trailing)
@@ -44,7 +44,7 @@ struct CreditRow: View {
             }
             if let detail = credit.tracksText(of: trackCount) {
                 Text(detail)
-                    .font(.system(size: detailSize - 1)).italic()
+                    .font(.scaled(size: detailSize - 1)).italic()
                     .foregroundStyle(Theme.faint)
             }
         }

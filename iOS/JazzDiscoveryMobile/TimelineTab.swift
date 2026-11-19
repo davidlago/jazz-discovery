@@ -132,7 +132,7 @@ struct HomeHero: View {
 
             VStack(alignment: .leading, spacing: 2) {
                 Text("A VISUAL HISTORY · 1895 — TODAY").font(Theme.label(11)).tracking(3).foregroundStyle(Theme.brass)
-                Text("JAZZ").font(Theme.display(132)).foregroundStyle(Theme.cream)
+                Text("JAZZ").font(Theme.display(132, fixed: true)).foregroundStyle(Theme.cream)
                     .shadow(color: .black.opacity(0.5), radius: 20)
                     .padding(.vertical, -18)
                     .accessibilityAddTraits(.isHeader)
@@ -252,7 +252,7 @@ struct DecadeTile: View {
                     Text(eras.map(\.name).prefix(2).joined(separator: " · "))
                         .font(.caption2).foregroundStyle(Theme.muted).lineLimit(2)
                         .frame(height: 28, alignment: .topLeading)
-                    Text("\(library.albums(inDecade: decade).count) records").font(Theme.label(9)).foregroundStyle(Theme.faint)
+                    Text(library.decadeCount(decade)).font(Theme.label(9)).foregroundStyle(Theme.faint)
                 }
                 .padding(12)
             }
@@ -376,7 +376,7 @@ private struct MilestoneDot: View {
                 Circle().fill(focused ? Theme.cream : Theme.brass).frame(width: 10, height: 10)
                     .scaleEffect(focused ? 1.6 : 1)
                     .offset(x: 9, y: 9)
-                Text(String(milestone.year)).font(.system(size: 10, weight: .bold).monospacedDigit())
+                Text(String(milestone.year)).font(.scaled(size: 10, weight: .bold).monospacedDigit())
                     .foregroundStyle(focused ? Theme.cream : Theme.muted)
                     .fixedSize()
                     .offset(x: 2, y: 36 + CGFloat(row) * 18)
@@ -398,7 +398,7 @@ private struct RiverBar: View {
         HStack(spacing: 8) {
             VStack(alignment: .leading, spacing: 0) {
                 Text(era.name.uppercased()).font(Theme.display(15, weight: .heavy)).lineLimit(1).fixedSize()
-                Text(era.years).font(.system(size: 9, weight: .semibold).monospacedDigit()).opacity(0.75)
+                Text(era.years).font(.scaled(size: 9, weight: .semibold).monospacedDigit()).opacity(0.75)
             }
             .foregroundStyle(Theme.ink)
             .padding(.leading, 12)

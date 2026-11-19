@@ -146,6 +146,7 @@ struct EraProgressRow: View {
                 VStack(alignment: .leading, spacing: 3) {
                     Text(p.heard == 0 ? "\(p.total) records to hear" : "\(p.heard) of \(p.total) records heard")
                         .font(.subheadline.weight(.semibold)).foregroundStyle(Theme.cream)
+                        .fixedSize(horizontal: false, vertical: true)
                     Text("Your passport").font(.caption).foregroundStyle(Theme.muted)
                 }
                 Spacer()

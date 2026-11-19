@@ -67,6 +67,23 @@ enum Snapshots {
                 router.show(.album("kind-of-blue"))
                 if let t = library.tracks["Miles Davis|So What"] { player.play(t.track) }
             }),
+            // A station playing: the player's notes bubble says why the track is there.
+            ("29-radio-playing", {
+                router.query = ""
+                router.show(.radio)
+                if let s = Programmer.station(id: "era-bebop", library: library) {
+                    StationStarter.play(s, library: library, passport: passport, player: player)
+                }
+            }),
+            // The Blindfold Test with something in the passport's ear scores (15-tune and 22-path also show the second
+            // column a wide window gets).
+            ("30-blindfold-ears", {
+                player.stop()
+                for (era, right) in [("bebop", true), ("bebop", true), ("swing", false), ("hard-bop", true), ("modal", false)] {
+                    passport.recordAnswer(era: era, right: right)
+                }
+                router.show(.blindfold)
+            }),
         ]
         // `--only <prefix>`: just the shots whose names start with it ("25", "2").
         let only = CommandLine.arguments.firstIndex(of: "--only").flatMap { i in

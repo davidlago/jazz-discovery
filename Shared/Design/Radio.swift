@@ -22,7 +22,7 @@ struct StationLabel: View {
                     Circle().fill(station.tint)
                     Circle().strokeBorder(Theme.ink.opacity(0.35), lineWidth: size * 0.006).padding(size * 0.02)
                     ArcText(text: station.title.uppercased(), radius: size * 0.235, fontSize: size * 0.06, tint: Theme.ink)
-                    Text("JAZZ DISCOVERY").font(Theme.label(size * 0.035)).tracking(1).foregroundStyle(Theme.ink.opacity(0.7))
+                    Text("JAZZ DISCOVERY").font(Theme.label(size * 0.035, fixed: true)).tracking(1).foregroundStyle(Theme.ink.opacity(0.7))
                         .offset(y: size * 0.13)
                     Circle().fill(Theme.ink).frame(width: size * 0.06, height: size * 0.06)
                 }
@@ -74,7 +74,7 @@ struct PlayRadioButton: View {
             Label(playing && player.isPlaying ? "Pause Radio" : "Play Radio",
                   systemImage: playing && player.isPlaying ? "pause.fill" : "dot.radiowaves.left.and.right")
                 #if os(macOS)
-                .font(.system(size: 13, weight: .bold))
+                .font(.scaled(size: 13, weight: .bold))
                 .padding(.horizontal, 16).padding(.vertical, 9)
                 #else
                 .font(.subheadline.weight(.bold))
@@ -104,7 +104,7 @@ struct WhyThisTrack: View {
                 Text("\(station.title.uppercased()) · WHY THIS TRACK").font(Theme.label(compact ? 9 : 10)).tracking(1.2)
                     .foregroundStyle(station.tint).lineLimit(1)
                 Text(Programmer.reason(for: t, library: library))
-                    .font(.system(size: compact ? 12 : 13, design: .serif)).italic()
+                    .font(.scaled(size: compact ? 12 : 13, design: .serif)).italic()
                     .foregroundStyle(Theme.cream.opacity(0.88))
                     .lineLimit(compact ? 2 : 4)
                     .fixedSize(horizontal: false, vertical: true)
@@ -120,7 +120,7 @@ struct WhyThisTrack: View {
                     }
                 }
                 .buttonStyle(.plain)
-                .font(.system(size: compact ? 11 : 12, weight: .semibold))
+                .font(.scaled(size: compact ? 11 : 12, weight: .semibold))
                 .foregroundStyle(station.tint)
                 .lineLimit(1)
             }
@@ -177,9 +177,9 @@ struct RadioWall: View {
         } label: {
             VStack(alignment: .leading, spacing: 8) {
                 StationLabel(station: s, size: size)
-                Text(s.title).font(.system(size: 13, weight: .semibold)).foregroundStyle(Theme.cream).lineLimit(1)
+                Text(s.title).font(.scaled(size: 13, weight: .semibold)).foregroundStyle(Theme.cream).lineLimit(1)
                 if showSubtitle {
-                    Text(s.subtitle).font(.system(size: 12)).foregroundStyle(Theme.muted).lineLimit(2)
+                    Text(s.subtitle).font(.scaled(size: 12)).foregroundStyle(Theme.muted).lineLimit(2)
                         .frame(width: size, alignment: .leading)
                 }
             }
@@ -210,7 +210,7 @@ struct RadioRow: View {
             } label: {
                 VStack(alignment: .leading, spacing: 8) {
                     StationLabel(station: s, size: labelSize)
-                    Text(s.title).font(.system(size: 13, weight: .semibold)).foregroundStyle(Theme.cream).lineLimit(1)
+                    Text(s.title).font(.scaled(size: 13, weight: .semibold)).foregroundStyle(Theme.cream).lineLimit(1)
                 }
                 .frame(width: labelSize, alignment: .leading)
             }

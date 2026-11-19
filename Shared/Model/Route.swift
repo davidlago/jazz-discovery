@@ -175,3 +175,116 @@ struct PathRequest: Equatable {
     let from: String
     let to: String
 }
+
+extension DeepLink {
+    /// The link that opens this page again: the inverse of `init(_:library:)`. Nil for what a link mustn't do from
+    /// outside (start music) and for the Settings and Now Playing screens, which aren't places to hand off.
+    var url: URL? {
+        let path: String
+        switch self {
+        case .page(let route):
+            switch route {
+            case .era(let id): path = "era/\(id)"
+            case .artist(let id): path = "artist/\(id)"
+            case .album(let id): path = "album/\(id)"
+            case .decade(let d): path = "decade/\(d)"
+            case .tune(let id): path = "tune/\(id)"
+            case .place(let id): path = "place/\(id)"
+            case .label(let id): path = "label/\(id)"
+            case .lineage(let id): path = "lineage/\(id)"
+            case .term(let id): path = "term/\(id)"
+            case .journey(let id): path = "path/\(id)"
+            case .guide(let id): path = "guide/\(id)"
+            }
+        case .decades: path = "decades"
+        case .connections(let focus): path = focus.map { "connections/\($0)" } ?? "connections"
+        case .between(let a, let b): path = "between/\(a)/\(b)"
+        case .tab(let tab, let query):
+            var c = URLComponents(string: "\(Self.scheme)://tab/\(tab.rawValue)")
+            if let query, !query.isEmpty { c?.queryItems = [URLQueryItem(name: "q", value: query)] }
+            return c?.url
+        case .songbook: path = "songbook"
+        case .map: path = "map"
+        case .labels: path = "labels"
+        case .lineages: path = "lineages"
+        case .glossary: path = "glossary"
+        case .paths: path = "paths"
+        case .guides: path = "guides"
+        case .almanac(let m?, let d?): path = String(format: "almanac/%02d-%02d", m, d)
+        case .almanac: path = "today"
+        case .passport: path = "passport"
+        case .radio: path = "radio"
+        case .blindfold: path = "blindfold"
+        case .nowPlaying, .settings, .playAlbum: return nil
+        }
+        return URL(string: "\(Self.scheme)://\(path)")
+    }
+}
+
+/// Handoff: each app says which page it's showing, as a `jazzdiscovery://` link, so the other device (the iPhone app
+/// and the Mac app share a bundle ID and team) can open the same page. Only pages are handed off, never playback.
+enum Handoff {
+    /// Listed under NSUserActivityTypes in both apps' Info.plist.
+    static let activityType = "io.github.davidlago.JazzDiscovery.page"
+    static let urlKey = "url"
+
+    /// Fills in an activity for a page.
+    static func describe(_ activity: NSUserActivity, link: DeepLink, library: JazzLibrary) {
+        guard let url = link.url else { activity.isEligibleForHandoff = false; return }
+        activity.title = title(of: link, library: library)
+        activity.userInfo = [urlKey: url.absoluteString]
+        activity.isEligibleForHandoff = true
+        activity.isEligibleForSearch = false
+    }
+
+    /// The page a continued activity names, as a link to open.
+    static func url(in activity: NSUserActivity) -> URL? {
+        (activity.userInfo?[urlKey] as? String).flatMap(URL.init(string:)).flatMap { $0.scheme == DeepLink.scheme ? $0 : nil }
+    }
+
+    /// What the other device shows for the page ("Kind of Blue", "The 1950s", "Radio").
+    static func title(of link: DeepLink, library: JazzLibrary) -> String {
+        switch link {
+        case .page(let route):
+            switch route {
+            case .era(let id): return library.era(id)?.name ?? "Jazz Discovery"
+            case .artist(let id): return library.artist(id)?.name ?? "Jazz Discovery"
+            case .album(let id): return library.album(id).map { "\($0.title) · \($0.artistName)" } ?? "Jazz Discovery"
+            case .decade(let d): return "The \(d)s"
+            case .tune(let id): return library.tune(id)?.title ?? "The Songbook"
+            case .place(let id): return library.place(id)?.name ?? "Places"
+            case .label(let id): return library.label(id)?.name ?? "Labels"
+            case .lineage(let id): return library.lineage(id)?.title ?? "Lineages"
+            case .term(let id): return library.term(id)?.term ?? "Glossary"
+            case .journey(let id): return library.journey(id)?.title ?? "Paths"
+            case .guide(let id): return library.guide(id).flatMap { library.tracks[$0.track]?.title }.map { "\($0): listening guide" }
+                ?? "Listening Guides"
+            }
+        case .decades: return "Decades"
+        case .connections: return "Connections"
+        case .between(let a, let b): return "\(library.artist(a)?.name ?? a) to \(library.artist(b)?.name ?? b)"
+        case .tab(let tab, let q):
+            switch tab {
+            case .timeline, .discover: return "Discover"
+            case .eras, .explore: return "Eras & Styles"
+            case .artists: return "Artists"
+            case .crate: return "The Crate"
+            case .search: return q.map { "Search: \($0)" } ?? "Search"
+            }
+        case .songbook: return "The Songbook"
+        case .map: return "Places"
+        case .labels: return "Labels"
+        case .lineages: return "Lineages"
+        case .glossary: return "Glossary"
+        case .paths: return "Paths"
+        case .guides: return "Listening Guides"
+        case .almanac: return "On This Day"
+        case .passport: return "Passport"
+        case .radio: return "Radio"
+        case .blindfold: return "Blindfold Test"
+        case .nowPlaying: return "Now Playing"
+        case .settings: return "Settings"
+        case .playAlbum: return "Jazz Discovery"
+        }
+    }
+}

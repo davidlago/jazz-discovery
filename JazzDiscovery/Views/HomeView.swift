@@ -216,7 +216,7 @@ struct DecadeTile: View {
                     Text(eras.map(\.name).prefix(2).joined(separator: " · "))
                         .font(.system(size: 11)).foregroundStyle(Theme.muted).lineLimit(2)
                         .frame(height: 30, alignment: .topLeading)
-                    Text("\(library.albums(inDecade: decade).count) records").font(Theme.label(10)).foregroundStyle(Theme.faint)
+                    Text(library.decadeCount(decade)).font(Theme.label(10)).foregroundStyle(Theme.faint)
                 }
                 .padding(12)
             }

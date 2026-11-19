@@ -10,12 +10,12 @@ struct CalendarPage: View {
         VStack(spacing: 0) {
             ZigzagEdge().fill(tint).frame(height: size * 0.07)
             VStack(spacing: size * 0.02) {
-                Text(date.formatted(.dateTime.month(.wide)).uppercased()).font(Theme.label(size * 0.09)).tracking(1.5)
+                Text(date.formatted(.dateTime.month(.wide)).uppercased()).font(Theme.label(size * 0.09, fixed: true)).tracking(1.5)
                     .foregroundStyle(Theme.ink)
                     .frame(maxWidth: .infinity).padding(.vertical, size * 0.05).background(tint)
-                Text(date.formatted(.dateTime.day())).font(Theme.display(size * 0.5)).foregroundStyle(Theme.ink)
+                Text(date.formatted(.dateTime.day())).font(Theme.display(size * 0.5, fixed: true)).foregroundStyle(Theme.ink)
                     .padding(.top, -size * 0.02)
-                Text(date.formatted(.dateTime.weekday(.wide)).uppercased()).font(Theme.label(size * 0.07)).tracking(1.2)
+                Text(date.formatted(.dateTime.weekday(.wide)).uppercased()).font(Theme.label(size * 0.07, fixed: true)).tracking(1.2)
                     .foregroundStyle(Theme.ink.opacity(0.6)).padding(.bottom, size * 0.06)
             }
             .background(Theme.cream)

@@ -69,11 +69,23 @@ struct BlindfoldView: View {
 
     var body: some View {
         Group {
-            if game.finished { results }
-            else if let q = game.current { question(q) }
-            else { setup }
+            if compact {
+                round
+            } else {
+                // On the Mac, how your ear is doing sits beside the game, and fills in as you answer.
+                SideColumnLayout(sideWidth: 300) {
+                    round
+                    EarPanel()
+                }
+            }
         }
         .onDisappear { game.quit(player) }
+    }
+
+    @ViewBuilder private var round: some View {
+        if game.finished { results }
+        else if let q = game.current { question(q) }
+        else { setup }
     }
 
     // MARK: Setup
@@ -81,7 +93,7 @@ struct BlindfoldView: View {
     private var setup: some View {
         VStack(alignment: .leading, spacing: 22) {
             Text("Ten clips. The cover stays hidden until you answer: which era, who's playing, which instrument leads, which came first. No timer.")
-                .font(.system(size: compact ? 15 : 17, design: .serif)).italic().foregroundStyle(Theme.muted)
+                .font(.scaled(size: compact ? 15 : 17, design: .serif)).italic().foregroundStyle(Theme.muted)
                 .fixedSize(horizontal: false, vertical: true)
             VStack(alignment: .leading, spacing: 6) {
                 Text("LEVEL").font(Theme.label(10)).tracking(1.4).foregroundStyle(Theme.muted)
@@ -101,7 +113,7 @@ struct BlindfoldView: View {
                 .labelsHidden().fixedSize()
             }
             Button { game.start(library: library, player: player) } label: {
-                Label("Start", systemImage: "play.fill").font(.system(size: 16, weight: .bold))
+                Label("Start", systemImage: "play.fill").font(.scaled(size: 16, weight: .bold))
                     .padding(.horizontal, 26).padding(.vertical, 12)
                     .foregroundStyle(Theme.ink).background(Capsule().fill(Theme.brass))
             }
@@ -109,7 +121,7 @@ struct BlindfoldView: View {
             .keyboardShortcut(.return, modifiers: [])
             .disabled(RoundMaker.clips(library: library).count < 20)
             if let ear = passport.earSummary(library: library) {
-                Text(ear).font(.system(size: 13)).foregroundStyle(Theme.muted)
+                Text(ear).font(.scaled(size: 13)).foregroundStyle(Theme.muted)
             }
         }
     }
@@ -148,14 +160,14 @@ struct BlindfoldView: View {
                 }
             } else {
                 Button { game.play(player) } label: { Label("Play again", systemImage: "arrow.counterclockwise") }
-                    .buttonStyle(.plain).font(.system(size: 13, weight: .semibold)).foregroundStyle(Theme.muted)
+                    .buttonStyle(.plain).font(.scaled(size: 13, weight: .semibold)).foregroundStyle(Theme.muted)
                     .keyboardShortcut(.space, modifiers: [])
             }
 
             LazyVGrid(columns: [GridItem(.flexible(), spacing: 10), GridItem(.flexible(), spacing: 10)], spacing: 10) {
                 ForEach(Array(q.choices.enumerated()), id: \.element.id) { i, c in
                     Button { game.answer(c.id, passport: passport, library: library) } label: {
-                        Text(c.label).font(.system(size: compact ? 15 : 15, weight: .semibold)).lineLimit(2)
+                        Text(c.label).font(.scaled(size: compact ? 15 : 15, weight: .semibold)).lineLimit(2)
                             .multilineTextAlignment(.center)
                             .frame(maxWidth: .infinity, minHeight: compact ? 54 : 46)
                             .padding(.horizontal, 10)
@@ -177,7 +189,7 @@ struct BlindfoldView: View {
             if answered {
                 Button { game.next(player) } label: {
                     Text(game.index + 1 == game.questions.count ? "See Results" : "Next")
-                        .font(.system(size: 15, weight: .bold)).padding(.horizontal, 24).padding(.vertical, 11)
+                        .font(.scaled(size: 15, weight: .bold)).padding(.horizontal, 24).padding(.vertical, 11)
                         .foregroundStyle(Theme.ink).background(Capsule().fill(Theme.brass))
                 }
                 .buttonStyle(.plain)
@@ -189,7 +201,7 @@ struct BlindfoldView: View {
     private func clipButton(_ title: String, active: Bool, action: @escaping () -> Void) -> some View {
         Button(action: action) {
             Label(title, systemImage: active && player.isPlaying ? "speaker.wave.2.fill" : "play.fill")
-                .font(.system(size: 13, weight: .semibold))
+                .font(.scaled(size: 13, weight: .semibold))
                 .padding(.horizontal, 14).padding(.vertical, 8)
                 .foregroundStyle(active ? Theme.ink : Theme.cream)
                 .background(Capsule().fill(active ? Theme.cream : Theme.panelHi))
@@ -214,21 +226,21 @@ struct BlindfoldView: View {
                         .frame(width: clips.count > 1 ? 70 : 120, height: clips.count > 1 ? 70 : 120)
                         .clipShape(RoundedRectangle(cornerRadius: 6))
                     VStack(alignment: .leading, spacing: 3) {
-                        Text(t.title).font(.system(size: 15, weight: .bold)).foregroundStyle(Theme.cream).lineLimit(2)
-                        Text(t.artistName).font(.system(size: 13)).foregroundStyle(Theme.muted)
+                        Text(t.title).font(.scaled(size: 15, weight: .bold)).foregroundStyle(Theme.cream).lineLimit(2)
+                        Text(t.artistName).font(.scaled(size: 13)).foregroundStyle(Theme.muted)
                         if let y = Programmer.year(t, library: library) {
-                            Text(String(y)).font(.system(size: 12)).foregroundStyle(Theme.faint)
+                            Text(String(y)).font(.scaled(size: 12)).foregroundStyle(Theme.faint)
                         }
                         if let id = t.album {
                             Button("Open the record") { openAlbum(id) }.buttonStyle(.plain)
-                                .font(.system(size: 12, weight: .semibold)).foregroundStyle(Theme.brass)
+                                .font(.scaled(size: 12, weight: .semibold)).foregroundStyle(Theme.brass)
                         }
                     }
                 }
             }
             if q.second == nil {
                 Text(Programmer.reason(for: q.clip, library: library))
-                    .font(.system(size: 12, design: .serif)).italic().foregroundStyle(Theme.cream.opacity(0.85))
+                    .font(.scaled(size: 12, design: .serif)).italic().foregroundStyle(Theme.cream.opacity(0.85))
                     .lineLimit(5).fixedSize(horizontal: false, vertical: true)
             }
         }
@@ -243,8 +255,8 @@ struct BlindfoldView: View {
         VStack(alignment: .leading, spacing: 18) {
             Text("\(game.score) OF \(game.questions.count)").font(Theme.display(compact ? 54 : 72)).foregroundStyle(Theme.brass)
             Text(game.score >= 8 ? "Big ears." : game.score >= 5 ? "Good listening." : "Every listener starts somewhere.")
-                .font(.system(size: 18, design: .serif)).italic().foregroundStyle(Theme.cream)
-            if game.best > 2 { Text("Best streak: \(game.best)").font(.system(size: 13)).foregroundStyle(Theme.muted) }
+                .font(.scaled(size: 18, design: .serif)).italic().foregroundStyle(Theme.cream)
+            if game.best > 2 { Text("Best streak: \(game.best)").font(.scaled(size: 13)).foregroundStyle(Theme.muted) }
             if !game.missed.isEmpty {
                 Text("THE ONES THAT GOT AWAY").font(Theme.label(11)).tracking(1.4).foregroundStyle(Theme.muted)
                 ForEach(game.missed) { q in
@@ -253,8 +265,8 @@ struct BlindfoldView: View {
                             RemoteImage(url: q.clip.track.artwork(200)) { Theme.panelHi }
                                 .frame(width: 40, height: 40).clipShape(RoundedRectangle(cornerRadius: 4))
                             VStack(alignment: .leading, spacing: 1) {
-                                Text(q.clip.title).font(.system(size: 14, weight: .semibold)).foregroundStyle(Theme.cream)
-                                Text(q.clip.artistName).font(.system(size: 12)).foregroundStyle(Theme.muted)
+                                Text(q.clip.title).font(.scaled(size: 14, weight: .semibold)).foregroundStyle(Theme.cream)
+                                Text(q.clip.artistName).font(.scaled(size: 12)).foregroundStyle(Theme.muted)
                             }
                         }
                     }
@@ -263,7 +275,7 @@ struct BlindfoldView: View {
             }
             HStack(spacing: 12) {
                 Button { game.start(library: library, player: player) } label: {
-                    Label("Play Again", systemImage: "arrow.clockwise").font(.system(size: 15, weight: .bold))
+                    Label("Play Again", systemImage: "arrow.clockwise").font(.scaled(size: 15, weight: .bold))
                         .padding(.horizontal, 22).padding(.vertical, 11)
                         .foregroundStyle(Theme.ink).background(Capsule().fill(Theme.brass))
                 }
@@ -297,5 +309,57 @@ struct BlindSleeve: View {
             }
         }
         .accessibilityLabel("Hidden record")
+    }
+}
+
+/// Your ear, era by era: how many of each era's clips you've placed, as a bar in its colour. Before any answers, what
+/// the game asks.
+struct EarPanel: View {
+    @Environment(JazzLibrary.self) private var library
+    @Environment(Passport.self) private var passport
+
+    var body: some View {
+        let ears = passport.data.ears ?? [:]
+        let scored = library.eras.compactMap { e in ears[e.id].map { (era: e, score: $0) } }.filter { $0.score.total > 0 }
+        VStack(alignment: .leading, spacing: 14) {
+            Text("YOUR EAR").font(Theme.label(11)).tracking(1.6).foregroundStyle(Theme.brass)
+            if scored.isEmpty {
+                Text("Every answer counts towards the era it came from, so after a round or two this shows which eras your ear knows and which need work.")
+                    .font(.scaled(size: 13, design: .serif)).foregroundStyle(Theme.muted)
+                    .fixedSize(horizontal: false, vertical: true)
+                VStack(alignment: .leading, spacing: 8) {
+                    ForEach(["Which era is this?", "Who's playing?", "Which instrument leads?", "Which came first?"], id: \.self) { q in
+                        Label(q, systemImage: "questionmark.circle").font(.scaled(size: 13)).foregroundStyle(Theme.cream.opacity(0.85))
+                    }
+                }
+            } else {
+                if let summary = passport.earSummary(library: library) {
+                    Text(summary).font(.scaled(size: 14, design: .serif)).italic().foregroundStyle(Theme.cream.opacity(0.9))
+                        .fixedSize(horizontal: false, vertical: true)
+                }
+                ForEach(scored, id: \.era.id) { row in
+                    let f = Double(row.score.right) / Double(row.score.total)
+                    VStack(alignment: .leading, spacing: 4) {
+                        HStack {
+                            Text(row.era.name).font(.scaled(size: 12, weight: .semibold)).foregroundStyle(Theme.cream).lineLimit(1)
+                            Spacer()
+                            Text("\(row.score.right) of \(row.score.total)").font(.scaled(size: 11)).monospacedDigit()
+                                .foregroundStyle(Theme.muted)
+                        }
+                        GeometryReader { geo in
+                            ZStack(alignment: .leading) {
+                                Capsule().fill(Theme.panelHi)
+                                Capsule().fill(row.era.tint).frame(width: max(4, geo.size.width * f))
+                            }
+                        }
+                        .frame(height: 5)
+                    }
+                    .accessibilityElement(children: .ignore)
+                    .accessibilityLabel("\(row.era.name): \(row.score.right) of \(row.score.total) right")
+                }
+            }
+        }
+        .padding(20)
+        .background(RoundedRectangle(cornerRadius: 14).fill(Theme.panel))
     }
 }

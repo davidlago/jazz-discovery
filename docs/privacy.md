@@ -38,6 +38,10 @@ The app keeps a cache of what it has looked up, the latest copy of its guide, yo
 and songs waiting to be sent to Last.fm while you're offline. All of it stays on your device and is removed when you
 delete the app.
 
+With Handoff on, your devices offer each other the page you're looking at in the app (which record or artist, say), so
+you can open it on the other one. Apple's Handoff passes it between your own devices signed in to the same Apple
+Account; the developer doesn't receive it.
+
 ## Your passport
 
 What you've heard and saved is kept on your device and, if you're signed in to iCloud, in your own iCloud account so

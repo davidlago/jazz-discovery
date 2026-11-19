@@ -28,26 +28,26 @@ struct TodayCard: View {
                 VStack(alignment: .leading, spacing: 10) {
                     Text(Almanac.label(offset: near?.offset)).font(Theme.label(11)).tracking(1.6).foregroundStyle(tint)
                     Text(library.line(for: lead, on: day, today: near == nil))
-                        .font(.system(size: compact ? 20 : 24, weight: .semibold, design: .serif)).foregroundStyle(Theme.cream)
+                        .font(.scaled(size: compact ? 20 : 24, weight: .semibold, design: .serif)).foregroundStyle(Theme.cream)
                         .fixedSize(horizontal: false, vertical: true)
                     ForEach(Array(events.dropFirst().prefix(3).enumerated()), id: \.offset) { _, e in
                         Button { if let r = library.route(for: e) { open(r) } } label: {
-                            Text(library.line(for: e, on: day, today: near == nil)).font(.system(size: 13, design: .serif))
+                            Text(library.line(for: e, on: day, today: near == nil)).font(.scaled(size: 13, design: .serif))
                                 .foregroundStyle(Theme.cream.opacity(0.75)).multilineTextAlignment(.leading)
                         }
                         .buttonStyle(.plain)
                     }
                     HStack(spacing: 12) {
                         Button { play(lead) } label: {
-                            Label("Play", systemImage: "play.fill").font(.system(size: 13, weight: .bold))
+                            Label("Play", systemImage: "play.fill").font(.scaled(size: 13, weight: .bold))
                                 .padding(.horizontal, 14).padding(.vertical, 8)
                                 .foregroundStyle(Theme.ink).background(Capsule().fill(tint))
                         }
                         .buttonStyle(.plain)
                         if let r = library.route(for: lead) {
-                            Button("Open") { open(r) }.buttonStyle(.plain).font(.system(size: 13, weight: .semibold)).foregroundStyle(Theme.cream)
+                            Button("Open") { open(r) }.buttonStyle(.plain).font(.scaled(size: 13, weight: .semibold)).foregroundStyle(Theme.cream)
                         }
-                        Button("The Almanac") { openAlmanac() }.buttonStyle(.plain).font(.system(size: 13, weight: .semibold)).foregroundStyle(Theme.muted)
+                        Button("The Almanac") { openAlmanac() }.buttonStyle(.plain).font(.scaled(size: 13, weight: .semibold)).foregroundStyle(Theme.muted)
                         Spacer(minLength: 0)
                         ShareCardButton(card: .day(lead, day))
                     }
@@ -104,7 +104,7 @@ struct ThisWeekStrip: View {
                 VStack(alignment: .leading, spacing: 6) {
                     Text(d.date.formatted(.dateTime.weekday(.abbreviated).day()).uppercased()).font(Theme.label(10)).tracking(1.2)
                         .foregroundStyle(Theme.brass)
-                    Text(library.line(for: d.event, on: d.date, today: false)).font(.system(size: 13, design: .serif))
+                    Text(library.line(for: d.event, on: d.date, today: false)).font(.scaled(size: 13, design: .serif))
                         .foregroundStyle(Theme.cream).lineLimit(4).multilineTextAlignment(.leading)
                     Spacer(minLength: 0)
                 }
@@ -174,14 +174,14 @@ struct AlmanacDayList: View {
         VStack(alignment: .leading, spacing: 10) {
             Text(date.formatted(.dateTime.month(.wide).day()).uppercased()).font(Theme.display(28)).foregroundStyle(Theme.cream)
             if events.isEmpty {
-                Text("Nothing in the guide happened on this day yet.").font(.system(size: 14)).foregroundStyle(Theme.muted)
+                Text("Nothing in the guide happened on this day yet.").font(.scaled(size: 14)).foregroundStyle(Theme.muted)
             }
             ForEach(Array(events.enumerated()), id: \.offset) { _, e in
                 Button { if let r = library.route(for: e) { open(r) } } label: {
                     HStack(alignment: .top, spacing: 10) {
                         Image(systemName: e.kind == .recorded ? "opticaldisc" : e.kind == .born ? "birthday.cake" : e.kind == .milestone ? "star" : "leaf")
                             .foregroundStyle(Theme.brass).frame(width: 20)
-                        Text(library.line(for: e, on: date, today: false)).font(.system(size: 15, design: .serif))
+                        Text(library.line(for: e, on: date, today: false)).font(.scaled(size: 15, design: .serif))
                             .foregroundStyle(Theme.cream).multilineTextAlignment(.leading)
                     }
                 }
@@ -209,7 +209,7 @@ struct ShareCardView: View {
     var body: some View {
         let tint = tintColor
         VStack(alignment: .leading, spacing: 40) {
-            Text("JAZZ DISCOVERY").font(Theme.label(30)).tracking(10).foregroundStyle(tint)
+            Text("JAZZ DISCOVERY").font(Theme.label(30, fixed: true)).tracking(10).foregroundStyle(tint)
             switch content {
             case .day(let e, let date):
                 CalendarPage(date: date, size: 300, tint: tint)
@@ -217,12 +217,12 @@ struct ShareCardView: View {
                     .foregroundStyle(Theme.cream).fixedSize(horizontal: false, vertical: true)
             case .record(let a):
                 if let cover { cover.resizable().aspectRatio(1, contentMode: .fit).frame(width: 600).clipShape(RoundedRectangle(cornerRadius: 12)) }
-                Text(a.title.uppercased()).font(Theme.display(110)).foregroundStyle(Theme.cream).lineLimit(2).minimumScaleFactor(0.5)
+                Text(a.title.uppercased()).font(Theme.display(110, fixed: true)).foregroundStyle(Theme.cream).lineLimit(2).minimumScaleFactor(0.5)
                 Text("\(a.artistName) · \(String(a.year))").font(.system(size: 44, design: .serif)).italic().foregroundStyle(tint)
                 Text(Programmer.firstSentence(a.why)).font(.system(size: 40, design: .serif)).foregroundStyle(Theme.cream.opacity(0.85))
                     .fixedSize(horizontal: false, vertical: true)
             case .artist(let a):
-                Text(a.name.uppercased()).font(Theme.display(150)).foregroundStyle(Theme.cream).lineLimit(3).minimumScaleFactor(0.4)
+                Text(a.name.uppercased()).font(Theme.display(150, fixed: true)).foregroundStyle(Theme.cream).lineLimit(3).minimumScaleFactor(0.4)
                 Text("\(a.instrument) · \(library.fullDates(of: a.id) ?? a.lifespan)").font(.system(size: 40, design: .serif)).italic().foregroundStyle(tint)
                 Text(Programmer.firstSentence(a.blurb)).font(.system(size: 44, design: .serif)).foregroundStyle(Theme.cream.opacity(0.85))
                     .fixedSize(horizontal: false, vertical: true)
@@ -258,7 +258,7 @@ struct ShareCardButton: View {
             if let image {
                 ShareLink(item: image, subject: Text("Jazz Discovery"), message: Text(link.absoluteString),
                           preview: SharePreview(title, image: image)) {
-                    Label("Share", systemImage: "square.and.arrow.up").font(.system(size: 13, weight: .semibold))
+                    Label("Share", systemImage: "square.and.arrow.up").font(.scaled(size: 13, weight: .semibold))
                 }
             } else {
                 ProgressView().controlSize(.small)

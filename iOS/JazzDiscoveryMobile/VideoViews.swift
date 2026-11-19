@@ -68,7 +68,7 @@ struct VideoCard: View {
                     RemoteImage(url: video.thumbnail) { Theme.panel }
                         .frame(width: 260, height: 146).clipped()
                     Image(systemName: "play.fill")
-                        .font(.system(size: 17, weight: .bold)).foregroundStyle(Theme.ink)
+                        .font(.scaled(size: 17, weight: .bold)).foregroundStyle(Theme.ink)
                         .frame(width: 44, height: 44)
                         .background(Circle().fill(tint))
                         .shadow(color: .black.opacity(0.4), radius: 8, y: 2)

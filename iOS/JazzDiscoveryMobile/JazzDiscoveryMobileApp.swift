@@ -40,6 +40,13 @@ struct JazzDiscoveryMobileApp: App {
                 .environment(passport)
                 .preferredColorScheme(.dark)
                 .onOpenURL { router.handle($0, library: library, player: player) }
+                // Handoff: the page on screen, for the Mac to pick up (and the Mac's, for this iPhone).
+                .userActivity(Handoff.activityType, element: router.currentLink) { link, activity in
+                    Handoff.describe(activity, link: link, library: library)
+                }
+                .onContinueUserActivity(Handoff.activityType) { activity in
+                    if let url = Handoff.url(in: activity) { router.handle(url, library: library, player: player) }
+                }
                 .onAppear {
                     AppContext.shared.navigate = { [router, library, player] in router.handle($0, library: library, player: player) }
                     SpotlightIndex.update(library: library)
@@ -66,9 +73,14 @@ struct JazzDiscoveryMobileApp: App {
 struct PhoneRootView: View {
     @Environment(PhoneRouter.self) private var router
     @Environment(PlayerController.self) private var player
+    @Environment(\.dynamicTypeSize) private var typeSize
 
     var body: some View {
         @Bindable var router = router
+        // The app's type is sized in points (`Theme`), so it reads the text size setting from `Theme.textScale`, set
+        // here before any page is drawn. When the setting changes, the tabs are drawn again from scratch (`.id`), since
+        // pages whose own inputs haven't changed wouldn't be; where you are in each tab is in the router, so it stays.
+        let _ = Theme.textScale = typeSize.textScale
         TabView(selection: router.tabSelection) {
             Tab("Discover", systemImage: "sparkles", value: PhoneTab.timeline) {
                 TabStack(tab: .timeline) { TimelineTab() }
@@ -86,6 +98,7 @@ struct PhoneRootView: View {
                 TabStack(tab: .search) { SearchTab() }
             }
         }
+        .id(typeSize)
         .tabBarMinimizeBehavior(.onScrollDown)
         .tabViewBottomAccessory(isEnabled: player.current != nil) { MiniPlayer() }
         .sheet(isPresented: $router.showNowPlaying) { NowPlayingView() }
