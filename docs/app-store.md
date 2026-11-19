@@ -461,3 +461,4 @@ Listening guides (Listening Guides in the sidebar) follow a recording section by
 While music plays, a player appears in the menu bar (it can be turned off in Settings > Apple Music). Notifications are off unless the user turns on the morning note (Settings > Today in Jazz); it is scheduled on the Mac, and permission is asked only then. Widgets: Today in Jazz and Continue, for the desktop and Notification Center.
 
 Suggested path: Discover (Today in Jazz at the top, then the River of Jazz: click a style), an era page, an artist (Artists in the sidebar), an album (the Crate) with its Personnel, Play, Mark as Heard and Save buttons and its three doors at the bottom, the Songbook, Places with its time slider, Labels, Lineages, the Glossary, the Passport, Connections (click faces, then find a path between two artists), Radio, the Blindfold Test, and Search (Command-F).
+```
