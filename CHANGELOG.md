@@ -8,6 +8,9 @@ section for the tagged version at the top of the GitHub release notes (or **Unre
 
 - **The Mac app on the Mac App Store**: releases are uploaded there too, as the same app as the iPhone one, and keep
   coming to GitHub as before.
+- **No more keychain prompts** when you switch copies on the Mac: the Last.fm key, secret and connection move to the
+  keychain the iPhone app uses, where they belong to the app rather than to one copy of it, so the App Store,
+  TestFlight and GitHub copies all find them without asking. macOS may ask one last time when they're moved.
 
 ## 1.14.0
 
