@@ -30,6 +30,7 @@ struct SettingsView: View {
 
                 Section("About") {
                     LabeledContent("Version", value: Self.version)
+                    LabeledContent("Content", value: JazzContent.active.summary)
                     Link(destination: URL(string: "https://github.com/davidlago/jazz-discovery")!) {
                         Label("Jazz Discovery for Mac", systemImage: "desktopcomputer")
                     }

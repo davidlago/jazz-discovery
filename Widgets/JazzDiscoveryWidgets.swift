@@ -14,11 +14,17 @@ struct JazzDiscoveryWidgets: WidgetBundle {
 /// The rest of the app's data (tracks, tracklists, the Songbook…) isn't in the extension, which has little memory.
 enum WidgetLibrary {
     static let shared: JazzLibrary = {
-        guard let url = Bundle.main.url(forResource: "jazz", withExtension: "json"), let d = try? Data(contentsOf: url),
-              let data = try? JSONDecoder().decode(JazzData.self, from: d) else { fatalError("jazz.json missing from the widgets") }
+        // What the app downloaded last (Content.swift), when the app group lets the widgets see it, else the bundle's.
+        let files = ContentFiles.active
+        let decoded = files.data("jazz").flatMap { try? JSONDecoder().decode(JazzData.self, from: $0) }
+        let bundled = ContentFiles(bundle: .main)
+        guard let data = decoded ?? bundled.data("jazz").flatMap({ try? JSONDecoder().decode(JazzData.self, from: $0) }) else {
+            fatalError("jazz.json missing from the widgets")
+        }
+        let from = decoded == nil ? bundled : files
         return JazzLibrary(data: data,
-                           sessions: JazzLibrary.optional([String: Session].self, "sessions", in: .main) ?? [:],
-                           almanac: JazzLibrary.optional(AlmanacData.self, "almanac", in: .main) ?? AlmanacData())
+                           sessions: JazzLibrary.optional([String: Session].self, "sessions", in: from) ?? [:],
+                           almanac: JazzLibrary.optional(AlmanacData.self, "almanac", in: from) ?? AlmanacData())
     }()
 }
 

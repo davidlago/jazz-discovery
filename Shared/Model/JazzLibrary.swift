@@ -120,35 +120,64 @@ final class JazzLibrary {
         tiesByArtist = byArtist
     }
 
-    static func load(from bundle: Bundle = .main) -> JazzLibrary {
-        guard let url = bundle.url(forResource: "jazz", withExtension: "json") else {
-            fatalError("jazz.json missing from bundle")
-        }
+    static func load(from bundle: Bundle) -> JazzLibrary { load(from: ContentFiles(bundle: bundle)) }
+
+    /// The library from this launch's data files (Content.swift): downloaded ones when there are any, else the bundle's.
+    static func load(from files: ContentFiles = .active) -> JazzLibrary {
         do {
-            let data = try Data(contentsOf: url)
-            return JazzLibrary(data: try JSONDecoder().decode(JazzData.self, from: data),
-                               sessions: optional([String: Session].self, "sessions", in: bundle) ?? [:],
-                               tracks: optional([String: StationTrack].self, "tracks", in: bundle) ?? [:],
-                               tracklists: optional([String: [CatalogTrack]].self, "tracklists", in: bundle) ?? [:],
-                               tunes: optional(SongbookData.self, "songbook", in: bundle)?.tunes ?? [],
-                               places: optional(PlacesData.self, "places", in: bundle)?.places ?? [],
-                               labels: optional(LabelsData.self, "labels", in: bundle)?.labels ?? [],
-                               lineages: optional(LineagesData.self, "lineages", in: bundle)?.lineages ?? [],
-                               glossary: optional(GlossaryData.self, "glossary", in: bundle) ?? GlossaryData(terms: []),
-                               paths: optional(PathsData.self, "paths", in: bundle)?.paths ?? [],
-                               almanac: optional(AlmanacData.self, "almanac", in: bundle) ?? AlmanacData(),
-                               guides: optional(GuidesData.self, "guides", in: bundle)?.guides ?? [])
+            return try make(files, strict: false)
+        } catch where files.folder != nil {
+            // Downloaded files are checked before they're used, so this is a damaged copy: the bundle's are complete.
+            JazzContent.log.error("Downloaded content didn't load (\(String(describing: error), privacy: .public)); using the built-in content")
+            return load(from: ContentFiles(bundle: files.bundle))
         } catch {
-            fatalError("Could not decode jazz.json: \(error)")
+            fatalError("Could not load jazz.json: \(error)")
         }
     }
 
-    /// A data file that may not be there (a section still being written). Missing or unreadable means empty, so the
-    /// app still opens; scripts/validate-data.py and the unit tests catch a file that doesn't decode.
-    static func optional<T: Decodable>(_ type: T.Type, _ name: String, in bundle: Bundle) -> T? {
-        guard let url = bundle.url(forResource: name, withExtension: "json"),
-              let data = try? Data(contentsOf: url) else { return nil }
-        return try? JSONDecoder().decode(T.self, from: data)
+    /// Reads every data file as the app does, and throws at the first one that doesn't decode (a missing optional file
+    /// is fine). Content.swift runs it on downloaded files before using them.
+    static func validate(_ files: ContentFiles) throws {
+        _ = try make(files, strict: true)
+        // Read on their own by the iTunes lookups and the passport.
+        _ = try decode([String: CatalogAlbum].self, "catalog", in: files, strict: true)
+        _ = try decode([String: CatalogTrack].self, "tracks", in: files, strict: true)
+        _ = try decode([String: [CatalogTrack]].self, "tracklists", in: files, strict: true)
+    }
+
+    private static func make(_ files: ContentFiles, strict: Bool) throws -> JazzLibrary {
+        guard let data = files.data("jazz") else { throw ContentError.missing("jazz.json") }
+        let jazz: JazzData
+        do { jazz = try JSONDecoder().decode(JazzData.self, from: data) } catch { throw ContentError.unreadable("jazz.json", error) }
+        func opt<T: Decodable>(_ type: T.Type, _ name: String) throws -> T? { try decode(type, name, in: files, strict: strict) }
+        return JazzLibrary(data: jazz,
+                           sessions: try opt([String: Session].self, "sessions") ?? [:],
+                           tracks: try opt([String: StationTrack].self, "tracks") ?? [:],
+                           tracklists: try opt([String: [CatalogTrack]].self, "tracklists") ?? [:],
+                           tunes: try opt(SongbookData.self, "songbook")?.tunes ?? [],
+                           places: try opt(PlacesData.self, "places")?.places ?? [],
+                           labels: try opt(LabelsData.self, "labels")?.labels ?? [],
+                           lineages: try opt(LineagesData.self, "lineages")?.lineages ?? [],
+                           glossary: try opt(GlossaryData.self, "glossary") ?? GlossaryData(terms: []),
+                           paths: try opt(PathsData.self, "paths")?.paths ?? [],
+                           almanac: try opt(AlmanacData.self, "almanac") ?? AlmanacData(),
+                           guides: try opt(GuidesData.self, "guides")?.guides ?? [])
+    }
+
+    /// A data file that may not be there (a section still being written). Missing means nil; unreadable means nil too,
+    /// so the app still opens, unless `strict` (checking downloaded files), where it throws.
+    private static func decode<T: Decodable>(_ type: T.Type, _ name: String, in files: ContentFiles, strict: Bool) throws -> T? {
+        guard let data = files.data(name) else { return nil }
+        do {
+            return try JSONDecoder().decode(T.self, from: data)
+        } catch {
+            if strict { throw ContentError.unreadable("\(name).json", error) }
+            return nil
+        }
+    }
+
+    static func optional<T: Decodable>(_ type: T.Type, _ name: String, in files: ContentFiles = .active) -> T? {
+        try? decode(type, name, in: files, strict: false)
     }
 
     func era(_ id: String) -> Era? { eraByID[id] }

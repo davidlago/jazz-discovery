@@ -1,0 +1,57 @@
+{
+  "files": {
+    "almanac.json": {
+      "sha256": "5e8eadce7bbca6e1c1a0b909c80257b4e35cf471ee623b6eb00103c96412984d",
+      "size": 71046
+    },
+    "catalog.json": {
+      "sha256": "5a674b6993892f9b6e53719537f59798540228bf1070600280eed2ca28be0625",
+      "size": 69287
+    },
+    "glossary.json": {
+      "sha256": "36b60f0799002e4a42b924ba9d5a8efd61ff0a6129d5771caaef88f9bfcff611",
+      "size": 20512
+    },
+    "guides.json": {
+      "sha256": "b2be94f943f10ea7e227c00e9f85315d25f1921b1e8fc025d3f1362ac7c85d04",
+      "size": 16827
+    },
+    "jazz.json": {
+      "sha256": "907371ec48375eb45298dada3d7eff8dd1d23b854f7e8657a44c6641fe3ccb20",
+      "size": 320023
+    },
+    "labels.json": {
+      "sha256": "5e74fa88fdbf83a5b8168b663e47abb120d2a344464c1643fc3a0f4aae8fed08",
+      "size": 10906
+    },
+    "lineages.json": {
+      "sha256": "f060cfb59806ff0fbfdf00c70702b49f665a31e4fbdd947942bd40cd5d2e34ec",
+      "size": 45098
+    },
+    "paths.json": {
+      "sha256": "2e14de209f70e253fc0f24411a4ab1ebaf40241607737440fcf44ef983e338cf",
+      "size": 21743
+    },
+    "places.json": {
+      "sha256": "cb23ec44739692ab8c50d1d3bf186aa7079dfaa567a25b50d986423f06a008a6",
+      "size": 26244
+    },
+    "sessions.json": {
+      "sha256": "16668ac8c1d8ef4548f251671ee5ea154c2b6ce84fea9ffd796bff4e163291ea",
+      "size": 656008
+    },
+    "songbook.json": {
+      "sha256": "64af2b82e2f376912b53b665912ee5c42537360d572bad3a4a11264101dff2b7",
+      "size": 64507
+    },
+    "tracklists.json": {
+      "sha256": "41ad6dc13bccedd82b01e3950b452cb7948b019553827555a5b855c1d305bd06",
+      "size": 1584785
+    },
+    "tracks.json": {
+      "sha256": "bf8f4b5682f806caa5ca678015819b0784f9d03d4c6fad6ca1ae9030a48c2f9e",
+      "size": 771430
+    }
+  },
+  "schema": 1
+}

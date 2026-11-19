@@ -120,6 +120,59 @@ python3 -I scripts/build-sessions.py   # personnel, sessions and studios from Mu
 notes, fixed, and marked `"reviewed": true`; `build/sessions-report.md` lists the drafts, what looked off in each, and
 the players who don't have a page yet. `validate-data.py` counts how many are reviewed.
 
+### Content updates without a release
+
+The data files in `Shared/Resources/` ship inside both apps, and release builds also follow them on `main`: merging a
+pull request that changes them updates the apps, with no new version. `Shared/Services/Content.swift` does it:
+
+1. At launch and whenever the app comes to the front (at most once an hour), the app fetches
+   `Shared/Resources/content.json` from `main` on raw.githubusercontent.com. It lists every data file's SHA-256.
+2. It downloads only the files whose hash differs from the ones it has, checks each against the manifest, and
+   decodes them all as the app will. A file that doesn't match (GitHub's CDN can lag a few minutes) or doesn't decode
+   leaves the content as it was, to try again later.
+3. The next launch uses them (the running app never swaps its data under the open pages). They're kept in the app
+   group's container when the build has one, so the widgets see them too. Settings shows where the content came from
+   (*About* on iPhone, *Apple Music → Sources* on the Mac).
+
+A new app version drops what an older one downloaded, since its own files are at least as new.
+
+**Changing content:** edit the files, then
+
+```bash
+python3 -I scripts/validate-data.py
+python3 -I scripts/build-content-manifest.py   # rewrites content.json; CI fails if it's out of date
+```
+
+and open a pull request. Once it merges, apps pick it up within the hour and show it the next time they start.
+
+What reaches the apps this way is data the current version already knows how to show: new artists, records, sessions,
+guides, fixes. New fields and new files are fine (older apps ignore them). A change that older apps can't read, such as
+a field they need renamed, removed or given another type, must bump the schema: `JazzContent.schema` in `Content.swift`
+and `build-content-manifest.py --schema N`, together. Apps only take content with their own schema, so older ones keep
+what they have until they're updated. Pictures, Apple Music matches looked up live and anything else not in
+`Shared/Resources/` aren't affected.
+
+**Trying content before it merges.** Debug builds (Xcode, the scripts) show the files they were built with, so editing
+`Shared/Resources/` and running is the first check. To see other content without rebuilding, start the app with
+`-ContentSource <value>`, in any build:
+
+| Value | Reads |
+|---|---|
+| a branch, tag or commit (`my-branch`, `main`) | that ref on GitHub, through its `content.json`, as the apps will once it merges. Fetched before the window opens, so a relaunch shows the branch's latest push. |
+| a folder (`~/Develop/Jazz\ Discovery/Shared/Resources`) | the files in it, as they are, at every launch (simulator, or an unsandboxed Mac build) |
+| a web address (`http://localhost:8642`) | the same, over HTTP: `scripts/serve-content.sh` serves `Shared/Resources` there. Use this for the sandboxed Mac app. |
+| `bundle` | the files the build was made with (what App Store screenshots use) |
+
+```bash
+# Mac
+open "build/DerivedData/Build/Products/Release/Jazz Discovery.app" --args -ContentSource my-branch
+# simulator
+xcrun simctl launch --terminate-running-process <device> io.github.davidlago.JazzDiscovery -ContentSource my-branch
+```
+
+In Xcode, add it under *Product → Scheme → Edit Scheme → Run → Arguments*. A source that fails to load falls back to
+the built-in content and says why in Settings and the console.
+
 ### Releases
 
 CI (`.github/workflows/ci.yml`) checks the data, runs the tests and builds the app on every push and pull request. Those builds are ad-hoc signed and attached to the run as an artifact. Pushing a `vX.Y.Z` tag does more:
@@ -169,13 +222,15 @@ Shared/                       used by both apps
   Resources/catalog.json      precomputed Apple Music album matches
   Resources/ids.json          Wikidata/MusicBrainz IDs and exact dates (build-ids.py)
   Resources/sessions.json     personnel, sessions, studios per album (build-sessions.py, reviewed by hand)
+  Resources/content.json      every data file's hash, for updates from main (build-content-manifest.py)
+  Services/Content.swift      where the data files come from: the bundle, main on GitHub, or -ContentSource
 JazzDiscovery/                the Mac app: JazzDiscoveryApp (menus, Settings), Views/, Diagnostics/ (--self-test, --snapshots)
 iOS/JazzDiscoveryMobile/      the iPhone app: tabs, pages, player, Connections map, Settings
 Widgets/                      the widgets (both platforms): Today in Jazz and Continue; their views are in Shared/Design
 iOS/Signing.xcconfig          the iPhone app's team, bundle ID and optional Last.fm API account; Version.xcconfig
 Tests/                        unit tests of the shared code (Swift Testing; the JazzDiscoveryTests scheme)
 scripts/                      build-app.sh, notarize.sh, validate-data.py, build-catalog.py, build-ids.py,
-                              build-sessions.py, make-icon.swift (--ios),
+                              build-sessions.py, build-content-manifest.py, serve-content.sh, make-icon.swift (--ios),
                               import-certificate.sh / set-signing-secret.sh (CI signing), testflight.sh,
                               provisioning-profiles.swift, select-xcode.sh, app-store-screenshots.sh
 docs/                         app-store.md (iPhone release guide and listing), privacy.md, app-store/ (screenshots),

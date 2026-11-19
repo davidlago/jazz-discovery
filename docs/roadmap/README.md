@@ -7,7 +7,8 @@ and switches on with the `ICLOUD` repository variable (see its file). 1.1 shippe
 personnel reviewed: Bix Beiderbecke's *Singin' the Blues* and Mongo Santamaría's *Watermelon Man!* still need a source
 for their players. 1.3 (Radio & the Blindfold Test) is released as `v1.3.0`. 1.4 (the Songbook) is released as `v1.4.0`. 1.5 (Places & Labels) is released as `v1.5.0`. 1.6 (Lineages & Glossary) is released as `v1.6.0`. 1.7 is released as `v1.7.0` with Paths; its listening guides wait for hand timing. 1.8 (On This Day) is released as `v1.8.0`, iCloud sync as `v1.8.1`, and 1.8's widgets as `v1.9.0`. 1.10.0 adds Siri, Spotlight and the morning note, and the catalogue's first batch (152 artists, 130 records). 1.11.0 adds
 listening guides, six timed by ear (scripts/guide-editor.sh times more). 1.12.0 adds the catalogue's second batch
-(183 artists, 176 records), four more lineage trees, wider search and label logos.
+(183 artists, 176 records), four more lineage trees, wider search and label logos. 1.13.0 follows the data files on `main`, so new content reaches
+the apps without a release (README, "Content updates without a release").
 
 Today the app is a beautiful encyclopedia: 14 eras, 86 artists, 88 records and 40 milestones, and every screen is
 browse → read → play. This roadmap adds three things it doesn't have:

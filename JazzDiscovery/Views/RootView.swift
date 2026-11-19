@@ -360,6 +360,7 @@ struct AppleMusicSettings: View {
                     .font(.caption).foregroundStyle(.secondary).fixedSize(horizontal: false, vertical: true)
             }
             Section("Sources") {
+                LabeledContent("Content") { Text(JazzContent.active.summary).foregroundStyle(.secondary) }
                 Text("Text and images: Wikipedia & Wikimedia Commons (CC BY-SA). Catalog, artwork and previews: Apple Music / iTunes. Video: YouTube.")
                     .font(.caption).foregroundStyle(.secondary)
             }

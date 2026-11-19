@@ -200,8 +200,13 @@ final class Passport {
         return dir.appendingPathComponent("passport.json")
     }
 
-    nonisolated static func bundledCatalog(in bundle: Bundle = .main) -> [String: CatalogAlbum] {
-        guard let url = bundle.url(forResource: "catalog", withExtension: "json"), let d = try? Data(contentsOf: url),
+    nonisolated static func bundledCatalog(in bundle: Bundle) -> [String: CatalogAlbum] {
+        bundledCatalog(in: ContentFiles(bundle: bundle))
+    }
+
+    /// catalog.json, from this launch's data files.
+    nonisolated static func bundledCatalog(in files: ContentFiles = .active) -> [String: CatalogAlbum] {
+        guard let d = files.data("catalog"),
               let map = try? JSONDecoder().decode([String: CatalogAlbum].self, from: d) else { return [:] }
         return map
     }

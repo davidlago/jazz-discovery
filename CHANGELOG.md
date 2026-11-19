@@ -6,6 +6,11 @@ section for the tagged version at the top of the GitHub release notes (or **Unre
 
 ## Unreleased
 
+## 1.13.0
+
+- **New content without an update.** The apps now pick up new artists, records, guides and fixes as they're added,
+  and show them the next time they start. Settings shows when the content was last updated.
+
 ## 1.12.2
 
 - **The morning note** now opens its page when you tap it on iPhone. Tapping the notification crashed the app

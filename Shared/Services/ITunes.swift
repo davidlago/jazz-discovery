@@ -41,21 +41,21 @@ actor ITunes {
     static let shared = ITunes()
 
     private var bundled: [String: CatalogAlbum] = {
-        guard let url = Bundle.main.url(forResource: "catalog", withExtension: "json"),
+        guard let url = ContentFiles.active.url("catalog"),
               let data = try? Data(contentsOf: url),
               let map = try? JSONDecoder().decode([String: CatalogAlbum].self, from: data) else { return [:] }
         return map
     }()
     /// Named tracks resolved ahead of time (tracks.json), by "artist|title".
     private lazy var bundledTracks: [String: CatalogTrack] = {
-        guard let url = Bundle.main.url(forResource: "tracks", withExtension: "json"),
+        guard let url = ContentFiles.active.url("tracks"),
               let data = try? Data(contentsOf: url),
               let map = try? JSONDecoder().decode([String: CatalogTrack].self, from: data) else { return [:] }
         return map
     }()
     /// Crate albums' tracklists (tracklists.json), by Apple Music album ID.
     private lazy var bundledLists: [Int: [CatalogTrack]] = {
-        guard let url = Bundle.main.url(forResource: "tracklists", withExtension: "json"),
+        guard let url = ContentFiles.active.url("tracklists"),
               let data = try? Data(contentsOf: url),
               let map = try? JSONDecoder().decode([String: [CatalogTrack]].self, from: data) else { return [:] }
         var out: [Int: [CatalogTrack]] = [:]
