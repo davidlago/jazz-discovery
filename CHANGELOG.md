@@ -6,10 +6,12 @@ section for the tagged version at the top of the GitHub release notes (or **Unre
 
 ## Unreleased
 
-- **The player** on the Mac is a slim glass bar, the size of Music Library's: the cover, the title and artist, the
-  controls and the time. What the app has to say about the track (why a station chose it, the next stop on your path,
-  its listening guide, where to go after a record ends) is in a bubble above it, which folds down to a small tab and
-  stays folded until you open it.
+## 1.14.0
+
+- **The player** on the Mac is a slimmer glass bar: the cover, the title and artist, the controls and the time. What
+  the app has to say about the track (why a station chose it, the next stop on your path, its listening guide, where
+  to go after a record ends) is in a bubble above it, which folds down to a small tab and stays folded until you open
+  it.
 - **The player in the menu bar** on the Mac, while music plays: what's playing, why a station chose it, the controls,
   and a way back to the record's page. Settings ▸ Apple Music turns it off.
 - **Menus** on the Mac: a Go menu (Back, Search ⌘F, and ⌘1 to ⌘9 for Discover, Eras & Styles, Artists, the Crate,
