@@ -1,7 +1,8 @@
 // The App Store screenshots, framed: a kicker and a headline over each screen, in the app's own type and colours
 // (the style of 10-widgets.png, which the Mac app draws). Reads the plain screens that scripts/app-store-screenshots.sh
 // takes (docs/app-store/screens/iphone-<size>/) and writes the ones to upload (docs/app-store/iphone-<size>/), at the
-// same pixel size, without transparency.
+// same pixel size, without transparency. The Mac's come from captures of the Mac app's window
+// (docs/app-store/screens/mac/, named as in `macShots`) and go to docs/app-store/mac/, at 2880 × 1800.
 //
 //   swift scripts/app-store-art.swift
 import AppKit
@@ -26,6 +27,15 @@ let shots = [
     Shot(name: "08-songbook", kicker: "THE SONGBOOK", headline: "One tune,\nmany versions", tint: "#E8873A"),
     Shot(name: "09-passport", kicker: "YOUR PASSPORT", headline: "Collect every era\nas you listen", tint: "#7A5CD6"),
 ]
+
+// The Mac set: the iPhone's headlines over the Mac app's window (docs/app-store/screens/mac/<source>.png, captured from
+// the running app, docs/app-store.md), with Radio in place of the passport (a fresh copy's passport is empty).
+let macShots: [(shot: Shot, source: String)] = [
+    (shots[0], "01-timeline"), (shots[1], "03-era-detail"), (shots[2], "07-artist-detail"), (shots[3], "09-album-detail"),
+    (shots[4], "10-connections"), (shots[5], "25-guide"), (shots[6], "16-places"), (shots[7], "15-tune"),
+    (Shot(name: "09-radio", kicker: "RADIO", headline: "Stations that tell you\nwhy each track is there", tint: "#7A5CD6"), "12-radio"),
+]
+let macCanvas = CGSize(width: 2880, height: 1800)
 
 let ink = Color(red: 0x0F / 255, green: 0x0E / 255, blue: 0x0D / 255)
 let cream = Color(red: 0xF3 / 255, green: 0xED / 255, blue: 0xE2 / 255)
@@ -79,6 +89,47 @@ struct Frame: View {
     }
 }
 
+/// A Mac screenshot: the kicker and a one-line headline over the page, drawn as a window.
+struct MacFrame: View {
+    let shot: Shot
+    let screen: NSImage
+    let size: CGSize
+
+    var body: some View {
+        let u = size.width / 2880
+        let shotWidth = size.width * 0.74
+        ZStack(alignment: .top) {
+            LinearGradient(colors: [color(shot.tint).opacity(0.38), ink.opacity(0)], startPoint: .top, endPoint: .center)
+                .background(ink)
+            VStack(spacing: 0) {
+                Text(shot.kicker)
+                    .font(.system(size: 44 * u, weight: .semibold).width(.expanded))
+                    .tracking(8 * u)
+                    .foregroundStyle(brass)
+                    .padding(.top, 92 * u)
+                Text(shot.headline.replacingOccurrences(of: "\n", with: " "))
+                    .font(.system(size: 112 * u, weight: .black).width(.condensed))
+                    .foregroundStyle(cream)
+                    .padding(.top, 22 * u)
+                Image(nsImage: screen)
+                    .resizable()
+                    .interpolation(.high)
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: shotWidth)
+                    .clipShape(RoundedRectangle(cornerRadius: 26 * u, style: .continuous))
+                    .padding(6 * u)
+                    .background(RoundedRectangle(cornerRadius: 32 * u, style: .continuous).fill(Color.black))
+                    .shadow(color: .black.opacity(0.6), radius: 50 * u, y: 24 * u)
+                    .padding(.top, 56 * u)
+                Spacer(minLength: 0)
+            }
+            .frame(width: size.width)
+        }
+        .frame(width: size.width, height: size.height, alignment: .top)
+        .clipped()
+    }
+}
+
 /// Writes a PNG with no alpha channel (App Store Connect wants screenshots flattened).
 func writeOpaquePNG(_ image: CGImage, to url: URL) throws {
     let w = image.width, h = image.height
@@ -121,6 +172,19 @@ func run() throws {
             try writeOpaquePNG(img, to: widgets)
             print("iphone-\(size)/10-widgets.png flattened")
         }
+    }
+    let macInput = root.appendingPathComponent("docs/app-store/screens/mac")
+    let macOutput = root.appendingPathComponent("docs/app-store/mac")
+    try FileManager.default.createDirectory(at: macOutput, withIntermediateDirectories: true)
+    for (shot, source) in macShots {
+        let src = macInput.appendingPathComponent("\(source).png")
+        guard let screen = NSImage(contentsOf: src) else { print("missing \(src.path)"); continue }
+        let renderer = ImageRenderer(content: MacFrame(shot: shot, screen: screen, size: macCanvas))
+        renderer.scale = 1
+        renderer.proposedSize = ProposedViewSize(macCanvas)
+        guard let image = renderer.cgImage else { print("couldn't draw \(shot.name)"); continue }
+        try writeOpaquePNG(image, to: macOutput.appendingPathComponent("\(shot.name).png"))
+        print("mac/\(shot.name).png \(image.width)×\(image.height)")
     }
 }
 

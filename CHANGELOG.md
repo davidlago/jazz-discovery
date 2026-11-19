@@ -6,6 +6,9 @@ section for the tagged version at the top of the GitHub release notes (or **Unre
 
 ## Unreleased
 
+- **The Mac app on the Mac App Store**: releases are uploaded there too, as the same app as the iPhone one, and keep
+  coming to GitHub as before.
+
 ## 1.14.0
 
 - **The player** on the Mac is a slimmer glass bar: the cover, the title and artist, the controls and the time. What
