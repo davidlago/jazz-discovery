@@ -73,12 +73,23 @@ final class MorningNote: NSObject, UNUserNotificationCenterDelegate {
 
     // MARK: UNUserNotificationCenterDelegate
 
-    nonisolated func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification) async
-        -> UNNotificationPresentationOptions { [.banner, .list] }
+    // The completion-handler forms, not the async ones: for the async forms the system calls its completion handler on
+    // a background thread, and UIKit asserts it's on the main thread, so tapping a note crashed the app.
 
-    nonisolated func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse) async {
-        guard let s = response.notification.request.content.userInfo["link"] as? String, let url = URL(string: s) else { return }
-        await MainActor.run { AppContext.shared.open(url) }
+    nonisolated func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification,
+                                            withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        completionHandler([.banner, .list])
+    }
+
+    nonisolated func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse,
+                                            withCompletionHandler completionHandler: @escaping () -> Void) {
+        let link = (response.notification.request.content.userInfo["link"] as? String).flatMap(URL.init(string:))
+        DispatchQueue.main.async {
+            MainActor.assumeIsolated {
+                if let link { AppContext.shared.open(link) }
+            }
+            completionHandler()
+        }
     }
 }
 

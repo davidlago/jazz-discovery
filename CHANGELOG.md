@@ -6,6 +6,11 @@ section for the tagged version at the top of the GitHub release notes (or **Unre
 
 ## Unreleased
 
+## 1.12.2
+
+- **The morning note** now opens its page when you tap it on iPhone. Tapping the notification crashed the app
+  instead.
+
 ## 1.12.1
 
 - **The player** on the Mac shows on every page again. It had disappeared whenever a record, artist, label, guide or
