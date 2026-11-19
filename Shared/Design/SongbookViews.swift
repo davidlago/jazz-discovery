@@ -31,7 +31,7 @@ struct TuneCard: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
             StaffLines().padding(.top, 4)
-            Text(tune.title).font(.system(size: 21, weight: .regular, design: .serif)).italic()
+            Text(tune.title).font(.scaled(size: 21, weight: .regular, design: .serif)).italic()
                 .foregroundStyle(Theme.cream).lineLimit(2).minimumScaleFactor(0.8)
                 .frame(maxWidth: .infinity, alignment: .leading)
             Text("\(Session.joinedList(tune.composers.map(library.composerName))) · \(String(tune.year))".uppercased())
@@ -41,7 +41,7 @@ struct TuneCard: View {
             let heard = passport.versionsHeard(of: tune, library: library)
             Text(heard.heard > 0 ? "\(heard.heard) of \(heard.total) heard · \(String(tune.span.lowerBound))–\(String(tune.span.upperBound))"
                  : "\(tune.versions.count) versions · \(String(tune.span.lowerBound))–\(String(tune.span.upperBound))")
-                .font(.system(size: 11)).foregroundStyle(heard.heard > 0 ? Theme.brass : Theme.faint)
+                .font(.scaled(size: 11)).foregroundStyle(heard.heard > 0 ? Theme.brass : Theme.faint)
         }
         .padding(14)
         .frame(width: width, height: 190, alignment: .topLeading)
@@ -111,7 +111,7 @@ struct SongbookGrid: View {
     }
 
     private func chip(_ text: String, on: Bool) -> some View {
-        Text(text).font(.system(size: 12, weight: .semibold)).lineLimit(1)
+        Text(text).font(.scaled(size: 12, weight: .semibold)).lineLimit(1)
             .padding(.horizontal, 11).padding(.vertical, 6)
             .foregroundStyle(on ? Theme.ink : Theme.cream)
             .background(Capsule().fill(on ? Theme.brass : Theme.panelHi))
@@ -139,78 +139,85 @@ struct TuneDetailContent: View {
             // Header
             VStack(alignment: .leading, spacing: 10) {
                 StaffLines(spacing: 9).frame(maxWidth: 520)
-                Text(tune.title).font(.system(size: compact ? 40 : 60, weight: .regular, design: .serif)).italic()
+                Text(tune.title).font(.scaled(size: compact ? 40 : 60, weight: .regular, design: .serif)).italic()
                     .foregroundStyle(Theme.cream).fixedSize(horizontal: false, vertical: true)
                 composers
                 Text("\(tune.origin) · \(tune.form)").font(Theme.label(11)).tracking(1).foregroundStyle(Theme.muted)
                 if let l = tune.lyricists, !l.isEmpty {
-                    Text("Words by \(Session.joinedList(l))").font(.system(size: 12)).foregroundStyle(Theme.faint)
+                    Text("Words by \(Session.joinedList(l))").font(.scaled(size: 12)).foregroundStyle(Theme.faint)
                 }
             }
-            HStack(spacing: 10) {
-                Button { playInOrder(resolved) } label: {
-                    Label("Play in Order", systemImage: "play.fill").font(.system(size: 14, weight: .bold))
-                        .padding(.horizontal, 18).padding(.vertical, 10)
-                        .foregroundStyle(Theme.ink).background(Capsule().fill(Theme.brass))
+            SideColumnLayout {
+                VStack(alignment: .leading, spacing: 28) {
+                    HStack(spacing: 10) {
+                        Button { playInOrder(resolved) } label: {
+                            Label("Play in Order", systemImage: "play.fill").font(.scaled(size: 14, weight: .bold))
+                                .padding(.horizontal, 18).padding(.vertical, 10)
+                                .foregroundStyle(Theme.ink).background(Capsule().fill(Theme.brass))
+                        }
+                        .buttonStyle(.plain).disabled(resolved.isEmpty)
+                        let heard = passport.versionsHeard(of: tune, library: library)
+                        Text("\(versions.count) versions, \(String(tune.span.lowerBound)) to \(String(tune.span.upperBound))"
+                             + (heard.heard > 0 ? " · \(heard.heard) of \(heard.total) heard" : ""))
+                            .font(.scaled(size: 12)).foregroundStyle(Theme.muted)
+                    }
+                    ForEach(tune.summary.components(separatedBy: "\n\n"), id: \.self) { p in
+                        TermText(text: p, font: .scaled(size: compact ? 16 : 17, design: .serif), openTerm: openTerm).lineSpacing(4)
+                            .fixedSize(horizontal: false, vertical: true)
+                            .frame(maxWidth: 680, alignment: .leading)
+                    }
+
+                    VStack(alignment: .leading, spacing: 12) {
+                        header("The Versions", subtitle: "★ marks the one to play if you play only one.")
+                        VersionDots(tune: tune).frame(height: 18).frame(maxWidth: 680)
+                        ForEach(Array(versions.enumerated()), id: \.offset) { _, v in versionRow(v) }
+                    }
                 }
-                .buttonStyle(.plain).disabled(resolved.isEmpty)
-                let heard = passport.versionsHeard(of: tune, library: library)
-                Text("\(versions.count) versions, \(String(tune.span.lowerBound)) to \(String(tune.span.upperBound))"
-                     + (heard.heard > 0 ? " · \(heard.heard) of \(heard.total) heard" : ""))
-                    .font(.system(size: 12)).foregroundStyle(Theme.muted)
-            }
-            ForEach(tune.summary.components(separatedBy: "\n\n"), id: \.self) { p in
-                TermText(text: p, font: .system(size: compact ? 16 : 17, design: .serif), openTerm: openTerm).lineSpacing(4)
-                    .fixedSize(horizontal: false, vertical: true)
-                    .frame(maxWidth: 680, alignment: .leading)
-            }
 
-            VStack(alignment: .leading, spacing: 12) {
-                header("The Versions", subtitle: "★ marks the one to play if you play only one.")
-                VersionDots(tune: tune).frame(height: 18).frame(maxWidth: 680)
-                ForEach(Array(versions.enumerated()), id: \.offset) { _, v in versionRow(v) }
-            }
-
-            if !also.isEmpty {
-                VStack(alignment: .leading, spacing: 10) {
-                    header("Also in the Crate", subtitle: "Other versions on the Crate's records.")
-                    ForEach(also, id: \.album.id) { a in
-                        Button { openAlbum(a.album.id) } label: {
-                            HStack(spacing: 10) {
-                                AlbumCover(album: a.album, size: 200, cornerRadius: 3).frame(width: 40, height: 40)
-                                VStack(alignment: .leading, spacing: 1) {
-                                    Text(a.album.title).font(.system(size: 14, weight: .semibold)).foregroundStyle(Theme.cream)
-                                    Text("\(a.album.artistName) · \(String(a.album.year))").font(.system(size: 12)).foregroundStyle(Theme.muted)
+                // Beside the versions on a wide Mac window; below them on the iPhone.
+                VStack(alignment: .leading, spacing: 28) {
+                    if !also.isEmpty {
+                        VStack(alignment: .leading, spacing: 10) {
+                            header("Also in the Crate", subtitle: "Other versions on the Crate's records.")
+                            ForEach(also, id: \.album.id) { a in
+                                Button { openAlbum(a.album.id) } label: {
+                                    HStack(spacing: 10) {
+                                        AlbumCover(album: a.album, size: 200, cornerRadius: 3).frame(width: 40, height: 40)
+                                        VStack(alignment: .leading, spacing: 1) {
+                                            Text(a.album.title).font(.scaled(size: 14, weight: .semibold)).foregroundStyle(Theme.cream)
+                                            Text("\(a.album.artistName) · \(String(a.album.year))").font(.scaled(size: 12)).foregroundStyle(Theme.muted)
+                                        }
+                                    }
                                 }
+                                .buttonStyle(.plain)
                             }
                         }
-                        .buttonStyle(.plain)
                     }
-                }
-            }
 
-            let sameForm = library.sameForm(as: tune)
-            if !sameForm.isEmpty {
-                VStack(alignment: .leading, spacing: 10) {
-                    header("Same Form", subtitle: tune.formFamily == "blues"
-                           ? "Other blues in the Songbook: the same short cycle of chords, played every way there is."
-                           : "Other 32-bar AABA songs: two statements, a bridge, and the statement again.")
-                    FlowLayout(spacing: 12) {
-                        ForEach(sameForm) { t in
-                            Button(t.title) { openTune(t.id) }.buttonStyle(.plain)
-                                .font(.system(size: 15, design: .serif)).italic().foregroundStyle(Theme.brass)
+                    let sameForm = library.sameForm(as: tune)
+                    if !sameForm.isEmpty {
+                        VStack(alignment: .leading, spacing: 10) {
+                            header("Same Form", subtitle: tune.formFamily == "blues"
+                                   ? "Other blues in the Songbook: the same short cycle of chords, played every way there is."
+                                   : "Other 32-bar AABA songs: two statements, a bridge, and the statement again.")
+                            FlowLayout(spacing: 12) {
+                                ForEach(sameForm) { t in
+                                    Button(t.title) { openTune(t.id) }.buttonStyle(.plain)
+                                        .font(.scaled(size: 15, design: .serif)).italic().foregroundStyle(Theme.brass)
+                                }
+                            }
+                            .frame(maxWidth: 680, alignment: .leading)
                         }
                     }
-                    .frame(maxWidth: 680, alignment: .leading)
-                }
-            }
 
-            if !family.isEmpty {
-                VStack(alignment: .leading, spacing: 10) {
-                    header("Family", subtitle: "Tunes that share its chords.")
-                    ForEach(family) { t in
-                        Button(t.title) { openTune(t.id) }.buttonStyle(.plain)
-                            .font(.system(size: 15, design: .serif)).italic().foregroundStyle(Theme.brass)
+                    if !family.isEmpty {
+                        VStack(alignment: .leading, spacing: 10) {
+                            header("Family", subtitle: "Tunes that share its chords.")
+                            ForEach(family) { t in
+                                Button(t.title) { openTune(t.id) }.buttonStyle(.plain)
+                                    .font(.scaled(size: 15, design: .serif)).italic().foregroundStyle(Theme.brass)
+                            }
+                        }
                     }
                 }
             }
@@ -229,7 +236,7 @@ struct TuneDetailContent: View {
             }
             Text("· \(String(tune.year))").foregroundStyle(Theme.muted)
         }
-        .font(.system(size: compact ? 15 : 17, weight: .semibold))
+        .font(.scaled(size: compact ? 15 : 17, weight: .semibold))
     }
 
     private func header(_ title: String, subtitle: String?) -> some View {
@@ -238,7 +245,7 @@ struct TuneDetailContent: View {
                 Rectangle().fill(Theme.brass).frame(width: 22, height: 4)
                 Text(title.uppercased()).font(Theme.label(13)).tracking(1.6).foregroundStyle(Theme.cream)
             }
-            if let subtitle { Text(subtitle).font(.system(size: 13)).foregroundStyle(Theme.muted) }
+            if let subtitle { Text(subtitle).font(.scaled(size: 13)).foregroundStyle(Theme.muted) }
         }
     }
 
@@ -254,7 +261,7 @@ struct TuneDetailContent: View {
                     RemoteImage(url: t?.track.artwork(300)) { Theme.panelHi }
                         .frame(width: compact ? 52 : 60, height: compact ? 52 : 60).clipShape(RoundedRectangle(cornerRadius: 4))
                     Image(systemName: t == nil ? "magnifyingglass" : (current && player.isPlaying ? "speaker.wave.2.fill" : "play.fill"))
-                        .font(.system(size: 15, weight: .bold)).foregroundStyle(.white).shadow(radius: 3)
+                        .font(.scaled(size: 15, weight: .bold)).foregroundStyle(.white).shadow(radius: 3)
                 }
             }
             .buttonStyle(.plain)
@@ -267,17 +274,17 @@ struct TuneDetailContent: View {
                     } else {
                         Text(v.artistName).foregroundStyle(Theme.cream)
                     }
-                    if v.isLandmark { Image(systemName: "star.fill").font(.system(size: 10)).foregroundStyle(Theme.brass) }
+                    if v.isLandmark { Image(systemName: "star.fill").font(.scaled(size: 10)).foregroundStyle(Theme.brass) }
                 }
-                .font(.system(size: 14, weight: .semibold))
-                if let title = v.title { Text("as “\(title)”").font(.system(size: 12)).italic().foregroundStyle(Theme.muted) }
-                Text(v.note).font(.system(size: 13, design: .serif)).foregroundStyle(Theme.cream.opacity(0.85))
+                .font(.scaled(size: 14, weight: .semibold))
+                if let title = v.title { Text("as “\(title)”").font(.scaled(size: 12)).italic().foregroundStyle(Theme.muted) }
+                Text(v.note).font(.scaled(size: 13, design: .serif)).foregroundStyle(Theme.cream.opacity(0.85))
                     .fixedSize(horizontal: false, vertical: true)
                 if let id = v.album ?? t?.album, let album = library.album(id) {
                     Button("On \(album.title)") { openAlbum(id) }.buttonStyle(.plain)
-                        .font(.system(size: 12, weight: .semibold)).foregroundStyle(era?.tint ?? Theme.brass)
+                        .font(.scaled(size: 12, weight: .semibold)).foregroundStyle(era?.tint ?? Theme.brass)
                 } else if let rec = t?.track.albumName {
-                    Text("On \(rec)").font(.system(size: 12)).foregroundStyle(Theme.faint).lineLimit(1)
+                    Text("On \(rec)").font(.scaled(size: 12)).foregroundStyle(Theme.faint).lineLimit(1)
                 }
             }
             Spacer(minLength: 0)

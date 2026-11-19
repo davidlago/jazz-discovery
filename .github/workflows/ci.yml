@@ -144,11 +144,33 @@ jobs:
             APP_ENTITLEMENTS=iOS/JazzDiscoveryMobile.entitlements IOS_WIDGET_ENTITLEMENTS=iOS/JazzDiscoveryWidgets.entitlements \
             'APP_GROUP_IN_USE=$(APP_GROUP_IDENTIFIER)' build
 
+  ui:
+    name: Open every page (iPhone)
+    # The iPhone app in a simulator: every kind of page opened by link, at the default text size and a large one; fails
+    # when the app crashes or a page comes up blank (scripts/ui-smoke.sh).
+    runs-on: xcode-27
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Select the release Xcode
+        run: scripts/select-xcode.sh
+
+      - name: Open the pages
+        run: scripts/ui-smoke.sh
+
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        if: always()
+        with:
+          name: ui-smoke-screenshots
+          path: build/ui-smoke
+          if-no-files-found: ignore
+
   testflight:
     name: Upload the iPhone app to TestFlight
     # Every release tag; by hand with the workflow's "testflight" input.
     if: startsWith(github.ref, 'refs/tags/v') || (github.event_name == 'workflow_dispatch' && inputs.testflight != 'none')
-    needs: [build, ios]
+    # Not when a page crashes or comes up blank (the ui job).
+    needs: [build, ios, ui]
     runs-on: xcode-27
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1

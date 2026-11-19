@@ -17,11 +17,11 @@ struct DoorCard: View {
                     .shadow(color: .black.opacity(0.4), radius: 6, y: 3)
                 VStack(alignment: .leading, spacing: 4) {
                     Text(door.kind.title.uppercased()).font(Theme.label(10)).tracking(1.4).foregroundStyle(tint)
-                    Text(door.album.title).font(.system(size: compact ? 15 : 16, weight: .bold)).foregroundStyle(Theme.cream)
+                    Text(door.album.title).font(.scaled(size: compact ? 15 : 16, weight: .bold)).foregroundStyle(Theme.cream)
                         .lineLimit(2)
                     Text("\(door.album.artistName) · \(String(door.album.year))")
-                        .font(.system(size: compact ? 12 : 13)).foregroundStyle(Theme.muted).lineLimit(1)
-                    Text(door.because).font(.system(size: compact ? 12 : 13, design: .serif)).italic()
+                        .font(.scaled(size: compact ? 12 : 13)).foregroundStyle(Theme.muted).lineLimit(1)
+                    Text(door.because).font(.scaled(size: compact ? 12 : 13, design: .serif)).italic()
                         .foregroundStyle(Theme.cream.opacity(0.85))
                         .fixedSize(horizontal: false, vertical: true)
                         .padding(.top, 2)
@@ -79,9 +79,9 @@ struct FinishedAlbumDoors: View {
                             HStack(spacing: 8) {
                                 AlbumCover(album: d.album, size: 200, cornerRadius: 3).frame(width: 40, height: 40)
                                 VStack(alignment: .leading, spacing: 1) {
-                                    Text(d.kind.title).font(.system(size: 10, weight: .semibold)).foregroundStyle(Theme.muted)
+                                    Text(d.kind.title).font(.scaled(size: 10, weight: .semibold)).foregroundStyle(Theme.muted)
                                         .lineLimit(1)
-                                    Text(d.album.title).font(.system(size: 12, weight: .semibold)).foregroundStyle(Theme.cream)
+                                    Text(d.album.title).font(.scaled(size: 12, weight: .semibold)).foregroundStyle(Theme.cream)
                                         .lineLimit(2)
                                 }
                                 Spacer(minLength: 0)

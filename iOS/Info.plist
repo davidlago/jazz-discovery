@@ -4,6 +4,10 @@
 <dict>
 	<key>JazzDiscoveryAppGroup</key>
 	<string>$(APP_GROUP_IN_USE)</string>
+	<key>NSUserActivityTypes</key>
+	<array>
+		<string>io.github.davidlago.JazzDiscovery.page</string>
+	</array>
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>

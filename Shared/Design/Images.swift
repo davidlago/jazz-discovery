@@ -97,7 +97,7 @@ struct ArtistPortrait: View {
                 ZStack {
                     tint.opacity(0.35)
                     Text(artist.initials)
-                        .font(Theme.display(geo.size.width * 0.38))
+                        .font(Theme.display(geo.size.width * 0.38, fixed: true))
                         .foregroundStyle(tint)
                 }
             }
@@ -157,11 +157,11 @@ struct TypographicCover: View {
                 VStack(alignment: .leading, spacing: w * 0.02) {
                     Spacer()
                     Text(artist.uppercased())
-                        .font(Theme.display(w * 0.08, weight: .heavy)).foregroundStyle(tint)
+                        .font(Theme.display(w * 0.08, weight: .heavy, fixed: true)).foregroundStyle(tint)
                     Text(title.uppercased())
-                        .font(Theme.display(w * 0.12)).foregroundStyle(Theme.cream)
+                        .font(Theme.display(w * 0.12, fixed: true)).foregroundStyle(Theme.cream)
                         .lineLimit(3).minimumScaleFactor(0.5)
-                    Text(String(year)).font(Theme.label(w * 0.05)).foregroundStyle(Theme.muted)
+                    Text(String(year)).font(Theme.label(w * 0.05, fixed: true)).foregroundStyle(Theme.muted)
                 }
                 .padding(w * 0.08)
                 .opacity(loading ? 0.35 : 1)

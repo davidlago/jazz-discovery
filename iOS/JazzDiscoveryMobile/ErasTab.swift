@@ -394,7 +394,7 @@ struct DecadeCard: View {
                 ZStack(alignment: .bottomLeading) {
                     HStack(spacing: 0) {
                         if albums.isEmpty {
-                            ForEach(eras) { e in Rectangle().fill(e.tint) }
+                            DecadeFaces(decade: decade)
                         } else {
                             ForEach(albums.prefix(4)) { a in
                                 AlbumCover(album: a, size: 300, cornerRadius: 0)
@@ -415,7 +415,7 @@ struct DecadeCard: View {
                     Text(eras.map(\.name).joined(separator: " · ")).font(.footnote.weight(.medium))
                         .foregroundStyle(Theme.cream.opacity(0.85)).lineLimit(2)
                         .multilineTextAlignment(.leading)
-                    Text("\(albums.count) records · \(library.milestones(inDecade: decade).count) milestones")
+                    Text("\(library.decadeCount(decade)) · \(library.milestones(inDecade: decade).count) milestones")
                         .font(Theme.label(10)).foregroundStyle(Theme.faint)
                 }
                 .padding(14)
@@ -426,7 +426,7 @@ struct DecadeCard: View {
         }
         .buttonStyle(.pressable)
         .accessibilityElement(children: .ignore)
-        .accessibilityLabel("The \(String(decade))s: \(eras.map(\.name).joined(separator: ", ")). \(albums.count) records.")
+        .accessibilityLabel("The \(String(decade))s: \(eras.map(\.name).joined(separator: ", ")). \(library.decadeCount(decade)).")
         .accessibilityAddTraits(.isButton)
     }
 }

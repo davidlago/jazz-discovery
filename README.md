@@ -108,6 +108,17 @@ xcodebuild test -project JazzDiscovery.xcodeproj -scheme JazzDiscoveryTests -des
 or ⌘U in Xcode with the JazzDiscovery scheme. The tests in `Tests/` cover the shared code (`Shared/`, which the test
 bundle compiles itself, with no app to host it, so it needs no signing), and CI runs them on every push.
 
+The iPhone app's pages are checked in a simulator too:
+
+```bash
+scripts/ui-smoke.sh
+```
+
+It opens every kind of page by link, at the default text size and at a large accessibility size, and fails if the app
+crashes or a page comes up blank (`scripts/screen-check.swift` looks at each screenshot). It makes a simulator of its
+own the first time, and leaves the screenshots in `build/ui-smoke/`. CI runs it on every push, and a release isn't
+uploaded to TestFlight unless it passes.
+
 After you edit `jazz.json`, refresh the generated data. Each script only looks up what it hasn't resolved yet:
 
 ```bash
@@ -224,7 +235,7 @@ Shared/                       used by both apps
   Resources/sessions.json     personnel, sessions, studios per album (build-sessions.py, reviewed by hand)
   Resources/content.json      every data file's hash, for updates from main (build-content-manifest.py)
   Services/Content.swift      where the data files come from: the bundle, main on GitHub, or -ContentSource
-JazzDiscovery/                the Mac app: JazzDiscoveryApp (menus, Settings), Views/, Diagnostics/ (--self-test, --snapshots)
+JazzDiscovery/                the Mac app: JazzDiscoveryApp (menus, menu bar player, Settings), Views/, Diagnostics/ (--self-test, --snapshots)
 iOS/JazzDiscoveryMobile/      the iPhone app: tabs, pages, player, Connections map, Settings
 Widgets/                      the widgets (both platforms): Today in Jazz and Continue; their views are in Shared/Design
 iOS/Signing.xcconfig          the iPhone app's team, bundle ID and optional Last.fm API account; Version.xcconfig
@@ -232,8 +243,9 @@ Tests/                        unit tests of the shared code (Swift Testing; the 
 scripts/                      build-app.sh, notarize.sh, validate-data.py, build-catalog.py, build-ids.py,
                               build-sessions.py, build-content-manifest.py, serve-content.sh, make-icon.swift (--ios),
                               import-certificate.sh / set-signing-secret.sh (CI signing), testflight.sh,
-                              provisioning-profiles.swift, select-xcode.sh, app-store-screenshots.sh
+                              provisioning-profiles.swift, select-xcode.sh, app-store-screenshots.sh,
+                              ui-smoke.sh / screen-check.swift (opens every iPhone page in a simulator)
 docs/                         app-store.md (iPhone release guide and listing), privacy.md, app-store/ (screenshots),
                               roadmap/ (the plan for 1.1–1.8)
-.github/workflows/ci.yml      test and build both apps on every push; on vX.Y.Z tags, release the Mac app and upload the iPhone app
+.github/workflows/ci.yml      test and build both apps on every push and open the iPhone pages; on vX.Y.Z tags, release the Mac app and upload the iPhone app
 ```

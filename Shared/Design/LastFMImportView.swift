@@ -27,9 +27,9 @@ struct LastFMImportView: View {
                             HStack(spacing: 10) {
                                 AlbumCover(album: row.album, size: 100, cornerRadius: 3).frame(width: 36, height: 36)
                                 VStack(alignment: .leading, spacing: 1) {
-                                    Text(row.album.title).font(.system(size: 14, weight: .semibold)).foregroundStyle(Theme.cream)
+                                    Text(row.album.title).font(.scaled(size: 14, weight: .semibold)).foregroundStyle(Theme.cream)
                                     Text("\(row.album.artistName) · \(row.plays) plays\(passport.isHeard(row.album.id) ? " · already heard" : "")")
-                                        .font(.system(size: 12)).foregroundStyle(Theme.muted)
+                                        .font(.scaled(size: 12)).foregroundStyle(Theme.muted)
                                 }
                             }
                         }

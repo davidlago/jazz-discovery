@@ -65,15 +65,15 @@ struct TrackRow: View {
                         Text(track.name).font(.body.weight(isCurrent ? .semibold : .regular))
                             .foregroundStyle(isCurrent ? tint : Theme.cream).lineLimit(1)
                         if highlighted {
-                            Image(systemName: "star.fill").font(.system(size: 9)).foregroundStyle(tint)
+                            Image(systemName: "star.fill").font(.scaled(size: 9)).foregroundStyle(tint)
                                 .accessibilityLabel("Start here")
                         }
                         if library.tune(forTrackTitle: track.name) != nil {
-                            Image(systemName: "music.quarternote.3").font(.system(size: 10)).foregroundStyle(Theme.muted)
+                            Image(systemName: "music.quarternote.3").font(.scaled(size: 10)).foregroundStyle(Theme.muted)
                                 .accessibilityLabel("In the Songbook")
                         }
                         if library.guide(forSongID: track.trackId) != nil {
-                            Image(systemName: "list.bullet.rectangle.portrait").font(.system(size: 10)).foregroundStyle(Theme.brass)
+                            Image(systemName: "list.bullet.rectangle.portrait").font(.scaled(size: 10)).foregroundStyle(Theme.brass)
                                 .accessibilityLabel("Has a listening guide")
                         }
                     }
@@ -187,9 +187,12 @@ struct AlbumPlayControls: View {
     let tracks: [CatalogTrack]
     let tint: Color
     @Environment(PlayerController.self) private var player
+    @Environment(\.dynamicTypeSize) private var typeSize
 
     var body: some View {
-        HStack(spacing: 12) {
+        // Side by side; one above the other at the accessibility text sizes, where two don't fit across.
+        let stack = typeSize.isAccessibilitySize ? AnyLayout(VStackLayout(spacing: 10)) : AnyLayout(HStackLayout(spacing: 12))
+        stack {
             Button {
                 if let catalog { player.playAlbum(catalog, tracks: tracks) }
             } label: {
@@ -373,12 +376,12 @@ struct NowPlayingView: View {
 
                 HStack {
                     Spacer()
-                    Button(action: player.previous) { Image(systemName: "backward.fill").font(.system(size: 30)) }
+                    Button(action: player.previous) { Image(systemName: "backward.fill").font(.scaled(size: 30)) }
                         .accessibilityLabel("Previous")
                     Spacer()
                     Button(action: player.togglePlayPause) {
                         Image(systemName: player.isPlaying ? "pause.fill" : "play.fill")
-                            .font(.system(size: 50))
+                            .font(.scaled(size: 50))
                             .contentTransition(.symbolEffect(.replace))
                             .frame(width: 80, height: 80)
                             .contentShape(Rectangle())
@@ -386,7 +389,7 @@ struct NowPlayingView: View {
                     .accessibilityLabel(player.isPlaying ? "Pause" : "Play")
                     .sensoryFeedback(.impact(weight: .light), trigger: player.isPlaying)
                     Spacer()
-                    Button(action: player.next) { Image(systemName: "forward.fill").font(.system(size: 30)) }
+                    Button(action: player.next) { Image(systemName: "forward.fill").font(.scaled(size: 30)) }
                         .accessibilityLabel("Next")
                     Spacer()
                 }
@@ -466,7 +469,7 @@ private struct SourceLine: View {
     private var badges: some View {
         HStack(spacing: 10) {
             Text(np.isFullTrack ? "APPLE MUSIC" : "PREVIEW")
-                .font(.system(size: 10, weight: .heavy)).tracking(1)
+                .font(.scaled(size: 10, weight: .heavy)).tracking(1)
                 .padding(.horizontal, 7).padding(.vertical, 3)
                 .background(Capsule().fill(np.isFullTrack ? Theme.appleMusicRed : Theme.panelHi))
                 .foregroundStyle(np.isFullTrack ? .white : Theme.muted)

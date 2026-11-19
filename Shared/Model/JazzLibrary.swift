@@ -213,6 +213,19 @@ final class JazzLibrary {
     func albums(inDecade d: Int) -> [Album] { albums.filter { $0.decade == d } }
     func eras(inDecade d: Int) -> [Era] { eras.filter { $0.overlaps(decade: d) } }
     func milestones(inDecade d: Int) -> [Milestone] { milestones.filter { $0.year / 10 * 10 == d } }
+    /// Who was playing in a decade: of age then, and in one of the styles of the time.
+    func players(inDecade d: Int) -> [Artist] {
+        let eras = Set(eras(inDecade: d).map(\.id))
+        return artists.filter { a in a.active(in: d) && a.eras.contains { eras.contains($0) } }
+    }
+    /// What a decade's tile counts: its records ("11 records"), or, for a decade before the first record here, who
+    /// was playing ("5 players"), so it doesn't read "0 records".
+    func decadeCount(_ d: Int) -> String {
+        let records = albums(inDecade: d).count
+        if records > 0 { return "\(records) record\(records == 1 ? "" : "s")" }
+        let players = players(inDecade: d).count
+        return "\(players) player\(players == 1 ? "" : "s")"
+    }
     func albums(by artistID: String) -> [Album] {
         let listed = artistByID[artistID]?.albums ?? []
         var result = albums(listed)
@@ -360,17 +373,70 @@ final class JazzLibrary {
         let players = byName.map { Player(name: $0.key, instruments: $0.value.instruments,
                                           albums: $0.value.albums.sorted { $0.year < $1.year }) }
             .sorted { ($0.albums.count, $1.name) > ($1.albums.count, $0.name) }
+        let rank = SearchRank(q)
         return SearchResults(
-            eras: eras.filter { m($0.name) || m($0.tagline) },
-            artists: artists.filter { m($0.name) || m($0.instrument) },
-            albums: albums.filter { m($0.title) || m($0.artistName) || m($0.label) || String($0.year) == q },
+            eras: rank.sorted(eras) { ([$0.name], [$0.tagline]) },
+            artists: rank.sorted(artists) { ([$0.name], [$0.instrument]) },
+            // A starter record goes before others that match as well, then the oldest; the year matches only exactly.
+            albums: rank.sorted(albums.sorted { $0.year < $1.year }, first: \.starter) { a in
+                ([a.title], [a.artistName, a.label] + (String(a.year) == q ? [q] : []))
+            },
             players: Array(players.prefix(20)),
-            tunes: tunes.filter { t in m(t.title) || (t.aliases ?? []).contains(where: m) || t.composers.map(composerName).contains(where: m) },
-            places: places.filter { m($0.name) || ($0.city.map(m) ?? false) },
-            labels: labels.filter { m($0.name) || $0.matches.contains(where: m) },
-            terms: glossary.terms.filter { m($0.term) || $0.also.contains(where: m) },
-            paths: paths.filter { m($0.title) || m($0.subtitle) },
-            guides: guides.filter { g in tracks[g.track].map { m($0.title) || m($0.artistName) } ?? false }
+            tunes: rank.sorted(tunes) { t in ([t.title] + (t.aliases ?? []), t.composers.map(composerName)) },
+            places: rank.sorted(places) { ([$0.name], $0.city.map { [$0] } ?? []) },
+            labels: rank.sorted(labels) { ([$0.name], $0.matches) },
+            terms: rank.sorted(glossary.terms) { ([$0.term], $0.also) },
+            paths: rank.sorted(paths) { ([$0.title], [$0.subtitle]) },
+            guides: rank.sorted(guides) { g in tracks[g.track].map { ([$0.title], [$0.artistName]) } ?? ([], []) }
         )
+    }
+}
+
+/// How well a search matches, best first: the query is the whole of an item's name, then a whole word in it ("Kind
+/// of Blue" for "blue"), then the start of a word ("Bluebird"), then anywhere in it; and a match in the name before one
+/// in a secondary field (an album's artist or label, an era's tagline). Items that match equally keep the library's
+/// order (eras, artists and records by date).
+struct SearchRank {
+    let query: String
+
+    init(_ query: String) { self.query = Self.fold(query) }
+
+    static func fold(_ s: String) -> String {
+        s.folding(options: .diacriticInsensitive, locale: nil).lowercased().trimmingCharacters(in: .whitespaces)
+    }
+
+    /// 0 (the whole text) to 3 (somewhere inside it), or nil when the text doesn't contain the query.
+    func score(_ text: String) -> Int? {
+        let t = Self.fold(text)
+        guard !query.isEmpty, t.contains(query) else { return nil }
+        if t == query { return 0 }
+        func isWordStart(_ i: String.Index) -> Bool { i == t.startIndex || !t[t.index(before: i)].isLetter && !t[t.index(before: i)].isNumber }
+        func isWordEnd(_ i: String.Index) -> Bool { i == t.endIndex || !t[i].isLetter && !t[i].isNumber }
+        var best = 3
+        var from = t.startIndex
+        while let r = t.range(of: query, range: from..<t.endIndex) {
+            if isWordStart(r.lowerBound) { best = min(best, isWordEnd(r.upperBound) ? 1 : 2) }
+            if best == 1 { break }
+            from = t.index(after: r.lowerBound)
+        }
+        return best
+    }
+
+    /// The item's rank: its best match in its main fields, or 4 more than its best in the others; nil if none match.
+    func rank(main: [String], other: [String]) -> Int? {
+        if let s = main.compactMap(score).min() { return s }
+        return other.compactMap(score).min().map { $0 + 4 }
+    }
+
+    /// The items that match, best first; `first` breaks ties (true before false), then the items' own order.
+    func sorted<T>(_ items: [T], first: ((T) -> Bool)? = nil, fields: (T) -> (main: [String], other: [String])) -> [T] {
+        items.enumerated()
+            .compactMap { i, item -> (rank: Int, lead: Int, index: Int, item: T)? in
+                let f = fields(item)
+                guard let r = rank(main: f.main, other: f.other) else { return nil }
+                return (r, first.map { $0(item) ? 0 : 1 } ?? 0, i, item)
+            }
+            .sorted { ($0.rank, $0.lead, $0.index) < ($1.rank, $1.lead, $1.index) }
+            .map(\.item)
     }
 }

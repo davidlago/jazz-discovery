@@ -33,6 +33,34 @@ struct LibraryTests {
         #expect(library.search("").isEmpty)
     }
 
+    @Test("Search ranks the whole name, then a whole word, then the start of a word, then anywhere; names before other fields")
+    func searchRank() {
+        let blue = SearchRank("Blue")
+        #expect(blue.score("blue") == 0)
+        #expect(blue.score("Kind of Blue") == 1)
+        #expect(blue.score("Blue Train") == 1)
+        #expect(blue.score("Bluebird") == 2)
+        #expect(blue.score("Roots: Ragtime & Blues") == 2)
+        #expect(blue.score("Unblue") == 3)
+        #expect(blue.score("Red") == nil)
+        // A match in the name beats any match in the other fields.
+        #expect(blue.rank(main: ["Birth of the Hot"], other: ["Bluebird"]) == 6)
+        #expect(blue.rank(main: ["Kind of Blue"], other: ["Bluebird"]) == 1)
+        #expect(SearchRank("bird").sorted(["Bluebird", "Charlie Parker", "Bird", "Birdland"]) { ([$0], []) }
+                == ["Bird", "Birdland", "Bluebird"])
+        // Ties keep their order, after anything marked first.
+        #expect(SearchRank("blue").sorted(["Blue Train", "Kind of Blue", "Blue Monk"], first: { $0 == "Kind of Blue" }) { ([$0], []) }
+                == ["Kind of Blue", "Blue Train", "Blue Monk"])
+        #expect(SearchRank("joão").score("Joao Gilberto") == 1)
+    }
+
+    @Test("A decade before the first record counts who was playing, not its zero records")
+    func decadeCount() {
+        #expect(library.decadeCount(1950) == "1 record")
+        #expect(library.decadeCount(1890).hasSuffix("players") || library.decadeCount(1890).hasSuffix("player"))
+        #expect(library.players(inDecade: 1950).allSatisfy { $0.active(in: 1950) })
+    }
+
     @Test func decades() {
         #expect(library.decades.first == 1890)
         #expect(library.decades.last == 2020)

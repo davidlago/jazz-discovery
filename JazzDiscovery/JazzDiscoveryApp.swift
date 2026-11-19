@@ -38,7 +38,7 @@ struct JazzDiscoveryApp: App {
     }
 
     var body: some Scene {
-        WindowGroup("Jazz Discovery") {
+        WindowGroup("Jazz Discovery", id: MenuBarPlayer.mainWindowID) {
             RootView()
                 .environment(library)
                 .environment(router)
@@ -54,17 +54,39 @@ struct JazzDiscoveryApp: App {
         .windowToolbarStyle(.unified)
         .defaultSize(width: 1440, height: 900)
         .commands {
-            CommandGroup(after: .sidebar) {
-                Button("Go Back") { router.back() }
+            CommandMenu("Go") {
+                Button("Back") { router.back() }
                     .keyboardShortcut("[", modifiers: .command)
+                    .disabled(router.path.isEmpty)
+                Button("Search") { router.searchRequest += 1 }
+                    .keyboardShortcut("f", modifiers: .command)
+                Divider()
+                ForEach(Array(AppSection.shortcuts.enumerated()), id: \.element) { i, section in
+                    Button(section.rawValue) { router.query = ""; router.show(section) }
+                        .keyboardShortcut(KeyEquivalent(Character(String(i + 1))), modifiers: .command)
+                }
+                Divider()
+                ForEach(AppSection.allCases.filter { !AppSection.shortcuts.contains($0) }) { section in
+                    Button(section.rawValue) { router.query = ""; router.show(section) }
+                }
             }
             CommandMenu("Playback") {
                 Button(player.isPlaying ? "Pause" : "Play") { player.togglePlayPause() }
                     .keyboardShortcut("p", modifiers: [.command, .option])
                     .disabled(player.current == nil)
+                Button("Next Track") { player.next() }
+                    .keyboardShortcut(.rightArrow, modifiers: [.command, .option])
+                    .disabled(player.current == nil)
+                Button("Previous Track") { player.previous() }
+                    .keyboardShortcut(.leftArrow, modifiers: [.command, .option])
+                    .disabled(player.current == nil)
                 Button("Stop") { player.stop() }
                     .keyboardShortcut(".", modifiers: .command)
                     .disabled(player.current == nil)
+                Divider()
+                Button("Go to Current Record") { if let id = playingRecord { router.query = ""; router.go(.album(id)) } }
+                    .keyboardShortcut("l", modifiers: .command)
+                    .disabled(playingRecord == nil)
                 if GuideEditorModel.isEnabled {
                     Divider()
                     GuideEditorMenuItem()
@@ -86,5 +108,33 @@ struct JazzDiscoveryApp: App {
                 .environment(player)
                 .preferredColorScheme(.dark)
         }
+
+        // The player in the menu bar, while something is playing (Settings ▸ Apple Music turns it off).
+        MenuBarExtra(isInserted: menuBarInserted) {
+            MenuBarPlayer()
+                .environment(library)
+                .environment(router)
+                .environment(player)
+                .environment(passport)
+                .preferredColorScheme(.dark)
+        } label: {
+            Image(systemName: player.isPlaying ? "waveform" : "music.note")
+                .accessibilityLabel("Jazz Discovery player")
+        }
+        .menuBarExtraStyle(.window)
+    }
+
+    @AppStorage(MenuBarPlayer.settingKey) private var showsMenuBarPlayer = true
+
+    /// In the menu bar while there's music and the setting is on. Taking it out of the menu bar (⌘-drag) turns the
+    /// setting off.
+    private var menuBarInserted: Binding<Bool> {
+        Binding(get: { showsMenuBarPlayer && player.current != nil },
+                set: { inserted in if !inserted && player.current != nil { showsMenuBarPlayer = false } })
+    }
+
+    /// The Crate record playing now, if it's one.
+    private var playingRecord: String? {
+        player.currentCollectionId.flatMap { passport.albumID(forCollection: $0) }.flatMap { library.album($0)?.id }
     }
 }

@@ -18,7 +18,7 @@ struct JourneyCard: View {
                         Circle().stroke(Theme.ink.opacity(0.2), lineWidth: 4)
                         Circle().trim(from: 0, to: CGFloat(p.done) / CGFloat(max(p.total, 1)))
                             .stroke(Theme.ink, style: StrokeStyle(lineWidth: 4, lineCap: .round)).rotationEffect(.degrees(-90))
-                        if p.done == p.total { Image(systemName: "checkmark").font(.system(size: 11, weight: .black)).foregroundStyle(Theme.ink) }
+                        if p.done == p.total { Image(systemName: "checkmark").font(.scaled(size: 11, weight: .black)).foregroundStyle(Theme.ink) }
                     }
                     .frame(width: 26, height: 26)
                     .accessibilityLabel("\(p.done) of \(p.total) stops")
@@ -26,7 +26,7 @@ struct JourneyCard: View {
             }
             Spacer(minLength: 0)
             Text(path.title.uppercased()).font(Theme.display(28)).foregroundStyle(Theme.ink).lineLimit(3).minimumScaleFactor(0.6)
-            Text(path.subtitle).font(.system(size: 13, design: .serif)).italic().foregroundStyle(Theme.ink.opacity(0.8)).lineLimit(2)
+            Text(path.subtitle).font(.scaled(size: 13, design: .serif)).italic().foregroundStyle(Theme.ink.opacity(0.8)).lineLimit(2)
         }
         .padding(16)
         .frame(width: width, height: 200, alignment: .topLeading)
@@ -57,33 +57,42 @@ struct PathDetailContent: View {
                     .fixedSize(horizontal: false, vertical: true)
                 Text(path.subtitle).font(Theme.serif(compact ? 17 : 20)).italic().foregroundStyle(Theme.muted)
             }
-            Text(path.intro).font(.system(size: compact ? 16 : 17, design: .serif)).lineSpacing(4)
+            Text(path.intro).font(.scaled(size: compact ? 16 : 17, design: .serif)).lineSpacing(4)
                 .foregroundStyle(Theme.cream.opacity(0.9)).fixedSize(horizontal: false, vertical: true).frame(maxWidth: 680, alignment: .leading)
             HStack(spacing: 12) {
                 if let next = p.next {
                     Button { start(next) } label: {
-                        Label(p.done == 0 ? "Start" : "Continue: stop \(next + 1)", systemImage: "play.fill").font(.system(size: 14, weight: .bold))
+                        Label(p.done == 0 ? "Start" : "Continue: stop \(next + 1)", systemImage: "play.fill").font(.scaled(size: 14, weight: .bold))
                             .padding(.horizontal, 18).padding(.vertical, 10)
                             .foregroundStyle(Theme.ink).background(Capsule().fill(path.color))
                     }
                     .buttonStyle(.plain)
                 } else {
-                    Label("Path complete", systemImage: "checkmark.seal.fill").font(.system(size: 14, weight: .bold)).foregroundStyle(path.color)
+                    Label("Path complete", systemImage: "checkmark.seal.fill").font(.scaled(size: 14, weight: .bold)).foregroundStyle(path.color)
                 }
-                Text("\(p.done) of \(p.total) done").font(.system(size: 13)).foregroundStyle(Theme.muted)
+                Text("\(p.done) of \(p.total) done").font(.scaled(size: 13)).foregroundStyle(Theme.muted)
             }
-            VStack(alignment: .leading, spacing: 0) {
-                ForEach(Array(path.stops.enumerated()), id: \.offset) { i, stop in
-                    stopRow(i, stop, isNext: p.next == i, isLast: i == path.stops.count - 1)
+            // Where the path goes after its last stop: beside the stops on a wide Mac window, below them on the iPhone.
+            SideColumnLayout(sideWidth: 300) {
+                VStack(alignment: .leading, spacing: 0) {
+                    ForEach(Array(path.stops.enumerated()), id: \.offset) { i, stop in
+                        stopRow(i, stop, isNext: p.next == i, isLast: i == path.stops.count - 1)
+                    }
                 }
-            }
-            Text(path.outro).font(.system(size: 15, design: .serif)).italic().foregroundStyle(Theme.cream.opacity(0.85))
-                .fixedSize(horizontal: false, vertical: true).frame(maxWidth: 680, alignment: .leading)
-            let next = path.next.compactMap { library.journey($0) }
-            if !next.isEmpty {
-                HStack(spacing: 12) {
-                    ForEach(next) { n in
-                        Button { openPath(n.id) } label: { JourneyCard(path: n, width: compact ? 160 : 220) }.buttonStyle(.plain)
+                VStack(alignment: .leading, spacing: 22) {
+                    Text(path.outro).font(.scaled(size: 15, design: .serif)).italic().foregroundStyle(Theme.cream.opacity(0.85))
+                        .fixedSize(horizontal: false, vertical: true).frame(maxWidth: 680, alignment: .leading)
+                    let next = path.next.compactMap { library.journey($0) }
+                    if !next.isEmpty {
+                        VStack(alignment: .leading, spacing: 10) {
+                            Text("WHERE NEXT").font(Theme.label(11)).tracking(1.6).foregroundStyle(path.color)
+                            FlowLayout(spacing: 12) {
+                                ForEach(next) { n in
+                                    Button { openPath(n.id) } label: { JourneyCard(path: n, width: compact ? 160 : 220) }
+                                        .buttonStyle(.plain)
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -99,7 +108,7 @@ struct PathDetailContent: View {
                 ZStack {
                     Circle().fill(done ? path.color : Theme.panel).frame(width: 34, height: 34)
                     Circle().strokeBorder(path.color, lineWidth: 2).frame(width: 34, height: 34)
-                    if done { Image(systemName: "checkmark").font(.system(size: 13, weight: .black)).foregroundStyle(Theme.ink) }
+                    if done { Image(systemName: "checkmark").font(.scaled(size: 13, weight: .black)).foregroundStyle(Theme.ink) }
                     else { Text(String(format: "%02d", i + 1)).font(Theme.display(15)).foregroundStyle(path.color) }
                 }
                 if !isLast { Rectangle().fill(path.color.opacity(0.5)).frame(width: 2).frame(maxHeight: .infinity) }
@@ -110,15 +119,15 @@ struct PathDetailContent: View {
                     VStack(alignment: .leading, spacing: 2) {
                         Text(kindLabel(stop.kind)).font(Theme.label(9)).tracking(1.2).foregroundStyle(Theme.muted)
                         Button { tick(stop); open(stop) } label: {
-                            Text(info.title).font(.system(size: 16, weight: .bold)).foregroundStyle(Theme.cream).multilineTextAlignment(.leading)
+                            Text(info.title).font(.scaled(size: 16, weight: .bold)).foregroundStyle(Theme.cream).multilineTextAlignment(.leading)
                         }
                         .buttonStyle(.plain)
-                        Text(info.subtitle).font(.system(size: 12)).foregroundStyle(Theme.muted)
+                        Text(info.subtitle).font(.scaled(size: 12)).foregroundStyle(Theme.muted)
                     }
                     Spacer(minLength: 0)
                 }
                 if let note, isNext || !compact {
-                    Text(note).font(.system(size: 14, design: .serif)).foregroundStyle(Theme.cream.opacity(0.88))
+                    Text(note).font(.scaled(size: 14, design: .serif)).foregroundStyle(Theme.cream.opacity(0.88))
                         .fixedSize(horizontal: false, vertical: true)
                 }
                 HStack(spacing: 14) {
@@ -138,7 +147,7 @@ struct PathDetailContent: View {
                     .buttonStyle(.plain).foregroundStyle(done ? path.color : Theme.muted)
                     .disabled(done && !passport.isTicked(stop.key, of: path.id))
                 }
-                .font(.system(size: 12, weight: .semibold))
+                .font(.scaled(size: 12, weight: .semibold))
             }
             .padding(.bottom, 22)
             .padding(12)
@@ -160,7 +169,7 @@ struct PathDetailContent: View {
                 ArtistPortrait(artist: a, tint: library.color(forEra: a.primaryEra)).frame(width: 52, height: 52).clipShape(Circle())
             }
         default:
-            Image(systemName: symbol(stop.kind)).font(.system(size: 20)).foregroundStyle(path.color)
+            Image(systemName: symbol(stop.kind)).font(.scaled(size: 20)).foregroundStyle(path.color)
                 .frame(width: 52, height: 52).background(RoundedRectangle(cornerRadius: 8).fill(Theme.panelHi))
         }
     }
@@ -227,7 +236,7 @@ struct PathStamps: View {
             FlowLayout(spacing: 10) {
                 ForEach(finished) { p in
                     Button { open(p.id) } label: {
-                        Label(p.title, systemImage: "checkmark.seal.fill").font(.system(size: 13, weight: .bold))
+                        Label(p.title, systemImage: "checkmark.seal.fill").font(.scaled(size: 13, weight: .bold))
                             .padding(.horizontal, 12).padding(.vertical, 7)
                             .foregroundStyle(Theme.ink).background(Capsule().fill(p.color))
                     }
@@ -260,7 +269,7 @@ struct NextStopButton: View {
                     VStack(alignment: .leading, spacing: 1) {
                         Text("\(path.title.uppercased()) · NEXT STOP \(i + 1) OF \(path.stops.count)").font(Theme.label(9))
                             .tracking(1.1).foregroundStyle(path.color).lineLimit(1)
-                        Text(library.title(of: stop).title).font(.system(size: 13, weight: .semibold))
+                        Text(library.title(of: stop).title).font(.scaled(size: 13, weight: .semibold))
                             .foregroundStyle(Theme.cream).lineLimit(1)
                     }
                 }

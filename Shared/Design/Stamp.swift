@@ -51,16 +51,16 @@ struct StampView: View {
                     Image(systemName: "star.fill").font(.system(size: size * 0.13)).foregroundStyle(tint)
                     if let completed {
                         Text(completed.formatted(.dateTime.month(.abbreviated).day().year()).uppercased())
-                            .font(Theme.label(size * 0.06)).foregroundStyle(tint)
+                            .font(Theme.label(size * 0.06, fixed: true)).foregroundStyle(tint)
                     }
                 } else {
-                    Text("\(heard)").font(Theme.display(size * 0.24)).foregroundStyle(tint)
-                    Text("OF \(total)").font(Theme.label(size * 0.065)).tracking(1).foregroundStyle(tint)
+                    Text("\(heard)").font(Theme.display(size * 0.24, fixed: true)).foregroundStyle(tint)
+                    Text("OF \(total)").font(Theme.label(size * 0.065, fixed: true)).tracking(1).foregroundStyle(tint)
                 }
             }
             .offset(y: -size * 0.02)
             Text("\(String(era.start))–\(era.end >= 2020 ? "" : String(era.end))")
-                .font(Theme.label(size * 0.065)).tracking(1).foregroundStyle(tint)
+                .font(Theme.label(size * 0.065, fixed: true)).tracking(1).foregroundStyle(tint)
                 .offset(y: size * 0.3)
         }
         .frame(width: size, height: size)
@@ -91,7 +91,7 @@ struct ArcText: View {
         return ZStack {
             ForEach(Array(letters.enumerated()), id: \.offset) { i, ch in
                 Text(String(ch))
-                    .font(Theme.label(fontSize * scale))
+                    .font(Theme.label(fontSize * scale, fixed: true))
                     .foregroundStyle(tint)
                     .offset(y: -radius)
                     .rotationEffect(.radians(Double(angles[i])))

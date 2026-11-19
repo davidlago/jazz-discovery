@@ -94,18 +94,18 @@ struct GuideView: View {
             Text(track?.title ?? guide.id).font(Theme.display(compact ? 40 : 56)).foregroundStyle(Theme.cream)
                 .fixedSize(horizontal: false, vertical: true)
             HStack(spacing: 10) {
-                Text(byline).font(.system(size: compact ? 15 : 16, weight: .semibold)).foregroundStyle(Theme.muted)
+                Text(byline).font(.scaled(size: compact ? 15 : 16, weight: .semibold)).foregroundStyle(Theme.muted)
                 if let id = guide.album, let album = library.album(id) {
                     Button("\(album.title) →") { openAlbum(id) }.buttonStyle(.plain)
-                        .font(.system(size: compact ? 14 : 15, weight: .semibold)).foregroundStyle(Theme.brass)
+                        .font(.scaled(size: compact ? 14 : 15, weight: .semibold)).foregroundStyle(Theme.brass)
                 }
             }
             TermText(text: guide.intro, font: Theme.serif(compact ? 17 : 19), openTerm: openTerm)
                 .fixedSize(horizontal: false, vertical: true)
-            Text(guide.form).font(.system(size: 14)).italic().foregroundStyle(Theme.muted)
+            Text(guide.form).font(.scaled(size: 14)).italic().foregroundStyle(Theme.muted)
             HStack(spacing: 14) {
                 playButton
-                Text(status(sync)).font(.system(size: 13)).foregroundStyle(sync == .following ? Theme.cream : Theme.muted)
+                Text(status(sync)).font(.scaled(size: 13)).foregroundStyle(sync == .following ? Theme.cream : Theme.muted)
                     .fixedSize(horizontal: false, vertical: true)
             }
             .padding(.top, 4)
@@ -124,7 +124,7 @@ struct GuideView: View {
             if playing { player.togglePlayPause() } else if let t = track { player.play(t.track) }
         } label: {
             Label(playing ? (player.isPlaying ? "Pause" : "Play") : "Play", systemImage: playing && player.isPlaying ? "pause.fill" : "play.fill")
-                .font(.system(size: 13, weight: .bold))
+                .font(.scaled(size: 13, weight: .bold))
                 .padding(.horizontal, 14).padding(.vertical, 8)
                 .foregroundStyle(Theme.ink).background(Capsule().fill(Theme.brass))
         }
@@ -152,7 +152,7 @@ struct GuideView: View {
         let tint = sectionTint(s)
         return HStack(alignment: .top, spacing: compact ? 10 : 14) {
             Text(s.at.map(GuideTime.text) ?? "–")
-                .font(.system(size: 13, weight: .semibold).monospacedDigit())
+                .font(.scaled(size: 13, weight: .semibold).monospacedDigit())
                 .foregroundStyle(isCurrent ? Theme.brass : Theme.faint)
                 .frame(width: compact ? 34 : 42, alignment: .trailing)
             VStack(alignment: .leading, spacing: 6) {
@@ -162,19 +162,19 @@ struct GuideView: View {
                     ForEach(s.who, id: \.self) { w in
                         if library.artist(w) != nil {
                             Button(library.guideName(w)) { openArtist(w) }.buttonStyle(.plain)
-                                .font(.system(size: 12, weight: .semibold)).foregroundStyle(Theme.muted)
+                                .font(.scaled(size: 12, weight: .semibold)).foregroundStyle(Theme.muted)
                         } else {
-                            Text(w).font(.system(size: 12)).foregroundStyle(Theme.muted)
+                            Text(w).font(.scaled(size: 12)).foregroundStyle(Theme.muted)
                         }
                     }
                 }
-                Text(s.label).font(.system(size: isCurrent && !compact ? 19 : 16, weight: .bold)).foregroundStyle(Theme.cream)
+                Text(s.label).font(.scaled(size: isCurrent && !compact ? 19 : 16, weight: .bold)).foregroundStyle(Theme.cream)
                 TermText(text: s.note, font: Theme.serif(isCurrent && !compact ? 18 : 16), openTerm: openTerm)
                     .fixedSize(horizontal: false, vertical: true)
                 ForEach(Array(s.marks.enumerated()), id: \.offset) { _, m in
                     HStack(alignment: .firstTextBaseline, spacing: 6) {
-                        Text(m.at.map(GuideTime.text) ?? "•").font(.system(size: 11).monospacedDigit()).foregroundStyle(Theme.faint)
-                        Text(m.note).font(.system(size: 13)).italic().foregroundStyle(Theme.muted)
+                        Text(m.at.map(GuideTime.text) ?? "•").font(.scaled(size: 11).monospacedDigit()).foregroundStyle(Theme.faint)
+                        Text(m.note).font(.scaled(size: 13)).italic().foregroundStyle(Theme.muted)
                     }
                 }
                 if !s.terms.isEmpty {
@@ -182,7 +182,7 @@ struct GuideView: View {
                         ForEach(s.terms, id: \.self) { id in
                             if let t = library.term(id) {
                                 Button { openTerm(id) } label: {
-                                    Text(t.term).font(.system(size: 11, weight: .semibold))
+                                    Text(t.term).font(.scaled(size: 11, weight: .semibold))
                                         .padding(.horizontal, 8).padding(.vertical, 3)
                                         .overlay(Capsule().strokeBorder(Theme.brass.opacity(0.5)))
                                         .foregroundStyle(Theme.brass)
@@ -232,8 +232,8 @@ struct GuideCard: View {
             Text((t?.title ?? guide.id).uppercased()).font(Theme.display(26)).foregroundStyle(Theme.cream)
                 .lineLimit(2).minimumScaleFactor(0.7)
             Text([t?.artistName, t.flatMap { Programmer.year($0, library: library) }.map { String($0) }].compactMap { $0 }.joined(separator: " · "))
-                .font(.system(size: 13, weight: .semibold)).foregroundStyle(Theme.muted).lineLimit(1)
-            Text(guide.form).font(.system(size: 12)).italic().foregroundStyle(Theme.faint).lineLimit(2)
+                .font(.scaled(size: 13, weight: .semibold)).foregroundStyle(Theme.muted).lineLimit(1)
+            Text(guide.form).font(.scaled(size: 12)).italic().foregroundStyle(Theme.faint).lineLimit(2)
             Spacer(minLength: 0)
             if guide.isTimed {
                 FormBar(guide: guide, height: 10, showLabels: false)
@@ -283,14 +283,14 @@ struct NowPlayingGuide: View {
                 HStack(spacing: 10) {
                     if following, let i = g.section(at: player.elapsed) {
                         let s = g.sections[i]
-                        Text(s.label).font(.system(size: 12, weight: .bold)).foregroundStyle(Theme.cream).lineLimit(1)
-                        Text(s.note).font(.system(size: 12)).foregroundStyle(Theme.muted).lineLimit(compact ? 2 : 1)
+                        Text(s.label).font(.scaled(size: 12, weight: .bold)).foregroundStyle(Theme.cream).lineLimit(1)
+                        Text(s.note).font(.scaled(size: 12)).foregroundStyle(Theme.muted).lineLimit(compact ? 2 : 1)
                     } else {
-                        Text("This recording has a listening guide.").font(.system(size: 12)).foregroundStyle(Theme.muted)
+                        Text("This recording has a listening guide.").font(.scaled(size: 12)).foregroundStyle(Theme.muted)
                     }
                     Spacer(minLength: 8)
                     Button { open(g.id) } label: {
-                        Label("Guide", systemImage: "list.bullet.rectangle").font(.system(size: 12, weight: .semibold))
+                        Label("Guide", systemImage: "list.bullet.rectangle").font(.scaled(size: 12, weight: .semibold))
                     }
                     .buttonStyle(.plain).foregroundStyle(Theme.brass)
                 }

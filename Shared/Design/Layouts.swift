@@ -2,6 +2,78 @@ import SwiftUI
 
 // Shared by the Mac and iPhone apps.
 
+/// The faces of who was playing in a decade, side by side: the picture on a decade's card before the first record
+/// here (the 1890s and 1900s), in place of covers.
+struct DecadeFaces: View {
+    let decade: Int
+    var count = 4
+    @Environment(JazzLibrary.self) private var library
+
+    var body: some View {
+        let faces = Array(library.players(inDecade: decade).prefix(count))
+        HStack(spacing: 0) {
+            if faces.isEmpty {
+                ForEach(library.eras(inDecade: decade)) { e in Rectangle().fill(e.tint) }
+            } else {
+                ForEach(faces) { a in
+                    ArtistPortrait(artist: a, tint: library.color(forEra: a.primaryEra))
+                        .frame(maxWidth: .infinity, maxHeight: .infinity).clipped()
+                }
+            }
+        }
+    }
+}
+
+/// Two columns side by side when there's room, a page's main content and a narrower one beside it; one above the
+/// other when there isn't (the iPhone, a narrow window), main first. The Mac's reading pages (a tune, a path, the
+/// Blindfold Test) use it so a wide window isn't half empty.
+struct SideColumnLayout: Layout {
+    /// The narrowest the two columns can be side by side.
+    var threshold: CGFloat = 1000
+    var sideWidth: CGFloat = 340
+    var mainMaxWidth: CGFloat = 760
+    var spacing: CGFloat = 48
+
+    private func sideBySide(_ width: CGFloat?) -> Bool { (width ?? 0) >= threshold }
+
+    private func mainWidth(_ width: CGFloat) -> CGFloat { min(mainMaxWidth, width - sideWidth - spacing) }
+
+    func sizeThatFits(proposal: ProposedViewSize, subviews: Subviews, cache: inout ()) -> CGSize {
+        guard subviews.count == 2 else {
+            return subviews.first?.sizeThatFits(proposal) ?? .zero
+        }
+        let (main, side) = (subviews[0], subviews[1])
+        if let width = proposal.width, sideBySide(width) {
+            let m = main.sizeThatFits(ProposedViewSize(width: mainWidth(width), height: nil))
+            let s = side.sizeThatFits(ProposedViewSize(width: sideWidth, height: nil))
+            return CGSize(width: width, height: max(m.height, s.height))
+        }
+        let m = main.sizeThatFits(ProposedViewSize(width: proposal.width, height: nil))
+        let s = side.sizeThatFits(ProposedViewSize(width: proposal.width, height: nil))
+        let gap: CGFloat = s.height > 0 ? spacing / 2 : 0
+        return CGSize(width: proposal.width ?? max(m.width, s.width), height: m.height + gap + s.height)
+    }
+
+    func placeSubviews(in bounds: CGRect, proposal: ProposedViewSize, subviews: Subviews, cache: inout ()) {
+        guard subviews.count == 2 else {
+            subviews.first?.place(at: bounds.origin, proposal: ProposedViewSize(width: bounds.width, height: nil))
+            return
+        }
+        let (main, side) = (subviews[0], subviews[1])
+        if sideBySide(bounds.width) {
+            let mw = mainWidth(bounds.width)
+            main.place(at: bounds.origin, proposal: ProposedViewSize(width: mw, height: nil))
+            side.place(at: CGPoint(x: bounds.minX + mw + spacing, y: bounds.minY),
+                       proposal: ProposedViewSize(width: sideWidth, height: nil))
+        } else {
+            let m = main.sizeThatFits(ProposedViewSize(width: bounds.width, height: nil))
+            main.place(at: bounds.origin, proposal: ProposedViewSize(width: bounds.width, height: nil))
+            side.place(at: CGPoint(x: bounds.minX, y: bounds.minY + m.height + spacing / 2),
+                       proposal: ProposedViewSize(width: bounds.width, height: nil))
+        }
+    }
+}
+
 /// Simple wrapping layout for chips.
 struct FlowLayout: Layout {
     var spacing: CGFloat = 8

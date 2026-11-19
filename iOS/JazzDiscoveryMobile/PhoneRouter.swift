@@ -61,6 +61,35 @@ final class PhoneRouter {
     /// A chain for the Connections map to draw when it next shows (from a `between/<a>/<b>` link).
     var pathRequest: PathRequest?
 
+    /// The page on screen, as a link (for Handoff): the top of the current tab's stack, or the tab itself.
+    var currentLink: DeepLink {
+        guard let top = paths[tab]?.last else {
+            switch tab {
+            case .timeline: return .tab(.discover, query: nil)
+            case .eras: return .tab(.explore, query: nil)
+            case .artists: return .tab(.artists, query: nil)
+            case .crate: return .tab(.crate, query: nil)
+            case .search: return .tab(.search, query: query.isEmpty ? nil : query)
+            }
+        }
+        switch top {
+        case .page(let route): return .page(route)
+        case .decades: return .decades
+        case .connections(let focus): return .connections(focus: focus)
+        case .passport: return .passport
+        case .songbook: return .songbook
+        case .places: return .map
+        case .labels: return .labels
+        case .lineages: return .lineages
+        case .glossary: return .glossary
+        case .paths: return .paths
+        case .guides: return .guides
+        case .almanac(let m, let d): return .almanac(month: m, day: d)
+        case .radio: return .radio
+        case .blindfold: return .blindfold
+        }
+    }
+
     func path(_ tab: PhoneTab) -> Binding<[PhoneRoute]> {
         Binding(get: { self.paths[tab] ?? [] }, set: { self.paths[tab] = $0 })
     }

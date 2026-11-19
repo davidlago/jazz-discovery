@@ -141,7 +141,7 @@ struct TimeSlider: View {
                 .accessibilityLabel(sweeping == nil ? "Sweep through the years" : "Stop")
                 if year != nil {
                     Button("All years") { stop(); year = nil }.buttonStyle(.plain)
-                        .font(.system(size: 13, weight: .semibold)).foregroundStyle(Theme.muted)
+                        .font(.scaled(size: 13, weight: .semibold)).foregroundStyle(Theme.muted)
                 }
             }
             ZStack(alignment: .leading) {
@@ -190,12 +190,12 @@ struct PlaceRow: View {
 
     var body: some View {
         HStack(spacing: 12) {
-            Image(systemName: place.symbol).font(.system(size: 14, weight: .semibold))
+            Image(systemName: place.symbol).font(.scaled(size: 14, weight: .semibold))
                 .foregroundStyle(Theme.ink).frame(width: 30, height: 30)
                 .background(Circle().fill(library.tint(for: place)))
             VStack(alignment: .leading, spacing: 1) {
-                Text(place.name).font(.system(size: 14, weight: .semibold)).foregroundStyle(Theme.cream).lineLimit(1)
-                Text("\(place.kindLabel) · \(place.years)").font(.system(size: 12)).foregroundStyle(Theme.muted).lineLimit(1)
+                Text(place.name).font(.scaled(size: 14, weight: .semibold)).foregroundStyle(Theme.cream).lineLimit(1)
+                Text("\(place.kindLabel) · \(place.years)").font(.scaled(size: 12)).foregroundStyle(Theme.muted).lineLimit(1)
             }
             Spacer(minLength: 0)
         }
@@ -242,20 +242,20 @@ struct PlaceDetailContent: View {
             .clipShape(RoundedRectangle(cornerRadius: 12))
             .overlay(alignment: .bottomTrailing) {
                 Button { openInMaps() } label: {
-                    Label("Open in Maps", systemImage: "map").font(.system(size: 12, weight: .semibold))
+                    Label("Open in Maps", systemImage: "map").font(.scaled(size: 12, weight: .semibold))
                         .padding(.horizontal, 12).padding(.vertical, 7)
                         .background(Capsule().fill(.ultraThinMaterial))
                 }
                 .buttonStyle(.plain).padding(10)
             }
-            Text(place.summary).font(.system(size: compact ? 16 : 17, design: .serif)).lineSpacing(4)
+            Text(place.summary).font(.scaled(size: compact ? 16 : 17, design: .serif)).lineSpacing(4)
                 .foregroundStyle(Theme.cream.opacity(0.9)).fixedSize(horizontal: false, vertical: true)
                 .frame(maxWidth: 700, alignment: .leading)
             if let station = Programmer.station(id: "place-\(place.id)", library: library) { PlayRadioButton(station: station) }
             FlowLayout(spacing: 8) {
                 ForEach(place.eras.compactMap { library.era($0) }) { e in
                     Button { openEra(e.id) } label: {
-                        Text(e.name).font(.system(size: 12, weight: .semibold)).padding(.horizontal, 10).padding(.vertical, 5)
+                        Text(e.name).font(.scaled(size: 12, weight: .semibold)).padding(.horizontal, 10).padding(.vertical, 5)
                             .foregroundStyle(e.tint).background(Capsule().fill(e.tint.opacity(0.14)))
                     }
                     .buttonStyle(.plain)
@@ -274,7 +274,7 @@ struct PlaceDetailContent: View {
                                 HStack(spacing: 7) {
                                     ArtistPortrait(artist: a, tint: library.color(forEra: a.primaryEra))
                                         .frame(width: 28, height: 28).clipShape(Circle())
-                                    Text(a.name).font(.system(size: 13, weight: .semibold)).foregroundStyle(Theme.cream)
+                                    Text(a.name).font(.scaled(size: 13, weight: .semibold)).foregroundStyle(Theme.cream)
                                 }
                                 .padding(.trailing, 10).padding(3)
                                 .background(Capsule().fill(Theme.panel))
@@ -291,8 +291,8 @@ struct PlaceDetailContent: View {
                             Button { openAlbum(a.id) } label: {
                                 VStack(alignment: .leading, spacing: 4) {
                                     AlbumCover(album: a, size: 300, cornerRadius: 4).frame(width: 110, height: 110)
-                                    Text(a.title).font(.system(size: 12, weight: .semibold)).foregroundStyle(Theme.cream).lineLimit(1)
-                                    Text("\(a.artistName) · \(String(a.year))").font(.system(size: 11)).foregroundStyle(Theme.muted).lineLimit(1)
+                                    Text(a.title).font(.scaled(size: 12, weight: .semibold)).foregroundStyle(Theme.cream).lineLimit(1)
+                                    Text("\(a.artistName) · \(String(a.year))").font(.scaled(size: 11)).foregroundStyle(Theme.muted).lineLimit(1)
                                 }
                                 .frame(width: 110, alignment: .leading)
                             }
@@ -303,7 +303,7 @@ struct PlaceDetailContent: View {
             }
             if let w = place.wikipedia {
                 Text("Text by the app; place details from Wikipedia (\(w.replacingOccurrences(of: "_", with: " ").removingPercentEncoding ?? w)).")
-                    .font(.system(size: 11)).foregroundStyle(Theme.faint)
+                    .font(.scaled(size: 11)).foregroundStyle(Theme.faint)
             }
         }
     }
@@ -349,7 +349,7 @@ struct LabelCard: View {
                         ZStack {
                             Circle().fill(Theme.cream).padding(side * 0.12)
                             RemoteImage(url: url, contentMode: .fit) {
-                                Text(label.name.uppercased()).font(Theme.display(20)).foregroundStyle(Theme.ink)
+                                Text(label.name.uppercased()).font(Theme.display(20, fixed: true)).foregroundStyle(Theme.ink)
                                     .lineLimit(1).minimumScaleFactor(0.5)
                             }
                             .blendMode(.multiply)
@@ -368,9 +368,9 @@ struct LabelCard: View {
             .aspectRatio(1, contentMode: .fit)
             .accessibilityElement()
             .accessibilityLabel(label.name)
-            Text(label.name).font(.system(size: 14, weight: .semibold)).foregroundStyle(Theme.cream)
+            Text(label.name).font(.scaled(size: 14, weight: .semibold)).foregroundStyle(Theme.cream)
             Text("Since \(String(label.founded)) · \(albums.count) record\(albums.count == 1 ? "" : "s") in the Crate")
-                .font(.system(size: 12)).foregroundStyle(Theme.muted).lineLimit(1)
+                .font(.scaled(size: 12)).foregroundStyle(Theme.muted).lineLimit(1)
         }
         .frame(width: width)
         .frame(maxWidth: width == nil ? .infinity : nil)
@@ -415,7 +415,7 @@ struct LabelDetailContent: View {
 
             if let station = Programmer.station(id: "label-\(label.id)", library: library) { PlayRadioButton(station: station) }
             ForEach(label.summary.components(separatedBy: "\n\n"), id: \.self) { p in
-                Text(p).font(.system(size: compact ? 16 : 17, design: .serif)).lineSpacing(4)
+                Text(p).font(.scaled(size: compact ? 16 : 17, design: .serif)).lineSpacing(4)
                     .foregroundStyle(Theme.cream.opacity(0.9)).fixedSize(horizontal: false, vertical: true)
                     .frame(maxWidth: 700, alignment: .leading)
             }
@@ -433,9 +433,9 @@ struct LabelDetailContent: View {
                             DottedLeader().frame(height: 10)
                             if let place = p.place.flatMap({ library.place($0) }) {
                                 Button(p.role) { openPlace(place.id) }.buttonStyle(.plain)
-                                    .font(.system(size: 13)).foregroundStyle(label.tint)
+                                    .font(.scaled(size: 13)).foregroundStyle(label.tint)
                             } else {
-                                Text(p.role).font(.system(size: 13)).foregroundStyle(Theme.muted)
+                                Text(p.role).font(.scaled(size: 13)).foregroundStyle(Theme.muted)
                             }
                         }
                         .frame(maxWidth: 560)
@@ -457,7 +457,7 @@ struct LabelDetailContent: View {
                     FlowLayout(spacing: 8) {
                         ForEach(regulars, id: \.artist.id) { r in
                             Button { openArtist(r.artist.id) } label: {
-                                Text("\(r.artist.name) · \(r.records)").font(.system(size: 12, weight: .semibold))
+                                Text("\(r.artist.name) · \(r.records)").font(.scaled(size: 12, weight: .semibold))
                                     .padding(.horizontal, 10).padding(.vertical, 5)
                                     .foregroundStyle(Theme.cream).background(Capsule().fill(Theme.panelHi))
                             }
@@ -472,7 +472,7 @@ struct LabelDetailContent: View {
     private func note(_ title: String, _ text: String) -> some View {
         VStack(alignment: .leading, spacing: 6) {
             Text(title.uppercased()).font(Theme.label(11)).tracking(1.4).foregroundStyle(label.tint)
-            Text(text).font(.system(size: 14, design: .serif)).foregroundStyle(Theme.cream.opacity(0.88))
+            Text(text).font(.scaled(size: 14, design: .serif)).foregroundStyle(Theme.cream.opacity(0.88))
                 .fixedSize(horizontal: false, vertical: true)
         }
     }

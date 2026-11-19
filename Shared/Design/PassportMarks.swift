@@ -63,10 +63,13 @@ struct AlbumPassportButtons: View {
     let albumID: String
     var tint: Color
     @Environment(Passport.self) private var passport
+    @Environment(\.dynamicTypeSize) private var typeSize
 
     var body: some View {
         let heard = passport.isHeard(albumID), saved = passport.isSaved(albumID)
-        HStack(spacing: 10) {
+        // One above the other at the iPhone's accessibility text sizes, where two don't fit across.
+        let stack = typeSize.isAccessibilitySize ? AnyLayout(VStackLayout(spacing: 10)) : AnyLayout(HStackLayout(spacing: 10))
+        stack {
             toggle(heard ? "Heard" : "Mark as Heard", symbol: heard ? "checkmark.seal.fill" : "checkmark.seal", on: heard,
                    help: heard ? (heardHelp ?? "Heard") : "Mark this record as one you've heard") {
                 passport.toggleHeard(albumID)
@@ -93,7 +96,7 @@ struct AlbumPassportButtons: View {
             Label(title, systemImage: symbol)
                 .contentTransition(.symbolEffect(.replace))
                 #if os(macOS)
-                .font(.system(size: 13, weight: .semibold))
+                .font(.scaled(size: 13, weight: .semibold))
                 .padding(.horizontal, 14).padding(.vertical, 9)
                 #else
                 .font(.subheadline.weight(.semibold))

@@ -46,6 +46,32 @@ enum AppSection: String, CaseIterable, Identifiable {
         }
     }
 
+    /// The link that opens this section (for Handoff).
+    var link: DeepLink {
+        switch self {
+        case .timeline: return .tab(.discover, query: nil)
+        case .eras: return .tab(.explore, query: nil)
+        case .decades: return .decades
+        case .artists: return .tab(.artists, query: nil)
+        case .albums: return .tab(.crate, query: nil)
+        case .connections: return .connections(focus: nil)
+        case .songbook: return .songbook
+        case .places: return .map
+        case .labels: return .labels
+        case .lineages: return .lineages
+        case .almanac: return .almanac(month: nil, day: nil)
+        case .glossary: return .glossary
+        case .paths: return .paths
+        case .guides: return .guides
+        case .radio: return .radio
+        case .blindfold: return .blindfold
+        case .passport: return .passport
+        }
+    }
+
+    /// The Go menu's sections with a shortcut (⌘1 to ⌘9), in order.
+    static let shortcuts: [AppSection] = [.timeline, .eras, .artists, .albums, .connections, .songbook, .radio, .paths, .passport]
+
     /// The section a page belongs to, so a link opens it with the right sidebar item selected.
     init(for route: Route) {
         switch route {
@@ -77,6 +103,16 @@ final class Router {
     var pathRequest: PathRequest?
     /// A day for the almanac to show when it next opens (from an `almanac/<mm>-<dd>` link).
     var almanacDay: DateComponents?
+
+    /// Bumped by Go ▸ Search (⌘F) to put the cursor in the sidebar's search field.
+    var searchRequest = 0
+
+    /// The page the window shows, as a link (for Handoff): the search, the page on top, or the section.
+    var currentLink: DeepLink {
+        let q = query.trimmingCharacters(in: .whitespaces)
+        if !q.isEmpty { return .tab(.search, query: q) }
+        return path.last.map { .page($0) } ?? section.link
+    }
 
     func go(_ route: Route) { path.append(route) }
     func back() { if !path.isEmpty { path.removeLast() } }

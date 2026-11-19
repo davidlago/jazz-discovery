@@ -19,7 +19,7 @@ struct LineageCard: View {
                 }
             }
             Text(lineage.title.uppercased()).font(Theme.display(26)).foregroundStyle(Theme.cream).lineLimit(1).minimumScaleFactor(0.6)
-            Text("\(lineage.players.count) players · \(lineage.links.count) lines").font(.system(size: 12)).foregroundStyle(Theme.muted)
+            Text("\(lineage.players.count) players · \(lineage.links.count) lines").font(.scaled(size: 12)).foregroundStyle(Theme.muted)
         }
         .padding(16)
         .frame(width: width, alignment: .leading)
@@ -54,7 +54,7 @@ struct LineageTree: View {
             ZStack(alignment: .topLeading) {
                 // Decades along the top.
                 ForEach(Array(stride(from: (layout.minYear / 10) * 10, through: layout.maxYear, by: 10)), id: \.self) { d in
-                    Text("\(String(d))s").font(Theme.label(9)).foregroundStyle(Theme.faint)
+                    Text("\(String(d))s").font(Theme.label(9, fixed: true)).foregroundStyle(Theme.faint)
                         .position(x: CGFloat(d - layout.minYear) * pxPerYear + 70, y: 8)
                 }
                 Canvas { ctx, _ in
@@ -117,11 +117,11 @@ struct LineageDetailContent: View {
                 Text(lineage.title.uppercased()).font(Theme.display(compact ? 44 : 64)).foregroundStyle(Theme.cream)
             }
             ForEach(lineage.intro.components(separatedBy: "\n\n"), id: \.self) { p in
-                Text(p).font(.system(size: compact ? 16 : 17, design: .serif)).lineSpacing(4).foregroundStyle(Theme.cream.opacity(0.9))
+                Text(p).font(.scaled(size: compact ? 16 : 17, design: .serif)).lineSpacing(4).foregroundStyle(Theme.cream.opacity(0.9))
                     .fixedSize(horizontal: false, vertical: true).frame(maxWidth: 700, alignment: .leading)
             }
             Button { playLineage(ordered) } label: {
-                Label("Play the Lineage", systemImage: "play.fill").font(.system(size: 14, weight: .bold))
+                Label("Play the Lineage", systemImage: "play.fill").font(.scaled(size: 14, weight: .bold))
                     .padding(.horizontal, 18).padding(.vertical, 10)
                     .foregroundStyle(Theme.ink).background(Capsule().fill(Theme.brass))
             }
@@ -132,7 +132,7 @@ struct LineageDetailContent: View {
             if let id = selected, let a = library.artist(id), let p = lineage.player(id) {
                 selectedPanel(a, p)
             } else {
-                Text("Select a face to see what they brought, and where it came from.").font(.system(size: 13)).foregroundStyle(Theme.muted)
+                Text("Select a face to see what they brought, and where it came from.").font(.scaled(size: 13)).foregroundStyle(Theme.muted)
             }
             VStack(alignment: .leading, spacing: 14) {
                 HStack(spacing: 10) {
@@ -149,20 +149,20 @@ struct LineageDetailContent: View {
     private func selectedPanel(_ a: Artist, _ p: LineagePlayer) -> some View {
         VStack(alignment: .leading, spacing: 8) {
             HStack {
-                Text(a.name).font(.system(size: 18, weight: .bold)).foregroundStyle(Theme.cream)
+                Text(a.name).font(.scaled(size: 18, weight: .bold)).foregroundStyle(Theme.cream)
                 Spacer()
-                Button("Open artist") { openArtist(a.id) }.buttonStyle(.plain).font(.system(size: 13, weight: .semibold)).foregroundStyle(Theme.brass)
+                Button("Open artist") { openArtist(a.id) }.buttonStyle(.plain).font(.scaled(size: 13, weight: .semibold)).foregroundStyle(Theme.brass)
             }
-            Text(p.idea).font(.system(size: 15, design: .serif)).italic().foregroundStyle(Theme.cream.opacity(0.9))
+            Text(p.idea).font(.scaled(size: 15, design: .serif)).italic().foregroundStyle(Theme.cream.opacity(0.9))
             ForEach(lineage.links.filter { $0.from == a.id || $0.to == a.id }) { l in
                 let other = library.artist(l.from == a.id ? l.to : l.from)?.name ?? ""
                 Text("\(l.from == a.id ? "Led to" : "Came from") \(other) · \(l.kindText): \(l.note)")
-                    .font(.system(size: 13)).foregroundStyle(Theme.muted).fixedSize(horizontal: false, vertical: true)
+                    .font(.scaled(size: 13)).foregroundStyle(Theme.muted).fixedSize(horizontal: false, vertical: true)
             }
             if let ref = p.track, let t = library.tracks[ref] {
                 Button { player.play(t.track) } label: {
                     Label("\(t.title) (\(Programmer.year(t, library: library).map { String($0) } ?? ""))", systemImage: "play.circle.fill")
-                        .font(.system(size: 13, weight: .semibold)).foregroundStyle(Theme.brass)
+                        .font(.scaled(size: 13, weight: .semibold)).foregroundStyle(Theme.brass)
                 }
                 .buttonStyle(.plain)
             }
@@ -180,16 +180,16 @@ struct LineageDetailContent: View {
             }
             .buttonStyle(.plain)
             VStack(alignment: .leading, spacing: 3) {
-                Text(a.name).font(.system(size: 15, weight: .semibold)).foregroundStyle(Theme.cream)
-                Text(p.idea).font(.system(size: 13, design: .serif)).foregroundStyle(Theme.cream.opacity(0.85))
+                Text(a.name).font(.scaled(size: 15, weight: .semibold)).foregroundStyle(Theme.cream)
+                Text(p.idea).font(.scaled(size: 13, design: .serif)).foregroundStyle(Theme.cream.opacity(0.85))
                     .fixedSize(horizontal: false, vertical: true)
                 ForEach(lineage.links.filter { $0.to == a.id }) { l in
-                    Text("From \(library.artist(l.from)?.name ?? l.from): \(l.note)").font(.system(size: 12)).italic()
+                    Text("From \(library.artist(l.from)?.name ?? l.from): \(l.note)").font(.scaled(size: 12)).italic()
                         .foregroundStyle(Theme.muted).fixedSize(horizontal: false, vertical: true)
                 }
                 if let t {
                     Button { player.play(t.track) } label: { Label(t.title, systemImage: "play.fill") }
-                        .buttonStyle(.plain).font(.system(size: 12, weight: .semibold)).foregroundStyle(library.color(forEra: a.primaryEra))
+                        .buttonStyle(.plain).font(.scaled(size: 12, weight: .semibold)).foregroundStyle(library.color(forEra: a.primaryEra))
                 }
             }
             Spacer(minLength: 0)
@@ -221,7 +221,7 @@ struct ArtistLineageStrip: View {
                 ForEach(heirs) { l in row("Led to", l.to, l) }
                 ForEach(library.lineages(including: artist.id)) { lin in
                     Button("The whole tree: \(lin.title) →") { openLineage(lin.id) }.buttonStyle(.plain)
-                        .font(.system(size: 13, weight: .semibold)).foregroundStyle(Theme.brass)
+                        .font(.scaled(size: 13, weight: .semibold)).foregroundStyle(Theme.brass)
                 }
             }
         }
@@ -237,7 +237,7 @@ struct ArtistLineageStrip: View {
             }
             VStack(alignment: .leading, spacing: 2) {
                 Text("\(label.uppercased()) · \(library.artist(id)?.name.uppercased() ?? "")").font(Theme.label(10)).tracking(1.2).foregroundStyle(Theme.brass)
-                Text(link.note).font(.system(size: 13, design: .serif)).foregroundStyle(Theme.cream.opacity(0.88))
+                Text(link.note).font(.scaled(size: 13, design: .serif)).foregroundStyle(Theme.cream.opacity(0.88))
                     .fixedSize(horizontal: false, vertical: true)
             }
         }
@@ -250,7 +250,7 @@ struct ArtistLineageStrip: View {
 /// Prose with its glossary terms underlined; tapping one opens the term.
 struct TermText: View {
     let text: String
-    var font: Font = .system(size: 17, design: .serif)
+    var font: Font = .scaled(size: 17, design: .serif)
     var color: Color = Theme.cream.opacity(0.9)
     var openTerm: (String) -> Void
     @Environment(JazzLibrary.self) private var library
@@ -298,8 +298,8 @@ struct GlossaryList: View {
         HStack(alignment: .top, spacing: 10) {
             Button { openTerm(t.id) } label: {
                 VStack(alignment: .leading, spacing: 2) {
-                    Text(t.term).font(.system(size: 18, weight: .bold, design: .serif)).foregroundStyle(Theme.cream)
-                    Text(t.short).font(.system(size: 14, design: .serif)).foregroundStyle(Theme.cream.opacity(0.8))
+                    Text(t.term).font(.scaled(size: 18, weight: .bold, design: .serif)).foregroundStyle(Theme.cream)
+                    Text(t.short).font(.scaled(size: 14, design: .serif)).foregroundStyle(Theme.cream.opacity(0.8))
                         .fixedSize(horizontal: false, vertical: true)
                 }
                 .frame(maxWidth: 620, alignment: .leading)
@@ -307,7 +307,7 @@ struct GlossaryList: View {
             }
             .buttonStyle(.plain)
             if let ex = t.examples.first, let track = library.tracks[ex.track] {
-                Button { player.play(track.track) } label: { Image(systemName: "play.circle.fill").font(.system(size: 22)) }
+                Button { player.play(track.track) } label: { Image(systemName: "play.circle.fill").font(.scaled(size: 22)) }
                     .buttonStyle(.plain).foregroundStyle(Theme.brass)
                     .accessibilityLabel("Hear \(t.term)")
             }
@@ -330,11 +330,11 @@ struct TermDetailContent: View {
         VStack(alignment: .leading, spacing: 22) {
             VStack(alignment: .leading, spacing: 6) {
                 Text(term.category.uppercased()).font(Theme.label(11)).tracking(1.6).foregroundStyle(Theme.brass)
-                Text(term.term).font(.system(size: compact ? 42 : 60, weight: .bold, design: .serif)).foregroundStyle(Theme.cream)
-                Text(term.short).font(.system(size: compact ? 18 : 20, design: .serif)).italic().foregroundStyle(Theme.cream.opacity(0.85))
+                Text(term.term).font(.scaled(size: compact ? 42 : 60, weight: .bold, design: .serif)).foregroundStyle(Theme.cream)
+                Text(term.short).font(.scaled(size: compact ? 18 : 20, design: .serif)).italic().foregroundStyle(Theme.cream.opacity(0.85))
                     .fixedSize(horizontal: false, vertical: true)
             }
-            TermText(text: term.long, font: .system(size: compact ? 16 : 17, design: .serif), openTerm: openTerm)
+            TermText(text: term.long, font: .scaled(size: compact ? 16 : 17, design: .serif), openTerm: openTerm)
                 .fixedSize(horizontal: false, vertical: true).frame(maxWidth: 680, alignment: .leading)
             VStack(alignment: .leading, spacing: 12) {
                 Text("HEAR IT").font(Theme.label(13)).tracking(1.6).foregroundStyle(Theme.cream)
@@ -346,8 +346,8 @@ struct TermDetailContent: View {
                                     .clipShape(RoundedRectangle(cornerRadius: 4))
                                     .overlay(Image(systemName: "play.fill").foregroundStyle(.white).shadow(radius: 2))
                                 VStack(alignment: .leading, spacing: 2) {
-                                    Text("\(t.title) · \(t.artistName)").font(.system(size: 14, weight: .semibold)).foregroundStyle(Theme.cream)
-                                    Text(ex.note).font(.system(size: 13, design: .serif)).foregroundStyle(Theme.cream.opacity(0.8))
+                                    Text("\(t.title) · \(t.artistName)").font(.scaled(size: 14, weight: .semibold)).foregroundStyle(Theme.cream)
+                                    Text(ex.note).font(.scaled(size: 13, design: .serif)).foregroundStyle(Theme.cream.opacity(0.8))
                                         .fixedSize(horizontal: false, vertical: true)
                                 }
                             }
@@ -362,7 +362,7 @@ struct TermDetailContent: View {
                 FlowLayout(spacing: 8) {
                     ForEach(term.related.compactMap { library.term($0) }) { r in
                         Button { openTerm(r.id) } label: {
-                            Text(r.term).font(.system(size: 13, weight: .semibold)).padding(.horizontal, 11).padding(.vertical, 6)
+                            Text(r.term).font(.scaled(size: 13, weight: .semibold)).padding(.horizontal, 11).padding(.vertical, 6)
                                 .foregroundStyle(Theme.brass).background(Capsule().fill(Theme.brass.opacity(0.14)))
                         }
                         .buttonStyle(.plain)
@@ -375,7 +375,7 @@ struct TermDetailContent: View {
                     FlowLayout(spacing: 8) {
                         ForEach(eras) { e in
                             Button { openEra(e.id) } label: {
-                                Text(e.name).font(.system(size: 12, weight: .semibold)).padding(.horizontal, 10).padding(.vertical, 5)
+                                Text(e.name).font(.scaled(size: 12, weight: .semibold)).padding(.horizontal, 10).padding(.vertical, 5)
                                     .foregroundStyle(e.tint).background(Capsule().fill(e.tint.opacity(0.14)))
                             }
                             .buttonStyle(.plain)
@@ -404,7 +404,7 @@ struct HowToListenCard: View {
                     Spacer()
                     if let ref = library.glossary.howToListenTrack, let t = library.tracks[ref] {
                         Button { player.play(t.track) } label: {
-                            Label("Play \(t.title)", systemImage: "play.fill").font(.system(size: 13, weight: .bold))
+                            Label("Play \(t.title)", systemImage: "play.fill").font(.scaled(size: 13, weight: .bold))
                                 .padding(.horizontal, 14).padding(.vertical, 8)
                                 .foregroundStyle(Theme.ink).background(Capsule().fill(Theme.brass))
                         }
@@ -414,7 +414,7 @@ struct HowToListenCard: View {
                 if let openGuide, let ref = library.glossary.howToListenTrack, let g = library.guide(forTrack: ref) {
                     Button { openGuide(g.id) } label: {
                         Label("Then follow the whole recording, section by section, with its listening guide", systemImage: "list.bullet.rectangle.portrait")
-                            .font(.system(size: 13, weight: .semibold)).foregroundStyle(Theme.brass)
+                            .font(.scaled(size: 13, weight: .semibold)).foregroundStyle(Theme.brass)
                             .multilineTextAlignment(.leading)
                     }
                     .buttonStyle(.plain)
@@ -424,8 +424,8 @@ struct HowToListenCard: View {
                         Text(String(format: "%02d", i + 1)).font(Theme.display(26)).foregroundStyle(Theme.brass)
                         VStack(alignment: .leading, spacing: 3) {
                             Button(s.title) { openTerm(s.term) }.buttonStyle(.plain)
-                                .font(.system(size: 15, weight: .bold)).foregroundStyle(Theme.cream)
-                            Text(s.text).font(.system(size: 14, design: .serif)).foregroundStyle(Theme.cream.opacity(0.85))
+                                .font(.scaled(size: 15, weight: .bold)).foregroundStyle(Theme.cream)
+                            Text(s.text).font(.scaled(size: 14, design: .serif)).foregroundStyle(Theme.cream.opacity(0.85))
                                 .fixedSize(horizontal: false, vertical: true)
                         }
                     }

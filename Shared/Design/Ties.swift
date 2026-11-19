@@ -49,7 +49,7 @@ struct TieDetails: View {
             }
             Text(tie.kindText.uppercased()).font(Theme.label(10)).tracking(1.4).foregroundStyle(Theme.brass)
             if let note = tie.bond?.note {
-                Text(note).font(.system(size: 13)).foregroundStyle(Theme.cream.opacity(0.88))
+                Text(note).font(.scaled(size: 13)).foregroundStyle(Theme.cream.opacity(0.88))
                     .fixedSize(horizontal: false, vertical: true)
             }
             if !tie.albums.isEmpty {
@@ -74,7 +74,7 @@ struct TieDetails: View {
             HStack(spacing: 7) {
                 ArtistPortrait(artist: artist, tint: library.color(forEra: artist.primaryEra))
                     .frame(width: 34, height: 34).clipShape(Circle())
-                Text(artist.name).font(.system(size: 13, weight: .semibold)).foregroundStyle(Theme.cream)
+                Text(artist.name).font(.scaled(size: 13, weight: .semibold)).foregroundStyle(Theme.cream)
                     .lineLimit(1).minimumScaleFactor(0.8)
             }
         }
@@ -106,9 +106,9 @@ struct PathStepsList: View {
                     .frame(width: 38, height: 38).clipShape(Circle())
                     .overlay(Circle().strokeBorder(library.color(forEra: artist.primaryEra), lineWidth: 1.5))
                 VStack(alignment: .leading, spacing: 1) {
-                    Text(artist.name).font(.system(size: 14, weight: .semibold)).foregroundStyle(Theme.cream)
+                    Text(artist.name).font(.scaled(size: 14, weight: .semibold)).foregroundStyle(Theme.cream)
                     Text([artist.instrument, artist.lifespan].filter { !$0.isEmpty }.joined(separator: " · "))
-                        .font(.system(size: 11)).foregroundStyle(Theme.muted)
+                        .font(.scaled(size: 11)).foregroundStyle(Theme.muted)
                 }
             }
         }
@@ -124,16 +124,16 @@ struct PathStepsList: View {
                     Button { openAlbum(album.id) } label: {
                         HStack(spacing: 6) {
                             AlbumCover(album: album, size: 100, cornerRadius: 2).frame(width: 22, height: 22)
-                            Text("\(album.title) (\(String(album.year)))").font(.system(size: 12, weight: .medium))
+                            Text("\(album.title) (\(String(album.year)))").font(.scaled(size: 12, weight: .medium))
                                 .foregroundStyle(Theme.brass).lineLimit(1)
                         }
                     }
                     .buttonStyle(.plain)
                     if step.tie.albums.count > 1 {
-                        Text("and \(step.tie.albums.count - 1) more together").font(.system(size: 11)).foregroundStyle(Theme.faint)
+                        Text("and \(step.tie.albums.count - 1) more together").font(.scaled(size: 11)).foregroundStyle(Theme.faint)
                     }
                 } else if let note = step.tie.bond?.note {
-                    Text(note).font(.system(size: 12)).italic().foregroundStyle(Theme.cream.opacity(0.8))
+                    Text(note).font(.scaled(size: 12)).italic().foregroundStyle(Theme.cream.opacity(0.8))
                         .fixedSize(horizontal: false, vertical: true)
                 }
             }
