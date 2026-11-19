@@ -243,9 +243,10 @@ Tests/                        unit tests of the shared code (Swift Testing; the 
 scripts/                      build-app.sh, notarize.sh, validate-data.py, build-catalog.py, build-ids.py,
                               build-sessions.py, build-content-manifest.py, serve-content.sh, make-icon.swift (--ios),
                               import-certificate.sh / set-signing-secret.sh (CI signing), testflight.sh,
+                              mac-app-store.sh / mac-installer-certificate.sh / installer-certificate.swift (Mac App Store),
                               provisioning-profiles.swift, select-xcode.sh, app-store-screenshots.sh,
                               ui-smoke.sh / screen-check.swift (opens every iPhone page in a simulator)
-docs/                         app-store.md (iPhone release guide and listing), privacy.md, app-store/ (screenshots),
+docs/                         app-store.md (App Store release guide and listing, iPhone and Mac), privacy.md, app-store/ (screenshots),
                               roadmap/ (the plan for 1.1–1.8)
-.github/workflows/ci.yml      test and build both apps on every push and open the iPhone pages; on vX.Y.Z tags, release the Mac app and upload the iPhone app
+.github/workflows/ci.yml      test and build both apps on every push and open the iPhone pages; on vX.Y.Z tags, release the Mac app and upload both apps to App Store Connect
 ```

@@ -8,13 +8,18 @@
 # where pages with type that doesn't fit are most likely to break. Screenshots go to build/ui-smoke/.
 #
 #   APP=<path to .app>   skip the build and test this simulator build
-#   WAIT=5               seconds to give each page (default: 5)
+#   WAIT=5               seconds to give each page before the first look (default: 5)
+#   MAX_WAIT=30          how long a page may stay blank before it fails (default: 30). Each page is a fresh launch, and
+#                        on GitHub's runners a cold launch sometimes hasn't drawn anything after 5 seconds (the whole
+#                        screen blank, tab bar included, on a different few pages each run), so a blank page is looked
+#                        at again every 2 seconds until then. A page that needed longer says how long.
 #   KEEP=1               leave the simulator booted afterwards
 set -euo pipefail
 
 cd "$(dirname "$0")/.."
 
 WAIT="${WAIT:-5}"
+MAX_WAIT="${MAX_WAIT:-30}"
 BUNDLE=io.github.davidlago.JazzDiscovery
 OUT=build/ui-smoke
 DEVICE_NAME="Jazz Discovery UI smoke"
@@ -67,15 +72,22 @@ check() {  # size label, link
     fi
     pid="${launched##*: }"
     sleep "$WAIT"
-    # Simulator apps are processes on this Mac: a crash leaves no process.
-    if ! kill -0 "$pid" 2> /dev/null; then
-        failures+=("$link ($size): the app quit (crashed?)"); return
-    fi
-    xcrun simctl io "$udid" screenshot "$OUT/$name.png" > /dev/null 2>&1
-    if ! build/screen-check "$OUT/$name.png"; then
-        failures+=("$link ($size): blank page")
-    fi
-    echo "  ok  $link"
+    local waited="$WAIT"
+    while :; do
+        # Simulator apps are processes on this Mac: a crash leaves no process.
+        if ! kill -0 "$pid" 2> /dev/null; then
+            failures+=("$link ($size): the app quit (crashed?)"); return
+        fi
+        xcrun simctl io "$udid" screenshot "$OUT/$name.png" > /dev/null 2>&1
+        if build/screen-check "$OUT/$name.png" > /dev/null 2>&1; then break; fi
+        if (( waited >= MAX_WAIT )); then
+            build/screen-check "$OUT/$name.png" || true   # says how blank
+            failures+=("$link ($size): blank page after ${waited}s"); return
+        fi
+        sleep 2
+        waited=$(( waited + 2 ))
+    done
+    if (( waited > WAIT )); then echo "  ok  $link (drawn after ${waited}s)"; else echo "  ok  $link"; fi
 }
 
 xcrun simctl ui "$udid" appearance dark

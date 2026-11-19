@@ -1,7 +1,7 @@
 // Makes sure each bundle ID has an App Store provisioning profile that includes the Apple Distribution certificate in
 // the keychain, creating or replacing them through the App Store Connect API, and installs them for Xcode.
 //
-//   swift scripts/provisioning-profiles.swift [--developer-id] [--replace] <key.p8> <key ID> <issuer ID> <bundle ID>...
+//   swift scripts/provisioning-profiles.swift [--developer-id | --mac-app-store] [--replace] <key.p8> <key ID> <issuer ID> <bundle ID>...
 //
 // Each profile is named "<bundle ID> App Store (CI)" (`profileName` below; scripts/testflight.sh uses the same names).
 // Used by scripts/testflight.sh with DISTRIBUTION_CERTIFICATE=1 (CI), where an App Manager API key can't use Xcode's
@@ -10,6 +10,8 @@
 // --developer-id makes the Mac app's Developer ID profile instead ("<bundle ID> Developer ID", for the Developer ID
 // Application certificate in the keychain), which iCloud needs (scripts/build-app.sh PROVISIONING_PROFILE=…), and also
 // saves it as build/profiles/<bundle ID>.provisionprofile for the MAC_PROVISIONING_PROFILE secret (docs/app-store.md).
+// --mac-app-store makes Mac App Store profiles instead ("<bundle ID> Mac App Store (CI)", for the same Apple Distribution
+// certificate), which scripts/mac-app-store.sh signs the Mac app's App Store upload with.
 // --replace makes new profiles even when valid ones exist, after the App ID's capabilities change.
 import CryptoKit
 import Foundation
@@ -21,10 +23,11 @@ func fail(_ message: String) -> Never {
 }
 
 var args = Array(CommandLine.arguments.dropFirst())
-let developerID = args.contains("--developer-id"), replace = args.contains("--replace")
-args.removeAll { $0 == "--developer-id" || $0 == "--replace" }
-guard args.count >= 4, !args.contains(where: { $0.hasPrefix("--") }) else {
-    fail("usage: provisioning-profiles.swift [--developer-id] [--replace] <key.p8> <key ID> <issuer ID> <bundle ID>...")
+let developerID = args.contains("--developer-id"), macAppStore = args.contains("--mac-app-store")
+let replace = args.contains("--replace")
+args.removeAll { $0 == "--developer-id" || $0 == "--mac-app-store" || $0 == "--replace" }
+guard args.count >= 4, !args.contains(where: { $0.hasPrefix("--") }), !(developerID && macAppStore) else {
+    fail("usage: provisioning-profiles.swift [--developer-id | --mac-app-store] [--replace] <key.p8> <key ID> <issuer ID> <bundle ID>...")
 }
 let keyPath = args[0], keyID = args[1], issuer = args[2]
 let bundleIDs = Array(args.dropFirst(3))
@@ -40,6 +43,9 @@ struct Kind {
 let kind = developerID
     ? Kind(certificatePrefix: "Developer ID Application:", certificateTypes: "DEVELOPER_ID_APPLICATION,DEVELOPER_ID_APPLICATION_G2",
            profileType: "MAC_APP_DIRECT", suffix: "Developer ID", fileExtension: "provisionprofile")
+    : macAppStore
+    ? Kind(certificatePrefix: "Apple Distribution:", certificateTypes: "DISTRIBUTION",
+           profileType: "MAC_APP_STORE", suffix: "Mac App Store (CI)", fileExtension: "provisionprofile")
     : Kind(certificatePrefix: "Apple Distribution:", certificateTypes: "DISTRIBUTION",
            profileType: "IOS_APP_STORE", suffix: "App Store (CI)", fileExtension: "mobileprovision")
 

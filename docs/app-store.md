@@ -1,7 +1,8 @@
-# The iPhone app on the App Store
+# The apps on the App Store
 
 How Jazz Discovery for iPhone is signed, uploaded to TestFlight and submitted to App Review, and what goes into its
-App Store listing. The iPhone app is the `JazzDiscoveryMobile` target of `JazzDiscovery.xcodeproj`; it shares
+App Store listing. The Mac app joins it on the Mac App Store as the same app (see [The Mac app](#the-mac-app-on-the-mac-app-store)),
+and is also released outside the store, signed with Developer ID and notarized, on GitHub. The iPhone app is the `JazzDiscoveryMobile` target of `JazzDiscovery.xcodeproj`; it shares
 `Shared/` (data, Apple Music, Last.fm, Wikipedia, YouTube) with the Mac app and has its own views in
 `iOS/JazzDiscoveryMobile/`.
 
@@ -195,6 +196,85 @@ In App Store Connect, the app ▸ **iOS App** ▸ the version (**+** to add one 
 6. **Add for Review**, then **Submit for Review**. Review usually takes a day or two; App Store Connect emails the
    outcome. If it's rejected, the message in the **Resolution Center** says why; reply there or fix and resubmit.
 
+## The Mac app on the Mac App Store
+
+The Mac app (the `JazzDiscovery` target) has the iPhone app's bundle ID, so on App Store Connect it's the same app
+record with a second platform, macOS: one product page per platform, one App Information, privacy label, price and age
+rating for both, and a **universal purchase** (it's free either way). Its reviews and versions are its own. The
+GitHub release carries on as before: the two copies share iCloud and the Last.fm keychain items, so moving from one to
+the other keeps the passport.
+
+| | |
+|---|---|
+| Upload | `scripts/mac-app-store.sh`: an archive (Apple Silicon + Intel, with the widgets), signed with Apple Distribution and Mac App Store profiles, packaged as a .pkg signed with the Mac Installer Distribution certificate |
+| Signing | always with iCloud key-value storage and the app group, as the Developer ID release with `ICLOUD=1` |
+| Version | the release tag's; the build number is the UTC time, as for the iPhone |
+| Requires | macOS 15 or later |
+
+### One-time setup
+
+1. **The Mac Installer Distribution certificate**, which signs the .pkg (the App Store takes Mac apps as installer
+   packages). An App Manager API key can make it, so the script does it all: makes a key and a signing request on this
+   Mac, asks Apple for the certificate, adds it to the login keychain ("3rd Party Mac Developer Installer: …") and
+   stores it as the `MAC_INSTALLER_CERTIFICATE_P12` and `MAC_INSTALLER_CERTIFICATE_PASSWORD` secrets:
+
+   ```bash
+   ASC_KEY=~/.appstoreconnect/private_keys/AuthKey_<key ID>.p8 ASC_KEY_ID=<key ID> ASC_ISSUER=<issuer ID> scripts/mac-installer-certificate.sh
+   ```
+
+   It lasts a year, like the Apple Distribution certificate: run it again when Apple emails that it's expiring.
+2. **The Mac App Store profiles** ("<bundle ID> Mac App Store (CI)", for the app and its widgets) are made by
+   `scripts/mac-app-store.sh` the first time it runs with `DISTRIBUTION_CERTIFICATE=1`
+   (`scripts/provisioning-profiles.swift --mac-app-store`), and replaced when they expire or the certificate changes.
+3. **App Store Connect**: the app ▸ the **+** next to **iOS App** in the sidebar ▸ **macOS**, which adds a **macOS App**
+   section with a version in Prepare for Submission (or `POST /v1/appStoreVersions` with `"platform": "MAC_OS"`, which
+   the API key can do). Uploads are refused until it exists.
+   Steps 1 to 3 were done on 2026-11-19 (the macOS version 1.14.0 was made through the API).
+4. Turn the CI job on for release tags:
+
+   ```bash
+   gh variable set MAC_APP_STORE --body 1
+   ```
+
+To check signing without a release: `gh workflow run ci.yml -f mac_app_store=export` (a signed .pkg, not uploaded),
+or `-f mac_app_store=upload` (uploads `iOS/Version.xcconfig`'s version). On this Mac, with both certificates in the
+login keychain:
+
+```bash
+UPLOAD=0 DISTRIBUTION_CERTIFICATE=1 ASC_KEY=~/.appstoreconnect/private_keys/AuthKey_<key ID>.p8 ASC_KEY_ID=<key ID> ASC_ISSUER=<issuer ID> scripts/mac-app-store.sh
+```
+
+leaves `build/mac-app-store/Jazz Discovery.pkg`. To try it as the store would install it, upload and install it with
+**TestFlight** on the Mac (internal testers need no review). Quit and delete the GitHub copy in /Applications first:
+both have the same bundle ID.
+
+### Each release
+
+With `MAC_APP_STORE` set, a `vX.Y.Z` tag uploads the Mac app too (the `mac-app-store` job, after the Mac build). Then,
+in App Store Connect, the app ▸ **macOS App** ▸ the version (**+** to add one after the first release):
+
+1. **Screenshots**: `docs/app-store/mac/*` in file order (2880 × 1800, one of the Mac sizes; ten at most). They're the
+   Mac app's window (see below), framed by `swift scripts/app-store-art.swift`.
+2. **Promotional text**, **description** and **keywords** (the Mac text below), **support URL**, **marketing URL**,
+   **copyright**. After the first version, only **What's New**.
+3. **Build**: the one CI uploaded.
+4. **App Review Information**: no sign-in; the Mac review notes below; your contact details; the review video as the
+   attachment (1.14.0's, a 36-second screen recording at 1920 × 1344).
+5. **Version release**, then **Add for Review** ▸ **Submit for Review**.
+
+App Information (categories, content rights, age rating), App Privacy and Pricing are shared with the iPhone app and
+already done. Adding the macOS platform makes the iPhone app unavailable on Apple silicon Macs, which it already was.
+
+To take the screens again: build the Mac app under a test bundle ID (so it doesn't touch your own copy's keychain
+items), open it (its window opens at 1440 × 900 points, 2880 × 1800 pixels on a Retina display), open each page with
+its link (`open -g -a "<the .app>" jazzdiscovery://album/kind-of-blue`) and capture the window with
+`screencapture -l <window ID> -o -x docs/app-store/screens/mac/<name>.png`, named as in `scripts/app-store-art.swift`'s
+`macShots`. (The app's `--snapshots` pages don't do here: an offscreen window draws the sidebar blank.)
+
+```bash
+xcodebuild -project JazzDiscovery.xcodeproj -scheme JazzDiscovery -configuration Release -derivedDataPath build/DerivedData-linktest -destination 'platform=macOS' APP_BUNDLE_ID=io.github.davidlago.JazzDiscovery.linktest CODE_SIGN_STYLE=Manual CODE_SIGN_IDENTITY=- DEVELOPMENT_TEAM="" -quiet build
+```
+
 ## The listing
 
 ### App information
@@ -313,4 +393,75 @@ Listening guides (Discover > Listening Guides) follow a recording section by sec
 Notifications are off unless the user turns on the morning note (Settings > Today in Jazz); it is scheduled on the device, and permission is asked only then. Widgets: Today in Jazz and Continue, for the Home Screen and Lock Screen. Siri and Shortcuts: "Play bebop radio on Jazz Discovery", "What happened in jazz today in Jazz Discovery".
 
 Suggested path: Discover (Today in Jazz at the top, then scroll the River of Jazz sideways and tap a style; the Paths, Listening Guides and Radio rows; the Blindfold Test card), an era page, an artist (Artists tab), an album (Crate tab) with its Personnel, Play, Mark as Heard and Save buttons and its three doors at the bottom, the Explore tab (eras, decades, the Songbook, the Places map with its time slider, Labels, Lineages, the Glossary), the Passport (the seal button at the top right), Artists > Connections (pinch and tap faces, then the path button at the top to find a path between two artists), and Search.
+```
+
+### The Mac version
+
+The macOS App version has its own text. **Promotional text** and **keywords**: the same as the iPhone's.
+
+**Description** (the iPhone's, with the Mac's own features in place of the phone's):
+
+```
+Jazz Discovery is a visual guide to 130 years of jazz, from ragtime and the blues to today's new scenes. Follow the music as it flows, splits and comes back together, meet the people who made it, and listen to the records that changed everything.
+
+The River of Jazz
+Fourteen styles flow across a timeline like river channels, overlapping where they really did, with forty turning points along the way. Click a style to dive in.
+
+Eras and decades
+Each era has its story, its sound, the places it happened, its key artists and essential records, with tracks to play, performances and a picture archive. Or travel by decade, from the 1890s to the 2020s.
+
+183 artists, 176 records
+Leaders and the sidemen all over their records, in Blue Note–style duotone portraits, each with a biography, their records and the people they played with. Every album lists its band like the back of an LP: who played what, and when and where it was recorded. New to jazz? Follow Start Here, one record at a time.
+
+Connections
+A map of who played with whom across the century, drawn from the records they share. Find the shortest path between any two artists, from Scott Joplin to Nubya Garcia, and hear one track from each link.
+
+Listening guides
+Follow a recording as it plays, from So What to The Girl from Ipanema: its form drawn as a bar (the head, each solo, the way out) and a note on what to hear in each section, moving with the music. Click a section to jump to it. Guides follow full tracks, with Apple Music.
+
+Paths
+Journeys with a point of view, from 1959 to Late Night and The Latin Tinge: a few stops each, every one with something to listen for, and your place kept.
+
+The Songbook
+Forty standards and jazz originals, each with its story and the versions that made it matter. Play them in order and hear one song travel through the decades.
+
+Lineages and the glossary
+Family trees for eleven instruments, from the trumpet and saxophone to the vibraphone and organ, showing who learned from whom, and a glossary of the words jazz uses, each with a recording to hear it in. How to Listen walks you through one record in five steps.
+
+Places and labels
+A map of jazz with a time slider, from New Orleans in 1895 to South London today, with a page for every city, club and studio. And the labels, from Blue Note to ECM, with a wall of their covers.
+
+Radio and the Blindfold Test
+Stations for every era, decade, instrument, city and label, that tell you why each track is there. Then test your ears: ten clips, covers hidden.
+
+Made for the Mac
+Wide pages with room for the whole story, a sidebar for every section, a Go menu with keyboard shortcuts, and a player in the menu bar that tells you why a station chose each track. Today in Jazz and Continue widgets for your desktop and Notification Center, and Handoff with the iPhone app: the page you're on is ready to open on your other device.
+
+Your passport
+Mark the records you've heard and save the ones to come back to. Every era has a stamp that inks in as you listen, and every record opens three doors to what to hear next. It syncs with the iPhone app through your own iCloud and can start from your Last.fm history.
+
+Listen and scrobble
+Connect Apple Music to play everything in full; without a subscription you hear 30-second previews. Connect Last.fm with your own API account and the full tracks you play are added to your profile.
+
+No account, no ads, no tracking. Text and photos from Wikipedia and Wikimedia Commons; artwork and previews from Apple Music.
+```
+
+**App Review notes**:
+
+```
+Jazz Discovery is a guide to the history of jazz: eras, decades, artists and essential albums. Its content is an original dataset written for the app, illustrated with Wikipedia and Wikimedia Commons text and photos (credited on each page, CC BY-SA), album artwork and 30-second previews from Apple's iTunes Search API, and YouTube videos that play in YouTube's official embedded player. This is the Mac version of the iPhone app already on the App Store (same app record, universal purchase).
+
+No sign-in is needed: every page works right away.
+
+The attached video shows the Mac app: Discover (Today in Jazz, Continue and Paths), an album page with a track playing in the player bar (a 30-second preview, as Apple Music isn't connected in the video) and its YouTube performances, the guitar's lineage, Labels, the Songbook and an artist page.
+
+Apple Music (optional): click Apple Music at the bottom of the sidebar to connect through MusicKit. With a subscription, songs and albums play in full; without one, the app plays 30-second previews and "Apple Music" buttons open the album or song in the Music app.
+
+Last.fm (optional): Jazz Discovery > Settings > Last.fm connects the user's own Last.fm account with their own Last.fm API key, so the full tracks they play are added to their Last.fm profile ("scrobbling"). Sign-in happens on last.fm's own page in the browser; the app never sees the password. If you don't have a Last.fm account, you can skip this.
+
+Listening guides (Listening Guides in the sidebar) follow a recording section by section while it plays in full with Apple Music. Without Apple Music the guide is still readable and says it can't follow a 30-second preview.
+
+While music plays, a player appears in the menu bar (it can be turned off in Settings > Apple Music). Notifications are off unless the user turns on the morning note (Settings > Today in Jazz); it is scheduled on the Mac, and permission is asked only then. Widgets: Today in Jazz and Continue, for the desktop and Notification Center.
+
+Suggested path: Discover (Today in Jazz at the top, then the River of Jazz: click a style), an era page, an artist (Artists in the sidebar), an album (the Crate) with its Personnel, Play, Mark as Heard and Save buttons and its three doors at the bottom, the Songbook, Places with its time slider, Labels, Lineages, the Glossary, the Passport, Connections (click faces, then find a path between two artists), Radio, the Blindfold Test, and Search (Command-F).
 ```

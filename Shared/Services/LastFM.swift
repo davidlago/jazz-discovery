@@ -455,21 +455,44 @@ final class Scrobbler {
     }
 }
 
-/// Generic passwords in the login keychain, for the Last.fm API key, shared secret and session key.
+/// Generic passwords for the Last.fm API key, shared secret and session key.
+///
+/// On the Mac they go in the data protection keychain (the iPhone's kind), where an item belongs to the app's App ID:
+/// every copy signed for io.github.davidlago.JazzDiscovery (the App Store and TestFlight ones, the Developer ID release
+/// with its profile, an Xcode build) finds it without asking. Up to 1.14 they were in the login keychain, where an item
+/// trusts only the signature of the copy that saved it, so another copy (the App Store one, after the GitHub one) had
+/// macOS ask to allow it, once per item; those are moved over the first time they're read. A build without an App ID
+/// (an ad-hoc test copy or CI build) can't use the data protection keychain and keeps to the login one.
 enum Keychain {
     /// "io.github.davidlago.JazzDiscovery.lastfm" for the app. A build with another bundle ID (a test copy, a Personal
     /// Team build) keeps its own items: on the Mac, reading another app's items makes the system ask to allow it, once
     /// per item, and again after every rebuild.
     private static let service = (Bundle.main.bundleIdentifier ?? "io.github.davidlago.JazzDiscovery") + ".lastfm"
 
-    private static func query(_ account: String) -> [String: Any] {
-        [kSecClass as String: kSecClassGenericPassword,
-         kSecAttrService as String: service,
-         kSecAttrAccount as String: account]
+    private static func query(_ account: String, protected: Bool) -> [String: Any] {
+        var q: [String: Any] = [kSecClass as String: kSecClassGenericPassword,
+                                kSecAttrService as String: service,
+                                kSecAttrAccount as String: account]
+        #if os(macOS)
+        if protected { q[kSecUseDataProtectionKeychain as String] = true }
+        #endif
+        return q
     }
 
-    static func string(_ account: String) -> String? {
-        var q = query(account)
+    #if os(macOS)
+    /// Whether this build may use the data protection keychain: only with an App ID (the application-identifier
+    /// entitlement, from a provisioning profile). Without one, writing or deleting there fails with
+    /// errSecMissingEntitlement (reading just finds nothing), so this deletes an item that's never saved and looks at
+    /// the answer.
+    private static let protected: Bool = {
+        SecItemDelete(query("entitlement-probe", protected: true) as CFDictionary) != errSecMissingEntitlement
+    }()
+    #else
+    private static let protected = true   // the iPhone has only the one kind
+    #endif
+
+    private static func read(_ account: String, protected: Bool) -> String? {
+        var q = query(account, protected: protected)
         q[kSecReturnData as String] = true
         q[kSecMatchLimit as String] = kSecMatchLimitOne
         var out: CFTypeRef?
@@ -477,24 +500,44 @@ enum Keychain {
         return String(data: data, encoding: .utf8)
     }
 
-    /// Stores the value (nil or empty removes it). False when the keychain refused to keep it.
-    @discardableResult
-    static func set(_ value: String?, for account: String) -> Bool {
-        SecItemDelete(query(account) as CFDictionary)
-        guard let value, !value.isEmpty else { return true }
-        var q = query(account)
+    private static func add(_ value: String, for account: String, protected: Bool) -> Bool {
+        var q = query(account, protected: protected)
         q[kSecValueData as String] = Data(value.utf8)
-        #if os(iOS)
-        q[kSecAttrAccessible as String] = accessibility
-        #endif
+        if protected { q[kSecAttrAccessible as String] = accessibility }
         return SecItemAdd(q as CFDictionary, nil) == errSecSuccess
     }
 
-    #if os(iOS)
-    /// Readable once the iPhone has been unlocked since it started (songs scrobble while it's locked), and never
+    static func string(_ account: String) -> String? {
+        if let value = read(account, protected: protected) { return value }
+        #if os(macOS)
+        // Saved in the login keychain by 1.14 or earlier: move it, so no other copy has to ask for it. If this copy
+        // didn't save it, reading it is the last time macOS asks.
+        if protected, let value = read(account, protected: false) {
+            if add(value, for: account, protected: true) {
+                SecItemDelete(query(account, protected: false) as CFDictionary)
+            }
+            return value
+        }
+        #endif
+        return nil
+    }
+
+    /// Stores the value (nil or empty removes it). False when the keychain refused to keep it.
+    @discardableResult
+    static func set(_ value: String?, for account: String) -> Bool {
+        SecItemDelete(query(account, protected: protected) as CFDictionary)
+        #if os(macOS)
+        if protected { SecItemDelete(query(account, protected: false) as CFDictionary) }   // one left from before the move
+        #endif
+        guard let value, !value.isEmpty else { return true }
+        return add(value, for: account, protected: protected)
+    }
+
+    /// Readable once the device has been unlocked since it started (songs scrobble while it's locked), and never
     /// copied into a backup or onto another device.
     private static let accessibility = kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly
 
+    #if os(iOS)
     /// Moves items saved before that rule (as "when unlocked", which travels with backups) over to it.
     static func tightenAccess() {
         let all: [String: Any] = [kSecClass as String: kSecClassGenericPassword, kSecAttrService as String: service]
