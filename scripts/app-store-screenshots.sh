@@ -50,7 +50,8 @@ shoot() {  # udid, links…
     local udid="$1"; shift
     # A made-up passport, in memory only, so the stamps and the Continue row have something to show; and a day with a
     # birthday (Miles Davis's hundredth), so the Today card has a happy lead.
-    local args=(--demo-passport --today 2026-05-26)
+    # The content the build was made with, not any it downloaded since, so the counts match the listing.
+    local args=(--demo-passport --today 2026-05-26 -ContentSource bundle)
     for l in "$@"; do args+=(--open "$l"); done
     xcrun simctl launch --terminate-running-process "$udid" "$BUNDLE" "${args[@]}" > /dev/null
 }

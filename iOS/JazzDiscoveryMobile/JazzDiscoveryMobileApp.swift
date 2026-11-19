@@ -8,6 +8,7 @@ struct JazzDiscoveryMobileApp: App {
     @State private var passport: Passport
     @State private var sync: PassportSync?
     @State private var widgets: WidgetPublisher?
+    @Environment(\.scenePhase) private var scenePhase
 
     // The objects are made here and handed to @State as they are: @State makes an Observable object lazily, so one
     // read from it in init would be a different object from the one the app ends up with.
@@ -44,6 +45,8 @@ struct JazzDiscoveryMobileApp: App {
                     SpotlightIndex.update(library: library)
                 }
                 .task { await openLaunchLinks() }
+                // New content from GitHub, for the next launch (Shared/Services/Content.swift).
+                .onChange(of: scenePhase, initial: true) { _, phase in if phase == .active { ContentUpdater.check() } }
         }
     }
 

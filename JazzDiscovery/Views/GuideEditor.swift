@@ -110,7 +110,7 @@ final class GuideEditorModel {
     }
 
     func revertToBundled() {
-        guard let id = selectedID, let bundled = JazzLibrary.optional(GuidesData.self, "guides", in: .main)?.guides.first(where: { $0.id == id })
+        guard let id = selectedID, let bundled = JazzLibrary.optional(GuidesData.self, "guides", in: .active)?.guides.first(where: { $0.id == id })
         else { return }
         update { $0 = bundled }
         selection = 0

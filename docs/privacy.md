@@ -1,6 +1,6 @@
 # Jazz Discovery privacy policy
 
-*Last updated: November 18, 2026*
+*Last updated: November 19, 2026*
 
 Jazz Discovery (for iPhone and Mac) doesn't collect any data about you. It has no accounts, no analytics, no ads and no
 tracking, and the developer has no server that receives anything from the app.
@@ -14,6 +14,8 @@ To show its pages, the app asks these public services for information. The reque
 - **Apple's iTunes Search API**: album and song matches, artwork and 30-second previews.
 - **YouTube** (Google): video search results, and the videos you choose to play, in YouTube's embedded player.
 - **Apple Maps**: map tiles for the Places map. The app doesn't ask for or use your location.
+- **GitHub**: the app's own guide (eras, artists, records and the rest), from the app's public repository, so new
+  content arrives without an app update. The app downloads these files; it doesn't send anything.
 
 Like any website, these services see your device's IP address when the app connects to them. Their own privacy policies
 apply.
@@ -32,8 +34,9 @@ in your device's keychain. Last.fm's privacy policy applies to what it receives:
 
 ## On your device
 
-The app keeps a cache of what it has looked up, your playback and Last.fm preferences, and songs waiting to be sent to
-Last.fm while you're offline. All of it stays on your device and is removed when you delete the app.
+The app keeps a cache of what it has looked up, the latest copy of its guide, your playback and Last.fm preferences,
+and songs waiting to be sent to Last.fm while you're offline. All of it stays on your device and is removed when you
+delete the app.
 
 ## Your passport
 
