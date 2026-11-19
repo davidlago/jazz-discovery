@@ -258,7 +258,8 @@ in App Store Connect, the app ▸ **macOS App** ▸ the version (**+** to add on
 2. **Promotional text**, **description** and **keywords** (the Mac text below), **support URL**, **marketing URL**,
    **copyright**. After the first version, only **What's New**.
 3. **Build**: the one CI uploaded.
-4. **App Review Information**: no sign-in; the Mac review notes below; your contact details.
+4. **App Review Information**: no sign-in; the Mac review notes below; your contact details; the review video as the
+   attachment (1.14.0's, a 36-second screen recording at 1920 × 1344).
 5. **Version release**, then **Add for Review** ▸ **Submit for Review**.
 
 App Information (categories, content rights, age rating), App Privacy and Pricing are shared with the iPhone app and
@@ -451,6 +452,8 @@ No account, no ads, no tracking. Text and photos from Wikipedia and Wikimedia Co
 Jazz Discovery is a guide to the history of jazz: eras, decades, artists and essential albums. Its content is an original dataset written for the app, illustrated with Wikipedia and Wikimedia Commons text and photos (credited on each page, CC BY-SA), album artwork and 30-second previews from Apple's iTunes Search API, and YouTube videos that play in YouTube's official embedded player. This is the Mac version of the iPhone app already on the App Store (same app record, universal purchase).
 
 No sign-in is needed: every page works right away.
+
+The attached video shows the Mac app: Discover (Today in Jazz, Continue and Paths), an album page with a track playing in the player bar (a 30-second preview, as Apple Music isn't connected in the video) and its YouTube performances, the guitar's lineage, Labels, the Songbook and an artist page.
 
 Apple Music (optional): click Apple Music at the bottom of the sidebar to connect through MusicKit. With a subscription, songs and albums play in full; without one, the app plays 30-second previews and "Apple Music" buttons open the album or song in the Music app.
 
